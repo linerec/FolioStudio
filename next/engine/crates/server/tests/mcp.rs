@@ -322,6 +322,37 @@ fn every_registry_name_is_reviewed() {
     let names = registry_names();
     let unreviewed: Vec<_> = names.iter().filter(|n| mcp::coverage::status(n) == mcp::coverage::Status::Unreviewed).collect();
     assert!(unreviewed.is_empty(), "add a rule in bin/mcp/coverage.rs for: {unreviewed:?}");
+    let tools = mcp::catalog::attached_tools();
+    let published: std::collections::BTreeSet<_> = tools.iter().map(|t| t["name"].as_str().unwrap()).collect();
+    assert_eq!(published.len(), tools.len(), "duplicate attached tool");
+    let report = mcp::coverage::report(&json!({})).unwrap();
+    assert_eq!(report["attached"]["unreviewed"], json!([]));
+    let mut decided = std::collections::BTreeSet::new();
+    for name in report["attached"]["registryOpen"].as_array().unwrap() {
+        let name = name.as_str().unwrap();
+        assert!(published.contains(name) && decided.insert(name));
+    }
+    for group in report["attached"]["withheld"].as_array().unwrap() {
+        let reason = group["reason"].as_str().unwrap();
+        assert!(["secret", "printer", "engine-process", "external-data", "gesture-only"].contains(&reason));
+        for name in group["names"].as_array().unwrap() {
+            let name = name.as_str().unwrap();
+            assert!(!published.contains(name) && decided.insert(name), "{name}");
+            let one = mcp::coverage::report(&json!({"name":name})).unwrap();
+            assert_eq!(one["attachedReason"], reason);
+            assert!(!one["attachedWhy"].as_str().unwrap().is_empty());
+            if reason == "gesture-only" {
+                assert!(published.contains(one["valueTool"].as_str().unwrap()));
+            }
+            let request = mcp::catalog::request_for(name, &json!({})).unwrap();
+            assert!(mcp::attached::admit(&request, true, true).is_err(), "{name}");
+        }
+    }
+    assert_eq!(decided, names.iter().map(String::as_str).collect());
+    for future in ["edit.futureOperation", "dbFuture", "textFuture"] {
+        assert_eq!(mcp::coverage::attached_status(future), "unreviewed");
+        assert_eq!(mcp::coverage::status(future), mcp::coverage::Status::Unreviewed);
+    }
     for name in mcp::catalog::ALLOWED {
         assert!(names.iter().any(|n| n == name), "{name} is exposed but not registered");
         assert_eq!(mcp::coverage::status(name), mcp::coverage::Status::Exposed);

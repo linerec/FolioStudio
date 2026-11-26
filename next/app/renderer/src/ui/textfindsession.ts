@@ -47,9 +47,8 @@ export function useTextFindSession(document: string | undefined, reveal: (m: Fou
     if (!session || !last || session.change === undefined) { report(tr('먼저 찾기·바꾸기로 찾을 내용과 바꿀 내용을 정하세요.')); return; }
     if (!selected || selected.story !== last.story || selected.start !== last.start || selected.end !== last.end) { if (findNext) await next(); return; }
     const change = session.change;
-    const commands: EditCommand[] = [{ op: 'deleteText', story: last.story, start: last.start, end: last.end }, ...(change ? [{ op: 'insertText' as const, story: last.story, at: last.start, text: change }] : [])];
-    await edit(tr('바꾸기'), commands);
-    const after: TextFindSession = { ...session, last: { story: last.story, start: last.start, end: last.start + change.length, text: change } };
+    await edit(tr('바꾸기'), [{ op: 'replaceTextRange', story: last.story, start: last.start, end: last.end, text: change }]);
+    const after: TextFindSession = { ...session, last: { story: last.story, start: last.start, end: last.start + Array.from(change).length, text: change } };
     remember(after);
     if (findNext) await next(after);
   };

@@ -20,7 +20,7 @@ pub fn import_styles(req: &serde_json::Value) -> Result<serde_json::Value, Strin
     Ok(serde_json::json!({"parts":parts}))
 }
 
-pub fn prepare(commands: &mut [Command], session: &crate::Session) -> Result<(), String> {
+pub fn prepare(commands: &mut [Command], session: &crate::Session, document_only: bool) -> Result<(), String> {
     let is_toc = |c: &Command| matches!(c, Command::Registered(RegisteredCommand::CreateTOC { .. } | RegisteredCommand::UpdateTOC { .. }));
     if !commands.iter().any(is_toc) { return Ok(()) }
     if commands.iter().any(|c| !is_toc(c) && !matches!(c, Command::Registered(RegisteredCommand::SaveTOCStyle { .. }))) {
@@ -28,6 +28,7 @@ pub fn prepare(commands: &mut [Command], session: &crate::Session) -> Result<(),
     }
     let mut sources = folio_text::layout::toc::sources(&session.doc, &session.layout);
     if includes_book(commands, session) {
+        if document_only { return Err("Attached TOCs use only the open document".into()); }
         sources = book_sources(session, sources)?;
     }
     for c in commands {

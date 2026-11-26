@@ -215,3 +215,4 @@ export type RegisteredEditCommand =
   | { op: 'updateMergedFields'; fields: string[]; records: string[][]; sha256: string; at: string }
   | { op: 'setStoryOrientation'; story: string; orientation: string }
   | { op: 'setIndexSortOptions'; options: {name: string; include?: boolean | null; priority?: number | null; header_type?: string | null}[] }
+  | { op: 'replaceTextRange'; story: string; start: number; end: number; text: string }

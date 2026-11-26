@@ -49,7 +49,7 @@ fn local_address(text: &str) -> bool {
     false
 }
 
-fn scrub(value: &mut Value) {
+pub(super) fn scrub(value: &mut Value) {
     match value {
         Value::Object(map) => {
             map.retain(|k, _| !private_key(k) && !local_address(k));

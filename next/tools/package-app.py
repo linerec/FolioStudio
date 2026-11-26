@@ -313,11 +313,14 @@ def main():
     if dirty and not a.allow_dirty:
         raise SystemExit('work tree has uncommitted changes; commit first or pass --allow-dirty')
     commit = git('rev-parse', '--short', 'HEAD')
+    with open(os.path.join(APP, 'package.json'), encoding='utf-8') as manifest:
+        version = json.load(manifest)['version']
     # -I excludes the script directory from sys.path; load only our sibling modules.
     sys.path.insert(0, HERE)
     if a.platform == 'mac':
         import package_mac
         package_mac.main(sys.modules[__name__], a, {
+            'version': version,
             'commit': commit + ('+dirty' if dirty else ''),
             'subject': git('log', '-1', '--format=%s'),
             'built': datetime.datetime.now().astimezone().isoformat(timespec='seconds'),
@@ -332,6 +335,7 @@ def main():
         raise SystemExit('Windows package has unresolved DLL imports:\n' + '\n'.join(errors))
     shot = smoke(folder)
     info = {'windows': {
+        'version': version,
         'commit': commit + ('+dirty' if dirty else ''),
         'subject': git('log', '-1', '--format=%s'),
         'built': datetime.datetime.now().astimezone().isoformat(timespec='seconds'),

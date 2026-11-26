@@ -9,6 +9,20 @@ use folio_project::{
 use serde_json::{Value, json};
 use std::{collections::HashMap, path::{Path, PathBuf}};
 
+/// Add the project's recorded content hashes without opening the linked files.
+pub fn describe_links(graphics: &crate::edit::Graphics, rows: &mut [Value]) {
+    let references: HashMap<_, _> = graphics.references.iter().map(|r| (r.id.as_str(), r)).collect();
+    let owners: HashMap<_, _> = graphics.synced.iter().filter_map(|g| {
+        Some((g.self_id.as_str(), *references.get(g.link.as_deref()?)?))
+    }).collect();
+    for row in rows {
+        if let Some(reference) = row["owner"].as_str().and_then(|owner| owners.get(owner)) {
+            row["sha256"] = json!(reference.sha256);
+            row["projectPath"] = json!(reference.path);
+        }
+    }
+}
+
 #[derive(Default)]
 pub struct Prepared {
     pub(crate) created: Vec<PathBuf>,

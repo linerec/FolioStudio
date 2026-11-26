@@ -52,7 +52,9 @@ pub(in crate::ops) fn insert_table(w: &mut Work<'_>, story: &str, at: Option<usi
         }
     }
     let raw = render(&mut x);
-    crate::text::replace_with_node(w, story, at, at, '\u{16}', &raw)
+    crate::text::replace_with_node(w, story, at, at, '\u{16}', &raw)?;
+    w.created.push(id);
+    Ok(())
 }
 
 /// The paragraph style at the end of a story (its last paragraph range).

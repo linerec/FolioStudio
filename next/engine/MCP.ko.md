@@ -9,6 +9,20 @@
 
 ## 실행 중인 앱에 붙기 (`--attach`)
 
+### 열린 문서의 글과 스타일
+
+글과 표의 칸은 `textStory`와 `tableInfo.table.cells`로 ID를 확인한 뒤 편집한다. 글 범위의 시작은 포함하고 끝은 제외한다. 위치는 유니코드 문자 수로 센다. `textFind`·`edit.findReplace`는 일반 글과 서식을, `glyphFind`·`edit.glyphReplace`는 지정한 글꼴의 글리프를 다룬다. 단락·문자·표·칸 스타일을 고치면 열린 문서 안에서 그 스타일을 쓰는 곳에 함께 반영된다.
+
+`edit.placeText`는 프로젝트 안의 TXT·RTF·DOCX 상대 경로를 받으며 파일 쓰기 스위치가 필요하다. 목차·색인·목록 번호를 만들 때 쪽 번호와 위치는 열린 문서의 조판 결과에서 얻는다. 책의 다른 문서까지 포함하는 목차는 거절한다. 편집 응답에는 만든 ID 목록과 `LLM: 명령이름` 실행 취소 이름이 들어간다. 각 도구의 인수와 예제는 `tools/list`에서 확인할 수 있다.
+
+### 열린 문서의 개체·페이지·색·출력
+
+`pageItems`로 개체 ID를, `documentInfo`로 레이어·견본·스타일·페이지·부모 ID를 얻는다. 개체를 복제·묶기·정렬·분포하거나 값으로 옮길 수 있고, 칠·획·스타일·효과를 바꿀 수 있다. 새 레이어·견본·색조·그라디언트·부모를 만들면 응답의 `created`에 ID가 들어간다. 페이지는 한 쪽씩 추가·삭제할 수 있다. 복제 단위는 앱과 같은 펼침면이며 `edit.duplicateSpread`에는 `open` 결과의 `document.pages[].spread`를 준다. 구역에 지정한 번호는 `pageRange`로 찾을 수 있다.
+
+그림을 바꿀 때는 `links` 결과에서 대상의 `report.links[].owner`를 읽어 `edit.relinkGraphic`의 `id`로 주고, `file`에는 프로젝트 상대 경로를 준다. 원본 파일이 같은 이름으로 수정됐을 때도 그 경로로 다시 연결한다. 다음 편집에 쓸 대상 ID는 `links`에서 다시 읽는다. 프로젝트가 관리하는 그림에는 저장된 `sha256`과 프로젝트 상대 경로 `projectPath`가 함께 나온다.
+
+`preflight`로 오류를 확인하고 `preflightSettings`로 설정과 활성 프로파일을 읽는다. 프로파일과 범위 변경은 각각 `edit.setPreflightProfiles`와 `edit.setPreflightSettings`로 한다. PDF/X 출력은 `export`, 데이터 병합 문서 만들기는 `dataMergeCreate`, 인쇄소용 패키지는 `packagePlan`으로 내용을 확인한 뒤 `package`를 쓴다.
+
 ### 켜는 법
 
 1. Folio에서 **환경 설정 ▸ 일반 ▸ "LLM 연결(MCP) 허용"** 을 켠다(기본은 꺼짐). 사용자 설정 `folio.mcp.allowConnection`이며, 화면 없이 엔진 명령 `{"cmd":"userSettings","values":{"folio.mcp.allowConnection":true}}`로도 읽고 쓴다.
@@ -67,7 +81,7 @@ claude mcp add --transport stdio folio -- C:/path/to/folio-mcp.exe --attach
 - 실행 취소 기록에 **"LLM: …"** 이 붙는다(편집 ▸ 실행 취소 "LLM: createByDrag", 대화상자 적용은 "LLM: 단계 및 반복").
 - 대화상자·선택·패널은 기존 `dialog-state`·`view-state`·`panel-state` 알림으로 화면에 보인다. LLM이 연 대화상자는 화면에 열리고, 채운 값이 칸에 보이고, 적용하면 닫힌다.
 
-### 붙은 앱에서 읽기 (mcp-c7)
+### 붙은 앱에서 읽기
 
 | 호출 예 | 결과 |
 | --- | --- |
@@ -118,6 +132,7 @@ claude mcp add --transport stdio folio -- C:/path/to/folio-mcp.exe --attach
 | `export` (PDF) | 새 `.pdf`(또는 사람이 내보낸 그 파일) | 필요 |
 | `dataMergeCreate` | 프로젝트 안 CSV·TXT, 새 문서 이름 | 필요 |
 | `edit.placeGraphic` (MCP가 만든 도구) | 프로젝트 안 그림 `file` | 필요 |
+| `edit.relinkGraphic` | 그림 대상 `id`, 프로젝트 안 교체 그림 `file` | 필요 |
 | `edit.selectDataSource` | 프로젝트 안 CSV·TXT | 필요 없음(문서 편집) |
 | `edit.importPdfComments` | 프로젝트 안 PDF | 필요 없음(문서 편집) |
 | `importPlan` (mcp-c5) | 원본 `source`: 프로젝트 안 `.indd`·`.indt`·`.idml`, `document`: 새 `.folio`(기본: 원본 이름으로 루트에) | 필요 없음(계획만) |
@@ -244,20 +259,17 @@ IDML은 `saveCopy`로 가져와 `.folio`를 만든 뒤, 그 파일을 열어 `ex
 
 ## 공개하지 않은 것과 이유 (`coverage`)
 
-엔진 등록표(`commands.generated.json`)의 352개 명령·질의는 `src/bin/mcp/coverage.rs`의 규칙으로 전부 검토한다. 이름마다 "공개"(위 표의 도구) 또는 "비공개 + 이유"이고, 도구 `coverage`가 이 목록을 그대로 돌려준다(`name`을 주면 하나만). 이유는 다음 여덟 가지다.
+등록표의 명령·질의마다 연결 모드의 결정을 이름으로 기록한다. `coverage`의 `attached.registryOpen`은 권한 스위치가 필요한 도구까지 포함한다. `attached.withheld`에는 영구 보류 이유별 이름과 수가 있다. `coverage`에 `name`을 주면 해당 도구의 이유(`attachedWhy`)와 제스처의 대체 명령(`valueTool`)을 볼 수 있다. 프로젝트 단독 서버의 결정은 최상위 `exposed`·`withheld`에 있다.
 
-| 이유 | 뜻 | 예 |
-| --- | --- | --- |
-| `secret` | 비밀번호·자격 증명을 받는다. 비밀은 MCP로 다니지 않는다. 사람이 앱 화면에서 입력·잠금 해제한다 | `dbSaveConnection`, `dbUnlockConnection`, `dbTestConnection` |
-| `external-data` | 데이터베이스 서버 등 프로젝트 밖 자료에 닿는다. MCP 권한 경계(프로젝트 안)를 넓히게 된다 | `dbConnections`, `dbTables`, `dbPreview`, `dataMergeSourceStatus`, `edit.dataMergeRefresh` |
-| `printer` | 프린터·인쇄 대기열로 보낸다. 어떤 경우에도 공개하지 않는다 | `listPrinters`, `printToDevice` |
-| `app-state` | 앱 창의 상태(대화상자·패널·최근 목록·선택·보기·사용자 설정). 이 프로세스에는 창이 없다. 같은 일은 대상을 인수로 받는 편집 도구가 한다 | `dialogState`, `openDialog`, `setDialogField`, `applyDialog`, `panelState`, `recentFiles`, `setSelection` |
-| `path-io` | 경로로 파일을 읽고 쓰거나 가져오기·내보내기·패키지·프로젝트 만들기를 한다. 검토한 경로 규칙이 아직 없다 | `package`, `export`, `importRun`, `projectCreate`, `stylesFile` |
-| `engine-process` | 엔진 프로세스 제어·진단 | `quit`, `selfCheck`, `knownLimits` |
-| `needs-session` | 조판한 문서(조판 결과·글꼴·렌더러·링크)가 필요한 읽기. 첫판은 패키지만 파싱한다 | `render`, `textLayout`, `pageItems`, `spellCheck` |
-| `edit-unreviewed` | 아직 검토하지 않은 문서 편집(`edit.createByDrag`만 공개) | `edit.*` 나머지 |
+| 연결 모드 영구 보류 이유 | 예 |
+| --- | --- |
+| `secret` | 비밀번호와 개인 설정을 다루는 `userSettings` |
+| `printer` | 장치 목록과 인쇄 대기열을 다루는 `listPrinters` |
+| `engine-process` | 공유 엔진을 종료하는 `quit` |
+| `external-data` | 외부 DB를 직접 조회하는 `dbPreview` |
+| `gesture-only` | `edit.adjustGap`은 같은 좌표로 `edit.adjustGapKeys`를 호출한다. `resize`와 `move_items`에 모두 `false`를 준다. |
 
-**잠금.** 시험 `every_registry_name_is_reviewed`가 등록표의 모든 이름이 규칙에 걸리는지 본다. 엔진에 새 질의를 더하면 이 시험이 실패하고, 실패 메시지가 규칙을 더할 자리를 알려 준다(새 `edit.*` 명령은 규칙 `edit.*`에 자동으로 걸려 "비공개 + `edit-unreviewed`"가 된다). 공개하려면 `catalog::ALLOWED`에 올리고 경로·부작용을 검토해 시험을 더한다. 시험 `new_commands_and_queries_appear_in_the_coverage_tool`은 `db*`·`dataMerge*`·공통 대화상자·패널·최근 목록 이름이 모두 `coverage`에 나오는지 고정한다.
+`every_registry_name_is_reviewed`는 새 질의와 새 편집 명령에 명시적인 결정이 있어야 통과한다. 공개 목록과 보류 목록의 중복, 사유 누락, 사용할 수 없는 제스처 대체 명령도 검사한다.
 
 **비밀.** 어떤 도구든 인수의 키(깊이 상관없이)에 `password`·`passphrase`·`secret`·`credential`·`apikey`·`accesstoken`·`bearer`가 들어 있으면 JSON-RPC `-32602`("Secrets are not accepted over MCP")로 거절한다. 응답은 값을 되풀이하지 않고 서버는 로그를 쓰지 않는다(시험 `secrets_do_not_reach_output_logs_or_files`가 표준출력·표준오류·사용자 데이터·프로젝트 파일에 값이 없음을 본다). 공개 도구의 입력·출력 스키마에 그런 이름이 생기면 서버가 시작하지 못한다. 데이터베이스 비밀번호는 사람이 앱에서 풀거나 OS 자격 증명 저장소에 저장한다.
 
@@ -317,13 +329,13 @@ npx @modelcontextprotocol/inspector@2.16.0 --cli C:/path/to/folio-mcp.exe C:/pat
 ## 한계
 
 - **프로젝트 폴더 모드는 앱과 다른 프로세스다.** 앱 화면의 선택·대화상자·열린 문서·잠금 해제한 데이터베이스 비밀번호를 공유하지 않는다. 앱이 열어 둔 문서를 같이 고치려면 `--attach`를 쓴다(위).
-- 프로젝트 폴더 모드의 도구는 9개(공개 8 + `coverage`)다. 붙은 모드는 61개(`ATTACHED` 50 + 데이터베이스 2 + 경로 9) + MCP 전용 2개다. 나머지 `edit.*`는 검토가 끝나는 대로 `attached::ATTACHED`(붙은 모드)나 `catalog::ALLOWED`(프로젝트 모드)에 올린다.
+- 프로젝트 폴더 모드의 도구는 9개(공개 8 + `coverage`)다. 앱에 연결한 뒤 `tools/list`로 전체 도구 목록을 보고, `coverage`로 도구별 허용 범위와 필요한 설정을 확인한다.
 - 붙는 것은 서버가 시작할 때 한 번 정한다. 앱을 다시 켜면(토큰이 바뀐다) MCP 서버도 다시 시작해야 한다. 한 컴퓨터에서 앱을 둘 켜면 나중에 켠 앱의 연결 파일이 이긴다.
 - 전송은 표준입출력뿐이다. 클라이언트마다 연결 설정을 사용자가 직접 한다. Claude Desktop·Codex는 형식만 적었고 실행해 보지 않았다.
 - `open`의 요약은 스프레드당 개체 100개까지 보여 준다(`itemsTruncated`). 더 보려면 `detail: "full"`을 쓴다(매우 크다).
 - Inspector 2.16.0은 Node `^22.23.4 || ^24.22.1 || >=26.12.1`을 요구한다. 이 PC의 Node 23.10에서는 경고만 나오고 동작했다.
 
-## 아직 없는 것
+## 프로젝트 폴더 모드에서 아직 없는 것
 
 INDD 직접 가져오기, 새 프로젝트 만들기, 텍스트 편집·조판, 렌더링·PDF·인쇄, 외부 자료 가져오기, 모든 엔진 명령 공개는 지원하지 않는다. 텍스트 프레임 생성도 공개하지 않는다. HTTP 전송·인증·리소스·프롬프트·샘플링·진행률·실행 중 취소·페이지 나눔은 없다. 이 도구 목록에는 완성된 범위만 들어 있다.
 

@@ -113,7 +113,12 @@ pub fn deliver(header: &Value, body: &[u8]) -> bool {
                 Err(error) => { header = json!({"ok": false, "code": "refused", "error": error, "bodyBytes": 0}); body.clear(); }
             }
         }
-        if let Some(read) = read { read.finish(&mut header); }
+        if let Some(read) = read {
+            read.finish(&mut header);
+        } else {
+            // Ordinary app commands and edits can also return a document summary.
+            crate::attach_read_reply::scrub(&mut header);
+        }
         header["id"] = own;
         let _ = reply.send((header, body));
     }

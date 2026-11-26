@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/platform-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-30363d?style=flat-square" alt="Platforms: Windows, macOS, Linux">
   <img src="https://img.shields.io/badge/engine-Rust-b7410e?style=flat-square&logo=rust&logoColor=white" alt="Engine: Rust">
   <img src="https://img.shields.io/badge/UI-Electron%20%2B%20React-47848f?style=flat-square&logo=electron&logoColor=white" alt="UI: Electron + React">
-  <img src="https://img.shields.io/badge/MCP-preview-8a63d2?style=flat-square" alt="MCP preview">
+  <img src="https://img.shields.io/badge/MCP-ready-8a63d2?style=flat-square" alt="MCP supported">
   <img src="https://img.shields.io/badge/status-alpha-e2557a?style=flat-square" alt="Status: alpha">
 </p>
 
@@ -73,9 +73,9 @@ you already have comes with you.
       text on a path, MathML equations, indexes, books, cross-references and data merge.
     </td>
     <td width="33%" valign="top">
-      <h3>🤖 AI over MCP (preview)</h3>
-      With your permission, an MCP client can work with documents, selections, pages, dialogs and panels, and make selected edits.
-      The attached server lists 178 tools, including two for checking the connection and its coverage. Saving and exporting require separate permission.
+      <h3>🤖 AI over MCP</h3>
+      With your permission, an AI can read the open document, edit text, styles, objects and pages, and produce publication files. Saving and exporting require separate permission.
+      Automated checks counted 412 tools on the connected server and completed 10 publishing workflows.
     </td>
     <td width="33%" valign="top">
       <h3>🦀 A real engine</h3>
@@ -112,7 +112,7 @@ screenshots. It uses the Batang and Malgun Gothic fonts that come with Windows; 
 
 ## 🤖 Connect an AI (MCP)
 
-The Windows and Apple Silicon downloads include the `folio-mcp` preview. On Windows, unzip the app, open a project and leave Folio running.
+The Windows and Apple Silicon downloads include the `folio-mcp` server. On Windows, unzip the app, open a project and leave Folio running.
 
 1. In **Preferences ▸ General**, turn on **Allow LLM connection (MCP)**. All three MCP switches start off. Enable **LLM may write files** if you want the client to save or export. Enable **LLM may refresh database sources** if it needs to refresh data from a database you unlocked in Folio. Enter passwords in Folio itself. MCP has no password or printer access.
 2. For **Claude Code**, replace `<app folder>` with the folder containing `Folio Studio.exe` and run:
@@ -134,9 +134,30 @@ The Windows and Apple Silicon downloads include the `folio-mcp` preview. On Wind
    }
    ```
 
-3. Ask the client to call `appConnection` and check for `attached: true`. Call `coverage` and read `attached` for the available commands, required permissions and reasons other commands are withheld. If the connection was off when the client started, turn it on in Folio and restart the MCP server.
+3. Ask the client to call `appConnection` and check for `attached: true`. In this state, the Windows release advertised 412 tools. Call `coverage` and read `attached` for the available commands, required permissions and reasons other commands are withheld. If the connection was off when the client started, turn it on in Folio and restart the MCP server.
 
 The Mac executable is at `Folio Studio.app/Contents/Resources/folio-mcp`. Linux requires a source build. The connection has been tested on Windows. macOS and Linux still need testing on those systems.
+
+### What an AI can do
+
+MCP supported means that all 99 read queries and all 9 core editing groups are available, and all 10 publishing workflows pass end to end using MCP tools alone.
+
+Of 398 registered commands, 343 are available and 55 are intentionally withheld. These cover data outside the project (32), engine process control (12), passwords and secrets (6), printers (4) and one drag-only action. Call `coverage` for the reason behind each entry.
+
+| Workflow | Windows release |
+|---|---|
+| Lay out a four-page magazine from a manuscript and three images | Passed |
+| Import IDML and fix overset text | Passed |
+| Apply a body paragraph style throughout a document | Passed |
+| Relink a placed image to its replacement | Passed |
+| Fix an issue found by preflight | Passed |
+| Export a PDF/X-4 file and verify it | Passed |
+| Merge CSV records into two business cards | Passed |
+| Replace text with a translation and preserve formatting | Passed |
+| Check a table of contents, an index and page numbers | Passed |
+| Package the document, links and report for a print shop | Passed |
+
+[Steps and results for each workflow](docs/releases/v0.2.0-alpha.md)
 
 ## 🛠 Build from source
 
@@ -200,7 +221,7 @@ third_party/          forked readers used by the INDD importer
 
 ## 🧭 Status
 
-Folio Studio is an early **alpha** (0.1). A lot works end to end — import, editing, typography, color and PDF/X output — but expect
+Folio Studio is an early **alpha** (0.2). A lot works end to end — import, editing, typography, color and PDF/X output — but expect
 rough edges and format changes before 1.0. Features that aren't supported yet are listed in the app under **Help**.
 
 ## 🤝 Contributing

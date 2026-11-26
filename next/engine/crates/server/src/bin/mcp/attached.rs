@@ -6,6 +6,33 @@ use serde_json::Value;
 
 #[path = "reads.rs"]
 pub mod reads;
+#[path = "value_tools.rs"]
+pub mod value_tools;
+
+pub fn document_tools() -> impl Iterator<Item = &'static &'static str> {
+    ATTACHED.iter().chain(value_tools::TOOLS.iter().map(|(name, _)| name))
+}
+#[path = "text_tools.rs"]
+pub mod text_tools;
+
+pub fn registry() -> &'static Value {
+    static REGISTRY: std::sync::OnceLock<Value> = std::sync::OnceLock::new();
+    REGISTRY.get_or_init(|| serde_json::from_str(include_str!("../../../../../commands.generated.json"))
+        .expect("generated command registry must be valid JSON"))
+}
+
+pub fn object_tool(name: &str) -> Option<&'static Value> {
+    static TOOLS: std::sync::OnceLock<Value> = std::sync::OnceLock::new();
+    TOOLS.get_or_init(|| serde_json::from_str(include_str!("object_tools.json")).expect("object tool definitions")).get(name)
+}
+
+pub fn legacy_tool(name: &str) -> Option<&'static Value> {
+    text_tools::legacy(name).or_else(|| object_tool(name).filter(|tool| tool.get("inputSchema").is_some()))
+}
+
+pub fn edit_example(name: &str) -> Option<&'static Value> {
+    text_tools::example(name).or_else(|| object_tool(name)?.get("example"))
+}
 
 /// User settings (`preferences`), both off by default: Preferences ▸ General.
 pub const ALLOW_CONNECTION: &str = "folio.mcp.allowConnection";
@@ -39,6 +66,45 @@ pub const ATTACHED: &[&str] = &[
     "edit.setPageSize", "edit.movePage", "edit.insertDataMergeTextField", "edit.insertDataMergeImageField",
     "edit.insertDataMergeQrField", "edit.setDataMergeComputedFields", "edit.setDataMergeRefreshMode",
     "edit.removeDataSource", "edit.mergeRecords",
+    // text & styles (mcp-c9)
+    "edit.insertText", "edit.deleteText", "edit.replaceTextRange", "edit.paragraphStyle",
+    "edit.characterStyle", "edit.textFormat", "edit.styleCreate",
+    "edit.styleEdit", "edit.styleRedefine", "edit.styleDelete",
+    "edit.findReplace", "edit.threadText", "edit.createThreadFrame",
+    "edit.textFrameOptions", "edit.toggleList", "edit.toggleNumberingRestart",
+    "edit.insertTable", "edit.deleteTable", "edit.insertRows",
+    "edit.insertColumns", "edit.deleteRows", "edit.deleteColumns",
+    "edit.applyCellStyle", "edit.clearCellOverrides", "edit.applyTableStyle",
+    "edit.clearTableOverrides", "edit.createTableStyle", "edit.editTableStyle",
+    "edit.deleteTableStyle", "edit.duplicateTableStyle", "edit.createTableStyleGroup",
+    "edit.renameTableStyleGroup", "edit.deleteTableStyleGroup", "edit.moveTableStyle",
+    "edit.duplicateTextStyle", "edit.createTextStyleGroup", "edit.moveTextStyle",
+    "edit.breakStyleLink", "edit.copyTextStyleToGroup", "edit.renameTextStyleGroup",
+    "edit.deleteTextStyleGroup", "edit.duplicateStyleGroup", "edit.applyParagraphStyleVariant",
+    "edit.setStyleShortcut", "edit.applyStyleToFrames", "edit.clearTextOverrides",
+    "edit.setGrepStyles", "edit.setNestedStyles", "edit.setLineStyles",
+    "edit.setDropCapStyle", "edit.setNumberingList", "edit.deleteNumberingList",
+    "edit.convertListsToText", "edit.convertStyleListsToText", "edit.insertFootnote",
+    "edit.insertFootnoteText", "edit.deleteFootnoteText", "edit.setFootnoteOptions",
+    "edit.insertFootnoteMarker", "edit.setEndnoteOptions", "edit.insertEndnote",
+    "edit.convertNotes", "edit.glyphReplace", "edit.createTableStyleFromSelection",
+    "edit.redefineTableStyle", "edit.breakTableStyleLink", "edit.breakCellStyleLink",
+    "edit.clearCellStyleAttributes", "edit.saveTOCStyle", "edit.deleteTOCStyle",
+    "edit.createTOC", "edit.updateTOC", "edit.addIndexTopic",
+    "edit.setIndexTopic", "edit.deleteIndexTopic", "edit.addIndexReference",
+    "edit.moveIndexReference", "edit.deleteIndexReference", "edit.addIndexCrossReference",
+    "edit.deleteIndexCrossReference", "edit.addIndexStyleReference", "edit.generateIndex",
+    "edit.setIndexGenerationStyles", "edit.setIndexSortOptions", "edit.capitalizeIndexTopics",
+    // objects, pages & output (mcp-c10)
+    "edit.delete", "edit.duplicate", "edit.group", "edit.ungroup",
+    "edit.arrange", "edit.move", "edit.align", "edit.distribute",
+    "edit.setItem", "edit.applyObjectStyle", "edit.applyObjectStyleToContent", "edit.setBlending",
+    "edit.setEffect", "edit.fit", "edit.insertPages", "edit.deletePages",
+    "edit.duplicateSpread", "edit.applyMaster", "edit.newParent", "edit.saveAsParent",
+    "edit.setSection", "edit.deleteSection", "edit.newSwatch", "edit.setSwatch",
+    "edit.deleteSwatch", "edit.newTint", "edit.setPaint", "edit.newGradient",
+    "edit.editGradient", "edit.setGradientGeometry", "edit.newLayer", "edit.setLayer",
+    "edit.moveLayer", "edit.toLayer", "edit.setPreflightProfiles", "edit.setPreflightSettings",
 ];
 
 /// Reads a database through a connection a person unlocked in the app (the password stays in the app). Only with
@@ -68,6 +134,9 @@ pub const PATHS: &[PathTool] = &[
         "linkImages", "multiple", "arrange", "rowSpacing", "columnSpacing", "removeBlankLines", "centerImage", "name"], writes: true },
     // not in the engine registry (its argument there is the prepared `source`): folio-mcp declares this tool itself
     PathTool { name: "edit.placeGraphic", fields: &["file", "id", "page", "point", "rect", "layer"], writes: true },
+    // objects, pages & output (mcp-c10)
+    PathTool { name: "edit.relinkGraphic", fields: &["id", "file"], writes: true },
+    PathTool { name: "edit.placeText", fields: &["file", "id", "page", "point", "rect", "layer", "options"], writes: true },
     PathTool { name: "edit.selectDataSource", fields: &["path", "delimiter", "encoding", "platform", "preserve_spaces"], writes: false },
     PathTool { name: "edit.importPdfComments", fields: &["path", "again"], writes: false },
     // mcp-c5: File ▸ Import of an INDD / IDML of the project into it (links outside the project are not copied in)
@@ -187,11 +256,25 @@ pub fn admit(request: &Value, database: bool, files: bool) -> Result<(), String>
         for command in commands {
             let op = command["op"].as_str().ok_or("every edit command needs op")?;
             let name = format!("edit.{op}");
+            text_tools::admit(&name, command)?;
+            let reviewed = legacy_tool(&name).or_else(|| {
+                object_tool(&name)?;
+                registry()["tools"].as_array()?.iter().find(|t| t["name"] == name)
+            });
+            if let Some(tool) = reviewed {
+                for key in command.as_object().ok_or("expected an edit command")?.keys() {
+                    if key != "op" && tool["inputSchema"]["properties"].get(key).is_none() {
+                        return Err(format!("{name} does not accept {key}"));
+                    }
+                }
+            }
             if DATABASE.contains(&name.as_str()) {
                 if !database { return database_refused(); }
             } else if let Some(tool) = path_tool(&name) {
                 path_fields(tool, command.as_object().ok_or("an edit command is a JSON object")?, &["op"])?;
                 if tool.writes && !files { return Err(FILES_REFUSED.into()); }
+            } else if let Some(fields) = value_tools::fields(&name) {
+                value_tools::admit(&name, command, fields, &["op"])?;
             } else if !ATTACHED.contains(&name.as_str()) {
                 return Err(format!("{name} is not available to an attached MCP connection"));
             }
@@ -212,6 +295,7 @@ pub fn admit(request: &Value, database: bool, files: bool) -> Result<(), String>
         return Ok(());
     }
     if let Some(read) = reads::get(cmd) {
+        if cmd == "textFind" { text_tools::admit_find_query(&request["query"])?; }
         for key in object.keys().map(String::as_str) {
             if matches!(key, "id" | "cmd") || read.fields.contains(&key) { continue; }
             if cmd != "render" && matches!(key, "resultOffset" | "resultLimit") {
@@ -224,6 +308,9 @@ pub fn admit(request: &Value, database: bool, files: bool) -> Result<(), String>
             return Err(format!("{cmd} argument {key} is not available for a read"));
         }
         return Ok(());
+    }
+    if !cmd.starts_with("edit.") && let Some(fields) = value_tools::fields(cmd) {
+        return value_tools::admit(cmd, request, fields, &["id", "cmd"]);
     }
     if !ATTACHED.contains(&cmd) || cmd.starts_with("edit.") {
         return Err(format!("{cmd} is not available to an attached MCP connection"));

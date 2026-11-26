@@ -36256,6 +36256,184 @@
       }
     },
     {
+      "name": "edit.replaceTextRange",
+      "description": "Replace the Unicode character range [start,end) as typed in a story or cell. An empty range inserts and an empty replacement deletes. One undo step.\n유니코드 문자 범위 [start,end)의 글을 입력 서식으로 한 번에 바꾼다. 빈 범위는 삽입, 빈 문자열은 삭제다.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "story": {
+            "type": "string"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "story",
+          "start",
+          "end",
+          "text"
+        ],
+        "additionalProperties": true
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "id": {},
+          "bodyBytes": {
+            "type": "integer"
+          },
+          "error": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "rev": {
+            "type": "integer"
+          },
+          "label": {
+            "type": "string"
+          },
+          "parts": {
+            "type": "array",
+            "items": {}
+          },
+          "pages": {
+            "type": "array",
+            "items": {}
+          },
+          "created": {
+            "type": "array",
+            "items": {}
+          },
+          "undo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "redo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "dirty": {
+            "type": "boolean"
+          },
+          "history": {
+            "type": "object"
+          },
+          "preview": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ms": {
+            "type": "object"
+          },
+          "overset": {
+            "type": "integer"
+          },
+          "document": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      },
+      "_meta": {
+        "description": {
+          "ko": "유니코드 문자 범위 [start,end)의 글을 입력 서식으로 한 번에 바꾼다. 빈 범위는 삽입, 빈 문자열은 삭제다.",
+          "en": "Replace the Unicode character range [start,end) as typed in a story or cell. An empty range inserts and an empty replacement deletes. One undo step."
+        },
+        "arguments": [
+          {
+            "name": "story",
+            "schema": {
+              "type": "string"
+            },
+            "rustType": "String",
+            "required": true,
+            "unit": "none",
+            "default": {
+              "kind": "none"
+            }
+          },
+          {
+            "name": "start",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rustType": "usize",
+            "required": true,
+            "unit": "text-index",
+            "default": {
+              "kind": "none"
+            }
+          },
+          {
+            "name": "end",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rustType": "usize",
+            "required": true,
+            "unit": "text-index",
+            "default": {
+              "kind": "none"
+            }
+          },
+          {
+            "name": "text",
+            "schema": {
+              "type": "string"
+            },
+            "rustType": "String",
+            "required": true,
+            "unit": "none",
+            "default": {
+              "kind": "none"
+            }
+          }
+        ],
+        "group": "edit/text",
+        "wire": {
+          "cmd": "edit",
+          "op": "replaceTextRange",
+          "container": "commands"
+        },
+        "source": "crates/edit/src/commands/mod.rs",
+        "result": "JSON-header"
+      }
+    },
+    {
       "name": "dialogState",
       "description": "Read the open common dialog and supported schemas; scope picks the document or app dialog (default: the open one, the document's first). Print and Print Presets also give the fields that do not apply to the values now with why (off) and the choices a field cannot take (offOptions).\n열린 공통 대화상자 상태와 지원하는 입력 정의를 읽는다. scope 로 문서(document)·앱(app) 대화상자를 고른다(없으면 열린 쪽, 문서가 먼저). 인쇄·인쇄 사전 설정은 지금 값에서 적용되지 않는 칸과 그 이유(off)·고를 수 없는 선택지(offOptions)도 준다.",
       "inputSchema": {

@@ -316,6 +316,7 @@ pub(super) fn edit(context: &Context<'_>, request: Request) {
             .unwrap_or_else(|| req["commands"][0]["op"].as_str().unwrap_or("edit").to_owned());
         req["label"] = json!(attached::llm_label(&label));
     }
+    let mut created_resource = None;
     let mut header = if req["cmd"] == "selectionSize" {
         edit::selection_size(&s, &req)
     } else if req["cmd"] == "editState" {
@@ -333,6 +334,10 @@ pub(super) fn edit(context: &Context<'_>, request: Request) {
         match std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| edit::run(&req, &s))) {
             Ok(Ok((next, reply))) => {
                 if let Some(n) = next {
+                    if mcp && req["commands"].as_array().is_some_and(|commands| commands.len() == 1)
+                        && reply["created"].as_array().is_some_and(Vec::is_empty) {
+                        created_resource = crate::attach_created::resource_id(&req["commands"][0]["op"], &s.doc, &n.doc);
+                    }
                     *session.lock().expect("shared state must remain unpoisoned after each operation") = Some(Arc::new(n));
                 }
                 reply
@@ -352,6 +357,7 @@ pub(super) fn edit(context: &Context<'_>, request: Request) {
         } else if mcp && matches!(req["cmd"].as_str(), Some("edit" | "undo" | "redo")) {
             // the screen draws what an attached client changed, as after its own edit (useEditingCommands)
             send(out, json!({"event": "external-edit", "path": s.source_path, "detail": {"edit": header, "source": "mcp"}}), &[]);
+            if let Some(ids) = created_resource { header["created"] = ids; }
         }
     }
     header["id"] = id;

@@ -18,6 +18,7 @@ pub const READS: &[Read] = &[
     Read { name: "convertToProfilePlan", fields: &["rgbProfile", "cmykProfile", "intent", "blackPointCompensation"] },
     Read { name: "conveyor", fields: &[] },
     Read { name: "crossReferenceTargets", fields: &[] },
+    Read { name: "dbCapabilities", fields: &[] },
     Read { name: "debugDigest", fields: &[] },
     Read { name: "describeCommands", fields: &[] },
     Read { name: "dialogPreview", fields: &[] },

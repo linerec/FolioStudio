@@ -305,6 +305,14 @@ export const LIMITS: LimitsData = {
       "top": null,
       "ko": "PDF/X-1a·X-3에서 투명하게 겹치는 단색을 평탄화할 때 해당 부분을 벡터 조각으로 보존하는 기능은 지원하지 않습니다.",
       "en": "Keeping overlapping solid colors as vector pieces when flattening transparency for PDF/X-1a or PDF/X-3 is not supported."
+    },
+    {
+      "id": "text-grep-find-change",
+      "kind": "unsupported",
+      "area": "text",
+      "top": null,
+      "ko": "찾기/바꾸기의 GREP 검색과 바꾸기는 지원하지 않습니다. 일반 글·글리프 찾기/바꾸기와 단락의 GREP 스타일은 사용할 수 있습니다.",
+      "en": "GREP Find/Change is unsupported. Literal text and glyph Find/Change and paragraph GREP styles are available."
     }
   ]
 };

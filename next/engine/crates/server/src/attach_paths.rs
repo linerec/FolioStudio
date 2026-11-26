@@ -342,6 +342,7 @@ fn app_request(request: &Value, s: Option<&crate::Session>) -> Result<(), Refuse
 /// comes, or None when the request takes no path.
 pub fn resolve(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved>, Refused> {
     let cmd = req["cmd"].as_str().unwrap_or("").to_owned();
+    if cmd == "edit" { attached::text_tools::prepare(req); }
     if matches!(cmd.as_str(), "openDialog" | "setDialogField" | "applyDialog") { return dialog(req, s); }
     if attached::reads::get(&cmd).is_some() {
         let input = attached::reads::input_file(&cmd);
@@ -439,7 +440,11 @@ pub fn resolve(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Res
             for i in edits {
                 let command = &mut req["commands"][i];
                 match command["op"].as_str().unwrap_or("") {
-                    "placeGraphic" => { let (_, native) = checked.existing(text(command, "file")?, &[])?; command["file"] = json!(native.to_string_lossy()); }
+                    "placeGraphic" | "relinkGraphic" => { let (_, native) = checked.existing(text(command, "file")?, &[])?; command["file"] = json!(native.to_string_lossy()); }
+                    "placeText" => {
+                        let (_, native) = checked.existing(text(command, "file")?, &["txt", "rtf", "docx"])?;
+                        command["file"] = json!(native.to_string_lossy());
+                    }
                     "selectDataSource" => { let (rel, _) = checked.existing(text(command, "path")?, &["csv", "txt"])?; command["path"] = json!(rel.as_str()); }
                     "importPdfComments" => { let (rel, _) = checked.existing(text(command, "path")?, &["pdf"])?; command["path"] = json!(rel.as_str()); }
                     // the parts the dialog hands over, read here from the project file (`stylesFile` reads them the same way)

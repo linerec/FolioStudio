@@ -9,11 +9,7 @@ pub const ALLOWED: &[&str] = &[
 /// Tools that exist only in the MCP server (not engine commands). They never touch the project.
 pub const NATIVE: &[&str] = &["coverage"];
 
-pub fn registry() -> &'static Value {
-    static REGISTRY: std::sync::OnceLock<Value> = std::sync::OnceLock::new();
-    REGISTRY.get_or_init(|| serde_json::from_str(include_str!("../../../../../commands.generated.json"))
-        .expect("generated command registry must be valid JSON"))
-}
+pub use super::attached::registry;
 
 pub fn registry_names() -> Vec<String> {
     registry()["tools"].as_array().unwrap().iter().filter_map(|t| t["name"].as_str().map(str::to_owned)).collect()
@@ -27,7 +23,7 @@ fn native_tool(name: &str) -> Value {
     match name {
         "coverage" => json!({
             "name": "coverage",
-            "description": "List every Folio engine command and query with its MCP status: exposed as a tool here, or withheld with the reason (secret, external-data, printer, app-state, path-io, engine-process, needs-session, edit-unreviewed). Pass name to check one. It never opens a document or touches the project.",
+            "description": "List the registry decisions for a project server and the attached app. For the app see attached.registryOpen, attached.withheld and attached.unreviewed. Pass name for the specific reason and any equivalent value tool.",
             "inputSchema": {"type":"object","properties":{"name":{"type":"string"}},"required":[],"additionalProperties":false},
             "outputSchema": {"type":"object","properties":{"ok":{"type":"boolean"},"type":{"type":"string"},"total":{"type":"integer"},
                 "exposed":{"type":"array","items":{"type":"string"}},"withheld":{"type":"array"},"unreviewed":{"type":"array"}}}
@@ -71,6 +67,21 @@ fn native_tool(name: &str) -> Value {
 
 /// A path tool of an attached connection (`attached::PATHS`): the registry tool with only the arguments the engine admits.
 fn path_tool(tool: &super::attached::PathTool) -> Value {
+    if tool.name == "edit.relinkGraphic" {
+        return json!({"name":tool.name,
+            "description":"Replace the graphic in a frame or update it from the same project-relative file. Use owner from links as id. Requires LLM may write files. Returns dirty and the LLM undo label. Example: {\"id\":\"frame1\",\"file\":\"materials/photo.png\"}.",
+            "inputSchema":{"type":"object","properties":{"id":{"type":"string"},"file":{"type":"string"}},"required":["id","file"],"additionalProperties":false},
+            "outputSchema":{"type":"object","properties":{"ok":{"type":"boolean"},"dirty":{"type":"boolean"},"label":{"type":"string"}}}});
+    }
+    if tool.name == "edit.placeText" {
+        let mut schema = native_tool("edit.placeGraphic");
+        schema["name"] = json!(tool.name);
+        let example = super::attached::text_tools::example(tool.name).expect("attached text placement example");
+        schema["description"] = json!(format!("Place a project-relative TXT, RTF or DOCX into the current document. Give a frame id or a page and rectangle. Imported styles and swatches can affect this document. Requires LLM may write files. Returns created IDs and the undo label. Example: {example}."));
+        schema["inputSchema"]["properties"]["file"]["description"] = json!("Project-relative text file to import.");
+        schema["inputSchema"]["properties"]["options"] = json!({"type":"object","description":"Text import options, for example characterSet for TXT."});
+        return schema;
+    }
     if matches!(tool.name, "edit.placeGraphic" | "edit.loadStyles") { return native_tool(tool.name); }
     let mut schema = registry()["tools"].as_array().unwrap().iter()
         .find(|t| t["name"] == tool.name).expect("attached path tool must be registered").clone();
@@ -101,6 +112,9 @@ fn read_tool(read: &super::attached::reads::Read) -> Value {
     schema["additionalProperties"] = json!(false);
     let props = schema["properties"].as_object_mut().expect("registered arguments");
     props.retain(|key, _| read.fields.contains(&key.as_str()));
+    if read.name == "textFind" {
+        props.insert("query".into(), super::attached::text_tools::find_query_schema().clone());
+    }
     let note = if read.name == "render" {
         props.insert("longEdge".into(), json!({"type":"integer","minimum":1,"maximum":2000,"description":"Longest edge in pixels, default 1200. An explicit scale is pixels per point, capped by longEdge."}));
         for key in ["guides", "selection"] { props.insert(key.into(), json!({"type":"boolean","default":false})); }
@@ -132,9 +146,34 @@ fn read_tool(read: &super::attached::reads::Read) -> Value {
 /// then the MCP-only tools. The engine checks the same list again (attached.rs `admit`).
 pub fn attached_tools() -> Vec<Value> {
     let registry = registry();
-    let mut tools: Vec<Value> = super::attached::ATTACHED.iter().chain(super::attached::DATABASE).map(|name| {
-        let mut tool = registry["tools"].as_array().unwrap().iter()
-            .find(|t| t["name"] == *name).expect("attached tool must be registered").clone();
+    let mut tools: Vec<Value> = super::attached::document_tools().chain(super::attached::DATABASE).map(|name| {
+        let mut tool = registry["tools"].as_array().unwrap().iter().find(|t| t["name"] == *name)
+            .or_else(|| super::attached::legacy_tool(name)).expect("reviewed attached tool").clone();
+        tool["name"] = json!(name);
+        if let Some(definition) = super::attached::object_tool(name) {
+            tool["description"] = definition["description"].clone();
+            tool.as_object_mut().unwrap().remove("example");
+            if tool.get("outputSchema").is_none() {
+                tool["outputSchema"] = json!({"type":"object","properties":{
+                    "created":{"type":"array","items":{"type":"string"}},
+                    "dirty":{"type":"boolean"},"label":{"type":"string"}
+                }});
+            }
+        }
+        if let Some(fields) = super::attached::value_tools::fields(name) {
+            if let Some(args) = tool["_meta"]["arguments"].as_array_mut() {
+                args.retain(|arg| arg["name"].as_str().is_some_and(|n| fields.contains(&n)));
+            }
+            super::attached::value_tools::restrict_schema(name, &mut tool["inputSchema"], fields);
+        }
+        if let Some(example) = super::attached::edit_example(name) {
+            let host = super::attached::text_tools::host_fields(name);
+            tool["inputSchema"]["properties"].as_object_mut().unwrap().retain(|key, _| !host.contains(&key.as_str()));
+            if let Some(required) = tool["inputSchema"]["required"].as_array_mut() {
+                required.retain(|key| !host.contains(&key.as_str().unwrap_or("")));
+            }
+            tool["description"] = json!(format!("{} Open document only. Returns dirty, created IDs and the LLM undo label. Example: {example}", tool["description"].as_str().unwrap_or("")));
+        }
         tool["inputSchema"]["additionalProperties"] = json!(false);
         let note = if super::attached::DATABASE.contains(name) {
             " MCP: needs Preferences ▸ General ▸ LLM may refresh database sources in Folio; uses the connection a person unlocked in the app (passwords never travel over MCP)."
@@ -158,10 +197,11 @@ pub fn attached_tools() -> Vec<Value> {
 
 /// The engine request for a registry tool (`_meta.wire`): `{"cmd":…, …arguments}`, or an edit with one command.
 pub fn request_for(name: &str, arguments: &Value) -> Result<Value, String> {
-    if name == "edit.placeGraphic" {
+    if matches!(name, "edit.placeGraphic" | "edit.relinkGraphic" | "edit.placeText") || super::attached::legacy_tool(name).is_some() {
+        let op = name.trim_start_matches("edit.");
         let mut fields = arguments.as_object().cloned().unwrap_or_default();
-        fields.insert("op".into(), json!("placeGraphic"));
-        return Ok(json!({"cmd": "edit", "label": "placeGraphic", "commands": [Value::Object(fields)]}));
+        fields.insert("op".into(), json!(op));
+        return Ok(json!({"cmd": "edit", "label": op, "commands": [Value::Object(fields)]}));
     }
     let tool = registry()["tools"].as_array().unwrap().iter().find(|t| t["name"] == name).ok_or("not a registered tool")?;
     let wire = &tool["_meta"]["wire"];

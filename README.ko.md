@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/platform-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-30363d?style=flat-square" alt="플랫폼: Windows, macOS, Linux">
   <img src="https://img.shields.io/badge/engine-Rust-b7410e?style=flat-square&logo=rust&logoColor=white" alt="엔진: Rust">
   <img src="https://img.shields.io/badge/UI-Electron%20%2B%20React-47848f?style=flat-square&logo=electron&logoColor=white" alt="화면: Electron + React">
-  <img src="https://img.shields.io/badge/MCP-preview-8a63d2?style=flat-square" alt="MCP 미리보기">
+  <img src="https://img.shields.io/badge/MCP-ready-8a63d2?style=flat-square" alt="MCP 지원">
   <img src="https://img.shields.io/badge/status-alpha-e2557a?style=flat-square" alt="상태: 알파">
 </p>
 
@@ -72,9 +72,9 @@
       색인, 책, 상호 참조, 데이터 병합.
     </td>
     <td width="33%" valign="top">
-      <h3>🤖 MCP 로 AI 와 함께 (미리보기)</h3>
-      연결을 허용하면 AI가 실행 중인 Folio에서 문서·선택·페이지·대화상자·패널을 다루고 일부 편집을 할 수 있습니다.
-      연결된 서버의 도구는 연결 상태와 지원 범위를 확인하는 두 개를 포함해 178개입니다. 저장·내보내기에는 별도 허용이 필요합니다.
+      <h3>🤖 MCP 로 AI 와 함께</h3>
+      연결을 허용하면 AI가 열린 문서를 읽고 글·스타일·개체·페이지를 편집하며 출판 파일을 만듭니다. 저장과 내보내기는 별도로 허용합니다.
+      연결된 서버의 도구 412개와 대표 작업 10개를 자동 시험으로 확인했습니다.
     </td>
     <td width="33%" valign="top">
       <h3>🦀 진짜 엔진</h3>
@@ -111,7 +111,7 @@ Windows 에 들어 있는 바탕·맑은 고딕 글꼴을 쓰며, 다른 운영�
 
 ## 🤖 AI 연결(MCP)
 
-Windows와 Apple Silicon용 ZIP에는 미리보기 서버 `folio-mcp`가 들어 있습니다. Windows에서는 압축을 풀고 Folio에서 프로젝트를 연 뒤 앱을 켜 둡니다.
+Windows와 Apple Silicon용 ZIP에는 `folio-mcp` 서버가 들어 있습니다. Windows에서는 압축을 풀고 Folio에서 프로젝트를 연 뒤 앱을 켜 둡니다.
 
 1. **환경 설정 ▸ 일반**에서 **LLM 연결(MCP) 허용**을 켭니다. MCP 스위치 세 개는 모두 기본으로 꺼져 있습니다. 저장·내보내기가 필요하면 **LLM 이 파일을 쓸 수 있음**을 켭니다. 앱에서 잠금을 푼 데이터베이스의 자료를 다시 읽게 하려면 **LLM 이 데이터베이스 원본을 새로 고칠 수 있음**을 켭니다. 비밀번호는 Folio에서 직접 입력합니다. 비밀번호와 인쇄 작업은 MCP로 전달되지 않습니다.
 2. **Claude Code**에서는 `<앱 폴더>`를 `Folio Studio.exe`가 있는 실제 폴더로 바꾸고 다음 명령을 실행합니다.
@@ -133,9 +133,30 @@ Windows와 Apple Silicon용 ZIP에는 미리보기 서버 `folio-mcp`가 들어 
    }
    ```
 
-3. AI에게 `appConnection`을 호출해 달라고 해서 `attached: true`인지 확인합니다. `coverage` 결과의 `attached`에는 쓸 수 있는 명령, 필요한 권한, 보류한 이유가 나옵니다. 연결이 꺼진 채 클라이언트를 시작했다면 Folio에서 연결을 켜고 MCP 서버를 다시 시작합니다.
+3. AI에게 `appConnection`을 호출해 달라고 해서 `attached: true`인지 확인합니다. 이때 Windows 배포본에서 확인한 도구는 412개입니다. `coverage` 결과의 `attached`에는 쓸 수 있는 명령, 필요한 권한, 보류한 이유가 나옵니다. 연결이 꺼진 채 클라이언트를 시작했다면 Folio에서 연결을 켜고 MCP 서버를 다시 시작합니다.
 
 Mac 실행 파일은 `Folio Studio.app/Contents/Resources/folio-mcp`에 있습니다. 리눅스에서는 소스로 빌드합니다. Windows에서 연결을 확인했고, 맥과 리눅스는 아직 실기에서 확인하지 못했습니다.
+
+### AI 가 할 수 있는 일
+
+MCP 지원은 읽기 질의 99/99개와 핵심 편집 묶음 9/9개를 모두 쓸 수 있고, 대표 출판 작업 10개를 MCP 도구만으로 끝까지 마쳤다는 뜻입니다.
+
+등록 명령 398개 중 343개를 쓸 수 있습니다. 프로젝트 밖 데이터 32개, 엔진 프로세스 제어 12개, 비밀번호·비밀 정보 6개, 프린터 4개, 끌기 전용 동작 한 개까지 총 55개는 의도적으로 막았습니다. 각 명령의 이유는 `coverage`에서 볼 수 있습니다.
+
+| 작업 | Windows 배포본 |
+|---|---|
+| 원고와 그림 세 장으로 4쪽 잡지 만들기 | 통과 |
+| IDML을 가져오고 넘친 글 고치기 | 통과 |
+| 본문 단락 스타일을 문서 전체에 적용하기 | 통과 |
+| 배치한 그림을 새 파일에 다시 연결하기 | 통과 |
+| 사전 검사에서 찾은 오류 고치기 | 통과 |
+| PDF/X-4로 내보내고 결과 확인하기 | 통과 |
+| CSV로 명함 두 장 만들기 | 통과 |
+| 기존 서식을 유지하면서 번역문 넣기 | 통과 |
+| 목차·색인과 쪽 번호 확인하기 | 통과 |
+| 인쇄소용 문서·링크·보고서 모으기 | 통과 |
+
+[작업별 단계 수와 배포본 시험 결과](docs/releases/v0.2.0-alpha.md)
 
 ## 🛠 소스로 빌드
 
@@ -198,7 +219,7 @@ third_party/          INDD 가져오기가 쓰는 포크한 읽기 라이브러�
 
 ## 🧭 상태
 
-Folio Studio 는 초기 **알파**(0.1)입니다. 가져오기, 편집, 조판, 색, PDF/X 출력까지 많은 것이 처음부터 끝까지 동작하지만,
+Folio Studio 는 초기 **알파**(0.2)입니다. 가져오기, 편집, 조판, 색, PDF/X 출력까지 많은 것이 처음부터 끝까지 동작하지만,
 1.0 전까지는 거친 곳과 형식 변경이 있을 수 있습니다. 아직 지원하지 않는 기능은 앱의 **도움말**에 모여 있습니다.
 
 ## 🤝 기여

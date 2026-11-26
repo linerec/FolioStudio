@@ -195,7 +195,7 @@ fn attached_policy_admits_only_the_reviewed_app_commands() {
     // against the open project: attached_path_policy below and attached_paths_stay_in_the_open_project)
     for refused in [json!({"cmd":"quit"}), json!({"cmd":"printToDevice"}), json!({"cmd":"dbConnections"}),
         json!({"cmd":"importRun","source":"a.idml","project":"C:/p"}), json!({"cmd":"package","dir":"p","roots":[]}), json!({"cmd":"projectCreate","dir":"p"}),
-        json!({"cmd":"edit.createByDrag"}), json!({"nothing":1}), edit("embedLink"), edit("relinkGraphic"),
+        json!({"cmd":"edit.createByDrag"}), json!({"nothing":1}), edit("embedLink"),
         json!({"cmd":"edit","commands":[]}), json!({"cmd":"edit","conveyor":{"item":1},"commands":[{"op":"createByDrag"}]})] {
         assert!(attached::admit(&refused, true, true).is_err(), "{refused}");
     }
@@ -210,23 +210,81 @@ fn attached_policy_admits_only_the_reviewed_app_commands() {
     assert!(refusal.contains("dbPassword") && !refusal.contains("hunter2-value"), "{refusal}");
     assert_eq!(attached::llm_label("Move"), "LLM: Move");
     assert_eq!(attached::llm_label("LLM: Move"), "LLM: Move");
+    for request in [json!({"cmd":"textFind","query":{"text":"a+","grep":true}}),
+        json!({"cmd":"edit","commands":[{"op":"findReplace","query":{"text":"a+","grep":true},"text":"b"}]})] {
+        assert!(attached::admit(&request, false, false).unwrap_err().contains("query.grep"));
+    }
 }
 
 #[test]
 fn attached_tools_come_from_the_registry_and_coverage_names_them() {
     let names = mcp::catalog::registry_names();
-    for name in attached::ATTACHED.iter().chain(attached::DATABASE) {
-        assert!(names.iter().any(|n| n == name), "{name} is not in commands.generated.json");
+    for name in attached::document_tools().chain(attached::DATABASE) {
+        assert!(names.iter().any(|n| n == name) || attached::legacy_tool(name).is_some(), "{name} has no tool declaration");
         // never a secret, a printer, a path or the engine process itself
         if let mcp::coverage::Status::Withheld(reason) = mcp::coverage::status(name) {
-            assert!(["app-state", "needs-session", "edit-unreviewed", "external-data"].contains(&reason), "{name}: {reason}");
+            assert!(["needs-session", "external-data"].contains(&reason), "{name}: {reason}");
         }
     }
     let tools = mcp::catalog::attached_tools();
-    assert_eq!(tools.len(), attached::ATTACHED.len() + attached::DATABASE.len() + attached::PATHS.len() + attached::reads::READS.len() + 2);
+    for tool in &tools {
+        let name = tool["name"].as_str().unwrap();
+        if let Some(args) = attached::edit_example(name) {
+            mcp::catalog::validate(args, &tool["inputSchema"]).unwrap_or_else(|e| panic!("{name}: {e}"));
+            let mut request = mcp::catalog::request_for(name, args).unwrap();
+            attached::admit(&request, false, true).unwrap();
+            if attached::object_tool(name).is_some() {
+                let mut extra = request.clone();
+                extra["commands"][0]["unlisted"] = json!(true);
+                assert!(attached::admit(&extra, true, true).is_err(), "{name}");
+            }
+            if name == "edit.placeText" {
+                assert!(attached::admit(&request, false, false).is_err());
+                continue;
+            }
+            attached::text_tools::prepare(&mut request);
+            serde_json::from_value::<folio_edit::Command>(request["commands"][0].clone())
+                .unwrap_or_else(|e| panic!("{name}: {e}"));
+        }
+    }
+    for command in [json!({"op":"generateIndex","include_book_documents":true}), json!({"op":"createTOC","sources":[]}),
+                    json!({"op":"placeText","source":{}}), json!({"op":"saveTOCStyle","style":{"includeBookDocuments":true}})] {
+        assert!(attached::admit(&json!({"cmd":"edit","commands":[command]}), true, true).is_err());
+    }
+    assert_eq!(tools.len(), attached::document_tools().count() + attached::DATABASE.len() + attached::PATHS.len() + attached::reads::READS.len() + 2);
+    for (name, fields) in attached::value_tools::TOOLS {
+        let tool = tools.iter().find(|t| t["name"] == *name).unwrap();
+        let schema = &tool["inputSchema"]["properties"];
+        let mut args = json!({});
+        for field in *fields {
+            assert!(schema.get(field).is_some(), "{name}.{field}");
+        }
+        assert_eq!(schema.as_object().unwrap().len(), fields.len());
+        if *name == "setViewState" { args["patch"] = json!({"zoom":1.0}); }
+        let request = mcp::catalog::request_for(name, &args).unwrap();
+        attached::admit(&request, false, false).unwrap_or_else(|e| panic!("{name}: {e}"));
+        args["unlisted"] = json!(true);
+        let extra = mcp::catalog::request_for(name, &args).unwrap();
+        assert!(attached::admit(&extra, true, true).is_err(), "{name}");
+    }
+    assert!(attached::admit(&json!({"cmd":"setViewState","patch":{"showHiddenSpreads":true}}), true, true).is_err());
+    for (name, args) in [
+        ("edit.createOutlinesRange", json!({"story":"s","start":0,"end":1})),
+        ("edit.createOutlinesKeepText", json!({"ids":["a"]})),
+        ("edit.fillPlaceholderText", json!({"story":"s","at":0})),
+        ("edit.updateCrossReference", json!({"id":"x"})),
+    ] {
+        let mut request = mcp::catalog::request_for(name, &args).unwrap();
+        attached::text_tools::prepare(&mut request);
+        serde_json::from_value::<folio_edit::Command>(request["commands"][0].clone()).unwrap();
+    }
     for read in attached::reads::READS {
         let tool = tools.iter().find(|t| t["name"] == read.name).unwrap();
-        let args = if read.name == "render" { json!({}) } else { json!({"resultLimit":1}) };
+        let args = match read.name {
+            "render" => json!({}),
+            "textFind" => json!({"query":{"text":"a"},"resultLimit":1}),
+            _ => json!({"resultLimit":1}),
+        };
         let req = mcp::catalog::request_for(read.name, &args).unwrap();
         assert_eq!(attached::admit(&req, false, false), Ok(()), "{}", read.name);
         assert_eq!(mcp::coverage::attached_status(read.name), "exposed");
@@ -243,7 +301,7 @@ fn attached_tools_come_from_the_registry_and_coverage_names_them() {
         assert!(tools.iter().any(|t| t["name"] == dialog), "{dialog}");
     }
     let report = mcp::coverage::report(&json!({})).unwrap();
-    assert_eq!(report["attached"]["exposed"].as_array().unwrap().len(), attached::ATTACHED.len() + attached::reads::READS.len());
+    assert_eq!(report["attached"]["exposed"].as_array().unwrap().len(), attached::document_tools().count() + attached::reads::READS.len());
     assert_eq!(mcp::coverage::report(&json!({"name":"openDialog"})).unwrap()["attached"], "exposed");
     assert_eq!(mcp::coverage::report(&json!({"name":"edit.dataMergeRefresh"})).unwrap()["attached"], "needsDatabaseSetting");
     assert_eq!(mcp::coverage::report(&json!({"name":"dbUnlockConnection"})).unwrap()["attached"], "withheld");
@@ -386,6 +444,14 @@ fn an_attached_client_works_in_the_app_session_and_the_screen_hears_of_it() {
     assert_eq!(client.ok("appConnection", json!({}))["attached"], true);
     let names = client.names();
     assert!(names.contains(&"openDialog".to_owned()) && names.contains(&"open".to_owned()) && !names.contains(&"projectCreate".to_owned()));
+    assert_eq!(client.ok("dbCapabilities", json!({}))["platform"], std::env::consts::OS);
+    assert_eq!(client.ok("setViewState", json!({"patch":{"zoom":1.25}}))["viewState"]["zoom"].as_f64(), Some(1.25));
+    let metadata = client.ok("edit.setFileInfo", json!({"props":{"documentTitle":"MCP"}}));
+    assert_eq!(metadata["label"], "LLM: setFileInfo");
+    let directory = data.to_string_lossy().replace('\\', "/");
+    for reply in [metadata, client.ok("documentInfo", json!({}))] {
+        assert!(!reply.to_string().replace(r"\\", "/").contains(&directory), "{reply}");
+    }
 
     // an object the LLM makes is in the app's own session: its history names the LLM, and the screen is told to draw it
     let before = app.request(json!({"cmd":"editState"}))["state"]["rev"].clone();
@@ -445,7 +511,7 @@ fn attached_path_policy() {
     // writing a file needs Preferences ▸ General ▸ LLM may write files
     for writes in [json!({"cmd":"save"}), json!({"cmd":"saveCopy","path":"b.folio"}), json!({"cmd":"exportIdml","path":"b.idml"}),
         json!({"cmd":"export","path":"b.pdf","preset":"x4"}), json!({"cmd":"dataMergeCreate","path":"d.csv"}),
-        edit(json!({"op":"placeGraphic","file":"p.png","page":"u1"}))] {
+        edit(json!({"op":"placeGraphic","file":"p.png","page":"u1"})), edit(json!({"op":"relinkGraphic","id":"u1","file":"p.png"}))] {
         assert_eq!(attached::admit(&writes, false, false).unwrap_err(), attached::FILES_REFUSED, "{writes}");
         assert_eq!(attached::admit(&writes, false, true), Ok(()), "{writes}");
     }
@@ -455,6 +521,7 @@ fn attached_path_policy() {
         edit(json!({"op":"selectDataSource","path":"d.csv","source":"file:///C:/x.csv"})),
         edit(json!({"op":"importPdfComments","path":"c.pdf","again":false,"comments":[]})),
         edit(json!({"op":"placeGraphic","file":"p.png","source":{"uri":"file:///C:/x.png"}})),
+        edit(json!({"op":"relinkGraphic","id":"u1","source":{}})),
         json!({"cmd":"dataMergeCreate","path":"d.csv","_projectImages":false})] {
         assert!(attached::admit(&skips, true, true).unwrap_err().contains("not available"), "{skips}");
     }

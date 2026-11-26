@@ -24,6 +24,7 @@
 //! they are, without image encoding. Logs go to stderr.
 
 mod attach;
+mod attach_created;
 mod attach_paths;
 mod attach_read_reply;
 mod attach_image;
@@ -698,7 +699,13 @@ fn print_command(req: &Value, s: &Session, id: &Value, out: &Out) -> Result<Valu
             };
             // content links beside the placed files (rows of their own: the counts and badges are of the files)
             // Editing rebuilds the print state while holding the editor: release print before reading it.
-            let content = s.edit.as_ref().map(|e| xlink::content_links(s, &edit::lock_for_read(e))).unwrap_or_default();
+            let content = s.edit.as_ref().map(|e| {
+                let editor = edit::lock_for_read(e);
+                if let (Some(graphics), Some(rows)) = (&editor.graphics, report["links"].as_array_mut()) {
+                    place::describe_links(graphics, rows);
+                }
+                xlink::content_links(s, &editor)
+            }).unwrap_or_default();
             report["contentLinks"] = json!(print::content_link_rows(&content, &s.doc, s.locations()));
             Ok(json!({"type": "links", "report": report}))
         }

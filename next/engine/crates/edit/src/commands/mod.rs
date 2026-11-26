@@ -335,6 +335,7 @@ commands! {
     SetStoryOrientation("setStoryOrientation") { story: String, orientation: String } => optical_margin::set_orientation;
     // Index panel > Sort Options (rest-c1, indexes/sort_options.rs): the language groups of the index (IDML IndexingSortOption): `name` (kIndexGroup_Symbol, kIndexGroup_Alphabet, kIndexGroup_Numeric, kWRIndexGroup_GreekAlphabet, kWRIndexGroup_CyrillicAlphabet, kIndexGroup_Kana, kIndexGroup_Chinese, kIndexGroup_Korean, kWRIndexGroup_ArabicAlphabet, kWRIndexGroup_HebrewAlphabet), `include` (its own section in the generated index), `priority` (order of the sections, 0 first), `header_type` (the section heading: BasicLatin, KoreanConsonant, KoreanConsonantPlusVowel, HiraganaAll, ...); unset values stay; one Undo goes back
     SetIndexSortOptions("setIndexSortOptions") { options: Vec<crate::indexes::sort_options::SortGroupChange> } => crate::indexes::set_sort_options;
+    ReplaceTextRange("replaceTextRange") { story: String, start: usize, end: usize, text: String } => crate::text::replace_range;
 }
 
 trait WireType { fn typescript() -> String; }

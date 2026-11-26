@@ -341,7 +341,7 @@ fn run_inner(req: &Value, cur: &Session) -> Result<(Option<Session>, Value), Val
                 commands = inner;
                 show = true;
             }
-            crate::toc::prepare(&mut commands,cur).map_err(|e|refusal("toc",e))?;
+            crate::toc::prepare(&mut commands,cur,req["documentOnlyTOC"] == true).map_err(|e|refusal("toc",e))?;
             crate::listconvert::prepare(&mut commands,cur).map_err(|e|refusal("lists",e))?;
             crate::xrefloc::prepare(&mut commands,cur).map_err(|e|refusal("xref",e))?;
             crate::bookindex::prepare(&mut commands,cur,&es.editor).map_err(|e|refusal("index",e))?;

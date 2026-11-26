@@ -703,6 +703,15 @@ pub(crate) fn delete(w: &mut Work<'_>, id: &str, start: usize, end: usize) -> Re
     Ok(())
 }
 
+/// Replace a selection as typed, including an empty selection or an empty replacement.
+pub(crate) fn replace_range(w: &mut Work<'_>, story: &str, start: &usize, end: &usize, text: &str) -> Result<(), EditError> {
+    delete(w, story, *start, *end)?;
+    if !text.is_empty() {
+        insert(w, story, *start, text)?;
+    }
+    Ok(())
+}
+
 /// Replaces story characters [start, end) (at least one) with `text` set in the formatting of the first replaced character
 /// (Data Merge ▸ Update Content in Data Fields: a field's new text keeps the field's formatting).
 pub(crate) fn replace_keeping_format(w: &mut Work<'_>, id: &str, start: usize, end: usize, text: &str) -> Result<(), EditError> {
