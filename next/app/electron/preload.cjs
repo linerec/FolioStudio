@@ -50,7 +50,7 @@ contextBridge.exposeInMainWorld('folio', {
   openWith: (program, file) => ipcRenderer.invoke('folio:open-with', program, file),
   fileXmp: (file) => ipcRenderer.invoke('folio:file-xmp', file),
   appInfo: () => ipcRenderer.invoke('folio:app-info'),
-  sample: () => ipcRenderer.invoke('folio:sample'),
+  sample: (kind) => ipcRenderer.invoke('folio:sample', kind),
   sampleImported: (document) => ipcRenderer.invoke('folio:sample-imported', document),
   settings: () => ipcRenderer.invoke('folio:settings'),
   saveSettings: (patch) => ipcRenderer.invoke('folio:save-settings', patch),

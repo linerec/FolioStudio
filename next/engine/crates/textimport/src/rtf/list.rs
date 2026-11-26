@@ -1,5 +1,5 @@
 //! Bulleted and numbered lists of an RTF file (`{\*\listtable ...}`, `{\*\listoverridetable ...}`, `\ls` and `\ilvl` of a paragraph) the way
-//! InDesign 2025 brings them in (oracle `docxtext-c5-rtf-l*`; measurements `artifacts/docxtext-c5-20261023/measurement/l*.idml`). It is the
+//! InDesign 2025 brings them in (oracle `docxtext-c5-rtf-l*`). It is the
 //! same list model as a Word file's (`numbering.rs`: the same list paragraph attributes, the list `Word Imported List K`), with these differences:
 //! - The indents are the paragraph's own (`\li`, `\fi`); the list level's are not read (a list paragraph with none has none).
 //! - All lists and levels use one character style, `Word Imported List Style1` (the level's own character format is not read).
@@ -10,7 +10,7 @@
 //! - The old paragraph numbering (`\pn`, `\pntext`) is no list: the numbering text is dropped and the paragraph keeps its indents.
 //! - The bullet or number written in front of the paragraph (`{\listtext ...}`) is not text of the story.
 use crate::messages::{Message, msg};
-use super::Tok;
+use super::tokens::Tok;
 use crate::StyleDef;
 use crate::numbering::{Marked, STYLE_GROUP, number_format};
 use std::collections::BTreeSet;

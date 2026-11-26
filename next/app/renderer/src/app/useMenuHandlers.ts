@@ -630,6 +630,7 @@ export function useMenuHandlers(context: AppContext): RefObject<Commands> {
       'help.limits': { run: () => setDialog('limits') },
       'help.credentialStoreTest': { run: () => setDialog('credentialStoreTest') },
       'help.sample': { run: () => { void openSample(); } },
+      'help.magazineSample': { run: () => { void openSample('magazine'); } },
       'recent.none': { label: tr('(없음)') },
       'pref.language': { run: () => void window.folio.request({ cmd: 'openDialog', dialog: 'language' }) },
     },

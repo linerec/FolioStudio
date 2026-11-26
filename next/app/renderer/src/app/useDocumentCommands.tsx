@@ -183,9 +183,9 @@ export function useDocumentCommands(state: ReturnType<typeof useAppState>) {
     openDoc(file);
   }, [loadProject, resetDocument, openDoc]);
 
-  /** Help ▸ Open Feature Sample: the Atlas INDD shipped with the app, in its own project under
+  /** Help ▸ Open Feature Sample: the Atlas IDML shipped with the app, in its own project under
    *  Documents, imported again when the app or the sample is new (electron/sample.cjs). */
-  const openSample = useCallback(async () => {
+  const openSample = useCallback(async (kind: 'atlas' | 'magazine' = 'atlas') => {
     if (doc) {
       if (!(await confirmDiscardRef.current())) return;
       try { await window.folio.request({ cmd: 'close' }); } catch { /* engine gone */ }
@@ -195,8 +195,8 @@ export function useDocumentCommands(state: ReturnType<typeof useAppState>) {
     setStage('');
     setStatus('opening');
     try {
-      const s = await window.folio.sample();
-      if ('error' in s) throw new Error(s.error === 'missing' ? tr('이 앱에 기능 표본이 들어 있지 않습니다.') : s.error);
+      const s = await window.folio.sample(kind);
+      if ('error' in s) throw new Error(s.error === 'missing' ? tr('이 앱에 선택한 샘플이 들어 있지 않습니다.') : s.error);
       if (!s.project) await createProject(s.root, 'Feature Atlas');
       if (s.import) {
         setStage('reader');

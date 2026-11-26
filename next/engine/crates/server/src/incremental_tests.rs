@@ -14,7 +14,7 @@ fn root() -> PathBuf {
 
 fn fixtures() -> Vec<PathBuf> {
     let mut out: Vec<PathBuf> = ["basic", "cjk", "wrapspan", "index-c3-ranges", "xref-fmt", "wrapjump", "anchored", "basic-margins"].iter().map(|n| root().join(format!("oracle/fixtures/{n}.idml"))).collect();
-    out.push(root().join("../fixtures/indesign-feature-atlas-20261018/InDesign_Feature_Atlas.idml"));
+    out.push(root().join("../samples/feature-atlas/Feature_Atlas.idml"));
     out.retain(|p| p.is_file());
     out
 }

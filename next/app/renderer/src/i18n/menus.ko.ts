@@ -214,6 +214,7 @@ export default {
   "command.glyphs.importSets": "글리프 세트 불러오기…",
   "command.glyphs.exportSets": "글리프 세트 내보내기…",
   "command.help.sample": "기능 표본 열기 (Atlas)",
+  "command.help.magazineSample": "잡지 샘플 열기",
   "command.help.credentialStoreTest": "비밀번호 저장소 시험…",
   "command.text.key.sizeUp": "글자 크기 키우기",
   "command.text.key.sizeDown": "글자 크기 줄이기",

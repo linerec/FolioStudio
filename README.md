@@ -110,6 +110,12 @@ Pre-built apps for **Windows** (x64) and **macOS** (Apple Silicon) are on the [R
 **Try the sample:** open the [`samples/low-water`](samples/low-water) folder with **File ▸ Open Project** to explore the magazine from the
 screenshots. It uses the Batang and Malgun Gothic fonts that come with Windows; other systems substitute them.
 
+Explore the 51-page [Feature Atlas](samples/feature-atlas) with **Help ▸ Open Feature Sample (Atlas)**. It contains 181 examples in 29 groups.
+
+Open **Help ▸ Open Magazine Sample** to edit [Riverbend Letters](samples/riverbend-letters), a 20-page Korean monthly following a market day in a fictional river town.
+
+![Riverbend Letters cover and market feature spread](docs/assets/riverbend-preview.png)
+
 ## 🤖 Connect an AI (MCP)
 
 The Windows and Apple Silicon downloads include the `folio-mcp` server. On Windows, unzip the app, open a project and leave Folio running.

@@ -1,4 +1,4 @@
-//! RTF the way InDesign's Place reads it (oracle placetext-c2; measurements in `artifacts/placetext-c2-20261023/measurement`, rtf*).
+//! RTF text import, as measured by the placetext-c2 cases.
 //!
 //! What was measured (InDesign 2025, `wordRTFImportPreferences` at its defaults), for a file without a style sheet in use:
 //! - Every paragraph is `[Normal Paragraph Style]` with the overrides `HyphenateLadderLimit=0 Hyphenation=false HyphenationZone=0`
@@ -7,7 +7,7 @@
 //! - Every range of text names its font (`AppliedFont`, the font table's entry, `\deff` when the text says none): fonts are imported here,
 //!   unlike in a .docx. A range ends where the formatting changes; the return takes the formatting of the point it stands at.
 //! - Bold and italic (`FontStyle`), size (`PointSize`, only when not the default 12 pt), underline (with `UnderlineColor` Black), strikethrough,
-//!   super- and subscript. A colour of the colour table is a new swatch: RGB 255 0 0 is `Red`, 0 0 255 `Blue`, and so on (`colour_name`);
+//!   super- and subscript. A colour of the colour table is a new swatch: RGB 255 0 0 is `Red`, 0 0 255 `Blue`, and so on;
 //!   black is no colour. `\line` is a forced line break, `\page` a return that carries `ParagraphBreakType`.
 //!
 //! A file with a style sheet (`\s1`, `\cs1`): its styles come in as styles (`style.rs`); paragraphs and runs carry only what differs from them.
@@ -16,77 +16,12 @@ use crate::{Inline, Options, PageBreaks, Paragraph, Run, SwatchDef, TextSource, 
 
 mod grid;
 mod list;
+mod resources;
 mod style;
+mod tokens;
 
-#[derive(Debug)]
-enum Tok<'a> {
-    Open,
-    Close,
-    Word(&'a [u8], Option<i32>),
-    Symbol(u8),
-    Hex(u8),
-    Text(&'a [u8]),
-}
-
-fn tokens(b: &[u8]) -> Vec<Tok<'_>> {
-    let mut out = Vec::new();
-    let mut i = 0;
-    while i < b.len() {
-        match b[i] {
-            b'{' => {
-                out.push(Tok::Open);
-                i += 1;
-            }
-            b'}' => {
-                out.push(Tok::Close);
-                i += 1;
-            }
-            b'\r' | b'\n' => i += 1,
-            b'\\' => {
-                i += 1;
-                let Some(&c) = b.get(i) else { break };
-                if c.is_ascii_alphabetic() {
-                    let start = i;
-                    while i < b.len() && b[i].is_ascii_alphabetic() {
-                        i += 1;
-                    }
-                    let name = &b[start..i];
-                    let mut param = None;
-                    let negative = b.get(i) == Some(&b'-');
-                    let digits = i + usize::from(negative);
-                    let mut end = digits;
-                    while end < b.len() && b[end].is_ascii_digit() {
-                        end += 1;
-                    }
-                    if end > digits {
-                        let v: i64 = std::str::from_utf8(&b[digits..end]).ok().and_then(|s| s.parse().ok()).unwrap_or(0);
-                        param = Some((if negative { -v } else { v }).clamp(i64::from(i32::MIN), i64::from(i32::MAX)) as i32);
-                        i = end;
-                    }
-                    if b.get(i) == Some(&b' ') {
-                        i += 1;
-                    }
-                    out.push(Tok::Word(name, param));
-                } else if c == b'\'' {
-                    let hex = b.get(i + 1..i + 3).and_then(|h| std::str::from_utf8(h).ok()).and_then(|h| u8::from_str_radix(h, 16).ok());
-                    out.push(hex.map_or(Tok::Symbol(b'\''), Tok::Hex));
-                    i += if hex.is_some() { 3 } else { 1 };
-                } else {
-                    out.push(Tok::Symbol(c));
-                    i += 1;
-                }
-            }
-            _ => {
-                let start = i;
-                while i < b.len() && !matches!(b[i], b'{' | b'}' | b'\\' | b'\r' | b'\n') {
-                    i += 1;
-                }
-                out.push(Tok::Text(&b[start..i]));
-            }
-        }
-    }
-    out
-}
+use resources::Resources;
+use tokens::Tok;
 
 /// Destinations whose content is not text of the story.
 const SKIPPED: [&str; 26] = [
@@ -286,118 +221,12 @@ fn codepage(n: i32) -> &'static encoding_rs::Encoding {
     }
 }
 
-/// The swatch name InDesign gives a colour of the colour table (measured: rtf-colors, rtf-colors2).
-fn colour_name(rgb: [u8; 3]) -> Option<String> {
-    Some(match rgb {
-        [0, 0, 0] => return None,
-        [255, 0, 0] => "Red".to_owned(),
-        [0, 0, 255] => "Blue".to_owned(),
-        [0, 255, 0] => "Bright Green".to_owned(),
-        [128, 128, 128] => "Gray-50%".to_owned(),
-        [255, 0, 255] => "Pink".to_owned(),
-        [0, 255, 255] => "Turquoise".to_owned(),
-        [255, 255, 0] => "R=255 G=255 B=0".to_owned(),
-        [255, 255, 255] => "White".to_owned(),
-        [0, 0, 128] => "Dark Blue".to_owned(),
-        [0, 128, 128] => "Teal".to_owned(),
-        [0, 128, 0] => "Green".to_owned(),
-        [128, 0, 128] => "Violet".to_owned(),
-        [128, 0, 0] => "Dark Red".to_owned(),
-        [128, 128, 0] => "Dark Yellow".to_owned(),
-        [192, 192, 192] => "Gray-25%".to_owned(),
-        [r, g, b] => format!("RTF r{r} g{g} b{b}"),
-    })
-}
-
 fn num(v: f64) -> String {
     format!("{v}")
 }
 
-struct Table {
-    fonts: Vec<(i32, String)>,
-    colors: Vec<Option<[u8; 3]>>,
-}
-
-/// The font table and the colour table (read before the text, so a table after the first text works too).
-fn tables(toks: &[Tok<'_>]) -> Table {
-    let mut t = Table { fonts: Vec::new(), colors: Vec::new() };
-    let mut depth = 0i32;
-    let mut font_depth: Option<i32> = None;
-    let mut color_depth: Option<i32> = None;
-    let (mut font, mut name, mut ignore_below): (i32, Vec<u8>, Option<i32>) = (0, Vec::new(), None);
-    let (mut rgb, mut seen) = ([0u8; 3], false);
-    let mut prev_open = false;
-    for tok in toks {
-        match tok {
-            Tok::Open => {
-                depth += 1;
-                prev_open = true;
-                continue;
-            }
-            Tok::Close => {
-                if font_depth == Some(depth) {
-                    font_depth = None;
-                }
-                if color_depth == Some(depth) {
-                    color_depth = None;
-                }
-                if ignore_below == Some(depth) {
-                    ignore_below = None;
-                }
-                depth -= 1;
-            }
-            Tok::Word(w, p) => {
-                if *w == b"fonttbl" && prev_open {
-                    font_depth = Some(depth);
-                } else if *w == b"colortbl" && prev_open {
-                    color_depth = Some(depth);
-                    (rgb, seen) = ([0; 3], false);
-                } else if font_depth.is_some() {
-                    if let (b"f", Some(n)) = (*w, p) {
-                        font = *n;
-                    }
-                } else if color_depth.is_some() {
-                    let v = p.unwrap_or(0).clamp(0, 255) as u8;
-                    match *w {
-                        b"red" => (rgb[0], seen) = (v, true),
-                        b"green" => (rgb[1], seen) = (v, true),
-                        b"blue" => (rgb[2], seen) = (v, true),
-                        _ => {}
-                    }
-                }
-            }
-            Tok::Symbol(b'*') if font_depth.is_some() => ignore_below = Some(depth),
-            Tok::Text(text) => {
-                if font_depth.is_some() && ignore_below.is_none() {
-                    for &c in *text {
-                        if c == b';' {
-                            let n = String::from_utf8_lossy(&name).trim().to_owned();
-                            if !n.is_empty() {
-                                t.fonts.push((font, n));
-                            }
-                            name.clear();
-                        } else {
-                            name.push(c);
-                        }
-                    }
-                } else if color_depth.is_some() {
-                    for &c in *text {
-                        if c == b';' {
-                            t.colors.push(seen.then_some(rgb));
-                            (rgb, seen) = ([0; 3], false);
-                        }
-                    }
-                }
-            }
-            _ => {}
-        }
-        prev_open = false;
-    }
-    t
-}
-
 struct Reader<'a> {
-    table: &'a Table,
+    resources: &'a Resources,
     default_font: i32,
     options: &'a Options,
     notes: Vec<Message>,
@@ -440,8 +269,7 @@ impl Reader<'_> {
         for note in &g.notes {
             self.note(note.clone());
         }
-        let table = self.table;
-        let mut colors = style::Colors { table, swatches: &mut self.swatches };
+        let mut colors = style::Colors { resources: self.resources, swatches: &mut self.swatches };
         let built = grid::build(g.rows, |idx| (idx > 0).then(|| colors.fill(idx, true)), Paragraph::default);
         // the table character has the formatting of the character before it; the return after it, that at the end of the last row
         let before = self.paragraphs.last().and_then(|p| p.end.as_ref().or(p.runs.last())).map(|r| (r.char_style.clone(), r.attrs.clone(), r.props.clone()));
@@ -495,8 +323,7 @@ impl Reader<'_> {
             return Vec::new();
         }
         let Some(first) = para.borders.iter().flatten().next().cloned() else { return Vec::new() };
-        let table = self.table;
-        let color = if first.color > 0 { style::Colors { table, swatches: &mut self.swatches }.fill(first.color, true) } else { "Color/Black".to_owned() };
+        let color = if first.color > 0 { style::Colors { resources: self.resources, swatches: &mut self.swatches }.fill(first.color, true) } else { "Color/Black".to_owned() };
         let mut out = vec![
             ("ParagraphBorderOn".to_owned(), "true".to_owned()),
             ("ParagraphBorderColor".to_owned(), color),
@@ -525,8 +352,8 @@ impl Reader<'_> {
     fn run(&mut self, state: &CharState, text: &str) -> Run {
         let mut attrs: Vec<(String, String)> = Vec::new();
         let mut props: Vec<(String, String, String)> = Vec::new();
-        if let Some((_, name)) = self.table.fonts.iter().find(|(n, _)| *n == state.font) {
-            props.push(("AppliedFont".into(), "string".into(), name.clone()));
+        if let Some(name) = self.resources.font_name(state.font) {
+            props.push(("AppliedFont".into(), "string".into(), name.to_owned()));
         }
         let font_style = match (state.bold, state.italic) {
             (true, true) => Some("Bold Italic"),
@@ -538,17 +365,12 @@ impl Reader<'_> {
         if state.size != 24 {
             attrs.push(("PointSize".into(), num(f64::from(state.size) / 2.0)));
         }
-        if state.color > 0 {
-            match self.table.colors.get(state.color).copied().flatten().map(|rgb| (rgb, colour_name(rgb))) {
-                Some((_, None)) | None => {}
-                Some((rgb, Some(name))) => {
-                    if !self.swatches.iter().any(|s| s.name == name) {
-                        self.swatches.push(SwatchDef { name: name.clone(), rgb, grouped: true });
-                    }
-                    // a swatch's Self writes `%` as `%25` (Gray-50%)
-                    attrs.push(("FillColor".into(), format!("Color/{}", name.replace('%', "%25"))));
-                }
+        if let Some((rgb, name)) = self.resources.swatch(state.color) {
+            if !self.swatches.iter().any(|s| s.name == name) {
+                self.swatches.push(SwatchDef { name: name.clone(), rgb, grouped: true });
             }
+            // a swatch's Self writes `%` as `%25` (Gray-50%)
+            attrs.push(("FillColor".into(), format!("Color/{}", name.replace('%', "%25"))));
         }
         if state.underline {
             attrs.push(("Underline".into(), "true".into()));
@@ -609,8 +431,7 @@ impl Reader<'_> {
 
     /// A paragraph of a style of the sheet: only what differs from the style (oracle `docxtext-c4-rtf*`).
     fn finish_styled(&mut self, para: &ParaState, pi: usize, runs: &[(CharState, String)], end: &CharState, break_type: Option<&str>) {
-        let table = self.table;
-        let name = style::register_style(&mut self.sheet, &mut self.swatches, table, pi);
+        let name = style::register_style(&mut self.sheet, &mut self.swatches, self.resources, pi);
         let style_par = self.sheet.entries[pi].par.clone();
         let (mut attrs, tabs) = style::para_diff(para, &style_par);
         // the tab list, whole, when it differs from the style's (an empty one says the paragraph has none)
@@ -633,15 +454,14 @@ impl Reader<'_> {
     }
 
     fn run_styled(&mut self, state: &CharState, text: &str, pi: usize, first: bool, prev_ul: &mut bool, lead: Option<f64>) -> Run {
-        let table = self.table;
         let cs = self.sheet.find(state.cs, true);
-        let cs_name = cs.map(|c| style::register_style(&mut self.sheet, &mut self.swatches, table, c));
+        let cs_name = cs.map(|c| style::register_style(&mut self.sheet, &mut self.swatches, self.resources, c));
         let base = self.sheet.run_base(pi, cs);
         // the underline colour "Text Color" shows up on a range after the first of its paragraph when an underline is switched off (measured t09, t14)
         let text_color = !first && (base.underline || *prev_ul);
         *prev_ul = base.underline;
-        let mut colors = style::Colors { table, swatches: &mut self.swatches };
-        let d = style::char_diff(&mut colors, table, state, &base, false, text_color, false);
+        let mut colors = style::Colors { resources: self.resources, swatches: &mut self.swatches };
+        let d = style::char_diff(&mut colors, state, &base, false, text_color, false);
         let mut props = d.props;
         if let Some(l) = lead {
             props.push(("Leading".into(), "unit".into(), num(l)));
@@ -651,10 +471,10 @@ impl Reader<'_> {
 }
 
 pub(crate) fn read(bytes: &[u8], options: &Options) -> Result<TextSource, String> {
-    let toks = tokens(bytes);
-    let table = tables(&toks);
+    let toks = tokens::tokenize(bytes);
+    let resources = resources::read(&toks);
     let mut notes_only = Vec::new();
-    let mut reader = Reader { table: &table, default_font: 0, options, notes: Vec::new(), swatches: Vec::new(), paragraphs: Vec::new(), runs: Vec::new(), sheet: style::Sheet::default(), grid: None, lists: list::Lists::default() };
+    let mut reader = Reader { resources: &resources, default_font: 0, options, notes: Vec::new(), swatches: Vec::new(), paragraphs: Vec::new(), runs: Vec::new(), sheet: style::Sheet::default(), grid: None, lists: list::Lists::default() };
     let mut cp = 1252;
     let mut uc = 1usize;
     let mut skip = 0usize;

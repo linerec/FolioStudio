@@ -568,8 +568,8 @@ ipcMain.handle('folio:file-xmp', (_e, file) => {
   return { size: stat.size, modified: stat.mtimeMs, packet: found };
 });
 // FOLIO_SAMPLE_HOME=<dir>: tests keep the sample project out of the person's Documents.
-ipcMain.handle('folio:sample', () => {
-  try { return sample.prepare({ resources: process.resourcesPath, documents: process.env.FOLIO_SAMPLE_HOME || app.getPath('documents'), engine: enginePath() }); }
+ipcMain.handle('folio:sample', (_e, kind) => {
+  try { return sample.prepare({ kind, resources: process.resourcesPath, documents: process.env.FOLIO_SAMPLE_HOME || app.getPath('documents'), engine: enginePath() }); }
   catch (e) { log(`sample: ${e.stack || e}`); return { error: String(e.message || e) }; }
 });
 ipcMain.handle('folio:sample-imported', (_e, document) => { try { return sample.imported(document); } catch (e) { log(`sample: ${e.stack || e}`); return false; } });

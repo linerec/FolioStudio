@@ -214,6 +214,7 @@ export default {
   "command.glyphs.importSets": "Load Glyph Sets…",
   "command.glyphs.exportSets": "Export Glyph Sets…",
   "command.help.sample": "Open Feature Sample (Atlas)",
+  "command.help.magazineSample": "Open Magazine Sample",
   "command.help.credentialStoreTest": "Password Store Test…",
   "command.text.key.sizeUp": "Increase Point Size",
   "command.text.key.sizeDown": "Decrease Point Size",

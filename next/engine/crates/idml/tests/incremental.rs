@@ -164,7 +164,7 @@ fn spread_children(text: &str) -> Vec<std::ops::Range<usize>> {
 fn item_fragments_equal_full_reads_across_fixtures() {
     let mut files = std::fs::read_dir(root().join("oracle/fixtures")).unwrap().filter_map(Result::ok)
         .map(|e| e.path()).filter(|p| p.extension().is_some_and(|x| x == "idml")).collect::<Vec<_>>();
-    files.push(root().join("../fixtures/indesign-feature-atlas-20261018/InDesign_Feature_Atlas.idml"));
+    files.push(root().join("../samples/feature-atlas/Feature_Atlas.idml"));
     let data = ReaderData::default();
     let mut checked = 0;
     for path in files {
@@ -257,7 +257,7 @@ fn updated_documents_equal_full_reads() {
     let mut docs: Vec<PathBuf> = std::fs::read_dir(&fixtures).expect("fixtures").flatten().map(|e| e.path()).filter(|p| p.extension().is_some_and(|x| x == "idml")).collect();
     docs.sort();
     // the Atlas holds the most kinds of content
-    docs.push(root().join("../fixtures/indesign-feature-atlas-20261018/InDesign_Feature_Atlas.idml"));
+    docs.push(root().join("../samples/feature-atlas/Feature_Atlas.idml"));
     let (mut checked, mut missing) = (0, 0);
     for d in docs.iter().filter(|d| d.exists()) {
         // a package that does not read at all (a fixture of a failure) is not a case

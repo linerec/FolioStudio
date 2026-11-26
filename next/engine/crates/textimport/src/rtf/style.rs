@@ -1,11 +1,12 @@
-//! The style sheet of an RTF file (`{\stylesheet ...}`) and how InDesign 2025 brings it in (oracle `docxtext-c4-rtf*`; measurements
-//! `artifacts/docxtext-c4-20261023/measurement/t*.idml`, rule `next/oracle/rules/docxtext-c4.ko.md`).
+//! RTF style sheets and their imported definitions (oracle docxtext-c4-rtf, rule docxtext-c4).
 //!
 //! One rule explains almost everything: InDesign reads the complete state of a style (its keywords on top of the defaults, never on
 //! top of the style it is based on), of a paragraph (since its `\pard`) and of a run, and writes a property only where that state
 //! differs from the state of its parent: a style from its base style (a root style from the defaults), a paragraph from its style,
 //! a run from its paragraph style overlaid with the properties its character style writes.
-use super::{CharState, ParaState, Table, Tok, colour_name, num, para_word, char_word};
+use super::{CharState, ParaState, char_word, num, para_word};
+use super::resources::Resources;
+use super::tokens::Tok;
 use crate::{StyleDef, SwatchDef};
 
 pub(super) const NO_PARAGRAPH_STYLE: &str = "$ID/[No paragraph style]";
@@ -196,28 +197,24 @@ pub(super) fn para_diff(own: &ParaState, base: &ParaState) -> (Vec<(String, Stri
 
 /// What building a character difference needs: the tables, and the swatches the colours it names add.
 pub(super) struct Colors<'a> {
-    pub table: &'a Table,
-    pub swatches: &'a mut Vec<SwatchDef>,
+    pub(super) resources: &'a Resources,
+    pub(super) swatches: &'a mut Vec<SwatchDef>,
 }
 
 impl Colors<'_> {
-    fn rgb(&self, idx: usize) -> Option<[u8; 3]> {
-        if idx == 0 { None } else { self.table.colors.get(idx).copied().flatten() }
-    }
-
     /// The swatch name of colour `idx` of the colour table (black: none).
     fn key(&self, idx: usize) -> String {
-        self.rgb(idx).and_then(colour_name).unwrap_or_default()
+        self.resources.swatch(idx).map(|(_, name)| name).unwrap_or_default()
     }
 
     /// `Color/<swatch>`; the swatch is added to the document's when it is new, in the colour group unless only a style's fill colour names it.
     pub(super) fn fill(&mut self, idx: usize, grouped: bool) -> String {
-        let Some(name) = self.rgb(idx).and_then(|rgb| colour_name(rgb).map(|n| (rgb, n))) else { return "Color/Black".to_owned() };
-        match self.swatches.iter_mut().find(|s| s.name == name.1) {
+        let Some((rgb, name)) = self.resources.swatch(idx) else { return "Color/Black".to_owned() };
+        match self.swatches.iter_mut().find(|s| s.name == name) {
             Some(s) => s.grouped |= grouped,
-            None => self.swatches.push(SwatchDef { name: name.1.clone(), rgb: name.0, grouped }),
+            None => self.swatches.push(SwatchDef { name: name.clone(), rgb, grouped }),
         }
-        format!("Color/{}", name.1.replace('%', "%25"))
+        format!("Color/{}", name.replace('%', "%25"))
     }
 }
 
@@ -229,7 +226,7 @@ pub(super) struct CharDiff {
 
 /// The character attributes where `own` differs from `base`. `force_color` writes the fill colour even when it is black (a root
 /// character style); `text_color` allows the "Text Color" underline colour that switching an underline off writes.
-pub(super) fn char_diff(colors: &mut Colors<'_>, table: &Table, own: &CharState, base: &CharState, force_color: bool, text_color: bool, in_style: bool) -> CharDiff {
+pub(super) fn char_diff(colors: &mut Colors<'_>, own: &CharState, base: &CharState, force_color: bool, text_color: bool, in_style: bool) -> CharDiff {
     let mut attrs: Vec<(String, String)> = Vec::new();
     let mut props: Vec<(String, String, String)> = Vec::new();
     let color_differs = colors.key(own.color) != colors.key(base.color);
@@ -254,9 +251,10 @@ pub(super) fn char_diff(colors: &mut Colors<'_>, table: &Table, own: &CharState,
     if own.strike != base.strike {
         attrs.push(("StrikeThru".into(), own.strike.to_string()));
     }
-    let font = |idx: i32| table.fonts.iter().find(|(n, _)| *n == idx).map(|(_, name)| name.clone());
-    if let Some(name) = font(own.font).filter(|n| font(base.font).as_ref() != Some(n)) {
-        props.push(("AppliedFont".into(), "string".into(), name));
+    if let Some(name) = colors.resources.font_name(own.font)
+        && Some(name) != colors.resources.font_name(base.font)
+    {
+        props.push(("AppliedFont".into(), "string".into(), name.to_owned()));
     }
     if own.underline && (!base.underline || color_differs) {
         props.push(("UnderlineColor".into(), "object".into(), colors.fill(own.color, true)));
@@ -343,28 +341,28 @@ impl Sheet {
     }
 
     /// Brings style `i` and (before it) the styles it is based on into the used list; the name of the style.
-    pub(super) fn register(&mut self, i: usize, colors: &mut Colors<'_>, table: &Table) -> String {
+    pub(super) fn register(&mut self, i: usize, colors: &mut Colors<'_>) -> String {
         let character = self.entries[i].character;
         let used = if character { &self.chr_defs } else { &self.par_defs };
         if used.iter().any(|(k, _)| *k == i) {
             return self.entries[i].name.clone();
         }
         if let Some(b) = self.base_of(i) {
-            self.register(b, colors, table);
+            self.register(b, colors);
         }
-        let def = self.definition(i, colors, table);
+        let def = self.definition(i, colors);
         let name = def.name.clone();
         if character { self.chr_defs.push((i, def)) } else { self.par_defs.push((i, def)) }
         name
     }
 
-    fn definition(&self, i: usize, colors: &mut Colors<'_>, table: &Table) -> StyleDef {
+    fn definition(&self, i: usize, colors: &mut Colors<'_>) -> StyleDef {
         let e = &self.entries[i];
         let base = self.base_of(i);
         let root = base.is_none();
         let default = CharState::new(self.deff);
         let base_chr = base.map_or(&default, |b| &self.entries[b].chr);
-        let CharDiff { mut attrs, mut props } = char_diff(colors, table, &e.chr, base_chr, root && e.character, base_chr.underline, true);
+        let CharDiff { mut attrs, mut props } = char_diff(colors, &e.chr, base_chr, root && e.character, base_chr.underline, true);
         let mut raw: Vec<(String, String, String)> = Vec::new();
         if e.character {
             if root {
@@ -388,10 +386,10 @@ impl Sheet {
                     attrs.push((k.into(), v.into()));
                 }
                 // a root style names its font (the file's default font unless it says its own)
-                if let Some((_, name)) = table.fonts.iter().find(|(n, _)| *n == e.chr.font)
+                if let Some(name) = colors.resources.font_name(e.chr.font)
                     && !props.iter().any(|(k, _, _)| k == "AppliedFont")
                 {
-                    props.insert(0, ("AppliedFont".into(), "string".into(), name.clone()));
+                    props.insert(0, ("AppliedFont".into(), "string".into(), name.to_owned()));
                 }
             }
             let (p_attrs, tabs) = para_diff(&e.par, base_par);
@@ -433,7 +431,7 @@ impl Sheet {
 }
 
 /// Brings style `i` (and the styles it is based on) into the used list; its name.
-pub(super) fn register_style(sheet: &mut Sheet, swatches: &mut Vec<SwatchDef>, table: &Table, i: usize) -> String {
-    let mut colors = Colors { table, swatches };
-    sheet.register(i, &mut colors, table)
+pub(super) fn register_style(sheet: &mut Sheet, swatches: &mut Vec<SwatchDef>, resources: &Resources, i: usize) -> String {
+    let mut colors = Colors { resources, swatches };
+    sheet.register(i, &mut colors)
 }

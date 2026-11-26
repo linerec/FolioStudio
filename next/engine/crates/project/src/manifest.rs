@@ -5,7 +5,7 @@
 //!   "format": "folio.project",
 //!   "version": 1,
 //!   "id": "3f1c…-…",                 // stable project UUID (machine settings are keyed by it)
-//!   "name": "월간 부동산뱅크",
+//!   "name": "Riverbend Letters",
 //!   "created": "2026-10-19T03:12:45Z",
 //!   "settings": { "linkPolicy": "copy", "assetsFolder": "assets", "fontsFolder": "fonts" },
 //!   "locations": [ { "name": "사진창고", "description": "공용 사진 NAS" } ]

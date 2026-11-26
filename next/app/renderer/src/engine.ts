@@ -741,7 +741,7 @@ declare global {
       fileXmp(file: string): Promise<{ size: number; modified: number; packet: string | null } | null>;
       appInfo(): Promise<{ version: string; documents: string }>;
       /** The feature sample project, ready (electron/sample.cjs). */
-      sample(): Promise<{ error: string } | { root: string; project: boolean; source: string; document: string; import: boolean; kept?: string | null }>;
+      sample(kind?: 'atlas' | 'magazine'): Promise<{ error: string } | { root: string; project: boolean; source: string; document: string; import: boolean; kept?: string | null }>;
       sampleImported(document: string): Promise<boolean>;
       settings(): Promise<Settings>;
       saveSettings(patch: Partial<Settings>): Promise<Settings>;

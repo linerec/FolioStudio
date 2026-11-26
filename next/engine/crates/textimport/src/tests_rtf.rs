@@ -1,5 +1,4 @@
-//! RTF files: the expected values are what InDesign 2025 made of the same files (artifacts/placetext-c2-20261023/measurement rtf*,
-//! next/oracle/goldens/text/placetext-rtf-*).
+//! RTF import tests, including the InDesign 2025 goldens for the placetext-rtf cases.
 use super::*;
 
 fn rtf(name: &str) -> TextSource {
@@ -8,8 +7,30 @@ fn rtf(name: &str) -> TextSource {
 }
 
 #[test]
+fn rtf_uses_the_first_matching_font_even_when_the_tables_follow_the_text() {
+    let bytes = br"{\rtf1\ansi\deff2\cf1 A\'e9\{B\}{\fonttbl{\f2 Arial;}{\f2 Courier New;}}{\colortbl;\red255\green0\blue0;}\par}";
+    let source = read_bytes(bytes, &Options::default()).unwrap();
+    assert_eq!(source.story_text(), "Aé{B}");
+    assert_eq!(source.font_families(), ["Arial"]);
+    assert_eq!(source.colors.iter().map(|swatch| swatch.name.as_str()).collect::<Vec<_>>(), ["Red"]);
+    assert!(source.paragraphs[0].runs[0].attrs.contains(&("FillColor".into(), "Color/Red".into())));
+}
+
+#[test]
+fn rtf_ignores_unknown_fonts_and_auto_or_out_of_range_colours() {
+    let bytes = br"{\rtf1\ansi{\fonttbl{\f0 Arial;}}{\colortbl\red255;}\f3\cf0 A\cf2 B\par}";
+    let source = read_bytes(bytes, &Options::default()).unwrap();
+    assert_eq!(source.story_text(), "AB");
+    assert!(source.font_families().is_empty());
+    assert!(source.colors.is_empty());
+    for run in &source.paragraphs[0].runs {
+        assert!(run.attrs.iter().all(|(key, _)| key != "FillColor"));
+    }
+}
+
+#[test]
 fn an_rtf_style_sheet_brings_its_styles_and_only_the_differences() {
-    // measured: docxtext3-r01 / artifacts/docxtext-c4-20261023/measurement/r01.idml
+    // measured: docxtext3-r01
     let s = rtf("docxtext3-r01.rtf");
     assert_eq!(s.paragraph_styles.iter().map(|d| d.name.as_str()).collect::<Vec<_>>(), ["Normal", "heading 1", "Quote"]);
     let kv = |attrs: &[(String, String)]| attrs.iter().map(|(k, v)| format!("{k}={v}")).collect::<Vec<_>>();
@@ -90,7 +111,7 @@ fn table_of(p: &Paragraph) -> &Table {
 
 #[test]
 fn an_rtf_table_is_a_paragraph_of_its_own_with_the_grid_of_all_its_rows() {
-    // measured: artifacts/docxtext-c5-20261023/measurement/w01, w09, w10, w17 (docxtext-c5-rtf-w*)
+    // measured: docxtext-c5-rtf-w01, w09, w10, w17
     let s = rtf("docxtext5-w01.rtf");
     assert_eq!(s.paragraphs.iter().map(Paragraph::text).collect::<Vec<_>>(), ["before", "\u{16}", "after"]);
     let t = table_of(&s.paragraphs[1]);

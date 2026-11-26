@@ -109,6 +109,12 @@
 **견본 열어 보기:** [`samples/low-water`](samples/low-water) 폴더를 **파일 ▸ 프로젝트 열기**로 열면 화면 속 잡지를 직접 볼 수 있습니다.
 Windows 에 들어 있는 바탕·맑은 고딕 글꼴을 쓰며, 다른 운영체제에서는 비슷한 글꼴로 바꿔 보여 줍니다.
 
+**도움말 ▸ 기능 표본 열기 (Atlas)**에서 51쪽짜리 [기능 견본](samples/feature-atlas)을 열 수 있습니다. 29개 분류에 표본 181개가 있습니다.
+
+**도움말 ▸ 잡지 샘플 열기**에서 가상의 강변 도시 가람솔의 장날을 담은 20쪽 한인 생활 월간지 [물굽이 서간](samples/riverbend-letters)을 열어 편집할 수 있습니다.
+
+![물굽이 서간 창간호 표지와 시장 특집 펼침면](docs/assets/riverbend-preview.png)
+
 ## 🤖 AI 연결(MCP)
 
 Windows와 Apple Silicon용 ZIP에는 `folio-mcp` 서버가 들어 있습니다. Windows에서는 압축을 풀고 Folio에서 프로젝트를 연 뒤 앱을 켜 둡니다.

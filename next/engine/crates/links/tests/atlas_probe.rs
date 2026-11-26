@@ -5,7 +5,7 @@ use folio_links::{ColorSpace, ImageFormat, probe};
 use std::path::PathBuf;
 
 fn links_dir() -> Option<PathBuf> {
-    let d = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../../../../fixtures/indesign-feature-atlas-20261018/Links");
+    let d = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../../../../samples/feature-atlas/Links");
     d.is_dir().then_some(d)
 }
 

@@ -124,20 +124,12 @@ def assemble_windows(built):
     return out
 
 
-SAMPLE = os.path.join(REPO, 'fixtures', 'indesign-feature-atlas-20261018')
-
-
 def copy_sample(res):
-    """The feature sample (Help > Open Feature Sample, electron/sample.cjs): the Atlas INDD and
-    its links, all made for Folio's tests, into resources/samples/feature-atlas."""
-    if not os.path.isdir(SAMPLE):
-        print('Skipping optional feature sample (sample files absent).')
-        return
-    out = os.path.join(res, 'samples', 'feature-atlas')
-    os.makedirs(os.path.join(out, 'Links'))
-    shutil.copy2(os.path.join(SAMPLE, 'InDesign_Feature_Atlas.indd'), out)
-    for f in sorted(os.listdir(os.path.join(SAMPLE, 'Links'))):
-        shutil.copy2(os.path.join(SAMPLE, 'Links', f), os.path.join(out, 'Links', f))
+    """Bundle the IDML atlas and the editable magazine with their relative assets."""
+    for name in ('feature-atlas', 'riverbend-letters'):
+        source = os.path.join(REPO, 'samples', name)
+        shutil.copytree(source, os.path.join(res, 'samples', name),
+                        ignore=shutil.ignore_patterns('.folio'))
 
 
 def smoke(folder):
@@ -277,7 +269,7 @@ Mac
 - 이 폴더 안에서 zip을 풀지 마세요. 풀린 앱이 모든 컴퓨터로 동기화됩니다.
 
 기능 표본 (개발 중 확인용)
-- 시작 화면의 "기능 표본 열기 (Atlas)" 또는 도움말 ▸ 기능 표본 열기를 누르면 InDesign_Feature_Atlas.indd(51쪽, 표본 181개)가 바로 열립니다.
+- 시작 화면의 "기능 표본 열기 (Atlas)" 또는 도움말 ▸ 기능 표본 열기를 누르면 Feature_Atlas.idml(51쪽, 표본 181개)가 바로 열립니다.
 - 그 컴퓨터의 문서 폴더 안 Folio Studio ▸ Feature Atlas 프로젝트에 놓입니다. 앱이 새 빌드로 바뀌면 다시 가져와 최신 결과를 보여 줍니다.
 - 표본을 고쳐서 저장했다면 그 파일은 그대로 두고, 새로 가져온 것은 날짜가 붙은 이름이 됩니다.
 

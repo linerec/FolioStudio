@@ -236,7 +236,7 @@ def assemble(p, arch, built, dist, tool):
     shutil.copytree(dist, appdir / 'dist')
     for key, dest in [('engine', 'folio-engine'), ('mcp', 'folio-mcp'), ('reader', 'folio-indd-reader')]:
         shutil.copy2(built[key], res / dest)
-    p.copy_sample(str(res))
+    p.copy_sample(res)
     # No fonts, ICC files, Adobe assets, or machine-specific project paths are bundled.
     entitlements = stage / 'entitlements.plist'
     entitlements.write_bytes(plistlib.dumps({

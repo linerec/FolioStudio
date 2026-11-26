@@ -190,7 +190,7 @@ export function StartScreen({
   onImport: (path?: string) => void;
   onOpenRecentProject: (p: RecentProject) => void;
   /** The feature sample (Atlas) shipped with the app, in one click. */
-  onOpenSample: () => void;
+  onOpenSample: (kind?: 'atlas' | 'magazine') => void;
 }) {
   // The start sheet (uix-b3): the brand line, the actions in a column (the one primary first), the recent lists beside them, and on
   // the first run (no recent project) the three steps of a project folder in place of an empty list. Trim marks frame the sheet (CSS).
@@ -209,7 +209,8 @@ export function StartScreen({
           <button className="primary" onClick={onNewProject}><Icon name="plus" size={16} />{tr('새 프로젝트…')}</button>
           <button onClick={onOpenProject}><Icon name="folder" size={16} />{tr('프로젝트 열기…')}</button>
           <button onClick={() => onImport()}><Icon name="file" size={16} />{tr('InDesign 문서 가져오기…')}</button>
-          <button className="sample" onClick={onOpenSample} title={tr('InDesign_Feature_Atlas.indd (51쪽, 표본 181개) · 문서/Folio Studio/Feature Atlas')}><Icon name="pages" size={16} />{tr('기능 표본 열기 (Atlas)')}</button>
+          <button className="sample" onClick={() => onOpenSample('atlas')} title={tr('Feature_Atlas.idml (51쪽, 표본 181개) · 문서/Folio Studio/Feature Atlas')}><Icon name="pages" size={16} />{tr('기능 표본 열기 (Atlas)')}</button>
+          <button className="sample" onClick={() => onOpenSample('magazine')}><Icon name="pages" size={16} />{tr('잡지 샘플 열기')}</button>
         </nav>
         <div className="start-lists">
           <section aria-labelledby="start-recent-projects">
@@ -250,7 +251,7 @@ export function StartScreen({
 }
 
 /** A project open, no document: the project's name and place, and what to do next (new document, import, the sample). */
-export function ProjectHome({ project, onNewDocument, onImport, onOpenSample }: { project: ProjectInfo; onNewDocument?: () => void; onImport: () => void; onOpenSample: () => void }) {
+export function ProjectHome({ project, onNewDocument, onImport, onOpenSample }: { project: ProjectInfo; onNewDocument?: () => void; onImport: () => void; onOpenSample: (kind?: 'atlas' | 'magazine') => void }) {
   return (
     <div className="project-home">
       <header className="start-head">
@@ -263,7 +264,8 @@ export function ProjectHome({ project, onNewDocument, onImport, onOpenSample }: 
       <div className="start-actions project-home-actions">
         {onNewDocument && <button className="primary" onClick={onNewDocument}><Icon name="newPage" size={16} />{tr('새 문서…')}</button>}
         <button onClick={onImport}><Icon name="file" size={16} />{tr('InDesign 문서 가져오기…')}</button>
-        <button className="sample" onClick={onOpenSample} title={tr('InDesign_Feature_Atlas.indd (51쪽, 표본 181개) · 문서/Folio Studio/Feature Atlas')}><Icon name="pages" size={16} />{tr('기능 표본 열기 (Atlas)')}</button>
+        <button className="sample" onClick={() => onOpenSample('atlas')} title={tr('Feature_Atlas.idml (51쪽, 표본 181개) · 문서/Folio Studio/Feature Atlas')}><Icon name="pages" size={16} />{tr('기능 표본 열기 (Atlas)')}</button>
+        <button className="sample" onClick={() => onOpenSample('magazine')}><Icon name="pages" size={16} />{tr('잡지 샘플 열기')}</button>
       </div>
       <p className="start-hint"><Icon name="project" size={16} /><span>{tr('오른쪽 프로젝트 패널에서 문서를 두 번 눌러 엽니다. InDesign 문서는 ＋ 로 가져옵니다.')}</span></p>
     </div>

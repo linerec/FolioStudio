@@ -239,6 +239,7 @@ const FOLIO_SPECS: Record<string, Spec> = {
   'glyphs.importSets': { label: '글리프 세트 불러오기…' },
   'glyphs.exportSets': { label: '글리프 세트 내보내기…' },
   'help.sample': { label: '기능 표본 열기 (Atlas)' },
+  'help.magazineSample': { label: '잡지 샘플 열기' },
   // 도움말 ▸ 진단 (dbplatform-c1)
   'help.credentialStoreTest': { label: '비밀번호 저장소 시험…' },
   // tools (keys only; the tools panel has the names)

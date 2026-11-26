@@ -1688,6 +1688,7 @@ export const MAIN_MENUS: MenuDef[] = [
     ]),
     S,
     c('help.sample'),
+    c('help.magazineSample'),
     S,
     c('help.about'),
   ] },
