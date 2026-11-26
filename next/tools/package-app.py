@@ -12,7 +12,7 @@ target directory for the Windows build. The running app (next/engine/target) is 
 A dirty work tree is refused unless --allow-dirty: a deployed build must match a commit.
 
 DIR layout (only these names are written; nothing else in DIR is touched):
-  Windows/                    the app (Folio Studio.exe + resources/app, engine, INDD reader)
+  Windows/                    the app (Folio Studio.exe + resources/app, engine, MCP, INDD reader)
   Folio Studio (Windows).cmd  launcher: copies Windows/ to %LOCALAPPDATA%/FolioStudio/app
                               and starts it there, so the synced copy is never locked
   BUILD.json                  commit, time, file hashes (written last)
@@ -83,13 +83,14 @@ def build_windows():
     engine_target = target_override or os.path.join(TARGET, 'engine')
     reader_target = target_override or os.path.join(TARGET, 'reader')
     run(['cargo', 'build', '--release', '--manifest-path', os.path.join(NEXT, 'engine', 'Cargo.toml'),
-         '-p', 'folio-engine', '--target-dir', engine_target], env=env)
+         '-p', 'folio-engine', '--bin', 'folio-engine', '--bin', 'folio-mcp', '--target-dir', engine_target], env=env)
     run(['cargo', 'build', '--release', '--manifest-path', os.path.join(REPO, 'native', 'indd-reader', 'Cargo.toml'),
          '--target-dir', reader_target], env=env)
     dist = os.path.join(WORK, 'dist')
     run(f'npx vite build --outDir "{dist}" --emptyOutDir', cwd=APP)
     return {
         'engine': os.path.join(REPO, engine_target, 'release', 'folio-engine.exe'),
+        'mcp': os.path.join(REPO, engine_target, 'release', 'folio-mcp.exe'),
         'reader': os.path.join(REPO, reader_target, 'release', 'folio-indd-reader.exe'),
         'dist': dist,
     }
@@ -117,6 +118,7 @@ def assemble_windows(built):
     shutil.copytree(built['dist'], os.path.join(app, 'dist'))
     # main.cjs looks for the engine in resources/, the engine for the reader beside itself
     shutil.copy2(built['engine'], os.path.join(res, 'folio-engine.exe'))
+    shutil.copy2(built['mcp'], os.path.join(res, 'folio-mcp.exe'))
     shutil.copy2(built['reader'], os.path.join(res, 'folio-indd-reader.exe'))
     copy_sample(res)
     return out
@@ -245,6 +247,7 @@ set "SRC=%~dp0Windows"
 set "DST=%LOCALAPPDATA%\FolioStudio\app"
 if not exist "%SRC%\Folio Studio.exe" goto wait_for_sync
 if not exist "%SRC%\resources\folio-engine.exe" goto wait_for_sync
+if not exist "%SRC%\resources\folio-mcp.exe" goto wait_for_sync
 if not exist "%SRC%\resources\folio-indd-reader.exe" goto wait_for_sync
 if not exist "%SRC%\resources\app\package.json" goto wait_for_sync
 robocopy "%SRC%" "%DST%" /MIR /R:0 /W:0 /NFL /NDL /NJH /NJS /NP >nul
@@ -333,6 +336,7 @@ def main():
         'subject': git('log', '-1', '--format=%s'),
         'built': datetime.datetime.now().astimezone().isoformat(timespec='seconds'),
         'engine': sha256(os.path.join(folder, 'resources', 'folio-engine.exe')),
+        'mcp': sha256(os.path.join(folder, 'resources', 'folio-mcp.exe')),
         'reader': sha256(os.path.join(folder, 'resources', 'folio-indd-reader.exe')),
     }}
     print(f'assembled {folder} ({commit}); smoke {shot}')

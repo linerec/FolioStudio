@@ -145,11 +145,17 @@ impl Server {
                             return Some(error(id, -32602, &message));
                         }
                         let called = self.call(name, &arguments);
-                        let (result, failed) = match called {
+                        let (mut result, failed) = match called {
                             Ok(value) => (value, false),
                             Err(refused) => (refused, true),
                         };
-                        Ok(json!({"content":[{"type":"text","text":result.to_string()}],"structuredContent":result,"isError":failed}))
+                        let content = if name == "render" && !failed && result["type"] == "pageImage" {
+                            json!({"type":"image","data":result["png"].take(),"mimeType":"image/png"})
+                        } else {
+                            json!({"type":"text","text":result.to_string()})
+                        };
+                        if name == "render" && let Some(obj) = result.as_object_mut() { obj.remove("png"); }
+                        Ok(json!({"content":[content],"structuredContent":result,"isError":failed}))
                     }
                 }
             }

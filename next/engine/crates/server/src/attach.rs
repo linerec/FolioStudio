@@ -35,10 +35,12 @@ static GENERATION: AtomicU64 = AtomicU64::new(0);
 static CONNECTIONS: AtomicU64 = AtomicU64::new(0);
 type Reply = (Value, Vec<u8>);
 /// Routed request id → the client's own id and where its reply goes.
-static ROUTES: Mutex<BTreeMap<String, (Value, mpsc::Sender<Reply>)>> = Mutex::new(BTreeMap::new());
+static ROUTES: Mutex<BTreeMap<String, (Value, mpsc::Sender<Reply>, Option<crate::attach_read_reply::ReadReply>)>> = Mutex::new(BTreeMap::new());
 /// Routed request id → the project root its paths were relative to (the reply shows paths relative to it) and the paths to
 /// check again when the reply comes (attach_paths.rs).
 static ROOTS: Mutex<BTreeMap<String, crate::attach_paths::Resolved>> = Mutex::new(BTreeMap::new());
+
+pub fn routed(id: &str) -> bool { id.starts_with(PREFIX) }
 
 /// The reply to the attached request `id` names paths relative to the root, not this machine's folders, once its paths are
 /// checked again (a folder swapped for a link while the command ran turns the reply into a refusal).
@@ -102,7 +104,7 @@ pub fn deliver(header: &Value, body: &[u8]) -> bool {
     let Some(id) = header["id"].as_str().filter(|id| id.starts_with(PREFIX)) else { return false };
     // progress events of an attached request are not its reply (and not the screen's)
     if header.get("event").is_some() { return true; }
-    if let Some((own, reply)) = ROUTES.lock().expect("attach routes").remove(id) {
+    if let Some((own, reply, read)) = ROUTES.lock().expect("attach routes").remove(id) {
         let mut header = header.clone();
         let mut body = body.to_vec();
         if let Some(resolved) = ROOTS.lock().expect("attach roots").remove(id) {
@@ -111,6 +113,7 @@ pub fn deliver(header: &Value, body: &[u8]) -> bool {
                 Err(error) => { header = json!({"ok": false, "code": "refused", "error": error, "bodyBytes": 0}); body.clear(); }
             }
         }
+        if let Some(read) = read { read.finish(&mut header); }
         header["id"] = own;
         let _ = reply.send((header, body));
     }
@@ -188,7 +191,8 @@ fn serve<S: Read + Write>(stream: S, reader: impl Read, generation: u64, token: 
         count += 1;
         let routed = format!("{PREFIX}{connection}:{count}");
         let (reply_tx, reply_rx) = mpsc::channel();
-        ROUTES.lock().expect("attach routes").insert(routed.clone(), (own.clone(), reply_tx));
+        let read = crate::attach_read_reply::ReadReply::take(&mut request);
+        ROUTES.lock().expect("attach routes").insert(routed.clone(), (own.clone(), reply_tx, read));
         request["id"] = json!(routed);
         if tx.send(Incoming::Line { text: request.to_string(), mcp: true }).is_err() {
             refuse(&mut out, &own, "closed", "the Folio engine is ending");

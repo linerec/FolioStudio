@@ -25,6 +25,8 @@
 
 mod attach;
 mod attach_paths;
+mod attach_read_reply;
+mod attach_image;
 #[path = "bin/mcp/attached.rs"]
 mod attached;
 // the project MCP server's path checks (mcp-c1), reused for an attached connection's paths
@@ -683,8 +685,10 @@ fn print_command(req: &Value, s: &Session, id: &Value, out: &Out) -> Result<Valu
     match req["cmd"].as_str().unwrap_or("") {
         "links" => {
             let roots: Vec<PathBuf> = req["roots"].as_array().map(|a| a.iter().filter_map(Value::as_str).map(PathBuf::from).collect()).unwrap_or_default();
-            let state = print::build_links(&s.doc, s.source_dir.as_deref(), &roots);
-            *s.print.lock().expect("shared state must remain unpoisoned after each operation") = Some(state);
+            if !id.as_str().is_some_and(attach::routed) {
+                let state = print::build_links(&s.doc, s.source_dir.as_deref(), &roots);
+                *s.print.lock().expect("shared state must remain unpoisoned after each operation") = Some(state);
+            }
             // effective resolution comes from the checks' own reading of each placement
             let images = print::image_facts(&s.preflight(false));
             let mut report = {

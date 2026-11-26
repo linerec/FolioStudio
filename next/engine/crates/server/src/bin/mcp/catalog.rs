@@ -94,6 +94,40 @@ fn path_tool(tool: &super::attached::PathTool) -> Value {
     schema
 }
 
+fn read_tool(read: &super::attached::reads::Read) -> Value {
+    let mut tool = registry()["tools"].as_array().unwrap().iter()
+        .find(|t| t["name"] == read.name).expect("registered read").clone();
+    let schema = &mut tool["inputSchema"];
+    schema["additionalProperties"] = json!(false);
+    let props = schema["properties"].as_object_mut().expect("registered arguments");
+    props.retain(|key, _| read.fields.contains(&key.as_str()));
+    let note = if read.name == "render" {
+        props.insert("longEdge".into(), json!({"type":"integer","minimum":1,"maximum":2000,"description":"Longest edge in pixels, default 1200. An explicit scale is pixels per point, capped by longEdge."}));
+        for key in ["guides", "selection"] { props.insert(key.into(), json!({"type":"boolean","default":false})); }
+        "Return one PNG image and its width and height. page is zero-based. region is [left, top, right, bottom] in points from the page's top-left corner. guides and selection draw overlays."
+    } else {
+        props.insert("resultOffset".into(), json!({"type":"integer","minimum":0}));
+        props.insert("resultLimit".into(), json!({"type":"integer","minimum":1,"maximum":32768}));
+        "Returns the query result. Large results or an explicit resultOffset/resultLimit return {chunk,offset,nextOffset,total} in Unicode characters of serialized JSON. Repeat the same query with nextOffset until null."
+    };
+    if let Some(required) = schema["required"].as_array_mut() {
+        required.retain(|v| v.as_str().is_some_and(|key| read.fields.contains(&key)));
+    }
+    let fields = if read.fields.is_empty() { "none".into() } else { read.fields.join(", ") };
+    let output = tool["outputSchema"]["properties"].as_object().into_iter().flatten()
+        .map(|(k,_)| k.as_str()).collect::<Vec<_>>().join(", ");
+    let path = if super::attached::reads::input_file(read.name).is_some() { " The input file must already exist inside the open project." } else { "" };
+    let detail = if read.name == "fileMetadata" { " info contains size, modified and parsed XMP fields." } else { "" };
+    tool["description"] = json!(format!("{} Attached read. Arguments: {}. Result fields: {}. {note}{path}{detail}",
+        tool["description"].as_str().unwrap_or("").lines().next().unwrap_or(""), fields, output));
+    if read.name == "render" {
+        tool["description"] = json!(format!("Render a page of the open document. Arguments: {fields}. {note} Image metadata: type, page, width, height, region, selection, guides."));
+    }
+    // A chunk and an image's metadata are also valid structured results.
+    tool["outputSchema"] = json!({"type":"object"});
+    tool
+}
+
 /// The tools of a connection attached to the running app: `attached::ATTACHED` and `attached::DATABASE` from the registry,
 /// then the MCP-only tools. The engine checks the same list again (attached.rs `admit`).
 pub fn attached_tools() -> Vec<Value> {
@@ -113,6 +147,7 @@ pub fn attached_tools() -> Vec<Value> {
         tool
     }).collect();
     // the project paths (MCP.ko.md "경로를 받는 도구와 경로 규칙"), before the MCP-only tools
+    tools.extend(super::attached::reads::READS.iter().map(read_tool));
     tools.extend(super::attached::PATHS.iter().map(path_tool));
     tools.extend(["coverage", "appConnection"].iter().map(|name| native_tool(name)));
     for tool in &tools {

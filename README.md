@@ -74,8 +74,8 @@ you already have comes with you.
     </td>
     <td width="33%" valign="top">
       <h3>🤖 AI over MCP (preview)</h3>
-      The <code>folio-mcp</code> server attaches to a running Folio so Claude or another MCP client can open documents, select, fill dialogs
-      and make edits — only with the switches you turn on in Preferences. About 70 tools so far; built from source for now.
+      With your permission, an MCP client can work with documents, selections, pages, dialogs and panels, and make selected edits.
+      The attached server lists 178 tools, including two for checking the connection and its coverage. Saving and exporting require separate permission.
     </td>
     <td width="33%" valign="top">
       <h3>🦀 A real engine</h3>
@@ -109,6 +109,34 @@ Pre-built apps for **Windows** (x64) and **macOS** (Apple Silicon) are on the [R
 
 **Try the sample:** open the [`samples/low-water`](samples/low-water) folder with **File ▸ Open Project** to explore the magazine from the
 screenshots. It uses the Batang and Malgun Gothic fonts that come with Windows; other systems substitute them.
+
+## 🤖 Connect an AI (MCP)
+
+The Windows and Apple Silicon downloads include the `folio-mcp` preview. On Windows, unzip the app, open a project and leave Folio running.
+
+1. In **Preferences ▸ General**, turn on **Allow LLM connection (MCP)**. All three MCP switches start off. Enable **LLM may write files** if you want the client to save or export. Enable **LLM may refresh database sources** if it needs to refresh data from a database you unlocked in Folio. Enter passwords in Folio itself. MCP has no password or printer access.
+2. For **Claude Code**, replace `<app folder>` with the folder containing `Folio Studio.exe` and run:
+
+   ```sh
+   claude mcp add --transport stdio folio -- "<app folder>/resources/folio-mcp.exe" --attach
+   ```
+
+   For **Claude Desktop**, add this entry to `mcpServers` in its configuration, using your actual path, then restart Claude Desktop:
+
+   ```json
+   {
+     "mcpServers": {
+       "folio": {
+         "command": "C:/Apps/Folio Studio/resources/folio-mcp.exe",
+         "args": ["--attach"]
+       }
+     }
+   }
+   ```
+
+3. Ask the client to call `appConnection` and check for `attached: true`. Call `coverage` and read `attached` for the available commands, required permissions and reasons other commands are withheld. If the connection was off when the client started, turn it on in Folio and restart the MCP server.
+
+The Mac executable is at `Folio Studio.app/Contents/Resources/folio-mcp`. Linux requires a source build. The connection has been tested on Windows. macOS and Linux still need testing on those systems.
 
 ## 🛠 Build from source
 

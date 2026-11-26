@@ -105,11 +105,30 @@ pub fn status(name: &str) -> Status {
 pub fn attached_status(name: &str) -> &'static str {
     if super::attached::DATABASE.contains(&name) { "needsDatabaseSetting" }
     else if let Some(tool) = super::attached::path_tool(name) { if tool.writes { "needsFileSetting" } else { "exposed" } }
-    else if super::attached::ATTACHED.contains(&name) { "exposed" }
+    else if super::attached::reads::get(name).is_some() || super::attached::ATTACHED.contains(&name) { "exposed" }
     else { "withheld" }
 }
 
+fn attached_reason(name: &str) -> Option<&'static str> {
+    if attached_status(name) != "withheld" { return None; }
+    Some(match name {
+        "dataMergeExportPdf" => "file-write",
+        "parentsFile" => "external-link",
+        "printPresets" => "printer",
+        "userSettings" => "private-settings",
+        "arrangeByColumns" | "arrangeByRows" | "textCursor" | "copy" => "changes-state",
+        _ => match status(name) { Status::Withheld(id) => id, _ => "unreviewed" },
+    })
+}
+
 pub fn why(reason: &str) -> &'static str {
+    match reason {
+        "file-write" => return "Produces a new PDF on disk; it needs a reviewed output path and the file-write setting.",
+        "external-link" => return "Parent imports can resolve linked files outside the open project.",
+        "private-settings" => return "Arbitrary personal preferences can contain credentials and private paths.",
+        "changes-state" => return "Changes the clipboard, window arrangement or insertion formatting.",
+        _ => {}
+    }
     REASONS.iter().find(|r| r.id == reason).map_or("", |r| r.text)
 }
 
@@ -131,6 +150,10 @@ pub fn report(args: &Value) -> Result<Value, String> {
             Status::Unreviewed => json!({"ok":true,"type":"coverage","name":name,"status":"unreviewed"}),
         };
         reply["attached"] = json!(attached_status(name));
+        if let Some(reason) = attached_reason(name) {
+            reply["attachedReason"] = json!(reason);
+            reply["attachedWhy"] = json!(why(reason));
+        }
         return Ok(reply);
     }
     let mut exposed = Vec::new();
@@ -145,10 +168,16 @@ pub fn report(args: &Value) -> Result<Value, String> {
     }
     let withheld: Vec<Value> = groups.into_iter().filter(|(_, list)| !list.is_empty())
         .map(|(id, list)| json!({"reason":id,"why":why(id),"count":list.len(),"names":list})).collect();
+    let mut attached_groups = std::collections::BTreeMap::<_, Vec<_>>::new();
+    for name in &names {
+        if let Some(reason) = attached_reason(name) { attached_groups.entry(reason).or_default().push(name); }
+    }
+    let attached_withheld: Vec<_> = attached_groups.into_iter().map(|(reason, names)|
+        json!({"reason":reason,"why":why(reason),"count":names.len(),"names":names})).collect();
     // `status`/`withheld` are for a project server; `attached` is what folio-mcp --attach exposes on the running app
     Ok(json!({"ok":true,"type":"coverage","total":names.len(),"exposed":exposed,"mcpOnly":catalog::NATIVE,
         "withheld":withheld,"unreviewed":unreviewed,
-        "attached":{"exposed":super::attached::ATTACHED,"needsDatabaseSetting":super::attached::DATABASE,
+        "attached":{"withheld":attached_withheld,"exposed":super::attached::ATTACHED.iter().copied().chain(super::attached::reads::READS.iter().map(|r| r.name)).collect::<Vec<_>>(),"needsDatabaseSetting":super::attached::DATABASE,
             "paths":super::attached::PATHS.iter().map(|t| json!({"name":t.name,"arguments":t.fields,"needsFileSetting":t.writes})).collect::<Vec<_>>(),
-            "note":"folio-mcp --attach: tools act on the running app's engine session; dataMergeSourceStatus with check true also needs the database setting. Paths are relative to the project open in the app (MCP.ko.md path rules); tools that write files need the setting LLM may write files. Everything else stays withheld for the reason above."}}))
+            "note":"folio-mcp --attach: tools act on the running app's engine session; dataMergeSourceStatus with check true also needs the database setting. Paths are relative to the project open in the app (MCP.ko.md path rules); tools that write files need the setting LLM may write files. See attached.withheld for reasons on a running app."}}))
 }

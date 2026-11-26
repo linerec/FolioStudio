@@ -18,6 +18,7 @@ impl Drop for Profile {
 fn defaults_and_round_trip_keep_unrelated_settings() {
     let p = Profile::new();
     assert_eq!(p.ask(json!({})), json!({}));
+    assert!(!p.0.exists(), "reading settings must not create profile files");
     p.ask(json!({"patch":{"language":"ko","shortcuts":{"x":"Ctrl+X"},"preferences":{"existing":true}}}));
     p.ask(json!({"values":{"folio.units":"mm","folio.view.guides":"false"}}));
     let saved = p.ask(json!({}));

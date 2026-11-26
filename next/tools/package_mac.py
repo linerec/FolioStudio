@@ -164,11 +164,13 @@ def build(p, arch):
     print(f'building {target}', flush=True)
     run_logged(p, ['cargo', 'zigbuild', '--release', '--locked', '--manifest-path',
                   Path(p.NEXT) / 'engine/Cargo.toml', '-p', 'folio-engine',
+                  '--bin', 'folio-engine', '--bin', 'folio-mcp',
                   '--target', target, '--target-dir', target_dir], f'mac-engine-{arch}.log', env)
     run_logged(p, ['cargo', 'zigbuild', '--release', '--locked', '--manifest-path',
                   Path(p.REPO) / 'native/indd-reader/Cargo.toml',
                   '--target', target, '--target-dir', reader_dir], f'mac-reader-{arch}.log', env)
     return {'engine': target_dir / target / 'release/folio-engine',
+            'mcp': target_dir / target / 'release/folio-mcp',
             'reader': reader_dir / target / 'release/folio-indd-reader'}
 
 
@@ -232,7 +234,7 @@ def assemble(p, arch, built, dist, tool):
     for name in sorted(n.name for n in (Path(p.APP) / 'electron').glob('*.cjs')):
         shutil.copy2(Path(p.APP) / 'electron' / name, appdir / 'electron' / name)
     shutil.copytree(dist, appdir / 'dist')
-    for key, dest in [('engine', 'folio-engine'), ('reader', 'folio-indd-reader')]:
+    for key, dest in [('engine', 'folio-engine'), ('mcp', 'folio-mcp'), ('reader', 'folio-indd-reader')]:
         shutil.copy2(built[key], res / dest)
     p.copy_sample(str(res))
     # No fonts, ICC files, Adobe assets, or machine-specific project paths are bundled.
@@ -428,6 +430,7 @@ def main(p, args, info_base):
         checked = verify_zip(archive, binaries)
         builds[arch] = {**details, 'file': zip_name, 'sha256': digest(archive),
                        'bytes': archive.stat().st_size, 'engine': digest(app / 'Contents/Resources/folio-engine'),
+                       'mcp': digest(app / 'Contents/Resources/folio-mcp'),
                        'reader': digest(app / 'Contents/Resources/folio-indd-reader'), **checked}
         (Path(p.WORK) / 'logs' / f'mac-machos-{arch}.json').write_text(json.dumps(binaries, indent=1), encoding='utf-8')
         print(f'verified {archive}: {archive.stat().st_size:,} bytes; {checked}', flush=True)
@@ -437,7 +440,7 @@ def main(p, args, info_base):
     readme = readme.replace('Application Support/folio-studio-next/', f'Application Support/{pkg_name}/')
     (out / 'README.txt').write_text(readme, encoding='utf-8-sig')
     primary = builds.get('arm64', next(iter(builds.values())))
-    info = {'mac': {**info_base, 'engine': primary['engine'], 'reader': primary['reader'],
+    info = {'mac': {**info_base, 'engine': primary['engine'], 'mcp': primary['mcp'], 'reader': primary['reader'],
                     'signing': 'ad-hoc; not notarized', 'runtimeTested': False, 'architectures': builds}}
     manifest = Path(p.WORK) / 'BUILD.json'
     update_manifest(manifest, info)

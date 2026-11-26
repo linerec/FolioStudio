@@ -36,7 +36,22 @@ fn object<'a>(request: &'a Value, key: &str) -> Result<Option<&'a Map<String, Va
 }
 
 fn access(root: &Path, request: &Value) -> Result<Value, String> {
+    if ["patch", "values", "migrate"].iter().all(|key| request.get(key).is_none()) {
+        // Writers replace settings.json atomically. A reader needs no lock file or profile directory.
+        let (_, value) = read_settings(&root.join("settings.json"))?;
+        return Ok(value.filter(Value::is_object).unwrap_or_else(|| json!({})));
+    }
     access_with(root, request, |_, _| Ok(()))
+}
+
+fn read_settings(path: &Path) -> Result<(Option<Vec<u8>>, Option<Value>), String> {
+    let bytes = match fs::read(path) {
+        Ok(bytes) => Some(bytes),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
+        Err(e) => return Err(e.to_string()),
+    };
+    let parsed = bytes.as_deref().and_then(|bytes| serde_json::from_slice::<Value>(bytes).ok());
+    Ok((bytes, parsed))
 }
 
 fn access_with(root: &Path, request: &Value, change: impl FnOnce(&mut Map<String, Value>, &Path) -> Result<(), String>) -> Result<Value, String> {
@@ -56,12 +71,7 @@ fn access_with(root: &Path, request: &Value, change: impl FnOnce(&mut Map<String
         .open(root.join("settings.lock")).map_err(|e| e.to_string())?;
     lock.lock().map_err(|e| e.to_string())?;
     let path = root.join("settings.json");
-    let bytes = match fs::read(&path) {
-        Ok(bytes) => Some(bytes),
-        Err(e) if e.kind() == std::io::ErrorKind::NotFound => None,
-        Err(e) => return Err(e.to_string()),
-    };
-    let parsed = bytes.as_deref().and_then(|bytes| serde_json::from_slice::<Value>(bytes).ok());
+    let (bytes, parsed) = read_settings(&path)?;
     let mut settings = parsed.as_ref().and_then(Value::as_object).cloned().unwrap_or_default();
     let before = settings.clone();
     if let Some(patch) = patch { settings.extend(patch.clone()); }

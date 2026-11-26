@@ -343,6 +343,31 @@ fn app_request(request: &Value, s: Option<&crate::Session>) -> Result<(), Refuse
 pub fn resolve(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved>, Refused> {
     let cmd = req["cmd"].as_str().unwrap_or("").to_owned();
     if matches!(cmd.as_str(), "openDialog" | "setDialogField" | "applyDialog") { return dialog(req, s); }
+    if attached::reads::get(&cmd).is_some() {
+        let input = attached::reads::input_file(&cmd);
+        let root = match project_root(s) {
+            Ok(root) => root,
+            Err(e) if input.is_some() || cmd == "projectInfo" => return Err(e.into()),
+            Err(_) => {
+                if cmd == "pdfPresets" { req["action"] = json!("list"); }
+                return Ok(None);
+            }
+        };
+        let boundary = Boundary::components(&root).map_err(|e| e.to_string())?;
+        let checked = Checked { root: &root, boundary, used: Default::default() };
+        if let Some(input) = input {
+            let (rel, file) = checked.existing(text(req, input.field)?, input.extensions)?;
+            req[input.field] = if input.native { json!(file) } else { json!(rel.as_str()) };
+        }
+        match cmd.as_str() {
+            "preflightProfileFile" => req["action"] = json!("import"),
+            "pdfPresets" => { req["action"] = json!("list"); req["project"] = json!(&root); }
+            "projectInfo" => req["path"] = json!(&root),
+            _ => {}
+        }
+        let Checked { boundary, used, .. } = checked;
+        return Ok(Some(Resolved { root, boundary, used: used.into_inner() }));
+    }
     let edits: Vec<usize> = if cmd == "edit" {
         req["commands"].as_array().map(|list| list.iter().enumerate()
             .filter(|(_, c)| attached::path_tool(&format!("edit.{}", c["op"].as_str().unwrap_or(""))).is_some())

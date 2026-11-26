@@ -4,6 +4,9 @@
 #![allow(dead_code)]
 use serde_json::Value;
 
+#[path = "reads.rs"]
+pub mod reads;
+
 /// User settings (`preferences`), both off by default: Preferences ▸ General.
 pub const ALLOW_CONNECTION: &str = "folio.mcp.allowConnection";
 pub const ALLOW_DATABASE_REFRESH: &str = "folio.mcp.allowDatabaseRefresh";
@@ -205,6 +208,20 @@ pub fn admit(request: &Value, database: bool, files: bool) -> Result<(), String>
                 return Err(format!("{cmd} action {action} is not available to an attached MCP connection (only {})", actions.join(", ")));
             }
             if writes.contains(&action) && !files { return Err(FILES_REFUSED.into()); }
+        }
+        return Ok(());
+    }
+    if let Some(read) = reads::get(cmd) {
+        for key in object.keys().map(String::as_str) {
+            if matches!(key, "id" | "cmd") || read.fields.contains(&key) { continue; }
+            if cmd != "render" && matches!(key, "resultOffset" | "resultLimit") {
+                let n = request[key].as_u64().ok_or("pagination expects unsigned integers")?;
+                if key == "resultLimit" && !(1..=32768).contains(&n) {
+                    return Err("resultLimit must be between 1 and 32768".into());
+                }
+                continue;
+            }
+            return Err(format!("{cmd} argument {key} is not available for a read"));
         }
         return Ok(());
     }

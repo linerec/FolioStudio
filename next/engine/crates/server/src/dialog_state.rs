@@ -579,6 +579,10 @@ fn step(req: &Value, session: Option<&crate::Session>, profiles: Option<&crate::
     } else {
         let def = definition(state["dialog"].as_str().ok_or("no dialog open")?)?;
         if cmd == "dialogPreview" {
+            if req["id"].as_str().is_some_and(crate::attach::routed)
+                && matches!(def["preview"]["query"].as_str(), Some("packagePlan" | "printingPlan")) {
+                return Err("this dialog preview uses a local folder or printer settings".into());
+            }
             return Ok(json!({"preview": preview(&def, &state, session)?}));
         } else if cmd == "setDialogField" {
             let key = req["field"].as_str().ok_or("field must be a name")?;

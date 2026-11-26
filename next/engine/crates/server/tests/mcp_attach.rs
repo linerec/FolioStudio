@@ -223,14 +223,27 @@ fn attached_tools_come_from_the_registry_and_coverage_names_them() {
         }
     }
     let tools = mcp::catalog::attached_tools();
-    assert_eq!(tools.len(), attached::ATTACHED.len() + attached::DATABASE.len() + attached::PATHS.len() + 2);
+    assert_eq!(tools.len(), attached::ATTACHED.len() + attached::DATABASE.len() + attached::PATHS.len() + attached::reads::READS.len() + 2);
+    for read in attached::reads::READS {
+        let tool = tools.iter().find(|t| t["name"] == read.name).unwrap();
+        let args = if read.name == "render" { json!({}) } else { json!({"resultLimit":1}) };
+        let req = mcp::catalog::request_for(read.name, &args).unwrap();
+        assert_eq!(attached::admit(&req, false, false), Ok(()), "{}", read.name);
+        assert_eq!(mcp::coverage::attached_status(read.name), "exposed");
+        assert_eq!(tool["inputSchema"]["additionalProperties"], false);
+        assert!(attached::admit(&json!({"cmd":read.name,"unlisted":true}), true, true).is_err());
+    }
+    for invalid in [json!({"cmd":"links","roots":[]}), json!({"cmd":"preflightProfileFile","action":"export"}),
+                    json!({"cmd":"proofSetup","patch":{}}), json!({"cmd":"textStory","resultLimit":32769})] {
+        assert!(attached::admit(&invalid, true, true).is_err());
+    }
     for dialog in ["dialogState", "openDialog", "setDialogField", "applyDialog", "cancelDialog", "panelState", "setPanelState",
         "recentFiles", "setRecentFiles", "rememberRecent", "dataMergeSource", "dataMergeEvaluate", "dataMergeSourceStatus",
         "edit.dataMergeRefresh", "coverage", "appConnection"] {
         assert!(tools.iter().any(|t| t["name"] == dialog), "{dialog}");
     }
     let report = mcp::coverage::report(&json!({})).unwrap();
-    assert_eq!(report["attached"]["exposed"].as_array().unwrap().len(), attached::ATTACHED.len());
+    assert_eq!(report["attached"]["exposed"].as_array().unwrap().len(), attached::ATTACHED.len() + attached::reads::READS.len());
     assert_eq!(mcp::coverage::report(&json!({"name":"openDialog"})).unwrap()["attached"], "exposed");
     assert_eq!(mcp::coverage::report(&json!({"name":"edit.dataMergeRefresh"})).unwrap()["attached"], "needsDatabaseSetting");
     assert_eq!(mcp::coverage::report(&json!({"name":"dbUnlockConnection"})).unwrap()["attached"], "withheld");

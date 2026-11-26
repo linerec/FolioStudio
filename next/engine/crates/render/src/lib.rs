@@ -31,6 +31,8 @@ mod image_decode;
 mod page;
 mod paint;
 mod region;
+mod preview_png;
+pub use preview_png::bounded_png;
 mod sampling;
 
 pub use cache::{CachedImage, GlyphCache, ImageCache};

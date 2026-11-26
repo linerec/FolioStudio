@@ -55,6 +55,8 @@ claude mcp add --transport stdio folio -- C:/path/to/folio-mcp.exe --attach
 | 프로젝트 경로(mcp-c4, 아래 규칙) | `open`, `save`, `saveCopy`, `exportIdml`, `export`, `dataMergeCreate`, `edit.placeGraphic`, `edit.selectDataSource`, `edit.importPdfComments` |
 | 가져오기·패키지·스타일·책·라이브러리(mcp-c5, 같은 규칙) | `importPlan`, `importRun`, `importCancel`, `packagePlan`, `package`, `packageCancel`, `stylesFile`, `edit.loadStyles`, `book`·`library`(`read`·`new`·`create`) |
 | 책·라이브러리 편집, 새 문서·새 프로젝트(mcp-c6, 같은 규칙) | `book`(`add`·`synchronize`·`exportPdf`), `library`(`store`·`place`), 앱 대화상자 `newDocument`·`newBook`·`newLibrary`·`newProject`(`openDialog`·`setDialogField`·`applyDialog`로) |
+| 본문·표·페이지 검사 | `textStory`, `textFind`, `styleInfo`, `tableCells`, `render`, `inks`, `preflight`, `links` 등. 조회 98개는 `coverage.attached.exposed`에서 확인 |
+| 프로젝트 파일 검사 | `placeInfo`, `fileMetadata`, `textImportInfo` 등. 열린 프로젝트 안의 기존 파일만 읽음 |
 | MCP 전용 | `coverage`, `appConnection` |
 
 검토한 편집의 기준: 인수가 열린 문서 안의 id와 값뿐이고, 경로·다른 파일·미리보기 세션·컨베이어를 받지 않는다. 경로를 받는 것은 아래 "경로를 받는 도구와 경로 규칙"을 따르는 위 두 줄의 도구만 연다. 나머지 경로 명령(책의 옮기기·빼기·쪽 번호·패키지, 라이브러리 자산 고치기·빼기, 부모 페이지·획 스타일 파일 등)·프린터·엔진 프로세스 제어는 붙은 연결에서도 열지 않는다. `coverage`의 답에 `attached` 칸이 있어 이름마다 `exposed`·`needsDatabaseSetting`·`needsFileSetting`·`withheld`를 알려 준다(목록 전체의 답에는 `attached.paths`에 도구마다 받는 인수와 쓰기 설정 필요 여부).
@@ -64,6 +66,22 @@ claude mcp add --transport stdio folio -- C:/path/to/folio-mcp.exe --attach
 - LLM이 만든 개체·편집·실행 취소는 `external-edit` 알림으로 화면이 바로 다시 그린다(화면이 자기 편집 뒤에 하는 일과 같다). 상태 줄에 "LLM 이 문서를 바꿨습니다: …"가 뜬다.
 - 실행 취소 기록에 **"LLM: …"** 이 붙는다(편집 ▸ 실행 취소 "LLM: createByDrag", 대화상자 적용은 "LLM: 단계 및 반복").
 - 대화상자·선택·패널은 기존 `dialog-state`·`view-state`·`panel-state` 알림으로 화면에 보인다. LLM이 연 대화상자는 화면에 열리고, 채운 값이 칸에 보이고, 적용하면 닫힌다.
+
+### 붙은 앱에서 읽기 (mcp-c7)
+
+| 호출 예 | 결과 |
+| --- | --- |
+| `textStory {"story":"walk"}` | 스토리의 본문과 서식 |
+| `styleInfo {"kind":"paragraph","style":"Masthead"}` | 지정한 스타일의 속성 |
+| `render {"page":0,"longEdge":1200,"selection":true}` | MCP 이미지 블록의 base64 PNG, 실제 너비와 높이 |
+| `render {"page":0,"region":[10,10,70,50],"scale":2,"guides":true}` | 쪽 왼쪽 위 기준 포인트 좌표로 자른 그림. 배율은 포인트당 픽셀 수 |
+| `links {}` · `preflight {}` | 문서의 링크 목록 · 프리플라이트 검사 결과 |
+
+그림의 쪽 번호는 0부터 센다. 긴 변은 기본 1,200px, 최대 2,000px다. 압축한 PNG가 응답 한도를 넘으면 긴 변을 줄인다. 선택 강조와 안내선은 기본으로 끄며 표시 옵션은 앱의 선택이나 보기를 바꾸지 않는다.
+
+조회 결과가 96 KiB를 넘거나 `resultOffset` 또는 `resultLimit`을 주면 직렬화한 JSON을 나눠 준다. `chunk`를 차례로 이어 붙인 뒤 JSON으로 해석한다. 같은 인수로 `nextOffset`을 다음 `resultOffset`에 넣고, 값이 null이면 끝이다. 단위는 유니코드 문자(스칼라)이고 한 조각은 최대 32,768자다. 여러 번 읽는 동안 문서를 편집하면 결과가 달라질 수 있다.
+
+파일 입력에는 프로젝트 상대 경로를 쓴다. 결과의 프로젝트 경로는 상대 경로로 표시하고 외부 로컬 주소는 가린다. 파일 메타데이터에는 크기·수정 시각·해석한 XMP 필드만 담는다. 읽기와 쓰기를 함께 제공하는 도구도 등록된 조회 인수만 받는다. 보류 사유와 이름은 `coverage` 결과의 `attached.withheld`에 있다.
 
 ### 경로를 받는 도구와 경로 규칙 (mcp-c4, 2026-11-20)
 

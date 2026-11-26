@@ -90,9 +90,22 @@ pub(super) fn render(context: &Context<'_>, request: Request) {
     let out = context.out;
     let session = context.session;
     let tx = context.tx;
-    let Request { id, req, .. } = request;
+    let Request { id, req, mcp, .. } = request;
     let current = session.lock().expect("shared state must remain unpoisoned after each operation").clone();
     match current {
+        Some(s) if mcp => {
+            let out = out.clone();
+            let profiles = context.profiles.clone();
+            std::thread::spawn(move || {
+                let result = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| crate::attach_image::render(&req, &s, &profiles)));
+                let header = match result {
+                    Ok(Ok(mut image)) => { image["id"] = id; image }
+                    Ok(Err(error)) => wire::error_reply(&id, error),
+                    Err(_) => wire::error_reply(&id, "page image failed"),
+                };
+                send(&out, header, &[]);
+            });
+        }
         Some(s) => {
             let page = req["page"].as_u64().unwrap_or(0) as usize;
             let scale = req["scale"].as_f64().unwrap_or(1.0).clamp(0.05, 32.0);
@@ -366,7 +379,7 @@ pub(super) fn save(context: &Context<'_>, request: Request) {
         return;
     };
     // what is written is never an open preview (edit/preview.rs)
-    if let Some(n) = edit::settle(&s) {
+    if !(mcp && req["cmd"] == "projectStatus") && let Some(n) = edit::settle(&s) {
         s = Arc::new(n);
         *session.lock().expect("shared state must remain unpoisoned after each operation") = Some(s.clone());
     }

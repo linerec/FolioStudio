@@ -73,8 +73,8 @@
     </td>
     <td width="33%" valign="top">
       <h3>🤖 MCP 로 AI 와 함께 (미리보기)</h3>
-      <code>folio-mcp</code> 서버가 실행 중인 Folio 에 붙어, Claude 나 다른 MCP 클라이언트가 문서를 열고, 고르고, 대화상자를 채우고,
-      편집합니다. 환경 설정에서 켜 준 스위치 안에서만. 지금은 도구 약 70개이고, 아직은 소스로 빌드해서 씁니다.
+      연결을 허용하면 AI가 실행 중인 Folio에서 문서·선택·페이지·대화상자·패널을 다루고 일부 편집을 할 수 있습니다.
+      연결된 서버의 도구는 연결 상태와 지원 범위를 확인하는 두 개를 포함해 178개입니다. 저장·내보내기에는 별도 허용이 필요합니다.
     </td>
     <td width="33%" valign="top">
       <h3>🦀 진짜 엔진</h3>
@@ -108,6 +108,34 @@
 
 **견본 열어 보기:** [`samples/low-water`](samples/low-water) 폴더를 **파일 ▸ 프로젝트 열기**로 열면 화면 속 잡지를 직접 볼 수 있습니다.
 Windows 에 들어 있는 바탕·맑은 고딕 글꼴을 쓰며, 다른 운영체제에서는 비슷한 글꼴로 바꿔 보여 줍니다.
+
+## 🤖 AI 연결(MCP)
+
+Windows와 Apple Silicon용 ZIP에는 미리보기 서버 `folio-mcp`가 들어 있습니다. Windows에서는 압축을 풀고 Folio에서 프로젝트를 연 뒤 앱을 켜 둡니다.
+
+1. **환경 설정 ▸ 일반**에서 **LLM 연결(MCP) 허용**을 켭니다. MCP 스위치 세 개는 모두 기본으로 꺼져 있습니다. 저장·내보내기가 필요하면 **LLM 이 파일을 쓸 수 있음**을 켭니다. 앱에서 잠금을 푼 데이터베이스의 자료를 다시 읽게 하려면 **LLM 이 데이터베이스 원본을 새로 고칠 수 있음**을 켭니다. 비밀번호는 Folio에서 직접 입력합니다. 비밀번호와 인쇄 작업은 MCP로 전달되지 않습니다.
+2. **Claude Code**에서는 `<앱 폴더>`를 `Folio Studio.exe`가 있는 실제 폴더로 바꾸고 다음 명령을 실행합니다.
+
+   ```sh
+   claude mcp add --transport stdio folio -- "<앱 폴더>/resources/folio-mcp.exe" --attach
+   ```
+
+   **Claude Desktop**에서는 설정 파일의 `mcpServers`에 아래 항목을 추가합니다. 경로를 실제 위치로 바꾸고 Claude Desktop을 다시 시작합니다.
+
+   ```json
+   {
+     "mcpServers": {
+       "folio": {
+         "command": "C:/Apps/Folio Studio/resources/folio-mcp.exe",
+         "args": ["--attach"]
+       }
+     }
+   }
+   ```
+
+3. AI에게 `appConnection`을 호출해 달라고 해서 `attached: true`인지 확인합니다. `coverage` 결과의 `attached`에는 쓸 수 있는 명령, 필요한 권한, 보류한 이유가 나옵니다. 연결이 꺼진 채 클라이언트를 시작했다면 Folio에서 연결을 켜고 MCP 서버를 다시 시작합니다.
+
+Mac 실행 파일은 `Folio Studio.app/Contents/Resources/folio-mcp`에 있습니다. 리눅스에서는 소스로 빌드합니다. Windows에서 연결을 확인했고, 맥과 리눅스는 아직 실기에서 확인하지 못했습니다.
 
 ## 🛠 소스로 빌드
 
