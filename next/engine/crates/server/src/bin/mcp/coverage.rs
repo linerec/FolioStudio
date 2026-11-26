@@ -28,7 +28,7 @@ const RULES: &[(&str, &str)] = &[
     // Passwords: no MCP tool takes one (see `catalog::find_secret`).
     ("dbSaveConnection", "secret"), ("dbUnlockConnection", "secret"), ("dbTestConnection", "secret"),
     // Database and data-merge sources outside the project.
-    ("db*", "external-data"), ("dataMergeSourceStatus", "external-data"),
+    ("db*", "external-data"), ("dataMergeSourceStatus", "external-data"), ("hyperlinkUrlStatus", "external-data"),
     ("edit.dataMergeSelectDatabase", "external-data"), ("edit.dataMergeRefresh", "external-data"),
     ("listPrinters", "printer"), ("printToDevice", "printer"), ("cancelPrintJob", "printer"),
     // The Folio app window.

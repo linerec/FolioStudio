@@ -1,0 +1,38 @@
+name: CI
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            next/engine
+            native/indd-reader
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: next/app/package-lock.json
+      - name: Build engine
+        run: cargo build --manifest-path next/engine/Cargo.toml --release --locked
+      - name: Build INDD reader
+        run: cargo build --manifest-path native/indd-reader/Cargo.toml --release --locked
+      - name: Install app dependencies
+        working-directory: next/app
+        run: npm ci
+      - name: Check app types
+        working-directory: next/app
+        run: npm run typecheck
+      - name: Build app
+        working-directory: next/app
+        run: npx vite build

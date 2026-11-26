@@ -7,6 +7,9 @@ use folio_edit::{Command, Editor};
 use serde_json::Value;
 use std::collections::BTreeMap;
 use std::path::PathBuf;
+#[path = "support/idml_fixture.rs"]
+mod idml_fixture;
+use idml_fixture::read_zip;
 
 fn dir() -> PathBuf {
     std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../../oracle/measured/menurest-groups-2025")
@@ -60,8 +63,11 @@ fn style_group_duplicate_rename_and_delete_match_indesign() {
     assert!(cases.len() > 20);
     for case in cases {
         let name = case["name"].as_str().unwrap();
-        let parts: BTreeMap<String, String> = case["before"].as_object().unwrap().iter()
-            .map(|(part, file)| (part.clone(), std::fs::read_to_string(root.join(file.as_str().unwrap())).unwrap())).collect();
+        let mut parts = case["fixture"].as_str().map(|fixture| {
+            read_zip(&root.join("../../fixtures").join(format!("{fixture}.idml")))
+        }).unwrap_or_else(BTreeMap::new);
+        parts.extend(case["before"].as_object().unwrap().iter()
+            .map(|(part, file)| (part.clone(), std::fs::read_to_string(root.join(file.as_str().unwrap())).unwrap())));
         let mut ed = Editor::new(parts);
         let mut result = Ok(());
         for step in case["commands"].as_array().unwrap() {

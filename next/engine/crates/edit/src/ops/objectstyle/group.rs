@@ -32,7 +32,7 @@ pub(super) fn apply(w: &mut Work<'_>, id: &str, style: &str, clear: bool, nested
     if nested {
         effects::apply(w, id, style, clear, true)?;
     }
-    normalize(w, id)
+    normalize(w, id, !nested && !clear)
 }
 
 fn normalize_insets(w: &mut Work<'_>, id: &str) -> Result<(), EditError> {
@@ -48,12 +48,19 @@ fn normalize_insets(w: &mut Work<'_>, id: &str) -> Result<(), EditError> {
     Ok(())
 }
 
-fn normalize(w: &mut Work<'_>, id: &str) -> Result<(), EditError> {
+fn normalize(w: &mut Work<'_>, id: &str, keep_common_stroke: bool) -> Result<(), EditError> {
     let (part, ix, i) = w.find(id)?;
     let t = w.text(&part)?.to_owned();
     if ix.local(&t, i) == "Group" {
         let mut edits = Vec::new();
         for (key, enable) in [("FillColor", "EnableFill"), ("StrokeColor", "EnableStroke"), ("StrokeWeight", "EnableStroke")] {
+            if keep_common_stroke && enable == "EnableStroke"
+                && let Some(value) = common_value(w, &ix, &t, i, key, enable)
+                && Some(&value) != from_style(w, &ix, &t, i, &[], key, enable).as_ref()
+            {
+                edits.push(attr_edit(&ix, &t, i, key, &value));
+                continue;
+            }
             let mixed_fill = key == "FillColor" && common_value(w, &ix, &t, i, key, enable).is_none();
             if mixed_fill || ix.value(&t, i, key) == from_style(w, &ix, &t, i, &[], key, enable) {
                 edits.extend(attr_removal(&ix, &t, i, key));

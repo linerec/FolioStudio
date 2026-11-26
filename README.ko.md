@@ -11,6 +11,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/linerec/FolioStudio/actions/workflows/ci.yml"><img src="https://github.com/linerec/FolioStudio/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2f6fdc?style=flat-square" alt="라이선스: Apache-2.0"></a>
   <img src="https://img.shields.io/badge/platform-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-30363d?style=flat-square" alt="플랫폼: Windows, macOS, Linux">
   <img src="https://img.shields.io/badge/engine-Rust-b7410e?style=flat-square&logo=rust&logoColor=white" alt="엔진: Rust">

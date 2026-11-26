@@ -287,6 +287,11 @@ fn frame_settings(w: &Work<'_>, ix: &Index, t: &str, i: usize, old: &str, new: &
         category(enable, names, &mut edits);
     }
     if styles.enabled(new, GENERAL.0) {
+        if let Some(width) = ix.attr(t, pref, "TextColumnFixedWidth")
+            && styles.value(new, &tfp, "TextColumnFixedWidth", GENERAL.0).as_deref() == Some(width)
+        {
+            edits.extend(attr_removal(ix, t, pref, "TextColumnFixedWidth"));
+        }
         for name in ALWAYS {
             if let Some(v) = styles.value(new, &tfp, name, GENERAL.0) {
                 edits.push(attr_edit(ix, t, pref, name, &v));

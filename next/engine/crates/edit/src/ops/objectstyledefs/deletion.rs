@@ -1,7 +1,7 @@
 //! Removing a definition, rebasing dependent styles and assigning its replacement.
 use super::*;
 
-fn base(t: &str, ix: &Index, i: usize) -> String {
+pub(super) fn base(t: &str, ix: &Index, i: usize) -> String {
     ix.path(t,i,&["Properties","BasedOn"]).map(|j| {
         let s = crate::xml::unescape(element_text(ix,t,j));
         if s.starts_with("ObjectStyle/") { s } else { format!("ObjectStyle/{s}") }

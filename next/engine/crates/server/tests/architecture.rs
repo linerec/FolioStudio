@@ -16,7 +16,7 @@ const ALLOWED: &[(&str, &[&str])] = &[
     ("color", &["model"]),
     ("idml", &["color", "model"]),
     ("text", &["compose", "model"]),
-    ("render", &["color", "model"]),
+    ("render", &["color", "model", "text"]),
     ("links", &["idml", "model"]),
     ("preflight", &["idml", "links", "model", "text"]),
     ("package", &["links", "model", "preflight", "text"]),

@@ -1588,6 +1588,7 @@
   },
   {
    "name": "sgd-para-basic",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.7995c9488a"
    },
@@ -1641,6 +1642,7 @@
   },
   {
    "name": "sgd-para-refs",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.2cd75b69a7"
    },
@@ -1718,6 +1720,7 @@
   },
   {
    "name": "sgd-para-nested",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.63a5e8eaec"
    },
@@ -1786,6 +1789,7 @@
   },
   {
    "name": "sgd-para-twice",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.7e3b8b17fb"
    },
@@ -1846,6 +1850,7 @@
   },
   {
    "name": "sgd-para-sub",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.823cf0ce65"
    },
@@ -1906,6 +1911,7 @@
   },
   {
    "name": "sgd-para-second",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.057d462069"
    },
@@ -1972,6 +1978,7 @@
   },
   {
    "name": "sgd-para-empty",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.1f87e8728a"
    },
@@ -2018,6 +2025,7 @@
   },
   {
    "name": "sgd-char-basic",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.ed87d160ab"
    },
@@ -2071,6 +2079,7 @@
   },
   {
    "name": "sgd-char-second",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.55d7780848"
    },
@@ -2137,6 +2146,7 @@
   },
   {
    "name": "sgd-char-twice",
+   "fixture": "text-format",
    "before": {
     "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.e94ebd6049"
    },
@@ -2197,6 +2207,7 @@
   },
   {
    "name": "sgd-cell-basic",
+   "fixture": "tablestyles",
    "before": {
     "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.ae3f296200"
    },
@@ -2249,6 +2260,7 @@
   },
   {
    "name": "sgd-cell-twice",
+   "fixture": "tablestyles",
    "before": {
     "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.a57098cd34"
    },
@@ -2308,6 +2320,7 @@
   },
   {
    "name": "sgd-cell-nested",
+   "fixture": "tablestyles",
    "before": {
     "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.9727013fa1"
    },
@@ -2375,6 +2388,7 @@
   },
   {
    "name": "sgd-table-basic",
+   "fixture": "tablestyles",
    "before": {
     "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.873d940d2c"
    },
@@ -2427,6 +2441,7 @@
   },
   {
    "name": "sgd-table-second",
+   "fixture": "tablestyles",
    "before": {
     "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.ac8bbe3b30"
    },
@@ -2492,6 +2507,7 @@
   },
   {
    "name": "sgd-table-twice",
+   "fixture": "tablestyles",
    "before": {
     "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.03141352ec"
    },
@@ -2551,6 +2567,7 @@
   },
   {
    "name": "sgd-object-basic",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.77fe1fb34c",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -2615,6 +2632,7 @@
   },
   {
    "name": "sgd-object-twice",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.65485e25ea",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -2686,6 +2704,7 @@
   },
   {
    "name": "sgd-object-nested",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.7cc815e08d",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -2764,6 +2783,7 @@
   },
   {
    "name": "sgd-object-second",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.dac070de09",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -2838,6 +2858,7 @@
   },
   {
    "name": "osg-rename-empty",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.66dc5dd848"
    },
@@ -2877,6 +2898,7 @@
   },
   {
    "name": "osg-rename-style",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.36b0ce0c04",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -2939,6 +2961,7 @@
   },
   {
    "name": "osg-rename-nested",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.740db7f700",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -3007,6 +3030,7 @@
   },
   {
    "name": "osg-rename-sub",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.5ae9c7c901",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -3075,6 +3099,7 @@
   },
   {
    "name": "osg-delete-unused",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.bb2e73a297"
    },
@@ -3116,6 +3141,7 @@
   },
   {
    "name": "osg-delete-applied",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.78fc677ef8",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -3175,6 +3201,7 @@
   },
   {
    "name": "osg-delete-nested",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.1df48cdf42",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
@@ -3239,6 +3266,7 @@
   },
   {
    "name": "osg-delete-sub",
+   "fixture": "objectstyles",
    "before": {
     "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.4adfb4cc59",
     "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"

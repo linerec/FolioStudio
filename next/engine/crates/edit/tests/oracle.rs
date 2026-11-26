@@ -17,6 +17,9 @@ use folio_model::{Document, PageItem};
 use serde_json::Value;
 use std::collections::{BTreeMap, BTreeSet, HashMap};
 use std::path::{Path, PathBuf};
+#[path = "support/idml_fixture.rs"]
+mod idml_fixture;
+use idml_fixture::read_zip;
 #[path = "support/toc_oracle.rs"]
 mod toc_oracle;
 #[path = "support/index_oracle.rs"]
@@ -42,22 +45,6 @@ const VOLATILE: &[&str] = &[
 
 fn oracle() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../../../oracle")
-}
-
-fn read_zip(path: &Path) -> BTreeMap<String, String> {
-    let f = std::fs::File::open(path).unwrap_or_else(|e| panic!("{}: {e}", path.display()));
-    let mut z = zip::ZipArchive::new(f).unwrap();
-    let mut out = BTreeMap::new();
-    for i in 0..z.len() {
-        let mut e = z.by_index(i).unwrap();
-        if e.is_dir() {
-            continue;
-        }
-        let mut s = String::new();
-        std::io::Read::read_to_string(&mut e, &mut s).unwrap();
-        out.insert(e.name().unwrap().into_owned(), s);
-    }
-    out
 }
 
 fn read_dir_parts(root: &Path) -> BTreeMap<String, String> {

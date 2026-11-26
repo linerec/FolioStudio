@@ -59,7 +59,8 @@ fn new_id(t: &str, ix: &Index, name: &str, old: Option<&str>) -> Result<String, 
     if name.trim().is_empty() || name.chars().any(|c| c.is_control() || c == '/') || name.starts_with('$') {
         return Err(EditError::new("invalid", "invalid object style name"));
     }
-    let id = format!("ObjectStyle/{name}");
+    let groups = old.map(|id| groups::split_style(id).0).unwrap_or_default();
+    let (id, _) = groups::style_attrs(&groups, name);
     if Some(id.as_str()) != old && ix.by_self(t, &id).is_some() {
         return Err(EditError::new("invalid", "object style name exists"));
     }
@@ -151,10 +152,27 @@ fn edit(w: &mut Work<'_>, style: &str, rename: &Option<String>, props: &Map<Stri
     let (xml, index) = scan(w)?;
     let item = find(&xml, &index, style)?;
     let mut replacement = xml[index.nodes[item].start..index.nodes[item].end].to_owned();
-    properties::apply(&mut replacement, props)?;
+    let mut options = props.clone();
+    if let Some(value) = options.remove("basedOn") {
+        let base = value.as_str().ok_or_else(|| EditError::new("invalid", "expected an object style"))?;
+        let mut parent = base.to_owned();
+        let mut seen = std::collections::BTreeSet::new();
+        loop {
+            let node = find(&xml, &index, &parent)?;
+            if parent == style || !seen.insert(parent.clone()) {
+                return Err(EditError::new("invalid", "cyclic object style bases"));
+            }
+            if parent == NONE { break; }
+            parent = deletion::base(&xml, &index, node);
+        }
+        based(&mut replacement, base)?;
+    }
+    properties::apply(&mut replacement, &options)?;
     let renamed = rename.as_ref().map(|name| new_id(&xml, &index, name, Some(style))).transpose()?;
     if let (Some(name), Some(id)) = (rename, &renamed) {
-        set_attr(&mut replacement, &[], "Name", name)?;
+        let (groups, _) = groups::split_style(style);
+        let (_, full_name) = groups::style_attrs(&groups, name);
+        set_attr(&mut replacement, &[], "Name", &full_name)?;
         set_attr(&mut replacement, &[], "Self", id)?;
     }
     propagation::preserve_opacity(w, style, &xml, &index, item, &replacement)?;

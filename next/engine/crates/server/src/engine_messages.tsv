@@ -9,8 +9,8 @@ edit.index.crossTarget	edit/src/indexes/entries.rs	상호 참조가 없는 주�
 edit.index.needOne	edit/src/indexes/generate.rs	문서에 색인이 하나 있어야 합니다
 edit.index.manyStories	edit/src/indexes/generate.rs	교체할 색인 이야기가 여러 개입니다
 edit.index.pageNotFound	edit/src/indexes/generate.rs	쪽을 찾을 수 없습니다
-edit.frame.createFailed	edit/src/indexes/generate.rs;edit/src/toc/story.rs	글 상자를 만들지 못했습니다
-edit.frame.chooseTextFrame	edit/src/indexes/generate.rs;edit/src/toc/story.rs	글 상자를 선택하십시오
+edit.frame.createFailed	edit/src/indexes/generate.rs	글 상자를 만들지 못했습니다
+edit.frame.chooseTextFrame	edit/src/indexes/generate.rs	글 상자를 선택하십시오
 edit.index.frameNotEmpty	edit/src/indexes/generate.rs	색인을 놓을 글 상자가 비어 있지 않습니다
 edit.index.noReferences	edit/src/indexes/generate.rs	생성할 색인 참조가 없습니다
 edit.index.generationOptions	edit/src/indexes/generation_input.rs	측정하지 않은 색인 생성 옵션이 있습니다(사용자 글자 스타일은 지원하지 않습니다)
@@ -49,12 +49,13 @@ edit.preview.alone	edit/src/preview.rs	미리보기 명령은 다른 명령과 �
 edit.toc.noStyleInfo	edit/src/toc/import.rs	스타일 정보가 없습니다
 edit.toc.noImportStyles	edit/src/toc/import.rs	불러올 목차 스타일이 없습니다
 edit.toc.styleNotFound	edit/src/toc/story.rs	목차 스타일을 찾을 수 없습니다
-edit.toc.severalSameStyle	edit/src/toc/story.rs	같은 스타일의 목차가 여러 개입니다. 업데이트할 목차를 선택하십시오
-edit.toc.noPages	edit/src/toc/story.rs	문서에 쪽이 없습니다
-edit.toc.frameNotEmpty	edit/src/toc/story.rs	목차를 놓을 글 상자가 비어 있지 않습니다
-edit.toc.notToc	edit/src/toc/story.rs	선택한 이야기는 목차가 아닙니다
-edit.toc.staleLayout	edit/src/toc/story.rs	목차의 조판 정보가 오래되었습니다
-edit.toc.noPageInfo	edit/src/toc/story.rs	목차의 쪽 정보를 찾을 수 없습니다
+edit.toc.frameCreateFailed	edit/src/toc/story.rs	목차 프레임을 만들 수 없습니다
+edit.toc.chooseTextFrame	edit/src/toc/story.rs	목차의 텍스트 프레임을 지정해야 합니다
+edit.toc.severalSameStyle	edit/src/toc/story.rs	교체할 목차의 프레임을 지정해야 합니다
+edit.toc.noPages	edit/src/toc/story.rs	목차를 만들 페이지가 없습니다
+edit.toc.frameNotEmpty	edit/src/toc/story.rs	비어 있는 텍스트 프레임을 지정해야 합니다
+edit.toc.notToc	edit/src/toc/story.rs	목차 이야기를 지정해야 합니다
+edit.toc.staleLayout	edit/src/toc/content.rs	목차 원본의 조판 정보가 오래되었습니다
 edit.toc.styleFields	edit/src/toc/styles.rs	목차 스타일 이름, 단계 또는 쪽 번호 위치가 올바르지 않습니다
 edit.toc.styleExists	edit/src/toc/styles.rs	같은 이름의 목차 스타일이 있습니다
 edit.toc.notStyle	edit/src/toc/styles.rs	목차 스타일이 아닙니다
@@ -86,8 +87,8 @@ project.manifest.invalid	project/src/manifest.rs	folio.project: {reason}
 project.manifest.alreadyProject	project/src/manifest.rs	이미 프로젝트 폴더입니다: {path}
 project.manifest.noProject	project/src/manifest.rs	{path} 위에 folio.project가 없습니다
 project.import.cancelled	project/src/import.rs;server/src/project.rs	가져오기를 취소했습니다
-project.import.documentExists	project/src/import.rs	같은 이름의 문서가 이미 있습니다: {name}
-project.import.fileExists	project/src/import.rs	프로젝트에 같은 이름의 파일이 이미 생겼습니다: {rel}
+project.import.documentExists	project/src/import/run.rs	같은 이름의 문서가 이미 있습니다: {name}
+project.import.fileExists	project/src/import/files.rs	프로젝트에 같은 이름의 파일이 이미 생겼습니다: {rel}
 project.lock.unreadable	project/src/lock.rs	잠금 파일을 읽을 수 없습니다
 project.open.notInProject	project/src/open.rs	{path}은(는) Folio 프로젝트(folio.project가 있는 폴더) 안에 있지 않습니다
 project.open.otherProject	project/src/open.rs	이 문서는 다른 프로젝트({project})에서 만들어졌습니다. 참조는 지금 프로젝트 폴더 기준으로 찾습니다.
@@ -116,9 +117,9 @@ project.path.outsideRoot	project/src/paths.rs	프로젝트 폴더 밖 경로: {p
 project.path.backslash	project/src/paths.rs	구분자는 '/'만 씁니다
 project.path.notNfc	project/src/paths.rs	NFC가 아닌 이름
 project.path.emptyComponent	project/src/paths.rs	빈 이름이 있는 경로
-textimport.error.docxPart	textimport/src/docx.rs	Word 파일 안의 {name} 을(를) 읽을 수 없습니다: {e}
-textimport.error.docxTooBig	textimport/src/docx.rs	Word 파일 안의 {name} 이(가) 너무 큽니다
-textimport.error.docxNotUtf8	textimport/src/docx.rs	Word 파일 안의 {name} 이(가) UTF-8 이 아닙니다
+textimport.error.docxPart	textimport/src/docx/archive.rs	Word 파일 안의 {name} 을(를) 읽을 수 없습니다: {e}
+textimport.error.docxTooBig	textimport/src/docx/archive.rs	Word 파일 안의 {name} 이(가) 너무 큽니다
+textimport.error.docxNotUtf8	textimport/src/docx/archive.rs	Word 파일 안의 {name} 이(가) UTF-8 이 아닙니다
 textimport.error.docxOpen	textimport/src/docx.rs	Word 파일을 열 수 없습니다: {e}
 textimport.error.docxNoDocument	textimport/src/docx.rs	Word 파일이 아닙니다: word/document.xml 이 없습니다
 textimport.error.docxNoBody	textimport/src/docx.rs	Word 파일이 아닙니다: 본문(body)이 없습니다
