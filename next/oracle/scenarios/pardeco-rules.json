@@ -1,0 +1,81 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {
+      "name": "pardeco-rule-above",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "props": {
+            "ruleAbove": true,
+            "ruleAboveLineWeight": 2,
+            "ruleAboveColor": "Color/Black",
+            "ruleAboveTint": 60,
+            "ruleAboveOffset": 4,
+            "ruleAboveLeftIndent": 7,
+            "ruleAboveRightIndent": 11,
+            "ruleAboveWidth": "COLUMN_WIDTH"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pardeco-rule-below-text",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "props": {
+            "ruleBelow": true,
+            "ruleBelowLineWeight": 1.5,
+            "ruleBelowColor": "Color/Black",
+            "ruleBelowOffset": 5,
+            "ruleBelowLeftIndent": 3,
+            "ruleBelowRightIndent": 4,
+            "ruleBelowWidth": "TEXT_WIDTH"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pardeco-rule-both-caret",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "props": {
+            "ruleAbove": true,
+            "ruleBelow": true,
+            "ruleAboveOffset": -2,
+            "ruleBelowOffset": -3
+          }
+        }
+      ]
+    },
+    {
+      "name": "pardeco-rule-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "ruleAbove": true,
+            "ruleAboveLineWeight": 3,
+            "ruleAboveColor": "Color/Black",
+            "ruleAboveWidth": "TEXT_WIDTH",
+            "ruleBelow": true,
+            "ruleBelowOffset": 4
+          }
+        }
+      ]
+    }
+  ]
+}

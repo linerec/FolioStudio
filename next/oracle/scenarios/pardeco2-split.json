@@ -1,0 +1,119 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "pardeco2-rule-split-columns",
+   "steps": [
+    {
+     "op": "set",
+     "target": "format",
+     "props": {
+      "textFramePreferences": {
+       "textColumnCount": 2,
+       "textColumnGutter": 12
+      }
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "ruleAbove": true,
+      "ruleAboveLineWeight": 2,
+      "ruleAboveColor": "Color/Black",
+      "ruleAboveOffset": 3,
+      "ruleBelow": true,
+      "ruleBelowLineWeight": 2,
+      "ruleBelowColor": "Color/Black",
+      "ruleBelowOffset": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-box-split-columns",
+   "steps": [
+    {
+     "op": "set",
+     "target": "format",
+     "props": {
+      "textFramePreferences": {
+       "textColumnCount": 2,
+       "textColumnGutter": 12
+      }
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "paragraphBorderOn": true,
+      "paragraphBorderColor": "Color/Black",
+      "paragraphBorderTopLineWeight": 1.5,
+      "paragraphBorderLeftLineWeight": 1.5,
+      "paragraphBorderBottomLineWeight": 1.5,
+      "paragraphBorderRightLineWeight": 1.5,
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 15
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-box-split-show",
+   "steps": [
+    {
+     "op": "set",
+     "target": "format",
+     "props": {
+      "textFramePreferences": {
+       "textColumnCount": 2,
+       "textColumnGutter": 12
+      }
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Typography is the craft of arranging letters so that language becomes legible and appealing to the reader.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "paragraphBorderOn": true,
+      "paragraphBorderColor": "Color/Black",
+      "paragraphBorderTopLineWeight": 1.5,
+      "paragraphBorderLeftLineWeight": 1.5,
+      "paragraphBorderBottomLineWeight": 1.5,
+      "paragraphBorderRightLineWeight": 1.5,
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 15,
+      "paragraphBorderDisplayIfSplits": true
+     }
+    }
+   ]
+  }
+ ]
+}

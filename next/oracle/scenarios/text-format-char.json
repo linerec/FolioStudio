@@ -1,0 +1,179 @@
+{
+  "fixture": "text-format",
+  "about": "Character panel menu toggles as text formatting: Superscript, Subscript (and back to Normal), OpenType superscript/subscript positions, Ligatures off and on, No Break; with the caret (an insertion point's formatting for typed text).",
+  "scenarios": [
+    {
+      "name": "char-superscript",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "SUPERSCRIPT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-subscript",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "SUBSCRIPT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-position-normal",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "SUPERSCRIPT"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 9,
+          "props": {
+            "position": "NORMAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-ot-superscript",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "OT_SUPERSCRIPT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-ot-subscript",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "OT_SUBSCRIPT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-ligatures-off",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 56,
+          "end": 70,
+          "props": {
+            "ligatures": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-ligatures-on-again",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 56,
+          "end": 70,
+          "props": {
+            "ligatures": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 56,
+          "end": 70,
+          "props": {
+            "ligatures": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-no-break",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 30,
+          "props": {
+            "noBreak": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-no-break-off",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 30,
+          "props": {
+            "noBreak": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 30,
+          "props": {
+            "noBreak": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "char-superscript-caret",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "props": {
+            "position": "SUPERSCRIPT"
+          }
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "2"
+        }
+      ]
+    }
+  ]
+}

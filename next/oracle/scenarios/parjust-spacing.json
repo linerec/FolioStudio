@@ -1,0 +1,97 @@
+{
+  "fixture": "parjust",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-direct",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 20,
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 1,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_JUSTIFIED",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 1,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_JUSTIFIED",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-korean",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean-format",
+          "start": 0,
+          "end": 25,
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 1,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_JUSTIFIED",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-mixed",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 110,
+          "props": {
+            "maximumWordSpacing": 180,
+            "minimumWordSpacing": 60
+          }
+        }
+      ],
+      "text": true
+    }
+  ]
+}

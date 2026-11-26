@@ -1,0 +1,11 @@
+{
+  "fixture": "basic",
+  "extension": "image-color",
+  "scenarios": [
+    {"name":"ic-perceptual","steps":[{"op":"setImageColor","target":"img","profile":"sRGB IEC61966-2.1","intent":"Perceptual"}]},
+    {"name":"ic-relative","steps":[{"op":"setImageColor","target":"img","profile":"sRGB IEC61966-2.1","intent":"RelativeColorimetric"}]},
+    {"name":"ic-saturation","steps":[{"op":"setImageColor","target":"img","profile":"sRGB IEC61966-2.1","intent":"Saturation"}]},
+    {"name":"ic-absolute","steps":[{"op":"setImageColor","target":"img","profile":"sRGB IEC61966-2.1","intent":"AbsoluteColorimetric"}]},
+    {"name":"ic-default","steps":[{"op":"setImageColor","target":"img","profile":"sRGB IEC61966-2.1","intent":"Perceptual"},{"op":"setImageColor","target":"img","profile":"$ID/Use Document Default","intent":"UseColorSettings"}]}
+  ]
+}

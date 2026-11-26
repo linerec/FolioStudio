@@ -1,0 +1,2512 @@
+{
+ "handleRect": [
+  {
+   "name": "BR corner",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    20,
+    10
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0,
+    0,
+    120,
+    60
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "TL corner",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    10,
+    5
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    10,
+    5,
+    100,
+    50
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "right side ignores the other axis",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    30,
+    99
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0,
+    0.0,
+    130,
+    50.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "bottom side",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    99,
+    -20
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0.0,
+    0,
+    100.0,
+    30
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Alt: about the middle",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    10,
+    5
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    -10.0,
+    -5.0,
+    110.0,
+    55.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Shift: wider wins",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    20,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    120.0,
+    60.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Shift: taller wins",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    0,
+    25
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    150.0,
+    75.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Shift on a side: the other side about its middle",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    50,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -12.5,
+    150.0,
+    62.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Shift on the bottom side",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    -25
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    25.0,
+    0,
+    75.0,
+    25.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Shift+Alt outward from TL",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    -10,
+    -10
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -20.0,
+    -10.0,
+    120.0,
+    60.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "opposite edge stays (TL, offset box)",
+   "box": [
+    10,
+    10,
+    110,
+    60
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    -20,
+    -10
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -10,
+    0,
+    110,
+    60
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "past the opposite edge turns the box inside out",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -500,
+    0
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -400,
+    0,
+    0,
+    50
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "past the opposite edge with Shift (corner: larger absolute factor, both turned)",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -500,
+    -500
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -900,
+    -450,
+    0,
+    0
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "past the middle with Alt: symmetric box, turned inside out",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -500,
+    -500
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    -400,
+    -450,
+    500,
+    500
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "empty box is left alone",
+   "box": [
+    5,
+    5,
+    5,
+    20
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    10,
+    10
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    5,
+    5,
+    5,
+    20
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-sh br +Shift drag (60, 20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    57.8,
+    19.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    257.8,
+    128.9
+   ],
+   "measured_size": [
+    257.8,
+    128.9
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-sh br +Shift drag (20, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    18.05,
+    59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    319.0,
+    159.5
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-sh br +Shift drag (-40, -10)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -41.2,
+    -10.25
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    179.5,
+    89.75
+   ],
+   "measured_size": [
+    179.5,
+    89.75
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-sh br +Shift drag (-10, -40)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -11.95,
+    -39.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    188.05,
+    94.025
+   ],
+   "measured_size": [
+    188.05,
+    94.02
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-sh br +Shift drag (60, -30)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    57.8,
+    -29.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    257.8,
+    128.9
+   ],
+   "measured_size": [
+    257.8,
+    128.9
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-sh br +Shift drag (-30, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -31.45,
+    59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    319.0,
+    159.5
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: tl-sh tl +Shift drag (-60, -20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    -60.95,
+    -19.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -60.95,
+    -30.475,
+    200.0,
+    100.0
+   ],
+   "measured_size": [
+    260.95,
+    130.48
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: tr-sh tr +Shift drag (60, -20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0
+   ],
+   "by": [
+    57.8,
+    -19.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -28.9,
+    257.8,
+    100.0
+   ],
+   "measured_size": [
+    257.8,
+    128.9
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: bl-sh bl +Shift drag (-60, 20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    1
+   ],
+   "by": [
+    -60.95,
+    19.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -60.95,
+    0,
+    200.0,
+    130.475
+   ],
+   "measured_size": [
+    260.95,
+    130.48
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: tr-sh tr +Shift drag (-40, 10)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0
+   ],
+   "by": [
+    -41.2,
+    10.25
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    10.25,
+    179.5,
+    100.0
+   ],
+   "measured_size": [
+    179.5,
+    89.75
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: bl-sh bl +Shift drag (40, -10)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    1
+   ],
+   "by": [
+    38.8,
+    -10.25
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    20.5,
+    0,
+    200.0,
+    89.75
+   ],
+   "measured_size": [
+    179.5,
+    89.75
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: tl-sh tl +Shift drag (30, -60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    29.05,
+    -59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -119.0,
+    -59.5,
+    200.0,
+    100.0
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: tr-sh tr +Shift drag (-30, -60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0
+   ],
+   "by": [
+    -31.45,
+    -59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -59.5,
+    319.0,
+    100.0
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: bl-sh bl +Shift drag (30, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    1
+   ],
+   "by": [
+    29.05,
+    59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -119.0,
+    0,
+    200.0,
+    159.5
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-alt br +Alt drag (60, 20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    57.8,
+    19.75
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    -57.8,
+    -19.75,
+    257.8,
+    119.75
+   ],
+   "measured_size": [
+    315.6,
+    139.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-alt-sh br +Shift +Alt drag (60, 20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    57.8,
+    19.75
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -57.8,
+    -28.9,
+    257.8,
+    128.9
+   ],
+   "measured_size": [
+    315.6,
+    157.8
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-alt br +Alt drag (-30, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -31.45,
+    59.5
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    31.45,
+    -59.5,
+    168.55,
+    159.5
+   ],
+   "measured_size": [
+    137.1,
+    219.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: br-alt-sh br +Shift +Alt drag (-30, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -31.45,
+    59.5
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -119.0,
+    -59.5,
+    319.0,
+    159.5
+   ],
+   "measured_size": [
+    438.0,
+    219.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: tl-alt tl +Alt drag (-60, -20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    -60.95,
+    -19.75
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    -60.95,
+    -19.75,
+    260.95,
+    119.75
+   ],
+   "measured_size": [
+    321.9,
+    139.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: r-sh r +Shift drag (60, 0)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    57.8,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -14.45,
+    257.8,
+    114.45
+   ],
+   "measured_size": [
+    257.8,
+    128.9
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: r-sh-cross r +Shift drag (60, 30)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    57.8,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -14.45,
+    257.8,
+    114.45
+   ],
+   "measured_size": [
+    257.8,
+    128.9
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: r-sh-in r +Shift drag (-40, 0)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -41.2,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    10.3,
+    158.8,
+    89.7
+   ],
+   "measured_size": [
+    158.8,
+    79.4
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: r-sh-in-cross r +Shift drag (-40, -25)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -41.2,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    10.3,
+    158.8,
+    89.7
+   ],
+   "measured_size": [
+    158.8,
+    79.4
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: r-alt r +Alt drag (60, 0)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    57.8,
+    0
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    -57.8,
+    0.0,
+    257.8,
+    100.0
+   ],
+   "measured_size": [
+    315.6,
+    100.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: r-alt-sh r +Shift +Alt drag (60, 0)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    57.8,
+    0
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -57.8,
+    -28.9,
+    257.8,
+    128.9
+   ],
+   "measured_size": [
+    315.6,
+    157.8
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: l-sh l +Shift drag (-60, 0)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0.5
+   ],
+   "by": [
+    -60.95,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -60.95,
+    -15.2375,
+    200.0,
+    115.2375
+   ],
+   "measured_size": [
+    260.95,
+    130.48
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: l-alt-sh l +Shift +Alt drag (-60, 0)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0.5
+   ],
+   "by": [
+    -60.95,
+    0
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -60.95,
+    -30.475,
+    260.95,
+    130.475
+   ],
+   "measured_size": [
+    321.9,
+    160.96
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: b-sh b +Shift drag (0, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -59.5,
+    0,
+    259.5,
+    159.5
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: b-sh-cross b +Shift drag (30, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -59.5,
+    0,
+    259.5,
+    159.5
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: b-sh-in b +Shift drag (0, -40)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    -39.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    39.5,
+    0,
+    160.5,
+    60.5
+   ],
+   "measured_size": [
+    121.0,
+    60.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: b-alt b +Alt drag (0, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    59.5
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    0.0,
+    -59.5,
+    200.0,
+    159.5
+   ],
+   "measured_size": [
+    200.0,
+    219.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: b-alt-sh b +Shift +Alt drag (0, 60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    59.5
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -119.0,
+    -59.5,
+    319.0,
+    159.5
+   ],
+   "measured_size": [
+    438.0,
+    219.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: t-sh t +Shift drag (0, -60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    0
+   ],
+   "by": [
+    0,
+    -59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -59.5,
+    -59.5,
+    259.5,
+    100.0
+   ],
+   "measured_size": [
+    319.0,
+    159.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: t-alt-sh t +Shift +Alt drag (0, -60)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    0
+   ],
+   "by": [
+    0,
+    -59.5
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -119.0,
+    -59.5,
+    319.0,
+    159.5
+   ],
+   "measured_size": [
+    438.0,
+    219.0
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: frame turned 30 degrees, own axes: rot-br-sh br +Shift",
+   "box": [
+    0,
+    0,
+    200.0,
+    100.0
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    40.301,
+    46.591
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    293.182,
+    146.591
+   ],
+   "measured_size": [
+    293.18,
+    146.59
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: frame turned 30 degrees, own axes: rot-br-sh2 br +Shift",
+   "box": [
+    0,
+    0,
+    200.0,
+    100.0
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -49.072,
+    40.891
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    0,
+    281.782,
+    140.891
+   ],
+   "measured_size": [
+    281.78,
+    140.89
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: frame turned 30 degrees, own axes: rot-br-alt-sh br +Shift +Alt",
+   "box": [
+    0,
+    0,
+    200.0,
+    100.0
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    40.301,
+    46.591
+   ],
+   "keep": true,
+   "center": true,
+   "want": [
+    -93.182,
+    -46.591,
+    293.182,
+    146.591
+   ],
+   "measured_size": [
+    386.37,
+    193.18
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: frame turned 30 degrees, own axes: rot-tl-sh tl +Shift",
+   "box": [
+    0,
+    0,
+    200.0,
+    100.0
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    -43.029,
+    -48.166
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -96.332,
+    -48.166,
+    200.0,
+    100.0
+   ],
+   "measured_size": [
+    296.33,
+    148.17
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: frame turned 30 degrees, own axes: rot-r-sh r +Shift",
+   "box": [
+    0,
+    0,
+    200.0,
+    100.0
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    50.742,
+    0
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -12.6855,
+    250.742,
+    112.6855
+   ],
+   "measured_size": [
+    250.74,
+    125.37
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "a box does not vanish (floor 0.1 pt)",
+   "box": [
+    0,
+    0,
+    100,
+    50
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -99.99,
+    0
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0,
+    0,
+    0.1,
+    50
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br past tl (-250,-150)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -251.2,
+    -149.75
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -51.2,
+    -49.75,
+    0,
+    0
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br past the left edge only (-250,+20)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -251.2,
+    19.75
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -51.2,
+    0,
+    0,
+    119.75
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: r past the left edge (-260)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -260.95,
+    0
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -60.95,
+    0,
+    0,
+    100
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: b past the top edge (-130)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    -130.25
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0,
+    -30.25,
+    200,
+    0
+   ],
+   "flip": [
+    false,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: tl past br (+260,+160)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    257.8,
+    159.5
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    200,
+    100,
+    257.8,
+    159.5
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br past tl with Shift",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -251.2,
+    -149.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -99.5,
+    -49.75,
+    0,
+    0
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br past tl with Alt (flips at the middle)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -251.2,
+    -149.75
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    -51.2,
+    -49.75,
+    251.2,
+    149.75
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: r past the middle with Alt",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -131.95,
+    0
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    68.05,
+    0,
+    131.95,
+    100
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br Shift, x turned and y not (mixed signs keep their own)",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -251.2,
+    -60.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -79,
+    0,
+    0,
+    39.5
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br Shift, y turned and x not",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -61.45,
+    -249.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    0,
+    -149.5,
+    299,
+    0
+   ],
+   "flip": [
+    false,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: tl Shift, x turned and y not",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0,
+    0
+   ],
+   "by": [
+    257.8,
+    -59.5
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    200,
+    -59.5,
+    519,
+    100
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: br Shift, x turned, the smaller absolute factor loses",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -300.7,
+    -29.75
+   ],
+   "keep": true,
+   "center": false,
+   "want": [
+    -140.5,
+    0,
+    0,
+    70.25
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: 0.95 pt wide, turned",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -200.95,
+    0
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -0.95,
+    0,
+    0,
+    100
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: 0.25 pt tall, turned",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    -100.25
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0,
+    -0.25,
+    200,
+    0
+   ],
+   "flip": [
+    false,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: 0.5 pt tall, not turned",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    0.5,
+    1
+   ],
+   "by": [
+    0,
+    -99.5
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    0,
+    0,
+    200,
+    0.5
+   ],
+   "flip": [
+    false,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: a turned frame (30 degrees), own axis r past the left edge",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -260.3,
+    0
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -60.3,
+    0,
+    0,
+    100
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: a turned frame (30 degrees), own br past tl",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -250.27,
+    -150.62
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -50.27,
+    -50.62,
+    0,
+    0
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: a turned frame (30 degrees), own r past the middle with Alt",
+   "box": [
+    0,
+    0,
+    200,
+    100
+   ],
+   "handle": [
+    1,
+    0.5
+   ],
+   "by": [
+    -131.27,
+    0
+   ],
+   "keep": false,
+   "center": true,
+   "want": [
+    68.73,
+    0,
+    131.27,
+    100
+   ],
+   "flip": [
+    true,
+    false
+   ]
+  },
+  {
+   "name": "InDesign 2025: flip: two objects: their box br past its tl",
+   "box": [
+    0,
+    0,
+    195,
+    113
+   ],
+   "handle": [
+    1,
+    1
+   ],
+   "by": [
+    -449.95,
+    -249.75
+   ],
+   "keep": false,
+   "center": false,
+   "want": [
+    -254.95,
+    -136.75,
+    0,
+    0
+   ],
+   "flip": [
+    true,
+    true
+   ]
+  }
+ ],
+ "turnAngle": [
+  {
+   "name": "quarter turn counter-clockwise",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    10,
+    0
+   ],
+   "to": [
+    0,
+    -10
+   ],
+   "constrain": false,
+   "want": 90.0
+  },
+  {
+   "name": "quarter turn clockwise",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    10,
+    0
+   ],
+   "to": [
+    0,
+    10
+   ],
+   "constrain": false,
+   "want": -90.0
+  },
+  {
+   "name": "Shift rounds a small turn to nothing",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    10,
+    0
+   ],
+   "to": [
+    10,
+    3
+   ],
+   "constrain": true,
+   "want": 0
+  },
+  {
+   "name": "Shift rounds to 45",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    10,
+    0
+   ],
+   "to": [
+    10,
+    -9
+   ],
+   "constrain": true,
+   "want": 45
+  },
+  {
+   "name": "across the 180 line takes the short way",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    -10,
+    -1
+   ],
+   "to": [
+    -10,
+    1
+   ],
+   "constrain": false,
+   "want": 11.421186274999286
+  },
+  {
+   "name": "about another centre",
+   "center": [
+    100,
+    100
+   ],
+   "from": [
+    110,
+    100
+   ],
+   "to": [
+    100,
+    90
+   ],
+   "constrain": false,
+   "want": 90.0
+  },
+  {
+   "name": "on the centre there is no angle",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    0,
+    0
+   ],
+   "to": [
+    5,
+    5
+   ],
+   "constrain": false,
+   "want": null
+  },
+  {
+   "name": "InDesign 2025: Shift, the pointer turned ~22 degrees (24 commanded, 22 effective): rounds to no turn (rotation stayed 0)",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    100.0,
+    0
+   ],
+   "to": [
+    92.718385457,
+    -37.460659342
+   ],
+   "constrain": true,
+   "want": 0
+  },
+  {
+   "name": "InDesign 2025: Shift, ~28 degrees (30 commanded): 45",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    100.0,
+    0
+   ],
+   "to": [
+    88.294759286,
+    -46.947156279
+   ],
+   "constrain": true,
+   "want": 45
+  },
+  {
+   "name": "InDesign 2025: Shift, ~38 degrees (40 commanded): 45",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    100.0,
+    0
+   ],
+   "to": [
+    78.801075361,
+    -61.566147533
+   ],
+   "constrain": true,
+   "want": 45
+  },
+  {
+   "name": "InDesign 2025: Shift, ~48 degrees (50 commanded): 45",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    100.0,
+    0
+   ],
+   "to": [
+    66.913060636,
+    -74.314482548
+   ],
+   "constrain": true,
+   "want": 45
+  },
+  {
+   "name": "InDesign 2025: Shift, ~-56 degrees (-60 commanded): -45",
+   "center": [
+    0,
+    0
+   ],
+   "from": [
+    100.0,
+    0
+   ],
+   "to": [
+    55.919290347,
+    82.903757256
+   ],
+   "constrain": true,
+   "want": -45
+  }
+ ]
+}

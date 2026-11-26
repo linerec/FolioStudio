@@ -1,0 +1,8 @@
+{
+ "fixture":"editorial","extension":"editorial-combined","scenarios":[
+  {"name":"notes-old-tracked-to-text","text":true,"steps":[{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"insertNote","target":"body-0","at":1,"text":"memo","user":"Reviewer B","date":"2026-10-22T22:00:00"},{"op":"setTrackChanges","target":"body-0","document":false,"enabled":true},{"op":"noteToTextAs","target":"body-0","index":0,"user":"Reviewer B","date":"2026-10-22T22:00:00"}]},
+  {"name":"notes-off-to-text","text":true,"steps":[{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"insertNote","target":"body-0","at":3,"text":"memo","user":"Reviewer B","date":"2026-10-22T22:00:00"},{"op":"noteToTextAs","target":"body-0","index":0,"user":"Reviewer B","date":"2026-10-22T22:00:00"}]},
+  {"name":"notes-inserted-off-to-text","text":true,"steps":[{"op":"insertNote","target":"body-0","at":3,"text":"memo","user":"Reviewer B","date":"2026-10-22T22:00:00"},{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"noteToTextAs","target":"body-0","index":0,"user":"Reviewer B","date":"2026-10-22T22:00:00"}]},
+  {"name":"notes-tracked-multiline-to-text","text":true,"steps":[{"op":"insertNote","target":"body-0","at":3,"text":"one\rtwo","user":"Reviewer B","date":"2026-10-22T22:00:00"},{"op":"noteToTextAs","target":"body-0","index":0,"user":"Reviewer B","date":"2026-10-22T22:00:00"}]}
+ ]
+}

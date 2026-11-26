@@ -1,0 +1,122 @@
+{
+ "fixture": "basic",
+ "about": "Object > Transform > Shear... along the horizontal axis (DOM transform() with clockwiseShearAngle, the angle the control panel shows, positive leans right) about the reference point, and Transform Again of a shear. The vertical axis and the axis angle of the dialog are not measured.",
+ "scenarios": [
+  {
+   "name": "shear-center",
+   "window": true,
+   "steps": [
+    {
+     "op": "shearBy",
+     "target": "r-plain",
+     "by": 20,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "shear-topleft",
+   "window": true,
+   "steps": [
+    {
+     "op": "shearBy",
+     "target": "r-plain",
+     "by": 20,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "shear-negative",
+   "window": true,
+   "steps": [
+    {
+     "op": "shearBy",
+     "target": "r-plain",
+     "by": -15,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "shear-oval",
+   "window": true,
+   "steps": [
+    {
+     "op": "shearBy",
+     "target": "oval",
+     "by": 25,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "shear-stroked",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "shearBy",
+     "target": "r-plain",
+     "by": 20,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "again-shear",
+   "window": true,
+   "steps": [
+    {
+     "op": "shearBy",
+     "target": "r-plain",
+     "by": 20,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-shear-sequence-rotate",
+   "window": true,
+   "steps": [
+    {
+     "op": "shearBy",
+     "target": "r-plain",
+     "by": 20,
+     "anchor": "center"
+    },
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 15,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118837,
+     "action": "Transform Sequence Again"
+    }
+   ]
+  }
+ ]
+}

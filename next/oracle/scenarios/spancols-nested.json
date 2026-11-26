@@ -1,0 +1,14 @@
+{
+  "fixture":"spancols-nested",
+  "scenarios":[
+    {"name":"noop","steps":[],"text":true},
+    {"name":"spancols-nested-span","steps":[
+      {"op":"textFormat","target":"table","start":18,"end":41,"props":{"spanColumnType":"SPAN_COLUMNS"}},
+      {"op":"textFormat","target":"note","start":18,"end":41,"props":{"spanColumnType":"SPAN_COLUMNS"}}
+    ],"text":true},
+    {"name":"spancols-nested-split","steps":[
+      {"op":"textFormat","target":"table","start":18,"end":41,"props":{"spanColumnType":"SPLIT_COLUMNS","spanSplitColumnCount":2}},
+      {"op":"textFormat","target":"note","start":18,"end":41,"props":{"spanColumnType":"SPLIT_COLUMNS","spanSplitColumnCount":2}}
+    ],"text":true}
+  ]
+}

@@ -1,0 +1,49 @@
+{
+ "fixture": "text",
+ "about": "Place a Word file (.docx) with tables, footnotes and languages into a text frame (docxtext-c1).",
+ "scenarios": [
+  {
+   "name": "docxtext-lang",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-lang.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-lang-codes",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-lang2.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-lang-slots",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-lang3.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-fn",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-fn.docx",
+     "target": "korean"
+    }
+   ]
+  }
+ ]
+}

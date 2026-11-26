@@ -1,0 +1,155 @@
+{
+  "fixture": "typepath-c3",
+  "extension": "textpath",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "typepath-c3-flip",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.curve"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "FlipPathEffect": "Flipped"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-brackets",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.curve"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "StartBracket": "20",
+            "EndBracket": "200"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-skew",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.effects"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathEffect": "SkewPathEffect"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-ribbon",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.effects"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathEffect": "RibbonPathEffect"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-stair",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.effects"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathEffect": "StairStepPathEffect"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-gravity",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.effects"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathEffect": "GravityPathEffect"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-ascender",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.alignment"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "TextAlignment": "AscenderTextAlignment"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-descender",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.alignment"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "TextAlignment": "DescenderTextAlignment"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c3-center",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c3.alignment"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "TextAlignment": "CenterTextAlignment"
+          }
+        }
+      ]
+    }
+  ]
+}

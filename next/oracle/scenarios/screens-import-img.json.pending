@@ -1,0 +1,95 @@
+{
+ "fixture": "basic",
+ "about": "screens-import: File > Place BMP (24/8/4/1 bit), palette PNG with 4/2/1 bits, a GIF with a transparent colour. (the id numbers of the goldens differ from the fixture's: InDesign renumbered the objects at open; checked by crates/edit/tests/screens_import.rs and print-check, not by oracle.rs)",
+ "scenarios": [
+  {
+   "name": "place-bmp24",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-bmp24.bmp",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-bmp8",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-bmp8.bmp",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-bmp4",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-bmp4.bmp",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-bmp1",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-bmp1.bmp",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "place-png-indexed4",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-indexed4.png",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-png-indexed2",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-indexed2.png",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-png-indexed1",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-indexed1.png",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-gif-transparent",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-transparent.gif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  }
+ ]
+}

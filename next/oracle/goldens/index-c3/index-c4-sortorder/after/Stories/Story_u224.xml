@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u224" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Title">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Regular">
+				<Content>Index</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Section Head">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Regular">
+				<Content>Symbols</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Level 1">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Mango  </Content>
+				<HyperlinkTextSource Self="u23d" Name=".573" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="5" TextAnchorName="" TocEntryPageNumberString="Mango" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+				<Content>Fig  </Content>
+				<HyperlinkTextSource Self="u242" Name=".578" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="6" TextAnchorName="" TocEntryPageNumberString="Fig" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+				<Content>Pear  </Content>
+				<HyperlinkTextSource Self="u245" Name=".581" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="7" TextAnchorName="" TocEntryPageNumberString="Pear" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Section Head">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Regular">
+				<Content>A</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Level 1">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Zebra  </Content>
+				<HyperlinkTextSource Self="u248" Name=".584" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="1" TextAnchorName="" TocEntryPageNumberString="Zebra" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+				<Content>Ångström  </Content>
+				<HyperlinkTextSource Self="u24b" Name=".587" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="3" TextAnchorName="" TocEntryPageNumberString="Ångström" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Section Head">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Regular">
+				<Content>K</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Level 1">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>漢字  </Content>
+				<HyperlinkTextSource Self="u24e" Name=".590" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="2" TextAnchorName="" TocEntryPageNumberString="漢字" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Section Head">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Regular">
+				<Content>Z</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/Index Level 1">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Éclair  </Content>
+				<HyperlinkTextSource Self="u251" Name=".593" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="IndexMarker" IndexMarkerId="4" TextAnchorName="" TocEntryPageNumberString="Éclair" TocEntryLevel="0" />
+					</Properties>
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

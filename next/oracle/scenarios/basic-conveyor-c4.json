@@ -1,0 +1,106 @@
+{
+ "fixture": "basic-conveyor-c4",
+ "about": "Edit > Place and Link (conveyor-c4; menu action 139008 of InDesign 2025 measured with real input: the selection loads the Content Placer's cursor, a click on the page places it once with the top left corner of the visible bounds at the point, Create Link on and Map Styles on). The DOM equivalent is Page.contentPlace(items, true, true, true, point); the real click's IDML (artifacts/conveyor-c4-20261023/out/s1_place-*.idml) has the same Link / LinkedPageItemOption / LinkedStoryOption elements as these captures. Fixture basic-conveyor-c4 is basic.idml as InDesign 2025 exports it after opening it on 2026-11-08: InDesign now numbers the objects of basic.idml anew at every open (the missing Adobe Fonts), so a capture against basic.idml never matches its ids; a file InDesign wrote itself keeps its numbers.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "pal-rect",
+   "steps": [
+    {
+     "op": "menuPlaceAndLink",
+     "targets": [
+      "r-fill"
+     ],
+     "page": 0,
+     "at": [
+      500,
+      300
+     ],
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pal-text",
+   "steps": [
+    {
+     "op": "menuPlaceAndLink",
+     "targets": [
+      "tf"
+     ],
+     "page": 1,
+     "at": [
+      400,
+      300
+     ],
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pal-image",
+   "steps": [
+    {
+     "op": "menuPlaceAndLink",
+     "targets": [
+      "img"
+     ],
+     "page": 2,
+     "at": [
+      400,
+      300
+     ],
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pal-text-nomap",
+   "steps": [
+    {
+     "op": "menuPlaceAndLink",
+     "targets": [
+      "tf"
+     ],
+     "page": 1,
+     "at": [
+      400,
+      300
+     ],
+     "labels": [
+      "placed"
+     ],
+     "mapStyles": false
+    }
+   ]
+  },
+  {
+   "name": "pal-group",
+   "steps": [
+    {
+     "op": "menuPlaceAndLink",
+     "targets": [
+      "grp"
+     ],
+     "page": 0,
+     "at": [
+      400,
+      200
+     ],
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  }
+ ]
+}

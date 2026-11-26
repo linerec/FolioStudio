@@ -1,0 +1,596 @@
+{
+  "fixture": "text-format",
+  "about": "Both character lines, every built-in style and negative weights. All steps use existing textFormat mappings in oracle.rs run_step and print-check.py command.",
+  "scenarios": [
+    {
+      "name": "charlines2-type-00",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Solid",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Solid"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-01",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/ThickThick",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/ThickThick"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-02",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/ThickThin",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/ThickThin"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-03",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/ThickThinThick",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/ThickThinThick"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-04",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/ThinThick",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/ThinThick"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-05",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/ThinThickThin",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/ThinThickThin"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-06",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/ThinThin",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/ThinThin"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-07",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Triple_Stroke",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Triple_Stroke"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-08",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Canned Dashed 3x2",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Canned Dashed 3x2"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-09",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Canned Dashed 4x4",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Canned Dashed 4x4"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-10",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Left Slant Hash",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Left Slant Hash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-11",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Right Slant Hash",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Right Slant Hash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-12",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Straight Hash",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Straight Hash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-13",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Canned Dotted",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Canned Dotted"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-14",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Wavy",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Wavy"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-15",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/White Diamond",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/White Diamond"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-16",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Japanese Dots",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Japanese Dots"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-type-17",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Dashed",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Dashed"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-negative-2",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": -2,
+            "strikeThroughWeight": -2,
+            "underlineOffset": 6,
+            "strikeThroughOffset": 6
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.negative"
+      ]
+    },
+    {
+      "name": "charlines2-negative-0-25",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": -0.25,
+            "strikeThroughWeight": -0.25,
+            "underlineOffset": 6,
+            "strikeThroughOffset": 6
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.negative"
+      ]
+    },
+    {
+      "name": "charlines2-wavy-2-8",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 2,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Wavy",
+            "strikeThroughWeight": 2,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Wavy"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-wavy-4-8",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Wavy",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Wavy"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    },
+    {
+      "name": "charlines2-wavy-10-18",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 10,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StrokeStyle/$ID/Wavy",
+            "strikeThroughWeight": 10,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StrokeStyle/$ID/Wavy"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.all-builtins"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "상호 참조",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "editCrossReference",
+  "description": "Cross-Reference Options: ids is the link; its name, destination and format start from it.",
+  "fields": [
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "destination",
+      "label": "대상",
+      "type": "choice",
+      "source": "crossReferenceDestinations",
+      "default": ""
+    },
+    {
+      "name": "format",
+      "label": "상호 참조 형식",
+      "type": "choice",
+      "source": "crossReferenceFormats",
+      "default": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setCrossReference",
+        "id": "$ids0",
+        "name": "$name",
+        "destination": "$destination",
+        "format": "$format",
+        "locations": []
+      }
+    ]
+  }
+}

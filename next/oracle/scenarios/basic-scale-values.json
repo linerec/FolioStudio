@@ -1,0 +1,154 @@
+{
+  "fixture": "basic",
+  "about": "Control panel scale percentages, applied to the content (InDesign's horizontalScale, verticalScale; scripting's reference point is the top left).",
+  "scenarios": [
+    {
+      "name": "xform-scale-x-50",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "horizontalScale": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-y-150",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "verticalScale": 150
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-both-stroked",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "horizontalScale": 200,
+            "verticalScale": 200
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-oval",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "horizontalScale": 80
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-rotated",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "horizontalScale": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-group",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "horizontalScale": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-image",
+      "steps": [
+        {
+          "op": "set",
+          "target": "img",
+          "props": {
+            "horizontalScale": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-line",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "horizontalScale": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-uniform-stroked",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "horizontalScale": 200,
+            "verticalScale": 200
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-mixed-stroked",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "horizontalScale": 150,
+            "verticalScale": 200
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-down-stroked",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "horizontalScale": 40,
+            "verticalScale": 80
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-scale-y-small-stroked",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "verticalScale": 50
+          }
+        }
+      ]
+    }
+  ]
+}

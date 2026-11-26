@@ -1,0 +1,53 @@
+{
+  "title": "텍스트 프레임 옵션",
+  "target": "selection",
+  "defaults": "textFrameOptions",
+  "skipEmpty": true,
+  "link": "textFrameInsets",
+  "packs": {
+    "insets": ["insetTop", "insetLeft", "insetBottom", "insetRight"]
+  },
+  "description": "Object > Text Frame Options: ids are text frames (the selection when none are given); the values start from the first frame's options, and each frame gets one textFrameOptions command with only the options that changed (the four insets go together as insets).",
+  "tabs": [
+    { "id": "general", "label": "일반" },
+    { "id": "baseline", "label": "기준선 옵션" },
+    { "id": "autosize", "label": "자동 크기 조정" }
+  ],
+  "fields": [
+    { "name": "columns", "label": "열 개수", "type": "number", "integer": true, "min": 1, "max": 40, "default": 1, "group": "열", "tab": "general" },
+    { "name": "gutter", "label": "열 간격", "type": "number", "unit": "length-h", "min": 0, "max": 100000, "default": 12, "group": "열", "tab": "general" },
+    { "name": "columnWidth", "label": "열 폭", "type": "number", "unit": "length-h", "min": 0.001, "max": 100000, "default": 100, "group": "열", "tab": "general",
+      "disabledWhen": { "fixed": false }, "sendWhen": { "fixed": true } },
+    { "name": "fixed", "label": "고정 열 폭", "type": "boolean", "default": false, "group": "열", "tab": "general" },
+    { "name": "same", "label": "모든 설정을 동일하게", "type": "boolean", "default": true, "local": true, "group": "인세트 간격", "tab": "general", "when": { "shaped": false } },
+    { "name": "insetTop", "label": "인세트 위쪽", "labelWhen": { "label": "인세트", "shaped": true }, "type": "number", "unit": "length-v", "min": 0, "max": 100000, "default": 0, "group": "인세트 간격", "tab": "general" },
+    { "name": "insetLeft", "label": "인세트 왼쪽", "type": "number", "unit": "length-h", "min": 0, "max": 100000, "default": 0, "group": "인세트 간격", "tab": "general", "when": { "shaped": false } },
+    { "name": "insetBottom", "label": "인세트 아래쪽", "type": "number", "unit": "length-v", "min": 0, "max": 100000, "default": 0, "group": "인세트 간격", "tab": "general", "when": { "shaped": false } },
+    { "name": "insetRight", "label": "인세트 오른쪽", "type": "number", "unit": "length-h", "min": 0, "max": 100000, "default": 0, "group": "인세트 간격", "tab": "general", "when": { "shaped": false } },
+    { "name": "shaped", "type": "boolean", "default": false, "hidden": true, "tab": "general" },
+    { "name": "vertical", "label": "세로 정렬", "type": "enum", "default": "TopAlign", "group": "세로 균등 배치", "tab": "general", "options": [
+      { "value": "TopAlign", "label": "위쪽" }, { "value": "CenterAlign", "label": "가운데" }, { "value": "BottomAlign", "label": "아래쪽" }, { "value": "JustifyAlign", "label": "양쪽 정렬" } ] },
+    { "name": "ignoreWrap", "label": "텍스트 감싸기 무시", "type": "boolean", "default": false, "tab": "general" },
+    { "name": "firstBaseline", "label": "첫 번째 기준선 오프셋", "type": "enum", "default": "AscentOffset", "group": "첫 번째 기준선", "tab": "baseline", "options": [
+      { "value": "AscentOffset", "label": "어센트" }, { "value": "CapHeight", "label": "대문자 높이" }, { "value": "LeadingOffset", "label": "행간" },
+      { "value": "XHeight", "label": "x 높이" }, { "value": "EmboxHeight", "label": "전각 상자 높이" }, { "value": "FixedHeight", "label": "고정" } ] },
+    { "name": "minFirstBaseline", "label": "최소 첫 번째 기준선", "type": "number", "unit": "length-v", "min": 0, "max": 100000, "default": 0, "group": "첫 번째 기준선", "tab": "baseline" },
+    { "name": "autoSize", "label": "자동 크기 조정", "type": "enum", "default": "Off", "group": "자동 크기 조정", "tab": "autosize", "options": [
+      { "value": "Off", "label": "끔" }, { "value": "HeightOnly", "label": "높이만" }, { "value": "WidthOnly", "label": "너비만" },
+      { "value": "HeightAndWidth", "label": "높이 및 너비" }, { "value": "HeightAndWidthProportionally", "label": "높이 및 너비(비율 유지)" } ] },
+    { "name": "autoSizePoint", "label": "기준점", "type": "enum", "grid": 3, "default": "CenterPoint", "group": "자동 크기 조정", "tab": "autosize", "disabledWhen": { "autoSize": "Off" }, "options": [
+      { "value": "TopLeftPoint", "label": "왼쪽 위" }, { "value": "TopCenterPoint", "label": "가운데 위" }, { "value": "TopRightPoint", "label": "오른쪽 위" },
+      { "value": "LeftCenterPoint", "label": "왼쪽 가운데" }, { "value": "CenterPoint", "label": "가운데" }, { "value": "RightCenterPoint", "label": "오른쪽 가운데" },
+      { "value": "BottomLeftPoint", "label": "왼쪽 아래" }, { "value": "BottomCenterPoint", "label": "가운데 아래" }, { "value": "BottomRightPoint", "label": "오른쪽 아래" } ] },
+    { "name": "useMinHeight", "label": "최소 높이", "type": "boolean", "default": false, "group": "자동 크기 조정", "tab": "autosize", "disabledWhen": { "autoSize": ["Off", "WidthOnly"] } },
+    { "name": "minHeight", "label": "최소 높이:", "type": "number", "unit": "length-v", "min": 0, "max": 100000, "default": 0, "group": "자동 크기 조정", "tab": "autosize",
+      "disabledWhen": { "useMinHeight": false }, "sendWhen": { "useMinHeight": true } },
+    { "name": "useMinWidth", "label": "최소 너비", "type": "boolean", "default": false, "group": "자동 크기 조정", "tab": "autosize", "disabledWhen": { "autoSize": ["Off", "HeightOnly"] } },
+    { "name": "minWidth", "label": "최소 너비:", "type": "number", "unit": "length-h", "min": 0, "max": 100000, "default": 0, "group": "자동 크기 조정", "tab": "autosize",
+      "disabledWhen": { "useMinWidth": false }, "sendWhen": { "useMinWidth": true } },
+    { "name": "noLineBreaks", "label": "줄 바꿈 없음", "type": "boolean", "default": false, "group": "자동 크기 조정", "tab": "autosize", "disabledWhen": { "autoSize": ["Off", "HeightOnly"] } }
+  ],
+  "actions": {
+    "ok": [{ "$each": "$ids", "op": "textFrameOptions", "id": "$id", "options": { "$changed": true } }]
+  }
+}

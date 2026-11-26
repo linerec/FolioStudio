@@ -1,0 +1,13 @@
+{
+ "fixture":"xref", "extension":"xref",
+ "scenarios":[
+  {"name":"noop","text":true,"steps":[]},
+  {"name":"xref-url-insert","text":true,"steps":[{"op":"insertHyperlink","target":"source","start":8,"end":12,"name":"Second URL","url":"https://example.net/"}]},
+  {"name":"xref-url-options","text":true,"steps":[{"op":"setHyperlink","link":"Website","name":"Renamed website","url":"https://example.net/path"}]},
+  {"name":"xref-delete","text":true,"steps":[{"op":"deleteHyperlink","link":"Reference"}]},
+  {"name":"xref-insert","text":true,"steps":[{"op":"insertCrossReference","target":"source","at":13,"target_story":"","target_at":0,"destinationName":"Heading","format":"Folio paragraph","name":"Second reference"}]},
+  {"name":"xref-options","text":true,"steps":[{"op":"setCrossReference","link":"Reference","name":"Anchor reference","destinationName":"Heading","format":"Text Anchor Name"}]},
+  {"name":"xref-update","text":true,"steps":[{"op":"insertText","target":"target","at":7,"text":"new "},{"op":"updateCrossReference","link":"Reference"}]},
+  {"name":"xref-paragraph","text":true,"steps":[{"op":"insertCrossReference","target":"source","at":13,"targetLabel":"target","target_at":15,"destination":"","format":"Folio paragraph","name":"Second paragraph"}]}
+ ]
+}

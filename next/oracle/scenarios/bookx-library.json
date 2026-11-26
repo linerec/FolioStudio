@@ -1,0 +1,9 @@
+{
+  "fixture": "bookx-library",
+  "extension": "bookx-library",
+  "about": "Local library snapshot placement with a fresh object id, original position and destination resources.",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"bookx-library-place","steps":[{"op":"bookxLibraryPlace","target":"bookx-source","label":"bookx-placed"}]}
+  ]
+}

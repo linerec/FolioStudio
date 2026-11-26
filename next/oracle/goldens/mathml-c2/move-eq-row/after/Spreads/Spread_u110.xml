@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Spread xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Spread Self="u110" FlattenerOverride="Default" SpreadHidden="false" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0" ShowMasterItems="true" PageCount="1" BindingLocation="0" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium">
+		<FlattenerPreference LineArtAndTextResolution="300" GradientAndMeshResolution="150" ClipComplexRegions="false" ConvertAllStrokesToOutlines="false" ConvertAllTextToOutlines="false">
+			<Properties>
+				<RasterVectorBalance type="double">50</RasterVectorBalance>
+			</Properties>
+		</FlattenerPreference>
+		<Page Self="u115" AppliedAlternateLayout="ub4" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GeometricBounds="0 0 792 612" ItemTransform="1 0 0 1 0 -396" Name="1" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" OverrideList="u10d u12a" AppliedMaster="ub9" MasterPageTransform="1 0 0 1 0 0" TabOrder="" GridStartingPoint="TopOutside" UseMasterGrid="true">
+			<Properties>
+				<Descriptor type="list">
+					<ListItem type="string"></ListItem>
+					<ListItem type="enumeration">Arabic</ListItem>
+					<ListItem type="boolean">true</ListItem>
+					<ListItem type="boolean">false</ListItem>
+					<ListItem type="long">1</ListItem>
+					<ListItem type="long">1</ListItem>
+					<ListItem type="string"></ListItem>
+				</Descriptor>
+				<PageColor type="enumeration">UseMasterColor</PageColor>
+			</Properties>
+			<MarginPreference ColumnCount="1" ColumnGutter="12" Top="36" Bottom="36" Left="36" Right="36" ColumnDirection="Horizontal" ColumnsPositions="0 540" />
+			<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
+				<Properties>
+					<AppliedFont type="string">Minion Pro</AppliedFont>
+				</Properties>
+			</GridDataInformation>
+		</Page>
+		<TextFrame Self="u12a" ParentStory="u118" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FixedDimension FlexibleDimension FixedDimension" VerticalLayoutConstraints="FixedDimension FlexibleDimension FixedDimension" StrokeWeight="1" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub8" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 306 0">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-270 -360" LeftDirection="-270 -360" RightDirection="-270 -360" />
+							<PathPointType Anchor="-270 360" LeftDirection="-270 360" RightDirection="-270 360" />
+							<PathPointType Anchor="270 360" LeftDirection="270 360" RightDirection="270 360" />
+							<PathPointType Anchor="270 -360" LeftDirection="270 -360" RightDirection="270 -360" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="540" TextColumnMaxWidth="0">
+				<Properties>
+					<InsetSpacing type="list">
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+					</InsetSpacing>
+				</Properties>
+			</TextFramePreference>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</TextFrame>
+		<Rectangle Self="u12d" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="-18.57080304455758 6.053130177497849" GradientFillLength="37.14160608911516" GradientFillAngle="0" GradientStrokeStart="-18.57080304455758 6.053130177497849" GradientStrokeLength="37.14160608911516" GradientStrokeAngle="0" ItemLayer="ub8" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 158.57080304455758 -259.9468698225021">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="eq-row" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-18.57080304455758 -6.053130177497906" LeftDirection="-18.57080304455758 -6.053130177497906" RightDirection="-18.57080304455758 -6.053130177497906" />
+							<PathPointType Anchor="-18.57080304455758 6.053130177497849" LeftDirection="-18.57080304455758 6.053130177497849" RightDirection="-18.57080304455758 6.053130177497849" />
+							<PathPointType Anchor="18.57080304455758 6.053130177497849" LeftDirection="18.57080304455758 6.053130177497849" RightDirection="18.57080304455758 6.053130177497849" />
+							<PathPointType Anchor="18.57080304455758 -6.053130177497906" LeftDirection="18.57080304455758 -6.053130177497906" RightDirection="18.57080304455758 -6.053130177497906" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+			<MathObject Self="u12e" AppliedMathMLFontSize="10" AppliedMathMLRgbColor="0 0 0" TintValue="100" IsMathMLObject="true" MathMLDescription="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/math&gt;" MathmlSvgData="{&quot;height&quot;:12.106260299682618,&quot;svg_str&quot;:&quot;&lt;svg style=\&quot;vertical-align: -0.186ex;\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;5.191ex\&quot; height=\&quot;1.692ex\&quot; role=\&quot;img\&quot; focusable=\&quot;false\&quot; viewBox=\&quot;0 -666 2294.4 748\&quot;&gt;&lt;g stroke=\&quot;currentColor\&quot; fill=\&quot;currentColor\&quot; stroke-width=\&quot;0\&quot; transform=\&quot;scale(1,-1)\&quot;&gt;&lt;g data-mml-node=\&quot;math\&quot;&gt;&lt;g data-mml-node=\&quot;mrow\&quot;&gt;&lt;g data-mml-node=\&quot;mi\&quot;&gt;&lt;path data-c=\&quot;1D465\&quot; d=\&quot;M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mo\&quot; transform=\&quot;translate(794.2,0)\&quot;&gt;&lt;path data-c=\&quot;2B\&quot; d=\&quot;M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mn\&quot; transform=\&quot;translate(1794.4,0)\&quot;&gt;&lt;path data-c=\&quot;31\&quot; d=\&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&quot;,&quot;width&quot;:37.141605377197269}">
+				<Properties>
+					<AppliedMathMLSwatch type="enumeration">Nothing</AppliedMathMLSwatch>
+				</Properties>
+			</MathObject>
+		</Rectangle>
+		<Rectangle Self="u12f" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="-6.421612688302986 9.791617787122732" GradientFillLength="12.843225376605986" GradientFillAngle="0" GradientStrokeStart="-6.421612688302986 9.791617787122732" GradientStrokeLength="12.843225376605986" GradientStrokeAngle="0" ItemLayer="ub8" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 106.42161268830299 -216.20838221287727">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="eq-frac" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-6.421612688302986 -9.791617787122732" LeftDirection="-6.421612688302986 -9.791617787122732" RightDirection="-6.421612688302986 -9.791617787122732" />
+							<PathPointType Anchor="-6.421612688302986 9.791617787122732" LeftDirection="-6.421612688302986 9.791617787122732" RightDirection="-6.421612688302986 9.791617787122732" />
+							<PathPointType Anchor="6.421612688303 9.791617787122732" LeftDirection="6.421612688303 9.791617787122732" RightDirection="6.421612688303 9.791617787122732" />
+							<PathPointType Anchor="6.421612688303 -9.791617787122732" LeftDirection="6.421612688303 -9.791617787122732" RightDirection="6.421612688303 -9.791617787122732" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+			<MathObject Self="u130" AppliedMathMLFontSize="10" AppliedMathMLRgbColor="0 0 0" TintValue="100" IsMathMLObject="true" MathMLDescription="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mfrac&gt;&lt;/math&gt;" MathmlSvgData="{&quot;height&quot;:19.583234786987306,&quot;svg_str&quot;:&quot;&lt;svg style=\&quot;vertical-align: -0.781ex;\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;1.795ex\&quot; height=\&quot;2.737ex\&quot; role=\&quot;img\&quot; focusable=\&quot;false\&quot; viewBox=\&quot;0 -864.9 793.6 1209.9\&quot;&gt;&lt;g stroke=\&quot;currentColor\&quot; fill=\&quot;currentColor\&quot; stroke-width=\&quot;0\&quot; transform=\&quot;scale(1,-1)\&quot;&gt;&lt;g data-mml-node=\&quot;math\&quot;&gt;&lt;g data-mml-node=\&quot;mfrac\&quot;&gt;&lt;g data-mml-node=\&quot;mn\&quot; transform=\&quot;translate(220,394) scale(0.707)\&quot;&gt;&lt;path data-c=\&quot;31\&quot; d=\&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mn\&quot; transform=\&quot;translate(220,-345) scale(0.707)\&quot;&gt;&lt;path data-c=\&quot;32\&quot; d=\&quot;M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;rect width=\&quot;553.6\&quot; height=\&quot;60\&quot; x=\&quot;120\&quot; y=\&quot;220\&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&quot;,&quot;width&quot;:12.843225479125977}">
+				<Properties>
+					<AppliedMathMLSwatch type="enumeration">Nothing</AppliedMathMLSwatch>
+				</Properties>
+			</MathObject>
+		</Rectangle>
+		<Rectangle Self="u131" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="-15.662295459270482 8.41070274662971" GradientFillLength="31.324590918540963" GradientFillAngle="0" GradientStrokeStart="-15.662295459270482 8.41070274662971" GradientStrokeLength="31.324590918540963" GradientStrokeAngle="0" ItemLayer="ub8" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 115.66229545927048 -147.5892972533703">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="eq-script" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-15.662295459270482 -8.41070274662971" LeftDirection="-15.662295459270482 -8.41070274662971" RightDirection="-15.662295459270482 -8.41070274662971" />
+							<PathPointType Anchor="-15.662295459270482 8.41070274662971" LeftDirection="-15.662295459270482 8.41070274662971" RightDirection="-15.662295459270482 8.41070274662971" />
+							<PathPointType Anchor="15.662295459270482 8.41070274662971" LeftDirection="15.662295459270482 8.41070274662971" RightDirection="15.662295459270482 8.41070274662971" />
+							<PathPointType Anchor="15.662295459270482 -8.41070274662971" LeftDirection="15.662295459270482 -8.41070274662971" RightDirection="15.662295459270482 -8.41070274662971" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+			<MathObject Self="u132" AppliedMathMLFontSize="10" AppliedMathMLRgbColor="0 0 0" TintValue="100" IsMathMLObject="true" MathMLDescription="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/math&gt;" MathmlSvgData="{&quot;height&quot;:16.8214054107666,&quot;svg_str&quot;:&quot;&lt;svg style=\&quot;vertical-align: -0.464ex;\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;4.378ex\&quot; height=\&quot;2.351ex\&quot; role=\&quot;img\&quot; focusable=\&quot;false\&quot; viewBox=\&quot;0 -833.9 1935.1 1038.9\&quot;&gt;&lt;g stroke=\&quot;currentColor\&quot; fill=\&quot;currentColor\&quot; stroke-width=\&quot;0\&quot; transform=\&quot;scale(1,-1)\&quot;&gt;&lt;g data-mml-node=\&quot;math\&quot;&gt;&lt;g data-mml-node=\&quot;mrow\&quot;&gt;&lt;g data-mml-node=\&quot;msup\&quot;&gt;&lt;g data-mml-node=\&quot;mi\&quot;&gt;&lt;path data-c=\&quot;1D465\&quot; d=\&quot;M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mn\&quot; transform=\&quot;translate(605,363) scale(0.707)\&quot;&gt;&lt;path data-c=\&quot;32\&quot; d=\&quot;M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;msub\&quot; transform=\&quot;translate(1008.6,0)\&quot;&gt;&lt;g data-mml-node=\&quot;mi\&quot;&gt;&lt;path data-c=\&quot;1D466\&quot; d=\&quot;M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mn\&quot; transform=\&quot;translate(523,-150) scale(0.707)\&quot;&gt;&lt;path data-c=\&quot;31\&quot; d=\&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&quot;,&quot;width&quot;:31.3245906829834}">
+				<Properties>
+					<AppliedMathMLSwatch type="enumeration">Nothing</AppliedMathMLSwatch>
+				</Properties>
+			</MathObject>
+		</Rectangle>
+		<Rectangle Self="u133" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="-33.567683484315864 8.57884525156021" GradientFillLength="67.13536696863173" GradientFillAngle="0" GradientStrokeStart="-33.567683484315864 8.57884525156021" GradientStrokeLength="67.13536696863173" GradientStrokeAngle="0" ItemLayer="ub8" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 133.56768348431586 -77.42115474843979">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="eq-sqrt" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-33.567683484315864 -8.57884525156021" LeftDirection="-33.567683484315864 -8.57884525156021" RightDirection="-33.567683484315864 -8.57884525156021" />
+							<PathPointType Anchor="-33.567683484315864 8.57884525156021" LeftDirection="-33.567683484315864 8.57884525156021" RightDirection="-33.567683484315864 8.57884525156021" />
+							<PathPointType Anchor="33.567683484315864 8.57884525156021" LeftDirection="33.567683484315864 8.57884525156021" RightDirection="33.567683484315864 8.57884525156021" />
+							<PathPointType Anchor="33.567683484315864 -8.57884525156021" LeftDirection="33.567683484315864 -8.57884525156021" RightDirection="33.567683484315864 -8.57884525156021" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+			<MathObject Self="u134" AppliedMathMLFontSize="10" AppliedMathMLRgbColor="0 0 0" TintValue="100" IsMathMLObject="true" MathMLDescription="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msqrt&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mtext&gt;abc&lt;/mtext&gt;&lt;/mrow&gt;&lt;/msqrt&gt;&lt;/math&gt;" MathmlSvgData="{&quot;height&quot;:17.157690048217775,&quot;svg_str&quot;:&quot;&lt;svg style=\&quot;vertical-align: -0.286ex;\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;9.383ex\&quot; height=\&quot;2.398ex\&quot; role=\&quot;img\&quot; focusable=\&quot;false\&quot; viewBox=\&quot;0 -933.5 4147.4 1060\&quot;&gt;&lt;g stroke=\&quot;currentColor\&quot; fill=\&quot;currentColor\&quot; stroke-width=\&quot;0\&quot; transform=\&quot;scale(1,-1)\&quot;&gt;&lt;g data-mml-node=\&quot;math\&quot;&gt;&lt;g data-mml-node=\&quot;msqrt\&quot;&gt;&lt;g transform=\&quot;translate(853,0)\&quot;&gt;&lt;g data-mml-node=\&quot;mrow\&quot;&gt;&lt;g data-mml-node=\&quot;mi\&quot;&gt;&lt;path data-c=\&quot;1D465\&quot; d=\&quot;M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mo\&quot; transform=\&quot;translate(794.2,0)\&quot;&gt;&lt;path data-c=\&quot;2B\&quot; d=\&quot;M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mtext\&quot; transform=\&quot;translate(1794.4,0)\&quot;&gt;&lt;path data-c=\&quot;61\&quot; d=\&quot;M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z\&quot;&gt;&lt;/path&gt;&lt;path data-c=\&quot;62\&quot; d=\&quot;M307 -11Q234 -11 168 55L158 37Q156 34 153 28T147 17T143 10L138 1L118 0H98V298Q98 599 97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V543Q179 391 180 391L183 394Q186 397 192 401T207 411T228 421T254 431T286 439T323 442Q401 442 461 379T522 216Q522 115 458 52T307 -11ZM182 98Q182 97 187 90T196 79T206 67T218 55T233 44T250 35T271 29T295 26Q330 26 363 46T412 113Q424 148 424 212Q424 287 412 323Q385 405 300 405Q270 405 239 390T188 347L182 339V98Z\&quot; transform=\&quot;translate(500,0)\&quot;&gt;&lt;/path&gt;&lt;path data-c=\&quot;63\&quot; d=\&quot;M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z\&quot; transform=\&quot;translate(1056,0)\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g data-mml-node=\&quot;mo\&quot; transform=\&quot;translate(0,73.5)\&quot;&gt;&lt;path data-c=\&quot;221A\&quot; d=\&quot;M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z\&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;rect width=\&quot;3294.4\&quot; height=\&quot;60\&quot; x=\&quot;853\&quot; y=\&quot;813.5\&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&quot;,&quot;width&quot;:67.13536834716797}">
+				<Properties>
+					<AppliedMathMLSwatch type="enumeration">Nothing</AppliedMathMLSwatch>
+				</Properties>
+			</MathObject>
+		</Rectangle>
+	</Spread>
+</idPkg:Spread>

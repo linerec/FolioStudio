@@ -1,0 +1,50 @@
+{
+  "fixture": "text-format",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "bullets-convert-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "Item ^#.^t"
+          }
+        },
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "List Child",
+          "props": {
+            "basedOn": "Format Body"
+          }
+        },
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "style": "List Child",
+          "clear": true
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 13,
+          "end": 13,
+          "props": {
+            "numberingExpression": "(^#)^t"
+          }
+        },
+        {
+          "op": "convertStyleListsToText",
+          "style": "Format Body",
+          "labels": {}
+        }
+      ]
+    }
+  ]
+}

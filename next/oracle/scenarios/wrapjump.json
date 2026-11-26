@@ -1,0 +1,59 @@
+{
+ "fixture": "wrapjump",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "wrapjump-on",
+   "text": true,
+   "rules": [
+    "text.wrap.first-line-below-box"
+   ],
+   "steps": [
+    {
+     "op": "textWrap",
+     "target": "w0",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w1",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w2",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w3",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w4",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w5",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w6",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textWrap",
+     "target": "w7",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    }
+   ]
+  }
+ ]
+}

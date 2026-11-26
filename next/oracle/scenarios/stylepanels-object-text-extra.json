@@ -1,0 +1,33 @@
+{
+  "fixture": "objectstyles",
+  "about": "Additional text frame capture through the windowed Object Styles menu.",
+  "scenarios": [
+    {
+      "name": "c2-create-text-shadow",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "opacity": 60,
+                "distance": 5,
+                "size": 3
+              }
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Shadow",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        }
+      ]
+    }
+  ]
+}

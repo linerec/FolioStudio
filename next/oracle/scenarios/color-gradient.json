@@ -1,0 +1,286 @@
+{
+  "fixture": "color-gradient",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "gradient-new-linear",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "newGradient",
+          "name": "New Ramp",
+          "kind": "Linear",
+          "stops": [
+            {
+              "color": "Color/Blue",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Orange",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-new-radial",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "newGradient",
+          "name": "Round",
+          "kind": "Radial",
+          "stops": [
+            {
+              "color": "Color/Orange",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Black",
+              "location": 100,
+              "midpoint": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-midpoint-25",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Paper",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Black",
+              "location": 100,
+              "midpoint": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-midpoint-75",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Paper",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Black",
+              "location": 100,
+              "midpoint": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-midpoint-first",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Paper",
+              "location": 0,
+              "midpoint": 25
+            },
+            {
+              "color": "Color/Black",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-add-stop",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Blue",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Paper",
+              "location": 35,
+              "midpoint": 65
+            },
+            {
+              "color": "Color/Orange",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-remove-stop",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Blue",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Paper",
+              "location": 35,
+              "midpoint": 65
+            },
+            {
+              "color": "Color/Orange",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        },
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Paper",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Black",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gradient-rename",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "rename": "A 50% Ramp"
+        }
+      ]
+    },
+    {
+      "name": "gradient-radial",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "kind": "Radial"
+        }
+      ]
+    },
+    {
+      "name": "gradient-angle",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "setGradientGeometry",
+          "target": "ramp",
+          "angle": 45
+        }
+      ]
+    },
+    {
+      "name": "gradient-geometry",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "setGradientGeometry",
+          "target": "ramp",
+          "angle": 30,
+          "start": [
+            75,
+            65
+          ],
+          "length": 120
+        }
+      ]
+    },
+    {
+      "name": "gradient-reverse",
+      "rules": [
+        "color.gradient.definition"
+      ],
+      "steps": [
+        {
+          "op": "editGradient",
+          "id": "Gradient/Ramp",
+          "stops": [
+            {
+              "color": "Color/Black",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Paper",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

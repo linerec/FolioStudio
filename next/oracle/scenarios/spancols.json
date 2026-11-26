@@ -1,0 +1,425 @@
+{
+  "fixture": "spancols",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "spancols-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.span-balance"
+      ]
+    },
+    {
+      "name": "spancols-two",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.span-balance"
+      ]
+    },
+    {
+      "name": "spancols-space",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "spanColumnMinSpaceBefore": 6,
+            "spanColumnMinSpaceAfter": 8
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.span-balance"
+      ]
+    },
+    {
+      "name": "spancols-split",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "splitColumnInsideGutter": 8,
+            "splitColumnOutsideGutter": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.split-end"
+      ]
+    },
+    {
+      "name": "spancols-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Kept",
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-reset",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "spanColumnMinSpaceBefore": 6,
+            "spanColumnMinSpaceAfter": 8
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SINGLE_COLUMN",
+            "spanSplitColumnCount": "ALL",
+            "spanColumnMinSpaceBefore": 0,
+            "spanColumnMinSpaceAfter": 0
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-split-default",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS"
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-count-one",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 1
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-style-split",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Kept",
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS"
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-mixed-first-all",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 6,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-middle-all",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 12,
+          "end": 18,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-first-two",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 6,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-middle-two",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 12,
+          "end": 18,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-second-all",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 6,
+          "end": 12,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-last-all",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 24,
+          "end": 30,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-second-two",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 6,
+          "end": 12,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-mixed-last-two",
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 24,
+          "end": 30,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    }
+  ]
+}

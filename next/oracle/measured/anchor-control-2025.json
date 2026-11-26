@@ -1,0 +1,833 @@
+{
+ "about": "InDesign 2025 (20.5.5), real mouse drag of the anchor control onto text (liveinput-c1/-c2); page points, rect = [left, top, right, bottom]. The frame text is Arial 14 / leading 18 unless a size is given. xOffset/yOffset = AnchoredObjectSetting AnchorXoffset/AnchorYoffset.",
+ "cases": [
+  {
+   "label": "k-base-ip30",
+   "at": 30,
+   "xOffset": -420,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     0.0,
+     0.0,
+     1.0,
+     -415.0,
+     -255.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-420",
+     "AnchorYoffset": "129.8076171875",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "k-oval-ip30",
+   "at": 30,
+   "xOffset": -420,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "oval"
+   }
+  },
+  {
+   "label": "k-stroke6-ip30",
+   "at": 30,
+   "xOffset": -423,
+   "yOffset": 132.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle",
+    "stroke": 6
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     0.0,
+     0.0,
+     1.0,
+     -412.0,
+     -258.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-423",
+     "AnchorYoffset": "132.8076171875",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "k-rot30-ip30",
+   "at": 30,
+   "xOffset": -428.301270189222,
+   "yOffset": 150.788379301033,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle",
+    "rotate": 30
+   },
+   "idml": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.4999999999999999,
+     0.4999999999999999,
+     0.8660254037844386,
+     -456.90054257054203,
+     -13.336477965031918
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-428.301270189222",
+     "AnchorYoffset": "150.78837930103322",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "k-big-ip30",
+   "at": 30,
+   "xOffset": -460,
+   "yOffset": 199.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     380,
+     150,
+     560,
+     330
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "k-textframe-ip30",
+   "at": 30,
+   "xOffset": -420,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "textFrame"
+   }
+  },
+  {
+   "label": "k-left-ip30",
+   "at": 30,
+   "xOffset": 140,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     300,
+     120,
+     560,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     60,
+     200,
+     160,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "k-above-ip30",
+   "at": 30,
+   "xOffset": -150,
+   "yOffset": -110.1923828125,
+   "baselineAtDrop": 230.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     220,
+     360,
+     370
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     150,
+     60,
+     250,
+     120
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "f-inset12-ip40",
+   "at": 40,
+   "xOffset": -420,
+   "yOffset": 99.8076171875,
+   "baselineAtDrop": 160.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. ",
+    "insets": [
+     12,
+     12,
+     12,
+     12
+    ]
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     0.0,
+     0.0,
+     1.0,
+     -415.0,
+     -255.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-420",
+     "AnchorYoffset": "99.8076171875",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "f-cols2-ip150",
+   "at": 150,
+   "xOffset": -420,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. ",
+    "columns": 2,
+    "gutter": 12
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "f-size24-ip20",
+   "at": 20,
+   "xOffset": -420,
+   "yOffset": 92.52734375,
+   "baselineAtDrop": 167.47265625,
+   "size": 24,
+   "leading": 30,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. ",
+    "size": 24,
+    "leading": 30
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "f-center-ip30",
+   "at": 30,
+   "xOffset": -420,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. ",
+    "justification": "center"
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "f-paras-ip120",
+   "at": 120,
+   "xOffset": -420,
+   "yOffset": 55.8076171875,
+   "baselineAtDrop": 204.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "Pack my box with five dozen liquor jugs.\rHow vexingly quick daft zebras jump!\rSphinx of black quartz, judge my vow. Pack my box with five dozen liquor jugs.\rHow vexingly quick daft zebras jump!\rSphinx of black quartz, judge my vow. ",
+    "spaceBefore": 10
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "f-rot30-ip30",
+   "at": 182,
+   "xOffset": -545.144284148501,
+   "yOffset": 70.7627904684568,
+   "baselineAtDrop": 200.986598729368,
+   "size": 14,
+   "leading": 18,
+   "turnedFrame": {
+    "rotation": 30,
+    "bounds": [
+     65.0480947161671,
+     79.916697508023,
+     324.951905283833,
+     380.083302491977
+    ]
+   },
+   "object": {
+    "bounds": [
+     420,
+     300,
+     520,
+     360
+    ]
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     5.551115123125783e-17,
+     -5.551115123125783e-17,
+     1.0,
+     -415.0,
+     -355.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-545.1442841485012",
+     "AnchorYoffset": "70.76279046845676",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "f-first-ip0",
+   "at": 0,
+   "xOffset": -420,
+   "yOffset": 123.8076171875,
+   "baselineAtDrop": 136.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     360,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. ",
+    "insets": [
+     6,
+     6,
+     6,
+     6
+    ]
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "mv1",
+   "at": 30,
+   "xOffset": -360,
+   "yOffset": 99.8076171875,
+   "baselineAtDrop": 160.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     160,
+     150,
+     420,
+     300
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     0.0,
+     0.0,
+     1.0,
+     -415.0,
+     -255.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-360",
+     "AnchorYoffset": "99.8076171875",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "mv2",
+   "at": 30,
+   "xOffset": -60,
+   "yOffset": 119.8076171875,
+   "baselineAtDrop": 140.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     60,
+     130,
+     320,
+     280
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     20,
+     200,
+     120,
+     260
+    ],
+    "kind": "rectangle"
+   }
+  },
+  {
+   "label": "rtl30",
+   "at": 292,
+   "xOffset": -490.227586640478,
+   "yOffset": -28.2853042477105,
+   "baselineAtDrop": 200.20485238006,
+   "size": 14,
+   "leading": 18,
+   "turnedFrame": {
+    "rotation": 30,
+    "bounds": [
+     -10,
+     100,
+     249.903810567666,
+     400.166604983954
+    ]
+   },
+   "object": {
+    "bounds": [
+     420,
+     200,
+     520,
+     260
+    ]
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     5.551115123125783e-17,
+     -5.551115123125783e-17,
+     1.0,
+     -415.0,
+     -255.00000000000003
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-490.2275866404784",
+     "AnchorYoffset": "-28.285304247710457",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "rtl90",
+   "at": 5,
+   "xOffset": -630,
+   "yOffset": 149.8076171875,
+   "baselineAtDrop": 84.2001953125,
+   "size": 14,
+   "leading": 18,
+   "turnedFrame": {
+    "rotation": 90,
+    "bounds": [
+     -140,
+     100,
+     120,
+     250
+    ]
+   },
+   "object": {
+    "bounds": [
+     420,
+     200,
+     520,
+     260
+    ]
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     0.0,
+     0.0,
+     1.0,
+     -415.0,
+     -255.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-630",
+     "AnchorYoffset": "149.8076171875",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  },
+  {
+   "label": "scale12",
+   "at": 30,
+   "xOffset": -420,
+   "yOffset": 129.8076171875,
+   "baselineAtDrop": 130.1923828125,
+   "size": 14,
+   "leading": 18,
+   "frame": {
+    "rect": [
+     100,
+     120,
+     412,
+     270
+    ],
+    "text": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. "
+   },
+   "object": {
+    "rect": [
+     420,
+     200,
+     520,
+     260
+    ],
+    "kind": "rectangle"
+   },
+   "idml": {
+    "itemTransform": [
+     1.0,
+     0.0,
+     0.0,
+     1.0,
+     -415.0,
+     -255.0
+    ],
+    "settings": {
+     "AnchoredPosition": "Anchored",
+     "SpineRelative": "false",
+     "LockPosition": "false",
+     "PinPosition": "false",
+     "AnchorPoint": "BottomRightAnchor",
+     "HorizontalAlignment": "LeftAlign",
+     "HorizontalReferencePoint": "TextFrame",
+     "VerticalAlignment": "TopAlign",
+     "VerticalReferencePoint": "LineBaseline",
+     "AnchorXoffset": "-420",
+     "AnchorYoffset": "129.8076171875",
+     "AnchorSpaceAbove": "0"
+    }
+   }
+  }
+ ],
+ "moves": [
+  {
+   "label": "m-twice-20-150",
+   "drops": [
+    20,
+    150
+   ],
+   "at": 149,
+   "xOffset": -420,
+   "yOffset": 75.8076171875
+  },
+  {
+   "label": "m-twice-150-0",
+   "drops": [
+    150,
+    0
+   ],
+   "at": 0,
+   "xOffset": -420,
+   "yOffset": 129.8076171875
+  }
+ ],
+ "turnedAbout": "Drops of the anchor control into text frames that are turned, flipped or scaled (InDesign 2025, real mouse; objstyle-anchor-c1 and liveinput-c2). frame.toSpread / item.toSpread = ItemTransform [a b c d tx ty] (inner -> spread), frame.left and baseline are in the frame own (inner) space, item.inner = the object path bounds [left, top, right, bottom] in its own space; xOffset/yOffset and itemTransform are what InDesign wrote; bounds = the object bounding box on the page afterwards [top, left, bottom, right]. Rule: next/oracle/rules/anchorturn-c1.ko.md.",
+ "turned": [
+  {"label": "r30-b0", "at": 182, "xOffset": -545.144284148501, "yOffset": -29.2372095315434, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -415.0, -255.0], "bounds": [-83.625046, 461.900543, 18.336478, 578.503083]},
+  {"label": "r90-b0", "at": 182, "xOffset": -835, "yOffset": 22.8076171875, "frame": {"toSpread": [0.0, -1.0, 1.0, 0.0, -266.0, 24.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [-510, 200, -410, 260]},
+  {"label": "r180-b0", "at": 182, "xOffset": -870, "yOffset": 437.8076171875, "frame": {"toSpread": [-1.0, 0.0, 0.0, -1.0, 149.0, -11.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [-250, -510, -190, -410]},
+  {"label": "r-30-b0", "at": 182, "xOffset": -355.144284148501, "yOffset": 195.762790468457, "frame": {"toSpread": [0.866025404, 0.5, -0.5, 0.866025404, -175.855715851, -478.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, -0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [381.374954, 236.900543, 483.336478, 353.503083]},
+  {"label": "rtl30", "at": 292, "xOffset": -490.227586640478, "yOffset": -28.2853042477105, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -345.77241336, -328.092921435], "left": 95.0, "baseline": 251.192382812}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -415.0, -255.0], "bounds": [-83.625046, 461.900543, 18.336478, 578.503083]},
+  {"label": "rtl90", "at": 5, "xOffset": -630, "yOffset": 149.8076171875, "frame": {"toSpread": [0.0, -1.0, 1.0, 0.0, -321.0, -181.0], "left": 95.0, "baseline": 125.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [-510, 200, -410, 260]},
+  {"label": "f-rot30-ip30", "at": 182, "xOffset": -545.144284148501, "yOffset": 70.7627904684568, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -301.0, -391.0], "inner": [415.0, 295.0, 515.0, 355.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -415.0, -355.0], "bounds": [2.977494, 511.900543, 104.939018, 628.503083]},
+  {"label": "g-r30-mv", "at": 182, "xOffset": -101.939203391614, "yOffset": -355.839749909987, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -389.060796608, -139.647367097], "left": 295.0, "baseline": 297.192382813}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -301.0, -391.0], "inner": [95.0, 55.0, 195.0, 115.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -95.0, -115.0], "bounds": [-44.868603, 114.772413, 57.092921, 231.374954]},
+  {"label": "g-rtl30-mv", "at": 292, "xOffset": -47.0225058835906, "yOffset": -354.887844626154, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -368.977494116, -214.695461814], "left": 295.0, "baseline": 351.192382812}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -301.0, -391.0], "inner": [95.0, 55.0, 195.0, 115.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -95.0, -115.0], "bounds": [-44.868603, 114.772413, 57.092921, 231.374954]},
+  {"label": "g-r30-ip5", "at": 5, "xOffset": -545.144284148501, "yOffset": 42.7627904684566, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 125.192382812}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -415.0, -255.0], "bounds": [-83.625046, 461.900543, 18.336478, 578.503083]},
+  {"label": "g-r30-rotB", "at": 182, "xOffset": -472.638167985436, "yOffset": -61.5263819026601, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [0.939692621, -0.342020143, 0.342020143, 0.939692621, -349.911600914, -218.39147303], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [0.939692621, -0.342020143, 0.342020143, 0.939692621, -456.666365575, -97.68325882], "bounds": [-91.560777, 372.223924, 23.610924, 482.465351]},
+  {"label": "g-r30-Bmoved", "at": 182, "xOffset": -561.125046262035, "yOffset": 3.08329854414549, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, 0.0, -0.0, 1.0, -271.0, -371.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, -0.0, 1.0, -415.0, -255.0], "bounds": [-63.625046, 491.900543, 38.336478, 608.503083]},
+  {"label": "h-flipH-scale", "at": 182, "xOffset": -870, "yOffset": 57.8076171875, "frame": {"toSpread": [-1.0, 0.0, 0.0, 1.0, 149.0, -391.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, -510, 260, -410]},
+  {"label": "h-flipV-scale", "at": 182, "xOffset": -420, "yOffset": 437.8076171875, "frame": {"toSpread": [1.0, 0.0, 0.0, -1.0, -301.0, -11.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [-250, 420, -190, 520]},
+  {"label": "h-flipHV-scale", "at": 182, "xOffset": -870, "yOffset": 437.8076171875, "frame": {"toSpread": [-1.0, 0.0, 0.0, -1.0, 149.0, -11.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [-250, -510, -190, -410]},
+  {"label": "h-scale12-tl", "at": 30, "xOffset": -420, "yOffset": 129.8076171875, "frame": {"toSpread": [1.0, 0.0, 0.0, 1.0, -320.0, -391.0], "left": 114.0, "baseline": 125.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, 420, 260, 520]},
+  {"label": "h-scale12-c", "at": 30, "xOffset": -446, "yOffset": 129.8076171875, "frame": {"toSpread": [1.0, 0.0, 0.0, 1.0, -346.0, -391.0], "left": 114.0, "baseline": 125.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, 420, 260, 520]},
+  {"label": "h-scale-y15-c", "at": 30, "xOffset": -420, "yOffset": 162.21142578125, "frame": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -486.0], "left": 95.0, "baseline": 187.788574219}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, 420, 260, 520]},
+  {"label": "i-r30-s12", "at": 182, "xOffset": -587.21718004786, "yOffset": -21.2479273991282, "frame": {"toSpread": [0.901127114, -0.433554985, 0.57662813, 0.832291015, -423.826859022, -253.044826719], "left": 109.55934464937256, "baseline": 205.184977261}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [-55.984069, 491.410238, 37.30889, 616.120637]},
+  {"label": "i-shear", "at": 182, "xOffset": -420, "yOffset": 57.8076171875, "frame": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, 420, 260, 520]},
+  {"label": "k-base-ip30", "at": 30, "xOffset": -420, "yOffset": 129.8076171875, "frame": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "left": 95.0, "baseline": 125.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, 420, 260, 520]},
+  {"label": "mv1", "at": 30, "xOffset": -360, "yOffset": 99.8076171875, "frame": {"toSpread": [1.0, 0.0, 0.0, 1.0, -241.0, -361.0], "left": 95.0, "baseline": 125.192382812}, "item": {"toSpread": [1.0, 0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 195.0, 515.0, 255.0], "outset": 0}, "itemTransform": [1.0, 0.0, 0.0, 1.0, -415.0, -255.0], "bounds": [200, 420, 260, 520]},
+  {"label": "r30-b1", "at": 182, "xOffset": -545.144284148501, "yOffset": -179.237209531543, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 45.0, 515.0, 105.0], "outset": 0}, "bounds": [-213.528857, 386.900543, -111.567333, 503.503083]},
+  {"label": "r30-b2", "at": 182, "xOffset": -625.144284148501, "yOffset": 70.7627904684568, "frame": {"toSpread": [0.866025404, -0.5, 0.5, 0.866025404, -365.855715851, -253.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [495.0, 295.0, 595.0, 355.0], "outset": 0}, "bounds": [-37.022506, 581.182575, 64.939018, 697.785115]},
+  {"label": "r90-b1", "at": 182, "xOffset": -835, "yOffset": -127.1923828125, "frame": {"toSpread": [0.0, -1.0, 1.0, 0.0, -266.0, 24.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 45.0, 515.0, 105.0], "outset": 0}, "bounds": [-510, 50, -410, 110]},
+  {"label": "r90-b2", "at": 182, "xOffset": -915, "yOffset": 122.8076171875, "frame": {"toSpread": [0.0, -1.0, 1.0, 0.0, -266.0, 24.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [495.0, 295.0, 595.0, 355.0], "outset": 0}, "bounds": [-590, 300, -490, 360]},
+  {"label": "r180-b1", "at": 182, "xOffset": -870, "yOffset": 287.8076171875, "frame": {"toSpread": [-1.0, 0.0, 0.0, -1.0, 149.0, -11.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 45.0, 515.0, 105.0], "outset": 0}, "bounds": [-100, -510, -40, -410]},
+  {"label": "r180-b2", "at": 182, "xOffset": -950, "yOffset": 537.8076171875, "frame": {"toSpread": [-1.0, 0.0, 0.0, -1.0, 149.0, -11.0], "left": 95.0, "baseline": 197.192382812}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [495.0, 295.0, 595.0, 355.0], "outset": 0}, "bounds": [-350, -590, -290, -490]},
+  {"label": "r-30-b1", "at": 182, "xOffset": -355.144284148501, "yOffset": 45.7627904684567, "frame": {"toSpread": [0.866025404, 0.5, -0.5, 0.866025404, -175.855715851, -478.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [415.0, 45.0, 515.0, 105.0], "outset": 0}, "bounds": [251.471143, 311.900543, 353.432667, 428.503083]},
+  {"label": "r-30-b2", "at": 182, "xOffset": -435.144284148501, "yOffset": 295.762790468457, "frame": {"toSpread": [0.866025404, 0.5, -0.5, 0.866025404, -175.855715851, -478.044826719], "left": 95.0, "baseline": 197.192382813}, "item": {"toSpread": [1.0, -0.0, 0.0, 1.0, -301.0, -391.0], "inner": [495.0, 295.0, 595.0, 355.0], "outset": 0}, "bounds": [507.977494, 256.182575, 609.939018, 372.785115]}
+ ]
+}

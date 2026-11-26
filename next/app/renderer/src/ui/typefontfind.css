@@ -1,0 +1,6 @@
+.card.dialog.style-options.type-font-find { width: min(620px, calc(100vw - 40px)); }
+.type-font-find-list { max-height: 40vh; overflow: auto; }
+.type-font-find-list table { width: 100%; border-collapse: collapse; text-align: left; }
+.type-font-find-list th, .type-font-find-list td { padding: 5px 8px; }
+.type-font-find-list td label { display: flex; align-items: center; justify-content: flex-start; gap: 6px; }
+.card.dialog.style-options.type-font-find input[type=radio] { width: auto; flex: none; }

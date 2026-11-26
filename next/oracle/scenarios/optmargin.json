@@ -1,0 +1,96 @@
+{
+  "fixture": "optmargin",
+  "scenarios": [
+    { "name": "noop", "steps": [], "text": true },
+    {
+      "name": "optmargin-disabled-size",
+      "steps": [
+        {
+          "op": "setOpticalMargin",
+          "target": "optmargin",
+          "props": {
+            "size": 24
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "optmargin-ignore",
+      "window": true,
+      "steps": [
+        {
+          "op": "setOpticalMargin",
+          "target": "optmargin",
+          "props": {
+            "enabled": true,
+            "size": 12
+          }
+        },
+        {
+          "op": "textFormat",
+          "viaMenu": true,
+          "target": "optmargin",
+          "start": 0,
+          "end": 30,
+          "props": {
+            "ignoreEdgeAlignment": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "optmargin-ignore-menu-partial",
+      "window": true,
+      "steps": [
+        { "op": "setOpticalMargin", "target": "optmargin", "props": { "enabled": true } },
+        { "op": "textFormat", "viaMenu": true, "target": "optmargin", "start": 0, "end": 1, "props": { "ignoreEdgeAlignment": true } },
+        { "op": "setOpticalMargin", "target": "optmargin", "props": { "enabled": false } }
+      ],
+      "text": true
+    },
+    {
+      "name": "optmargin-toggle-off",
+      "steps": [
+        {
+          "op": "setOpticalMargin",
+          "target": "optmargin",
+          "props": {
+            "enabled": true,
+            "size": 24
+          }
+        },
+        {
+          "op": "setOpticalMargin",
+          "target": "optmargin",
+          "props": {
+            "enabled": false
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "optmargin-style-ignore",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Optical Body",
+          "props": {
+            "ignoreEdgeAlignment": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "optmargin-on",
+      "steps": [
+        { "op": "setOpticalMargin", "target": "optmargin", "props": { "enabled": true, "size": 12 } }
+      ],
+      "text": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+ "fixture": "objectstyles",
+ "about": "styles-c1: Redefine Style (DOM path) from a shape, and what styles based on the redefined one take; measured 2026-10-31. Since 2026-11-08 only the case whose object does not carry the redefined style stays here (the panel menu redefines the applied style, so this is not reachable from the panel); the five cases with the style applied were measured again through the real panel menu (objstyle-anchor-c1-redefine-menu.json, fixture objectstyles2).",
+ "scenarios": [
+  {
+   "name": "os-redefine-inherit-plain",
+   "steps": [
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box Blue",
+     "from": "r-plain"
+    }
+   ]
+  }
+ ]
+}

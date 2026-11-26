@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Spread xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Spread Self="u118" FlattenerOverride="Default" SpreadHidden="false" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0" ShowMasterItems="true" PageCount="1" BindingLocation="0" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium">
+		<FlattenerPreference LineArtAndTextResolution="300" GradientAndMeshResolution="150" ClipComplexRegions="false" ConvertAllStrokesToOutlines="false" ConvertAllTextToOutlines="false">
+			<Properties>
+				<RasterVectorBalance type="double">50</RasterVectorBalance>
+			</Properties>
+		</FlattenerPreference>
+		<Page Self="u11d" AppliedAlternateLayout="ubc" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GeometricBounds="219 0 573 360" ItemTransform="1 0 0 1 -180 -396" Name="1" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" OverrideList="u115 u131" AppliedMaster="uc1" MasterPageTransform="1 0 0 1 -252 0" TabOrder="" GridStartingPoint="TopOutside" UseMasterGrid="false">
+			<Properties>
+				<Descriptor type="list">
+					<ListItem type="string"></ListItem>
+					<ListItem type="enumeration">Arabic</ListItem>
+					<ListItem type="boolean">true</ListItem>
+					<ListItem type="boolean">false</ListItem>
+					<ListItem type="long">1</ListItem>
+					<ListItem type="long">1</ListItem>
+					<ListItem type="string"></ListItem>
+				</Descriptor>
+				<PageColor type="enumeration">UseMasterColor</PageColor>
+			</Properties>
+			<MarginPreference ColumnCount="1" ColumnGutter="12" Top="36" Bottom="36" Left="36" Right="36" ColumnDirection="Horizontal" ColumnsPositions="0 288" />
+			<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
+				<Properties>
+					<AppliedFont type="string">Minion Pro</AppliedFont>
+				</Properties>
+			</GridDataInformation>
+		</Page>
+		<TextFrame Self="u131" ParentStory="u11f" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="11271" HorizontalLayoutConstraints="FixedDimension FlexibleDimension FixedDimension" VerticalLayoutConstraints="FixedDimension FlexibleDimension FixedDimension" StrokeWeight="1" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 126 219">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-270 -360" LeftDirection="-270 -360" RightDirection="-270 -360" />
+							<PathPointType Anchor="-270 -78" LeftDirection="-270 -78" RightDirection="-270 -78" />
+							<PathPointType Anchor="18 -78" LeftDirection="18 -78" RightDirection="18 -78" />
+							<PathPointType Anchor="18 -360" LeftDirection="18 -360" RightDirection="18 -360" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="288" TextColumnMaxWidth="0">
+				<Properties>
+					<InsetSpacing type="list">
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+					</InsetSpacing>
+				</Properties>
+			</TextFramePreference>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</TextFrame>
+		<Rectangle Self="u134" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" StrokeWeight="1.5" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 -175 -172">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="r-plain" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="25 27" LeftDirection="25 27" RightDirection="25 27" />
+							<PathPointType Anchor="25 95" LeftDirection="25 95" RightDirection="25 95" />
+							<PathPointType Anchor="145 95" LeftDirection="145 95" RightDirection="145 95" />
+							<PathPointType Anchor="145 27" LeftDirection="145 27" RightDirection="145 27" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<FrameFittingOption AutoFit="false" LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="CenterAnchor" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</Rectangle>
+		<Rectangle Self="u135" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FillColor="Color/Oracle Blue" StrokeWeight="1.5" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 -175 -172">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="r-fill" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="29.000000000000227 123" LeftDirection="29.000000000000227 123" RightDirection="29.000000000000227 123" />
+							<PathPointType Anchor="29.000000000000227 209" LeftDirection="29.000000000000227 209" RightDirection="29.000000000000227 209" />
+							<PathPointType Anchor="146.00000000000023 209" LeftDirection="146.00000000000023 209" RightDirection="146.00000000000023 209" />
+							<PathPointType Anchor="146.00000000000023 123" LeftDirection="146.00000000000023 123" RightDirection="146.00000000000023 123" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<FrameFittingOption AutoFit="false" LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="CenterAnchor" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</Rectangle>
+		<Rectangle Self="u136" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FillColor="Color/Oracle Blue" StrokeWeight="1.5" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" Visible="true" Name="$ID/" ItemTransform="0.9455185755993168 -0.32556815445715664 0.32556815445715664 0.9455185755993168 -251.18831604940644 -146.7834240342068">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="r-rot" />
+				</Label>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="38 241" LeftDirection="38 241" RightDirection="38 241" />
+							<PathPointType Anchor="38 302" LeftDirection="38 302" RightDirection="38 302" />
+							<PathPointType Anchor="143 302" LeftDirection="143 302" RightDirection="143 302" />
+							<PathPointType Anchor="143 241" LeftDirection="143 241" RightDirection="143 241" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+			<FrameFittingOption AutoFit="false" LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="CenterAnchor" />
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</Rectangle>
+		<Group Self="u14e" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 0">
+			<Properties>
+				<Label>
+					<KeyValuePair Key="oracle.id" Value="qr" />
+				</Label>
+			</Properties>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+			<Rectangle Self="u14c" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FillColor="Color/Paper" StrokeWeight="0" StrokeColor="Swatch/None" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 -175 -172">
+				<Properties>
+					<PathGeometry>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="182 37" LeftDirection="182 37" RightDirection="182 37" />
+								<PathPointType Anchor="182 169" LeftDirection="182 169" RightDirection="182 169" />
+								<PathPointType Anchor="314 169" LeftDirection="314 169" RightDirection="314 169" />
+								<PathPointType Anchor="314 37" LeftDirection="314 37" RightDirection="314 37" />
+							</PathPointArray>
+						</GeometryPathType>
+					</PathGeometry>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+					</Properties>
+				</TextWrapPreference>
+				<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+				<FrameFittingOption AutoFit="false" LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="CenterAnchor" />
+				<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+					<Properties>
+						<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					</Properties>
+				</ObjectExportOption>
+			</Rectangle>
+			<Polygon Self="u14d" ContentType="Unassigned" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FillColor="Color/Black" StrokeWeight="0" StrokeColor="Swatch/None" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Graphics Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 -175 -172">
+				<Properties>
+					<PathGeometry>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="198 53" LeftDirection="198 53" RightDirection="198 53" />
+								<PathPointType Anchor="198 81" LeftDirection="198 81" RightDirection="198 81" />
+								<PathPointType Anchor="202 81" LeftDirection="202 81" RightDirection="202 81" />
+								<PathPointType Anchor="202 53" LeftDirection="202 53" RightDirection="202 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="198 85" LeftDirection="198 85" RightDirection="198 85" />
+								<PathPointType Anchor="198 89" LeftDirection="198 89" RightDirection="198 89" />
+								<PathPointType Anchor="202 89" LeftDirection="202 89" RightDirection="202 89" />
+								<PathPointType Anchor="202 85" LeftDirection="202 85" RightDirection="202 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="198 93" LeftDirection="198 93" RightDirection="198 93" />
+								<PathPointType Anchor="198 101" LeftDirection="198 101" RightDirection="198 101" />
+								<PathPointType Anchor="202 101" LeftDirection="202 101" RightDirection="202 101" />
+								<PathPointType Anchor="202 93" LeftDirection="202 93" RightDirection="202 93" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="198 105" LeftDirection="198 105" RightDirection="198 105" />
+								<PathPointType Anchor="198 121" LeftDirection="198 121" RightDirection="198 121" />
+								<PathPointType Anchor="202 121" LeftDirection="202 121" RightDirection="202 121" />
+								<PathPointType Anchor="202 105" LeftDirection="202 105" RightDirection="202 105" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="198 125" LeftDirection="198 125" RightDirection="198 125" />
+								<PathPointType Anchor="198 153" LeftDirection="198 153" RightDirection="198 153" />
+								<PathPointType Anchor="202 153" LeftDirection="202 153" RightDirection="202 153" />
+								<PathPointType Anchor="202 125" LeftDirection="202 125" RightDirection="202 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="202 53" LeftDirection="202 53" RightDirection="202 53" />
+								<PathPointType Anchor="202 57" LeftDirection="202 57" RightDirection="202 57" />
+								<PathPointType Anchor="206 57" LeftDirection="206 57" RightDirection="206 57" />
+								<PathPointType Anchor="206 53" LeftDirection="206 53" RightDirection="206 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="202 77" LeftDirection="202 77" RightDirection="202 77" />
+								<PathPointType Anchor="202 81" LeftDirection="202 81" RightDirection="202 81" />
+								<PathPointType Anchor="206 81" LeftDirection="206 81" RightDirection="206 81" />
+								<PathPointType Anchor="206 77" LeftDirection="206 77" RightDirection="206 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="202 97" LeftDirection="202 97" RightDirection="202 97" />
+								<PathPointType Anchor="202 101" LeftDirection="202 101" RightDirection="202 101" />
+								<PathPointType Anchor="206 101" LeftDirection="206 101" RightDirection="206 101" />
+								<PathPointType Anchor="206 97" LeftDirection="206 97" RightDirection="206 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="202 109" LeftDirection="202 109" RightDirection="202 109" />
+								<PathPointType Anchor="202 113" LeftDirection="202 113" RightDirection="202 113" />
+								<PathPointType Anchor="206 113" LeftDirection="206 113" RightDirection="206 113" />
+								<PathPointType Anchor="206 109" LeftDirection="206 109" RightDirection="206 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="202 125" LeftDirection="202 125" RightDirection="202 125" />
+								<PathPointType Anchor="202 129" LeftDirection="202 129" RightDirection="202 129" />
+								<PathPointType Anchor="206 129" LeftDirection="206 129" RightDirection="206 129" />
+								<PathPointType Anchor="206 125" LeftDirection="206 125" RightDirection="206 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="202 149" LeftDirection="202 149" RightDirection="202 149" />
+								<PathPointType Anchor="202 153" LeftDirection="202 153" RightDirection="202 153" />
+								<PathPointType Anchor="206 153" LeftDirection="206 153" RightDirection="206 153" />
+								<PathPointType Anchor="206 149" LeftDirection="206 149" RightDirection="206 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 53" LeftDirection="206 53" RightDirection="206 53" />
+								<PathPointType Anchor="206 57" LeftDirection="206 57" RightDirection="206 57" />
+								<PathPointType Anchor="210 57" LeftDirection="210 57" RightDirection="210 57" />
+								<PathPointType Anchor="210 53" LeftDirection="210 53" RightDirection="210 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 61" LeftDirection="206 61" RightDirection="206 61" />
+								<PathPointType Anchor="206 73" LeftDirection="206 73" RightDirection="206 73" />
+								<PathPointType Anchor="210 73" LeftDirection="210 73" RightDirection="210 73" />
+								<PathPointType Anchor="210 61" LeftDirection="210 61" RightDirection="210 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 77" LeftDirection="206 77" RightDirection="206 77" />
+								<PathPointType Anchor="206 81" LeftDirection="206 81" RightDirection="206 81" />
+								<PathPointType Anchor="210 81" LeftDirection="210 81" RightDirection="210 81" />
+								<PathPointType Anchor="210 77" LeftDirection="210 77" RightDirection="210 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 97" LeftDirection="206 97" RightDirection="206 97" />
+								<PathPointType Anchor="206 101" LeftDirection="206 101" RightDirection="206 101" />
+								<PathPointType Anchor="210 101" LeftDirection="210 101" RightDirection="210 101" />
+								<PathPointType Anchor="210 97" LeftDirection="210 97" RightDirection="210 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 109" LeftDirection="206 109" RightDirection="206 109" />
+								<PathPointType Anchor="206 113" LeftDirection="206 113" RightDirection="206 113" />
+								<PathPointType Anchor="210 113" LeftDirection="210 113" RightDirection="210 113" />
+								<PathPointType Anchor="210 109" LeftDirection="210 109" RightDirection="210 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 117" LeftDirection="206 117" RightDirection="206 117" />
+								<PathPointType Anchor="206 121" LeftDirection="206 121" RightDirection="206 121" />
+								<PathPointType Anchor="210 121" LeftDirection="210 121" RightDirection="210 121" />
+								<PathPointType Anchor="210 117" LeftDirection="210 117" RightDirection="210 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 125" LeftDirection="206 125" RightDirection="206 125" />
+								<PathPointType Anchor="206 129" LeftDirection="206 129" RightDirection="206 129" />
+								<PathPointType Anchor="210 129" LeftDirection="210 129" RightDirection="210 129" />
+								<PathPointType Anchor="210 125" LeftDirection="210 125" RightDirection="210 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 133" LeftDirection="206 133" RightDirection="206 133" />
+								<PathPointType Anchor="206 145" LeftDirection="206 145" RightDirection="206 145" />
+								<PathPointType Anchor="210 145" LeftDirection="210 145" RightDirection="210 145" />
+								<PathPointType Anchor="210 133" LeftDirection="210 133" RightDirection="210 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="206 149" LeftDirection="206 149" RightDirection="206 149" />
+								<PathPointType Anchor="206 153" LeftDirection="206 153" RightDirection="206 153" />
+								<PathPointType Anchor="210 153" LeftDirection="210 153" RightDirection="210 153" />
+								<PathPointType Anchor="210 149" LeftDirection="210 149" RightDirection="210 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 53" LeftDirection="210 53" RightDirection="210 53" />
+								<PathPointType Anchor="210 57" LeftDirection="210 57" RightDirection="210 57" />
+								<PathPointType Anchor="214 57" LeftDirection="214 57" RightDirection="214 57" />
+								<PathPointType Anchor="214 53" LeftDirection="214 53" RightDirection="214 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 61" LeftDirection="210 61" RightDirection="210 61" />
+								<PathPointType Anchor="210 73" LeftDirection="210 73" RightDirection="210 73" />
+								<PathPointType Anchor="214 73" LeftDirection="214 73" RightDirection="214 73" />
+								<PathPointType Anchor="214 61" LeftDirection="214 61" RightDirection="214 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 77" LeftDirection="210 77" RightDirection="210 77" />
+								<PathPointType Anchor="210 81" LeftDirection="210 81" RightDirection="210 81" />
+								<PathPointType Anchor="214 81" LeftDirection="214 81" RightDirection="214 81" />
+								<PathPointType Anchor="214 77" LeftDirection="214 77" RightDirection="214 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 85" LeftDirection="210 85" RightDirection="210 85" />
+								<PathPointType Anchor="210 93" LeftDirection="210 93" RightDirection="210 93" />
+								<PathPointType Anchor="214 93" LeftDirection="214 93" RightDirection="214 93" />
+								<PathPointType Anchor="214 85" LeftDirection="214 85" RightDirection="214 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 97" LeftDirection="210 97" RightDirection="210 97" />
+								<PathPointType Anchor="210 105" LeftDirection="210 105" RightDirection="210 105" />
+								<PathPointType Anchor="214 105" LeftDirection="214 105" RightDirection="214 105" />
+								<PathPointType Anchor="214 97" LeftDirection="214 97" RightDirection="214 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 109" LeftDirection="210 109" RightDirection="210 109" />
+								<PathPointType Anchor="210 113" LeftDirection="210 113" RightDirection="210 113" />
+								<PathPointType Anchor="214 113" LeftDirection="214 113" RightDirection="214 113" />
+								<PathPointType Anchor="214 109" LeftDirection="214 109" RightDirection="214 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 117" LeftDirection="210 117" RightDirection="210 117" />
+								<PathPointType Anchor="210 121" LeftDirection="210 121" RightDirection="210 121" />
+								<PathPointType Anchor="214 121" LeftDirection="214 121" RightDirection="214 121" />
+								<PathPointType Anchor="214 117" LeftDirection="214 117" RightDirection="214 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 125" LeftDirection="210 125" RightDirection="210 125" />
+								<PathPointType Anchor="210 129" LeftDirection="210 129" RightDirection="210 129" />
+								<PathPointType Anchor="214 129" LeftDirection="214 129" RightDirection="214 129" />
+								<PathPointType Anchor="214 125" LeftDirection="214 125" RightDirection="214 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 133" LeftDirection="210 133" RightDirection="210 133" />
+								<PathPointType Anchor="210 145" LeftDirection="210 145" RightDirection="210 145" />
+								<PathPointType Anchor="214 145" LeftDirection="214 145" RightDirection="214 145" />
+								<PathPointType Anchor="214 133" LeftDirection="214 133" RightDirection="214 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="210 149" LeftDirection="210 149" RightDirection="210 149" />
+								<PathPointType Anchor="210 153" LeftDirection="210 153" RightDirection="210 153" />
+								<PathPointType Anchor="214 153" LeftDirection="214 153" RightDirection="214 153" />
+								<PathPointType Anchor="214 149" LeftDirection="214 149" RightDirection="214 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 53" LeftDirection="214 53" RightDirection="214 53" />
+								<PathPointType Anchor="214 57" LeftDirection="214 57" RightDirection="214 57" />
+								<PathPointType Anchor="218 57" LeftDirection="218 57" RightDirection="218 57" />
+								<PathPointType Anchor="218 53" LeftDirection="218 53" RightDirection="218 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 61" LeftDirection="214 61" RightDirection="214 61" />
+								<PathPointType Anchor="214 73" LeftDirection="214 73" RightDirection="214 73" />
+								<PathPointType Anchor="218 73" LeftDirection="218 73" RightDirection="218 73" />
+								<PathPointType Anchor="218 61" LeftDirection="218 61" RightDirection="218 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 77" LeftDirection="214 77" RightDirection="214 77" />
+								<PathPointType Anchor="214 81" LeftDirection="214 81" RightDirection="214 81" />
+								<PathPointType Anchor="218 81" LeftDirection="218 81" RightDirection="218 81" />
+								<PathPointType Anchor="218 77" LeftDirection="218 77" RightDirection="218 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 85" LeftDirection="214 85" RightDirection="214 85" />
+								<PathPointType Anchor="214 89" LeftDirection="214 89" RightDirection="214 89" />
+								<PathPointType Anchor="218 89" LeftDirection="218 89" RightDirection="218 89" />
+								<PathPointType Anchor="218 85" LeftDirection="218 85" RightDirection="218 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 93" LeftDirection="214 93" RightDirection="214 93" />
+								<PathPointType Anchor="214 97" LeftDirection="214 97" RightDirection="214 97" />
+								<PathPointType Anchor="218 97" LeftDirection="218 97" RightDirection="218 97" />
+								<PathPointType Anchor="218 93" LeftDirection="218 93" RightDirection="218 93" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 101" LeftDirection="214 101" RightDirection="214 101" />
+								<PathPointType Anchor="214 109" LeftDirection="214 109" RightDirection="214 109" />
+								<PathPointType Anchor="218 109" LeftDirection="218 109" RightDirection="218 109" />
+								<PathPointType Anchor="218 101" LeftDirection="218 101" RightDirection="218 101" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 117" LeftDirection="214 117" RightDirection="214 117" />
+								<PathPointType Anchor="214 121" LeftDirection="214 121" RightDirection="214 121" />
+								<PathPointType Anchor="218 121" LeftDirection="218 121" RightDirection="218 121" />
+								<PathPointType Anchor="218 117" LeftDirection="218 117" RightDirection="218 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 125" LeftDirection="214 125" RightDirection="214 125" />
+								<PathPointType Anchor="214 129" LeftDirection="214 129" RightDirection="214 129" />
+								<PathPointType Anchor="218 129" LeftDirection="218 129" RightDirection="218 129" />
+								<PathPointType Anchor="218 125" LeftDirection="218 125" RightDirection="218 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 133" LeftDirection="214 133" RightDirection="214 133" />
+								<PathPointType Anchor="214 145" LeftDirection="214 145" RightDirection="214 145" />
+								<PathPointType Anchor="218 145" LeftDirection="218 145" RightDirection="218 145" />
+								<PathPointType Anchor="218 133" LeftDirection="218 133" RightDirection="218 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="214 149" LeftDirection="214 149" RightDirection="214 149" />
+								<PathPointType Anchor="214 153" LeftDirection="214 153" RightDirection="214 153" />
+								<PathPointType Anchor="218 153" LeftDirection="218 153" RightDirection="218 153" />
+								<PathPointType Anchor="218 149" LeftDirection="218 149" RightDirection="218 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 53" LeftDirection="218 53" RightDirection="218 53" />
+								<PathPointType Anchor="218 57" LeftDirection="218 57" RightDirection="218 57" />
+								<PathPointType Anchor="222 57" LeftDirection="222 57" RightDirection="222 57" />
+								<PathPointType Anchor="222 53" LeftDirection="222 53" RightDirection="222 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 77" LeftDirection="218 77" RightDirection="218 77" />
+								<PathPointType Anchor="218 81" LeftDirection="218 81" RightDirection="218 81" />
+								<PathPointType Anchor="222 81" LeftDirection="222 81" RightDirection="222 81" />
+								<PathPointType Anchor="222 77" LeftDirection="222 77" RightDirection="222 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 85" LeftDirection="218 85" RightDirection="218 85" />
+								<PathPointType Anchor="218 89" LeftDirection="218 89" RightDirection="218 89" />
+								<PathPointType Anchor="222 89" LeftDirection="222 89" RightDirection="222 89" />
+								<PathPointType Anchor="222 85" LeftDirection="222 85" RightDirection="222 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 101" LeftDirection="218 101" RightDirection="218 101" />
+								<PathPointType Anchor="218 113" LeftDirection="218 113" RightDirection="218 113" />
+								<PathPointType Anchor="222 113" LeftDirection="222 113" RightDirection="222 113" />
+								<PathPointType Anchor="222 101" LeftDirection="222 101" RightDirection="222 101" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 117" LeftDirection="218 117" RightDirection="218 117" />
+								<PathPointType Anchor="218 121" LeftDirection="218 121" RightDirection="218 121" />
+								<PathPointType Anchor="222 121" LeftDirection="222 121" RightDirection="222 121" />
+								<PathPointType Anchor="222 117" LeftDirection="222 117" RightDirection="222 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 125" LeftDirection="218 125" RightDirection="218 125" />
+								<PathPointType Anchor="218 129" LeftDirection="218 129" RightDirection="218 129" />
+								<PathPointType Anchor="222 129" LeftDirection="222 129" RightDirection="222 129" />
+								<PathPointType Anchor="222 125" LeftDirection="222 125" RightDirection="222 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="218 149" LeftDirection="218 149" RightDirection="218 149" />
+								<PathPointType Anchor="218 153" LeftDirection="218 153" RightDirection="218 153" />
+								<PathPointType Anchor="222 153" LeftDirection="222 153" RightDirection="222 153" />
+								<PathPointType Anchor="222 149" LeftDirection="222 149" RightDirection="222 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 53" LeftDirection="222 53" RightDirection="222 53" />
+								<PathPointType Anchor="222 81" LeftDirection="222 81" RightDirection="222 81" />
+								<PathPointType Anchor="226 81" LeftDirection="226 81" RightDirection="226 81" />
+								<PathPointType Anchor="226 53" LeftDirection="226 53" RightDirection="226 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 85" LeftDirection="222 85" RightDirection="222 85" />
+								<PathPointType Anchor="222 89" LeftDirection="222 89" RightDirection="222 89" />
+								<PathPointType Anchor="226 89" LeftDirection="226 89" RightDirection="226 89" />
+								<PathPointType Anchor="226 85" LeftDirection="226 85" RightDirection="226 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 93" LeftDirection="222 93" RightDirection="222 93" />
+								<PathPointType Anchor="222 97" LeftDirection="222 97" RightDirection="222 97" />
+								<PathPointType Anchor="226 97" LeftDirection="226 97" RightDirection="226 97" />
+								<PathPointType Anchor="226 93" LeftDirection="226 93" RightDirection="226 93" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 101" LeftDirection="222 101" RightDirection="222 101" />
+								<PathPointType Anchor="222 105" LeftDirection="222 105" RightDirection="222 105" />
+								<PathPointType Anchor="226 105" LeftDirection="226 105" RightDirection="226 105" />
+								<PathPointType Anchor="226 101" LeftDirection="226 101" RightDirection="226 101" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 109" LeftDirection="222 109" RightDirection="222 109" />
+								<PathPointType Anchor="222 113" LeftDirection="222 113" RightDirection="222 113" />
+								<PathPointType Anchor="226 113" LeftDirection="226 113" RightDirection="226 113" />
+								<PathPointType Anchor="226 109" LeftDirection="226 109" RightDirection="226 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 117" LeftDirection="222 117" RightDirection="222 117" />
+								<PathPointType Anchor="222 121" LeftDirection="222 121" RightDirection="222 121" />
+								<PathPointType Anchor="226 121" LeftDirection="226 121" RightDirection="226 121" />
+								<PathPointType Anchor="226 117" LeftDirection="226 117" RightDirection="226 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="222 125" LeftDirection="222 125" RightDirection="222 125" />
+								<PathPointType Anchor="222 153" LeftDirection="222 153" RightDirection="222 153" />
+								<PathPointType Anchor="226 153" LeftDirection="226 153" RightDirection="226 153" />
+								<PathPointType Anchor="226 125" LeftDirection="226 125" RightDirection="226 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="226 85" LeftDirection="226 85" RightDirection="226 85" />
+								<PathPointType Anchor="226 93" LeftDirection="226 93" RightDirection="226 93" />
+								<PathPointType Anchor="230 93" LeftDirection="230 93" RightDirection="230 93" />
+								<PathPointType Anchor="230 85" LeftDirection="230 85" RightDirection="230 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="226 109" LeftDirection="226 109" RightDirection="226 109" />
+								<PathPointType Anchor="226 113" LeftDirection="226 113" RightDirection="226 113" />
+								<PathPointType Anchor="230 113" LeftDirection="230 113" RightDirection="230 113" />
+								<PathPointType Anchor="230 109" LeftDirection="230 109" RightDirection="230 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 53" LeftDirection="230 53" RightDirection="230 53" />
+								<PathPointType Anchor="230 65" LeftDirection="230 65" RightDirection="230 65" />
+								<PathPointType Anchor="234 65" LeftDirection="234 65" RightDirection="234 65" />
+								<PathPointType Anchor="234 53" LeftDirection="234 53" RightDirection="234 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 69" LeftDirection="230 69" RightDirection="230 69" />
+								<PathPointType Anchor="230 73" LeftDirection="230 73" RightDirection="230 73" />
+								<PathPointType Anchor="234 73" LeftDirection="234 73" RightDirection="234 73" />
+								<PathPointType Anchor="234 69" LeftDirection="234 69" RightDirection="234 69" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 77" LeftDirection="230 77" RightDirection="230 77" />
+								<PathPointType Anchor="230 81" LeftDirection="230 81" RightDirection="230 81" />
+								<PathPointType Anchor="234 81" LeftDirection="234 81" RightDirection="234 81" />
+								<PathPointType Anchor="234 77" LeftDirection="234 77" RightDirection="234 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 85" LeftDirection="230 85" RightDirection="230 85" />
+								<PathPointType Anchor="230 89" LeftDirection="230 89" RightDirection="230 89" />
+								<PathPointType Anchor="234 89" LeftDirection="234 89" RightDirection="234 89" />
+								<PathPointType Anchor="234 85" LeftDirection="234 85" RightDirection="234 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 93" LeftDirection="230 93" RightDirection="230 93" />
+								<PathPointType Anchor="230 113" LeftDirection="230 113" RightDirection="230 113" />
+								<PathPointType Anchor="234 113" LeftDirection="234 113" RightDirection="234 113" />
+								<PathPointType Anchor="234 93" LeftDirection="234 93" RightDirection="234 93" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 121" LeftDirection="230 121" RightDirection="230 121" />
+								<PathPointType Anchor="230 141" LeftDirection="230 141" RightDirection="230 141" />
+								<PathPointType Anchor="234 141" LeftDirection="234 141" RightDirection="234 141" />
+								<PathPointType Anchor="234 121" LeftDirection="234 121" RightDirection="234 121" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="230 149" LeftDirection="230 149" RightDirection="230 149" />
+								<PathPointType Anchor="230 153" LeftDirection="230 153" RightDirection="230 153" />
+								<PathPointType Anchor="234 153" LeftDirection="234 153" RightDirection="234 153" />
+								<PathPointType Anchor="234 149" LeftDirection="234 149" RightDirection="234 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 57" LeftDirection="234 57" RightDirection="234 57" />
+								<PathPointType Anchor="234 61" LeftDirection="234 61" RightDirection="234 61" />
+								<PathPointType Anchor="238 61" LeftDirection="238 61" RightDirection="238 61" />
+								<PathPointType Anchor="238 57" LeftDirection="238 57" RightDirection="238 57" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 65" LeftDirection="234 65" RightDirection="234 65" />
+								<PathPointType Anchor="234 77" LeftDirection="234 77" RightDirection="234 77" />
+								<PathPointType Anchor="238 77" LeftDirection="238 77" RightDirection="238 77" />
+								<PathPointType Anchor="238 65" LeftDirection="238 65" RightDirection="238 65" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 97" LeftDirection="234 97" RightDirection="234 97" />
+								<PathPointType Anchor="234 101" LeftDirection="234 101" RightDirection="234 101" />
+								<PathPointType Anchor="238 101" LeftDirection="238 101" RightDirection="238 101" />
+								<PathPointType Anchor="238 97" LeftDirection="238 97" RightDirection="238 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 105" LeftDirection="234 105" RightDirection="234 105" />
+								<PathPointType Anchor="234 109" LeftDirection="234 109" RightDirection="234 109" />
+								<PathPointType Anchor="238 109" LeftDirection="238 109" RightDirection="238 109" />
+								<PathPointType Anchor="238 105" LeftDirection="238 105" RightDirection="238 105" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 113" LeftDirection="234 113" RightDirection="234 113" />
+								<PathPointType Anchor="234 117" LeftDirection="234 117" RightDirection="234 117" />
+								<PathPointType Anchor="238 117" LeftDirection="238 117" RightDirection="238 117" />
+								<PathPointType Anchor="238 113" LeftDirection="238 113" RightDirection="238 113" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 129" LeftDirection="234 129" RightDirection="234 129" />
+								<PathPointType Anchor="234 133" LeftDirection="234 133" RightDirection="234 133" />
+								<PathPointType Anchor="238 133" LeftDirection="238 133" RightDirection="238 133" />
+								<PathPointType Anchor="238 129" LeftDirection="238 129" RightDirection="238 129" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 141" LeftDirection="234 141" RightDirection="234 141" />
+								<PathPointType Anchor="234 145" LeftDirection="234 145" RightDirection="234 145" />
+								<PathPointType Anchor="238 145" LeftDirection="238 145" RightDirection="238 145" />
+								<PathPointType Anchor="238 141" LeftDirection="238 141" RightDirection="238 141" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="234 149" LeftDirection="234 149" RightDirection="234 149" />
+								<PathPointType Anchor="234 153" LeftDirection="234 153" RightDirection="234 153" />
+								<PathPointType Anchor="238 153" LeftDirection="238 153" RightDirection="238 153" />
+								<PathPointType Anchor="238 149" LeftDirection="238 149" RightDirection="238 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 69" LeftDirection="238 69" RightDirection="238 69" />
+								<PathPointType Anchor="238 73" LeftDirection="238 73" RightDirection="238 73" />
+								<PathPointType Anchor="242 73" LeftDirection="242 73" RightDirection="242 73" />
+								<PathPointType Anchor="242 69" LeftDirection="242 69" RightDirection="242 69" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 77" LeftDirection="238 77" RightDirection="238 77" />
+								<PathPointType Anchor="238 81" LeftDirection="238 81" RightDirection="238 81" />
+								<PathPointType Anchor="242 81" LeftDirection="242 81" RightDirection="242 81" />
+								<PathPointType Anchor="242 77" LeftDirection="242 77" RightDirection="242 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 85" LeftDirection="238 85" RightDirection="238 85" />
+								<PathPointType Anchor="238 89" LeftDirection="238 89" RightDirection="238 89" />
+								<PathPointType Anchor="242 89" LeftDirection="242 89" RightDirection="242 89" />
+								<PathPointType Anchor="242 85" LeftDirection="242 85" RightDirection="242 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 101" LeftDirection="238 101" RightDirection="238 101" />
+								<PathPointType Anchor="238 105" LeftDirection="238 105" RightDirection="238 105" />
+								<PathPointType Anchor="242 105" LeftDirection="242 105" RightDirection="242 105" />
+								<PathPointType Anchor="242 101" LeftDirection="242 101" RightDirection="242 101" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 109" LeftDirection="238 109" RightDirection="238 109" />
+								<PathPointType Anchor="238 113" LeftDirection="238 113" RightDirection="238 113" />
+								<PathPointType Anchor="242 113" LeftDirection="242 113" RightDirection="242 113" />
+								<PathPointType Anchor="242 109" LeftDirection="242 109" RightDirection="242 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 129" LeftDirection="238 129" RightDirection="238 129" />
+								<PathPointType Anchor="238 133" LeftDirection="238 133" RightDirection="238 133" />
+								<PathPointType Anchor="242 133" LeftDirection="242 133" RightDirection="242 133" />
+								<PathPointType Anchor="242 129" LeftDirection="242 129" RightDirection="242 129" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="238 137" LeftDirection="238 137" RightDirection="238 137" />
+								<PathPointType Anchor="238 149" LeftDirection="238 149" RightDirection="238 149" />
+								<PathPointType Anchor="242 149" LeftDirection="242 149" RightDirection="242 149" />
+								<PathPointType Anchor="242 137" LeftDirection="242 137" RightDirection="242 137" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="242 53" LeftDirection="242 53" RightDirection="242 53" />
+								<PathPointType Anchor="242 57" LeftDirection="242 57" RightDirection="242 57" />
+								<PathPointType Anchor="246 57" LeftDirection="246 57" RightDirection="246 57" />
+								<PathPointType Anchor="246 53" LeftDirection="246 53" RightDirection="246 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="242 81" LeftDirection="242 81" RightDirection="242 81" />
+								<PathPointType Anchor="242 93" LeftDirection="242 93" RightDirection="242 93" />
+								<PathPointType Anchor="246 93" LeftDirection="246 93" RightDirection="246 93" />
+								<PathPointType Anchor="246 81" LeftDirection="246 81" RightDirection="246 81" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="242 109" LeftDirection="242 109" RightDirection="242 109" />
+								<PathPointType Anchor="242 117" LeftDirection="242 117" RightDirection="242 117" />
+								<PathPointType Anchor="246 117" LeftDirection="246 117" RightDirection="246 117" />
+								<PathPointType Anchor="246 109" LeftDirection="246 109" RightDirection="246 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="242 121" LeftDirection="242 121" RightDirection="242 121" />
+								<PathPointType Anchor="242 129" LeftDirection="242 129" RightDirection="242 129" />
+								<PathPointType Anchor="246 129" LeftDirection="246 129" RightDirection="246 129" />
+								<PathPointType Anchor="246 121" LeftDirection="246 121" RightDirection="246 121" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 65" LeftDirection="246 65" RightDirection="246 65" />
+								<PathPointType Anchor="246 69" LeftDirection="246 69" RightDirection="246 69" />
+								<PathPointType Anchor="250 69" LeftDirection="250 69" RightDirection="250 69" />
+								<PathPointType Anchor="250 65" LeftDirection="250 65" RightDirection="250 65" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 77" LeftDirection="246 77" RightDirection="246 77" />
+								<PathPointType Anchor="246 81" LeftDirection="246 81" RightDirection="246 81" />
+								<PathPointType Anchor="250 81" LeftDirection="250 81" RightDirection="250 81" />
+								<PathPointType Anchor="250 77" LeftDirection="250 77" RightDirection="250 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 97" LeftDirection="246 97" RightDirection="246 97" />
+								<PathPointType Anchor="246 105" LeftDirection="246 105" RightDirection="246 105" />
+								<PathPointType Anchor="250 105" LeftDirection="250 105" RightDirection="250 105" />
+								<PathPointType Anchor="250 97" LeftDirection="250 97" RightDirection="250 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 109" LeftDirection="246 109" RightDirection="246 109" />
+								<PathPointType Anchor="246 113" LeftDirection="246 113" RightDirection="246 113" />
+								<PathPointType Anchor="250 113" LeftDirection="250 113" RightDirection="250 113" />
+								<PathPointType Anchor="250 109" LeftDirection="250 109" RightDirection="250 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 121" LeftDirection="246 121" RightDirection="246 121" />
+								<PathPointType Anchor="246 125" LeftDirection="246 125" RightDirection="246 125" />
+								<PathPointType Anchor="250 125" LeftDirection="250 125" RightDirection="250 125" />
+								<PathPointType Anchor="250 121" LeftDirection="250 121" RightDirection="250 121" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 129" LeftDirection="246 129" RightDirection="246 129" />
+								<PathPointType Anchor="246 137" LeftDirection="246 137" RightDirection="246 137" />
+								<PathPointType Anchor="250 137" LeftDirection="250 137" RightDirection="250 137" />
+								<PathPointType Anchor="250 129" LeftDirection="250 129" RightDirection="250 129" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="246 141" LeftDirection="246 141" RightDirection="246 141" />
+								<PathPointType Anchor="246 145" LeftDirection="246 145" RightDirection="246 145" />
+								<PathPointType Anchor="250 145" LeftDirection="250 145" RightDirection="250 145" />
+								<PathPointType Anchor="250 141" LeftDirection="250 141" RightDirection="250 141" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 53" LeftDirection="250 53" RightDirection="250 53" />
+								<PathPointType Anchor="250 57" LeftDirection="250 57" RightDirection="250 57" />
+								<PathPointType Anchor="254 57" LeftDirection="254 57" RightDirection="254 57" />
+								<PathPointType Anchor="254 53" LeftDirection="254 53" RightDirection="254 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 61" LeftDirection="250 61" RightDirection="250 61" />
+								<PathPointType Anchor="250 69" LeftDirection="250 69" RightDirection="250 69" />
+								<PathPointType Anchor="254 69" LeftDirection="254 69" RightDirection="254 69" />
+								<PathPointType Anchor="254 61" LeftDirection="254 61" RightDirection="254 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 73" LeftDirection="250 73" RightDirection="250 73" />
+								<PathPointType Anchor="250 77" LeftDirection="250 77" RightDirection="250 77" />
+								<PathPointType Anchor="254 77" LeftDirection="254 77" RightDirection="254 77" />
+								<PathPointType Anchor="254 73" LeftDirection="254 73" RightDirection="254 73" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 81" LeftDirection="250 81" RightDirection="250 81" />
+								<PathPointType Anchor="250 113" LeftDirection="250 113" RightDirection="250 113" />
+								<PathPointType Anchor="254 113" LeftDirection="254 113" RightDirection="254 113" />
+								<PathPointType Anchor="254 81" LeftDirection="254 81" RightDirection="254 81" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 121" LeftDirection="250 121" RightDirection="250 121" />
+								<PathPointType Anchor="250 125" LeftDirection="250 125" RightDirection="250 125" />
+								<PathPointType Anchor="254 125" LeftDirection="254 125" RightDirection="254 125" />
+								<PathPointType Anchor="254 121" LeftDirection="254 121" RightDirection="254 121" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 133" LeftDirection="250 133" RightDirection="250 133" />
+								<PathPointType Anchor="250 137" LeftDirection="250 137" RightDirection="250 137" />
+								<PathPointType Anchor="254 137" LeftDirection="254 137" RightDirection="254 137" />
+								<PathPointType Anchor="254 133" LeftDirection="254 133" RightDirection="254 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="250 149" LeftDirection="250 149" RightDirection="250 149" />
+								<PathPointType Anchor="250 153" LeftDirection="250 153" RightDirection="250 153" />
+								<PathPointType Anchor="254 153" LeftDirection="254 153" RightDirection="254 153" />
+								<PathPointType Anchor="254 149" LeftDirection="254 149" RightDirection="254 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="254 57" LeftDirection="254 57" RightDirection="254 57" />
+								<PathPointType Anchor="254 61" LeftDirection="254 61" RightDirection="254 61" />
+								<PathPointType Anchor="258 61" LeftDirection="258 61" RightDirection="258 61" />
+								<PathPointType Anchor="258 57" LeftDirection="258 57" RightDirection="258 57" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="254 69" LeftDirection="254 69" RightDirection="254 69" />
+								<PathPointType Anchor="254 81" LeftDirection="254 81" RightDirection="254 81" />
+								<PathPointType Anchor="258 81" LeftDirection="258 81" RightDirection="258 81" />
+								<PathPointType Anchor="258 69" LeftDirection="258 69" RightDirection="258 69" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="254 89" LeftDirection="254 89" RightDirection="254 89" />
+								<PathPointType Anchor="254 93" LeftDirection="254 93" RightDirection="254 93" />
+								<PathPointType Anchor="258 93" LeftDirection="258 93" RightDirection="258 93" />
+								<PathPointType Anchor="258 89" LeftDirection="258 89" RightDirection="258 89" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="254 105" LeftDirection="254 105" RightDirection="254 105" />
+								<PathPointType Anchor="254 109" LeftDirection="254 109" RightDirection="254 109" />
+								<PathPointType Anchor="258 109" LeftDirection="258 109" RightDirection="258 109" />
+								<PathPointType Anchor="258 105" LeftDirection="258 105" RightDirection="258 105" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="254 117" LeftDirection="254 117" RightDirection="254 117" />
+								<PathPointType Anchor="254 125" LeftDirection="254 125" RightDirection="254 125" />
+								<PathPointType Anchor="258 125" LeftDirection="258 125" RightDirection="258 125" />
+								<PathPointType Anchor="258 117" LeftDirection="258 117" RightDirection="258 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="254 129" LeftDirection="254 129" RightDirection="254 129" />
+								<PathPointType Anchor="254 153" LeftDirection="254 153" RightDirection="254 153" />
+								<PathPointType Anchor="258 153" LeftDirection="258 153" RightDirection="258 153" />
+								<PathPointType Anchor="258 129" LeftDirection="258 129" RightDirection="258 129" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="258 65" LeftDirection="258 65" RightDirection="258 65" />
+								<PathPointType Anchor="258 69" LeftDirection="258 69" RightDirection="258 69" />
+								<PathPointType Anchor="262 69" LeftDirection="262 69" RightDirection="262 69" />
+								<PathPointType Anchor="262 65" LeftDirection="262 65" RightDirection="262 65" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="258 81" LeftDirection="258 81" RightDirection="258 81" />
+								<PathPointType Anchor="258 85" LeftDirection="258 85" RightDirection="258 85" />
+								<PathPointType Anchor="262 85" LeftDirection="262 85" RightDirection="262 85" />
+								<PathPointType Anchor="262 81" LeftDirection="262 81" RightDirection="262 81" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="258 89" LeftDirection="258 89" RightDirection="258 89" />
+								<PathPointType Anchor="258 97" LeftDirection="258 97" RightDirection="258 97" />
+								<PathPointType Anchor="262 97" LeftDirection="262 97" RightDirection="262 97" />
+								<PathPointType Anchor="262 89" LeftDirection="262 89" RightDirection="262 89" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="258 101" LeftDirection="258 101" RightDirection="258 101" />
+								<PathPointType Anchor="258 113" LeftDirection="258 113" RightDirection="258 113" />
+								<PathPointType Anchor="262 113" LeftDirection="262 113" RightDirection="262 113" />
+								<PathPointType Anchor="262 101" LeftDirection="262 101" RightDirection="262 101" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="258 129" LeftDirection="258 129" RightDirection="258 129" />
+								<PathPointType Anchor="258 137" LeftDirection="258 137" RightDirection="258 137" />
+								<PathPointType Anchor="262 137" LeftDirection="262 137" RightDirection="262 137" />
+								<PathPointType Anchor="262 129" LeftDirection="262 129" RightDirection="262 129" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="258 141" LeftDirection="258 141" RightDirection="258 141" />
+								<PathPointType Anchor="258 149" LeftDirection="258 149" RightDirection="258 149" />
+								<PathPointType Anchor="262 149" LeftDirection="262 149" RightDirection="262 149" />
+								<PathPointType Anchor="262 141" LeftDirection="262 141" RightDirection="262 141" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="262 57" LeftDirection="262 57" RightDirection="262 57" />
+								<PathPointType Anchor="262 61" LeftDirection="262 61" RightDirection="262 61" />
+								<PathPointType Anchor="266 61" LeftDirection="266 61" RightDirection="266 61" />
+								<PathPointType Anchor="266 57" LeftDirection="266 57" RightDirection="266 57" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="262 65" LeftDirection="262 65" RightDirection="262 65" />
+								<PathPointType Anchor="262 97" LeftDirection="262 97" RightDirection="262 97" />
+								<PathPointType Anchor="266 97" LeftDirection="266 97" RightDirection="266 97" />
+								<PathPointType Anchor="266 65" LeftDirection="266 65" RightDirection="266 65" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="262 101" LeftDirection="262 101" RightDirection="262 101" />
+								<PathPointType Anchor="262 113" LeftDirection="262 113" RightDirection="262 113" />
+								<PathPointType Anchor="266 113" LeftDirection="266 113" RightDirection="266 113" />
+								<PathPointType Anchor="266 101" LeftDirection="266 101" RightDirection="266 101" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="262 117" LeftDirection="262 117" RightDirection="262 117" />
+								<PathPointType Anchor="262 141" LeftDirection="262 141" RightDirection="262 141" />
+								<PathPointType Anchor="266 141" LeftDirection="266 141" RightDirection="266 141" />
+								<PathPointType Anchor="266 117" LeftDirection="266 117" RightDirection="266 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="262 149" LeftDirection="262 149" RightDirection="262 149" />
+								<PathPointType Anchor="262 153" LeftDirection="262 153" RightDirection="262 153" />
+								<PathPointType Anchor="266 153" LeftDirection="266 153" RightDirection="266 153" />
+								<PathPointType Anchor="266 149" LeftDirection="266 149" RightDirection="266 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="266 85" LeftDirection="266 85" RightDirection="266 85" />
+								<PathPointType Anchor="266 101" LeftDirection="266 101" RightDirection="266 101" />
+								<PathPointType Anchor="270 101" LeftDirection="270 101" RightDirection="270 101" />
+								<PathPointType Anchor="270 85" LeftDirection="270 85" RightDirection="270 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="266 113" LeftDirection="266 113" RightDirection="266 113" />
+								<PathPointType Anchor="266 121" LeftDirection="266 121" RightDirection="266 121" />
+								<PathPointType Anchor="270 121" LeftDirection="270 121" RightDirection="270 121" />
+								<PathPointType Anchor="270 113" LeftDirection="270 113" RightDirection="270 113" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="266 133" LeftDirection="266 133" RightDirection="266 133" />
+								<PathPointType Anchor="266 145" LeftDirection="266 145" RightDirection="266 145" />
+								<PathPointType Anchor="270 145" LeftDirection="270 145" RightDirection="270 145" />
+								<PathPointType Anchor="270 133" LeftDirection="270 133" RightDirection="270 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="270 53" LeftDirection="270 53" RightDirection="270 53" />
+								<PathPointType Anchor="270 81" LeftDirection="270 81" RightDirection="270 81" />
+								<PathPointType Anchor="274 81" LeftDirection="274 81" RightDirection="274 81" />
+								<PathPointType Anchor="274 53" LeftDirection="274 53" RightDirection="274 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="270 97" LeftDirection="270 97" RightDirection="270 97" />
+								<PathPointType Anchor="270 105" LeftDirection="270 105" RightDirection="270 105" />
+								<PathPointType Anchor="274 105" LeftDirection="274 105" RightDirection="274 105" />
+								<PathPointType Anchor="274 97" LeftDirection="274 97" RightDirection="274 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="270 109" LeftDirection="270 109" RightDirection="270 109" />
+								<PathPointType Anchor="270 121" LeftDirection="270 121" RightDirection="270 121" />
+								<PathPointType Anchor="274 121" LeftDirection="274 121" RightDirection="274 121" />
+								<PathPointType Anchor="274 109" LeftDirection="274 109" RightDirection="274 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="270 125" LeftDirection="270 125" RightDirection="270 125" />
+								<PathPointType Anchor="270 129" LeftDirection="270 129" RightDirection="270 129" />
+								<PathPointType Anchor="274 129" LeftDirection="274 129" RightDirection="274 129" />
+								<PathPointType Anchor="274 125" LeftDirection="274 125" RightDirection="274 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="270 133" LeftDirection="270 133" RightDirection="270 133" />
+								<PathPointType Anchor="270 141" LeftDirection="270 141" RightDirection="270 141" />
+								<PathPointType Anchor="274 141" LeftDirection="274 141" RightDirection="274 141" />
+								<PathPointType Anchor="274 133" LeftDirection="274 133" RightDirection="274 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="270 149" LeftDirection="270 149" RightDirection="270 149" />
+								<PathPointType Anchor="270 153" LeftDirection="270 153" RightDirection="270 153" />
+								<PathPointType Anchor="274 153" LeftDirection="274 153" RightDirection="274 153" />
+								<PathPointType Anchor="274 149" LeftDirection="274 149" RightDirection="274 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="274 53" LeftDirection="274 53" RightDirection="274 53" />
+								<PathPointType Anchor="274 57" LeftDirection="274 57" RightDirection="274 57" />
+								<PathPointType Anchor="278 57" LeftDirection="278 57" RightDirection="278 57" />
+								<PathPointType Anchor="278 53" LeftDirection="278 53" RightDirection="278 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="274 77" LeftDirection="274 77" RightDirection="274 77" />
+								<PathPointType Anchor="274 81" LeftDirection="274 81" RightDirection="274 81" />
+								<PathPointType Anchor="278 81" LeftDirection="278 81" RightDirection="278 81" />
+								<PathPointType Anchor="278 77" LeftDirection="278 77" RightDirection="278 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="274 89" LeftDirection="274 89" RightDirection="274 89" />
+								<PathPointType Anchor="274 105" LeftDirection="274 105" RightDirection="274 105" />
+								<PathPointType Anchor="278 105" LeftDirection="278 105" RightDirection="278 105" />
+								<PathPointType Anchor="278 89" LeftDirection="278 89" RightDirection="278 89" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="274 113" LeftDirection="274 113" RightDirection="274 113" />
+								<PathPointType Anchor="274 121" LeftDirection="274 121" RightDirection="274 121" />
+								<PathPointType Anchor="278 121" LeftDirection="278 121" RightDirection="278 121" />
+								<PathPointType Anchor="278 113" LeftDirection="278 113" RightDirection="278 113" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="274 133" LeftDirection="274 133" RightDirection="274 133" />
+								<PathPointType Anchor="274 137" LeftDirection="274 137" RightDirection="274 137" />
+								<PathPointType Anchor="278 137" LeftDirection="278 137" RightDirection="278 137" />
+								<PathPointType Anchor="278 133" LeftDirection="278 133" RightDirection="278 133" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="274 145" LeftDirection="274 145" RightDirection="274 145" />
+								<PathPointType Anchor="274 149" LeftDirection="274 149" RightDirection="274 149" />
+								<PathPointType Anchor="278 149" LeftDirection="278 149" RightDirection="278 149" />
+								<PathPointType Anchor="278 145" LeftDirection="278 145" RightDirection="278 145" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 53" LeftDirection="278 53" RightDirection="278 53" />
+								<PathPointType Anchor="278 57" LeftDirection="278 57" RightDirection="278 57" />
+								<PathPointType Anchor="282 57" LeftDirection="282 57" RightDirection="282 57" />
+								<PathPointType Anchor="282 53" LeftDirection="282 53" RightDirection="282 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 61" LeftDirection="278 61" RightDirection="278 61" />
+								<PathPointType Anchor="278 73" LeftDirection="278 73" RightDirection="278 73" />
+								<PathPointType Anchor="282 73" LeftDirection="282 73" RightDirection="282 73" />
+								<PathPointType Anchor="282 61" LeftDirection="282 61" RightDirection="282 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 77" LeftDirection="278 77" RightDirection="278 77" />
+								<PathPointType Anchor="278 81" LeftDirection="278 81" RightDirection="278 81" />
+								<PathPointType Anchor="282 81" LeftDirection="282 81" RightDirection="282 81" />
+								<PathPointType Anchor="282 77" LeftDirection="282 77" RightDirection="282 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 85" LeftDirection="278 85" RightDirection="278 85" />
+								<PathPointType Anchor="278 97" LeftDirection="278 97" RightDirection="278 97" />
+								<PathPointType Anchor="282 97" LeftDirection="282 97" RightDirection="282 97" />
+								<PathPointType Anchor="282 85" LeftDirection="282 85" RightDirection="282 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 105" LeftDirection="278 105" RightDirection="278 105" />
+								<PathPointType Anchor="278 113" LeftDirection="278 113" RightDirection="278 113" />
+								<PathPointType Anchor="282 113" LeftDirection="282 113" RightDirection="282 113" />
+								<PathPointType Anchor="282 105" LeftDirection="282 105" RightDirection="282 105" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 117" LeftDirection="278 117" RightDirection="278 117" />
+								<PathPointType Anchor="278 137" LeftDirection="278 137" RightDirection="278 137" />
+								<PathPointType Anchor="282 137" LeftDirection="282 137" RightDirection="282 137" />
+								<PathPointType Anchor="282 117" LeftDirection="282 117" RightDirection="282 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="278 141" LeftDirection="278 141" RightDirection="278 141" />
+								<PathPointType Anchor="278 149" LeftDirection="278 149" RightDirection="278 149" />
+								<PathPointType Anchor="282 149" LeftDirection="282 149" RightDirection="282 149" />
+								<PathPointType Anchor="282 141" LeftDirection="282 141" RightDirection="282 141" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 53" LeftDirection="282 53" RightDirection="282 53" />
+								<PathPointType Anchor="282 57" LeftDirection="282 57" RightDirection="282 57" />
+								<PathPointType Anchor="286 57" LeftDirection="286 57" RightDirection="286 57" />
+								<PathPointType Anchor="286 53" LeftDirection="286 53" RightDirection="286 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 61" LeftDirection="282 61" RightDirection="282 61" />
+								<PathPointType Anchor="282 73" LeftDirection="282 73" RightDirection="282 73" />
+								<PathPointType Anchor="286 73" LeftDirection="286 73" RightDirection="286 73" />
+								<PathPointType Anchor="286 61" LeftDirection="286 61" RightDirection="286 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 77" LeftDirection="282 77" RightDirection="282 77" />
+								<PathPointType Anchor="282 81" LeftDirection="282 81" RightDirection="282 81" />
+								<PathPointType Anchor="286 81" LeftDirection="286 81" RightDirection="286 81" />
+								<PathPointType Anchor="286 77" LeftDirection="286 77" RightDirection="286 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 89" LeftDirection="282 89" RightDirection="282 89" />
+								<PathPointType Anchor="282 101" LeftDirection="282 101" RightDirection="282 101" />
+								<PathPointType Anchor="286 101" LeftDirection="286 101" RightDirection="286 101" />
+								<PathPointType Anchor="286 89" LeftDirection="286 89" RightDirection="286 89" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 109" LeftDirection="282 109" RightDirection="282 109" />
+								<PathPointType Anchor="282 117" LeftDirection="282 117" RightDirection="282 117" />
+								<PathPointType Anchor="286 117" LeftDirection="286 117" RightDirection="286 117" />
+								<PathPointType Anchor="286 109" LeftDirection="286 109" RightDirection="286 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 141" LeftDirection="282 141" RightDirection="282 141" />
+								<PathPointType Anchor="282 145" LeftDirection="282 145" RightDirection="282 145" />
+								<PathPointType Anchor="286 145" LeftDirection="286 145" RightDirection="286 145" />
+								<PathPointType Anchor="286 141" LeftDirection="286 141" RightDirection="286 141" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="282 149" LeftDirection="282 149" RightDirection="282 149" />
+								<PathPointType Anchor="282 153" LeftDirection="282 153" RightDirection="282 153" />
+								<PathPointType Anchor="286 153" LeftDirection="286 153" RightDirection="286 153" />
+								<PathPointType Anchor="286 149" LeftDirection="286 149" RightDirection="286 149" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 53" LeftDirection="286 53" RightDirection="286 53" />
+								<PathPointType Anchor="286 57" LeftDirection="286 57" RightDirection="286 57" />
+								<PathPointType Anchor="290 57" LeftDirection="290 57" RightDirection="290 57" />
+								<PathPointType Anchor="290 53" LeftDirection="290 53" RightDirection="290 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 61" LeftDirection="286 61" RightDirection="286 61" />
+								<PathPointType Anchor="286 73" LeftDirection="286 73" RightDirection="286 73" />
+								<PathPointType Anchor="290 73" LeftDirection="290 73" RightDirection="290 73" />
+								<PathPointType Anchor="290 61" LeftDirection="290 61" RightDirection="290 61" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 77" LeftDirection="286 77" RightDirection="286 77" />
+								<PathPointType Anchor="286 81" LeftDirection="286 81" RightDirection="286 81" />
+								<PathPointType Anchor="290 81" LeftDirection="290 81" RightDirection="290 81" />
+								<PathPointType Anchor="290 77" LeftDirection="290 77" RightDirection="290 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 85" LeftDirection="286 85" RightDirection="286 85" />
+								<PathPointType Anchor="286 93" LeftDirection="286 93" RightDirection="286 93" />
+								<PathPointType Anchor="290 93" LeftDirection="290 93" RightDirection="290 93" />
+								<PathPointType Anchor="290 85" LeftDirection="290 85" RightDirection="290 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 97" LeftDirection="286 97" RightDirection="286 97" />
+								<PathPointType Anchor="286 101" LeftDirection="286 101" RightDirection="286 101" />
+								<PathPointType Anchor="290 101" LeftDirection="290 101" RightDirection="290 101" />
+								<PathPointType Anchor="290 97" LeftDirection="290 97" RightDirection="290 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 109" LeftDirection="286 109" RightDirection="286 109" />
+								<PathPointType Anchor="286 125" LeftDirection="286 125" RightDirection="286 125" />
+								<PathPointType Anchor="290 125" LeftDirection="290 125" RightDirection="290 125" />
+								<PathPointType Anchor="290 109" LeftDirection="290 109" RightDirection="290 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="286 141" LeftDirection="286 141" RightDirection="286 141" />
+								<PathPointType Anchor="286 149" LeftDirection="286 149" RightDirection="286 149" />
+								<PathPointType Anchor="290 149" LeftDirection="290 149" RightDirection="290 149" />
+								<PathPointType Anchor="290 141" LeftDirection="290 141" RightDirection="290 141" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 53" LeftDirection="290 53" RightDirection="290 53" />
+								<PathPointType Anchor="290 57" LeftDirection="290 57" RightDirection="290 57" />
+								<PathPointType Anchor="294 57" LeftDirection="294 57" RightDirection="294 57" />
+								<PathPointType Anchor="294 53" LeftDirection="294 53" RightDirection="294 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 77" LeftDirection="290 77" RightDirection="290 77" />
+								<PathPointType Anchor="290 81" LeftDirection="290 81" RightDirection="290 81" />
+								<PathPointType Anchor="294 81" LeftDirection="294 81" RightDirection="294 81" />
+								<PathPointType Anchor="294 77" LeftDirection="294 77" RightDirection="294 77" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 85" LeftDirection="290 85" RightDirection="290 85" />
+								<PathPointType Anchor="290 93" LeftDirection="290 93" RightDirection="290 93" />
+								<PathPointType Anchor="294 93" LeftDirection="294 93" RightDirection="294 93" />
+								<PathPointType Anchor="294 85" LeftDirection="294 85" RightDirection="294 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 97" LeftDirection="290 97" RightDirection="290 97" />
+								<PathPointType Anchor="290 101" LeftDirection="290 101" RightDirection="290 101" />
+								<PathPointType Anchor="294 101" LeftDirection="294 101" RightDirection="294 101" />
+								<PathPointType Anchor="294 97" LeftDirection="294 97" RightDirection="294 97" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 105" LeftDirection="290 105" RightDirection="290 105" />
+								<PathPointType Anchor="290 113" LeftDirection="290 113" RightDirection="290 113" />
+								<PathPointType Anchor="294 113" LeftDirection="294 113" RightDirection="294 113" />
+								<PathPointType Anchor="294 105" LeftDirection="294 105" RightDirection="294 105" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 117" LeftDirection="290 117" RightDirection="290 117" />
+								<PathPointType Anchor="290 125" LeftDirection="290 125" RightDirection="290 125" />
+								<PathPointType Anchor="294 125" LeftDirection="294 125" RightDirection="294 125" />
+								<PathPointType Anchor="294 117" LeftDirection="294 117" RightDirection="294 117" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 129" LeftDirection="290 129" RightDirection="290 129" />
+								<PathPointType Anchor="290 133" LeftDirection="290 133" RightDirection="290 133" />
+								<PathPointType Anchor="294 133" LeftDirection="294 133" RightDirection="294 133" />
+								<PathPointType Anchor="294 129" LeftDirection="294 129" RightDirection="294 129" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="290 137" LeftDirection="290 137" RightDirection="290 137" />
+								<PathPointType Anchor="290 149" LeftDirection="290 149" RightDirection="290 149" />
+								<PathPointType Anchor="294 149" LeftDirection="294 149" RightDirection="294 149" />
+								<PathPointType Anchor="294 137" LeftDirection="294 137" RightDirection="294 137" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="294 53" LeftDirection="294 53" RightDirection="294 53" />
+								<PathPointType Anchor="294 81" LeftDirection="294 81" RightDirection="294 81" />
+								<PathPointType Anchor="298 81" LeftDirection="298 81" RightDirection="298 81" />
+								<PathPointType Anchor="298 53" LeftDirection="298 53" RightDirection="298 53" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="294 85" LeftDirection="294 85" RightDirection="294 85" />
+								<PathPointType Anchor="294 89" LeftDirection="294 89" RightDirection="294 89" />
+								<PathPointType Anchor="298 89" LeftDirection="298 89" RightDirection="298 89" />
+								<PathPointType Anchor="298 85" LeftDirection="298 85" RightDirection="298 85" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="294 93" LeftDirection="294 93" RightDirection="294 93" />
+								<PathPointType Anchor="294 105" LeftDirection="294 105" RightDirection="294 105" />
+								<PathPointType Anchor="298 105" LeftDirection="298 105" RightDirection="298 105" />
+								<PathPointType Anchor="298 93" LeftDirection="298 93" RightDirection="298 93" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="294 109" LeftDirection="294 109" RightDirection="294 109" />
+								<PathPointType Anchor="294 117" LeftDirection="294 117" RightDirection="294 117" />
+								<PathPointType Anchor="298 117" LeftDirection="298 117" RightDirection="298 117" />
+								<PathPointType Anchor="298 109" LeftDirection="298 109" RightDirection="298 109" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="294 125" LeftDirection="294 125" RightDirection="294 125" />
+								<PathPointType Anchor="294 129" LeftDirection="294 129" RightDirection="294 129" />
+								<PathPointType Anchor="298 129" LeftDirection="298 129" RightDirection="298 129" />
+								<PathPointType Anchor="298 125" LeftDirection="298 125" RightDirection="298 125" />
+							</PathPointArray>
+						</GeometryPathType>
+						<GeometryPathType PathOpen="false">
+							<PathPointArray>
+								<PathPointType Anchor="294 133" LeftDirection="294 133" RightDirection="294 133" />
+								<PathPointType Anchor="294 153" LeftDirection="294 153" RightDirection="294 153" />
+								<PathPointType Anchor="298 153" LeftDirection="298 153" RightDirection="298 153" />
+								<PathPointType Anchor="298 133" LeftDirection="298 133" RightDirection="298 133" />
+							</PathPointArray>
+						</GeometryPathType>
+					</PathGeometry>
+				</Properties>
+				<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+					<Properties>
+						<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+					</Properties>
+				</TextWrapPreference>
+				<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+				<FrameFittingOption AutoFit="false" LeftCrop="0" TopCrop="0" RightCrop="0" BottomCrop="0" FittingOnEmptyFrame="None" FittingAlignment="CenterAnchor" />
+				<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+					<Properties>
+						<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					</Properties>
+				</ObjectExportOption>
+			</Polygon>
+		</Group>
+	</Spread>
+</idPkg:Spread>

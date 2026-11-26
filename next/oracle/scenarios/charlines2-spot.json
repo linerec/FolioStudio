@@ -1,0 +1,74 @@
+{
+  "fixture": "charlines2-spot",
+  "about": "InDesign spot background fixture; test only line edits, excluding unrelated new-ink neutral density. textFormat is mapped in oracle.rs and print-check.py.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "charlines2-spot-knockout",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 6,
+            "underlineOffset": 7,
+            "underlineColor": "Color/Research Cyan",
+            "underlineType": "StrokeStyle/$ID/ThinThin",
+            "underlineGapColor": "Color/Research Magenta",
+            "underlineOverprint": false,
+            "underlineGapOverprint": false,
+            "strikeThroughWeight": 6,
+            "strikeThroughOffset": 7,
+            "strikeThroughColor": "Color/Research Cyan",
+            "strikeThroughType": "StrokeStyle/$ID/ThinThin",
+            "strikeThroughGapColor": "Color/Research Magenta",
+            "strikeThroughOverprint": false,
+            "strikeThroughGapOverprint": false
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.spot-overprint"
+      ]
+    },
+    {
+      "name": "charlines2-spot-overprint",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 6,
+            "underlineOffset": 7,
+            "underlineColor": "Color/Research Cyan",
+            "underlineType": "StrokeStyle/$ID/ThinThin",
+            "underlineGapColor": "Color/Research Magenta",
+            "underlineOverprint": true,
+            "underlineGapOverprint": true,
+            "strikeThroughWeight": 6,
+            "strikeThroughOffset": 7,
+            "strikeThroughColor": "Color/Research Cyan",
+            "strikeThroughType": "StrokeStyle/$ID/ThinThin",
+            "strikeThroughGapColor": "Color/Research Magenta",
+            "strikeThroughOverprint": true,
+            "strikeThroughGapOverprint": true
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.spot-overprint"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+ "about": "InDesign 2025 TargetPoint and HighlightRect of the page-item destinations (IDML exported after Document.importPdfComments); point/rect are in the item's own coordinates, which differ from the PDF page by a constant translation (rect.left + 306 = PDF x0, rect.top + 396 = PDF top-left-origin y0 in the measured document). rules/pdfcomments-c5.ko.md",
+ "all": [
+  {
+   "content": "connected",
+   "kind": "ConnectedLinesType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -189.0,
+    -99.0,
+    -93.0,
+    -48.0
+   ]
+  },
+  {
+   "content": "pencil",
+   "kind": "FreeformDrawingType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -80.0,
+    -105.0,
+    -2.0,
+    -47.0
+   ]
+  },
+  {
+   "content": "cloud",
+   "kind": "CloudType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -8.5,
+    -108.5,
+    91.5,
+    -33.5
+   ]
+  },
+  {
+   "content": "textbox",
+   "kind": "TextBoxType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -286.0,
+    -6.0,
+    -186.0,
+    24.0
+   ]
+  },
+  {
+   "content": "typewriter",
+   "kind": "TextTypewriterType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -166.0,
+    -6.0,
+    -66.0,
+    24.0
+   ]
+  },
+  {
+   "content": "callout",
+   "kind": "TextCalloutType",
+   "destination": "PageItem",
+   "point": [
+    -16.0,
+    -11.0
+   ],
+   "rect": [
+    -46.0,
+    -11.0,
+    74.0,
+    39.0
+   ]
+  },
+  {
+   "content": "stamp",
+   "kind": "StampType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -286.0,
+    53.47,
+    -206.0,
+    74.53
+   ]
+  },
+  {
+   "content": "note",
+   "kind": "StickyNoteType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -106.0,
+    44.0,
+    -90.0,
+    60.0
+   ]
+  },
+  {
+   "content": "line",
+   "kind": "LineSegmentType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -289.0,
+    -159.0,
+    -203.0,
+    -131.0
+   ]
+  },
+  {
+   "content": "arrow",
+   "kind": "ArrowType",
+   "destination": "PageItem",
+   "point": [
+    -106.0,
+    -134.0
+   ],
+   "rect": [
+    -192.0,
+    -162.0,
+    -100.0,
+    -121.98
+   ]
+  },
+  {
+   "content": "oval",
+   "kind": "OvalType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -87.0,
+    -161.0,
+    -15.0,
+    -127.0
+   ]
+  },
+  {
+   "content": "rect",
+   "kind": "RectangleType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    3.0,
+    -161.0,
+    75.0,
+    -127.0
+   ]
+  },
+  {
+   "content": "polygon",
+   "kind": "PolygonType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -294.0,
+    -99.0,
+    -208.0,
+    -48.0
+   ]
+  }
+ ],
+ "arrows": [
+  {
+   "content": "a1_end_open",
+   "kind": "ArrowType",
+   "destination": "PageItem",
+   "point": [
+    -206.0,
+    -106.0
+   ],
+   "rect": [
+    -288.0,
+    -148.0,
+    -204.0,
+    -103.91
+   ]
+  },
+  {
+   "content": "a2_start_open",
+   "kind": "ArrowType",
+   "destination": "PageItem",
+   "point": [
+    -106.0,
+    -106.0
+   ],
+   "rect": [
+    -188.0,
+    -148.09,
+    -104.0,
+    -104.0
+   ]
+  },
+  {
+   "content": "a3_no_le",
+   "kind": "ArrowType",
+   "destination": "PageItem",
+   "point": [
+    -6.0,
+    -106.0
+   ],
+   "rect": [
+    -87.0,
+    -147.0,
+    -5.0,
+    -105.0
+   ]
+  },
+  {
+   "content": "a4_both",
+   "kind": "ArrowType",
+   "destination": "PageItem",
+   "point": [
+    -206.0,
+    -36.0
+   ],
+   "rect": [
+    -289.0,
+    -79.09,
+    -203.0,
+    -33.0
+   ]
+  },
+  {
+   "content": "a5_start_closed",
+   "kind": "ArrowType",
+   "destination": "PageItem",
+   "point": [
+    -106.0,
+    -36.0
+   ],
+   "rect": [
+    -188.0,
+    -78.09,
+    -104.0,
+    -34.0
+   ]
+  },
+  {
+   "content": "a6_plain_line_le",
+   "kind": "LineSegmentType",
+   "destination": "PageItem",
+   "point": [
+    0.0,
+    0.0
+   ],
+   "rect": [
+    -88.0,
+    -78.0,
+    -4.0,
+    -33.91
+   ]
+  }
+ ],
+ "callouts": [
+  {
+   "content": "A_start_top_right",
+   "kind": "TextCalloutType",
+   "destination": "PageItem",
+   "point": [
+    -206.0,
+    -96.0
+   ],
+   "rect": [
+    -286.0,
+    -96.0,
+    -186.0,
+    -66.0
+   ]
+  },
+  {
+   "content": "B_start_left_mid",
+   "kind": "TextCalloutType",
+   "destination": "PageItem",
+   "point": [
+    -146.0,
+    -76.0
+   ],
+   "rect": [
+    -146.0,
+    -96.0,
+    -46.0,
+    -66.0
+   ]
+  },
+  {
+   "content": "C_start_top_left",
+   "kind": "TextCalloutType",
+   "destination": "PageItem",
+   "point": [
+    -6.0,
+    -96.0
+   ],
+   "rect": [
+    -6.0,
+    -96.0,
+    74.0,
+    -66.0
+   ]
+  },
+  {
+   "content": "D_start_below",
+   "kind": "TextCalloutType",
+   "destination": "PageItem",
+   "point": [
+    -246.0,
+    44.0
+   ],
+   "rect": [
+    -286.0,
+    -16.0,
+    -186.0,
+    44.0
+   ]
+  },
+  {
+   "content": "E_start_far_left",
+   "kind": "TextCalloutType",
+   "destination": "PageItem",
+   "point": [
+    -166.0,
+    -1.0
+   ],
+   "rect": [
+    -166.0,
+    -16.0,
+    -46.0,
+    14.0
+   ]
+  }
+ ]
+}

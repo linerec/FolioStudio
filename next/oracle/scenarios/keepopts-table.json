@@ -1,0 +1,73 @@
+{
+ "fixture": "keepopts-table",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "keeptbl-lead-next",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "tbl",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "keeptbl-table-next",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "tbl",
+     "start": 18,
+     "end": 19,
+     "props": {
+      "keepWithNext": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "keeptbl-lead-all-next",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "tbl",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "tbl",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "keepWithNext": 1
+     }
+    }
+   ]
+  }
+ ]
+}

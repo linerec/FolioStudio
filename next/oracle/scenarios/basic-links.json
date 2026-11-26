@@ -1,0 +1,92 @@
+{
+  "fixture": "basic",
+  "about": "Links panel: Relink (the linked file replaced by another: the same result as placing over the graphic, the Link element kept) and Embed Link (the file's bytes in the graphic's Contents, StoredState Embedded). `file` of embedLink names the link's file for the print check (the engine harness reads it from the link).",
+  "scenarios": [
+    {
+      "name": "relink-png",
+      "steps": [
+        {
+          "op": "relinkGraphic",
+          "target": "img",
+          "file": "place-plain.png"
+        }
+      ]
+    },
+    {
+      "name": "relink-icc",
+      "steps": [
+        {
+          "op": "relinkGraphic",
+          "target": "img",
+          "file": "place-icc.jpg"
+        }
+      ]
+    },
+    {
+      "name": "relink-dpi",
+      "steps": [
+        {
+          "op": "relinkGraphic",
+          "target": "img",
+          "file": "place-96.png"
+        }
+      ]
+    },
+    {
+      "name": "relink-after-fill",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "fill"
+        },
+        {
+          "op": "relinkGraphic",
+          "target": "img",
+          "file": "place-icc.jpg"
+        }
+      ]
+    },
+    {
+      "name": "relink-after-stretch",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "contentToFrame"
+        },
+        {
+          "op": "relinkGraphic",
+          "target": "img",
+          "file": "place-icc.jpg"
+        }
+      ]
+    },
+    {
+      "name": "embed-link",
+      "steps": [
+        {
+          "op": "embedLink",
+          "target": "img",
+          "file": "checker.png"
+        }
+      ]
+    },
+    {
+      "name": "unembed-link",
+      "steps": [
+        {
+          "op": "embedLink",
+          "target": "img",
+          "file": "checker.png"
+        },
+        {
+          "op": "embedLink",
+          "target": "img",
+          "unembed": true,
+          "file": "checker.png"
+        }
+      ]
+    }
+  ]
+}

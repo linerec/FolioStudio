@@ -1,0 +1,61 @@
+{
+  "title": "패키지",
+  "target": "none",
+  "requests": true,
+  "defaults": "package",
+  "link": "package",
+  "build": "package",
+  "className": "package-dialog fields-column",
+  "okLabel": "패키지 만들기",
+  "stages": { "field": "stage", "form": "choose", "closeLabel": "닫기" },
+  "description": "File ▸ Package (opened with values {namePattern: the folder name with {name} for the document's, documents: the folder to start in when the settings remember none, preflightErrors, appVersion, utcOffsetMinutes}): the print house's folder of the open document, in stages (stage). choose: links, fonts (cjkFonts: also the CJK fonts InDesign does not copy), pdf (only while pdfPossible: the document's CMYK profile is on this computer; with the PDF settings exported last, export), the folder (a whole folder that exists) and the name of the new folder in it, the instructions (contact, company, phone, email, notes) for Instructions.txt. The plan (dialogPreview: packagePlan's counts, what to check, whether the folder can be made: okAllowed) follows the values; OK waits for it. OK (Make Package) sends the package request on its own thread and remembers the choices, folder and contact (userSettings): running, the progress in progress (stage, done, total, files, filesTotal, pdf; cancel: packageCancel, cancelling); then done (result: the folder, its files and report) or failed (failure: code, error, messageId); a folder of that name made meanwhile goes back to choose with the next free name (renamed). From done or failed, stage choose goes back to the choices. The folder is made in a temporary folder and renamed: a failed or cancelled package leaves nothing; the originals are only read. Over an attached MCP connection it is applied only into a new folder of the open project (mcp-c5), with file writes allowed.",
+  "note": [
+    "인쇄소에 보낼 폴더 — 문서 · 링크 · 글꼴 · PDF · 보고서",
+    { "text": "같은 이름의 폴더가 있어 만들지 않았습니다. 이름을 \"{name}\"(으)로 바꿨습니다. 확인 후 다시 누르세요.", "when": { "renamed": true } },
+    "임시 폴더에 만든 뒤 이름을 바꾸므로, 실패하거나 취소해도 반쯤 만든 폴더가 남지 않습니다. 원본은 읽기만 합니다."
+  ],
+  "preview": {
+    "kind": "panel",
+    "panel": "packagePlan",
+    "query": "packagePlan",
+    "args": {},
+    "pending": "링크와 글꼴을 확인하는 중…",
+    "failed": "패키지 내용을 알 수 없습니다: {0}"
+  },
+  "buttons": [
+    { "label": "사전 검사 보기", "field": "showPreflight", "screen": "showPreflight", "disabledWhen": { "hasPreflightErrors": false } }
+  ],
+  "staysOpen": ["cancel"],
+  "unchecked": ["cancel"],
+  "then": { "cancel": { "cancelling": true } },
+  "status": "package",
+  "fields": [
+    { "name": "links", "label": "링크", "type": "boolean", "default": true, "group": "포함할 것" },
+    { "name": "fonts", "label": "글꼴", "type": "boolean", "default": true, "group": "포함할 것" },
+    { "name": "cjkFonts", "label": "공급업체 제한 한중일 글꼴도 복사(InDesign은 복사하지 않음 — 글꼴 사용권을 확인하세요)", "type": "boolean", "default": false, "group": "포함할 것", "when": { "fonts": true } },
+    { "name": "pdf", "label": "PDF", "type": "boolean", "default": true, "group": "포함할 것", "disabledWhen": { "pdfPossible": false } },
+    { "name": "folder", "label": "저장 위치", "type": "text", "path": "folder", "choose": "바꾸기…", "chooseTitle": "패키지를 만들 위치", "required": true, "default": "", "maxLength": 4096, "group": "저장 위치" },
+    { "name": "name", "label": "폴더 이름", "type": "text", "path": "name", "trim": true, "required": true, "default": "", "maxLength": 255, "group": "저장 위치" },
+    { "name": "showContact", "label": "인쇄 지시 사항 (선택)", "type": "boolean", "default": false, "local": true, "group": "인쇄 지시 사항" },
+    { "name": "contact", "label": "담당자", "type": "text", "default": "", "maxLength": 200, "group": "인쇄 지시 사항", "when": { "showContact": true } },
+    { "name": "company", "label": "회사", "type": "text", "default": "", "maxLength": 200, "group": "인쇄 지시 사항", "when": { "showContact": true } },
+    { "name": "phone", "label": "전화", "type": "text", "default": "", "maxLength": 200, "group": "인쇄 지시 사항", "when": { "showContact": true } },
+    { "name": "email", "label": "전자우편", "type": "text", "default": "", "maxLength": 200, "group": "인쇄 지시 사항", "when": { "showContact": true } },
+    { "name": "notes", "label": "메모", "type": "text", "multiline": true, "rows": 4, "default": "", "maxLength": 20000, "group": "인쇄 지시 사항", "when": { "showContact": true } },
+    { "name": "stage", "type": "enum", "default": "choose", "hidden": true, "local": true, "options": ["choose", "running", "done", "failed"] },
+    { "name": "progress", "type": "json", "default": {}, "hidden": true, "local": true },
+    { "name": "cancelling", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "result", "type": "json", "default": {}, "hidden": true, "local": true },
+    { "name": "failure", "type": "json", "default": {}, "hidden": true, "local": true },
+    { "name": "renamed", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "pdfPossible", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "hasPreflightErrors", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "preflightErrors", "type": "number", "integer": true, "default": 0, "min": 0, "max": 1000000000, "hidden": true, "local": true },
+    { "name": "export", "type": "json", "default": {}, "hidden": true },
+    { "name": "roots", "type": "json", "default": [], "hidden": true },
+    { "name": "namePattern", "type": "text", "default": "{name} 폴더", "hidden": true, "local": true, "maxLength": 200 },
+    { "name": "documents", "type": "text", "default": "", "hidden": true, "local": true, "maxLength": 4096 },
+    { "name": "appVersion", "type": "text", "default": "", "hidden": true, "maxLength": 100 },
+    { "name": "utcOffsetMinutes", "type": "number", "integer": true, "default": 0, "min": -1440, "max": 1440, "hidden": true }
+  ]
+}

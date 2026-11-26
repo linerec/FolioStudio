@@ -1,0 +1,255 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "tstyle-duplicate-paragraph",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "duplicate",
+     "kind": "paragraph",
+     "style": "Format Body"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-duplicate-child",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "duplicate",
+     "kind": "paragraph",
+     "style": "Format Heading"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-duplicate-character",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "duplicate",
+     "kind": "character",
+     "style": "Format Bold"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-group-new",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-group-move",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-group-character",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-group-create-in",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "createStyle",
+     "kind": "paragraph",
+     "group": "Heads",
+     "name": "In Heads"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-group-out",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Heads:Format Heading",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "name": "tstyle-duplicate-next",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "props": {
+      "nextStyle": "Format Body"
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "duplicate",
+     "kind": "paragraph",
+     "style": "Format Heading"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-sort-paragraph",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "AAA First"
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Format Between"
+    },
+    {
+     "op": "menu",
+     "action": "$ID/Sort by Name",
+     "panel": "Paragraph Styles"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-duplicate-in-group",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "duplicate",
+     "kind": "paragraph",
+     "style": "Heads:Format Heading"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-group-nested",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads:Sub"
+    },
+    {
+     "op": "textStyle",
+     "do": "createStyle",
+     "kind": "paragraph",
+     "group": "Heads:Sub",
+     "name": "Deep"
+    }
+   ]
+  },
+  {
+   "name": "tstyle-break-link-paragraph",
+   "window": true,
+   "steps": [
+    {
+     "op": "menu",
+     "id": 8500,
+     "panel": "Paragraph Styles",
+     "target": "format",
+     "select": {
+      "start": 25,
+      "end": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "tstyle-break-link-character",
+   "window": true,
+   "steps": [
+    {
+     "op": "menu",
+     "id": 8501,
+     "panel": "Character Styles",
+     "target": "format",
+     "select": {
+      "start": 6,
+      "end": 9
+     }
+    }
+   ]
+  }
+ ]
+}

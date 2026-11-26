@@ -1,0 +1,9 @@
+{
+  "fixture":"objectstyles",
+  "scenarios":[
+    {"name":"sp-object-group","window":true,"steps":[{"op":"applyObjectStyle","target":"grp","style":"Oracle Box"}]},
+    {"name":"sp-object-group-clear","window":true,"steps":[{"op":"applyObjectStyle","target":"grp","style":"Oracle Box","clear":true}]},
+    {"name":"sp-object-content","window":true,"steps":[{"op":"applyObjectStyle","target":"img","style":"Oracle Box","content":true}]},
+    {"name":"sp-object-content-clear","window":true,"steps":[{"op":"applyObjectStyle","target":"img","style":"Oracle Box","content":true,"clear":true}]}
+  ]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u19d" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Before</Content>
+				<Br />
+				<Table Self="u19di1e6" HeaderRowCount="0" FooterRowCount="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" BodyRowCount="2" ColumnCount="2" AppliedTableStyle="TableStyle/$ID/[No table style]" TableDirection="LeftToRightDirection" LeftBorderStrokeColor="Color/Word_R255_G0_B0" LeftBorderStrokeType="StrokeStyle/$ID/ThinThin" RightBorderStrokeColor="Color/Word_R255_G0_B0" RightBorderStrokeType="StrokeStyle/$ID/ThinThin" TopBorderStrokeColor="Color/Word_R255_G0_B0" TopBorderStrokeType="StrokeStyle/$ID/ThinThin" BottomBorderStrokeColor="Color/Word_R255_G0_B0" BottomBorderStrokeType="StrokeStyle/$ID/ThinThin" StartRowStrokeColor="Color/Word_R255_G0_B0" EndRowStrokeColor="Color/Word_R255_G0_B0" StartRowStrokeCount="1" EndRowStrokeCount="1" StartRowStrokeType="StrokeStyle/$ID/ThinThin" EndRowStrokeType="StrokeStyle/$ID/ThinThin" StartColumnStrokeColor="Color/Word_R255_G0_B0" EndColumnStrokeColor="Color/Word_R255_G0_B0" StartColumnStrokeCount="1" EndColumnStrokeCount="1" StartColumnStrokeType="StrokeStyle/$ID/ThinThin" EndColumnLineStyle="StrokeStyle/$ID/ThinThin" EndRowStrokeWeight="1" EndColumnStrokeWeight="1">
+					<Row Self="u19di1e6Row0" Name="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleRowHeight="16.00830078125" MinimumHeight="3" AutoGrow="true" />
+					<Row Self="u19di1e6Row1" Name="1" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleRowHeight="16.00830078125" MinimumHeight="3" AutoGrow="true" />
+					<Column Self="u19di1e6Column0" Name="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="75" />
+					<Column Self="u19di1e6Column1" Name="1" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="75" />
+					<Cell Self="u19di1e6i0" Name="0:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/$ID/[None]" AppliedCellStylePriority="0" FirstBaselineOffset="AscentOffset" WritingDirection="true">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>R0C0</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u19di1e6i1" Name="1:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/$ID/[None]" AppliedCellStylePriority="0" FirstBaselineOffset="AscentOffset" WritingDirection="true">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>R0C1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u19di1e6i2" Name="0:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/$ID/[None]" AppliedCellStylePriority="0" FirstBaselineOffset="AscentOffset" WritingDirection="true">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>R1C0</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u19di1e6i3" Name="1:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/$ID/[None]" AppliedCellStylePriority="0" FirstBaselineOffset="AscentOffset" WritingDirection="true">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>R1C1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+				</Table>
+				<Content>After</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

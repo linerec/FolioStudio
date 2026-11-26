@@ -1,0 +1,31 @@
+[package]
+name = "folio-preflight"
+description = "Preflight: print-readiness checks like InDesign's Preflight panel and printers' checks"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+folio-links.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+# Image samples for ink coverage of CMYK images (already in the workspace via folio-render).
+tiff = "=0.11.3"
+zune-jpeg = "=0.5.15"
+# The command-line tool reads IDML and lays text out (`--no-default-features` for the library alone).
+folio-idml = { workspace = true, optional = true }
+folio-text = { workspace = true, optional = true }
+
+[features]
+default = ["cli"]
+cli = ["dep:folio-idml", "dep:folio-text"]
+
+[[bin]]
+name = "folio-preflight"
+path = "src/bin/folio-preflight.rs"
+required-features = ["cli"]
+
+[[example]]
+name = "item_pages"
+required-features = ["cli"]

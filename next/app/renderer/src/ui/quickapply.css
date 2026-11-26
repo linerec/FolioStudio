@@ -1,0 +1,6 @@
+.quick-apply { width: min(520px, 90vw); }
+.quick-apply > input { width: 100%; box-sizing: border-box; }
+.quick-apply-results { max-height: 320px; overflow-y: auto; margin-top: 8px; }
+.quick-apply-results > button { display: flex; justify-content: space-between; gap: 16px; width: 100%; text-align: start; }
+.quick-apply-results > button[aria-selected="true"] { outline: 2px solid var(--accent, #6899db); outline-offset: -2px; }
+.quick-apply-results small { opacity: .7; white-space: nowrap; }

@@ -1,0 +1,72 @@
+{
+  "title": "고정 개체 삽입",
+  "target": "none",
+  "defaults": "anchoredDefaults",
+  "description": "Object > Anchored Object > Insert: a new anchored object at the text caret story/at (values given when opening); the size and position start from the document's anchored object defaults.",
+  "fields": [
+    {
+      "name": "story",
+      "type": "text",
+      "default": "",
+      "hidden": true,
+      "required": true
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000000,
+      "integer": true,
+      "hidden": true
+    },
+    {
+      "name": "width",
+      "label": "폭 (pt)",
+      "type": "number",
+      "default": 72,
+      "min": 0.01,
+      "max": 100000
+    },
+    {
+      "name": "height",
+      "label": "높이 (pt)",
+      "type": "number",
+      "default": 72,
+      "min": 0.01,
+      "max": 100000
+    },
+    {
+      "name": "position",
+      "label": "고정 위치",
+      "type": "enum",
+      "default": "InlinePosition",
+      "options": [
+        {
+          "value": "InlinePosition",
+          "label": "인라인"
+        },
+        {
+          "value": "AboveLine",
+          "label": "줄 위"
+        },
+        {
+          "value": "Anchored",
+          "label": "사용자 지정"
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "insertAnchoredObject",
+        "story": "$story",
+        "at": "$at",
+        "width": "$width",
+        "height": "$height",
+        "position": "$position"
+      }
+    ]
+  }
+}

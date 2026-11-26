@@ -1,0 +1,49 @@
+{
+ "fixture": "endnotes-story",
+ "extension": "endnotes-c1",
+ "about": "Endnote Options ▸ Scope Story and Endnote Frame ▸ Load in Place Cursor (rest-c1; InDesign 20.5, window document).",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "en-story-doc",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertEndnote",
+     "target": "a",
+     "at": 5
+    },
+    {
+     "op": "insertEndnote",
+     "target": "b",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "name": "en-story-scope",
+   "window": true,
+   "steps": [
+    {
+     "op": "setEndnoteOptions",
+     "props": {
+      "ScopeValue": "StoryScope"
+     }
+    },
+    {
+     "op": "insertEndnote",
+     "target": "a",
+     "at": 5
+    },
+    {
+     "op": "insertEndnote",
+     "target": "b",
+     "at": 4
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,217 @@
+{
+  "title": "획 스타일",
+  "target": "none",
+  "defaults": "strokeStyle",
+  "keepOpen": true,
+  "style": "wide",
+  "unchecked": [
+    "delete",
+    "import"
+  ],
+  "link": "strokeKind",
+  "description": "Stroke panel menu > Stroke Styles: the custom stroke style picked (none = a new one; picking another starts the boxes from it) with its name, kind (fixed once it exists), repeating pattern (numbers separated by spaces: lengths and gaps in points, or the start and end of a stripe in percent), corner adjustment and cap. OK saves it, Delete removes the picked one, Load adds the custom styles of an IDML file of the project (`path`). The dialog opens again after each button.",
+  "fields": [
+    {
+      "name": "existing",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "path",
+      "label": "프로젝트 상대 IDML 경로",
+      "type": "text",
+      "default": "",
+      "keep": true
+    },
+    {
+      "name": "style",
+      "label": "사용자 정의 획 스타일",
+      "type": "choice",
+      "source": "strokeStyles",
+      "none": "새 획 스타일",
+      "default": "",
+      "reload": "strokeStyle"
+    },
+    {
+      "name": "name",
+      "label": "스타일 이름",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "kind",
+      "label": "유형",
+      "type": "enum",
+      "default": "DashedStrokeStyle",
+      "options": [
+        {
+          "value": "DashedStrokeStyle",
+          "label": "점선"
+        },
+        {
+          "value": "DottedStrokeStyle",
+          "label": "점"
+        },
+        {
+          "value": "StripedStrokeStyle",
+          "label": "줄무늬"
+        }
+      ],
+      "disabledWhen": {
+        "existing": true
+      }
+    },
+    {
+      "name": "values",
+      "label": "반복 패턴 값",
+      "type": "text",
+      "format": "numbers",
+      "default": "12 6",
+      "required": true
+    },
+    {
+      "name": "adjustment",
+      "label": "모퉁이 조정",
+      "type": "enum",
+      "default": "DashesAndGaps",
+      "when": {
+        "kind": [
+          "DashedStrokeStyle",
+          "DottedStrokeStyle"
+        ]
+      },
+      "options": [
+        {
+          "value": "None",
+          "label": "없음"
+        },
+        {
+          "value": "Dashes",
+          "label": "선"
+        },
+        {
+          "value": "Gaps",
+          "label": "간격"
+        },
+        {
+          "value": "DashesAndGaps",
+          "label": "선과 간격"
+        }
+      ]
+    },
+    {
+      "name": "cap",
+      "label": "단면",
+      "type": "enum",
+      "default": "ButtEndCap",
+      "when": {
+        "kind": "DashedStrokeStyle"
+      },
+      "options": [
+        {
+          "value": "ButtEndCap",
+          "label": "평평한 단면"
+        },
+        {
+          "value": "RoundEndCap",
+          "label": "둥근 단면"
+        },
+        {
+          "value": "ProjectingEndCap",
+          "label": "돌출 단면"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "줄무늬 시작과 끝을 0~100 사이 값으로 입력합니다.",
+      "when": {
+        "kind": "StripedStrokeStyle"
+      }
+    },
+    {
+      "text": "선과 간격의 길이를 포인트로 입력합니다.",
+      "when": {
+        "kind": [
+          "DashedStrokeStyle",
+          "DottedStrokeStyle"
+        ]
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "label": "새로 만들기",
+      "field": "new",
+      "set": {
+        "field": "style",
+        "value": ""
+      }
+    },
+    {
+      "label": "삭제",
+      "field": "delete",
+      "action": "delete",
+      "disabledWhen": {
+        "existing": false
+      }
+    },
+    {
+      "label": "불러오기",
+      "field": "import",
+      "action": "import"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "saveStrokeStyle",
+        "style": {
+          "id": "$style",
+          "name": "$name",
+          "kind": "$kind",
+          "values": {
+            "$": "values",
+            "numbers": true
+          },
+          "adjustment": "$adjustment",
+          "cap": "$cap"
+        }
+      }
+    ],
+    "delete": [
+      {
+        "op": "deleteStrokeStyle",
+        "id": "$style"
+      }
+    ],
+    "import": [
+      {
+        "$each": {
+          "query": "strokeStylesFile",
+          "args": {
+            "path": "$path"
+          },
+          "in": "styles",
+          "where": {
+            "kind": {
+              "not": "StrokeStyle"
+            }
+          },
+          "as": {
+            "op": "saveStrokeStyle",
+            "style": {
+              "$item": "*",
+              "set": {
+                "id": ""
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

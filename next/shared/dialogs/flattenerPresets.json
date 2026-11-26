@@ -1,0 +1,42 @@
+{
+  "title": "투명도 병합 사전 설정",
+  "scope": "app",
+  "target": "none",
+  "defaults": "flattenerPresets",
+  "link": "flattenerPresets",
+  "className": "color-settings-dialog flattener-presets-dialog",
+  "description": "Edit > Transparency Flattener Presets (an app dialog, a manager of a list): the three built-in presets (0 to 2: Low, Medium, High Resolution; not changed) and the user's (3 on), kept in the app settings flattenerPresets. flattenerPreset is the preset shown: choosing another fills the fields from it; a field set goes into the preset shown (a built-in one refuses it: notEditable). listAction new copies the preset shown under the first free name of namePrefix ({n} the number), delete removes the user's preset shown. presets holds the user's list (hidden rows, set whole to replace it). OK checks every name (required, not a built-in one's: reserved, none twice: duplicate; field presets/<row>/name) and saves the list (userSettings patch flattenerPresets), names trimmed.",
+  "fields": [
+    { "name": "flattenerPreset", "label": "사전 설정", "type": "choice", "source": "flattenerPresets", "default": "2", "group": "" },
+    { "name": "flattenerName", "label": "이름", "type": "text", "default": "", "maxLength": 256, "when": { "builtIn": false }, "group": "" },
+    { "name": "rasterVectorBalance", "label": "래스터/벡터 균형", "type": "number", "default": 100, "min": 0, "max": 100, "disabledWhen": { "builtIn": true }, "group": "" },
+    { "name": "lineArtAndTextResolution", "label": "선화 및 텍스트 해상도(ppi)", "type": "number", "default": 1200, "min": 1, "max": 9600, "disabledWhen": { "builtIn": true }, "group": "" },
+    { "name": "gradientAndMeshResolution", "label": "그라디언트 및 망 해상도(ppi)", "type": "number", "default": 300, "min": 1, "max": 1200, "disabledWhen": { "builtIn": true }, "group": "" },
+    { "name": "convertAllTextToOutlines", "label": "모든 텍스트를 윤곽선으로 변환", "type": "boolean", "default": false, "disabledWhen": { "builtIn": true }, "group": "" },
+    { "name": "convertAllStrokesToOutlines", "label": "모든 선을 윤곽선으로 변환", "type": "boolean", "default": false, "disabledWhen": { "builtIn": true }, "group": "" },
+    { "name": "clipComplexRegions", "label": "복잡한 영역 클리핑", "type": "boolean", "default": true, "disabledWhen": { "builtIn": true }, "group": "" },
+    { "name": "presets", "label": "사전 설정", "type": "array", "hidden": true, "default": [], "minRows": 0, "maxRows": 1000,
+      "messages": { "required": "사전 설정 이름과 값을 확인하세요. 이름은 중복될 수 없습니다.", "reserved": "사전 설정 이름과 값을 확인하세요. 이름은 중복될 수 없습니다.", "duplicate": "사전 설정 이름과 값을 확인하세요. 이름은 중복될 수 없습니다." },
+      "fields": [
+        { "name": "name", "label": "이름", "type": "text", "default": "", "maxLength": 256 },
+        { "name": "rasterVectorBalance", "label": "래스터/벡터 균형", "type": "number", "default": 100, "min": 0, "max": 100 },
+        { "name": "lineArtAndTextResolution", "label": "선화 및 텍스트 해상도(ppi)", "type": "number", "default": 1200, "min": 1, "max": 9600 },
+        { "name": "gradientAndMeshResolution", "label": "그라디언트 및 망 해상도(ppi)", "type": "number", "default": 300, "min": 1, "max": 1200 },
+        { "name": "convertAllTextToOutlines", "label": "모든 텍스트를 윤곽선으로 변환", "type": "boolean", "default": false },
+        { "name": "convertAllStrokesToOutlines", "label": "모든 선을 윤곽선으로 변환", "type": "boolean", "default": false },
+        { "name": "clipComplexRegions", "label": "복잡한 영역 클리핑", "type": "boolean", "default": true }
+      ] },
+    { "name": "builtIn", "type": "boolean", "default": true, "hidden": true, "local": true },
+    { "name": "listAction", "type": "enum", "default": "", "hidden": true, "local": true, "options": ["", "new", "delete"] },
+    { "name": "namePrefix", "type": "text", "default": "새 사전 설정 {n}", "hidden": true, "local": true }
+  ],
+  "buttons": [
+    { "label": "새로 만들기", "field": "newFlattener", "set": { "field": "listAction", "value": "new" } },
+    { "label": "삭제", "field": "deleteFlattener", "set": { "field": "listAction", "value": "delete" }, "disabledWhen": { "builtIn": true } }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "userSettings", "patch": { "flattenerPresets": "$presets" } }
+    ]
+  }
+}

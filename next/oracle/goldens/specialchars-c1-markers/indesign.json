@@ -1,0 +1,14081 @@
+{
+"version": "20.5.5.119",
+"cases": [
+{
+"id": "id-auto_page_number",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+]
+},
+{
+"id": "id-next_page_number",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"NEXT_PAGE_NUMBER",
+98
+]
+},
+{
+"id": "id-previous_page_number",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PREVIOUS_PAGE_NUMBER",
+98
+]
+},
+{
+"id": "id-section_marker",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+]
+},
+{
+"id": "id-end_nested_style",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+]
+},
+{
+"id": "id-indent_here_tab",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+]
+},
+{
+"id": "id-right_indent_tab",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+]
+},
+{
+"id": "id-discretionary_line_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+]
+},
+{
+"id": "id-forced_line_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+]
+},
+{
+"id": "id-column_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+]
+},
+{
+"id": "id-frame_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+]
+},
+{
+"id": "id-page_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+]
+},
+{
+"id": "id-odd_page_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+]
+},
+{
+"id": "id-even_page_break",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+]
+},
+{
+"id": "id-zero_width_joiner",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "ZERO_WIDTH_JOINER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ZERO_WIDTH_JOINER",
+98
+]
+},
+{
+"id": "id-zero_width_nonjoiner",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "ZERO_WIDTH_NONJOINER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ZERO_WIDTH_NONJOINER",
+98
+]
+},
+{
+"id": "id-inline",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65532,
+98
+]
+},
+{
+"id": "id-footnote",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+]
+},
+{
+"id": "id-var",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+]
+},
+{
+"id": "id-index",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+]
+},
+{
+"id": "id-all",
+"mode": "plain",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+]
+},
+{
+"id": "code-t#",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-R-R-R---------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~#",
+"find": [
+[
+1,
+1
+],
+[
+3,
+1
+],
+[
+5,
+1
+]
+]
+},
+{
+"id": "code-tN",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-R-------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~N",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "code-tX",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---R-----------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~X",
+"find": [
+[
+3,
+1
+]
+]
+},
+{
+"id": "code-tV",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-----R---------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~V",
+"find": [
+[
+5,
+1
+]
+]
+},
+{
+"id": "code-tx",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-------R-------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~x",
+"find": [
+[
+7,
+1
+]
+]
+},
+{
+"id": "code-ta",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-------------R-------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~a",
+"find": [
+[
+13,
+1
+]
+]
+},
+{
+"id": "code-tF",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------R-----",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~F",
+"find": [
+[
+15,
+1
+],
+[
+0,
+1
+]
+]
+},
+{
+"id": "code-tI",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-------------------R-",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~I",
+"find": [
+[
+19,
+1
+]
+]
+},
+{
+"id": "code-th",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------R-----------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~h",
+"find": [
+[
+9,
+1
+]
+]
+},
+{
+"id": "code-ty",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~y",
+"find": []
+},
+{
+"id": "code-ti",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-----------R---------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~i",
+"find": [
+[
+11,
+1
+]
+]
+},
+{
+"id": "code-tM",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "code-tk",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "code-tj",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~j",
+"find": []
+},
+{
+"id": "code-tb",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "~b",
+"find": []
+},
+{
+"id": "hex-0018",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-R-R-R-----------R---",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0018}",
+"find": [
+[
+1,
+1
+],
+[
+3,
+1
+],
+[
+5,
+1
+],
+[
+17,
+1
+]
+]
+},
+{
+"id": "hex-0019",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-------R-------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0019}",
+"find": [
+[
+7,
+1
+]
+]
+},
+{
+"id": "hex-0003",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------R-----------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0003}",
+"find": [
+[
+9,
+1
+]
+]
+},
+{
+"id": "hex-fffc",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-------------R-------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{FFFC}",
+"find": [
+[
+13,
+1
+]
+]
+},
+{
+"id": "hex-0004",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------R-----",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0004}",
+"find": [
+[
+15,
+1
+],
+[
+0,
+1
+]
+]
+},
+{
+"id": "hex-feff",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{FEFF}",
+"find": []
+},
+{
+"id": "hex-0016",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0016}",
+"find": []
+},
+{
+"id": "hex-0007",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "-----------R---------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0007}",
+"find": [
+[
+11,
+1
+]
+]
+},
+{
+"id": "hex-0008",
+"mode": "grep",
+"parts": [
+"x",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"x",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+"x",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+"x",
+{
+"m": "SECTION_MARKER"
+},
+"x",
+{
+"m": "END_NESTED_STYLE"
+},
+"x",
+{
+"m": "INDENT_HERE_TAB"
+},
+"x",
+{
+"m": "INLINE"
+},
+"x",
+{
+"m": "FOOTNOTE"
+},
+"x",
+{
+"m": "VAR"
+},
+"x",
+{
+"m": "INDEX"
+},
+"x"
+],
+"count": 21,
+"mask": "---------------------",
+"codes": [
+120,
+"AUTO_PAGE_NUMBER",
+120,
+"NEXT_PAGE_NUMBER",
+120,
+"PREVIOUS_PAGE_NUMBER",
+120,
+"SECTION_MARKER",
+120,
+"END_NESTED_STYLE",
+120,
+"INDENT_HERE_TAB",
+120,
+65532,
+120,
+"FOOTNOTE_SYMBOL",
+120,
+"TEXT_VARIABLE",
+120,
+65279,
+120
+],
+"pattern": "\\x{0008}",
+"find": []
+},
+{
+"id": "name-0",
+"mode": "grep",
+"parts": [
+"aA\u03b11 b"
+],
+"count": 6,
+"mask": "R-----",
+"codes": [
+97,
+65,
+945,
+49,
+32,
+98
+],
+"pattern": "\\N{LATIN SMALL LETTER A}",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "name-1",
+"mode": "grep",
+"parts": [
+"aA\u03b11 b"
+],
+"count": 6,
+"mask": "--R---",
+"codes": [
+97,
+65,
+945,
+49,
+32,
+98
+],
+"pattern": "\\N{GREEK SMALL LETTER ALPHA}",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "name-2",
+"mode": "grep",
+"parts": [
+"aA\u03b11 b"
+],
+"count": 6,
+"mask": "---R--",
+"codes": [
+97,
+65,
+945,
+49,
+32,
+98
+],
+"pattern": "\\N{DIGIT ONE}",
+"find": [
+[
+3,
+1
+]
+]
+},
+{
+"id": "name-3",
+"mode": "grep",
+"parts": [
+"aA\u03b11 b"
+],
+"count": 6,
+"mask": "------",
+"codes": [
+97,
+65,
+945,
+49,
+32,
+98
+],
+"pattern": "\\N{U+0041}",
+"find": []
+},
+{
+"id": "name-4",
+"mode": "grep",
+"parts": [
+"aA\u03b11 b"
+],
+"count": 6,
+"mask": "R-----",
+"codes": [
+97,
+65,
+945,
+49,
+32,
+98
+],
+"pattern": "\\N{latin small letter a}",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "name-5",
+"mode": "grep",
+"parts": [
+"aA\u03b11 b"
+],
+"count": 6,
+"mask": "----R-",
+"codes": [
+97,
+65,
+945,
+49,
+32,
+98
+],
+"pattern": "\\N{SPACE}",
+"find": [
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-auto_page_number-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-auto_page_number-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-auto_page_number-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "a.b",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "gen-auto_page_number-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-auto_page_number-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-auto_page_number-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+"AUTO_PAGE_NUMBER",
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-auto_page_number-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-section_marker-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-section_marker-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-section_marker-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+],
+"pattern": "a.b",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "gen-section_marker-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-section_marker-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-section_marker-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "SECTION_MARKER"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+"SECTION_MARKER",
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-section_marker-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"SECTION_MARKER",
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-end_nested_style-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-end_nested_style-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-end_nested_style-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "gen-end_nested_style-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-end_nested_style-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-end_nested_style-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-end_nested_style-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "gen-indent_here_tab-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-indent_here_tab-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-indent_here_tab-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "gen-indent_here_tab-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-indent_here_tab-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-indent_here_tab-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "INDENT_HERE_TAB"
+},
+" cd"
+],
+"count": 7,
+"mask": "--RRR--",
+"codes": [
+97,
+98,
+32,
+"INDENT_HERE_TAB",
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+3,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-indent_here_tab-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "gen-inline-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65532,
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-inline-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+65532,
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-inline-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65532,
+98
+],
+"pattern": "a.b",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "gen-inline-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65532,
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-inline-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+65532,
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-inline-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "INLINE"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+65532,
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-inline-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+65532,
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-footnote-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-footnote-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-footnote-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "gen-footnote-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-footnote-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-footnote-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "FOOTNOTE"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+"FOOTNOTE_SYMBOL",
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+1,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-footnote-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-var-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-var-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-var-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+],
+"pattern": "a.b",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "gen-var-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-var-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-var-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "VAR"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+"TEXT_VARIABLE",
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-var-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-index-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-index-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-index-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "gen-index-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-index-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "gen-index-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "INDEX"
+},
+" cd"
+],
+"count": 7,
+"mask": "--R-R--",
+"codes": [
+97,
+98,
+32,
+65279,
+32,
+99,
+100
+],
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+]
+},
+{
+"id": "gen-index-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\w+",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "go-inline-span",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "INLINE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "---------",
+"codes": [
+97,
+98,
+32,
+65532,
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "b.c",
+"find": []
+},
+{
+"id": "go-inline-word",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "INLINE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "RR--RR-RR",
+"codes": [
+97,
+98,
+32,
+65532,
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "[a-z]+",
+"find": [
+[
+0,
+2
+],
+[
+4,
+2
+],
+[
+7,
+2
+]
+]
+},
+{
+"id": "go-inline-star",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "INLINE"
+},
+"cd"
+],
+"count": 5,
+"mask": "RRRRR",
+"codes": [
+97,
+98,
+65532,
+99,
+100
+],
+"pattern": "^.*$",
+"find": [
+[
+0,
+5
+]
+]
+},
+{
+"id": "go-inline-lookahead",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "INLINE"
+},
+"cd"
+],
+"count": 5,
+"mask": "-R---",
+"codes": [
+97,
+98,
+65532,
+99,
+100
+],
+"pattern": "b(?=.c)",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "go-var-span",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "VAR"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "---------",
+"codes": [
+97,
+98,
+32,
+"TEXT_VARIABLE",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "b.c",
+"find": []
+},
+{
+"id": "go-var-word",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "VAR"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "RR--RR-RR",
+"codes": [
+97,
+98,
+32,
+"TEXT_VARIABLE",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "[a-z]+",
+"find": [
+[
+0,
+2
+],
+[
+4,
+2
+],
+[
+7,
+2
+]
+]
+},
+{
+"id": "go-var-star",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "VAR"
+},
+"cd"
+],
+"count": 5,
+"mask": "RRRRR",
+"codes": [
+97,
+98,
+"TEXT_VARIABLE",
+99,
+100
+],
+"pattern": "^.*$",
+"find": [
+[
+0,
+5
+]
+]
+},
+{
+"id": "go-var-lookahead",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "VAR"
+},
+"cd"
+],
+"count": 5,
+"mask": "-R---",
+"codes": [
+97,
+98,
+"TEXT_VARIABLE",
+99,
+100
+],
+"pattern": "b(?=.c)",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "go-footnote-span",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "FOOTNOTE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "---------",
+"codes": [
+97,
+98,
+32,
+"FOOTNOTE_SYMBOL",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "b.c",
+"find": []
+},
+{
+"id": "go-footnote-word",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "FOOTNOTE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "RR--RR-RR",
+"codes": [
+97,
+98,
+32,
+"FOOTNOTE_SYMBOL",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "[a-z]+",
+"find": [
+[
+0,
+2
+],
+[
+4,
+2
+],
+[
+7,
+2
+]
+]
+},
+{
+"id": "go-footnote-star",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "FOOTNOTE"
+},
+"cd"
+],
+"count": 5,
+"mask": "RRRRR",
+"codes": [
+97,
+98,
+"FOOTNOTE_SYMBOL",
+99,
+100
+],
+"pattern": "^.*$",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "go-footnote-lookahead",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "FOOTNOTE"
+},
+"cd"
+],
+"count": 5,
+"mask": "-R---",
+"codes": [
+97,
+98,
+"FOOTNOTE_SYMBOL",
+99,
+100
+],
+"pattern": "b(?=.c)",
+"find": []
+},
+{
+"id": "go-auto_page_number-span",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "---------",
+"codes": [
+97,
+98,
+32,
+"AUTO_PAGE_NUMBER",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "b.c",
+"find": []
+},
+{
+"id": "go-auto_page_number-word",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "RR--RR-RR",
+"codes": [
+97,
+98,
+32,
+"AUTO_PAGE_NUMBER",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "[a-z]+",
+"find": [
+[
+0,
+2
+],
+[
+4,
+2
+],
+[
+7,
+2
+]
+]
+},
+{
+"id": "go-auto_page_number-star",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"cd"
+],
+"count": 5,
+"mask": "RRRRR",
+"codes": [
+97,
+98,
+"AUTO_PAGE_NUMBER",
+99,
+100
+],
+"pattern": "^.*$",
+"find": [
+[
+0,
+5
+]
+]
+},
+{
+"id": "go-auto_page_number-lookahead",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"cd"
+],
+"count": 5,
+"mask": "-R---",
+"codes": [
+97,
+98,
+"AUTO_PAGE_NUMBER",
+99,
+100
+],
+"pattern": "b(?=.c)",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "go-end_nested_style-span",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "-RRRR----",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "b.c",
+"find": [
+[
+1,
+4
+]
+]
+},
+{
+"id": "go-end_nested_style-word",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "RR--RR-RR",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"pattern": "[a-z]+",
+"find": [
+[
+0,
+2
+],
+[
+4,
+2
+],
+[
+7,
+2
+]
+]
+},
+{
+"id": "go-end_nested_style-star",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 5,
+"mask": "RRRRR",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100
+],
+"pattern": "^.*$",
+"find": [
+[
+0,
+5
+]
+]
+},
+{
+"id": "go-end_nested_style-lookahead",
+"mode": "grep",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 5,
+"mask": "-----",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100
+],
+"pattern": "b(?=.c)",
+"find": []
+},
+{
+"id": "mt-end_nested_style-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "ab",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-end_nested_style-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\w\\w",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-end_nested_style-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\w{2}",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-end_nested_style-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "a\\W",
+"find": []
+},
+{
+"id": "mt-end_nested_style-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\W",
+"find": []
+},
+{
+"id": "mt-end_nested_style-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "a\\s",
+"find": []
+},
+{
+"id": "mt-end_nested_style-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\s",
+"find": []
+},
+{
+"id": "mt-end_nested_style-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\s+",
+"find": []
+},
+{
+"id": "mt-end_nested_style-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\h",
+"find": []
+},
+{
+"id": "mt-end_nested_style-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-end_nested_style-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "a\\x{0007}b",
+"find": []
+},
+{
+"id": "mt-end_nested_style-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "a(?=b)",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-end_nested_style-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "(?<=a)b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-end_nested_style-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-end_nested_style-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-end_nested_style-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "[^\\w]",
+"find": []
+},
+{
+"id": "mt-end_nested_style-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98
+],
+"pattern": "a[^b]",
+"find": []
+},
+{
+"id": "mt-indent_here_tab-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "ab",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-indent_here_tab-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\w\\w",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-indent_here_tab-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\w{2}",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-indent_here_tab-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "a\\W",
+"find": []
+},
+{
+"id": "mt-indent_here_tab-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\W",
+"find": []
+},
+{
+"id": "mt-indent_here_tab-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "a\\s",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-indent_here_tab-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\s+",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\h",
+"find": []
+},
+{
+"id": "mt-indent_here_tab-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "a\\x{0007}b",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-indent_here_tab-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "a(?=b)",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "(?<=a)b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-indent_here_tab-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "[^\\w]",
+"find": []
+},
+{
+"id": "mt-indent_here_tab-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"INDENT_HERE_TAB",
+98
+],
+"pattern": "a[^b]",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "ab",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\w\\w",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\w{2}",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "a\\W",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-right_indent_tab-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "a\\s",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-right_indent_tab-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\s+",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\h",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "a\\x{0007}b",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "a(?=b)",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "(?<=a)b",
+"find": []
+},
+{
+"id": "mt-right_indent_tab-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "[^\\w]",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-right_indent_tab-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "RIGHT_INDENT_TAB"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"RIGHT_INDENT_TAB",
+98
+],
+"pattern": "a[^b]",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-index-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "ab",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-index-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\w\\w",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-index-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\w{2}",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "mt-index-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "a\\W",
+"find": []
+},
+{
+"id": "mt-index-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\W",
+"find": []
+},
+{
+"id": "mt-index-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "a\\s",
+"find": []
+},
+{
+"id": "mt-index-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\s",
+"find": []
+},
+{
+"id": "mt-index-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\s+",
+"find": []
+},
+{
+"id": "mt-index-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\h",
+"find": []
+},
+{
+"id": "mt-index-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-index-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "a\\x{0007}b",
+"find": []
+},
+{
+"id": "mt-index-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "a(?=b)",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-index-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "(?<=a)b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-index-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-index-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-index-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "[^\\w]",
+"find": []
+},
+{
+"id": "mt-index-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+65279,
+98
+],
+"pattern": "a[^b]",
+"find": []
+},
+{
+"id": "mt-footnote-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "ab",
+"find": []
+},
+{
+"id": "mt-footnote-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\w\\w",
+"find": []
+},
+{
+"id": "mt-footnote-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\w{2}",
+"find": []
+},
+{
+"id": "mt-footnote-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "a\\W",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-footnote-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+],
+[
+0,
+1
+],
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-footnote-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "a\\s",
+"find": []
+},
+{
+"id": "mt-footnote-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-footnote-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\s+",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-footnote-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\h",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-footnote-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-footnote-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "a\\x{0007}b",
+"find": []
+},
+{
+"id": "mt-footnote-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "a(?=b)",
+"find": []
+},
+{
+"id": "mt-footnote-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "(?<=a)b",
+"find": []
+},
+{
+"id": "mt-footnote-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-footnote-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-footnote-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "[^\\w]",
+"find": [
+[
+1,
+1
+],
+[
+0,
+1
+],
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-footnote-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98
+],
+"pattern": "a[^b]",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-auto_page_number-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "ab",
+"find": []
+},
+{
+"id": "mt-auto_page_number-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\w\\w",
+"find": []
+},
+{
+"id": "mt-auto_page_number-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\w{2}",
+"find": []
+},
+{
+"id": "mt-auto_page_number-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "a\\W",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "mt-auto_page_number-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-auto_page_number-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "a\\s",
+"find": []
+},
+{
+"id": "mt-auto_page_number-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\s",
+"find": []
+},
+{
+"id": "mt-auto_page_number-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\s+",
+"find": []
+},
+{
+"id": "mt-auto_page_number-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\h",
+"find": []
+},
+{
+"id": "mt-auto_page_number-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-auto_page_number-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "a\\x{0007}b",
+"find": []
+},
+{
+"id": "mt-auto_page_number-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "a(?=b)",
+"find": []
+},
+{
+"id": "mt-auto_page_number-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "(?<=a)b",
+"find": []
+},
+{
+"id": "mt-auto_page_number-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "mt-auto_page_number-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "mt-auto_page_number-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "[^\\w]",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "mt-auto_page_number-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"count": 3,
+"mask": "RR-",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98
+],
+"pattern": "a[^b]",
+"find": [
+[
+0,
+2
+]
+]
+},
+{
+"id": "br-column_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-column_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\r",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\v",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\R",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-column_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "~M",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-column_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-column_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-column_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-column_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": []
+},
+{
+"id": "br-column_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "a$",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "br-column_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "^b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-column_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "br-column_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-column_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "\\n",
+"find": []
+},
+{
+"id": "br-column_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "COLUMN_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"COLUMN_BREAK",
+98
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "br-frame_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-frame_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-frame_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\r",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-frame_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\v",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-frame_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\R",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-frame_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-frame_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-frame_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "br-frame_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-frame_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-frame_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-frame_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-frame_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": []
+},
+{
+"id": "br-frame_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "a$",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "br-frame_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "^b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-frame_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "br-frame_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-frame_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "\\n",
+"find": []
+},
+{
+"id": "br-frame_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FRAME_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FRAME_BREAK",
+98
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "br-page_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-page_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-page_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\r",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-page_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\v",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-page_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\R",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-page_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-page_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-page_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "br-page_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-page_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-page_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-page_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-page_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": []
+},
+{
+"id": "br-page_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "a$",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "br-page_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "^b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-page_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "br-page_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-page_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "\\n",
+"find": []
+},
+{
+"id": "br-page_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"PAGE_BREAK",
+98
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "br-odd_page_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\r",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\v",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\R",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "br-odd_page_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-odd_page_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-odd_page_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-odd_page_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": []
+},
+{
+"id": "br-odd_page_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "a$",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "^b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-odd_page_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "br-odd_page_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-odd_page_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "\\n",
+"find": []
+},
+{
+"id": "br-odd_page_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "ODD_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"ODD_PAGE_BREAK",
+98
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "br-even_page_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\r",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\v",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\R",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "br-even_page_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-even_page_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-even_page_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-even_page_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": []
+},
+{
+"id": "br-even_page_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "a$",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "^b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-even_page_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "br-even_page_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-even_page_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "\\n",
+"find": []
+},
+{
+"id": "br-even_page_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "EVEN_PAGE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"EVEN_PAGE_BREAK",
+98
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "br-forced_line_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\s",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\r",
+"find": []
+},
+{
+"id": "br-forced_line_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\v",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\R",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-RR",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+1,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\W",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "br-forced_line_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-forced_line_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-forced_line_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-forced_line_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": []
+},
+{
+"id": "br-forced_line_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": []
+},
+{
+"id": "br-forced_line_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R--",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "a$",
+"find": [
+[
+0,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "^b",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "RRR",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": [
+[
+0,
+3
+]
+]
+},
+{
+"id": "br-forced_line_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-forced_line_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "\\n",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-forced_line_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"FORCED_LINE_BREAK",
+98
+],
+"pattern": "~k",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "R-R",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-discretionary_line_break-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\s",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-r",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\r",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-v",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\v",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-R",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\R",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "--R",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "[^a]",
+"find": [
+[
+2,
+1
+]
+]
+},
+{
+"id": "br-discretionary_line_break-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\W",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-tM",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "~M",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-x0b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\x{000B}",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-x0c",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\x{000C}",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-x0e",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\x{000E}",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-x0d",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\x{000D}",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-x200b",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\x{200B}",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "br-discretionary_line_break-adollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "a$",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-caretb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "^b",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-asb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "a\\sb",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "a.b",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-n",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "---",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "\\n",
+"find": []
+},
+{
+"id": "br-discretionary_line_break-tk",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "DISCRETIONARY_LINE_BREAK"
+},
+"b"
+],
+"count": 3,
+"mask": "-R-",
+"codes": [
+97,
+"DISCRETIONARY_LINE_BREAK",
+98
+],
+"pattern": "~k",
+"find": [
+[
+1,
+1
+]
+]
+},
+{
+"id": "nd-auto_page_number-in",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAAABBBB--",
+"codes": [
+97,
+98,
+32,
+"AUTO_PAGE_NUMBER",
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-auto_page_number-ex",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAABB-----",
+"codes": [
+97,
+98,
+32,
+"AUTO_PAGE_NUMBER",
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-auto_page_number-2",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"cd",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"ef gh"
+],
+"count": 11,
+"mask": "AAAAAABBB--",
+"codes": [
+97,
+98,
+"AUTO_PAGE_NUMBER",
+99,
+100,
+"AUTO_PAGE_NUMBER",
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-auto_page_number-none",
+"mode": "nested",
+"parts": [
+"ab cd ef"
+],
+"count": 8,
+"mask": "AAAAAAAA",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-auto_page_number-first",
+"mode": "nested",
+"parts": [
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"ab cd"
+],
+"count": 6,
+"mask": "ABBB--",
+"codes": [
+"AUTO_PAGE_NUMBER",
+97,
+98,
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-section_marker-in",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "SECTION_MARKER"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAAABBBB--",
+"codes": [
+97,
+98,
+32,
+"SECTION_MARKER",
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "SECTION_MARKER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-section_marker-ex",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "SECTION_MARKER"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAABB-----",
+"codes": [
+97,
+98,
+32,
+"SECTION_MARKER",
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "SECTION_MARKER",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-section_marker-2",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "SECTION_MARKER"
+},
+"cd",
+{
+"m": "SECTION_MARKER"
+},
+"ef gh"
+],
+"count": 11,
+"mask": "AAAAAABBB--",
+"codes": [
+97,
+98,
+"SECTION_MARKER",
+99,
+100,
+"SECTION_MARKER",
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "SECTION_MARKER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-section_marker-none",
+"mode": "nested",
+"parts": [
+"ab cd ef"
+],
+"count": 8,
+"mask": "AAAAAAAA",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "SECTION_MARKER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-section_marker-first",
+"mode": "nested",
+"parts": [
+{
+"m": "SECTION_MARKER"
+},
+"ab cd"
+],
+"count": 6,
+"mask": "ABBB--",
+"codes": [
+"SECTION_MARKER",
+97,
+98,
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "SECTION_MARKER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-inline-in",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "INLINE"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAAABBBB--",
+"codes": [
+97,
+98,
+32,
+65532,
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "INLINE_GRAPHIC",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-inline-ex",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "INLINE"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAABB-----",
+"codes": [
+97,
+98,
+32,
+65532,
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "INLINE_GRAPHIC",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-inline-2",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INLINE"
+},
+"cd",
+{
+"m": "INLINE"
+},
+"ef gh"
+],
+"count": 11,
+"mask": "AAAAAABBB--",
+"codes": [
+97,
+98,
+65532,
+99,
+100,
+65532,
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "INLINE_GRAPHIC",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-inline-none",
+"mode": "nested",
+"parts": [
+"ab cd ef"
+],
+"count": 8,
+"mask": "AAAAAAAA",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "INLINE_GRAPHIC",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-inline-first",
+"mode": "nested",
+"parts": [
+{
+"m": "INLINE"
+},
+"ab cd"
+],
+"count": 6,
+"mask": "ABBB--",
+"codes": [
+65532,
+97,
+98,
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "INLINE_GRAPHIC",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end_nested_style-in",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAAABBBB--",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end_nested_style-ex",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+" cd ef"
+],
+"count": 10,
+"mask": "AAAABBBB--",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end_nested_style-2",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef gh"
+],
+"count": 11,
+"mask": "AAAAAABBB--",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end_nested_style-none",
+"mode": "nested",
+"parts": [
+"ab cd ef"
+],
+"count": 8,
+"mask": "AAAAAAAA",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end_nested_style-first",
+"mode": "nested",
+"parts": [
+{
+"m": "END_NESTED_STYLE"
+},
+"ab cd"
+],
+"count": 6,
+"mask": "ABBB--",
+"codes": [
+"END_NESTED_STYLE",
+97,
+98,
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-auto-vs-next",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "NEXT_PAGE_NUMBER"
+},
+" cd ",
+{
+"m": "PREVIOUS_PAGE_NUMBER"
+},
+" ef ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+" gh"
+],
+"count": 17,
+"mask": "AAAABBBB---------",
+"codes": [
+97,
+98,
+32,
+"NEXT_PAGE_NUMBER",
+32,
+99,
+100,
+32,
+"PREVIOUS_PAGE_NUMBER",
+32,
+101,
+102,
+32,
+"AUTO_PAGE_NUMBER",
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end-repeat",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef"
+],
+"count": 8,
+"mask": "AAABBB--",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nd-end-in-word",
+"mode": "nested",
+"parts": [
+"ab cd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef gh"
+],
+"count": 11,
+"mask": "AAABBB-----",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nw-auto_page_number",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAAABB",
+"codes": [
+97,
+98,
+"AUTO_PAGE_NUMBER",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nc-auto_page_number",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AAABB",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nw-end_nested_style",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAABBB--",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nc-end_nested_style",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nw-inline",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INLINE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAAABB",
+"codes": [
+97,
+98,
+65532,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nc-inline",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "INLINE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AAABB",
+"codes": [
+97,
+65532,
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nw-var",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "VAR"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAAABB",
+"codes": [
+97,
+98,
+"TEXT_VARIABLE",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nc-var",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AAABB",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nw-footnote",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "FOOTNOTE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAAABB",
+"codes": [
+97,
+98,
+"FOOTNOTE_SYMBOL",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nc-footnote",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AAABB",
+"codes": [
+97,
+"FOOTNOTE_SYMBOL",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nw-index",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INDEX"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAAABB",
+"codes": [
+97,
+98,
+65279,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nc-index",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AAAAB",
+"codes": [
+97,
+65279,
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nl-inline",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INLINE"
+},
+"cd1 2"
+],
+"count": 8,
+"mask": "AAAAABB-",
+"codes": [
+97,
+98,
+65532,
+99,
+100,
+49,
+32,
+50
+],
+"items": [
+{
+"style": "A",
+"delim": "LETTERS",
+"rep": 4,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ns-inline",
+"mode": "nested",
+"parts": [
+"One",
+{
+"m": "INLINE"
+},
+" two. Three four."
+],
+"count": 21,
+"mask": "AAAAAAAAAABBBBBB-----",
+"codes": [
+79,
+110,
+101,
+65532,
+32,
+116,
+119,
+111,
+46,
+32,
+84,
+104,
+114,
+101,
+101,
+32,
+102,
+111,
+117,
+114,
+46
+],
+"items": [
+{
+"style": "A",
+"delim": "SENTENCE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ns-auto",
+"mode": "nested",
+"parts": [
+"One ",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+". Two three."
+],
+"count": 17,
+"mask": "AAAAAAABBBB------",
+"codes": [
+79,
+110,
+101,
+32,
+"AUTO_PAGE_NUMBER",
+46,
+32,
+84,
+119,
+111,
+32,
+116,
+104,
+114,
+101,
+101,
+46
+],
+"items": [
+{
+"style": "A",
+"delim": "SENTENCE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nt-auto",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"\tcd"
+],
+"count": 6,
+"mask": "AAAABB",
+"codes": [
+97,
+98,
+"AUTO_PAGE_NUMBER",
+9,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "TABS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nu-xyz-inline",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INLINE"
+},
+"cxd"
+],
+"count": 6,
+"mask": "AAAAAB",
+"codes": [
+97,
+98,
+65532,
+99,
+120,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "x",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-c2",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-c3",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-c3-char",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-w-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AABBB",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-l3",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "LETTERS",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-c5",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAA-----",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 5,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-www",
+"mode": "nested",
+"parts": [
+"ab cd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef gh ij"
+],
+"count": 14,
+"mask": "AAABBBCCC-----",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102,
+32,
+103,
+104,
+32,
+105,
+106
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-cccw",
+"mode": "nested",
+"parts": [
+"abcd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef gh"
+],
+"count": 10,
+"mask": "AABBC-----",
+"codes": [
+97,
+98,
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-end-last",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+}
+],
+"count": 3,
+"mask": "AAA",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE"
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-double",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 6,
+"mask": "AAAB--",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+"END_NESTED_STYLE",
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-c3x",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-w-wx",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAABBB--",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-end-then-repeat",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef"
+],
+"count": 8,
+"mask": "AAA-----",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 9,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-var-auto",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "VAR"
+},
+" cd"
+],
+"count": 7,
+"mask": "AAAABBB",
+"codes": [
+97,
+98,
+32,
+"TEXT_VARIABLE",
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-var-vs-sect",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "SECTION_MARKER"
+},
+" cd"
+],
+"count": 7,
+"mask": "AAAAAAA",
+"codes": [
+97,
+98,
+32,
+"SECTION_MARKER",
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-inline-vs-auto",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "INLINE"
+},
+" cd"
+],
+"count": 7,
+"mask": "AAAAAAA",
+"codes": [
+97,
+98,
+32,
+65532,
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-footnote-in-word",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "FOOTNOTE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAABBB",
+"codes": [
+97,
+98,
+"FOOTNOTE_SYMBOL",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-index-in-word",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INDEX"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAABBB",
+"codes": [
+97,
+98,
+65279,
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-indent-here",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INDENT_HERE_TAB"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAABBB--",
+"codes": [
+97,
+98,
+"INDENT_HERE_TAB",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "INDENT_HERE_TAB",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ne-indent-word",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "INDENT_HERE_TAB"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "AAAAAABB",
+"codes": [
+97,
+98,
+"INDENT_HERE_TAB",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-c1-c1-w",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 8,
+"mask": "ABC-----",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-w-c2",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AABB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+}
+]
+},
+{
+"id": "nf-c1-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-c1-c1-c1",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-l1-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "LETTERS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-l2-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "LETTERS",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-tab-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bc\tde"
+],
+"count": 7,
+"mask": "AABBB--",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+9,
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "TABS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-sent-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bc. de"
+],
+"count": 8,
+"mask": "AABBBB--",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+46,
+32,
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "SENTENCE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-user-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bxcd"
+],
+"count": 6,
+"mask": "AABBBB",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+120,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "x",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-w-w-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b",
+{
+"m": "END_NESTED_STYLE"
+},
+"c d"
+],
+"count": 7,
+"mask": "AABBCC-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"END_NESTED_STYLE",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-c3-after",
+"mode": "nested",
+"parts": [
+"abc",
+{
+"m": "END_NESTED_STYLE"
+},
+"de"
+],
+"count": 6,
+"mask": "AAAB--",
+"codes": [
+97,
+98,
+99,
+"END_NESTED_STYLE",
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-c3-exact",
+"mode": "nested",
+"parts": [
+"abc",
+{
+"m": "END_NESTED_STYLE"
+},
+"de"
+],
+"count": 6,
+"mask": "AAAA--",
+"codes": [
+97,
+98,
+99,
+"END_NESTED_STYLE",
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 4,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-c2-before",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cde"
+],
+"count": 6,
+"mask": "AAB---",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-w-then-c",
+"mode": "nested",
+"parts": [
+"ab cd",
+{
+"m": "END_NESTED_STYLE"
+},
+"ef gh"
+],
+"count": 11,
+"mask": "AAABBB-----",
+"codes": [
+97,
+98,
+32,
+99,
+100,
+"END_NESTED_STYLE",
+101,
+102,
+32,
+103,
+104
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 5,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nf-var-c3",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "VAR"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AAABB",
+"codes": [
+97,
+"TEXT_VARIABLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-d1-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"12 b"
+],
+"count": 6,
+"mask": "AABBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+49,
+50,
+32,
+98
+],
+"items": [
+{
+"style": "A",
+"delim": "DIGITS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-d2-w",
+"mode": "nested",
+"parts": [
+"a1",
+{
+"m": "END_NESTED_STYLE"
+},
+"2 b"
+],
+"count": 6,
+"mask": "AAABB-",
+"codes": [
+97,
+49,
+"END_NESTED_STYLE",
+50,
+32,
+98
+],
+"items": [
+{
+"style": "A",
+"delim": "DIGITS",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-em-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b\u2003c d"
+],
+"count": 7,
+"mask": "AABB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"EM_SPACE",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "EM_SPACE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-en-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b\u2002c d"
+],
+"count": 7,
+"mask": "AABB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"EN_SPACE",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "EN_SPACE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-nb-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b\u00a0c d"
+],
+"count": 7,
+"mask": "AABBBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"NONBREAKING_SPACE",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "NONBREAKING_SPACE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-fl-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b",
+{
+"m": "FORCED_LINE_BREAK"
+},
+"c d"
+],
+"count": 7,
+"mask": "AABB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"FORCED_LINE_BREAK",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "FORCED_LINE_BREAK",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-ind-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b",
+{
+"m": "INDENT_HERE_TAB"
+},
+"c d"
+],
+"count": 7,
+"mask": "AABBBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"INDENT_HERE_TAB",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "INDENT_HERE_TAB",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-auto-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"c d"
+],
+"count": 7,
+"mask": "AABBBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"AUTO_PAGE_NUMBER",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-inl-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b",
+{
+"m": "INLINE"
+},
+"c d"
+],
+"count": 7,
+"mask": "AABBBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+65532,
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "INLINE_GRAPHIC",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-sect-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b",
+{
+"m": "SECTION_MARKER"
+},
+"c d"
+],
+"count": 7,
+"mask": "AABBBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+"SECTION_MARKER",
+99,
+32,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "SECTION_MARKER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-c1x-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "BB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-c2x-w",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"bcd"
+],
+"count": 5,
+"mask": "AA---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-l-after",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b c"
+],
+"count": 5,
+"mask": "AB---",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "LETTERS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "LETTERS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-d-skip",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b1 c"
+],
+"count": 6,
+"mask": "AABBB-",
+"codes": [
+97,
+"END_NESTED_STYLE",
+98,
+49,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "DIGITS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-two-words-tab",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"c\td e"
+],
+"count": 8,
+"mask": "AAABB---",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+9,
+100,
+32,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "TABS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "ng-c3-index",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 6,
+"mask": "AAAA--",
+"codes": [
+97,
+65279,
+98,
+"END_NESTED_STYLE",
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-w-after-space",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd ef"
+],
+"count": 9,
+"mask": "AAAABBB--",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+99,
+100,
+32,
+101,
+102
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-w-before-space",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+" cd"
+],
+"count": 6,
+"mask": "AAABBB",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+32,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-wx-after-space",
+"mode": "nested",
+"parts": [
+"ab ",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 6,
+"mask": "AABB--",
+"codes": [
+97,
+98,
+32,
+"END_NESTED_STYLE",
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-sent-after",
+"mode": "nested",
+"parts": [
+"a. ",
+{
+"m": "END_NESTED_STYLE"
+},
+"b. c"
+],
+"count": 8,
+"mask": "AAAB----",
+"codes": [
+97,
+46,
+32,
+"END_NESTED_STYLE",
+98,
+46,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "SENTENCE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-sentx-after",
+"mode": "nested",
+"parts": [
+"a.",
+{
+"m": "END_NESTED_STYLE"
+},
+" b. c"
+],
+"count": 8,
+"mask": "AAABBBB-",
+"codes": [
+97,
+46,
+"END_NESTED_STYLE",
+32,
+98,
+46,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "SENTENCE",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-tab-after",
+"mode": "nested",
+"parts": [
+"a\t",
+{
+"m": "END_NESTED_STYLE"
+},
+"b c"
+],
+"count": 6,
+"mask": "AAB---",
+"codes": [
+97,
+9,
+"END_NESTED_STYLE",
+98,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "TABS",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-tabx-after",
+"mode": "nested",
+"parts": [
+"a\t",
+{
+"m": "END_NESTED_STYLE"
+},
+"b c"
+],
+"count": 6,
+"mask": "ABB---",
+"codes": [
+97,
+9,
+"END_NESTED_STYLE",
+98,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "TABS",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-l2-after",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 5,
+"mask": "AAB--",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "LETTERS",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-user-after",
+"mode": "nested",
+"parts": [
+"ax",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 5,
+"mask": "AAB--",
+"codes": [
+97,
+120,
+"END_NESTED_STYLE",
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "x",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-userx-before",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"xcd"
+],
+"count": 5,
+"mask": "AABBB",
+"codes": [
+97,
+"END_NESTED_STYLE",
+120,
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "x",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-em-after",
+"mode": "nested",
+"parts": [
+"a\u2003",
+{
+"m": "END_NESTED_STYLE"
+},
+"b c"
+],
+"count": 6,
+"mask": "AAB---",
+"codes": [
+97,
+"EM_SPACE",
+"END_NESTED_STYLE",
+98,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "EM_SPACE",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-auto-after",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+{
+"m": "END_NESTED_STYLE"
+},
+"b c"
+],
+"count": 6,
+"mask": "AAB---",
+"codes": [
+97,
+"AUTO_PAGE_NUMBER",
+"END_NESTED_STYLE",
+98,
+32,
+99
+],
+"items": [
+{
+"style": "A",
+"delim": "AUTO_PAGE_NUMBER",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-w-then-end-delim",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 5,
+"mask": "AAABB",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100
+],
+"items": [
+{
+"style": "A",
+"delim": "END_NESTED_STYLE",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-c3x-before",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cde"
+],
+"count": 6,
+"mask": "AAA---",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+},
+{
+"id": "nh-c4",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "END_NESTED_STYLE"
+},
+"cde"
+],
+"count": 6,
+"mask": "AAB---",
+"codes": [
+97,
+98,
+"END_NESTED_STYLE",
+99,
+100,
+101
+],
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_CHARACTER",
+"rep": 2,
+"incl": true
+},
+{
+"style": "C",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+]
+}
+]
+}

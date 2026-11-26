@@ -1,0 +1,35 @@
+{
+ "name": "toggle-without-comps",
+ "fixture": "objlayer-c4.idml",
+ "psd": "objlayer-c4.psd",
+ "tool": "InDesign 2025 20.5.5.119, Object Layer Options dialog (real input, artifacts/objlayer-c5-20261023/tools/dialog-session.py)",
+ "action": {
+  "kind": "visibility",
+  "layer": 1,
+  "visible": false
+ },
+ "expect": {
+  "updateLinkOption": "KeepOverrides",
+  "appliedLayerComp": -1,
+  "layers": [
+   {
+    "id": 2,
+    "name": "Red",
+    "original": false,
+    "current": false
+   },
+   {
+    "id": 1,
+    "name": "Green",
+    "original": true,
+    "current": false
+   },
+   {
+    "id": 0,
+    "name": "Base",
+    "original": true,
+    "current": true
+   }
+  ]
+ }
+}

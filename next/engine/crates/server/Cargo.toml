@@ -1,0 +1,30 @@
+[package]
+name = "folio-engine"
+description = "Folio Studio engine process"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+folio-idml.workspace = true
+folio-text.workspace = true
+folio-render.workspace = true
+folio-color.workspace = true
+folio-links.workspace = true
+folio-preflight.workspace = true
+folio-pdf.workspace = true
+folio-package.workspace = true
+folio-project.workspace = true
+folio-edit.workspace = true
+folio-math.workspace = true
+folio-spell.workspace = true
+folio-textimport.workspace = true
+folio-dbsource.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+zip = { version = "=9.0.5", default-features = false, features = ["deflate-flate2-zlib-rs"] }
+# Hyperlinks ▸ Check URL Status (build-c2): TLS for HTTPS, the same rustls (ring) and Mozilla root list the database
+# connections already bring (rustls: Apache-2.0 OR ISC OR MIT; webpki-roots: CDLA-Permissive-2.0 data). No new crate in Cargo.lock.
+rustls = { version = "=0.23.46", default-features = false, features = ["ring", "std", "tls12"] }
+webpki-roots = "=1.0.12"

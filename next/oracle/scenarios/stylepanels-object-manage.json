@@ -1,0 +1,21 @@
+{
+  "fixture": "objectstyles",
+  "scenarios": [
+    {"name":"sp-object-based-on","window":true,"steps":[
+      {"op":"editObjectStyle","style":"ObjectStyle/Oracle Box Blue","props":{"basedOn":"ObjectStyle/$ID/[None]"}}
+    ]},
+    {"name":"sp-object-based-other","window":true,"steps":[
+      {"op":"editObjectStyle","style":"ObjectStyle/Oracle Box Blue","props":{"basedOn":"ObjectStyle/Oracle Text","fillTint":55}}
+    ]},
+    {"name":"sp-object-group-edit","window":true,"steps":[
+      {"op":"createObjectStyleGroup","name":"SP Group"},
+      {"op":"moveObjectStyle","style":"ObjectStyle/Oracle Box","group":"SP Group"},
+      {"op":"editObjectStyle","style":"ObjectStyle/SP Group%3aOracle Box","rename":"Renamed","props":{"fillTint":55}}
+    ]},
+    {"name":"sp-object-group-delete","window":true,"steps":[
+      {"op":"createObjectStyleGroup","name":"SP Group"},
+      {"op":"moveObjectStyle","style":"ObjectStyle/Oracle Box","group":"SP Group"},
+      {"op":"deleteObjectStyle","style":"ObjectStyle/SP Group%3aOracle Box","replacement":"ObjectStyle/Oracle Box Blue"}
+    ]}
+  ]
+}

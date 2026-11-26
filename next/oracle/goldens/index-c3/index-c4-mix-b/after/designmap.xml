@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?aid style="50" type="document" readerVersion="6.0" featureSet="257" product="20.5(119)" ?>
+<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4" Self="d" StoryList="uf4 u10a u120 u241 u98" AppliedMathMLFontSize="10" AppliedMathMLRgbColor="0 0 0" TintValue="100" PreferMathMLInEpubExport="false" Name="Untitled-615" ZeroPoint="0 0" ActiveLayer="ub8" CMYKProfile="U.S. Web Coated (SWOP) v2" RGBProfile="sRGB IEC61966-2.1" SolidColorIntent="UseColorSettings" AfterBlendingIntent="UseColorSettings" DefaultImageIntent="UseColorSettings" RGBPolicy="PreserveEmbeddedProfiles" CMYKPolicy="CombinationOfPreserveAndSafeCmyk" AccurateLABSpots="false">
+	<Properties>
+		<InstanceList>
+			<IndexInstanceType Name="$ID/Index" Story="u241" />
+		</InstanceList>
+		<AppliedMathMLSwatch type="enumeration">Nothing</AppliedMathMLSwatch>
+		<Label>
+			<KeyValuePair Key="kAdobeDPS_Version" Value="2" />
+		</Label>
+	</Properties>
+	<Language Self="Language/$ID/English%3a USA" Name="$ID/English: USA" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA" Id="269" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<idPkg:Graphic src="Resources/Graphic.xml" />
+	<idPkg:Fonts src="Resources/Fonts.xml" />
+	<idPkg:Styles src="Resources/Styles.xml" />
+	<NumberingList Self="NumberingList/$ID/[Default]" Name="$ID/[Default]" ContinueNumbersAcrossStories="false" ContinueNumbersAcrossDocuments="false" />
+	<NamedGrid Self="NamedGrid/$ID/[Page Grid]" Name="$ID/[Page Grid]">
+		<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
+			<Properties>
+				<AppliedFont type="string">Minion Pro</AppliedFont>
+			</Properties>
+		</GridDataInformation>
+	</NamedGrid>
+	<idPkg:Preferences src="Resources/Preferences.xml" />
+	<AdjustLayoutPreference EnableAdjustLayout="false" AllowLockedObjectsToAdjust="true" AllowFontSizeAndLeadingAdjustment="false" ImposeFontSizeRestriction="false" MinimumFontSize="6" MaximumFontSize="324" EnableAutoAdjustMargins="false" />
+	<HTMLFXLExportPreference EpubPageRange="" EpubPageRangeFormat="ExportAllPages" />
+	<PublishExportPreference PublishCover="FirstPage" CoverImageFile="" PublishPageRange="" PublishPageRangeFormat="ExportAllPages" ImageConversion="Automatic" ImageExportResolution="Ppi96" PublishDescription="" PublishFileName="" PublishFormat="PublishByPages" CoverPage="$ID/" GIFOptionsPalette="AdaptivePalette" JPEGOptionsQuality="High" PublishPdf="false" />
+	<EndnoteOption EndnoteTitle="Endnotes" EndnoteTitleStyle="ParagraphStyle/$ID/NormalParagraphStyle" StartEndnoteNumberAt="1" EndnoteMarkerStyle="CharacterStyle/$ID/[No character style]" EndnoteTextStyle="ParagraphStyle/$ID/NormalParagraphStyle" EndnoteSeparatorText="&#x9;" EndnotePrefix="" EndnoteSuffix="">
+		<Properties>
+			<EndnoteNumberingStyle type="enumeration">Arabic</EndnoteNumberingStyle>
+			<RestartEndnoteNumbering type="enumeration">Continuous</RestartEndnoteNumbering>
+			<EndnoteMarkerPositioning type="enumeration">SuperscriptMarker</EndnoteMarkerPositioning>
+			<ScopeValue type="enumeration">EndnoteDocumentScope</ScopeValue>
+			<FrameCreateOption type="enumeration">NewPage</FrameCreateOption>
+			<ShowEndnotePrefixSuffix type="enumeration">NoPrefixSuffix</ShowEndnotePrefixSuffix>
+		</Properties>
+	</EndnoteOption>
+	<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+	<LinkedStoryOption UpdateWhileSaving="false" WarnOnUpdateOfEditedStory="true" RemoveForcedLineBreaks="false" ApplyStyleMappings="false" />
+	<LinkedPageItemOption UpdateLinkWhileSaving="false" WarnOnUpdateOfEditedPageItem="true" PreserveSizeAndShape="false" PreserveAppearance="false" PreserveInteractivity="false" PreserveFrameContent="false" PreserveOthers="false" />
+	<TaggedPDFPreference StructureOrder="UseXMLStructure" />
+	<WatermarkPreference WatermarkVisibility="false" WatermarkDoPrint="false" WatermarkDrawInBack="true" WatermarkText="" WatermarkFontFamily="Minion Pro" WatermarkFontStyle="Regular" WatermarkFontPointSize="48" WatermarkOpacity="50" WatermarkRotation="0" WatermarkHorizontalPosition="WatermarkHCenter" WatermarkHorizontalOffset="0" WatermarkVerticalPosition="WatermarkVCenter" WatermarkVerticalOffset="0">
+		<Properties>
+			<WatermarkFontColor type="enumeration">Black</WatermarkFontColor>
+		</Properties>
+	</WatermarkPreference>
+	<ConditionalTextPreference ShowConditionIndicators="ShowIndicators" ActiveConditionSet="n" />
+	<TextVariable Self="dTextVariablen&lt;?AID 001b?&gt;TV XRefChapterNumber" Name="&lt;?AID 001b?&gt;TV XRefChapterNumber" VariableType="XrefChapterNumberType" />
+	<TextVariable Self="dTextVariablen&lt;?AID 001b?&gt;TV XRefPageNumber" Name="&lt;?AID 001b?&gt;TV XRefPageNumber" VariableType="XrefPageNumberType" />
+	<TextVariable Self="dTextVariablenChapter Number" Name="Chapter Number" VariableType="ChapterNumberType">
+		<ChapterNumberVariablePreference TextBefore="" Format="Current" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenCreation Date" Name="Creation Date" VariableType="CreationDateType">
+		<DateVariablePreference TextBefore="" Format="MM/dd/yy" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenFile Name" Name="File Name" VariableType="FileNameType">
+		<FileNameVariablePreference TextBefore="" IncludePath="false" IncludeExtension="false" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenImage Name" Name="Image Name" VariableType="LiveCaptionType">
+		<CaptionMetadataVariablePreference TextBefore="" MetadataProviderName="$ID/#LinkInfoNameStr" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenLast Page Number" Name="Last Page Number" VariableType="LastPageNumberType">
+		<PageNumberVariablePreference TextBefore="" Format="Current" TextAfter="" Scope="SectionScope" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenModification Date" Name="Modification Date" VariableType="ModificationDateType">
+		<DateVariablePreference TextBefore="" Format="MMMM d, yyyy h:mm aa" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenOutput Date" Name="Output Date" VariableType="OutputDateType">
+		<DateVariablePreference TextBefore="" Format="MM/dd/yy" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenRunning Header" Name="Running Header" VariableType="MatchParagraphStyleType">
+		<MatchParagraphStylePreference TextBefore="" TextAfter="" AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" SearchStrategy="FirstOnPage" ChangeCase="None" DeleteEndPunctuation="false" />
+	</TextVariable>
+	<idPkg:Tags src="XML/Tags.xml" />
+	<Layer Self="ub8" Name="Layer 1" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
+		<Properties>
+			<LayerColor type="enumeration">LightBlue</LayerColor>
+		</Properties>
+	</Layer>
+	<idPkg:MasterSpread src="MasterSpreads/MasterSpread_ub9.xml" />
+	<idPkg:Spread src="Spreads/Spread_ued.xml" />
+	<idPkg:Spread src="Spreads/Spread_u135.xml" />
+	<idPkg:Spread src="Spreads/Spread_u151.xml" />
+	<idPkg:Spread src="Spreads/Spread_u16d.xml" />
+	<idPkg:Spread src="Spreads/Spread_u189.xml" />
+	<idPkg:Spread src="Spreads/Spread_u1a5.xml" />
+	<idPkg:Spread src="Spreads/Spread_u1c1.xml" />
+	<Section Self="ub4" Length="4" AlternateLayoutLength="7" AlternateLayout="Letter V" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="uf2" SectionPrefix="">
+		<Properties>
+			<PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
+		</Properties>
+	</Section>
+	<Section Self="u1dd" Length="3" AlternateLayoutLength="3" AlternateLayout="$ID/" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="u18e" SectionPrefix="">
+		<Properties>
+			<PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
+		</Properties>
+	</Section>
+	<DocumentUser Self="dDocumentUser0" UserName="Carol">
+		<Properties>
+			<UserColor type="enumeration">Gold</UserColor>
+		</Properties>
+	</DocumentUser>
+	<DocumentUser Self="dDocumentUser1" UserName="Reviewer B">
+		<Properties>
+			<UserColor type="enumeration">Gold</UserColor>
+		</Properties>
+	</DocumentUser>
+	<DocumentUser Self="dDocumentUser2" UserName="$ID/Unknown User Name">
+		<Properties>
+			<UserColor type="enumeration">Gold</UserColor>
+		</Properties>
+	</DocumentUser>
+	<CrossReferenceFormat Self="u1de" Name="Full Paragraph &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1deBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1deBuildingBlock1" BlockType="FullParagraphBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1deBuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1deBuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1df" Name="Full Paragraph" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1dfBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1dfBuildingBlock1" BlockType="FullParagraphBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1dfBuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e0" Name="Paragraph Text &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e0BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e0BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e0BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e0BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e1" Name="Paragraph Text" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e1BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e1BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e1BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e2" Name="Paragraph Number &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e2BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e2BuildingBlock1" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText=" on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e2BuildingBlock2" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e3" Name="Paragraph Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e3BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e4" Name="Text Anchor Name &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e4BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e4BuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e4BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e4BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e5" Name="Text Anchor Name" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e5BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e5BuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e5BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="u1e6" Name="Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="u1e6BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="u1e6BuildingBlock1" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<Index Self="u1e7">
+		<Topic Self="u1e7Topicn°deg" SortOrder="" Name="°deg" />
+		<Topic Self="u1e7Topicn©copy" SortOrder="" Name="©copy" />
+		<Topic Self="u1e7Topicn®reg" SortOrder="" Name="®reg" />
+		<Topic Self="u1e7Topicn±pm" SortOrder="" Name="±pm" />
+		<Topic Self="u1e7Topicn÷div" SortOrder="" Name="÷div" />
+		<Topic Self="u1e7Topicn×times" SortOrder="" Name="×times" />
+		<Topic Self="u1e7Topicn&lt;lt" SortOrder="" Name="&lt;lt" />
+		<Topic Self="u1e7Topicn=eq" SortOrder="" Name="=eq" />
+		<Topic Self="u1e7Topicn&gt;gt" SortOrder="" Name="&gt;gt" />
+		<Topic Self="u1e7Topicn¬not" SortOrder="" Name="¬not" />
+		<Topic Self="u1e7Topicn|bar" SortOrder="" Name="|bar" />
+		<Topic Self="u1e7Topicn¢cent" SortOrder="" Name="¢cent" />
+		<Topic Self="u1e7Topicn£pound" SortOrder="" Name="£pound" />
+		<Topic Self="u1e7Topicn0" SortOrder="" Name="0" />
+		<Topic Self="u1e7Topicn1,000" SortOrder="" Name="1,000" />
+		<Topic Self="u1e7Topicn1.5" SortOrder="" Name="1.5" />
+		<Topic Self="u1e7Topicn1.10" SortOrder="" Name="1.10" />
+		<Topic Self="u1e7Topicn2 two" SortOrder="" Name="2 two" />
+		<Topic Self="u1e7Topicn٣ arabic" SortOrder="" Name="٣ arabic" />
+		<Topic Self="u1e7Topicn３ full" SortOrder="" Name="３ full" />
+		<Topic Self="u1e7Topicn007 bond" SortOrder="" Name="007 bond" />
+		<Topic Self="u1e7Topicn07 oh" SortOrder="" Name="07 oh" />
+		<Topic Self="u1e7Topicn7 seven" SortOrder="" Name="7 seven" />
+		<Topic Self="u1e7Topicn10 ten" SortOrder="" Name="10 ten" />
+		<Topic Self="u1e7Topicn１２ full" SortOrder="" Name="１２ full" />
+		<Topic Self="u1e7Topicn99999999999999999999 big" SortOrder="" Name="99999999999999999999 big" />
+		<Topic Self="u1e7Topicn100000000000000000000 bigger" SortOrder="" Name="100000000000000000000 bigger" />
+		<Topic Self="u1e7Topicna2" SortOrder="" Name="a2" />
+		<Topic Self="u1e7Topicna2b" SortOrder="" Name="a2b" />
+		<Topic Self="u1e7Topicna10" SortOrder="" Name="a10" />
+		<Topic Self="u1e7Topicna10b" SortOrder="" Name="a10b" />
+		<Topic Self="u1e7Topicnabc" SortOrder="" Name="abc" />
+		<Topic Self="u1e7TopicnItem 1" SortOrder="" Name="Item 1" />
+		<Topic Self="u1e7TopicnItem 9" SortOrder="" Name="Item 9" />
+		<Topic Self="u1e7TopicnItem 10" SortOrder="" Name="Item 10" />
+		<Topic Self="u1e7TopicnItem 100" SortOrder="" Name="Item 100" />
+	</Index>
+	<idPkg:BackingStory src="XML/BackingStory.xml" />
+	<idPkg:Story src="Stories/Story_u241.xml" />
+	<idPkg:Story src="Stories/Story_u120.xml" />
+	<idPkg:Story src="Stories/Story_u10a.xml" />
+	<idPkg:Story src="Stories/Story_uf4.xml" />
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.608" Name=".608" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="1">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.613" Name=".613" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="2">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.616" Name=".616" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="3">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.619" Name=".619" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="4">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.622" Name=".622" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="5">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.625" Name=".625" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="6">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.628" Name=".628" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="7">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.631" Name=".631" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="8">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.634" Name=".634" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="9">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.637" Name=".637" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="10">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.640" Name=".640" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="11">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.643" Name=".643" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="12">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.646" Name=".646" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="13">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.649" Name=".649" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="14">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.652" Name=".652" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="15">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.655" Name=".655" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="16">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.658" Name=".658" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="17">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.661" Name=".661" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="18">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.664" Name=".664" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="19">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.667" Name=".667" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="20">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.670" Name=".670" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="21">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.673" Name=".673" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="22">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.676" Name=".676" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="23">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.679" Name=".679" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="24">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.682" Name=".682" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="25">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.685" Name=".685" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="26">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.688" Name=".688" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="27">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.691" Name=".691" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="28">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.694" Name=".694" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="29">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.697" Name=".697" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="30">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.700" Name=".700" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="31">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.704" Name=".704" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="32">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.707" Name=".707" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="33">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.710" Name=".710" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="34">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.713" Name=".713" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="35">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<HyperlinkPageDestination Self="HyperlinkPageDestination/.716" Name=".716" NameManually="true" DestinationPage="uf2" ViewSetting="Fixed" ViewPercentage="100" Hidden="true" DestinationUniqueKey="36">
+		<Properties>
+			<ViewBounds Top="1e+256" Left="1e+256" Bottom="1e+256" Right="1e+256" />
+		</Properties>
+	</HyperlinkPageDestination>
+	<Hyperlink Self="u2ce" Name=".718" Source="u2cd" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="36">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.716</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2cb" Name=".715" Source="u2ca" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="35">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.713</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2c8" Name=".712" Source="u2c7" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="34">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.710</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2c5" Name=".709" Source="u2c4" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="33">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.707</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2c2" Name=".706" Source="u2c1" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="32">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.704</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2bf" Name=".703" Source="u2bd" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="31">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.700</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2bb" Name=".699" Source="u2ba" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="30">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.697</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2b8" Name=".696" Source="u2b7" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="29">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.694</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2b5" Name=".693" Source="u2b4" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="28">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.691</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2b2" Name=".690" Source="u2b1" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="27">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.688</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2af" Name=".687" Source="u2ae" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="26">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.685</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2ac" Name=".684" Source="u2ab" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="25">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.682</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2a9" Name=".681" Source="u2a8" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="24">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.679</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2a6" Name=".678" Source="u2a5" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="23">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.676</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2a3" Name=".675" Source="u2a2" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="22">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.673</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u2a0" Name=".672" Source="u29f" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="21">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.670</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u29d" Name=".669" Source="u29c" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="20">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.667</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u29a" Name=".666" Source="u299" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="19">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.664</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u297" Name=".663" Source="u296" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="18">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.661</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u294" Name=".660" Source="u293" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="17">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.658</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u291" Name=".657" Source="u290" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="16">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.655</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u28e" Name=".654" Source="u28d" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="15">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.652</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u28b" Name=".651" Source="u28a" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="14">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.649</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u288" Name=".648" Source="u287" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="13">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.646</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u285" Name=".645" Source="u284" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="12">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.643</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u282" Name=".642" Source="u281" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="11">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.640</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u27f" Name=".639" Source="u27e" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="10">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.637</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u27c" Name=".636" Source="u27b" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="9">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.634</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u279" Name=".633" Source="u278" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="8">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.631</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u276" Name=".630" Source="u275" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="7">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.628</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u273" Name=".627" Source="u272" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="6">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.625</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u270" Name=".624" Source="u26f" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="5">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.622</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u26d" Name=".621" Source="u26c" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="4">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.619</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u26a" Name=".618" Source="u269" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="3">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.616</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u267" Name=".615" Source="u266" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="2">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.613</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u264" Name=".612" Source="u261" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="true" DestinationUniqueKey="1">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="object">HyperlinkPageDestination/.608</Destination>
+		</Properties>
+	</Hyperlink>
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Symbol" Name="$ID/kIndexGroup_Symbol" Include="true" Priority="0" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Alphabet" Name="$ID/kIndexGroup_Alphabet" Include="true" Priority="1" HeaderType="BasicLatin" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Numeric" Name="$ID/kIndexGroup_Numeric" Include="false" Priority="2" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_GreekAlphabet" Name="$ID/kWRIndexGroup_GreekAlphabet" Include="false" Priority="3" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_CyrillicAlphabet" Name="$ID/kWRIndexGroup_CyrillicAlphabet" Include="false" Priority="4" HeaderType="Russian" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Kana" Name="$ID/kIndexGroup_Kana" Include="false" Priority="5" HeaderType="HiraganaAll" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Chinese" Name="$ID/kIndexGroup_Chinese" Include="false" Priority="6" HeaderType="ChinesePinyin" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Korean" Name="$ID/kIndexGroup_Korean" Include="false" Priority="7" HeaderType="KoreanConsonant" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_ArabicAlphabet" Name="$ID/kWRIndexGroup_ArabicAlphabet" Include="false" Priority="8" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_HebrewAlphabet" Name="$ID/kWRIndexGroup_HebrewAlphabet" Include="false" Priority="9" HeaderType="Nothing" />
+	<ColorGroup Self="ColorGroup/[Root Color Group]" Name="[Root Color Group]" IsRootColorGroup="true">
+		<ColorGroupSwatch Self="u12ColorGroupSwatch0" SwatchItemRef="Swatch/None" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch1" SwatchItemRef="Color/Registration" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch2" SwatchItemRef="Color/Paper" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch3" SwatchItemRef="Color/Black" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch4" SwatchItemRef="Color/C=0 M=0 Y=100 K=0" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch5" SwatchItemRef="Color/C=0 M=100 Y=0 K=0" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch6" SwatchItemRef="Color/C=100 M=0 Y=0 K=0" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch7" SwatchItemRef="Color/C=100 M=90 Y=10 K=0" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch8" SwatchItemRef="Color/C=15 M=100 Y=100 K=0" />
+		<ColorGroupSwatch Self="u12ColorGroupSwatch9" SwatchItemRef="Color/C=75 M=5 Y=100 K=0" />
+	</ColorGroup>
+	<ABullet Self="dABullet0" CharacterType="UnicodeOnly" CharacterValue="8226">
+		<Properties>
+			<BulletsFont type="string">$ID/</BulletsFont>
+			<BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet1" CharacterType="UnicodeOnly" CharacterValue="42">
+		<Properties>
+			<BulletsFont type="string">$ID/</BulletsFont>
+			<BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet2" CharacterType="UnicodeOnly" CharacterValue="9674">
+		<Properties>
+			<BulletsFont type="string">$ID/</BulletsFont>
+			<BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet3" CharacterType="UnicodeWithFont" CharacterValue="187">
+		<Properties>
+			<BulletsFont type="string">Myriad Pro</BulletsFont>
+			<BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet4" CharacterType="GlyphWithFont" CharacterValue="503">
+		<Properties>
+			<BulletsFont type="string">Minion Pro</BulletsFont>
+			<BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<Assignment Self="uc7" Name="$ID/UnassignedInCopy" UserName="$ID/" ExportOptions="AssignedSpreads" IncludeLinksWhenPackage="true" FilePath="$ID/">
+		<Properties>
+			<FrameColor type="enumeration">Nothing</FrameColor>
+		</Properties>
+	</Assignment>
+</Document>

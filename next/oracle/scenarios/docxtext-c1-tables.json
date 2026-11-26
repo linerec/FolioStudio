@@ -1,0 +1,96 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file with a table (docxtext-c1). The fixture docxtext2 is text with Arial as the default font ([No paragraph style]): a Word import brings no fonts, so the cells are set in the default font and InDesign's own Minion Pro (not on this PC) would make row heights differ from Folio in the fourth decimal.",
+ "scenarios": [
+  {
+   "name": "docxtext-table",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-table.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-table-edge",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-table-edge.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-table-merge",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-table-merge.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-table-header",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-table-header.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-table-rich",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-table-rich.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

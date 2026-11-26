@@ -1,0 +1,41 @@
+{
+ "name": "comp-then-last-state",
+ "fixture": "objlayer-c5.idml",
+ "psd": "objlayer-c5.psd",
+ "tool": "InDesign 2025 20.5.5.119, Object Layer Options dialog (real input, artifacts/objlayer-c5-20261023/tools/dialog-session.py)",
+ "action": {
+  "kind": "comp+comp",
+  "comp": 1,
+  "then": -1
+ },
+ "expect": {
+  "updateLinkOption": "KeepOverrides",
+  "appliedLayerComp": -1,
+  "layers": [
+   {
+    "id": 3,
+    "name": "C",
+    "original": false,
+    "current": false
+   },
+   {
+    "id": 2,
+    "name": "B",
+    "original": true,
+    "current": true
+   },
+   {
+    "id": 1,
+    "name": "A",
+    "original": true,
+    "current": true
+   },
+   {
+    "id": 0,
+    "name": "Base",
+    "original": true,
+    "current": true
+   }
+  ]
+ }
+}

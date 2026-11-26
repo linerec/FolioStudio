@@ -1,0 +1,24 @@
+{
+  "fixture": "basic-size",
+  "about": "Rounded group child corners keep their radii during resize.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "resize-group-corners",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "grp",
+          "size": [
+            270,
+            200
+          ],
+          "anchor": "center"
+        }
+      ]
+    }
+  ]
+}

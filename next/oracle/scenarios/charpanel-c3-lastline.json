@@ -1,0 +1,234 @@
+{
+ "fixture": "charpanel-c3",
+ "about": "Paragraph panel Last Line Indent (last line right indent of a justified paragraph) and the Hyphenate box.",
+ "scenarios": [
+  {
+   "name": "cp-last-just-30",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "LEFT_JUSTIFIED"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-just-80",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "LEFT_JUSTIFIED"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": 80
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-just-neg",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "LEFT_JUSTIFIED"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": -20
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-left",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-right",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "RIGHT_ALIGN"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-center",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "CENTER_ALIGN"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": 50
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-all",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "FULLY_JUSTIFIED"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "lastLineIndent": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-last-indents",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "LEFT_JUSTIFIED"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "leftIndent": 10,
+      "rightIndent": 10,
+      "lastLineIndent": 25
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hyphen-off",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "hyphenation": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hyphen-on",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "justification": "LEFT_JUSTIFIED"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "hyphenation": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hyphen-words",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "hyphenateWordsLongerThan": 12
+     }
+    }
+   ]
+  }
+ ]
+}

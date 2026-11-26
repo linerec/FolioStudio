@@ -1,0 +1,591 @@
+{
+ "fixture": "basic",
+ "about": "Control bar (object) scale of text frames, the cases tfscale-c1 left (tfscale-c2): a frame with a visible stroke while Adjust Stroke Weight when Scaling is off (the text and the frame's settings take (s * outer - 2 * weight) / inner on each axis instead of s; stroke alignment centre, inside, outside).",
+ "scenarios": [
+  {
+   "name": "tf-scale-stroked-nostroke",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 4,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-stroked-nostroke-inside",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 6,
+      "strokeColor": "Black",
+      "strokeAlignment": "StrokeAlignment.INSIDE_ALIGNMENT"
+     }
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 2,
+     "sy": 1.5,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-stroked-nostroke-outside",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 3,
+      "strokeColor": "Black",
+      "strokeAlignment": "StrokeAlignment.OUTSIDE_ALIGNMENT"
+     }
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 0.8,
+     "sy": 1.4,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-rotated",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 3,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "rotate",
+     "target": "tf",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-rotated-uniform",
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "tf",
+     "by": -20,
+     "anchor": "center"
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 2,
+     "sy": 2,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-rotated-nostroke",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 4,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "rotate",
+     "target": "tf",
+     "by": 45,
+     "anchor": "center"
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 0.7,
+     "sy": 1.6,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-sheared",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 2,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "shearBy",
+     "target": "tf",
+     "by": 15,
+     "anchor": "center"
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 2,
+     "sy": 1,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-group",
+   "steps": [
+    {
+     "op": "group",
+     "targets": [
+      "tf",
+      "tf-1"
+     ],
+     "label": "gtf"
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "gtf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-fixed",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "textFramePreferences": {
+       "useFixedColumnWidth": true,
+       "textColumnFixedWidth": 100,
+       "textColumnCount": 2
+      }
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-fixed-stroked",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 3,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "textFramePreferences": {
+       "useFixedColumnWidth": true,
+       "textColumnFixedWidth": 100,
+       "textColumnCount": 2
+      }
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 2,
+     "sy": 1.2,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-fixed-nostroke",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 3,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "textFramePreferences": {
+       "useFixedColumnWidth": true,
+       "textColumnFixedWidth": 100,
+       "textColumnCount": 2
+      }
+     }
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 0.7,
+     "sy": 1.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-corner",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 2,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+      "topLeftCornerRadius": 14,
+      "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+      "bottomRightCornerRadius": 8
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-corner-nostroke",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 2,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+      "topLeftCornerRadius": 14,
+      "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+      "bottomRightCornerRadius": 8
+     }
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 0.5,
+     "sy": 2,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "rect-scale-corner",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+      "topLeftCornerRadius": 20,
+      "topRightCornerOption": "CornerOptions.INVERSE_ROUNDED_CORNER",
+      "topRightCornerRadius": 12,
+      "bottomLeftCornerOption": "CornerOptions.FANCY_CORNER",
+      "bottomLeftCornerRadius": 10,
+      "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+      "bottomRightCornerRadius": 6
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain"
+     ],
+     "sx": 2,
+     "sy": 3,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "rect-scale-corner-small",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+      "topLeftCornerRadius": 20,
+      "topRightCornerOption": "CornerOptions.INVERSE_ROUNDED_CORNER",
+      "topRightCornerRadius": 12,
+      "bottomLeftCornerOption": "CornerOptions.FANCY_CORNER",
+      "bottomLeftCornerRadius": 10,
+      "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+      "bottomRightCornerRadius": 6
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain"
+     ],
+     "sx": 0.5,
+     "sy": 1.5,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-flip",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 2,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": -2,
+     "sy": 1.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-flip-both",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": -1,
+     "sy": -1,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-flip-v",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 2,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": -0.5,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "rect-scale-flip",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain"
+     ],
+     "sx": -1.5,
+     "sy": 0.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "rect-scale-rotated",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 3,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-rotated-plain",
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "tf",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  }
+ ]
+}

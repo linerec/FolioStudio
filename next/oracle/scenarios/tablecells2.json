@@ -1,0 +1,553 @@
+{
+  "fixture": "tables",
+  "about": "Cell writing direction and quadrant rotation, reset, multiple cells, mixed text, wrapping and asymmetric insets; horizontal parent stories.",
+  "scenarios": [
+    {
+      "name": "cell2-rotate-90",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 90
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-180",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 180
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-270",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 270
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-0",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 180
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 0
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-multi",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 2,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "props": {
+            "rotationAngle": 90
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-wrap",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            1,
+            1
+          ],
+          "at": 0,
+          "text": "Alpha beta gamma delta epsilon "
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 90
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-insets",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 270,
+            "topInset": 2,
+            "leftInset": 5,
+            "bottomInset": 7,
+            "rightInset": 11,
+            "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-rotate-auto",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            1,
+            1
+          ],
+          "at": 0,
+          "text": "Alpha beta gamma delta epsilon "
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "rotationAngle": 90
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.rotation.quadrants",
+        "tablecells.rotation.compose"
+      ]
+    },
+    {
+      "name": "cell2-direction-vertical",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL"
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-horizontal",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL"
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.HORIZONTAL"
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-multi",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 2,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL"
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-mixed",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            1,
+            1
+          ],
+          "at": 0,
+          "text": "한글 ABC (가나다)、漢字。 "
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL",
+            "topInset": 2,
+            "leftInset": 5,
+            "bottomInset": 7,
+            "rightInset": 11,
+            "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-auto",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            1,
+            1
+          ],
+          "at": 0,
+          "text": "Alpha beta gamma delta epsilon "
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL"
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-rotate90",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL",
+            "rotationAngle": 90
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-rotate180",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 60,
+            "autoGrow": false
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL",
+            "rotationAngle": 180
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    },
+    {
+      "name": "cell2-direction-rotate270",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "writingDirection": "HorizontalOrVertical.VERTICAL",
+            "rotationAngle": 270
+          }
+        }
+      ],
+      "rules": [
+        "tablecells.direction"
+      ]
+    }
+  ]
+}

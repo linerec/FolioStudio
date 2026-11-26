@@ -1,0 +1,1122 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "tsg-rename-empty",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "Titles"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-style",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "Titles"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-based",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Base"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "group": "Base"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Base",
+     "rename": "Root"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-next",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "props": {
+      "nextStyle": "Format Other"
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "Titles"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-two",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "Titles"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-nested-parent",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "A:Sub"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "A",
+     "rename": "B"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-nested-sub",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "A:Sub"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "A:Sub",
+     "rename": "Inner"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-order",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "First"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Second"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "First"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "First",
+     "rename": "Zeta"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-char",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "character",
+     "name": "Marks",
+     "rename": "Emphasis"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-char-empty",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "character",
+     "name": "Marks",
+     "rename": "Emphasis"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-same-name",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-korean",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "제목 스타일"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-case-only",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-empty",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-unused",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Spare"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Spare",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-applied",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-based",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Base"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "group": "Base"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Base"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-next",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "props": {
+      "nextStyle": "Format Other"
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-nested",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "A:Sub"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "A"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-sub",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "A:Sub"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "A"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "A:Sub"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-order",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "G1"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "G2"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "G3"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "G2"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-char-applied",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "character",
+     "name": "Marks"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-char-unused",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Italic",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "character",
+     "name": "Marks"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-char-based",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Large",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "character",
+     "name": "Marks"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-two",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-undo-order",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-then-create",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Format Heading"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-body-sibling-group",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Keep"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Base"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Keep"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Base"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Base"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-chain",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Child",
+     "props": {
+      "basedOn": "Format Heading",
+      "spaceAfter": 9
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-child-same",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Child",
+     "props": {
+      "basedOn": "Format Heading",
+      "spaceAfter": 9
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Child",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-chain-char",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "character",
+     "name": "Bold Child",
+     "props": {
+      "basedOn": "Format Bold",
+      "tracking": 30
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "character",
+     "name": "Marks"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-next-in",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "props": {
+      "nextStyle": "Format Heading"
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-rename-chain",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Child",
+     "props": {
+      "basedOn": "Format Heading",
+      "spaceAfter": 9
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupRename",
+     "kind": "paragraph",
+     "name": "Heads",
+     "rename": "Titles"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-chain-conflict",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "props": {
+      "pointSize": 14,
+      "leftIndent": 3,
+      "spaceBefore": 2
+     }
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "props": {
+      "appliedFont": "Times New Roman"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Child",
+     "props": {
+      "basedOn": "Format Heading",
+      "spaceAfter": 9
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "paragraph",
+     "name": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-delete-chain-char-conflict",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "character",
+     "style": "Format Bold",
+     "props": {
+      "pointSize": 20,
+      "tracking": 10
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "character",
+     "name": "Bold Child",
+     "props": {
+      "basedOn": "Format Large",
+      "tracking": 30
+     }
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Large",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupDelete",
+     "kind": "character",
+     "name": "Marks"
+    }
+   ]
+  },
+  {
+   "name": "tsg-move-three",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Spare"
+    },
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "paragraph",
+     "name": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Heads"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "paragraph",
+     "style": "Spare",
+     "group": "Heads"
+    }
+   ]
+  },
+  {
+   "name": "tsg-move-three-char",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "groupCreate",
+     "kind": "character",
+     "name": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Italic",
+     "group": "Marks"
+    },
+    {
+     "op": "textStyle",
+     "do": "move",
+     "kind": "character",
+     "style": "Format Large",
+     "group": "Marks"
+    }
+   ]
+  }
+ ]
+}

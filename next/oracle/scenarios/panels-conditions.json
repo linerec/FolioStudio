@@ -1,0 +1,12 @@
+{
+  "fixture": "panels-conditions",
+  "extension": "panels-conditions",
+  "about": "Existing visible conditions: replace membership and read a conditional style source.",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"panels-condition-replace","steps":[{"op":"applyConditions","target":"format","start":11,"end":16,"conditions":["Print"]}]},
+    {"name":"panels-condition-multiple","steps":[{"op":"applyConditions","target":"format","start":11,"end":16,"conditions":["Web","Print"]}]},
+    {"name":"panels-condition-clear","steps":[{"op":"applyConditions","target":"format","start":2,"end":8,"conditions":[]}]},
+    {"name":"panels-condition-style-source","steps":[{"op":"styleCreate","target":"format","kind":"character","name":"Conditional source","start":2,"end":8,"props":{},"apply":false}]}
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "fixture": "parcomp-justified",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "parcomp-justified-balance-left",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance0",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "parcomp-justified-balance-center",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance1",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "parcomp-justified-balance-right",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance2",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "parcomp-justified-balance-full",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance3",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true
+          }
+        }
+      ]
+    }
+  ]
+}

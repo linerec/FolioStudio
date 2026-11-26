@@ -1,0 +1,31 @@
+{
+  "fixture": "basic",
+  "about": "Display Performance: Object > Display Performance (Fast, Typical, High Quality, Use View Setting) writes LocalDisplaySetting on the selection, its graphic and what is inside a group; View > Display Performance > Clear Object-Level Display Settings sets every spread item back (parent page items keep theirs). The view's own setting and Allow Object-Level Display Settings are not in the file (STATUS: measured). The printed page does not change: the golden's page PNGs are the unchanged spread.",
+  "scenarios": [
+    {"name": "dp-img-fast", "window": true, "steps": [{"op": "setDisplayPerformance", "target": "img", "setting": "Optimized", "content": false}]},
+    {"name": "dp-img-typical", "window": true, "steps": [{"op": "setDisplayPerformance", "target": "img", "setting": "Typical", "content": false}]},
+    {"name": "dp-img-high", "window": true, "steps": [{"op": "setDisplayPerformance", "target": "img", "setting": "HighQuality", "content": false}]},
+    {"name": "dp-content-fast", "window": true, "steps": [{"op": "setDisplayPerformance", "target": "img", "setting": "Optimized", "content": true}]},
+    {"name": "dp-shapes", "window": true, "steps": [
+      {"op": "setDisplayPerformance", "target": "oval", "setting": "Typical", "content": false},
+      {"op": "setDisplayPerformance", "target": "poly", "setting": "HighQuality", "content": false},
+      {"op": "setDisplayPerformance", "target": "line", "setting": "Optimized", "content": false},
+      {"op": "setDisplayPerformance", "target": "r-fill", "setting": "Optimized", "content": false}]},
+    {"name": "dp-text-fast", "window": true, "steps": [{"op": "setDisplayPerformance", "target": "tf", "setting": "Optimized", "content": false}]},
+    {"name": "dp-group-fast", "window": true, "steps": [{"op": "setDisplayPerformance", "target": "grp", "setting": "Optimized", "content": false}]},
+    {"name": "dp-group-child-default", "window": true, "steps": [
+      {"op": "setDisplayPerformance", "target": "grp", "setting": "Optimized", "content": false},
+      {"op": "setDisplayPerformance", "target": "grp-a", "setting": "Default", "content": false}]},
+    {"name": "dp-use-view", "window": true, "steps": [
+      {"op": "setDisplayPerformance", "target": "img", "setting": "Optimized", "content": false},
+      {"op": "setDisplayPerformance", "target": "oval", "setting": "Typical", "content": false},
+      {"op": "setDisplayPerformance", "target": "img", "setting": "Default", "content": false}]},
+    {"name": "dp-clear", "window": true, "steps": [
+      {"op": "setDisplayPerformance", "target": "img", "setting": "Optimized", "content": false},
+      {"op": "setDisplayPerformance", "target": "oval", "setting": "Typical", "content": false},
+      {"op": "setDisplayPerformance", "target": "grp", "setting": "Optimized", "content": false},
+      {"op": "setDisplayPerformance", "target": "parent-bar", "setting": "Optimized", "content": false, "script": true},
+      {"op": "clearDisplayPerformance"},
+      {"op": "setDisplayPerformance", "target": "r-plain", "setting": "Typical", "content": false}]}
+  ]
+}

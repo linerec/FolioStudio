@@ -1,0 +1,25 @@
+{
+  "fixture":"footnotes2-endnotes",
+  "about":"기존 미주의 시작 번호·제목·분리자 변경. Arial 시스템 글꼴, 서로 다른 글자 서식의 미주.",
+  "scenarios":[
+    {"name":"noop","extension":"endnotes","steps":[]},
+    {"name":"fn2-endnote-start","extension":"endnotes","rules":["footnotes2.endnote-options"],"steps":[
+      {"op":"setEndnoteOptions","props":{"startEndnoteNumberAt":4}}
+    ]},
+    {"name":"fn2-endnote-title-separator","extension":"endnotes","rules":["footnotes2.endnote-options"],"steps":[
+      {"op":"setEndnoteOptions","props":{"endnoteTitle":"Notes & references","endnoteSeparatorText":": "}}
+    ]},
+    {"name":"fn2-endnote-format","extension":"endnotes","rules":["footnotes2.endnote-options"],"steps":[
+      {"op":"setEndnoteOptions","props":{"endnoteNumberingStyle":"FootnoteNumberingStyle.UPPER_ROMAN","endnotePrefix":"[","endnoteSuffix":"]","showEndnotePrefixSuffix":"FootnotePrefixSuffix.PREFIX_SUFFIX_BOTH"}}
+    ]},
+    {"name":"fn2-endnote-letters","extension":"endnotes","rules":["footnotes2.endnote-options"],"steps":[
+      {"op":"setEndnoteOptions","props":{"endnoteNumberingStyle":"FootnoteNumberingStyle.LOWER_LETTERS","endnotePrefix":"(","endnoteSuffix":")","showEndnotePrefixSuffix":"FootnotePrefixSuffix.PREFIX_SUFFIX_REFERENCE","startEndnoteNumberAt":3}}
+    ]},
+    {"name":"fn2-endnote-position","extension":"endnotes","rules":["footnotes2.endnote-options"],"steps":[
+      {"op":"setEndnoteOptions","props":{"endnoteMarkerPositioning":"FootnoteMarkerPositioning.NORMAL_MARKER"}}
+    ]},
+    {"name":"fn2-endnote-restart","extension":"endnotes","rules":["footnotes2.endnote-options"],"steps":[
+      {"op":"setEndnoteOptions","props":{"restartEndnoteNumbering":"EndnoteRestarting.STORY_RESTART","scopeValue":"EndnoteScope.ENDNOTE_DOCUMENT_SCOPE"}}
+    ]}
+  ]
+}

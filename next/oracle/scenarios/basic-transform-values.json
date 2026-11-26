@@ -1,0 +1,102 @@
+{
+  "fixture": "basic",
+  "about": "Control panel rotation and shear angles, set absolutely (InDesign's rotationAngle, shearAngle) about the object's own reference point.",
+  "scenarios": [
+    {
+      "name": "xform-rotate-30",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "rotationAngle": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-rotate-rotated-0",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "rotationAngle": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-rotate-group",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "rotationAngle": -45
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-shear-20",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "shearAngle": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-shear-rotated",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "shearAngle": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-shear-back-0",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-shear",
+          "props": {
+            "shearAngle": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-shear-text",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "shearAngle": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "xform-shear-group",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "shearAngle": 10
+          }
+        }
+      ]
+    }
+  ]
+}

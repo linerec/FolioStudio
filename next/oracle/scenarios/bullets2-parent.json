@@ -1,0 +1,20 @@
+{
+  "fixture": "bullets2-parent",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "bullets2-parent-convert",
+      "steps": [
+        {
+          "op": "convertStyleListsToText",
+          "style": "ParagraphStyle/Shared paragraphs",
+          "labels": {}
+        }
+      ]
+    }
+  ]
+}

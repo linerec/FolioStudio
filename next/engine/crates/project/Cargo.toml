@@ -1,0 +1,27 @@
+[package]
+name = "folio-project"
+description = "Folio projects: folio.project, portable paths, content hashes, locks, atomic saves and the .folio document format"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+folio-idml.workspace = true
+folio-links.workspace = true
+folio-text.workspace = true
+folio-package.workspace = true
+folio-preflight.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+# SHA-256 of every referenced file; already in the workspace (package, lopdf). MIT OR Apache-2.0.
+sha2 = "=0.11.1"
+# NFC names and NFC/NFD collision keys; the version folio-links uses. MIT OR Apache-2.0.
+unicode-normalization = "=0.1.24"
+# The .folio container (an IDML package plus folio/ parts); same version and backend as folio-idml.
+zip = { version = "=9.0.5", default-features = false, features = ["deflate-flate2-zlib-rs"] }
+# Random project, document and lock ids (UUID v4); already in the workspace through rand. MIT OR Apache-2.0.
+getrandom = "=0.4.3"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"

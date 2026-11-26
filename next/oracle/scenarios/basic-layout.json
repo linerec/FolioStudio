@@ -1,0 +1,158 @@
+{
+ "fixture": "basic",
+ "about": "Layout > Margins and Columns (page marginPreferences, layout adjustment off as default) and Layout > Create Guides (page.createGuides: rows, columns, gutters, fit to margins or page).",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "margins-page",
+   "steps": [
+    {
+     "op": "margins",
+     "page": 0,
+     "props": {
+      "top": 50,
+      "bottom": 60,
+      "left": 40,
+      "right": 30,
+      "columnCount": 3,
+      "columnGutter": 10
+     }
+    }
+   ]
+  },
+  {
+   "name": "margins-columns",
+   "steps": [
+    {
+     "op": "margins",
+     "page": 1,
+     "props": {
+      "columnCount": 2,
+      "columnGutter": 18
+     }
+    }
+   ]
+  },
+  {
+   "name": "margins-two-pages",
+   "steps": [
+    {
+     "op": "margins",
+     "page": 1,
+     "props": {
+      "top": 72,
+      "columnCount": 4,
+      "columnGutter": 6
+     }
+    },
+    {
+     "op": "margins",
+     "page": 2,
+     "props": {
+      "top": 72,
+      "columnCount": 4,
+      "columnGutter": 6
+     }
+    }
+   ]
+  },
+  {
+   "name": "guides-create-rows-columns",
+   "steps": [
+    {
+     "op": "createGuides",
+     "page": 0,
+     "rows": 3,
+     "columns": 2,
+     "rowGutter": 12,
+     "columnGutter": 10,
+     "fitMargins": true,
+     "removeExisting": false
+    }
+   ]
+  },
+  {
+   "name": "guides-create-page",
+   "steps": [
+    {
+     "op": "createGuides",
+     "page": 1,
+     "rows": 2,
+     "columns": 4,
+     "rowGutter": 0,
+     "columnGutter": 6,
+     "fitMargins": false,
+     "removeExisting": false
+    }
+   ]
+  },
+  {
+   "name": "guides-create-after-guide",
+   "steps": [
+    {
+     "op": "guideNew",
+     "page": 0,
+     "orientation": "horizontal",
+     "location": 100
+    },
+    {
+     "op": "createGuides",
+     "page": 0,
+     "rows": 2,
+     "columns": 1,
+     "rowGutter": 0,
+     "columnGutter": 0,
+     "fitMargins": false,
+     "removeExisting": false
+    }
+   ]
+  },
+  {
+   "name": "guides-create-remove",
+   "steps": [
+    {
+     "op": "guideNew",
+     "page": 0,
+     "orientation": "horizontal",
+     "location": 100
+    },
+    {
+     "op": "createGuides",
+     "page": 0,
+     "rows": 1,
+     "columns": 2,
+     "rowGutter": 0,
+     "columnGutter": 0,
+     "fitMargins": true,
+     "removeExisting": true
+    }
+   ]
+  },
+  {
+   "name": "margins-left-page",
+   "steps": [
+    {
+     "op": "margins",
+     "page": 1,
+     "props": {
+      "left": 50,
+      "right": 20
+     }
+    },
+    {
+     "op": "createGuides",
+     "page": 1,
+     "rows": 1,
+     "columns": 1,
+     "rowGutter": 0,
+     "columnGutter": 0,
+     "fitMargins": true,
+     "removeExisting": false
+    }
+   ]
+  }
+ ]
+}

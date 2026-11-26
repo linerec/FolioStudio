@@ -1,0 +1,10 @@
+{
+  "fixture": "parcomp-grid-rotation",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"parcomp-grid-rotation-0","steps":[{"op":"textFormat","target":"grid0","start":0,"end":186,"props":{"alignToBaseline":true,"gridAlignFirstLineOnly":true}}]},
+    {"name":"parcomp-grid-rotation-15","steps":[{"op":"textFormat","target":"grid15","start":0,"end":186,"props":{"alignToBaseline":true,"gridAlignFirstLineOnly":true}}]},
+    {"name":"parcomp-grid-rotation-90","steps":[{"op":"textFormat","target":"grid90","start":0,"end":186,"props":{"alignToBaseline":true,"gridAlignFirstLineOnly":true}}]},
+    {"name":"parcomp-grid-rotation-180","steps":[{"op":"textFormat","target":"grid180","start":0,"end":186,"props":{"alignToBaseline":true,"gridAlignFirstLineOnly":true}}]}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+ "fixture": "typepath-c6-rect-cw",
+ "extension": "textpath",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "typepath-c9-rect-spacing12",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathSpacing": "12"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c9-rect-wrap300",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "300",
+      "EndBracket": "299"
+     }
+    }
+   ]
+  }
+ ],
+ "about": "Closed clockwise rectangle against InDesign 2025: spacing 12 (round corner arcs) and a bracket range that wraps past the path end (end < start). Path alignment top/bottom stays out: InDesign recomputes EndBracket by a rule not read yet (STATUS typepath-c9)."
+}

@@ -1,0 +1,377 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file with pictures (docxtext-c3): inline and floating pictures come in as embedded inline frames the size Word gave, stretched, with the description as alternate text.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "pdf": true
+  },
+  {
+   "name": "docxtext-c3-pic1",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g02.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic3",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g03.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic4",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g04.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic5",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g05.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic6",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g06.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic7",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g07.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic8",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g08.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic9",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g09.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic10",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g10.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic11",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g11.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic12",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g12.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic13",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g13.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic14",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g14.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic15",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed",
+     "word": {
+      "preserveGraphics": false
+     }
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic16",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed",
+     "word": {
+      "removeFormatting": true
+     }
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic17",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g15.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic18",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g16.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-pic19",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": true
+  },
+  {
+   "name": "docxtext-c3-pic20",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-g14.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": true
+  }
+ ]
+}

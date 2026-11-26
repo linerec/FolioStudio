@@ -1,0 +1,133 @@
+{
+  "fixture": "objectstyles",
+  "scenarios": [
+    {
+      "name": "c2-create-text-paragraph",
+      "window": true,
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "Oracle Body",
+          "props": {
+            "pointSize": 16,
+            "leading": 22
+          }
+        },
+        {
+          "op": "paragraphStyle",
+          "target": "tf",
+          "start": 0,
+          "end": 5,
+          "style": "Oracle Body",
+          "clear": true
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Paragraph",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        }
+      ],
+      "pdf": false
+    },
+    {
+      "name": "c2-paragraph-apply",
+      "window": true,
+      "pdf": false,
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "Oracle Body",
+          "props": {
+            "pointSize": 16,
+            "leading": 22
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Text",
+          "props": {
+            "appliedParagraphStyle": "ParagraphStyle/Oracle Body",
+            "enableParagraphStyle": true
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Oracle Text",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "c2-paragraph-apply-clear",
+      "window": true,
+      "pdf": false,
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "Oracle Body",
+          "props": {
+            "pointSize": 16,
+            "leading": 22
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Text",
+          "props": {
+            "appliedParagraphStyle": "ParagraphStyle/Oracle Body",
+            "enableParagraphStyle": true
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Oracle Text",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "c2-paragraph-disabled",
+      "window": true,
+      "pdf": false,
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "Oracle Body",
+          "props": {
+            "pointSize": 16,
+            "leading": 22
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Text",
+          "props": {
+            "appliedParagraphStyle": "ParagraphStyle/Oracle Body",
+            "enableParagraphStyle": true
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Text",
+          "props": {
+            "enableParagraphStyle": false
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Oracle Text",
+          "clear": true
+        }
+      ]
+    }
+  ]
+}

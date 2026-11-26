@@ -1,0 +1,93 @@
+{
+  "fixture": "keepopts-nested",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "keepopts-table-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "table",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-table-next",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "table",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-note-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "note",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-note-next",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "note",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-table-seven",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "table",
+          "at": 29,
+          "text": "\nlead6\nlead7"
+        },
+        {
+          "op": "textFormat",
+          "target": "table",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    }
+  ]
+}

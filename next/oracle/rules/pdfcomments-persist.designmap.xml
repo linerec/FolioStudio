@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4" Self="d">
+	<PDFCommentPageDestination Self="u174" CommentPageDestinationPage="ud6" CommentPageDestinationTargetPoint="0 0">
+		<Properties>
+			<CommentPageDestinationHighlightRect Left="300" Top="166" Right="316" Bottom="182" />
+		</Properties>
+	</PDFCommentPageDestination>
+	<PDFCommentPageDestination Self="u183" CommentPageDestinationPage="ud6" CommentPageDestinationTargetPoint="0 0">
+		<Properties>
+			<CommentPageDestinationHighlightRect Left="0" Top="0" Right="0" Bottom="0" />
+		</Properties>
+	</PDFCommentPageDestination>
+	<PDFCommentPageDestination Self="u185" CommentPageDestinationPage="u11c" CommentPageDestinationTargetPoint="0 0">
+		<Properties>
+			<CommentPageDestinationHighlightRect Left="300" Top="20" Right="316" Bottom="36" />
+		</Properties>
+	</PDFCommentPageDestination>
+	<PDFCommentPageDestination Self="u193" CommentPageDestinationPage="u11c" CommentPageDestinationTargetPoint="0 0">
+		<Properties>
+			<CommentPageDestinationHighlightRect Left="0" Top="0" Right="0" Bottom="0" />
+		</Properties>
+	</PDFCommentPageDestination>
+	<PDFCommentPageItemDestination Self="u181" CommentPageItemDestinationPageItem="ufa" CommentPageItemDestinationTargetPoint="0 0">
+		<Properties>
+			<CommentPageItemDestinationHighlightRect Left="-270" Top="-136" Right="-6" Bottom="-96" />
+		</Properties>
+	</PDFCommentPageItemDestination>
+	<PDFCommentPageItemDestination Self="u191" CommentPageItemDestinationPageItem="u11d" CommentPageItemDestinationTargetPoint="0 0">
+		<Properties>
+			<CommentPageItemDestinationHighlightRect Left="-270" Top="-135.99999999999997" Right="-6" Bottom="-95.99999999999997" />
+		</Properties>
+	</PDFCommentPageItemDestination>
+	<PDFCommentTextDestination Self="u177" CommentTextDestinationStory="u13a" CommentTextDestinationStartIndex="6" CommentTextDestinationEndIndex="11" />
+	<PDFCommentTextDestination Self="u17b" CommentTextDestinationStory="u13a" CommentTextDestinationStartIndex="20" CommentTextDestinationEndIndex="25" />
+	<PDFCommentTextDestination Self="u17d" CommentTextDestinationStory="u13a" CommentTextDestinationStartIndex="12" CommentTextDestinationEndIndex="19" />
+	<PDFCommentTextDestination Self="u17f" CommentTextDestinationStory="u13a" CommentTextDestinationStartIndex="52" CommentTextDestinationEndIndex="56" />
+	<PDFCommentTextDestination Self="u187" CommentTextDestinationStory="u152" CommentTextDestinationStartIndex="6" CommentTextDestinationEndIndex="11" />
+	<PDFCommentTextDestination Self="u18b" CommentTextDestinationStory="u152" CommentTextDestinationStartIndex="20" CommentTextDestinationEndIndex="25" />
+	<PDFCommentTextDestination Self="u18d" CommentTextDestinationStory="u152" CommentTextDestinationStartIndex="12" CommentTextDestinationEndIndex="19" />
+	<PDFCommentTextDestination Self="u18f" CommentTextDestinationStory="u152" CommentTextDestinationStartIndex="52" CommentTextDestinationEndIndex="56" />
+	<PDFComment Self="u175" CommentReviewer="Reviewer 1" CommentContent="Note comment page 1" CommentDate="2026-11-07T08:45:00" CommentType="StickyNoteType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="ResolvedStatus" CommentIsOrphan="false" CommentDestination="u174">
+		<Reply Self="u176" ReplyReviewer="Reviewer 2" ReplyContent="Reply to note" ReplyDate="2026-11-07T20:45:00" />
+	</PDFComment>
+	<PDFComment Self="u17a" CommentReviewer="Reviewer 1" CommentContent="Highlight comment page 1" CommentDate="2026-11-07T09:45:00" CommentType="HighlightTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u177" />
+	<PDFComment Self="u17c" CommentReviewer="Reviewer 1" CommentContent="Underline comment page 1" CommentDate="2026-11-07T10:45:00" CommentType="UnderlineTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u17b" />
+	<PDFComment Self="u17e" CommentReviewer="Reviewer 1" CommentContent="Strike comment page 1" CommentDate="2026-11-07T11:45:00" CommentType="StrikethroughTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentIsApplied="false" CommentDestination="u17d" />
+	<PDFComment Self="u180" CommentReviewer="Reviewer 1" CommentContent="REPLACED" CommentDate="2026-11-07T12:45:00" CommentType="StrikethroughTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentIsApplied="false" CommentDestination="u17f" />
+	<PDFComment Self="u182" CommentReviewer="Reviewer 1" CommentContent="Text box comment 1" CommentDate="2026-11-07T13:45:00" CommentType="TextBoxType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u181" />
+	<PDFComment Self="u184" CommentReviewer="Reviewer 1" CommentContent=" INSERTED" CommentDate="2026-11-07T14:45:00" CommentType="InsertTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="true" CommentIsApplied="false" CommentDestination="u183" />
+	<PDFComment Self="u186" CommentReviewer="Reviewer 2" CommentContent="Note comment page 2" CommentDate="2026-11-07T08:45:00" CommentType="StickyNoteType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u185" />
+	<PDFComment Self="u18a" CommentReviewer="Reviewer 2" CommentContent="Highlight comment page 2" CommentDate="2026-11-07T09:45:00" CommentType="HighlightTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u187" />
+	<PDFComment Self="u18c" CommentReviewer="Reviewer 2" CommentContent="Underline comment page 2" CommentDate="2026-11-07T10:45:00" CommentType="UnderlineTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u18b" />
+	<PDFComment Self="u18e" CommentReviewer="Reviewer 2" CommentContent="Strike comment page 2" CommentDate="2026-11-07T11:45:00" CommentType="StrikethroughTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentIsApplied="false" CommentDestination="u18d" />
+	<PDFComment Self="u190" CommentReviewer="Reviewer 2" CommentContent="REPLACED" CommentDate="2026-11-07T12:45:00" CommentType="StrikethroughTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentIsApplied="false" CommentDestination="u18f" />
+	<PDFComment Self="u192" CommentReviewer="Reviewer 2" CommentContent="Text box comment 2" CommentDate="2026-11-07T13:45:00" CommentType="TextBoxType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="false" CommentDestination="u191" />
+	<PDFComment Self="u194" CommentReviewer="Reviewer 2" CommentContent=" INSERTED" CommentDate="2026-11-07T14:45:00" CommentType="InsertTextType" CommentFilePath="$ID/C:\Reviewnnot.pdf" CommentStatus="OpenStatus" CommentIsOrphan="true" CommentIsApplied="false" CommentDestination="u193" />
+</Document>

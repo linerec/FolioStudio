@@ -1,0 +1,114 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file whose footnotes have character formatting or several paragraphs (docxtext-c3).",
+ "scenarios": [
+  {
+   "name": "docxtext-c3-fn1",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-fn2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q02.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-fn3",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q03.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-fn4",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q05.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-fn5",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q06.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-fn6",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q07.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

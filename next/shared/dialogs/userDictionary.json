@@ -1,0 +1,123 @@
+{
+  "title": "사용자 사전",
+  "scope": "app",
+  "target": "none",
+  "defaults": "userDictionary",
+  "link": "userDictionary",
+  "className": "user-dictionary-dialog",
+  "description": "Edit > Spelling > User Dictionary (an app dialog: the user settings of this computer, not a document). `language` picks the dictionary; `added` and `removed` are its added and excluded words, one row each (`{\"word\": …}`). Setting `addWord` (or `excludeWord`) to true adds the typed `word` to the added (or excluded) words; a row removed takes its word out, a row added puts one in. The engine's dictionary rules apply to every change (lower case, sorted, split at spaces). `userDictionaries` holds every language's lists; OK saves them (userSettings patch userDictionaries).",
+  "note": "단어는 소문자로 저장되고 이 컴퓨터의 사용자 설정에 보관됩니다. 문서에는 저장되지 않습니다.",
+  "fields": [
+    {
+      "name": "userDictionaries",
+      "type": "json",
+      "default": {},
+      "hidden": true
+    },
+    {
+      "name": "addWord",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "excludeWord",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "language",
+      "label": "언어",
+      "type": "choice",
+      "source": "spellLanguages",
+      "default": "English: USA",
+      "group": ""
+    },
+    {
+      "name": "added",
+      "label": "추가한 단어",
+      "type": "array",
+      "minRows": 0,
+      "maxRows": 100000,
+      "removeLabel": "단어 삭제",
+      "rowButtons": "remove",
+      "default": [],
+      "fields": [
+        {
+          "name": "word",
+          "label": "단어",
+          "type": "text",
+          "default": "",
+          "disabled": true,
+          "maxLength": 256
+        }
+      ],
+      "group": ""
+    },
+    {
+      "name": "removed",
+      "label": "제외한 단어",
+      "type": "array",
+      "minRows": 0,
+      "maxRows": 100000,
+      "removeLabel": "단어 삭제",
+      "rowButtons": "remove",
+      "default": [],
+      "fields": [
+        {
+          "name": "word",
+          "label": "단어",
+          "type": "text",
+          "default": "",
+          "disabled": true,
+          "maxLength": 256
+        }
+      ],
+      "group": ""
+    },
+    {
+      "name": "word",
+      "label": "단어",
+      "type": "text",
+      "default": "",
+      "local": true,
+      "maxLength": 1000,
+      "group": ""
+    }
+  ],
+  "buttons": [
+    {
+      "label": "사전에 추가",
+      "field": "add",
+      "set": {
+        "field": "addWord",
+        "value": true
+      },
+      "disabledWhen": {
+        "word": ""
+      }
+    },
+    {
+      "label": "사전에서 제외",
+      "field": "exclude",
+      "set": {
+        "field": "excludeWord",
+        "value": true
+      },
+      "disabledWhen": {
+        "word": ""
+      }
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "cmd": "userSettings",
+        "patch": {
+          "userDictionaries": "$userDictionaries"
+        }
+      }
+    ]
+  }
+}

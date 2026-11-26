@@ -1,0 +1,10 @@
+{
+  "fixture": "textpath2-create",
+  "about": "Create horizontal path text on the retained stroked parent. Both command runners use the registered oracle adapter.",
+  "extension": "textpath2",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"textpath2-create-empty","rules":["textpath2.create.horizontal"],"steps":[{"op":"removeTextFromPath","target":"path"},{"op":"createTextPath","target":"path","text":""}]},
+    {"name":"textpath2-create-text","rules":["textpath2.create.horizontal"],"steps":[{"op":"removeTextFromPath","target":"path"},{"op":"createTextPath","target":"path","text":"AV Oag"}]}
+  ]
+}

@@ -1,0 +1,233 @@
+{
+ "about": "InDesign 2025 (20.5.5.119) list letter numbering read from Paragraph.bulletsAndNumberingResultText: a paragraph style NUMBERED_LIST with numberingFormat \"A, B, C, D...\" / \"a, b, c, d...\" and numberingStartAt = start; the labels of 6 paragraphs in a row, without the trailing dot. Probe: next/oracle/indesign/listletter-probe.jsx. The sequence is a spreadsheet's column names (A..Z, AA, AB, ..., AZ, BA, ..., ZZ, AAA, ...).",
+ "cases": [
+  {
+   "start": 1,
+   "upper": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "lower": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ]
+  },
+  {
+   "start": 25,
+   "upper": [
+    "Y",
+    "Z",
+    "AA",
+    "AB",
+    "AC",
+    "AD"
+   ],
+   "lower": [
+    "y",
+    "z",
+    "aa",
+    "ab",
+    "ac",
+    "ad"
+   ]
+  },
+  {
+   "start": 51,
+   "upper": [
+    "AY",
+    "AZ",
+    "BA",
+    "BB",
+    "BC",
+    "BD"
+   ],
+   "lower": [
+    "ay",
+    "az",
+    "ba",
+    "bb",
+    "bc",
+    "bd"
+   ]
+  },
+  {
+   "start": 77,
+   "upper": [
+    "BY",
+    "BZ",
+    "CA",
+    "CB",
+    "CC",
+    "CD"
+   ],
+   "lower": [
+    "by",
+    "bz",
+    "ca",
+    "cb",
+    "cc",
+    "cd"
+   ]
+  },
+  {
+   "start": 701,
+   "upper": [
+    "ZY",
+    "ZZ",
+    "AAA",
+    "AAB",
+    "AAC",
+    "AAD"
+   ],
+   "lower": [
+    "zy",
+    "zz",
+    "aaa",
+    "aab",
+    "aac",
+    "aad"
+   ]
+  },
+  {
+   "start": 702,
+   "upper": [
+    "ZZ",
+    "AAA",
+    "AAB",
+    "AAC",
+    "AAD",
+    "AAE"
+   ],
+   "lower": [
+    "zz",
+    "aaa",
+    "aab",
+    "aac",
+    "aad",
+    "aae"
+   ]
+  },
+  {
+   "start": 703,
+   "upper": [
+    "AAA",
+    "AAB",
+    "AAC",
+    "AAD",
+    "AAE",
+    "AAF"
+   ],
+   "lower": [
+    "aaa",
+    "aab",
+    "aac",
+    "aad",
+    "aae",
+    "aaf"
+   ]
+  },
+  {
+   "start": 1000,
+   "upper": [
+    "ALL",
+    "ALM",
+    "ALN",
+    "ALO",
+    "ALP",
+    "ALQ"
+   ],
+   "lower": [
+    "all",
+    "alm",
+    "aln",
+    "alo",
+    "alp",
+    "alq"
+   ]
+  },
+  {
+   "start": 9999,
+   "upper": [
+    "NTO",
+    "NTP",
+    "NTQ",
+    "NTR",
+    "NTS",
+    "NTT"
+   ],
+   "lower": [
+    "nto",
+    "ntp",
+    "ntq",
+    "ntr",
+    "nts",
+    "ntt"
+   ]
+  },
+  {
+   "start": 18277,
+   "upper": [
+    "ZZY",
+    "ZZZ",
+    "AAAA",
+    "AAAB",
+    "AAAC",
+    "AAAD"
+   ],
+   "lower": [
+    "zzy",
+    "zzz",
+    "aaaa",
+    "aaab",
+    "aaac",
+    "aaad"
+   ]
+  },
+  {
+   "start": 18278,
+   "upper": [
+    "ZZZ",
+    "AAAA",
+    "AAAB",
+    "AAAC",
+    "AAAD",
+    "AAAE"
+   ],
+   "lower": [
+    "zzz",
+    "aaaa",
+    "aaab",
+    "aaac",
+    "aaad",
+    "aaae"
+   ]
+  },
+  {
+   "start": 18279,
+   "upper": [
+    "AAAA",
+    "AAAB",
+    "AAAC",
+    "AAAD",
+    "AAAE",
+    "AAAF"
+   ],
+   "lower": [
+    "aaaa",
+    "aaab",
+    "aaac",
+    "aaad",
+    "aaae",
+    "aaaf"
+   ]
+  }
+ ]
+}

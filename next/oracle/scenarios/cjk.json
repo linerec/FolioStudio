@@ -1,0 +1,8 @@
+{
+  "fixture": "cjk",
+  "about": "한글·한자·영문 혼합의 줄 시작, 줄 끝, 기준선, 글자 위치. 84개 프레임, 폭 3종, 정렬 2종, 하이픈 켜기/끄기.",
+  "scenarios": [
+    {"name": "noop", "text": true, "steps": []},
+    {"name": "cjk-lines", "text": true, "steps": [{"op": "recompose"}]}
+  ]
+}

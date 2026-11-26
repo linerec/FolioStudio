@@ -1,0 +1,8 @@
+{
+  "fixture": "tools2-path",
+  "about": "Remove an unthreaded text path while keeping the parent path unchanged.",
+  "scenarios": [
+    {"name":"noop","rules":["tools2.textpath.defaults","tools2.textpath.horizontal"],"steps":[]},
+    {"name":"tools2-delete-type","rules":["tools2.textpath.remove"],"extension":"tools2","steps":[{"op":"removeTextFromPath","target":"path"}]}
+  ]
+}

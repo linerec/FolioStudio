@@ -1,0 +1,65 @@
+{
+  "title": "인쇄",
+  "target": "none",
+  "requests": true,
+  "extends": "printPresets",
+  "omit": ["preset", "name", "saved", "listAction", "builtIn", "nameOk", "namePrefix", "loadPath", "filePath"],
+  "defaults": "printing",
+  "link": "printSettings",
+  "build": "printSettings",
+  "computed": "printSettings",
+  "className": "print-preset-dialog fields-column",
+  "okLabel": "PDF 검증 파일 저장",
+  "description": "File ▸ Print (Layout ▸ Pages ▸ Print Pages: opened with values {pageIds}; File ▸ Print Presets ▸ <preset>: with {preset}; Flattener Preview ▸ Apply Settings to Print: with {flattenerPresetName, ignoreSpreadOverrides}): the open document's print. preset is [Default] or one of the user's print presets (app settings printPresets) and fills the settings; a setting changed makes it [Custom] (__custom). The settings are a print preset's (printPresets shares the fields, on InDesign's pages General … Advanced and Summary); a setting that does not apply to the values is off (off says why; the engine works it out after each change). range is all, range (rangeText, a page range as InDesign's print takes it, like +2-+5) or pages (the pages pageIds names). The plan (dialogPreview: printingPlan's sheets) follows the values; OK and print wait for it. OK (Save PDF Proof) writes the sheets into path (a whole .pdf path in a folder that exists; the screen fills it from the system's save window) with printingFile and closes. print sends the same sheets to device (one of listPrinters) with printToDevice and stays open with the job it made (sent); cancelJob takes it back (cancelPrintJob). namePreset shows newName; savePreset saves the settings as a new print preset of that name (userSettings patch printPresets) and stays open with it chosen. Over an attached MCP connection the dialog is filled and read but not applied (it writes a file or prints).",
+  "note": [
+    "프린터로 보내거나 PDF 검증 파일로 저장합니다. 문서는 바뀌지 않습니다.",
+    { "text": "Folio 는 PostScript 대신 PDF 로 저장합니다. 분판·그래픽·색상 관리·고급 설정은 값만 저장하고 출력에는 쓰이지 않습니다. 프린터로 직접 보내기는 실제 프린터에서 확인하지 못했습니다.", "differs": "printing" }
+  ],
+  "preview": {
+    "kind": "sheets",
+    "query": "printingPlan",
+    "args": {},
+    "failed": "출력 계획을 만들지 못했습니다. 범위와 출력 위치를 확인하세요."
+  },
+  "buttons": [
+    { "label": "사전 설정 저장…", "field": "namePreset", "set": { "field": "naming", "value": true }, "disabledWhen": { "naming": true } },
+    { "label": "이 이름으로 저장", "field": "savePreset", "action": "savePreset", "disabledWhen": { "naming": false } },
+    { "action": "print", "label": "인쇄", "field": "print", "needsPreview": true, "disabledWhen": { "device": "" } }
+  ],
+  "needs": { "ok": ["path"], "savePreset": ["newName"] },
+  "staysOpen": ["print", "cancelJob", "savePreset"],
+  "unchecked": ["cancelJob", "savePreset"],
+  "then": {
+    "print": { "sent": "$_result", "canceled": false },
+    "cancelJob": { "canceled": true },
+    "savePreset": { "preset": { "$trim": "newName" }, "naming": false }
+  },
+  "status": "printSend",
+  "errors": {
+    "printerNotFound": "프린터를 찾을 수 없습니다. {0}",
+    "invalidRange": "인쇄할 쪽 범위를 확인하세요. {0}",
+    "invalidRequest": "인쇄 설정을 확인하세요. {0}",
+    "unsupported": "이 컴퓨터나 이 설정으로는 프린터로 보낼 수 없습니다. {0}",
+    "jobNotFound": "이미 끝났거나 없는 작업입니다. {0}",
+    "deviceFailed": "프린터가 작업을 받지 못했습니다. {0}",
+    "exportFailed": "인쇄용 PDF를 만들지 못했습니다. {0}",
+    "failed": "출력 계획을 만들지 못했습니다. 범위와 출력 위치를 확인하세요. {0}"
+  },
+  "fields": [
+    { "name": "preset", "label": "인쇄 사전 설정", "type": "choice", "source": "printPresets", "custom": "[사용자 지정]", "default": "[Default]", "everyTab": true, "group": "" },
+    { "name": "device", "label": "보낼 프린터", "type": "choice", "source": "printers", "none": "프린터 없음", "noneWhenEmpty": true, "default": "", "everyTab": true, "group": "" },
+    { "name": "naming", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "newName", "label": "사전 설정 이름", "type": "text", "default": "새 사전 설정", "maxLength": 200, "when": { "naming": true }, "everyTab": true, "group": "",
+      "messages": { "required": "사전 설정 이름이 비어 있거나 이미 있습니다.", "taken": "사전 설정 이름이 비어 있거나 이미 있습니다.", "reserved": "사전 설정 이름이 비어 있거나 이미 있습니다." } },
+    { "name": "range", "label": "범위", "type": "enum", "default": "all", "tab": "general", "group": "", "options": [
+      { "value": "all", "label": "모두" },
+      { "value": "range", "label": "범위" },
+      { "value": "pages", "label": "선택한 페이지" }
+    ] },
+    { "name": "rangeText", "label": "인쇄 페이지 범위", "type": "text", "trim": true, "default": "", "maxLength": 1000, "tab": "general", "group": "", "when": { "range": "range" } },
+    { "name": "pageIds", "type": "json", "default": [], "hidden": true, "local": true },
+    { "name": "path", "label": "저장 위치", "type": "text", "path": "saveFile", "extension": "pdf", "saveAs": "print-proof.pdf", "hidden": true, "default": "", "maxLength": 4096 },
+    { "name": "sent", "type": "json", "hidden": true, "default": {} },
+    { "name": "canceled", "type": "boolean", "hidden": true, "default": false }
+  ]
+}

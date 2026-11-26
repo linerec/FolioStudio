@@ -1,0 +1,11 @@
+{
+  "fixture": "objlayer-shapes",
+  "extension": "objlayer",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"ol-clear-rotated-alpha","steps":[{"op":"setClipping","target":"rotated-alpha","kind":"None"}]},
+    {"name":"ol-clear-oval-photoshop","steps":[{"op":"setClipping","target":"oval-photoshop","kind":"None"}]},
+    {"name":"ol-clear-inverse-edges","steps":[{"op":"setClipping","target":"inverse-edges","kind":"None"}]},
+    {"name":"ol-clear-sheared-alpha","steps":[{"op":"setClipping","target":"sheared-alpha","kind":"None"}]}
+  ]
+}

@@ -1,0 +1,21 @@
+.hyperlinks-panel { display:flex; flex-direction:column; height:100%; padding:8px; gap:8px; overflow:auto; box-sizing:border-box; }
+.hyperlinks-list { flex:1; overflow:auto; display:flex; flex-direction:column; }
+.hyperlinks-list button { text-align:left; }
+.hyperlinks-list [aria-selected=true] { background:var(--list-sel); color:var(--text); }
+.hyperlinks-actions { display:flex; flex-wrap:wrap; gap:5px; }
+.hyperlink-dests { display:flex; flex-direction:column; gap:6px; margin:8px 0 0; padding:8px; border:1px solid var(--line); border-radius:var(--r-md); min-width:0; }
+.hyperlink-dests small { opacity:.7; }
+.hyperlink-dest-form { display:flex; flex-direction:column; gap:6px; }
+.hyperlink-dest-form label { display:flex; flex-direction:column; gap:4px; }
+.hyperlink-dest-form p { margin:0; overflow-wrap:anywhere; }
+.hyperlink-dest-actions { display:flex; gap:6px; }
+.hyperlink-dests [role=status] { overflow-wrap:anywhere; }
+.hyperlink-dests .hyperlink-dest-list { flex:0 0 auto; max-height:140px; }
+.hyperlink-dest-list [aria-pressed=true] { background:var(--list-sel); color:var(--text); }
+
+/* Check URL Status (build-c2): a mark after a link's name, the answer of the link picked */
+.hyperlinks-list .url-status { font-size: 10px; }
+.hyperlinks-list .url-ok { color: var(--ok, #2e9d4d); }
+.hyperlinks-list .url-bad { color: var(--danger, #d14343); }
+.hyperlinks-list .url-skip { color: var(--muted, #888); }
+.url-status-line { font-size: 11px; margin: 4px 0; overflow-wrap: anywhere; }

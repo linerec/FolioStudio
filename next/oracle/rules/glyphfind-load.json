@@ -1,0 +1,14 @@
+{
+  "about": "InDesign 20.5.5.119 'Load Selected Glyph in Find' (menu action 127957) read back through app.findGlyphPreferences on fixtures/glyphfind-load.idml (probe glyphfind-probe.jsx, measurement glyphfind-menu.json). The character at `index` of the story labelled oracle.id=text gives the face and glyph id below. Folio's glyphAt query must give the same.",
+  "label": "text",
+  "text": "ABcd \uD55C\u00E9 fi Z",
+  "loaded": [
+    {"index": 0, "family": "Arial", "style": "Regular", "glyphId": 36},
+    {"index": 1, "family": "Arial", "style": "Regular", "glyphId": 37},
+    {"index": 4, "family": "Arial", "style": "Regular", "glyphId": 3},
+    {"index": 5, "family": "Malgun Gothic", "style": "Regular", "glyphId": 2846},
+    {"index": 6, "family": "Arial", "style": "Regular", "glyphId": 112},
+    {"index": 8, "family": "Arial", "style": "Bold", "glyphId": 73}
+  ],
+  "notOffered": ["two characters selected", "insertion point", "frame selected", "nothing selected"]
+}

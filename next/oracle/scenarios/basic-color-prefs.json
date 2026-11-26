@@ -1,0 +1,10 @@
+{
+  "fixture": "basic-color-prefs",
+  "about": "Assign document ICC profiles and policies without changing color numbers.",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"prefs-language-quotes","steps":[{"op":"setLanguageQuotes","language":"Language/$ID/English%3a USA","props":{"SingleQuotes":"[]","DoubleQuotes":"{}"}}]},
+    {"name":"prefs-assign-profiles","steps":[{"op":"setColorPrefs","props":{"RGBProfile":"Adobe RGB (1998)","CMYKProfile":"Japan Color 2001 Coated"}}]},
+    {"name":"prefs-color-policies","steps":[{"op":"setColorPrefs","props":{"RGBPolicy":"ConvertToWorkingSpace","CMYKPolicy":"PreserveEmbeddedProfiles","SolidColorIntent":"Perceptual","AfterBlendingIntent":"Saturation","DefaultImageIntent":"AbsoluteColorimetric","AccurateLABSpots":true}}]}
+  ]
+}

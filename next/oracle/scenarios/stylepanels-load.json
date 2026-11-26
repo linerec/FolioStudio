@@ -1,0 +1,22 @@
+{
+  "fixture":"tablestyles",
+  "about":"Import cell/table styles from a separate document, with overwrite and rename conflicts.",
+  "scenarios":[
+    {"name":"sp-load-cell-overwrite","steps":[
+      {"op":"tableStyleDef","kind":"cell","do":"edit","name":"Oracle Cell Blue","props":{"fillTint":37}},
+      {"op":"importStyles","from":"tablestyles","format":"cell","clash":"overwrite"}
+    ]},
+    {"name":"sp-load-cell-rename","steps":[
+      {"op":"tableStyleDef","kind":"cell","do":"edit","name":"Oracle Cell Blue","props":{"fillTint":37}},
+      {"op":"importStyles","from":"tablestyles","format":"cell","clash":"rename"}
+    ]},
+    {"name":"sp-load-table-overwrite","steps":[
+      {"op":"tableStyleDef","kind":"table","do":"edit","name":"Oracle Zebra","props":{"spaceBefore":17}},
+      {"op":"importStyles","from":"tablestyles","format":"table","clash":"overwrite"}
+    ]},
+    {"name":"sp-load-table-rename","steps":[
+      {"op":"tableStyleDef","kind":"table","do":"edit","name":"Oracle Zebra","props":{"spaceBefore":17}},
+      {"op":"importStyles","from":"tablestyles","format":"table","clash":"rename"}
+    ]}
+  ]
+}

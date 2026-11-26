@@ -1,0 +1,96 @@
+{
+  "title": "상호 참조",
+  "target": "none",
+  "defaults": "newCrossReference",
+  "description": "Type > Hyperlinks & Cross-References > Insert Cross-Reference: made at story/start (values given when opening). The destination is a text anchor of the document or, when it is empty, the paragraph picked from the other stories (a choice `story:at`).",
+  "fields": [
+    {
+      "name": "story",
+      "type": "text",
+      "default": "",
+      "hidden": true,
+      "required": true
+    },
+    {
+      "name": "start",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000000,
+      "integer": true,
+      "hidden": true
+    },
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "Cross-Reference",
+      "hidden": true
+    },
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "destination",
+      "label": "대상",
+      "type": "choice",
+      "source": "crossReferenceDestinations",
+      "default": "",
+      "none": "단락 텍스트"
+    },
+    {
+      "name": "paragraph",
+      "label": "단락 텍스트",
+      "type": "choice",
+      "source": "crossReferenceParagraphs",
+      "none": "대상 단락을 선택하세요.",
+      "default": "",
+      "required": true,
+      "when": {
+        "destination": ""
+      }
+    },
+    {
+      "name": "format",
+      "label": "상호 참조 형식",
+      "type": "choice",
+      "source": "crossReferenceFormats",
+      "default": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "insertCrossReference",
+        "story": "$story",
+        "at": "$start",
+        "target_story": {
+          "$if": "destination",
+          "then": "",
+          "else": {
+            "$": "paragraph",
+            "rsplit": ":",
+            "part": 0
+          }
+        },
+        "target_at": {
+          "$if": "destination",
+          "then": 0,
+          "else": {
+            "$": "paragraph",
+            "rsplit": ":",
+            "part": 1,
+            "number": true
+          }
+        },
+        "destination": "$destination",
+        "format": "$format",
+        "name": "$name",
+        "locations": []
+      }
+    ]
+  }
+}

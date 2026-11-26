@@ -1,0 +1,233 @@
+edit.index.crossRefExists	edit/src/indexes/cross.rs	이 주제에 같은 상호 참조가 이미 있습니다
+edit.index.crossRefKind	edit/src/indexes/entries.rs	측정하지 않은 상호 참조 종류입니다: {other}
+edit.index.sortCharacter	edit/src/indexes/entries.rs	측정하지 않은 색인 정렬 문자 또는 5단계 주제입니다
+edit.index.straightQuote	edit/src/indexes/entries.rs	측정하지 않은 위치의 곧은 따옴표가 든 주제입니다
+edit.index.nestedKind	edit/src/indexes/entries.rs	각주·표 안의 색인 참조는 현재 쪽 종류만 만들 수 있습니다
+edit.index.staleLayout	edit/src/indexes/entries.rs;edit/src/indexes/range.rs	색인 참조가 조판된 쪽에 없습니다
+edit.index.rangeEnd	edit/src/indexes/entries.rs	색인 범위의 끝 쪽을 찾을 수 없습니다
+edit.index.crossTarget	edit/src/indexes/entries.rs	상호 참조가 없는 주제를 가리킵니다
+edit.index.needOne	edit/src/indexes/generate.rs	문서에 색인이 하나 있어야 합니다
+edit.index.manyStories	edit/src/indexes/generate.rs	교체할 색인 이야기가 여러 개입니다
+edit.index.pageNotFound	edit/src/indexes/generate.rs	쪽을 찾을 수 없습니다
+edit.frame.createFailed	edit/src/indexes/generate.rs;edit/src/toc/story.rs	글 상자를 만들지 못했습니다
+edit.frame.chooseTextFrame	edit/src/indexes/generate.rs;edit/src/toc/story.rs	글 상자를 선택하십시오
+edit.index.frameNotEmpty	edit/src/indexes/generate.rs	색인을 놓을 글 상자가 비어 있지 않습니다
+edit.index.noReferences	edit/src/indexes/generate.rs	생성할 색인 참조가 없습니다
+edit.index.generationOptions	edit/src/indexes/generation_input.rs	측정하지 않은 색인 생성 옵션이 있습니다(사용자 글자 스타일은 지원하지 않습니다)
+edit.index.optionStyleMissing	edit/src/indexes/generation_styles.rs	색인 옵션의 문단 스타일이 없습니다: {id}
+edit.index.levels	edit/src/indexes/generation_styles.rs	색인에는 4단계까지 있습니다
+edit.style.paragraphNotFound	edit/src/indexes/generation_styles.rs	문단 스타일을 찾을 수 없습니다: {id}
+edit.index.countMissing	edit/src/indexes/range.rs	색인 참조의 개수가 없습니다
+edit.index.storyMissing	edit/src/indexes/range.rs	색인 참조의 이야기를 찾을 수 없습니다
+edit.index.untilStyle	edit/src/indexes/range.rs	스타일이 없는 '다음 스타일 사용까지' 참조입니다
+edit.index.rangeKind	edit/src/indexes/range.rs	이 색인 참조 범위의 생성은 아직 측정하지 않았습니다
+edit.inline.format	edit/src/ops/place/inline.rs	{other} 그림은 아직 지원하지 않습니다
+edit.inline.unreadable	edit/src/ops/place/inline.rs	그림을 읽을 수 없습니다: {e}
+edit.inline.badContent	edit/src/ops/place/inline.rs	그림 내용을 읽을 수 없습니다
+edit.inline.badSize	edit/src/ops/place/inline.rs	그림의 크기가 올바르지 않습니다
+edit.inline.skipped	edit/src/ops/place/inline.rs	그림 한 개를 가져오지 않았습니다: {why}
+edit.place.aiPdf	edit/src/ops/place.rs	이 형식은 아직 지원하지 않습니다: PDF로 읽을 수 없는 AI·PDF 파일. JPEG·PNG·TIFF·PSD·GIF·BMP·PDF를 놓을 수 있습니다
+edit.place.bmpDepth	edit/src/ops/place.rs	이 BMP의 색 깊이는 아직 지원하지 않습니다: 1·4·8·24·32비트 BMP를 놓을 수 있습니다
+edit.place.colorModel	edit/src/ops/place.rs	이 그림의 색 모델은 아직 지원하지 않습니다: RGB·CMYK·회색 음영·Lab(TIFF·PSD)·색인(PNG·GIF·TIFF·BMP) 그림을 놓을 수 있습니다
+edit.place.bitDepth	edit/src/ops/place.rs	이 그림의 비트 수는 아직 지원하지 않습니다: 8비트 그림, 16비트 RGB·회색 음영 PNG·TIFF·PSD, 16비트 CMYK·Lab TIFF·PSD, 1·2·4비트 색인 PNG·BMP를 놓을 수 있습니다
+edit.place.badSize	edit/src/ops/place.rs	그림 크기 또는 해상도가 올바르지 않습니다
+edit.place.profilePolicy	edit/src/ops/place.rs	내장 RGB 프로필을 보존하고 CMYK 숫자를 유지하는 기본 색상 정책의 문서에서만 내장 프로필이 있는 그림을 놓을 수 있습니다
+edit.place.renderingIntent	edit/src/ops/place.rs;server/src/place.rs	알 수 없는 렌더링 의도입니다
+edit.place.frameKind	edit/src/ops/place.rs	그림은 사각형·타원·다각형 프레임에 놓을 수 있습니다
+edit.place.lockedItem	edit/src/ops/place.rs	잠기거나 숨긴 개체에 놓을 수 없습니다
+edit.place.lockedLayer	edit/src/ops/place.rs	잠기거나 숨긴 레이어에 놓을 수 없습니다
+edit.place.autoFit	edit/src/ops/place.rs	이 프레임의 자동 맞춤 방식은 아직 지원하지 않습니다
+edit.placeText.empty	edit/src/ops/place_text.rs	가져온 글이 비어 있습니다
+edit.placeText.target	edit/src/ops/place_text.rs	글 가져와 놓기에는 글 상자(id) 하나, 또는 쪽(page)과 사각형(rect) 또는 클릭한 곳(point)이 있어야 합니다
+edit.placeText.threaded	edit/src/ops/place_text.rs	연결된 글 상자에는 글 파일을 놓을 수 없습니다 (InDesign도 같습니다). 연결되지 않은 글 상자나 빈 도형에 놓거나, 빈 곳을 눌러 새 글 상자를 만드세요
+edit.placeText.hasPicture	edit/src/ops/place_text.rs	그림이 든 도형에는 글 파일을 놓을 수 없습니다. 빈 도형이나 글 상자에 놓으세요
+edit.placeText.itemKind	edit/src/ops/place_text.rs	이 개체에는 글 파일을 놓을 수 없습니다: 글 상자나 빈 도형(사각형·타원·다각형)에 놓으세요
+edit.placeText.badPoint	edit/src/ops/place_text.rs	클릭한 곳이 올바르지 않습니다
+edit.placeText.pointPage	edit/src/ops/place_text.rs	클릭한 곳은 쪽이어야 합니다
+edit.placeText.pageSize	edit/src/ops/place_text.rs	쪽의 크기를 읽을 수 없습니다
+edit.preview.alone	edit/src/preview.rs	미리보기 명령은 다른 명령과 함께 보낼 수 없습니다 (요청마다 하나)
+edit.toc.noStyleInfo	edit/src/toc/import.rs	스타일 정보가 없습니다
+edit.toc.noImportStyles	edit/src/toc/import.rs	불러올 목차 스타일이 없습니다
+edit.toc.styleNotFound	edit/src/toc/story.rs	목차 스타일을 찾을 수 없습니다
+edit.toc.severalSameStyle	edit/src/toc/story.rs	같은 스타일의 목차가 여러 개입니다. 업데이트할 목차를 선택하십시오
+edit.toc.noPages	edit/src/toc/story.rs	문서에 쪽이 없습니다
+edit.toc.frameNotEmpty	edit/src/toc/story.rs	목차를 놓을 글 상자가 비어 있지 않습니다
+edit.toc.notToc	edit/src/toc/story.rs	선택한 이야기는 목차가 아닙니다
+edit.toc.staleLayout	edit/src/toc/story.rs	목차의 조판 정보가 오래되었습니다
+edit.toc.noPageInfo	edit/src/toc/story.rs	목차의 쪽 정보를 찾을 수 없습니다
+edit.toc.styleFields	edit/src/toc/styles.rs	목차 스타일 이름, 단계 또는 쪽 번호 위치가 올바르지 않습니다
+edit.toc.styleExists	edit/src/toc/styles.rs	같은 이름의 목차 스타일이 있습니다
+edit.toc.notStyle	edit/src/toc/styles.rs	목차 스타일이 아닙니다
+edit.toc.styleInUse	edit/src/toc/styles.rs	이 목차 스타일을 사용하는 이야기가 있습니다
+package.source.unreadable	package/src/lib.rs	원본 문서를 읽을 수 없습니다: {path}: {e}
+package.destination.syncFolder	package/src/lib.rs	원본이 있는 폴더({guarded}) 안입니다. 이 폴더는 Synology Drive 동기화 폴더({sync}) 안이라 패키지 전체가 NAS로 동기화되고 원본과 사본이 섞일 수 있습니다.
+package.copy.openFailed	package/src/lib.rs	원본을 열 수 없음: {e}
+package.copy.readFailed	package/src/lib.rs	원본을 읽는 중 오류: {e}
+package.copy.failed	package/src/lib.rs	{dest} 복사 실패: {e}
+package.copy.changed	package/src/lib.rs	복사하는 동안 원본이 바뀌었거나 크기가 맞지 않음
+package.diskSpace	package/src/lib.rs	디스크 공간이 부족합니다: 필요 약 {need} MB, 남은 공간 {free} MB
+package.staging	package/src/lib.rs;server/src/project.rs	임시 폴더를 만들 수 없습니다: {e}
+package.cancelled	package/src/lib.rs	취소했습니다
+package.folderAppeared	package/src/lib.rs	같은 이름의 폴더가 그사이 생겼습니다: {dest}. 다른 이름을 입력하세요.
+package.rename	package/src/lib.rs	패키지 폴더 이름을 바꿀 수 없습니다: {e}
+package.leftover	package/src/lib.rs	{message} (임시 폴더를 지우지 못했습니다: {staging})
+package.linksFolder	package/src/lib.rs	Links 폴더를 만들 수 없습니다: {e}
+package.fontsFolder	package/src/lib.rs	Document fonts 폴더를 만들 수 없습니다: {e}
+package.pdfEngine	package/src/lib.rs	PDF 작성 중 엔진 오류
+package.sourceCopy	package/src/lib.rs	원본 문서를 복사할 수 없습니다: {reason}
+package.copyFailedShort	package/src/lib.rs	{dest} 를 복사하지 못했습니다
+package.reportFailed	package/src/lib.rs	보고서를 쓸 수 없습니다: {e}
+package.busy	server/src/package.rs	이미 패키지를 만드는 중입니다
+package.noParent	server/src/package.rs	패키지 폴더를 고르세요
+project.format.newer	project/src/format.rs	.folio 형식 {v}은(는) 이 Folio보다 새 버전입니다
+project.format.invalid	project/src/format.rs	.folio: {reason}
+project.format.noManifest	project/src/format.rs	folio/manifest.json가 없습니다 (IDML 파일일 수 있음)
+project.manifest.invalid	project/src/manifest.rs	folio.project: {reason}
+project.manifest.alreadyProject	project/src/manifest.rs	이미 프로젝트 폴더입니다: {path}
+project.manifest.noProject	project/src/manifest.rs	{path} 위에 folio.project가 없습니다
+project.import.cancelled	project/src/import.rs;server/src/project.rs	가져오기를 취소했습니다
+project.import.documentExists	project/src/import.rs	같은 이름의 문서가 이미 있습니다: {name}
+project.import.fileExists	project/src/import.rs	프로젝트에 같은 이름의 파일이 이미 생겼습니다: {rel}
+project.lock.unreadable	project/src/lock.rs	잠금 파일을 읽을 수 없습니다
+project.open.notInProject	project/src/open.rs	{path}은(는) Folio 프로젝트(folio.project가 있는 폴더) 안에 있지 않습니다
+project.open.otherProject	project/src/open.rs	이 문서는 다른 프로젝트({project})에서 만들어졌습니다. 참조는 지금 프로젝트 폴더 기준으로 찾습니다.
+project.open.longPath	project/src/open.rs	경로가 깁니다(Windows MAX_PATH 위험): {path}
+project.open.symlink	project/src/open.rs	프로젝트 안의 심볼릭 링크/정션은 쓰지 않습니다: {path}
+project.newdoc.badNumber	project/src/newdoc.rs	숫자가 올바르지 않습니다
+project.newdoc.pageSize	project/src/newdoc.rs	쪽 크기는 1/72인치부터 216인치까지입니다
+project.newdoc.pageCount	project/src/newdoc.rs	쪽 수는 1에서 9999 사이여야 합니다
+project.newdoc.startPage	project/src/newdoc.rs	시작 쪽 번호는 1에서 9999 사이여야 합니다
+project.newdoc.columns	project/src/newdoc.rs	단 수는 1에서 40 사이여야 합니다
+project.newdoc.negative	project/src/newdoc.rs	여백, 간격, 도련, 슬러그는 0 이상이어야 합니다
+project.newdoc.marginsTooBig	project/src/newdoc.rs	여백이 쪽보다 큽니다
+project.newdoc.gutterTooBig	project/src/newdoc.rs	단 간격이 너무 큽니다
+project.newdoc.unit	project/src/newdoc.rs	지원하지 않는 단위: {unit}
+project.newdoc.fontEmpty	project/src/newdoc.rs	글꼴이 비어 있습니다
+project.path.emptyName	project/src/paths.rs	빈 이름
+project.path.dotName	project/src/paths.rs	'.' 또는 '..'
+project.path.forbiddenChar	project/src/paths.rs	쓸 수 없는 문자 '{ch}'
+project.path.control	project/src/paths.rs	제어 문자 U+{code}
+project.path.trailing	project/src/paths.rs	이름 끝의 점이나 공백
+project.path.reserved	project/src/paths.rs	Windows 예약 이름 {name}
+project.path.tooLong	project/src/paths.rs	이름이 너무 김({bytes}바이트)
+project.path.emptyPath	project/src/paths.rs	빈 경로
+project.path.absolute	project/src/paths.rs	절대 경로는 저장하지 않습니다: {path}
+project.path.outsideRoot	project/src/paths.rs	프로젝트 폴더 밖 경로: {path}
+project.path.backslash	project/src/paths.rs	구분자는 '/'만 씁니다
+project.path.notNfc	project/src/paths.rs	NFC가 아닌 이름
+project.path.emptyComponent	project/src/paths.rs	빈 이름이 있는 경로
+textimport.error.docxPart	textimport/src/docx.rs	Word 파일 안의 {name} 을(를) 읽을 수 없습니다: {e}
+textimport.error.docxTooBig	textimport/src/docx.rs	Word 파일 안의 {name} 이(가) 너무 큽니다
+textimport.error.docxNotUtf8	textimport/src/docx.rs	Word 파일 안의 {name} 이(가) UTF-8 이 아닙니다
+textimport.error.docxOpen	textimport/src/docx.rs	Word 파일을 열 수 없습니다: {e}
+textimport.error.docxNoDocument	textimport/src/docx.rs	Word 파일이 아닙니다: word/document.xml 이 없습니다
+textimport.error.docxNoBody	textimport/src/docx.rs	Word 파일이 아닙니다: 본문(body)이 없습니다
+textimport.error.options	textimport/src/lib.rs	가져오기 옵션: {e}
+textimport.error.quotes	textimport/src/lib.rs	따옴표 사전은 아직 English: USA 만 지원합니다
+textimport.error.empty	textimport/src/lib.rs	빈 파일은 가져올 수 없습니다
+textimport.error.control	textimport/src/txt.rs	글 파일로 읽을 수 없습니다: 제어 문자 U+{code}가 들어 있습니다
+textimport.error.manyControls	textimport/src/txt.rs	글 파일로 읽을 수 없습니다: 제어 문자가 너무 많습니다
+textimport.error.xmlAttribute	textimport/src/xmltree.rs	속성을 읽을 수 없습니다: {err}
+textimport.error.xmlAttributeValue	textimport/src/xmltree.rs	속성 값을 읽을 수 없습니다: {err}
+textimport.error.xml	textimport/src/xmltree.rs	XML 오류 (위치 {position}): {e}
+textimport.error.xmlDepth	textimport/src/xmltree.rs	XML 중첩이 너무 깊습니다
+textimport.error.xmlEndTag	textimport/src/xmltree.rs	XML 끝 태그가 맞지 않습니다
+textimport.error.xmlCharRef	textimport/src/xmltree.rs	문자 참조: {e}
+textimport.error.xmlEntity	textimport/src/xmltree.rs	알 수 없는 엔티티 &{name};
+textimport.error.xmlDoctype	textimport/src/xmltree.rs	DOCTYPE 선언은 받지 않습니다
+textimport.error.xmlEnd	textimport/src/xmltree.rs	XML 이 끝나기 전에 문서가 끝났습니다
+textimport.error.xmlRoot	textimport/src/xmltree.rs	XML 에 루트 요소가 없습니다
+server.clip.sourceMissing	server/src/clip.rs	붙일 그림의 원본 파일을 찾지 못했습니다 ({uri}). 원본 문서에서 링크를 먼저 연결하세요
+server.conveyor.full	server/src/conveyor.rs	컨베이어에는 {max}개까지 담을 수 있습니다
+server.conveyor.empty	server/src/conveyor.rs	컨베이어가 비어 있습니다
+server.conveyor.noItemAt	server/src/conveyor.rs	컨베이어에는 {n}번째 항목이 없습니다
+server.conveyor.needIndex	server/src/conveyor.rs	index 나 step 이 있어야 합니다
+server.conveyor.noItem	server/src/conveyor.rs	컨베이어에 그 항목이 없습니다
+server.conveyor.unknownAction	server/src/conveyor.rs	모르는 컨베이어 동작입니다: {action}
+server.noDocument	server/src/conveyor.rs	열린 문서가 없습니다
+server.notEditable	server/src/conveyor.rs;server/src/edit.rs	편집하는 문서가 아닙니다
+server.conveyor.chooseObjects	server/src/conveyor.rs	배치할 개체를 고르세요
+server.conveyor.notLoaded	server/src/conveyor.rs	배치할 개체가 올려져 있지 않습니다. 배치 및 연결을 먼저 하세요
+server.edit.engineBroken	server/src/edit.rs	편집 엔진 안에서 오류가 나서 이 문서의 편집을 멈췄습니다. 문서를 다시 여세요 (저장하지 않은 편집은 안전하게 남길 수 없습니다)
+server.edit.readOnlyOpen	server/src/edit.rs	이 문서는 편집할 수 없습니다 (읽기 전용으로 열었거나 다른 사용자가 열고 있습니다)
+server.edit.lockedByOther	server/src/edit.rs	다른 사용자가 이 문서를 열고 있어 읽기 전용입니다
+server.edit.badCommands	server/src/edit.rs	명령을 읽지 못했습니다: {e}
+server.edit.nothingToUndo	server/src/edit.rs	실행 취소할 것이 없습니다
+server.edit.nothingToRedo	server/src/edit.rs	다시 실행할 것이 없습니다
+server.pdf.noPath	server/src/main.rs	내보낼 PDF 경로가 없습니다
+server.pdfComments.notProject	server/src/pdfcomments.rs	PDF 주석은 프로젝트 문서에서만 가져올 수 있습니다
+server.place.noCommand	server/src/place.rs	편집 명령이 없습니다
+server.place.unembedNeedsPicture	server/src/place.rs	링크 포함 해제에는 그림이 있어야 합니다
+server.place.unembedNeedsProject	server/src/place.rs	링크 포함 해제는 프로젝트에서만 할 수 있습니다
+server.place.notEmbedded	server/src/place.rs	이 그림은 포함되어 있지 않습니다
+server.place.embeddedUnreadable	server/src/place.rs	포함된 그림 내용을 읽을 수 없습니다
+server.place.embedNeedsFile	server/src/place.rs	링크를 포함하려면 원본 파일이 있어야 합니다
+server.place.embedTooBig	server/src/place.rs	128 MB보다 큰 파일은 포함할 수 없습니다
+server.place.needsSource	server/src/place.rs	프로젝트 배치는 원본 파일을 지정해야 합니다
+server.place.badProfile	server/src/place.rs	읽을 수 없는 그림 색 프로필: {e}
+server.place.emf	server/src/place.rs	이 메타파일(EMF·WMF)은 읽을 수 없습니다: 머리(서명·크기)가 올바르지 않습니다. 다시 저장하거나 PDF나 PNG로 바꿔서 놓으세요
+server.place.unsupportedFormat	server/src/place.rs	이 형식은 아직 지원하지 않습니다: {what}. JPEG·PNG·TIFF·PSD·GIF·BMP·PDF를 놓을 수 있습니다
+server.place.symlinkProject	server/src/place.rs	프로젝트의 심볼릭 링크에는 그림을 놓을 수 없습니다
+server.place.symlinkFolder	server/src/place.rs	그림 폴더에 심볼릭 링크가 있습니다
+server.place.nameClash	server/src/place.rs	같은 이름의 그림 내용이 다릅니다
+server.place.textNeedsProject	server/src/place.rs	프로젝트 없이는 프로젝트 기준 상대 경로로 글 파일을 놓을 수 없습니다
+server.place.textNeedsFile	server/src/place.rs	글 가져와 놓기에는 원본 파일(file)이 있어야 합니다
+server.print.fileBusy	server/src/print.rs	{path}: {e} (다른 프로그램이 파일을 열고 있지 않은지 확인하세요)
+server.project.noFolder	server/src/project.rs	프로젝트 폴더가 없습니다
+server.project.extension	server/src/project.rs	문서 이름은 .folio로 끝나야 합니다
+server.project.importKinds	server/src/project.rs	INDD 또는 IDML만 가져올 수 있습니다
+server.project.sourceUnreadable	server/src/project.rs	원본을 읽을 수 없습니다: {path}: {e}
+server.project.sourceHash	server/src/project.rs	원본 해시: {e}
+server.project.settingNotNumber	server/src/project.rs	설정 {key}이(가) 숫자가 아닙니다
+server.project.settingFourNumbers	server/src/project.rs	설정 {key}은(는) 숫자 네 개여야 합니다
+server.project.settingBadValue	server/src/project.rs	설정 {key}에 숫자가 아닌 값이 있습니다
+server.project.fontNotInstalled	server/src/project.rs	설치된 글꼴이 아닙니다: {family} {style}
+server.project.noFonts	server/src/project.rs	설치된 글꼴이 없습니다
+server.project.writeFailed	server/src/project.rs	새 문서를 쓸 수 없습니다: {e}
+server.project.importBusy	server/src/project.rs	다른 가져오기가 진행 중입니다
+server.project.notFolio	server/src/project.rs	열린 문서가 .folio가 아닙니다 (INDD·IDML은 먼저 프로젝트로 가져오세요)
+server.project.readOnlySave	server/src/project.rs	다른 사용자가 이 문서를 열고 있어 읽기 전용입니다. 저장할 수 없습니다.
+server.project.lockLost	server/src/project.rs	다른 사용자가 잠금을 가져갔습니다. 이 창은 이제 읽기 전용이며 저장하지 않았습니다.
+server.project.copyExtension	server/src/project.rs	사본은 .folio 파일로 저장합니다
+server.project.copyOutside	server/src/project.rs	사본은 이 프로젝트 폴더 안에 저장합니다 ({e})
+server.project.copyOwnFile	server/src/project.rs	문서 자신의 파일에는 사본을 쓰지 않습니다 (저장을 쓰세요)
+server.project.copyLocked	server/src/project.rs	그 문서는 누군가 열고 있어 덮어쓸 수 없습니다
+server.project.idmlNoPath	server/src/project.rs	내보낼 IDML 경로가 없습니다
+server.project.idmlOwnFile	server/src/project.rs	문서 자신의 파일에는 쓸 수 없습니다
+server.noFilePath	server/src/toc.rs;server/src/registered_queries.rs	파일 경로가 없습니다
+server.styles.sourceKinds	server/src/registered_queries.rs	IDML 또는 Folio 문서에서 스타일을 불러올 수 있습니다
+server.toc.noDocument	server/src/toc.rs	문서가 없습니다
+server.toc.noStory	server/src/toc.rs	목차 이야기가 없습니다
+server.toc.notTocStory	server/src/toc.rs	목차 이야기가 아닙니다
+server.toc.idmlOnly	server/src/toc.rs	IDML 파일에서 목차 스타일을 불러올 수 있습니다
+server.toc.updateAfterLayout	server/src/toc.rs	본문 편집 후 조판이 끝나면 목차를 업데이트하십시오
+server.xlink.needProject	server/src/xlink.rs	다른 문서의 개체와 링크하려면 두 문서가 같은 프로젝트에 있어야 합니다. 프로젝트를 열어서 하세요
+server.xlink.sourceOutside	server/src/xlink.rs	원본 문서가 이 프로젝트 안에 있지 않아 링크를 만들 수 없습니다. 프로젝트 안의 .folio 문서만 링크 원본이 될 수 있습니다
+server.xlink.sourceKind	server/src/xlink.rs	INDD·IDML 문서는 링크 원본이 될 수 없습니다. 프로젝트로 가져온 .folio 문서만 됩니다
+server.xlink.sourceRead	server/src/xlink.rs	원본 문서를 읽지 못했습니다: {e}
+server.xlink.sourceOpen	server/src/xlink.rs	원본 문서 {rel}이(가) 열려 있습니다. 저장하고 닫은 뒤 다시 하세요 (링크 번호를 원본에 써야 합니다)
+server.xlink.sourceError	server/src/xlink.rs	원본 문서: {message}
+server.xlink.sourceWrite	server/src/xlink.rs	원본 문서를 쓰지 못했습니다: {e}
+server.xlink.relinkNeedsProject	server/src/xlink.rs	InDesign 링크를 문서에 다시 이으려면 프로젝트를 열어서 하세요
+server.xlink.notProjectDocument	server/src/xlink.rs	이 문서는 프로젝트 문서가 아닙니다
+server.xlink.noReference	server/src/xlink.rs	참조 {id}이(가) 이 문서에 없습니다
+server.xlink.alreadyLinked	server/src/xlink.rs	이 링크는 이미 프로젝트의 문서에 이어져 있습니다
+server.xlink.noHint	server/src/xlink.rs	이 참조에는 InDesign 이 쓴 원래 주소가 없습니다
+server.xlink.targetNotFolio	server/src/xlink.rs	{t}은(는) 이 프로젝트의 .folio 문서가 아닙니다
+server.xlink.targetRead	server/src/xlink.rs	{t}을(를) 읽지 못했습니다: {e}
+server.xlink.selfLink	server/src/xlink.rs	문서 자신에게는 이을 수 없습니다
+server.xlink.noImported	server/src/xlink.rs	이 프로젝트에 {name}에서 가져온 문서가 없습니다. 그 INDD 를 프로젝트로 가져온 뒤 다시 하세요
+server.xlink.manyImported	server/src/xlink.rs	{name}에서 가져온 문서가 여러 개입니다 ({list}). 어느 것인지 target 으로 고르세요
+server.xlink.readFailed	server/src/xlink.rs	{path}을(를) 읽지 못했습니다
+server.xref.separate	server/src/xrefloc.rs	색인 생성은 다른 편집과 분리해서 실행하십시오
+preflight.limit.cmykUnread	preflight/src/image_ink.rs	CMYK 이미지 {unread}개는 형식(압축 방식 등) 때문에 잉크 총량을 재지 못함
+preflight.limit.imageInk	preflight/src/image_ink.rs	이미지 잉크 총량은 연결된 원본의 CMYK 값(3×3 화소 평균)으로 쟀고, RGB·회색 이미지와 PDF/EPS 안의 내용은 재지 않음
+server.clipping.noFile	server/src/clippaths.rs	연결 그림 파일을 찾지 못해 클리핑 패스를 만들 수 없습니다
+render.clipping.unreadable	render/src/clipextract.rs	그림을 읽지 못했습니다
+render.clipping.noAlpha	render/src/clipextract.rs	이 그림에는 알파 채널이 없습니다
+render.clipping.noPath	render/src/clipextract.rs	이 그림에는 Photoshop 패스가 없습니다
+render.clipping.empty	render/src/clipextract.rs	클리핑 패스로 남길 부분이 없습니다
+edit.index.bookEntry	edit/src/indexes/entries.rs	책 문서의 색인 항목이 올바르지 않습니다
+edit.index.importNone	edit/src/indexes/import.rs;server/src/bookindex.rs	가져올 주제가 없습니다: {document}
+server.index.importProject	server/src/bookindex.rs	주제는 같은 프로젝트의 다른 문서에서 가져옵니다
+server.index.importSelf	server/src/bookindex.rs	지금 문서에서는 주제를 가져올 수 없습니다

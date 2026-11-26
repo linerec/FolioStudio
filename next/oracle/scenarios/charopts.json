@@ -1,0 +1,23 @@
+{
+  "fixture": "text-format",
+  "about": "Paragraph tab stops; generic textFormat mappings in oracle.rs and print-check.py preserve the value array.",
+  "scenarios": [
+    {"name":"charopts-tabs-left", "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"A\tB\tC\r"},
+      {"op":"textFormat","target":"format","start":0,"end":5,"props":{"tabList":[{"position":72,"alignment":"LEFT_ALIGN","leader":".","alignmentCharacter":"."},{"position":144,"alignment":"LEFT_ALIGN","leader":"","alignmentCharacter":"."}]}}
+    ]},
+    {"name":"charopts-tabs-alignment", "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"A\t12.34\t56,78\r"},
+      {"op":"textFormat","target":"format","start":0,"end":13,"props":{"tabList":[{"position":72,"alignment":"CENTER_ALIGN","leader":"","alignmentCharacter":"."},{"position":144,"alignment":"CHARACTER_ALIGN","leader":"","alignmentCharacter":","}]}}
+    ]},
+    {"name":"charopts-tabs-move", "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"A\tB\r"},
+      {"op":"textFormat","target":"format","start":1,"end":1,"props":{"tabList":[{"position":72,"alignment":"LEFT_ALIGN","leader":"","alignmentCharacter":"."}]}},
+      {"op":"textFormat","target":"format","start":1,"end":1,"props":{"tabList":[{"position":108,"alignment":"RIGHT_ALIGN","leader":"-","alignmentCharacter":"."}]}}
+    ]},
+    {"name":"charopts-tabs-clear", "steps":[
+      {"op":"textFormat","target":"format","start":0,"end":8,"props":{"tabList":[{"position":72,"alignment":"LEFT_ALIGN","leader":"","alignmentCharacter":"."}]}},
+      {"op":"textFormat","target":"format","start":0,"end":8,"props":{"tabList":[]}}
+    ]}
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "새 혼합 잉크 견본",
+  "target": "none",
+  "defaults": "mixedInk",
+  "description": "Swatches panel menu > New Mixed Ink Swatch: a name no swatch has (it continues namePrefix with a number) and, for each ink of the document (one fixed row each, the Ink Manager's plates), whether it goes in and its percentage (0 to 100). At least two inks, one of them a spot ink; the first spot ink is ticked to start with. OK sends the ticked inks and their percentages in the document's ink order.",
+  "rowsCheck": [
+    { "field": "inks", "where": { "on": true }, "min": 2, "some": { "kind": "spot" }, "message": "잉크를 두 개 이상 고르세요. 별색 잉크가 하나는 있어야 합니다." }
+  ],
+  "fields": [
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "Mixed Ink Swatch",
+      "hidden": true
+    },
+    {
+      "name": "name",
+      "label": "견본 이름",
+      "type": "text",
+      "required": true,
+      "trim": true,
+      "unique": "swatches",
+      "uniqueMessage": "같은 이름의 견본이 있습니다.",
+      "maxLength": 256,
+      "default": "Mixed Ink Swatch"
+    },
+    {
+      "name": "inks",
+      "label": "잉크",
+      "type": "array",
+      "fixedRows": true,
+      "minRows": 0,
+      "maxRows": 1000,
+      "default": [
+        { "ink": "Ink/Spot", "kind": "spot", "name": "Spot", "on": true, "percent": 100 },
+        { "ink": "Ink/$ID/Process Cyan", "kind": "process", "name": "Cyan", "on": true, "percent": 100 }
+      ],
+      "fields": [
+        { "name": "ink", "type": "text", "default": "", "hidden": true, "maxLength": 1000 },
+        { "name": "kind", "type": "enum", "default": "spot", "hidden": true, "options": ["spot", "process"] },
+        { "name": "name", "type": "text", "default": "", "hidden": true, "maxLength": 1000 },
+        { "name": "on", "type": "boolean", "default": false, "labelFrom": "name" },
+        { "name": "percent", "label": "{0} 비율", "labelArg": "name", "type": "number", "unit": "percent", "default": 100, "min": 0, "max": 100, "disabledWhen": { "on": false } }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "newMixedInk",
+        "name": "$name",
+        "inks": { "$rows": "inks", "where": { "on": true }, "pick": "ink" },
+        "percentages": { "$rows": "inks", "where": { "on": true }, "pick": "percent" }
+      }
+    ]
+  }
+}

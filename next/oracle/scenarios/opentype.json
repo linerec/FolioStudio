@@ -1,0 +1,920 @@
+{
+  "fixture": "opentype",
+  "about": "Installed Windows fonts: measured OpenType attributes, sets, positions and figures.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "ot-dlig",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfDiscretionaryLigature": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-dlig-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfDiscretionaryLigature": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-frac",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFraction": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-frac-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFraction": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ordn",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfOrdinal": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ordn-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfOrdinal": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-swsh",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-swsh-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-titl",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfTitling": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-titl-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfTitling": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-calt",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfContextualAlternate": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-calt-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfContextualAlternate": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-zero",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfSlashedZero": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-zero-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfSlashedZero": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-hist",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfHistorical": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-hist-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfHistorical": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-cswh",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfOverlapSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-cswh-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfOverlapSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-salt",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-salt-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-jalt",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfJustificationAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-jalt-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfJustificationAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-stch",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStretchedAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-stch-unsupported",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "courier-new",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStretchedAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss01",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss02",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss03",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss04",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 16
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss05",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss06",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 64
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss07",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 128
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss08",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss09",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 512
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss10",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 1024
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss11",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 2048
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss12",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 4096
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss13",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 8192
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss14",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 16384
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss15",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 32768
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss16",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 65536
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss17",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 131072
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss18",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 262144
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss19",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 524288
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ss20",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "segoe-ui",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 1048576
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-sets-combined",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-form-none",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "positionalForm": "NONE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-form-calculate",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "positionalForm": "CALCULATE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-form-initial",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "positionalForm": "INITIAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-form-medial",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "positionalForm": "MEDIAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-form-final",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "positionalForm": "FINAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-form-isolated",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "positionalForm": "ISOLATED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-figure-tabular_lining",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFigureStyle": "TABULAR_LINING"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-figure-proportional_oldstyle",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFigureStyle": "PROPORTIONAL_OLDSTYLE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-figure-proportional_lining",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFigureStyle": "PROPORTIONAL_LINING"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-figure-tabular_oldstyle",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFigureStyle": "TABULAR_OLDSTYLE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-figure-default_value",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFigureStyle": "DEFAULT_VALUE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ot_numerator",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 10,
+          "end": 18,
+          "props": {
+            "position": "OT_NUMERATOR"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-ot_denominator",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 10,
+          "end": 18,
+          "props": {
+            "position": "OT_DENOMINATOR"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-cap_to_small_cap",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "capitalization": "CAP_TO_SMALL_CAP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-lower_case",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "calibri",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "capitalization": "LOWER_CASE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-swash-gabriola",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-fraction-cambria",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "cambria",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfFraction": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-calt-gabriola",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfContextualAlternate": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-sets-bit-zero",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-sets-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "gabriola",
+          "start": 0,
+          "end": 41,
+          "props": {
+            "otfStylisticSets": 2097150
+          }
+        }
+      ]
+    }
+  ]
+}

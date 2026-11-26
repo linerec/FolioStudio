@@ -1,0 +1,357 @@
+{
+  "fixture": "objectstyles",
+  "scenarios": [
+    {
+      "name": "c2-effects-capture",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 14,
+                "spread": 20,
+                "technique": "GlowTechnique.PRECISE",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY",
+                "opacity": 60
+              },
+              "innerShadowSettings": {
+                "applied": true,
+                "distance": 12,
+                "angle": 45,
+                "size": 10,
+                "chokeAmount": 20
+              },
+              "innerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "source": "InnerGlowSource.CENTER_SOURCED",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY"
+              },
+              "bevelAndEmbossSettings": {
+                "applied": true,
+                "style": "BevelAndEmbossStyle.EMBOSS",
+                "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+                "size": 12,
+                "depth": 300,
+                "direction": "BevelAndEmbossDirection.DOWN"
+              },
+              "satinSettings": {
+                "applied": true,
+                "distance": 20,
+                "size": 15,
+                "angle": 45,
+                "invertEffect": true
+              },
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD",
+                "width": 18,
+                "chokeAmount": 30,
+                "cornerType": "FeatherCornerType.ROUNDED"
+              },
+              "directionalFeatherSettings": {
+                "applied": true,
+                "leftWidth": 20,
+                "topWidth": 10,
+                "angle": 30
+              },
+              "gradientFeatherSettings": {
+                "applied": true,
+                "type": "GradientType.RADIAL",
+                "angle": 30
+              },
+              "blendingSettings": {
+                "opacity": 65,
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Effects",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        }
+      ]
+    },
+    {
+      "name": "c2-effects-apply",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 14,
+                "spread": 20,
+                "technique": "GlowTechnique.PRECISE",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY",
+                "opacity": 60
+              },
+              "innerShadowSettings": {
+                "applied": true,
+                "distance": 12,
+                "angle": 45,
+                "size": 10,
+                "chokeAmount": 20
+              },
+              "innerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "source": "InnerGlowSource.CENTER_SOURCED",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY"
+              },
+              "bevelAndEmbossSettings": {
+                "applied": true,
+                "style": "BevelAndEmbossStyle.EMBOSS",
+                "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+                "size": 12,
+                "depth": 300,
+                "direction": "BevelAndEmbossDirection.DOWN"
+              },
+              "satinSettings": {
+                "applied": true,
+                "distance": 20,
+                "size": 15,
+                "angle": 45,
+                "invertEffect": true
+              },
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD",
+                "width": 18,
+                "chokeAmount": 30,
+                "cornerType": "FeatherCornerType.ROUNDED"
+              },
+              "directionalFeatherSettings": {
+                "applied": true,
+                "leftWidth": 20,
+                "topWidth": 10,
+                "angle": 30
+              },
+              "gradientFeatherSettings": {
+                "applied": true,
+                "type": "GradientType.RADIAL",
+                "angle": 30
+              },
+              "blendingSettings": {
+                "opacity": 65,
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Effects",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Captured Effects"
+        }
+      ]
+    },
+    {
+      "name": "c2-effects-clear",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 14,
+                "spread": 20,
+                "technique": "GlowTechnique.PRECISE",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY",
+                "opacity": 60
+              },
+              "innerShadowSettings": {
+                "applied": true,
+                "distance": 12,
+                "angle": 45,
+                "size": 10,
+                "chokeAmount": 20
+              },
+              "innerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "source": "InnerGlowSource.CENTER_SOURCED",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY"
+              },
+              "bevelAndEmbossSettings": {
+                "applied": true,
+                "style": "BevelAndEmbossStyle.EMBOSS",
+                "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+                "size": 12,
+                "depth": 300,
+                "direction": "BevelAndEmbossDirection.DOWN"
+              },
+              "satinSettings": {
+                "applied": true,
+                "distance": 20,
+                "size": 15,
+                "angle": 45,
+                "invertEffect": true
+              },
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD",
+                "width": 18,
+                "chokeAmount": 30,
+                "cornerType": "FeatherCornerType.ROUNDED"
+              },
+              "directionalFeatherSettings": {
+                "applied": true,
+                "leftWidth": 20,
+                "topWidth": 10,
+                "angle": 30
+              },
+              "gradientFeatherSettings": {
+                "applied": true,
+                "type": "GradientType.RADIAL",
+                "angle": 30
+              },
+              "blendingSettings": {
+                "opacity": 65,
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Effects",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Captured Effects",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "c2-effects-based",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 65,
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Base Effects",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Base Effects",
+          "clear": true
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 14,
+                "spread": 20,
+                "technique": "GlowTechnique.PRECISE",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY",
+                "opacity": 60
+              },
+              "innerShadowSettings": {
+                "applied": true,
+                "distance": 12,
+                "angle": 45,
+                "size": 10,
+                "chokeAmount": 20
+              },
+              "innerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "source": "InnerGlowSource.CENTER_SOURCED",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY"
+              },
+              "bevelAndEmbossSettings": {
+                "applied": true,
+                "style": "BevelAndEmbossStyle.EMBOSS",
+                "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+                "size": 12,
+                "depth": 300,
+                "direction": "BevelAndEmbossDirection.DOWN"
+              },
+              "satinSettings": {
+                "applied": true,
+                "distance": 20,
+                "size": 15,
+                "angle": 45,
+                "invertEffect": true
+              },
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD",
+                "width": 18,
+                "chokeAmount": 30,
+                "cornerType": "FeatherCornerType.ROUNDED"
+              },
+              "directionalFeatherSettings": {
+                "applied": true,
+                "leftWidth": 20,
+                "topWidth": 10,
+                "angle": 30
+              },
+              "gradientFeatherSettings": {
+                "applied": true,
+                "type": "GradientType.RADIAL",
+                "angle": 30
+              }
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Effects",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1106 @@
+{
+  "fixture": "text-format",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "bullets-levels-child-continue",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-child-continue",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-child-restart",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-child-restart",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-explicit-start",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-explicit-start",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": false
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-parent-format",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-parent-format",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-switch-to-restart",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-switch-to-restart",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-switch-to-continue",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-switch-to-continue",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": false,
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-missing-parent",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV...",
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV...",
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingFormat": "I, II, III, IV..."
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-missing-parent",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV...",
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingFormat": "I, II, III, IV...",
+            "numberingExpression": "^1.^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingFormat": "I, II, III, IV..."
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-levels-pending-start",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 9,
+            "numberingContinue": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-levels-pending-start",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "A\rB\rC\rD\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "^#.^t"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 2,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 7,
+            "numberingContinue": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 4,
+          "end": 4,
+          "props": {
+            "numberingLevel": 1,
+            "numberingApplyRestartPolicy": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 6,
+          "props": {
+            "numberingLevel": 2,
+            "numberingApplyRestartPolicy": true,
+            "numberingExpression": "^1.^#.^t",
+            "numberingStartAt": 9,
+            "numberingContinue": true
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "format",
+          "start": 0,
+          "end": 7,
+          "labels": {}
+        }
+      ]
+    }
+  ]
+}

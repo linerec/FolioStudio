@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u136" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Body">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>First paragraph for a footnote.</Content>
+				<Br />
+				<Content>Second paragraph for another note.</Content>
+				<Br />
+				<Content>Third paragraph ends here</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Position="Superscript">
+				<Footnote>
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content><?ACE 4?>	Note 01.</Content>
+							<Br />
+							<Content>Note 02.</Content>
+							<Br />
+							<Content>Note 03.</Content>
+							<Br />
+							<Content>Note 04.</Content>
+							<Br />
+							<Content>Note 05.</Content>
+							<Br />
+							<Content>Note 06.</Content>
+							<Br />
+							<Content>Note 07.</Content>
+							<Br />
+							<Content>Note 08.</Content>
+							<Br />
+							<Content>Note 09.</Content>
+							<Br />
+							<Content>Note 10.</Content>
+							<Br />
+							<Content>Note 11.</Content>
+							<Br />
+							<Content>Note 12.</Content>
+							<Br />
+							<Content>Note 13.</Content>
+							<Br />
+							<Content>Note 14.</Content>
+							<Br />
+							<Content>Note 15.</Content>
+							<Br />
+							<Content>Note 16.</Content>
+							<Br />
+							<Content>Note 17.</Content>
+							<Br />
+							<Content>Note 18.</Content>
+							<Br />
+							<Content>Note 19.</Content>
+							<Br />
+							<Content>Note 20.</Content>
+							<Br />
+							<Content>Note 21.</Content>
+							<Br />
+							<Content>Note 22.</Content>
+							<Br />
+							<Content>Note 23.</Content>
+							<Br />
+							<Content>Note 24.</Content>
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+				</Footnote>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>.</Content>
+				<Br />
+				<Content>Body </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Position="Superscript">
+				<Footnote>
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content><?ACE 4?>	Second footnote.</Content>
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+				</Footnote>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>A.</Content>
+				<Br />
+				<Content>Body B.</Content>
+				<Br />
+				<Content>Body C.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

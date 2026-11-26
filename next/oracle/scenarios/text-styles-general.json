@@ -1,0 +1,9 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {"name":"style-general-rename-paragraph","rules":["styles.general.rename"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"name":"Renamed Body"}}]},
+    {"name":"style-general-rename-character","rules":["styles.general.rename"],"steps":[{"op":"styleEdit","kind":"character","style":"Format Bold","props":{"name":"Renamed Bold"}}]},
+    {"name":"style-general-rename-next","rules":["styles.general.rename"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Other","props":{"nextStyle":"Format Body"}},{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"name":"본문 & 제목"}}]},
+    {"name":"style-general-rename-back","rules":["styles.general.rename"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"name":"Temporary"}},{"op":"styleEdit","kind":"paragraph","style":"Temporary","props":{"name":"Format Body"}}]}
+  ]
+}

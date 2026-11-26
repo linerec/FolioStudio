@@ -1,0 +1,286 @@
+{
+  "fixture": "basic",
+  "about": "Object > Text Frame Options: columns, gutter, fixed width, insets, vertical justification, ignore wrap, first baseline.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "tfo-columns-2",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-columns-3-gutter",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3,
+              "textColumnGutter": 18
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-gutter-only",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "textColumnGutter": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-fixed-width",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "useFixedColumnWidth": true,
+              "textColumnFixedWidth": 100,
+              "textColumnCount": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-insets-same",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "insetSpacing": [
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-insets-each",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "insetSpacing": [
+                2,
+                4,
+                6,
+                8
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-insets-back",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "insetSpacing": [
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "insetSpacing": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-vj-center",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-vj-bottom",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-vj-justify",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.JUSTIFY_ALIGN"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-ignore-wrap",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "ignoreWrap": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-baseline-cap",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "firstBaselineOffset": "FirstBaseline.CAP_HEIGHT"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-baseline-fixed",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "firstBaselineOffset": "FirstBaseline.FIXED_HEIGHT",
+              "minimumFirstBaselineOffset": 20
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-baseline-leading",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "firstBaselineOffset": "FirstBaseline.LEADING_OFFSET"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-columns-threaded",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf-1",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tfo-insets-rounded",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "insetSpacing": [
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 10,
+            "topRightCornerRadius": 10,
+            "bottomLeftCornerRadius": 10,
+            "bottomRightCornerRadius": 10
+          }
+        }
+      ]
+    }
+  ]
+}

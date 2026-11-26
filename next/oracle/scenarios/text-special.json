@@ -1,0 +1,638 @@
+{
+ "fixture": "text",
+ "about": "Type > Insert Special Character, Insert White Space, Insert Break Character (InDesign SpecialCharacters at the insertion point, as the menus insert them) and Type > Change Case.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "special-bullet",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "BULLET_CHARACTER"
+    }
+   ]
+  },
+  {
+   "name": "special-copyright",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "COPYRIGHT_SYMBOL"
+    }
+   ]
+  },
+  {
+   "name": "special-ellipsis",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "ELLIPSIS_CHARACTER"
+    }
+   ]
+  },
+  {
+   "name": "special-pilcrow",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "PARAGRAPH_SYMBOL"
+    }
+   ]
+  },
+  {
+   "name": "special-registered",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "REGISTERED_TRADEMARK"
+    }
+   ]
+  },
+  {
+   "name": "special-section",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "SECTION_SYMBOL"
+    }
+   ]
+  },
+  {
+   "name": "special-trademark",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "TRADEMARK_SYMBOL"
+    }
+   ]
+  },
+  {
+   "name": "special-page-current",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "AUTO_PAGE_NUMBER"
+    }
+   ]
+  },
+  {
+   "name": "special-page-next",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "NEXT_PAGE_NUMBER"
+    }
+   ]
+  },
+  {
+   "name": "special-page-previous",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "PREVIOUS_PAGE_NUMBER"
+    }
+   ]
+  },
+  {
+   "name": "special-section-marker",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "SECTION_MARKER"
+    }
+   ]
+  },
+  {
+   "name": "special-em-dash",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "EM_DASH"
+    }
+   ]
+  },
+  {
+   "name": "special-en-dash",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "EN_DASH"
+    }
+   ]
+  },
+  {
+   "name": "special-soft-hyphen",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "DISCRETIONARY_HYPHEN"
+    }
+   ]
+  },
+  {
+   "name": "special-nb-hyphen",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "NONBREAKING_HYPHEN"
+    }
+   ]
+  },
+  {
+   "name": "special-quote-dl",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "DOUBLE_LEFT_QUOTE"
+    }
+   ]
+  },
+  {
+   "name": "special-quote-dr",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "DOUBLE_RIGHT_QUOTE"
+    }
+   ]
+  },
+  {
+   "name": "special-quote-sl",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "SINGLE_LEFT_QUOTE"
+    }
+   ]
+  },
+  {
+   "name": "special-quote-sr",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "SINGLE_RIGHT_QUOTE"
+    }
+   ]
+  },
+  {
+   "name": "special-quote-ds",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "DOUBLE_STRAIGHT_QUOTE"
+    }
+   ]
+  },
+  {
+   "name": "special-quote-ss",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "SINGLE_STRAIGHT_QUOTE"
+    }
+   ]
+  },
+  {
+   "name": "special-right-indent-tab",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "RIGHT_INDENT_TAB"
+    }
+   ]
+  },
+  {
+   "name": "special-indent-here",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "INDENT_HERE_TAB"
+    }
+   ]
+  },
+  {
+   "name": "special-end-nested",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "END_NESTED_STYLE"
+    }
+   ]
+  },
+  {
+   "name": "special-non-joiner",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "ZERO_WIDTH_NONJOINER"
+    }
+   ]
+  },
+  {
+   "name": "special-em-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "EM_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-en-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "EN_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-nbsp",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "NONBREAKING_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-nbsp-fixed",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "FIXED_WIDTH_NONBREAKING_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-hair-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "HAIR_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-sixth-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "SIXTH_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-thin-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "THIN_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-quarter-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "QUARTER_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-third-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "THIRD_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-punct-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "PUNCTUATION_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-figure-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "FIGURE_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-flush-space",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "FLUSH_SPACE"
+    }
+   ]
+  },
+  {
+   "name": "special-column-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "COLUMN_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "special-frame-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "FRAME_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "special-page-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "PAGE_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "special-odd-page-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "ODD_PAGE_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "special-even-page-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "EVEN_PAGE_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "special-forced-line-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "FORCED_LINE_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "special-discretionary-line-break",
+   "steps": [
+    {
+     "op": "insertSpecial",
+     "target": "mixed",
+     "at": 6,
+     "special": "DISCRETIONARY_LINE_BREAK"
+    }
+   ]
+  },
+  {
+   "name": "case-upper",
+   "steps": [
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 0,
+     "end": 20,
+     "mode": "UPPERCASE"
+    }
+   ]
+  },
+  {
+   "name": "case-lower",
+   "steps": [
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 0,
+     "end": 20,
+     "mode": "LOWERCASE"
+    }
+   ]
+  },
+  {
+   "name": "case-title",
+   "steps": [
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 0,
+     "end": 20,
+     "mode": "TITLECASE"
+    }
+   ]
+  },
+  {
+   "name": "case-sentence",
+   "steps": [
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 0,
+     "end": 20,
+     "mode": "SENTENCECASE"
+    }
+   ]
+  },
+  {
+   "name": "case-words-upper",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "mixed",
+     "at": 13,
+     "text": "one TWO. three-four it’s x! y? z (five) 6th\r"
+    },
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 13,
+     "end": 56,
+     "mode": "UPPERCASE"
+    }
+   ]
+  },
+  {
+   "name": "case-words-lower",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "mixed",
+     "at": 13,
+     "text": "one TWO. three-four it’s x! y? z (five) 6th\r"
+    },
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 13,
+     "end": 56,
+     "mode": "LOWERCASE"
+    }
+   ]
+  },
+  {
+   "name": "case-words-title",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "mixed",
+     "at": 13,
+     "text": "one TWO. three-four it’s x! y? z (five) 6th\r"
+    },
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 13,
+     "end": 56,
+     "mode": "TITLECASE"
+    }
+   ]
+  },
+  {
+   "name": "case-words-sentence",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "mixed",
+     "at": 13,
+     "text": "one TWO. three-four it’s x! y? z (five) 6th\r"
+    },
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 13,
+     "end": 56,
+     "mode": "SENTENCECASE"
+    }
+   ]
+  },
+  {
+   "name": "case-mid-title",
+   "steps": [
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 2,
+     "end": 10,
+     "mode": "TITLECASE"
+    }
+   ]
+  },
+  {
+   "name": "case-mid-sentence",
+   "steps": [
+    {
+     "op": "changeCase",
+     "target": "mixed",
+     "start": 2,
+     "end": 10,
+     "mode": "SENTENCECASE"
+    }
+   ]
+  }
+ ]
+}

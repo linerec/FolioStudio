@@ -1,0 +1,198 @@
+{
+ "fixture": "editorial",
+ "extension": "changes",
+ "scenarios": [
+  {
+   "name": "changes-merged-delete-end",
+   "text": true,
+   "steps": [
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 4,
+     "end": 5,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  },
+  {
+   "name": "changes-merged-delete-across",
+   "text": true,
+   "steps": [
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 3,
+     "end": 5,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  },
+  {
+   "name": "changes-merged-delete-all",
+   "text": true,
+   "steps": [
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 0,
+     "end": 5,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  },
+  {
+   "name": "changes-merged-middle-after",
+   "text": true,
+   "steps": [
+    {
+     "op": "setTrackChanges",
+     "target": "body-0",
+     "document": false,
+     "enabled": false
+    },
+    {
+     "op": "insertTextAs",
+     "target": "body-0",
+     "at": 5,
+     "text": "FG",
+     "user": "Reviewer B",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setTrackChanges",
+     "target": "body-0",
+     "document": false,
+     "enabled": true
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 4,
+     "end": 5,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  },
+  {
+   "name": "changes-merged-middle-across",
+   "text": true,
+   "steps": [
+    {
+     "op": "setTrackChanges",
+     "target": "body-0",
+     "document": false,
+     "enabled": false
+    },
+    {
+     "op": "insertTextAs",
+     "target": "body-0",
+     "at": 5,
+     "text": "FG",
+     "user": "Reviewer B",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setTrackChanges",
+     "target": "body-0",
+     "document": false,
+     "enabled": true
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 3,
+     "end": 5,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  },
+  {
+   "name": "changes-merged-middle-before",
+   "text": true,
+   "steps": [
+    {
+     "op": "setTrackChanges",
+     "target": "body-0",
+     "document": false,
+     "enabled": false
+    },
+    {
+     "op": "insertTextAs",
+     "target": "body-0",
+     "at": 5,
+     "text": "FG",
+     "user": "Reviewer B",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setTrackChanges",
+     "target": "body-0",
+     "document": false,
+     "enabled": true
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 3,
+     "end": 4,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  }
+ ]
+}

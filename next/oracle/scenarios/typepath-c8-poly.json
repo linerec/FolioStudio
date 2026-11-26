@@ -1,0 +1,23 @@
+{
+ "fixture": "typepath-c6-poly",
+ "extension": "textpath",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "typepath-c8-poly-skew",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "SkewPathEffect"
+     }
+    }
+   ]
+  }
+ ],
+ "about": "Closed clockwise pentagon: path effects, path alignment and spacing against InDesign 2025."
+}

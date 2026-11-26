@@ -1,0 +1,79 @@
+{
+ "fixture": "nested-styles",
+ "extension": "nested-styles",
+ "scenarios": [
+  {
+   "name": "bs-nested-words",
+   "steps": [
+    {
+     "op": "paragraphStyle",
+     "target": "ns-0",
+     "start": 0,
+     "end": 1,
+     "style": "[Basic Paragraph]",
+     "clear": true
+    },
+    {
+     "op": "setNestedStyles",
+     "style": "[Basic Paragraph]",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    }
+   ],
+   "maxLocalError": 0.15
+  },
+  {
+   "name": "bs-nested-cleared",
+   "steps": [
+    {
+     "op": "setNestedStyles",
+     "style": "[Basic Paragraph]",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    },
+    {
+     "op": "setNestedStyles",
+     "style": "[Basic Paragraph]",
+     "items": []
+    }
+   ],
+   "maxLocalError": 0.15
+  },
+  {
+   "name": "bs-lines",
+   "steps": [
+    {
+     "op": "paragraphStyle",
+     "target": "ns-0",
+     "start": 0,
+     "end": 1,
+     "style": "[Basic Paragraph]",
+     "clear": true
+    },
+    {
+     "op": "setLineStyles",
+     "style": "[Basic Paragraph]",
+     "items": [
+      {
+       "style": "CharacterStyle/Blue",
+       "lines": 1
+      }
+     ]
+    }
+   ],
+   "maxLocalError": 0.15
+  }
+ ]
+}

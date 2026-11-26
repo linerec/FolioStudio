@@ -1,0 +1,10 @@
+{
+  "fixture": "pages-single",
+  "extension": "page-geometry",
+  "scenarios": [
+    {"name":"page-geometry-repeat","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-150,-200,250,100]},{"op":"setPageGeometry","pages":["u14c"],"bounds":[-200,-150,100,250]}]},
+    {"name":"page-geometry-noop","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-150,-200,150,200]}]},
+    {"name":"page-geometry-center","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-200,-150,200,150]}]},
+    {"name":"page-geometry-bottom-right","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-250,-100,150,200]}]}
+  ]
+}

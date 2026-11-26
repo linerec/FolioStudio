@@ -1,0 +1,31 @@
+{
+  "fixture": "text-format",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "bullets-convert-center-tab",
+      "steps": [
+        {"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"bulletsAndNumberingListType":"NUMBERED_LIST","numberingExpression":"Item ^#.^t"}},
+        {"op":"textFormat","target":"format","start":0,"end":0,"props":{"justification":"CENTER_ALIGN"}},
+        {"op":"convertStyleListsToText","style":"Format Body","labels":{}}
+      ]
+    },
+    {
+      "name": "bullets-convert-explicit-tab",
+      "steps": [
+        {"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"bulletsAndNumberingListType":"NUMBERED_LIST","numberingExpression":"Item ^#.^t"}},
+        {"op":"textFormat","target":"format","start":0,"end":0,"props":{"justification":"RIGHT_ALIGN","tabList":[{"position":100,"alignment":"LEFT_ALIGN","leader":"","alignmentCharacter":"."}]}},
+        {"op":"convertStyleListsToText","style":"Format Body","labels":{}}
+      ]
+    },
+    {
+      "name": "bullets-convert-two-tabs",
+      "steps": [
+        {"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"bulletsAndNumberingListType":"NUMBERED_LIST","numberingExpression":"Item ^#.^t"}},
+        {"op":"insertText","target":"format","at":0,"text":"Mid\t"},
+        {"op":"textFormat","target":"format","start":0,"end":0,"props":{"justification":"RIGHT_ALIGN"}},
+        {"op":"convertStyleListsToText","style":"Format Body","labels":{}}
+      ]
+    }
+  ]
+}

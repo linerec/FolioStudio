@@ -1,0 +1,23 @@
+{
+  "fixture": "typepath-c5-oval",
+  "extension": "textpath",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "typepath-c5-oval-flip",
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "FlipPathEffect": "Flipped"
+          }
+        }
+      ]
+    }
+  ],
+  "about": "Type on a closed oval: rainbow text from the first anchor, measured against InDesign 2025 (glyph matrices match to 0.001). Flipping a closed clockwise path makes InDesign draw no text at all (typepath-c5-oval-flip); see rule typepath-c6.closed-direction."
+}

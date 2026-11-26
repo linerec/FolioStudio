@@ -1,0 +1,54 @@
+{
+ "fixture": "layoutadj5",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj5-ltr-450x500",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 500
+    }
+   ]
+  },
+  {
+   "name": "layoutadj5-ltr-200x250",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250
+    }
+   ]
+  },
+  {
+   "name": "layoutadj5-ltr-600x400",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 400
+    }
+   ]
+  },
+  {
+   "name": "layoutadj5-ltr-150x200",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 150,
+     "height": 200
+    }
+   ]
+  }
+ ]
+}

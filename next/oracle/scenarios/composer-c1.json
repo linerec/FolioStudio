@@ -1,0 +1,14 @@
+{
+  "fixture": "composer-c1",
+  "scenarios": [
+    {"name":"noop","steps":[],"text":true},
+    {"name":"composer-c1-weight-0","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenWeight":0}}],"text":true},
+    {"name":"composer-c1-weight-2","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenWeight":2}}],"text":true},
+    {"name":"composer-c1-weight-3","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenWeight":3}}],"text":true},
+    {"name":"composer-c1-weight-7","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenWeight":7}}],"text":true},
+    {"name":"composer-c1-weight-8","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenWeight":8}}],"text":true},
+    {"name":"composer-c1-weight-10","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenWeight":10}}],"text":true},
+    {"name":"composer-c1-weight-direct-0","steps":[{"op":"textFormat","target":"f3","start":0,"end":1,"props":{"hyphenWeight":0}}],"text":true},
+    {"name":"composer-c1-weight-direct-10","steps":[{"op":"textFormat","target":"f4","start":0,"end":1,"props":{"hyphenWeight":10}}],"text":true}
+  ]
+}

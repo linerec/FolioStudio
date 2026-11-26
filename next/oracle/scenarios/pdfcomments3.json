@@ -1,0 +1,141 @@
+{
+  "fixture": "pdfcomments3",
+  "about": "PDF comments kept in the document (designmap PDFComment, Reply and the PDFComment*Destination elements): Mark Resolved / Mark Unresolved (Document.pdfComments[i].changeStatus) and Delete (remove) as the PDF Comments panel does them. `index` is the comment's place in Document.pdfComments for InDesign, `ids` its Self for Folio. The fixture is built by fixtures/make-pdfcomments3.py. Import and Accept are not scenarios: the import needs a PDF made from the same InDesign document and Accept is a panel click (rules/pdfcomments.ko.md).",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "status-resolve-note",
+      "steps": [
+        {
+          "op": "setPdfCommentStatus",
+          "index": 0,
+          "ids": [
+            "u149"
+          ],
+          "status": "resolved"
+        }
+      ]
+    },
+    {
+      "name": "status-reopen-resolved",
+      "steps": [
+        {
+          "op": "setPdfCommentStatus",
+          "index": 4,
+          "ids": [
+            "u14e"
+          ],
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "name": "status-resolve-twice",
+      "steps": [
+        {
+          "op": "setPdfCommentStatus",
+          "index": 1,
+          "ids": [
+            "u14b"
+          ],
+          "status": "resolved"
+        },
+        {
+          "op": "setPdfCommentStatus",
+          "index": 2,
+          "ids": [
+            "u14c"
+          ],
+          "status": "resolved"
+        },
+        {
+          "op": "setPdfCommentStatus",
+          "index": 1,
+          "ids": [
+            "u14b"
+          ],
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "name": "remove-note-with-reply",
+      "steps": [
+        {
+          "op": "removePdfComment",
+          "index": 0,
+          "ids": [
+            "u149"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove-text-comment",
+      "steps": [
+        {
+          "op": "removePdfComment",
+          "index": 2,
+          "ids": [
+            "u14c"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove-page-item-comment",
+      "steps": [
+        {
+          "op": "removePdfComment",
+          "index": 3,
+          "ids": [
+            "u14d"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove-all",
+      "steps": [
+        {
+          "op": "removePdfComment",
+          "index": 0,
+          "ids": [
+            "u149"
+          ]
+        },
+        {
+          "op": "removePdfComment",
+          "index": 0,
+          "ids": [
+            "u14b"
+          ]
+        },
+        {
+          "op": "removePdfComment",
+          "index": 0,
+          "ids": [
+            "u14c"
+          ]
+        },
+        {
+          "op": "removePdfComment",
+          "index": 0,
+          "ids": [
+            "u14d"
+          ]
+        },
+        {
+          "op": "removePdfComment",
+          "index": 0,
+          "ids": [
+            "u14e"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+ "fixture": "basic",
+ "about": "Transform panel menu settings, which InDesign keeps for the application (app.transformPreferences), not the document, so the IDML does not carry them: Adjust Stroke Weight / Adjust Effects when Scaling (what a scale through the transform does to the stroke weight and the effect lengths). The scenarios record the settings before the steps (transformPrefsBefore) and the runner restores them after each.",
+ "scenarios": [
+  {
+   "name": "tp-stroke-off-scale",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 1.5,
+     "sy": 1.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-stroke-on-scale",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 1.5,
+     "sy": 1.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-stroke-on-resize",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "resize",
+     "target": "r-fill",
+     "size": [
+      240,
+      150
+     ],
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-stroke-on-scalevalue",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "horizontalScale": 150,
+      "verticalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "tp-fx-off-scale",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "size": 6,
+        "xOffset": 8,
+        "yOffset": 8
+       }
+      }
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 2,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-fx-on-scale",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "size": 6,
+        "xOffset": 8,
+        "yOffset": 8
+       }
+      }
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 2,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-stroke-on-nonuniform",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 1,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-fx-on-resize",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "size": 6,
+        "xOffset": 8,
+        "yOffset": 8
+       }
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "target": "r-fill",
+     "size": [
+      320,
+      200
+     ],
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-stroke-on-wide",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 1.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-stroke-on-tall",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 1.5,
+     "sy": 2,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-fx-on-nonuniform",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "size": 6,
+        "xOffset": 8,
+        "yOffset": 4
+       }
+      }
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 3,
+     "sy": 2,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-dim-off-resize",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "dimensionsIncludeStrokeWeight",
+     "value": false
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeColor": "Black",
+      "strokeWeight": 10
+     }
+    },
+    {
+     "op": "resize",
+     "target": "r-fill",
+     "size": [
+      240,
+      150
+     ],
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tp-adjust-scale",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "whenScaling",
+     "value": "adjustScalingPercentage"
+    },
+    {
+     "op": "scalePoint",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 1.5,
+     "point": [
+      100,
+      100
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tp-redefine-scaling",
+   "window": true,
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "whenScaling",
+     "value": "adjustScalingPercentage"
+    },
+    {
+     "op": "scalePoint",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 1.5,
+     "point": [
+      100,
+      100
+     ]
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118852,
+     "action": "Redefine Scaling as 100%",
+     "panel": "Transform"
+    }
+   ]
+  },
+  {
+   "name": "tp-fx-on-tall",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": true
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "size": 6,
+        "xOffset": 8,
+        "yOffset": 4
+       }
+      }
+     }
+    },
+    {
+     "op": "scaleBy",
+     "target": "r-fill",
+     "sx": 2,
+     "sy": 3,
+     "anchor": "topLeft"
+    }
+   ]
+  }
+ ]
+}

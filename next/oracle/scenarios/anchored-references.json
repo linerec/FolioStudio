@@ -1,0 +1,304 @@
+{
+  "fixture": "anchored-references",
+  "extension": "anchored",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "anchor-reference-top",
+      "rules": [
+        "objects.anchored.options"
+      ],
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "left-column",
+          "props": {
+            "horizontalReferencePoint": "ColumnEdge",
+            "verticalReferencePoint": "ColumnEdge",
+            "horizontalAlignment": "LeftAlign",
+            "verticalAlignment": "TopAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "left-margins",
+          "props": {
+            "horizontalReferencePoint": "PageMargins",
+            "verticalReferencePoint": "PageMargins",
+            "horizontalAlignment": "LeftAlign",
+            "verticalAlignment": "TopAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "left-page",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "verticalReferencePoint": "PageEdge",
+            "horizontalAlignment": "LeftAlign",
+            "verticalAlignment": "TopAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-column",
+          "props": {
+            "horizontalReferencePoint": "ColumnEdge",
+            "verticalReferencePoint": "ColumnEdge",
+            "horizontalAlignment": "LeftAlign",
+            "verticalAlignment": "TopAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-margins",
+          "props": {
+            "horizontalReferencePoint": "PageMargins",
+            "verticalReferencePoint": "PageMargins",
+            "horizontalAlignment": "LeftAlign",
+            "verticalAlignment": "TopAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-page",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "verticalReferencePoint": "PageEdge",
+            "horizontalAlignment": "LeftAlign",
+            "verticalAlignment": "TopAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "anchor-reference-centre",
+      "rules": [
+        "objects.anchored.options"
+      ],
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "left-column",
+          "props": {
+            "horizontalReferencePoint": "ColumnEdge",
+            "verticalReferencePoint": "ColumnEdge",
+            "horizontalAlignment": "CenterAlign",
+            "verticalAlignment": "CenterAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "left-margins",
+          "props": {
+            "horizontalReferencePoint": "PageMargins",
+            "verticalReferencePoint": "PageMargins",
+            "horizontalAlignment": "CenterAlign",
+            "verticalAlignment": "CenterAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "left-page",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "verticalReferencePoint": "PageEdge",
+            "horizontalAlignment": "CenterAlign",
+            "verticalAlignment": "CenterAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-column",
+          "props": {
+            "horizontalReferencePoint": "ColumnEdge",
+            "verticalReferencePoint": "ColumnEdge",
+            "horizontalAlignment": "CenterAlign",
+            "verticalAlignment": "CenterAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-margins",
+          "props": {
+            "horizontalReferencePoint": "PageMargins",
+            "verticalReferencePoint": "PageMargins",
+            "horizontalAlignment": "CenterAlign",
+            "verticalAlignment": "CenterAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-page",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "verticalReferencePoint": "PageEdge",
+            "horizontalAlignment": "CenterAlign",
+            "verticalAlignment": "CenterAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "anchor-reference-bottom",
+      "rules": [
+        "objects.anchored.options"
+      ],
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "left-column",
+          "props": {
+            "horizontalReferencePoint": "ColumnEdge",
+            "verticalReferencePoint": "ColumnEdge",
+            "horizontalAlignment": "RightAlign",
+            "verticalAlignment": "BottomAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "left-margins",
+          "props": {
+            "horizontalReferencePoint": "PageMargins",
+            "verticalReferencePoint": "PageMargins",
+            "horizontalAlignment": "RightAlign",
+            "verticalAlignment": "BottomAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "left-page",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "verticalReferencePoint": "PageEdge",
+            "horizontalAlignment": "RightAlign",
+            "verticalAlignment": "BottomAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-column",
+          "props": {
+            "horizontalReferencePoint": "ColumnEdge",
+            "verticalReferencePoint": "ColumnEdge",
+            "horizontalAlignment": "RightAlign",
+            "verticalAlignment": "BottomAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-margins",
+          "props": {
+            "horizontalReferencePoint": "PageMargins",
+            "verticalReferencePoint": "PageMargins",
+            "horizontalAlignment": "RightAlign",
+            "verticalAlignment": "BottomAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "right-page",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "verticalReferencePoint": "PageEdge",
+            "horizontalAlignment": "RightAlign",
+            "verticalAlignment": "BottomAlign",
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 7,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        }
+      ]
+    }
+  ]
+}

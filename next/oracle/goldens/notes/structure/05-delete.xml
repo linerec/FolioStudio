@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u117" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="true" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<Leading type="unit">16</Leading>
+					<AppliedFont type="string">Arial</AppliedFont>
+				</Properties>
+				<Content>AB</Content>
+				<Change Date="2026-10-22T20:43:13" ChangeType="InsertedText" UserName="$ID/Unknown User Name" AppliedDocumentUser="dDocumentUser0">
+					<Content>xy</Content>
+				</Change>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Change Date="2026-10-22T20:43:13" ChangeType="DeletedText" UserName="$ID/Unknown User Name" AppliedDocumentUser="dDocumentUser0">
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Properties>
+								<Leading type="unit">16</Leading>
+								<AppliedFont type="string">Arial</AppliedFont>
+							</Properties>
+							<Content>C</Content>
+						</CharacterStyleRange>
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content>D</Content>
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+				</Change>
+				<Content>E</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

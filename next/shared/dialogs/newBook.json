@@ -1,0 +1,28 @@
+{
+  "title": "새 책",
+  "scope": "app",
+  "target": "none",
+  "okLabel": "저장",
+  "description": "An app dialog (File ▸ New ▸ Book…): the Save window of a new book file in the open project (project, given whole). folder is a folder of the project (\"\" the project folder itself; the list comes with the dialog), fileName the file's name (.foliobook is added when it lacks it). Applying sends book action new; when the file exists the dialog stays open asking to replace it (dialogState.confirm), and applyDialog action replace replaces it. The result is the book (path, book, status), which the screen opens. book is the project-relative path of the book open in the window (it is not saved over).",
+  "buttons": [{ "field": "openExisting", "label": "기존 책 열기…", "screen": "openExisting" }],
+  "confirm": { "code": "exists", "action": "replace", "title": "저장 확인", "message": "{0}이(가) 이미 있습니다. 바꾸시겠습니까?", "yes": "예", "no": "아니요" },
+  "errors": {
+    "name_required": "파일 이름을 넣으세요.",
+    "bad_name": "파일 이름으로 쓸 수 없습니다: {0}",
+    "folder_missing": "폴더가 없습니다: {0}",
+    "outside_project": "프로젝트 폴더 밖에는 만들 수 없습니다.",
+    "name_collision": "대소문자나 글자 모양만 다른 같은 이름이 이미 있습니다: {0}",
+    "open": "\"{0}\"은(는) 책으로 이미 열려 있어 저장할 수 없습니다."
+  },
+  "fields": [
+    { "name": "project", "label": "프로젝트", "type": "text", "path": "folder", "hidden": true, "required": true, "default": "", "maxLength": 1024, "group": "" },
+    { "name": "book", "label": "책", "type": "text", "hidden": true, "default": "", "maxLength": 1024, "group": "" },
+    { "name": "folder", "label": "저장 위치", "type": "choice", "source": "projectFolders", "none": "프로젝트 폴더", "default": "", "group": "" },
+    { "name": "fileName", "label": "파일 이름", "type": "text", "required": true, "trim": true, "default": "책 1.foliobook", "maxLength": 255, "group": "" },
+    { "name": "fileType", "label": "파일 형식", "type": "enum", "disabled": true, "default": "book", "options": [{ "value": "book", "label": "책 (*.foliobook)" }], "group": "" }
+  ],
+  "actions": {
+    "ok": [{ "cmd": "book", "root": "$project", "action": "new", "folder": "$folder", "fileName": "$fileName", "replace": false, "open": ["$book"] }],
+    "replace": [{ "cmd": "book", "root": "$project", "action": "new", "folder": "$folder", "fileName": "$fileName", "replace": true, "open": ["$book"] }]
+  }
+}

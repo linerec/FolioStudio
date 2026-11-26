@@ -1,0 +1,233 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "nlines-bold-2",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Bold",
+       "lines": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-size-1",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "styleCreate",
+     "kind": "character",
+     "name": "Big20",
+     "props": {
+      "pointSize": 20
+     }
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Big20",
+       "lines": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-two-items",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Bold",
+       "lines": 1
+      },
+      {
+       "style": "CharacterStyle/Format Italic",
+       "lines": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-repeat",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Bold",
+       "lines": 1
+      },
+      {
+       "style": "CharacterStyle/Format Italic",
+       "lines": 1
+      },
+      {
+       "style": "CharacterStyle/$ID/[No character style]",
+       "lines": 2,
+       "repeat": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-italic-all",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Italic",
+       "lines": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-serif-all",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Serif",
+       "lines": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-two-paras",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\rSecond paragraph keeps its own count of lines, so the styles start again at its first line and run down the same way as above, which is the point.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Bold",
+       "lines": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-local",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "characterStyle",
+     "target": "format",
+     "start": 10,
+     "end": 20,
+     "style": "Format Italic",
+     "clear": false
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Bold",
+       "lines": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nlines-dropcap",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setLineStyles",
+     "style": "ParagraphStyle/Format Body",
+     "items": [
+      {
+       "style": "CharacterStyle/Format Bold",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "이동",
+  "style": "transform",
+  "target": "selection",
+  "link": "polar",
+  "fields": [
+    {
+      "name": "h",
+      "label": "가로",
+      "type": "number",
+      "unit": "length-h",
+      "default": 0,
+      "min": -1000000000,
+      "max": 1000000000,
+      "group": "위치"
+    },
+    {
+      "name": "v",
+      "label": "세로",
+      "type": "number",
+      "unit": "length-v",
+      "default": 0,
+      "min": -1000000000,
+      "max": 1000000000,
+      "group": "위치"
+    },
+    {
+      "name": "distance",
+      "label": "거리",
+      "type": "number",
+      "unit": "length-h",
+      "default": 0,
+      "min": -1000000000,
+      "max": 1000000000,
+      "group": "이동 거리"
+    },
+    {
+      "name": "angle",
+      "label": "각도",
+      "type": "number",
+      "unit": "angle",
+      "default": 0,
+      "min": -3600000,
+      "max": 3600000,
+      "group": "이동 거리"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "move",
+        "ids": "$ids",
+        "by": [
+          "$h",
+          "$v"
+        ]
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          "$h",
+          "$v"
+        ]
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ],
+  "description": "h, v and distance are in points (the screen shows them in the ruler units); angle is in degrees counter-clockwise from the right; setting h or v updates distance and angle and the other way round."
+}

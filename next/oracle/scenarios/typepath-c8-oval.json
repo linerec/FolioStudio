@@ -1,0 +1,59 @@
+{
+ "fixture": "typepath-c5-oval",
+ "extension": "textpath",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "typepath-c8-oval-skew",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "SkewPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-oval-ribbon",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "RibbonPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-oval-gravity",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "GravityPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-oval-spacing",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathSpacing": "12"
+     }
+    }
+   ]
+  }
+ ],
+ "about": "Oval: path effects, path alignment and spacing against InDesign 2025."
+}

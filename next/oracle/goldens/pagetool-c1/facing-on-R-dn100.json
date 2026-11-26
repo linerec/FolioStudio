@@ -1,0 +1,295 @@
+{
+ "name": "facing-on-R-dn100",
+ "measured": "InDesign 2025 20.5.5.119, real mouse (Page tool) / real keyboard (control bar), 2026-11-12",
+ "fixture": null,
+ "objectsMoveWithPage": true,
+ "enableAdjustLayout": false,
+ "action": {
+  "kind": "drag",
+  "page": 2,
+  "wanted": [
+   0,
+   100
+  ],
+  "typed": null
+ },
+ "pageMovedAgainstRest": [
+  0,
+  0
+ ],
+ "pagesAbsoluteShift": {
+  "1": [
+   0,
+   0
+  ],
+  "2": [
+   0,
+   0
+  ],
+  "3": [
+   0,
+   98
+  ],
+  "4": [
+   0,
+   98
+  ]
+ },
+ "before": {
+  "items": {
+   "A0": {
+    "tl": [
+     400,
+     -520
+    ],
+    "br": [
+     500,
+     -460
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "DR": {
+    "tl": [
+     340,
+     260
+    ],
+    "br": [
+     420,
+     300
+    ],
+    "parentPage": "3",
+    "spread": 1
+   },
+   "DL": {
+    "tl": [
+     40,
+     260
+    ],
+    "br": [
+     120,
+     300
+    ],
+    "parentPage": "2",
+    "spread": 1
+   },
+   "PRo": {
+    "tl": [
+     680,
+     150
+    ],
+    "br": [
+     750,
+     220
+    ],
+    "parentPage": null,
+    "spread": 1
+   },
+   "PLo": {
+    "tl": [
+     -150,
+     150
+    ],
+    "br": [
+     -80,
+     220
+    ],
+    "parentPage": null,
+    "spread": 1
+   },
+   "SP": {
+    "tl": [
+     250,
+     200
+    ],
+    "br": [
+     350,
+     260
+    ],
+    "parentPage": "2",
+    "spread": 1
+   },
+   "AR": {
+    "tl": [
+     400,
+     60
+    ],
+    "br": [
+     500,
+     120
+    ],
+    "parentPage": "3",
+    "spread": 1
+   },
+   "AL": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "2",
+    "spread": 1
+   }
+  },
+  "guides": [
+   {
+    "label": "guideS",
+    "orientation": "H",
+    "fitToPage": false,
+    "location": 300,
+    "parentPage": "2",
+    "spread": 1
+   },
+   {
+    "label": "guideR",
+    "orientation": "V",
+    "fitToPage": true,
+    "location": 100,
+    "parentPage": "2",
+    "spread": 1
+   },
+   {
+    "label": "guideL",
+    "orientation": "V",
+    "fitToPage": true,
+    "location": 100,
+    "parentPage": "2",
+    "spread": 1
+   }
+  ]
+ },
+ "after": {
+  "items": {
+   "A0": {
+    "tl": [
+     400,
+     -520
+    ],
+    "br": [
+     500,
+     -460
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "DR": {
+    "tl": [
+     340,
+     260
+    ],
+    "br": [
+     420,
+     300
+    ],
+    "parentPage": "3",
+    "spread": 1
+   },
+   "DL": {
+    "tl": [
+     40,
+     260
+    ],
+    "br": [
+     120,
+     300
+    ],
+    "parentPage": "2",
+    "spread": 1
+   },
+   "PRo": {
+    "tl": [
+     680,
+     150
+    ],
+    "br": [
+     750,
+     220
+    ],
+    "parentPage": null,
+    "spread": 1
+   },
+   "PLo": {
+    "tl": [
+     -150,
+     150
+    ],
+    "br": [
+     -80,
+     220
+    ],
+    "parentPage": null,
+    "spread": 1
+   },
+   "SP": {
+    "tl": [
+     250,
+     200
+    ],
+    "br": [
+     350,
+     260
+    ],
+    "parentPage": "2",
+    "spread": 1
+   },
+   "AR": {
+    "tl": [
+     400,
+     158
+    ],
+    "br": [
+     500,
+     218
+    ],
+    "parentPage": "3",
+    "spread": 1
+   },
+   "AL": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "2",
+    "spread": 1
+   }
+  },
+  "guides": [
+   {
+    "label": "guideS",
+    "orientation": "H",
+    "fitToPage": false,
+    "location": 300,
+    "parentPage": "2",
+    "spread": 1
+   },
+   {
+    "label": "guideR",
+    "orientation": "V",
+    "fitToPage": true,
+    "location": 100,
+    "parentPage": "2",
+    "spread": 1
+   },
+   {
+    "label": "guideL",
+    "orientation": "V",
+    "fitToPage": true,
+    "location": 100,
+    "parentPage": "2",
+    "spread": 1
+   }
+  ]
+ },
+ "referencePage": "2",
+ "pageSize": [
+  300,
+  400
+ ]
+}

@@ -1,0 +1,200 @@
+{
+ "fixture": "basic",
+ "about": "Content Placer (Page.contentPlace, measured in InDesign 2025, conveyor-c2): the object copied onto a page with its top left corner at `at` (page coordinates); Create Link makes the object links and a text frame's story link (LinkResourceId on the source, Link + LinkedPageItemOption / LinkedStoryOption on the copy); Map Styles is the story link's ApplyStyleMappings; Update Link re-copies the source keeping the copy's top left corner; Unlink removes the Link and the option.",
+ "scenarios": [
+  {
+   "name": "cc-place-plain",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "r-fill"
+     ],
+     "page": 0,
+     "at": [
+      500,
+      300
+     ],
+     "link": false,
+     "mapStyles": false,
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cc-link-rect",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "r-fill"
+     ],
+     "page": 0,
+     "at": [
+      500,
+      300
+     ],
+     "link": true,
+     "mapStyles": false,
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cc-link-text",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "tf"
+     ],
+     "page": 1,
+     "at": [
+      400,
+      300
+     ],
+     "link": true,
+     "mapStyles": false,
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cc-link-text-map",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "tf"
+     ],
+     "page": 1,
+     "at": [
+      400,
+      300
+     ],
+     "link": true,
+     "mapStyles": true,
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cc-link-image",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "img"
+     ],
+     "page": 2,
+     "at": [
+      400,
+      300
+     ],
+     "link": true,
+     "mapStyles": false,
+     "labels": [
+      "placed"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cc-link-twice",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "r-fill"
+     ],
+     "page": 0,
+     "at": [
+      500,
+      300
+     ],
+     "link": true,
+     "labels": [
+      "placed"
+     ]
+    },
+    {
+     "op": "contentPlace",
+     "targets": [
+      "r-fill"
+     ],
+     "page": 0,
+     "at": [
+      500,
+      450
+     ],
+     "link": true,
+     "labels": [
+      "placed-2"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cc-update-text",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "tf"
+     ],
+     "page": 1,
+     "at": [
+      400,
+      300
+     ],
+     "link": true,
+     "labels": [
+      "placed"
+     ]
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Added by the source. "
+    },
+    {
+     "op": "contentUpdate",
+     "target": "placed"
+    }
+   ]
+  },
+  {
+   "name": "cc-unlink",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "tf"
+     ],
+     "page": 1,
+     "at": [
+      400,
+      300
+     ],
+     "link": true,
+     "labels": [
+      "placed"
+     ]
+    },
+    {
+     "op": "contentUnlink",
+     "target": "placed"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u19d" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Continue one</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Continue two</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Plain between</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Continue three</Content>
+				<Br />
+				<Content>Continue four</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="72" FirstLineIndent="-36" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Direct indent</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="108" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingLevel="3" NumberingContinue="false" NumberingExpression="^3.^t">
+			<Properties>
+				<NumberingFormat type="string">A, B, C, D...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingRestartPolicies RestartPolicy="RangeOfLevels" LowerLevel="1" UpperLevel="2" />
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style2</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Level 3 deep</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="144" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingLevel="4" NumberingContinue="false" NumberingExpression="^4)^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingRestartPolicies RestartPolicy="RangeOfLevels" LowerLevel="1" UpperLevel="3" />
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style3</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Level 4 deep</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="72" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style4</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Level 2 bullet</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Level 1 again</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Bulleted" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style5</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Style carries the list</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Bulleted">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Style but no list</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Bulleted" LeftIndent="72" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style4</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Heading level via style</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Done</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

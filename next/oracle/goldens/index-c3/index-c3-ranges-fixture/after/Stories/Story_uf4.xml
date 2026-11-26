@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="uf4" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Other" FirstLineIndent="3">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u23e" PageReferenceType="ToEndOfDocument" ReferencedTopic="u1e7TopicnTwin" Id="24" />
+				<PageReference Self="u23d" PageReferenceType="ToEndOfStory" ReferencedTopic="u1e7TopicnTwin" Id="23" />
+				<PageReference Self="u236" PageReferenceType="ToNextUseOfStyle" ReferencedTopic="u1e7TopicnUseHead0" Id="16">
+					<Properties>
+						<PageReferenceLimit type="object">ParagraphStyle/Format Heading</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u233" PageReferenceType="ToNextStyleChange" ReferencedTopic="u1e7TopicnStyleChg0" Id="13" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Alpha o</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold" FontStyle="Regular">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>ne.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold" FontStyle="Regular">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u227" PageReferenceType="ToEndOfDocument" ReferencedTopic="u1e7TopicnDocEnd" Id="1" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Be</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Tracking="20">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>ta tw</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>o.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Other" FirstLineIndent="3" StartParagraph="NextPage">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u23a" PageReferenceType="ToEndOfSection" ReferencedTopic="u1e7TopicnMerge" Id="20" />
+				<PageReference Self="u232" PageReferenceType="ForNextNPages" ReferencedTopic="u1e7TopicnNPages9" Id="12">
+					<Properties>
+						<PageReferenceLimit type="long">9</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u231" PageReferenceType="ForNextNPages" ReferencedTopic="u1e7TopicnNPages2" Id="11">
+					<Properties>
+						<PageReferenceLimit type="long">2</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u22b" PageReferenceType="ForNextNParagraphs" ReferencedTopic="u1e7TopicnNPar2" Id="5">
+					<Properties>
+						<PageReferenceLimit type="long">2</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u228" PageReferenceType="ToEndOfSection" ReferencedTopic="u1e7TopicnSecEnd1" Id="2" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Gamma </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>three</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u22d" PageReferenceType="ForNextNParagraphs" ReferencedTopic="u1e7TopicnNPar3" Id="7">
+					<Properties>
+						<PageReferenceLimit type="long">3</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u22c" PageReferenceType="ForNextNParagraphs" ReferencedTopic="u1e7TopicnNPar1" Id="6">
+					<Properties>
+						<PageReferenceLimit type="long">1</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u22a" PageReferenceType="ToEndOfStory" ReferencedTopic="u1e7TopicnStoryEnd" Id="4" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four Delta four </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u23b" PageReferenceType="CurrentPage" ReferencedTopic="u1e7TopicnMerge" Id="21" />
+				<PageReference Self="u230" PageReferenceType="ForNextNParagraphs" ReferencedTopic="u1e7TopicnNParLate2" Id="10">
+					<Properties>
+						<PageReferenceLimit type="long">2</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u22f" PageReferenceType="ForNextNParagraphs" ReferencedTopic="u1e7TopicnNParLate1" Id="9">
+					<Properties>
+						<PageReferenceLimit type="long">1</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Delta four Delta four Delta four Delta four Delta four Delta four end.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Heading" StartParagraph="NextPage">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u239" PageReferenceType="ToNextUseOfStyle" ReferencedTopic="u1e7TopicnUseOther4" Id="19">
+					<Properties>
+						<PageReferenceLimit type="object">ParagraphStyle/Format Other</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u237" PageReferenceType="ToNextUseOfStyle" ReferencedTopic="u1e7TopicnUseHead4" Id="17">
+					<Properties>
+						<PageReferenceLimit type="object">ParagraphStyle/Format Heading</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u234" PageReferenceType="ToNextStyleChange" ReferencedTopic="u1e7TopicnStyleChg4" Id="14" />
+				<PageReference Self="u22e" PageReferenceType="ForNextNParagraphs" ReferencedTopic="u1e7TopicnNPar9" Id="8">
+					<Properties>
+						<PageReferenceLimit type="long">9</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u229" PageReferenceType="ToEndOfSection" ReferencedTopic="u1e7TopicnSecEnd2" Id="3" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Epsilon five.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Other" FirstLineIndent="3" StartParagraph="NextPage">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<PageReference Self="u238" PageReferenceType="ToNextUseOfStyle" ReferencedTopic="u1e7TopicnUseHead5" Id="18">
+					<Properties>
+						<PageReferenceLimit type="object">ParagraphStyle/Format Heading</PageReferenceLimit>
+					</Properties>
+				</PageReference>
+				<PageReference Self="u235" PageReferenceType="ToNextStyleChange" ReferencedTopic="u1e7TopicnStyleChg5" Id="15" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Zeta six.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<PageReference Self="u23c" PageReferenceType="CurrentPage" ReferencedTopic="u1e7TopicnMerge" Id="22" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Eta seven.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

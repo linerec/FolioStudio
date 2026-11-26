@@ -1,0 +1,356 @@
+{
+ "fixture": "variables",
+ "about": "Text variables: the parent's header holds a running header by paragraph style, one by character style, the page number, the last page number, the chapter number and a custom text; the pages hold the styled paragraphs.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "var-pages",
+   "steps": [
+    {
+     "op": "move",
+     "target": "body-0",
+     "by": [
+      0,
+      1
+     ]
+    },
+    {
+     "op": "move",
+     "target": "body-1",
+     "by": [
+      0,
+      1
+     ]
+    },
+    {
+     "op": "move",
+     "target": "body-2",
+     "by": [
+      0,
+      1
+     ]
+    },
+    {
+     "op": "move",
+     "target": "body-3",
+     "by": [
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "var-insert-chapter",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 6,
+     "variable": "Chapter Number"
+    }
+   ]
+  },
+  {
+   "name": "var-insert-last",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Last Page Number"
+    }
+   ]
+  },
+  {
+   "name": "var-insert-head",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-1",
+     "at": 5,
+     "variable": "By Head"
+    }
+   ]
+  },
+  {
+   "name": "var-insert-accent",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-3",
+     "at": 3,
+     "variable": "By Accent"
+    }
+   ]
+  },
+  {
+   "name": "var-insert-custom",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-2",
+     "at": 10,
+     "variable": "Custom Note"
+    }
+   ]
+  },
+  {
+   "name": "var-insert-in-accent",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 40,
+     "variable": "Custom Note"
+    }
+   ]
+  },
+  {
+   "name": "var-insert-two",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-3",
+     "at": 4,
+     "variable": "By Head"
+    },
+    {
+     "op": "insertVariable",
+     "target": "body-3",
+     "at": 0,
+     "variable": "Last Page Number"
+    }
+   ]
+  },
+  {
+   "name": "var-def-custom",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "My Note",
+     "type": "CUSTOM_TEXT_TYPE",
+     "options": {
+      "contents": "Hello there"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-head",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Head Upper",
+     "type": "MATCH_PARAGRAPH_STYLE_TYPE",
+     "options": {
+      "appliedParagraphStyle": "Head",
+      "searchStrategy": "SearchStrategies.LAST_ON_PAGE",
+      "changeCase": "ChangecaseMode.UPPERCASE",
+      "deleteEndPunctuation": true,
+      "textBefore": "[",
+      "textAfter": "]"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-char",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Accent Text",
+     "type": "MATCH_CHARACTER_STYLE_TYPE",
+     "options": {
+      "appliedCharacterStyle": "Accent",
+      "textBefore": "<",
+      "textAfter": ">"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-chapter",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Chap",
+     "type": "CHAPTER_NUMBER_TYPE",
+     "options": {
+      "textBefore": "Ch. ",
+      "textAfter": "."
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-date",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Day",
+     "type": "CREATION_DATE_TYPE",
+     "options": {
+      "textBefore": "on ",
+      "format": "yyyy-MM-dd",
+      "textAfter": "!"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-file",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "File",
+     "type": "FILE_NAME_TYPE",
+     "options": {
+      "includePath": true,
+      "includeExtension": true,
+      "textBefore": "f:"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-edit-header",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Running Header",
+     "edit": true,
+     "options": {
+      "appliedParagraphStyle": "Head",
+      "searchStrategy": "SearchStrategies.LAST_ON_PAGE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-edit-rename",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "By Head",
+     "edit": true,
+     "rename": "Heading Text",
+     "options": {
+      "textBefore": ">> "
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-last",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Of Last",
+     "type": "LAST_PAGE_NUMBER_TYPE",
+     "options": {
+      "textBefore": "of ",
+      "textAfter": " pages",
+      "scope": "VariableScopes.DOCUMENT_SCOPE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-title",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Head Title",
+     "type": "MATCH_PARAGRAPH_STYLE_TYPE",
+     "options": {
+      "appliedParagraphStyle": "Head",
+      "changeCase": "ChangecaseMode.TITLECASE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-sentence",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Head Sentence",
+     "type": "MATCH_PARAGRAPH_STYLE_TYPE",
+     "options": {
+      "appliedParagraphStyle": "Head",
+      "changeCase": "ChangecaseMode.SENTENCECASE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-def-lower",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Head Lower",
+     "type": "MATCH_PARAGRAPH_STYLE_TYPE",
+     "options": {
+      "appliedParagraphStyle": "Head",
+      "changeCase": "ChangecaseMode.LOWERCASE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "var-convert-custom",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-2",
+     "at": 10,
+     "variable": "Custom Note"
+    },
+    {
+     "op": "convertVariable",
+     "target": "body-2",
+     "index": 0,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "name": "var-convert-head",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-1",
+     "at": 5,
+     "variable": "By Head"
+    },
+    {
+     "op": "convertVariable",
+     "target": "body-1",
+     "index": 0,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "name": "var-del-unused",
+   "steps": [
+    {
+     "op": "defineVariable",
+     "name": "Tmp",
+     "type": "CUSTOM_TEXT_TYPE",
+     "options": {
+      "contents": "x"
+     }
+    },
+    {
+     "op": "deleteVariable",
+     "name": "Tmp"
+    }
+   ]
+  }
+ ]
+}

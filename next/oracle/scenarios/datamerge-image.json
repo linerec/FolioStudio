@@ -1,0 +1,51 @@
+{
+  "fixture": "basic",
+  "extension": "datamerge-image-fields",
+  "scenarios": [
+    {
+      "name": "datamerge-image-field",
+      "steps": [
+        {
+          "op": "insertDataMergeImageField",
+          "target": "r-plain",
+          "field": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "datamerge-image-repeat",
+      "steps": [
+        {
+          "op": "insertDataMergeImageField",
+          "target": "r-plain",
+          "field": "Photo"
+        },
+        {
+          "op": "insertDataMergeImageField",
+          "target": "r-fill",
+          "field": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "datamerge-image-oval",
+      "steps": [
+        {
+          "op": "insertDataMergeImageField",
+          "target": "oval",
+          "field": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "datamerge-image-poly",
+      "steps": [
+        {
+          "op": "insertDataMergeImageField",
+          "target": "poly",
+          "field": "Photo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "새 프로젝트",
+  "scope": "app",
+  "target": "none",
+  "description": "An app dialog (no document needed). parent is the whole path of an existing folder the project folder is made in (the screen fills it from a folder window); name is the project folder's name, usable on every system. Applying sends projectCreate with dir = parent/name; the result is the project (root, name, id), which the screen then opens.",
+  "note": "프로젝트는 폴더 하나입니다. 맨 위에 folio.project를 만들고, 문서·그림·글꼴은 이 폴더 안에 상대 경로로 둡니다. NAS 동기화 폴더에 만들어도 됩니다.",
+  "pathPreview": ["parent", "name"],
+  "okLabel": "만들기",
+  "fields": [
+    {
+      "name": "parent",
+      "label": "위치",
+      "type": "text",
+      "path": "folder",
+      "choose": "위치…",
+      "chooseTitle": "새 프로젝트를 만들 위치",
+      "default": "",
+      "required": true,
+      "maxLength": 1024,
+      "group": ""
+    },
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "path": "name",
+      "default": "새 프로젝트",
+      "required": true,
+      "group": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "projectCreate", "dir": { "$path": ["parent", "name"] }, "name": { "$trim": "name" } }
+    ]
+  }
+}

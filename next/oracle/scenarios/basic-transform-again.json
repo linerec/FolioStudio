@@ -1,0 +1,317 @@
+{
+ "fixture": "basic",
+ "about": "Object > Transform Again, Transform Sequence Again and the two Individually variants (menu actions 118805, 118837, 118842, 118843) after a transformation of another object (DOM transform() with an anchor, move()): what the next selection becomes. InDesign remembers the matrix with its reference point (relative to the new selection's bounds), the sequence since the selection last changed, and applies them to the selection together or to each object.",
+ "scenarios": [
+  {
+   "name": "again-rotate-center",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-rotate-topleft",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "topLeft"
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-move",
+   "window": true,
+   "steps": [
+    {
+     "op": "move",
+     "target": "r-plain",
+     "by": [
+      20,
+      10
+     ]
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-scale",
+   "window": true,
+   "steps": [
+    {
+     "op": "scaleBy",
+     "target": "r-plain",
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-flip",
+   "window": true,
+   "steps": [
+    {
+     "op": "flip",
+     "target": "r-plain",
+     "how": "horizontal",
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-last-only",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "move",
+     "target": "r-plain",
+     "by": [
+      20,
+      10
+     ]
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-sequence",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "move",
+     "target": "r-plain",
+     "by": [
+      20,
+      10
+     ]
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118837,
+     "action": "Transform Sequence Again"
+    }
+   ]
+  },
+  {
+   "name": "again-sequence-reset",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "target": "r-plain"
+    },
+    {
+     "op": "move",
+     "target": "r-plain",
+     "by": [
+      20,
+      10
+     ]
+    },
+    {
+     "op": "select",
+     "target": "r-fill"
+    },
+    {
+     "op": "menu",
+     "id": 118837,
+     "action": "Transform Sequence Again"
+    }
+   ]
+  },
+  {
+   "name": "again-multi",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "targets": [
+      "r-fill",
+      "oval"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 118805,
+     "action": "Transform Again"
+    }
+   ]
+  },
+  {
+   "name": "again-individually",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "select",
+     "targets": [
+      "r-fill",
+      "oval"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 118842,
+     "action": "Transform Again Individually"
+    }
+   ]
+  },
+  {
+   "name": "again-sequence-individually",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "move",
+     "target": "r-plain",
+     "by": [
+      20,
+      10
+     ]
+    },
+    {
+     "op": "select",
+     "targets": [
+      "r-fill",
+      "oval"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 118843,
+     "action": "Transform Sequence Again Individually"
+    }
+   ]
+  },
+  {
+   "name": "again-sequence-multi",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "r-plain",
+     "by": 30,
+     "anchor": "center"
+    },
+    {
+     "op": "move",
+     "target": "r-plain",
+     "by": [
+      20,
+      10
+     ]
+    },
+    {
+     "op": "select",
+     "targets": [
+      "r-fill",
+      "oval"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 118837,
+     "action": "Transform Sequence Again"
+    }
+   ]
+  }
+ ]
+}

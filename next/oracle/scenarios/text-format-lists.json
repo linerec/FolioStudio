@@ -1,0 +1,411 @@
+{
+ "fixture": "text-format",
+ "about": "Type > Bulleted & Numbered Lists > Apply/Remove Bullets (menu action 108291) and Apply/Remove Numbers (108292) on a text selection (window scenarios): all selected paragraphs already that list -> removed, else all become it; applying sets LeftIndent 18 / FirstLineIndent -18 and the first numbered paragraph gets NumberingContinue=false unless a numbered paragraph precedes it. Three paragraphs are made first (insertText at 20). Restart/Continue Numbering (108296) toggles NumberingContinue of the one numbered paragraph the selection is in (disabled for no list or several paragraphs).",
+ "scenarios": [
+  {
+   "name": "list-bullets-two",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30
+    }
+   ]
+  },
+  {
+   "name": "list-numbers-two",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-bullets-off",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30
+    }
+   ]
+  },
+  {
+   "name": "list-numbers-continue",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 25,
+     "end": 50,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-numbers-caret",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 30,
+     "end": 30,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-switch-to-numbers",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-bullets-mixed",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 25,
+     "end": 30
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 50
+    }
+   ]
+  },
+  {
+   "name": "list-numbers-after-bullets",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 10
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 25,
+     "end": 30,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-numbers-off",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 30,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-bullets-other",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 70,
+     "end": 80
+    }
+   ]
+  },
+  {
+   "name": "list-bullets-third",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 95,
+     "end": 100
+    }
+   ]
+  },
+  {
+   "name": "list-numbers-other-then-off",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 70,
+     "end": 80,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 70,
+     "end": 80,
+     "numbers": true
+    }
+   ]
+  },
+  {
+   "name": "list-restart-middle",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 60,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 30,
+     "end": 30,
+     "id": 108296
+    }
+   ]
+  },
+  {
+   "name": "list-restart-twice",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 60,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 30,
+     "end": 30,
+     "id": 108296
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 30,
+     "end": 30,
+     "id": 108296
+    }
+   ]
+  },
+  {
+   "name": "list-restart-first",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 60,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 5,
+     "id": 108296
+    }
+   ]
+  },
+  {
+   "name": "list-restart-partial",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 60,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 25,
+     "end": 35,
+     "id": 108296
+    }
+   ]
+  },
+  {
+   "name": "list-restart-last",
+   "window": true,
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 20,
+     "text": "\rSecond paragraph here\rThird paragraph here\r"
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 5,
+     "end": 60,
+     "numbers": true
+    },
+    {
+     "op": "list",
+     "target": "format",
+     "start": 50,
+     "end": 50,
+     "id": 108296
+    }
+   ]
+  }
+ ]
+}

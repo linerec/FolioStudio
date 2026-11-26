@@ -1,0 +1,588 @@
+{
+ "source": "InDesign 2025 Style Options dialog, Shortcut field, line \"Currently Assigned to\" (stylekeys-c2 sessions p1/p1b/p2a, real key input)",
+ "note": "indesign = the text InDesign showed (read by eye from the dialog captures; OCR only as a helper); folio = what the menu data gives for the same key. Equal in `same` (an ellipsis is three periods in InDesign, one character in Folio menus), different labels in `different`. A style that holds the key hides the command; hidden InDesign commands that Folio has no command for are not listed. spec is the engine spelling of a style shortcut (modifiers ctrl, shift, alt in that order, punctuation as the character).",
+ "same": [
+  {
+   "spec": "ctrl+n",
+   "folioId": "file.new",
+   "indesign": "New: Document..."
+  },
+  {
+   "spec": "ctrl+o",
+   "folioId": "file.open",
+   "indesign": "Open..."
+  },
+  {
+   "spec": "ctrl+s",
+   "folioId": "file.save",
+   "indesign": "Save"
+  },
+  {
+   "spec": "ctrl+shift+s",
+   "folioId": "file.saveAs",
+   "indesign": "Save As..."
+  },
+  {
+   "spec": "ctrl+alt+s",
+   "folioId": "file.saveCopy",
+   "indesign": "Save a Copy..."
+  },
+  {
+   "spec": "ctrl+d",
+   "folioId": "file.place",
+   "indesign": "Place..."
+  },
+  {
+   "spec": "ctrl+shift+alt+p",
+   "folioId": "file.package",
+   "indesign": "Package..."
+  },
+  {
+   "spec": "ctrl+alt+p",
+   "folioId": "file.documentSetup",
+   "indesign": "Document Setup..."
+  },
+  {
+   "spec": "ctrl+shift+alt+i",
+   "folioId": "file.fileInfo",
+   "indesign": "File Info..."
+  },
+  {
+   "spec": "ctrl+shift+v",
+   "folioId": "edit.pasteNoFormat",
+   "indesign": "Paste without Formatting"
+  },
+  {
+   "spec": "ctrl+alt+v",
+   "folioId": "edit.pasteInto",
+   "indesign": "Paste Into"
+  },
+  {
+   "spec": "ctrl+shift+alt+v",
+   "folioId": "edit.pasteInPlace",
+   "indesign": "Paste in Place"
+  },
+  {
+   "spec": "ctrl+shift+alt+d",
+   "folioId": "edit.duplicate",
+   "indesign": "Duplicate"
+  },
+  {
+   "spec": "ctrl+alt+u",
+   "folioId": "edit.stepRepeat",
+   "indesign": "Step and Repeat..."
+  },
+  {
+   "spec": "ctrl+shift+a",
+   "folioId": "edit.deselectAll",
+   "indesign": "Deselect All"
+  },
+  {
+   "spec": "ctrl+y",
+   "folioId": "edit.storyEditor",
+   "indesign": "Edit Story"
+  },
+  {
+   "spec": "ctrl+f",
+   "folioId": "edit.findChange",
+   "indesign": "Find/Change..."
+  },
+  {
+   "spec": "ctrl+alt+f",
+   "folioId": "edit.findNext",
+   "indesign": "Find Next"
+  },
+  {
+   "spec": "ctrl+i",
+   "folioId": "edit.spelling",
+   "indesign": "Spelling: Check Spelling..."
+  },
+  {
+   "spec": "ctrl+k",
+   "folioId": "edit.preferences",
+   "indesign": "Preferences: General..."
+  },
+  {
+   "spec": "ctrl+shift+p",
+   "folioId": "layout.addPage",
+   "indesign": "Pages: Add Page"
+  },
+  {
+   "spec": "shift+alt+p",
+   "folioId": "layout.adjust",
+   "indesign": "Adjust Layout..."
+  },
+  {
+   "spec": "ctrl+shift+pageup",
+   "folioId": "layout.firstPage",
+   "indesign": "First Page"
+  },
+  {
+   "spec": "shift+pageup",
+   "folioId": "layout.prevPage",
+   "indesign": "Previous Page"
+  },
+  {
+   "spec": "shift+pagedown",
+   "folioId": "layout.nextPage",
+   "indesign": "Next Page"
+  },
+  {
+   "spec": "ctrl+shift+pagedown",
+   "folioId": "layout.lastPage",
+   "indesign": "Last Page"
+  },
+  {
+   "spec": "ctrl+j",
+   "folioId": "layout.goToPage",
+   "indesign": "Go to Page..."
+  },
+  {
+   "spec": "ctrl+pageup",
+   "folioId": "layout.goBack",
+   "indesign": "Go Back"
+  },
+  {
+   "spec": "ctrl+pagedown",
+   "folioId": "layout.goForward",
+   "indesign": "Go Forward"
+  },
+  {
+   "spec": "ctrl+t",
+   "folioId": "panel.character",
+   "indesign": "Type & Tables: Character"
+  },
+  {
+   "spec": "ctrl+alt+t",
+   "folioId": "panel.paragraph",
+   "indesign": "Type & Tables: Paragraph"
+  },
+  {
+   "spec": "ctrl+m",
+   "folioId": "panel.paragraph",
+   "indesign": "Type & Tables: Paragraph"
+  },
+  {
+   "spec": "ctrl+shift+t",
+   "folioId": "type.tabs",
+   "indesign": "Tabs"
+  },
+  {
+   "spec": "shift+alt+f11",
+   "folioId": "type.glyphs",
+   "indesign": "Type & Tables: Glyphs"
+  },
+  {
+   "spec": "shift+f11",
+   "folioId": "panel.characterStyles",
+   "indesign": "Styles: Character Styles"
+  },
+  {
+   "spec": "ctrl+shift+f11",
+   "folioId": "panel.characterStyles",
+   "indesign": "Styles: Character Styles"
+  },
+  {
+   "spec": "ctrl+f11",
+   "folioId": "panel.paragraphStyles",
+   "indesign": "Styles: Paragraph Styles"
+  },
+  {
+   "spec": "ctrl+shift+o",
+   "folioId": "type.createOutlines",
+   "indesign": "Create Outlines"
+  },
+  {
+   "spec": "ctrl+alt+i",
+   "folioId": "type.hiddenChars",
+   "indesign": "Show Hidden Characters"
+  },
+  {
+   "spec": "ctrl+alt+4",
+   "folioId": "object.transformSequenceAgain",
+   "indesign": "Transform Again: Transform Sequence Again"
+  },
+  {
+   "spec": "ctrl+shift+m",
+   "folioId": "object.move",
+   "indesign": "Transform: Move..."
+  },
+  {
+   "spec": "ctrl+[",
+   "folioId": "object.backward",
+   "indesign": "Arrange: Send Backward"
+  },
+  {
+   "spec": "ctrl+shift+[",
+   "folioId": "object.sendBack",
+   "indesign": "Arrange: Send to Back"
+  },
+  {
+   "spec": "ctrl+alt+[",
+   "folioId": "object.selectNextBelow",
+   "indesign": "Select: Next Object Below"
+  },
+  {
+   "spec": "ctrl+shift+alt+[",
+   "folioId": "object.selectBelow",
+   "indesign": "Select: Last Object Below"
+  },
+  {
+   "spec": "ctrl+g",
+   "folioId": "object.group",
+   "indesign": "Group"
+  },
+  {
+   "spec": "ctrl+shift+g",
+   "folioId": "object.ungroup",
+   "indesign": "Ungroup"
+  },
+  {
+   "spec": "ctrl+l",
+   "folioId": "object.lock",
+   "indesign": "Lock"
+  },
+  {
+   "spec": "ctrl+alt+l",
+   "folioId": "object.unlockAll",
+   "indesign": "Unlock All on Spread"
+  },
+  {
+   "spec": "ctrl+3",
+   "folioId": "object.hide",
+   "indesign": "Hide"
+  },
+  {
+   "spec": "ctrl+alt+3",
+   "folioId": "object.showAll",
+   "indesign": "Show All on Spread"
+  },
+  {
+   "spec": "ctrl+alt+e",
+   "folioId": "object.fitContentFrame",
+   "indesign": "Fitting: Fit Content to Frame"
+  },
+  {
+   "spec": "ctrl+alt+c",
+   "folioId": "object.fitFrameContent",
+   "indesign": "Fitting: Fit Frame to Content"
+  },
+  {
+   "spec": "ctrl+shift+e",
+   "folioId": "object.centerContent",
+   "indesign": "Fitting: Center Content"
+  },
+  {
+   "spec": "ctrl+shift+alt+e",
+   "folioId": "object.fitProportional",
+   "indesign": "Fitting: Fit Content Proportionally"
+  },
+  {
+   "spec": "ctrl+shift+alt+c",
+   "folioId": "object.fillProportional",
+   "indesign": "Fitting: Fill Frame Proportionally"
+  },
+  {
+   "spec": "ctrl+alt+m",
+   "folioId": "object.dropShadow",
+   "indesign": "Effects: Drop Shadow..."
+  },
+  {
+   "spec": "ctrl+b",
+   "folioId": "object.textFrameOptions",
+   "indesign": "Text Frame Options..."
+  },
+  {
+   "spec": "ctrl+8",
+   "folioId": "object.compoundPath",
+   "indesign": "Paths: Make Compound Path"
+  },
+  {
+   "spec": "ctrl+shift+alt+t",
+   "folioId": "table.create",
+   "indesign": "Insert Table..."
+  },
+  {
+   "spec": "ctrl+shift+alt+y",
+   "folioId": "view.overprint",
+   "indesign": "Overprint Preview"
+  },
+  {
+   "spec": "ctrl+=",
+   "folioId": "view.zoomIn",
+   "indesign": "Zoom In"
+  },
+  {
+   "spec": "ctrl+-",
+   "folioId": "view.zoomOut",
+   "indesign": "Zoom Out"
+  },
+  {
+   "spec": "ctrl+0",
+   "folioId": "view.fitPage",
+   "indesign": "Fit Page in Window"
+  },
+  {
+   "spec": "ctrl+alt+0",
+   "folioId": "view.fitSpread",
+   "indesign": "Fit Spread in Window"
+  },
+  {
+   "spec": "ctrl+1",
+   "folioId": "view.actualSize",
+   "indesign": "Actual Size"
+  },
+  {
+   "spec": "ctrl+shift+alt+0",
+   "folioId": "view.pasteboard",
+   "indesign": "Entire Pasteboard"
+  },
+  {
+   "spec": "ctrl+alt+=",
+   "folioId": "view.fitSelection",
+   "indesign": "Fit Selection in Window"
+  },
+  {
+   "spec": "shift+alt+pageup",
+   "folioId": "layout.firstSpread",
+   "indesign": "First Spread"
+  },
+  {
+   "spec": "shift+alt+pagedown",
+   "folioId": "layout.lastSpread",
+   "indesign": "Last Spread"
+  },
+  {
+   "spec": "ctrl+shift+alt+1",
+   "folioId": "sep.cyan",
+   "indesign": "Show Cyan Plate"
+  },
+  {
+   "spec": "ctrl+shift+alt+2",
+   "folioId": "sep.magenta",
+   "indesign": "Show Magenta Plate"
+  },
+  {
+   "spec": "ctrl+shift+alt+3",
+   "folioId": "sep.yellow",
+   "indesign": "Show Yellow Plate"
+  },
+  {
+   "spec": "ctrl+shift+alt+4",
+   "folioId": "sep.black",
+   "indesign": "Show Black Plate"
+  },
+  {
+   "spec": "ctrl+shift+alt+`",
+   "folioId": "sep.all",
+   "indesign": "Show All Plates"
+  },
+  {
+   "spec": "shift+w",
+   "folioId": "view.mode.presentation",
+   "indesign": "Screen Mode: Presentation"
+  },
+  {
+   "spec": "ctrl+r",
+   "folioId": "view.rulers",
+   "indesign": "Hide Rulers"
+  },
+  {
+   "spec": "ctrl+h",
+   "folioId": "view.frameEdges",
+   "indesign": "Extras: Show Frame Edges"
+  },
+  {
+   "spec": "ctrl+alt+y",
+   "folioId": "view.threads",
+   "indesign": "Extras: Show Text Threads"
+  },
+  {
+   "spec": "ctrl+;",
+   "folioId": "view.guides",
+   "indesign": "Grids & Guides: Show Guides"
+  },
+  {
+   "spec": "ctrl+alt+;",
+   "folioId": "view.lockGuides",
+   "indesign": "Grids & Guides: Lock Guides"
+  },
+  {
+   "spec": "ctrl+shift+;",
+   "folioId": "view.snapGuides",
+   "indesign": "Grids & Guides: Snap to Guides"
+  },
+  {
+   "spec": "ctrl+u",
+   "folioId": "view.smartGuides",
+   "indesign": "Grids & Guides: Smart Guides"
+  },
+  {
+   "spec": "ctrl+f12",
+   "folioId": "panel.pages",
+   "indesign": "Pages"
+  },
+  {
+   "spec": "ctrl+shift+d",
+   "folioId": "panel.links",
+   "indesign": "Links"
+  },
+  {
+   "spec": "ctrl+f10",
+   "folioId": "panel.stroke",
+   "indesign": "Stroke"
+  },
+  {
+   "spec": "shift+f7",
+   "folioId": "panel.align",
+   "indesign": "Object & Layout: Align"
+  },
+  {
+   "spec": "ctrl+shift+f10",
+   "folioId": "panel.effects",
+   "indesign": "Effects"
+  },
+  {
+   "spec": "ctrl+f7",
+   "folioId": "panel.objectStyles",
+   "indesign": "Styles: Object Styles"
+  },
+  {
+   "spec": "ctrl+shift+alt+f",
+   "folioId": "panel.preflight",
+   "indesign": "Output: Preflight"
+  },
+  {
+   "spec": "shift+f6",
+   "folioId": "panel.separations",
+   "indesign": "Output: Separations Preview"
+  },
+  {
+   "spec": "ctrl+alt+6",
+   "folioId": "window.control",
+   "indesign": "Control"
+  },
+  {
+   "spec": "ctrl+shift+alt+k",
+   "folioId": "id.object.clippingPath.options",
+   "indesign": "Clipping Path: Options..."
+  },
+  {
+   "spec": "ctrl+shift+alt+8",
+   "folioId": "id.object.paths.releaseCompoundPath",
+   "indesign": "Paths: Release Compound Path"
+  },
+  {
+   "spec": "ctrl+shift+alt+b",
+   "folioId": "id.table.tableOptions.tableSetup",
+   "indesign": "Table Options: Table Setup..."
+  },
+  {
+   "spec": "ctrl+shift+alt+z",
+   "folioId": "id.view.displayPerformance.fastDisplay",
+   "indesign": "Display Performance: Fast Display"
+  },
+  {
+   "spec": "ctrl+alt+z",
+   "folioId": "id.view.displayPerformance.typicalDisplay",
+   "indesign": "Display Performance: Typical Display"
+  },
+  {
+   "spec": "ctrl+alt+h",
+   "folioId": "id.view.displayPerformance.highQualityDisplay",
+   "indesign": "Display Performance: High Quality Display"
+  },
+  {
+   "spec": "shift+f8",
+   "folioId": "id.window.typeAndTables.index",
+   "indesign": "Type & Tables: Index"
+  },
+  {
+   "spec": "shift+f9",
+   "folioId": "id.window.typeAndTables.table",
+   "indesign": "Type & Tables: Table"
+  },
+  {
+   "spec": "ctrl+shift+alt+l",
+   "folioId": "id.panel.pages.overrideAllParentPageItems",
+   "indesign": "Pages: Override All Parent Page Items"
+  },
+  {
+   "spec": "ctrl+shift+k",
+   "folioId": "id.panel.character.allCaps",
+   "indesign": "Character: All Caps"
+  },
+  {
+   "spec": "ctrl+shift+h",
+   "folioId": "id.panel.character.smallCaps",
+   "indesign": "Character: Small Caps"
+  },
+  {
+   "spec": "ctrl+shift+=",
+   "folioId": "id.panel.character.superscript",
+   "indesign": "Character: Superscript"
+  },
+  {
+   "spec": "ctrl+shift+alt+=",
+   "folioId": "id.panel.character.subscript",
+   "indesign": "Character: Subscript"
+  },
+  {
+   "spec": "ctrl+shift+u",
+   "folioId": "id.panel.character.underline",
+   "indesign": "Character: Underline"
+  },
+  {
+   "spec": "ctrl+shift+/",
+   "folioId": "id.panel.character.strikethrough",
+   "indesign": "Character: Strikethrough"
+  },
+  {
+   "spec": "ctrl+shift+alt+j",
+   "folioId": "id.panel.paragraph.justification",
+   "indesign": "Paragraph: Justification..."
+  },
+  {
+   "spec": "ctrl+alt+r",
+   "folioId": "id.panel.paragraph.dropCapsAndNestedStyles",
+   "indesign": "Paragraph: Drop Caps and Nested Styles..."
+  },
+  {
+   "spec": "ctrl+alt+j",
+   "folioId": "id.panel.paragraph.paragraphRules",
+   "indesign": "Paragraph: Paragraph Rules..."
+  }
+ ],
+ "different": [
+  {
+   "spec": "ctrl+e",
+   "folioId": "file.exportPdf",
+   "indesign": "Export...",
+   "folio": "Export (PDF/X)…"
+  },
+  {
+   "spec": "ctrl+alt+7",
+   "folioId": "control.textMode",
+   "indesign": "Toggle Character and Paragraph Modes in Control Panel",
+   "folio": "Toggle Character / Paragraph Controls"
+  },
+  {
+   "spec": "ctrl+5",
+   "folioId": "view.zoom50",
+   "indesign": "50% size",
+   "folio": "50%"
+  },
+  {
+   "spec": "ctrl+2",
+   "folioId": "view.zoom200",
+   "indesign": "200% size",
+   "folio": "200%"
+  },
+  {
+   "spec": "ctrl+4",
+   "folioId": "view.zoom400",
+   "indesign": "400% size",
+   "folio": "400%"
+  }
+ ]
+}

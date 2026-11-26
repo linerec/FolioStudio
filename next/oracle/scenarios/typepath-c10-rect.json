@@ -1,0 +1,183 @@
+{
+ "fixture": "typepath-c6-rect-cw",
+ "extension": "textpath",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "typepath-c10-rect-top",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-bottom",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-mid-top",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "100",
+      "EndBracket": "900"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-mid-bottom",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "100",
+      "EndBracket": "900"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-wrap-bottom",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "1000",
+      "EndBracket": "1359"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-top-center",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "CenterPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-top-bottom",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-spacing-6",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathSpacing": "-6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-spacing-12",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathSpacing": "-12"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-top-spacing6",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment",
+      "PathSpacing": "6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-rect-bottom-spacing-6",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment",
+      "PathSpacing": "-6"
+     }
+    }
+   ]
+  }
+ ],
+ "about": "Closed clockwise rectangle (stroke 6, miter join) against InDesign 2025: path alignment Top/Bottom moves the brackets onto the stroke's offset path (EndBracket 1359 -> 1377 / 1335.9), glyphs walk that path (typepath-c10)."
+}

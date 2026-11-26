@@ -1,0 +1,27 @@
+{
+  "title": "혼합 잉크 그룹 삭제",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "mixedInkGroup",
+  "description": "Swatches panel > Delete Swatch on a mixed ink group: ids is the group id; the group and all its swatches go, and what used them gets `replace` (a swatch that is not the group's, its tints' or a gradient).",
+  "note": "\"{0}\" 그룹과 그 견본 {1}개를 지웁니다. 쓰던 곳에는 이 견본을 넣습니다:",
+  "fields": [
+    {
+      "name": "replace",
+      "label": "바꿀 견본",
+      "type": "choice",
+      "source": "replacementSwatches",
+      "default": "Color/Black",
+      "orFirst": true
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "deleteSwatch",
+        "id": "$ids0",
+        "replace": "$replace"
+      }
+    ]
+  }
+}

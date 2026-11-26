@@ -1,0 +1,11 @@
+{
+  "fixture": "pages-single",
+  "extension": "pagectl-size",
+  "scenarios": [
+    {"name":"pagectl-size-a4-topleft","window":false,"steps":[{"op":"setPageSize","pages":["u14c"],"preset":"A4","anchor":[0,0]}]},
+    {"name":"pagectl-size-letter-center","window":false,"steps":[{"op":"setPageSize","pages":["u14c"],"preset":"Letter","anchor":[0.5,0.5]}]},
+    {"name":"pagectl-size-landscape-tabloid","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-200,-150,200,150]},{"op":"setPageSize","pages":["u14c"],"preset":"Tabloid","anchor":[1,1]}]},
+    {"name":"pagectl-size-width-only","window":false,"steps":[{"op":"setPageSize","pages":["u14c"],"width":450,"anchor":[1,0]}]},
+    {"name":"pagectl-size-two-pages","window":false,"steps":[{"op":"setPageSize","pages":["u14c","u169"],"preset":"A5","anchor":[0.5,0]}]}
+  ]
+}

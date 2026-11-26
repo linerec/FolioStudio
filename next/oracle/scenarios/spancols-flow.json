@@ -1,0 +1,249 @@
+{
+  "fixture": "spancols-flow",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "spancols-flow-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "flow",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-flow-two",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "flow",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "spanColumnMinSpaceBefore": 6,
+            "spanColumnMinSpaceAfter": 8
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-flow-split",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "flow",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "splitColumnInsideGutter": 8,
+            "splitColumnOutsideGutter": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-consecutive",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 30,
+          "end": 58,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS"
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml"
+      ]
+    },
+    {
+      "name": "spancols-consecutive-space",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 30,
+          "end": 58,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanColumnMinSpaceBefore": 6,
+            "spanColumnMinSpaceAfter": 8
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.contiguous-span"
+      ]
+    },
+    {
+      "name": "spancols-consecutive-split",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 30,
+          "end": 58,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "splitColumnInsideGutter": 8,
+            "splitColumnOutsideGutter": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.split-end"
+      ]
+    },
+    {
+      "name": "spancols-consecutive-different-space",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanColumnMinSpaceBefore": 6,
+            "spanColumnMinSpaceAfter": 8
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 54,
+          "end": 55,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanColumnMinSpaceBefore": 10,
+            "spanColumnMinSpaceAfter": 12
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.contiguous-span"
+      ]
+    },
+    {
+      "name": "spancols-consecutive-different-count",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "spanColumnMinSpaceBefore": 6,
+            "spanColumnMinSpaceAfter": 8
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 54,
+          "end": 55,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanColumnMinSpaceBefore": 10,
+            "spanColumnMinSpaceAfter": 12
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.contiguous-span"
+      ]
+    },
+    {
+      "name": "spancols-consecutive-after-max",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "spanColumnMinSpaceAfter": 12
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 54,
+          "end": 55,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanColumnMinSpaceBefore": 6
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.contiguous-span"
+      ]
+    },
+    {
+      "name": "spancols-split-last",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "consecutive",
+          "start": 54,
+          "end": 55,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2,
+            "splitColumnInsideGutter": 8,
+            "splitColumnOutsideGutter": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.idml",
+        "paragraph.columns.split-end"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "fixture": "objlayer-c4",
+  "extension": "objlayer-c3",
+  "scenarios": [
+    {"name":"noop", "steps":[]},
+    {"name":"psd-show-red", "steps":[{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":2,"visible":true}]},
+    {"name":"psd-hide-green", "steps":[{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":1,"visible":false}]},
+    {"name":"psd-hide-base", "steps":[{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":0,"visible":false}]},
+    {"name":"psd-red-only", "steps":[{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":0,"visible":false},{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":1,"visible":false},{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":2,"visible":true}]},
+    {"name":"psd-all-hidden", "steps":[{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":0,"visible":false},{"op":"setGraphicLayerVisibility","target":"psd","file":"objlayer-c4.psd","layer":1,"visible":false}]}
+  ]
+}

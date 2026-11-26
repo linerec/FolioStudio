@@ -1,0 +1,145 @@
+{
+  "fixture": "basic",
+  "about": "Object > Paths > Make Compound Path and Release Compound Path (DOM makeCompoundPath(with) / releaseCompoundPath()). The base keeps its own label (a relabelled base would read as a removed object in the check); the released second object is labelled rel-b.",
+  "scenarios": [
+    {
+      "name": "compound-two",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-plain",
+            "oval"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-three",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-plain",
+            "oval",
+            "poly"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-rotated",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-plain",
+            "r-rot"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-release",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-plain",
+            "oval"
+          ]
+        },
+        {
+          "op": "releaseCompound",
+          "target": "r-plain",
+          "names": [
+            "",
+            "rel-b"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-reverse",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "oval",
+            "r-plain"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-front",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "poly",
+            "r-plain"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-fill",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-fill",
+            "r-plain"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-release-three",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-plain",
+            "oval",
+            "poly"
+          ]
+        },
+        {
+          "op": "releaseCompound",
+          "target": "r-plain",
+          "names": [
+            "",
+            "rel-b",
+            "rel-c"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-sheared",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-plain",
+            "r-shear"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compound-top",
+      "steps": [
+        {
+          "op": "makeCompound",
+          "targets": [
+            "r-top",
+            "r-plain"
+          ]
+        }
+      ]
+    }
+  ]
+}

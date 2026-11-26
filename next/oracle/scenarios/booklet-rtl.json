@@ -1,0 +1,11 @@
+{
+  "fixture": "booklet-rtl",
+  "extension": "printing-booklet",
+  "comparison": "booklet",
+  "scenarios": [
+    {"name":"booklet-rtl-saddle","steps":[],"pdf":false,"options":{"bookletType":"saddle"}},
+    {"name":"booklet-rtl-perfect","steps":[],"pdf":false,"options":{"bookletType":"perfectBound","signatureSize":4}},
+    {"name":"booklet-rtl-consecutive2","steps":[],"pdf":false,"options":{"bookletType":"consecutive2"}},
+    {"name":"booklet-rtl-consecutive3","steps":[],"pdf":false,"options":{"bookletType":"consecutive3"}}
+  ]
+}

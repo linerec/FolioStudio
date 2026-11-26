@@ -1,0 +1,6638 @@
+[
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "SmallCap",
+    "value": "72.5",
+    "pointer": "/text_preferences/small_cap",
+    "expected": 72.5,
+    "items": [
+      "TextPreferences.small_cap"
+    ],
+    "golden": "basic/prefs-advanced-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "SuperscriptSize",
+    "value": "61.5",
+    "pointer": "/text_preferences/superscript_size",
+    "expected": 61.5,
+    "items": [
+      "TextPreferences.superscript_size"
+    ],
+    "golden": "basic/prefs-advanced-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "SuperscriptPosition",
+    "value": "28.5",
+    "pointer": "/text_preferences/superscript_position",
+    "expected": 28.5,
+    "items": [
+      "TextPreferences.superscript_position"
+    ],
+    "golden": "basic/prefs-advanced-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "SubscriptSize",
+    "value": "62.5",
+    "pointer": "/text_preferences/subscript_size",
+    "expected": 62.5,
+    "items": [
+      "TextPreferences.subscript_size"
+    ],
+    "golden": "basic/prefs-advanced-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "SubscriptPosition",
+    "value": "29.5",
+    "pointer": "/text_preferences/subscript_position",
+    "expected": 29.5,
+    "items": [
+      "TextPreferences.subscript_position"
+    ],
+    "golden": "basic/prefs-advanced-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "UseParagraphLeading",
+    "value": "true",
+    "pointer": "/text_preferences/use_paragraph_leading",
+    "expected": true,
+    "items": [
+      "TextPreferences.use_paragraph_leading"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "UseParagraphLeading",
+    "value": "false",
+    "pointer": "/text_preferences/use_paragraph_leading",
+    "expected": false,
+    "items": [
+      "TextPreferences.use_paragraph_leading"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "ZOrderTextWrap",
+    "value": "true",
+    "pointer": "/text_preferences/z_order_text_wrap",
+    "expected": true,
+    "items": [
+      "TextPreferences.z_order_text_wrap"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "ZOrderTextWrap",
+    "value": "false",
+    "pointer": "/text_preferences/z_order_text_wrap",
+    "expected": false,
+    "items": [
+      "TextPreferences.z_order_text_wrap"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GridPreference",
+    "key": "BaselineStart",
+    "value": "7.5",
+    "pointer": "/text_preferences/baseline_start",
+    "expected": 7.5,
+    "items": [
+      "TextPreferences.baseline_start"
+    ],
+    "golden": "basic/view-all-grid-prefs"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GridPreference",
+    "key": "BaselineDivision",
+    "value": "15.5",
+    "pointer": "/text_preferences/baseline_division",
+    "expected": 15.5,
+    "items": [
+      "TextPreferences.baseline_division"
+    ],
+    "golden": "basic/view-all-grid-prefs"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GridPreference",
+    "key": "BaselineGridRelativeOption",
+    "value": "TopOfMargin",
+    "pointer": "/text_preferences/baseline_relative_to",
+    "expected": "TopOfMargin",
+    "items": [
+      "TextPreferences.baseline_relative_to"
+    ],
+    "golden": "basic/view-all-grid-prefs"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "ViewPreference",
+    "key": "HorizontalMeasurementUnits",
+    "value": "Millimeters",
+    "pointer": "/view/horizontal_units",
+    "expected": "Millimeters",
+    "items": [
+      "ViewPreferences.horizontal_units"
+    ],
+    "golden": "basic/units-horizontal-millimeters"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "ViewPreference",
+    "key": "VerticalMeasurementUnits",
+    "value": "Inches",
+    "pointer": "/view/vertical_units",
+    "expected": "Inches",
+    "items": [
+      "ViewPreferences.vertical_units"
+    ],
+    "golden": "basic/units-vertical-inches"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "ViewPreference",
+    "key": "StrokeMeasurementUnits",
+    "value": "Millimeters",
+    "pointer": "/view/stroke_units",
+    "expected": "Millimeters",
+    "items": [
+      "ViewPreferences.stroke_units"
+    ],
+    "golden": "basic/units-stroke-millimeters"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "ViewPreference",
+    "key": "RulerOrigin",
+    "value": "PageOrigin",
+    "pointer": "/view/ruler_origin",
+    "expected": "PageOrigin",
+    "items": [
+      "ViewPreferences.ruler_origin"
+    ],
+    "golden": "basic/units-ruler-origin-page"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "ViewPreference",
+    "key": "CursorKeyIncrement",
+    "value": "2.75",
+    "pointer": "/view/cursor_key_increment",
+    "expected": 2.75,
+    "items": [
+      "ViewPreferences.cursor_key_increment"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "ViewPreference",
+    "key": "GuideSnaptoZone",
+    "value": "8.5",
+    "pointer": "/view/snap_zone",
+    "expected": 8.5,
+    "items": [
+      "ViewPreferences.snap_zone"
+    ],
+    "golden": "basic/guides-snap-zone"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "LeadingKeyIncrement",
+    "value": "3.5",
+    "pointer": "/view/leading_key_increment",
+    "expected": 3.5,
+    "items": [
+      "ViewPreferences.leading_key_increment"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "BaselineShiftKeyIncrement",
+    "value": "2.5",
+    "pointer": "/view/baseline_shift_key_increment",
+    "expected": 2.5,
+    "items": [
+      "ViewPreferences.baseline_shift_key_increment"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "TextPreference",
+    "key": "KerningKeyIncrement",
+    "value": "25.0",
+    "pointer": "/view/kerning_key_increment",
+    "expected": 25.0,
+    "items": [
+      "ViewPreferences.kerning_key_increment"
+    ],
+    "golden": "basic/prefs-type"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "RulerGuidesViewThreshold",
+    "value": "18.5",
+    "pointer": "/view/ruler_guides_threshold",
+    "expected": 18.5,
+    "items": [
+      "ViewPreferences.ruler_guides_threshold"
+    ],
+    "golden": "basic/guides-ruler-threshold"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesLocked",
+    "value": "true",
+    "pointer": "/view/guides_locked",
+    "expected": true,
+    "items": [
+      "ViewPreferences.guides_locked"
+    ],
+    "golden": "basic/view-guides-locked"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesLocked",
+    "value": "false",
+    "pointer": "/view/guides_locked",
+    "expected": false,
+    "items": [
+      "ViewPreferences.guides_locked"
+    ],
+    "golden": "basic/view-guides-locked"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesShown",
+    "value": "true",
+    "pointer": "/view/guides_shown",
+    "expected": true,
+    "items": [
+      "ViewPreferences.guides_shown"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesShown",
+    "value": "false",
+    "pointer": "/view/guides_shown",
+    "expected": false,
+    "items": [
+      "ViewPreferences.guides_shown"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesInBack",
+    "value": "true",
+    "pointer": "/view/guides_in_back",
+    "expected": true,
+    "items": [
+      "ViewPreferences.guides_in_back"
+    ],
+    "golden": "basic/view-guides-in-back"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesInBack",
+    "value": "false",
+    "pointer": "/view/guides_in_back",
+    "expected": false,
+    "items": [
+      "ViewPreferences.guides_in_back"
+    ],
+    "golden": "basic/view-guides-in-back"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesSnapto",
+    "value": "true",
+    "pointer": "/view/guides_snap",
+    "expected": true,
+    "items": [
+      "ViewPreferences.guides_snap"
+    ],
+    "golden": "basic/view-guides-snap-off"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "GuidesSnapto",
+    "value": "false",
+    "pointer": "/view/guides_snap",
+    "expected": false,
+    "items": [
+      "ViewPreferences.guides_snap"
+    ],
+    "golden": "basic/view-guides-snap-off"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "ColumnGuideLocked",
+    "value": "true",
+    "pointer": "/view/column_guides_locked",
+    "expected": true,
+    "items": [
+      "ViewPreferences.column_guides_locked"
+    ],
+    "golden": "basic/view-column-guides-unlocked"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "ColumnGuideLocked",
+    "value": "false",
+    "pointer": "/view/column_guides_locked",
+    "expected": false,
+    "items": [
+      "ViewPreferences.column_guides_locked"
+    ],
+    "golden": "basic/view-column-guides-unlocked"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "MatchPreviewBackgroundToThemeColor",
+    "value": "true",
+    "pointer": "/view/match_preview_background",
+    "expected": true,
+    "items": [
+      "ViewPreferences.match_preview_background"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "MatchPreviewBackgroundToThemeColor",
+    "value": "false",
+    "pointer": "/view/match_preview_background",
+    "expected": false,
+    "items": [
+      "ViewPreferences.match_preview_background"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "PreviewBackgroundColor",
+    "value": "Cyan",
+    "pointer": "/view/preview_background_color",
+    "expected": {
+      "Named": "Cyan"
+    },
+    "items": [
+      "ViewPreferences.preview_background_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "PreviewBackgroundColor",
+    "value": "17 83 211",
+    "pointer": "/view/preview_background_color",
+    "expected": {
+      "Rgb": [
+        17.0,
+        83.0,
+        211.0
+      ]
+    },
+    "items": [
+      "ViewPreferences.preview_background_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "BleedGuideColor",
+    "value": "Cyan",
+    "pointer": "/view/bleed_guide_color",
+    "expected": {
+      "Named": "Cyan"
+    },
+    "items": [
+      "ViewPreferences.bleed_guide_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "BleedGuideColor",
+    "value": "17 83 211",
+    "pointer": "/view/bleed_guide_color",
+    "expected": {
+      "Rgb": [
+        17.0,
+        83.0,
+        211.0
+      ]
+    },
+    "items": [
+      "ViewPreferences.bleed_guide_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "SlugGuideColor",
+    "value": "Cyan",
+    "pointer": "/view/slug_guide_color",
+    "expected": {
+      "Named": "Cyan"
+    },
+    "items": [
+      "ViewPreferences.slug_guide_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "SlugGuideColor",
+    "value": "17 83 211",
+    "pointer": "/view/slug_guide_color",
+    "expected": {
+      "Rgb": [
+        17.0,
+        83.0,
+        211.0
+      ]
+    },
+    "items": [
+      "ViewPreferences.slug_guide_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "RulerGuidesColor",
+    "value": "Cyan",
+    "pointer": "/view/ruler_guides_color",
+    "expected": {
+      "Named": "Cyan"
+    },
+    "items": [
+      "ViewPreferences.ruler_guides_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "GuidePreference",
+    "key": "RulerGuidesColor",
+    "value": "17 83 211",
+    "pointer": "/view/ruler_guides_color",
+    "expected": {
+      "Rgb": [
+        17.0,
+        83.0,
+        211.0
+      ]
+    },
+    "items": [
+      "ViewPreferences.ruler_guides_color"
+    ],
+    "golden": "basic/guides-ruler-color-custom"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "PasteboardMargins",
+    "value": "111 222",
+    "pointer": "/view/pasteboard_margins",
+    "expected": [
+      111.0,
+      222.0
+    ],
+    "items": [
+      "ViewPreferences.pasteboard_margins"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "PasteboardMargins",
+    "value": "111 222",
+    "pointer": "/pasteboard/horizontal",
+    "expected": 111.0,
+    "items": [
+      "Pasteboard.horizontal"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "MinimumSpaceAboveAndBelow",
+    "value": "222",
+    "pointer": "/pasteboard/vertical",
+    "expected": 222.0,
+    "items": [
+      "Pasteboard.vertical"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "PasteboardPreference",
+    "key": "PasteboardMargins",
+    "value": "111 222",
+    "pointer": "/pasteboard/vertical",
+    "expected": 72.0,
+    "items": [
+      "Pasteboard.vertical"
+    ],
+    "golden": "basic/guides2-options"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "None",
+    "pointer": "/stroke/ends/start",
+    "expected": "None",
+    "items": [
+      "geom::Arrowhead::None",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "None",
+    "pointer": "/stroke/ends/end",
+    "expected": "None",
+    "items": [
+      "geom::Arrowhead::None",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "SimpleArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Simple",
+    "items": [
+      "geom::Arrowhead::Simple",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "SimpleArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Simple",
+    "items": [
+      "geom::Arrowhead::Simple",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "SimpleWideArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "SimpleWide",
+    "items": [
+      "geom::Arrowhead::SimpleWide",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "SimpleWideArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "SimpleWide",
+    "items": [
+      "geom::Arrowhead::SimpleWide",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "TriangleArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Triangle",
+    "items": [
+      "geom::Arrowhead::Triangle",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "TriangleArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Triangle",
+    "items": [
+      "geom::Arrowhead::Triangle",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "TriangleWideArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "TriangleWide",
+    "items": [
+      "geom::Arrowhead::TriangleWide",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "TriangleWideArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "TriangleWide",
+    "items": [
+      "geom::Arrowhead::TriangleWide",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "BarbedArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Barbed",
+    "items": [
+      "geom::Arrowhead::Barbed",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "BarbedArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Barbed",
+    "items": [
+      "geom::Arrowhead::Barbed",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "CurvedArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Curved",
+    "items": [
+      "geom::Arrowhead::Curved",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "CurvedArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Curved",
+    "items": [
+      "geom::Arrowhead::Curved",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "CircleArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Circle",
+    "items": [
+      "geom::Arrowhead::Circle",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "CircleArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Circle",
+    "items": [
+      "geom::Arrowhead::Circle",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "CircleSolidArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "CircleSolid",
+    "items": [
+      "geom::Arrowhead::CircleSolid",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "CircleSolidArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "CircleSolid",
+    "items": [
+      "geom::Arrowhead::CircleSolid",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "SquareArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Square",
+    "items": [
+      "geom::Arrowhead::Square",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "SquareArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Square",
+    "items": [
+      "geom::Arrowhead::Square",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "SquareSolidArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "SquareSolid",
+    "items": [
+      "geom::Arrowhead::SquareSolid",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "SquareSolidArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "SquareSolid",
+    "items": [
+      "geom::Arrowhead::SquareSolid",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftLineEnd",
+    "value": "BarArrowHead",
+    "pointer": "/stroke/ends/start",
+    "expected": "Bar",
+    "items": [
+      "geom::Arrowhead::Bar",
+      "geom::Arrowhead",
+      "geom::LineEnds.start",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-start",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightLineEnd",
+    "value": "BarArrowHead",
+    "pointer": "/stroke/ends/end",
+    "expected": "Bar",
+    "items": [
+      "geom::Arrowhead::Bar",
+      "geom::Arrowhead",
+      "geom::LineEnds.end",
+      "Stroke.ends"
+    ],
+    "golden": "basic/stroke-arrow-end",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "LeftArrowHeadScale",
+    "value": "135.0",
+    "pointer": "/stroke/ends/start_scale",
+    "expected": 135.0,
+    "items": [
+      "geom::LineEnds.start_scale"
+    ],
+    "golden": "basic/stroke-arrow-scale",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "RightArrowHeadScale",
+    "value": "75.0",
+    "pointer": "/stroke/ends/end_scale",
+    "expected": 75.0,
+    "items": [
+      "geom::LineEnds.end_scale"
+    ],
+    "golden": "basic/stroke-arrow-scale",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "ArrowHeadAlignment",
+    "value": "InsidePath",
+    "pointer": "/stroke/ends/outside",
+    "expected": false,
+    "items": [
+      "geom::LineEnds.outside",
+      "geom::LineEnds"
+    ],
+    "golden": "basic/stroke-arrow-scale",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "ArrowHeadAlignment",
+    "value": "OutsidePath",
+    "pointer": "/stroke/ends/outside",
+    "expected": true,
+    "items": [
+      "geom::LineEnds.outside",
+      "geom::LineEnds"
+    ],
+    "golden": "basic/stroke-arrow-scale",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerOption",
+    "value": "None",
+    "pointer": "/stroke/corners/0/kind",
+    "expected": "None",
+    "items": [
+      "geom::CornerKind::None",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerOption",
+    "value": "RoundedCorner",
+    "pointer": "/stroke/corners/0/kind",
+    "expected": "Rounded",
+    "items": [
+      "geom::CornerKind::Rounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerOption",
+    "value": "InverseRoundedCorner",
+    "pointer": "/stroke/corners/0/kind",
+    "expected": "InverseRounded",
+    "items": [
+      "geom::CornerKind::InverseRounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerOption",
+    "value": "InsetCorner",
+    "pointer": "/stroke/corners/0/kind",
+    "expected": "Inset",
+    "items": [
+      "geom::CornerKind::Inset",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerOption",
+    "value": "BevelCorner",
+    "pointer": "/stroke/corners/0/kind",
+    "expected": "Bevel",
+    "items": [
+      "geom::CornerKind::Bevel",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerOption",
+    "value": "FancyCorner",
+    "pointer": "/stroke/corners/0/kind",
+    "expected": "Fancy",
+    "items": [
+      "geom::CornerKind::Fancy",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopLeftCornerRadius",
+    "value": "8.75",
+    "pointer": "/stroke/corners/0/radius",
+    "expected": 8.75,
+    "items": [
+      "geom::CornerOption.radius",
+      "geom::CornerOption"
+    ],
+    "golden": "basic/corner-radius-only",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerOption",
+    "value": "None",
+    "pointer": "/stroke/corners/1/kind",
+    "expected": "None",
+    "items": [
+      "geom::CornerKind::None",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerOption",
+    "value": "RoundedCorner",
+    "pointer": "/stroke/corners/1/kind",
+    "expected": "Rounded",
+    "items": [
+      "geom::CornerKind::Rounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerOption",
+    "value": "InverseRoundedCorner",
+    "pointer": "/stroke/corners/1/kind",
+    "expected": "InverseRounded",
+    "items": [
+      "geom::CornerKind::InverseRounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerOption",
+    "value": "InsetCorner",
+    "pointer": "/stroke/corners/1/kind",
+    "expected": "Inset",
+    "items": [
+      "geom::CornerKind::Inset",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerOption",
+    "value": "BevelCorner",
+    "pointer": "/stroke/corners/1/kind",
+    "expected": "Bevel",
+    "items": [
+      "geom::CornerKind::Bevel",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerOption",
+    "value": "FancyCorner",
+    "pointer": "/stroke/corners/1/kind",
+    "expected": "Fancy",
+    "items": [
+      "geom::CornerKind::Fancy",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "TopRightCornerRadius",
+    "value": "8.75",
+    "pointer": "/stroke/corners/1/radius",
+    "expected": 8.75,
+    "items": [
+      "geom::CornerOption.radius",
+      "geom::CornerOption"
+    ],
+    "golden": "basic/corner-radius-only",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerOption",
+    "value": "None",
+    "pointer": "/stroke/corners/2/kind",
+    "expected": "None",
+    "items": [
+      "geom::CornerKind::None",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerOption",
+    "value": "RoundedCorner",
+    "pointer": "/stroke/corners/2/kind",
+    "expected": "Rounded",
+    "items": [
+      "geom::CornerKind::Rounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerOption",
+    "value": "InverseRoundedCorner",
+    "pointer": "/stroke/corners/2/kind",
+    "expected": "InverseRounded",
+    "items": [
+      "geom::CornerKind::InverseRounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerOption",
+    "value": "InsetCorner",
+    "pointer": "/stroke/corners/2/kind",
+    "expected": "Inset",
+    "items": [
+      "geom::CornerKind::Inset",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerOption",
+    "value": "BevelCorner",
+    "pointer": "/stroke/corners/2/kind",
+    "expected": "Bevel",
+    "items": [
+      "geom::CornerKind::Bevel",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerOption",
+    "value": "FancyCorner",
+    "pointer": "/stroke/corners/2/kind",
+    "expected": "Fancy",
+    "items": [
+      "geom::CornerKind::Fancy",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomLeftCornerRadius",
+    "value": "8.75",
+    "pointer": "/stroke/corners/2/radius",
+    "expected": 8.75,
+    "items": [
+      "geom::CornerOption.radius",
+      "geom::CornerOption"
+    ],
+    "golden": "basic/corner-radius-only",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerOption",
+    "value": "None",
+    "pointer": "/stroke/corners/3/kind",
+    "expected": "None",
+    "items": [
+      "geom::CornerKind::None",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerOption",
+    "value": "RoundedCorner",
+    "pointer": "/stroke/corners/3/kind",
+    "expected": "Rounded",
+    "items": [
+      "geom::CornerKind::Rounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerOption",
+    "value": "InverseRoundedCorner",
+    "pointer": "/stroke/corners/3/kind",
+    "expected": "InverseRounded",
+    "items": [
+      "geom::CornerKind::InverseRounded",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerOption",
+    "value": "InsetCorner",
+    "pointer": "/stroke/corners/3/kind",
+    "expected": "Inset",
+    "items": [
+      "geom::CornerKind::Inset",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerOption",
+    "value": "BevelCorner",
+    "pointer": "/stroke/corners/3/kind",
+    "expected": "Bevel",
+    "items": [
+      "geom::CornerKind::Bevel",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerOption",
+    "value": "FancyCorner",
+    "pointer": "/stroke/corners/3/kind",
+    "expected": "Fancy",
+    "items": [
+      "geom::CornerKind::Fancy",
+      "geom::CornerKind",
+      "geom::CornerOption.kind",
+      "Stroke.corners"
+    ],
+    "golden": "basic/corner-mixed",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "BottomRightCornerRadius",
+    "value": "8.75",
+    "pointer": "/stroke/corners/3/radius",
+    "expected": 8.75,
+    "items": [
+      "geom::CornerOption.radius",
+      "geom::CornerOption"
+    ],
+    "golden": "basic/corner-radius-only",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "EndCap",
+    "value": "ButtEndCap",
+    "pointer": "/stroke/cap",
+    "expected": "Butt",
+    "items": [
+      "LineCap::Butt",
+      "Stroke.cap"
+    ],
+    "golden": "basic/stroke-cap-projecting",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "EndCap",
+    "value": "RoundEndCap",
+    "pointer": "/stroke/cap",
+    "expected": "Round",
+    "items": [
+      "LineCap::Round",
+      "Stroke.cap"
+    ],
+    "golden": "basic/stroke-cap-projecting",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "EndCap",
+    "value": "ProjectingEndCap",
+    "pointer": "/stroke/cap",
+    "expected": "Projecting",
+    "items": [
+      "LineCap::Projecting",
+      "Stroke.cap"
+    ],
+    "golden": "basic/stroke-cap-projecting",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "EndJoin",
+    "value": "MiterEndJoin",
+    "pointer": "/stroke/join",
+    "expected": "Miter",
+    "items": [
+      "LineJoin::Miter",
+      "Stroke.join"
+    ],
+    "golden": "basic/stroke-join-bevel",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "EndJoin",
+    "value": "RoundEndJoin",
+    "pointer": "/stroke/join",
+    "expected": "Round",
+    "items": [
+      "LineJoin::Round",
+      "Stroke.join"
+    ],
+    "golden": "basic/stroke-join-bevel",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "EndJoin",
+    "value": "BevelEndJoin",
+    "pointer": "/stroke/join",
+    "expected": "Bevel",
+    "items": [
+      "LineJoin::Bevel",
+      "Stroke.join"
+    ],
+    "golden": "basic/stroke-join-bevel",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "StrokeAlignment",
+    "value": "CenterAlignment",
+    "pointer": "/stroke/alignment",
+    "expected": "Center",
+    "items": [
+      "StrokeAlignment",
+      "StrokeAlignment::Center",
+      "Stroke.alignment"
+    ],
+    "golden": "basic/stroke-align-outside",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "StrokeAlignment",
+    "value": "InsideAlignment",
+    "pointer": "/stroke/alignment",
+    "expected": "Inside",
+    "items": [
+      "StrokeAlignment",
+      "StrokeAlignment::Inside",
+      "Stroke.alignment"
+    ],
+    "golden": "basic/stroke-align-outside",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "StrokeAlignment",
+    "value": "OutsideAlignment",
+    "pointer": "/stroke/alignment",
+    "expected": "Outside",
+    "items": [
+      "StrokeAlignment",
+      "StrokeAlignment::Outside",
+      "Stroke.alignment"
+    ],
+    "golden": "basic/stroke-align-outside",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "MiterLimit",
+    "value": "7.5",
+    "pointer": "/stroke/miter_limit",
+    "expected": 7.5,
+    "items": [
+      "Stroke.miter_limit"
+    ],
+    "golden": "basic/stroke-miter",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "StrokeWeight",
+    "value": "3.5",
+    "pointer": "/stroke/weight",
+    "expected": 3.5,
+    "items": [
+      "Stroke.weight"
+    ],
+    "golden": "basic/stroke-weight-explicit",
+    "id": "u104"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GraphicLine",
+    "key": "StrokeType",
+    "value": "StrokeStyle/$ID/Dashed",
+    "pointer": "/stroke/style",
+    "expected": "StrokeStyle/$ID/Dashed",
+    "items": [
+      "Stroke.style"
+    ],
+    "golden": "basic/stroke-type-dashed",
+    "id": "u104"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "HeaderRowCount",
+    "value": "2",
+    "pointer": "/header_rows",
+    "expected": 2,
+    "items": [
+      "Table.header_rows"
+    ],
+    "golden": "tables/tbl-header-rows",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "FooterRowCount",
+    "value": "1",
+    "pointer": "/footer_rows",
+    "expected": 1,
+    "items": [
+      "Table.footer_rows"
+    ],
+    "golden": "tables/tbl-footer-rows",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "SpaceBefore",
+    "value": "9.5",
+    "pointer": "/space_before",
+    "expected": 9.5,
+    "items": [
+      "Table.space_before"
+    ],
+    "golden": "tables/noop",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "SpaceAfter",
+    "value": "-2.5",
+    "pointer": "/space_after",
+    "expected": -2.5,
+    "items": [
+      "Table.space_after"
+    ],
+    "golden": "tables/noop",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "Self",
+    "value": "interop-table",
+    "pointer": "/id",
+    "expected": "interop-table",
+    "items": [
+      "Table.id"
+    ],
+    "golden": "tables/noop",
+    "id": "interop-table"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "SkipFirstHeader",
+    "value": "true",
+    "pointer": "/skip_first_header",
+    "expected": true,
+    "items": [
+      "Table.skip_first_header"
+    ],
+    "golden": "tables/tbl-header-rows",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "SkipFirstHeader",
+    "value": "false",
+    "pointer": "/skip_first_header",
+    "expected": false,
+    "items": [
+      "Table.skip_first_header"
+    ],
+    "golden": "tables/tbl-header-rows",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "SkipLastFooter",
+    "value": "true",
+    "pointer": "/skip_last_footer",
+    "expected": true,
+    "items": [
+      "Table.skip_last_footer"
+    ],
+    "golden": "tables/tbl-footer-rows",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "SkipLastFooter",
+    "value": "false",
+    "pointer": "/skip_last_footer",
+    "expected": false,
+    "items": [
+      "Table.skip_last_footer"
+    ],
+    "golden": "tables/tbl-footer-rows",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "TopBorderStrokeWeight",
+    "value": "2.75",
+    "pointer": "/border_weights/0",
+    "expected": 2.75,
+    "items": [
+      "Table.border_weights"
+    ],
+    "golden": "tables/tbl-cell-stroke",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "LeftBorderStrokeWeight",
+    "value": "2.75",
+    "pointer": "/border_weights/1",
+    "expected": 2.75,
+    "items": [
+      "Table.border_weights"
+    ],
+    "golden": "tables/tbl-cell-stroke",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "BottomBorderStrokeWeight",
+    "value": "2.75",
+    "pointer": "/border_weights/2",
+    "expected": 2.75,
+    "items": [
+      "Table.border_weights"
+    ],
+    "golden": "tables/tbl-cell-stroke",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Table",
+    "key": "RightBorderStrokeWeight",
+    "value": "2.75",
+    "pointer": "/border_weights/3",
+    "expected": 2.75,
+    "items": [
+      "Table.border_weights"
+    ],
+    "golden": "tables/tbl-cell-stroke",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Column",
+    "key": "SingleColumnWidth",
+    "value": "83.5",
+    "pointer": "/columns/0",
+    "expected": 83.5,
+    "items": [
+      "Table.columns"
+    ],
+    "golden": "tables/tbl-column-width",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "SingleRowHeight",
+    "value": "37.5",
+    "pointer": "/rows/0/height",
+    "expected": 37.5,
+    "items": [
+      "TableRow.height"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "MinimumHeight",
+    "value": "24.5",
+    "pointer": "/rows/0/min_height",
+    "expected": 24.5,
+    "items": [
+      "TableRow.min_height"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "MaximumHeight",
+    "value": "64.5",
+    "pointer": "/rows/0/max_height",
+    "expected": 64.5,
+    "items": [
+      "TableRow.max_height"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "AutoGrow",
+    "value": "true",
+    "pointer": "/rows/0/auto_grow",
+    "expected": true,
+    "items": [
+      "TableRow.auto_grow"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "AutoGrow",
+    "value": "false",
+    "pointer": "/rows/0/auto_grow",
+    "expected": false,
+    "items": [
+      "TableRow.auto_grow"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "KeepWithNextRow",
+    "value": "true",
+    "pointer": "/rows/0/keep_with_next",
+    "expected": true,
+    "items": [
+      "TableRow.keep_with_next"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "KeepWithNextRow",
+    "value": "false",
+    "pointer": "/rows/0/keep_with_next",
+    "expected": false,
+    "items": [
+      "TableRow.keep_with_next"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "StartRow",
+    "value": "Anywhere",
+    "pointer": "/rows/0/start",
+    "expected": "Anywhere",
+    "items": [
+      "TableRow.start"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "StartRow",
+    "value": "NextColumn",
+    "pointer": "/rows/0/start",
+    "expected": "NextColumn",
+    "items": [
+      "TableRow.start"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "StartRow",
+    "value": "NextFrame",
+    "pointer": "/rows/0/start",
+    "expected": "NextFrame",
+    "items": [
+      "TableRow.start"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Row",
+    "key": "StartRow",
+    "value": "NextPage",
+    "pointer": "/rows/0/start",
+    "expected": "NextPage",
+    "items": [
+      "TableRow.start"
+    ],
+    "golden": "tables/tbl-row-height",
+    "id": "uedi137"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "Self",
+    "value": "interop-cell",
+    "pointer": "/id",
+    "expected": "interop-cell",
+    "items": [
+      "TableCell.id"
+    ],
+    "golden": "tables/cell-format",
+    "id": "interop-cell"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "Name",
+    "value": "1:1",
+    "pointer": "/row",
+    "expected": 1,
+    "items": [
+      "TableCell.row"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "Name",
+    "value": "1:1",
+    "pointer": "/column",
+    "expected": 1,
+    "items": [
+      "TableCell.column"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "RowSpan",
+    "value": "2",
+    "pointer": "/row_span",
+    "expected": 2,
+    "items": [
+      "TableCell.row_span"
+    ],
+    "golden": "tables/tbl-merge-block",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "ColumnSpan",
+    "value": "2",
+    "pointer": "/column_span",
+    "expected": 2,
+    "items": [
+      "TableCell.column_span"
+    ],
+    "golden": "tables/tbl-merge-row",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TextTopInset",
+    "value": "7.5",
+    "pointer": "/insets/0",
+    "expected": 7.5,
+    "items": [
+      "TableCell.insets"
+    ],
+    "golden": "tables/tbl-cell-insets",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TextLeftInset",
+    "value": "7.5",
+    "pointer": "/insets/1",
+    "expected": 7.5,
+    "items": [
+      "TableCell.insets"
+    ],
+    "golden": "tables/tbl-cell-insets",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TextBottomInset",
+    "value": "7.5",
+    "pointer": "/insets/2",
+    "expected": 7.5,
+    "items": [
+      "TableCell.insets"
+    ],
+    "golden": "tables/tbl-cell-insets",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TextRightInset",
+    "value": "7.5",
+    "pointer": "/insets/3",
+    "expected": 7.5,
+    "items": [
+      "TableCell.insets"
+    ],
+    "golden": "tables/tbl-cell-insets",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FillOverprint",
+    "value": "true",
+    "pointer": "/fill_overprint",
+    "expected": true,
+    "items": [
+      "TableCell.fill_overprint"
+    ],
+    "golden": "tables/tbl-cell-fill",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FillOverprint",
+    "value": "false",
+    "pointer": "/fill_overprint",
+    "expected": false,
+    "items": [
+      "TableCell.fill_overprint"
+    ],
+    "golden": "tables/tbl-cell-fill",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "ClipContentToCell",
+    "value": "true",
+    "pointer": "/clip",
+    "expected": true,
+    "items": [
+      "TableCell.clip"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "ClipContentToCell",
+    "value": "false",
+    "pointer": "/clip",
+    "expected": false,
+    "items": [
+      "TableCell.clip"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TopLeftDiagonalLine",
+    "value": "true",
+    "pointer": "/diagonal_down",
+    "expected": true,
+    "items": [
+      "TableCell.diagonal_down"
+    ],
+    "golden": "tables/cell-diag-one",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TopLeftDiagonalLine",
+    "value": "false",
+    "pointer": "/diagonal_down",
+    "expected": false,
+    "items": [
+      "TableCell.diagonal_down"
+    ],
+    "golden": "tables/cell-diag-one",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TopRightDiagonalLine",
+    "value": "true",
+    "pointer": "/diagonal_up",
+    "expected": true,
+    "items": [
+      "TableCell.diagonal_up"
+    ],
+    "golden": "tables/cell-diag-both",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "TopRightDiagonalLine",
+    "value": "false",
+    "pointer": "/diagonal_up",
+    "expected": false,
+    "items": [
+      "TableCell.diagonal_up"
+    ],
+    "golden": "tables/cell-diag-both",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "DiagonalLineInFront",
+    "value": "true",
+    "pointer": "/diagonal_in_front",
+    "expected": true,
+    "items": [
+      "TableCell.diagonal_in_front"
+    ],
+    "golden": "tables/cell-diag-both",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "DiagonalLineInFront",
+    "value": "false",
+    "pointer": "/diagonal_in_front",
+    "expected": false,
+    "items": [
+      "TableCell.diagonal_in_front"
+    ],
+    "golden": "tables/cell-diag-both",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "VerticalJustification",
+    "value": "TopAlign",
+    "pointer": "/vertical_justification",
+    "expected": "Top",
+    "items": [
+      "TableCell.vertical_justification"
+    ],
+    "golden": "tables/tbl-cell-valign",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "VerticalJustification",
+    "value": "CenterAlign",
+    "pointer": "/vertical_justification",
+    "expected": "Center",
+    "items": [
+      "TableCell.vertical_justification"
+    ],
+    "golden": "tables/tbl-cell-valign",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "VerticalJustification",
+    "value": "BottomAlign",
+    "pointer": "/vertical_justification",
+    "expected": "Bottom",
+    "items": [
+      "TableCell.vertical_justification"
+    ],
+    "golden": "tables/tbl-cell-valign",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "VerticalJustification",
+    "value": "JustifyAlign",
+    "pointer": "/vertical_justification",
+    "expected": "Top",
+    "items": [
+      "TableCell.vertical_justification"
+    ],
+    "golden": "tables/tbl-cell-valign",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FirstBaselineOffset",
+    "value": "AscentOffset",
+    "pointer": "/first_baseline",
+    "expected": "Ascent",
+    "items": [
+      "TableCell.first_baseline"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FirstBaselineOffset",
+    "value": "CapHeight",
+    "pointer": "/first_baseline",
+    "expected": "CapHeight",
+    "items": [
+      "TableCell.first_baseline"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FirstBaselineOffset",
+    "value": "XHeight",
+    "pointer": "/first_baseline",
+    "expected": "XHeight",
+    "items": [
+      "TableCell.first_baseline"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FirstBaselineOffset",
+    "value": "LeadingOffset",
+    "pointer": "/first_baseline",
+    "expected": "Leading",
+    "items": [
+      "TableCell.first_baseline"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FirstBaselineOffset",
+    "value": "EmboxHeight",
+    "pointer": "/first_baseline",
+    "expected": "EmBoxHeight",
+    "items": [
+      "TableCell.first_baseline"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "FirstBaselineOffset",
+    "value": "FixedHeight",
+    "pointer": "/first_baseline",
+    "expected": "Fixed",
+    "items": [
+      "TableCell.first_baseline"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "tables",
+    "part": "Stories/Story_ued.xml",
+    "tag": "Cell",
+    "key": "MinimumFirstBaselineOffset",
+    "value": "6.5",
+    "pointer": "/min_first_baseline_offset",
+    "expected": 6.5,
+    "items": [
+      "TableCell.min_first_baseline_offset"
+    ],
+    "golden": "tables/cell-format",
+    "id": "uedi137i9"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "DocumentBleedTopOffset",
+    "value": "9.5",
+    "pointer": "/print/bleed/0",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.bleed"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "DocumentBleedBottomOffset",
+    "value": "9.5",
+    "pointer": "/print/bleed/1",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.bleed"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "DocumentBleedInsideOrLeftOffset",
+    "value": "9.5",
+    "pointer": "/print/bleed/2",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.bleed"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "DocumentBleedOutsideOrRightOffset",
+    "value": "9.5",
+    "pointer": "/print/bleed/3",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.bleed"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "SlugTopOffset",
+    "value": "9.5",
+    "pointer": "/print/slug/0",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.slug"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "SlugBottomOffset",
+    "value": "9.5",
+    "pointer": "/print/slug/1",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.slug"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "SlugInsideOrLeftOffset",
+    "value": "9.5",
+    "pointer": "/print/slug/2",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.slug"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "SlugRightOrOutsideOffset",
+    "value": "9.5",
+    "pointer": "/print/slug/3",
+    "expected": 9.5,
+    "items": [
+      "PrintSetup.slug"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "FacingPages",
+    "value": "true",
+    "pointer": "/print/facing_pages",
+    "expected": true,
+    "items": [
+      "PrintSetup.facing_pages"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "FacingPages",
+    "value": "false",
+    "pointer": "/print/facing_pages",
+    "expected": false,
+    "items": [
+      "PrintSetup.facing_pages"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "OverprintBlack",
+    "value": "true",
+    "pointer": "/print/overprint_black",
+    "expected": true,
+    "items": [
+      "PrintSetup.overprint_black"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "OverprintBlack",
+    "value": "false",
+    "pointer": "/print/overprint_black",
+    "expected": false,
+    "items": [
+      "PrintSetup.overprint_black"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Preferences.xml",
+    "tag": "DocumentPreference",
+    "key": "FacingPages",
+    "value": "true",
+    "pointer": "/print/facing_pages_stored",
+    "expected": true,
+    "items": [
+      "PrintSetup.facing_pages_stored"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "Document",
+    "key": "CMYKProfile",
+    "value": "Interop profile label",
+    "pointer": "/print/cmyk_profile",
+    "expected": "Interop profile label",
+    "items": [
+      "PrintSetup.cmyk_profile"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "Document",
+    "key": "RGBProfile",
+    "value": "Interop profile label",
+    "pointer": "/print/rgb_profile",
+    "expected": "Interop profile label",
+    "items": [
+      "PrintSetup.rgb_profile"
+    ],
+    "golden": "basic/noop"
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "Document",
+    "key": "SolidColorIntent",
+    "value": "Perceptual",
+    "pointer": "/print/solid_color_intent",
+    "expected": "Perceptual",
+    "items": [
+      "PrintSetup.solid_color_intent"
+    ],
+    "golden": "basic-color-prefs/prefs-color-policies"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Page",
+    "key": "ItemTransform",
+    "value": "1.25 0.25 -0.5 0.75 17.5 -8.5",
+    "pointer": "/transform",
+    "expected": {
+      "a": 1.25,
+      "b": 0.25,
+      "c": -0.5,
+      "d": 0.75,
+      "tx": 17.5,
+      "ty": -8.5
+    },
+    "items": [
+      "Page.transform"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "ItemTransform",
+    "value": "1.25 0.25 -0.5 0.75 17.5 -8.5",
+    "pointer": "/transform",
+    "expected": {
+      "a": 1.25,
+      "b": 0.25,
+      "c": -0.5,
+      "d": 0.75,
+      "tx": 17.5,
+      "ty": -8.5
+    },
+    "items": [
+      "PageItem.transform"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Spread",
+    "key": "ItemTransform",
+    "value": "1.25 0.25 -0.5 0.75 17.5 -8.5",
+    "pointer": "/transform",
+    "expected": {
+      "a": 1.25,
+      "b": 0.25,
+      "c": -0.5,
+      "d": 0.75,
+      "tx": 17.5,
+      "ty": -8.5
+    },
+    "items": [
+      "Spread.transform"
+    ],
+    "golden": "basic/noop",
+    "id": "uf3"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Page",
+    "key": "MasterPageTransform",
+    "value": "1.25 0.25 -0.5 0.75 17.5 -8.5",
+    "pointer": "/master_transform",
+    "expected": {
+      "a": 1.25,
+      "b": 0.25,
+      "c": -0.5,
+      "d": 0.75,
+      "tx": 17.5,
+      "ty": -8.5
+    },
+    "items": [
+      "Page.master_transform"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Page",
+    "key": "Name",
+    "value": "Interop page",
+    "pointer": "/name",
+    "expected": "Interop page",
+    "items": [
+      "Page.name"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "MarginPreference",
+    "key": "ColumnCount",
+    "value": "3",
+    "pointer": "/columns/count",
+    "expected": 3,
+    "items": [
+      "PageColumns.count"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "MarginPreference",
+    "key": "ColumnGutter",
+    "value": "17.5",
+    "pointer": "/columns/gutter",
+    "expected": 17.5,
+    "items": [
+      "PageColumns.gutter"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "MarginPreference",
+    "key": "ColumnDirection",
+    "value": "Vertical",
+    "pointer": "/columns/direction",
+    "expected": "Vertical",
+    "items": [
+      "PageColumns.direction"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "MarginPreference",
+    "key": "ColumnsPositions",
+    "value": "0 90 110 200",
+    "pointer": "/columns/positions",
+    "expected": [
+      0.0,
+      90.0,
+      110.0,
+      200.0
+    ],
+    "items": [
+      "PageColumns.positions"
+    ],
+    "golden": "basic/noop",
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "Name",
+    "value": "Interop object",
+    "pointer": "/name",
+    "expected": "Interop object",
+    "items": [
+      "PageItem.name"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "ItemLayer",
+    "value": "ue8",
+    "pointer": "/layer",
+    "expected": "ue8",
+    "items": [
+      "PageItem.layer"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "AppliedObjectStyle",
+    "value": "ObjectStyle/$ID/[None]",
+    "pointer": "/object_style",
+    "expected": "ObjectStyle/$ID/[None]",
+    "items": [
+      "PageItem.object_style"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "Visible",
+    "value": "true",
+    "pointer": "/visible",
+    "expected": true,
+    "items": [
+      "PageItem.visible"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "Visible",
+    "value": "false",
+    "pointer": "/visible",
+    "expected": false,
+    "items": [
+      "PageItem.visible"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "Locked",
+    "value": "true",
+    "pointer": "/locked",
+    "expected": true,
+    "items": [
+      "PageItem.locked"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "Locked",
+    "value": "false",
+    "pointer": "/locked",
+    "expected": false,
+    "items": [
+      "PageItem.locked"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "AllowOverrides",
+    "value": "true",
+    "pointer": "/overrides_off",
+    "expected": false,
+    "items": [
+      "PageItem.overrides_off"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "AllowOverrides",
+    "value": "false",
+    "pointer": "/overrides_off",
+    "expected": true,
+    "items": [
+      "PageItem.overrides_off"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "Self",
+    "value": "interop-object",
+    "pointer": "/id",
+    "expected": "interop-object",
+    "items": [
+      "PageItem.id"
+    ],
+    "golden": "basic/noop",
+    "id": "interop-object"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Spread",
+    "key": "SpreadHidden",
+    "value": "true",
+    "pointer": "/hidden",
+    "expected": true,
+    "items": [
+      "Spread.hidden"
+    ],
+    "golden": "basic/noop",
+    "id": "uf3"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Spread",
+    "key": "SpreadHidden",
+    "value": "false",
+    "pointer": "/hidden",
+    "expected": false,
+    "items": [
+      "Spread.hidden"
+    ],
+    "golden": "basic/noop",
+    "id": "uf3"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Spread",
+    "key": "ShowMasterItems",
+    "value": "true",
+    "pointer": "/hide_master_items",
+    "expected": false,
+    "items": [
+      "Spread.hide_master_items"
+    ],
+    "golden": "basic/noop",
+    "id": "uf3"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Spread",
+    "key": "ShowMasterItems",
+    "value": "false",
+    "pointer": "/hide_master_items",
+    "expected": true,
+    "items": [
+      "Spread.hide_master_items"
+    ],
+    "golden": "basic/noop",
+    "id": "uf3"
+  },
+  {
+    "fixture": "basic",
+    "part": "MasterSpreads/MasterSpread_ub9.xml",
+    "tag": "MasterSpread",
+    "key": "Name",
+    "value": "B-Interop",
+    "pointer": "/name",
+    "expected": "B-Interop",
+    "items": [
+      "Spread.name"
+    ],
+    "golden": "basic/noop",
+    "id": "ub9"
+  },
+  {
+    "fixture": "basic",
+    "part": "MasterSpreads/MasterSpread_ub9.xml",
+    "tag": "MasterSpread",
+    "key": "NamePrefix",
+    "value": "B",
+    "pointer": "/name_prefix",
+    "expected": "B",
+    "items": [
+      "Spread.name_prefix"
+    ],
+    "golden": "basic/noop",
+    "id": "ub9"
+  },
+  {
+    "fixture": "basic",
+    "part": "MasterSpreads/MasterSpread_ub9.xml",
+    "tag": "MasterSpread",
+    "key": "BaseName",
+    "value": "Interop",
+    "pointer": "/base_name",
+    "expected": "Interop",
+    "items": [
+      "Spread.base_name"
+    ],
+    "golden": "basic/noop",
+    "id": "ub9"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "LeftIndent",
+    "value": "7.5",
+    "pointer": "/paragraphs/0/attrs/left_indent",
+    "expected": 7.5,
+    "items": [
+      "ParagraphAttrs.left_indent"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "RightIndent",
+    "value": "7.5",
+    "pointer": "/paragraphs/0/attrs/right_indent",
+    "expected": 7.5,
+    "items": [
+      "ParagraphAttrs.right_indent"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "FirstLineIndent",
+    "value": "7.5",
+    "pointer": "/paragraphs/0/attrs/first_line_indent",
+    "expected": 7.5,
+    "items": [
+      "ParagraphAttrs.first_line_indent"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "LastLineIndent",
+    "value": "7.5",
+    "pointer": "/paragraphs/0/attrs/last_line_indent",
+    "expected": 7.5,
+    "items": [
+      "ParagraphAttrs.last_line_indent"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "SpaceBefore",
+    "value": "7.5",
+    "pointer": "/paragraphs/0/attrs/space_before",
+    "expected": 7.5,
+    "items": [
+      "ParagraphAttrs.space_before"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "SpaceAfter",
+    "value": "7.5",
+    "pointer": "/paragraphs/0/attrs/space_after",
+    "expected": 7.5,
+    "items": [
+      "ParagraphAttrs.space_after"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "SameParaStyleSpacing",
+    "value": "-1",
+    "pointer": "/paragraphs/0/attrs/same_style_spacing",
+    "expected": null,
+    "items": [
+      "ParagraphAttrs.same_style_spacing"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "SameParaStyleSpacing",
+    "value": "6.5",
+    "pointer": "/paragraphs/0/attrs/same_style_spacing",
+    "expected": 6.5,
+    "items": [
+      "ParagraphAttrs.same_style_spacing"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphDirection",
+    "value": "LeftToRightDirection",
+    "pointer": "/paragraphs/0/attrs/right_to_left",
+    "expected": false,
+    "items": [
+      "ParagraphAttrs.right_to_left"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphDirection",
+    "value": "RightToLeftDirection",
+    "pointer": "/paragraphs/0/attrs/right_to_left",
+    "expected": true,
+    "items": [
+      "ParagraphAttrs.right_to_left"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "LeftAlign",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "LeftAlign",
+    "items": [
+      "Justification::LeftAlign"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "CenterAlign",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "CenterAlign",
+    "items": [
+      "Justification::CenterAlign"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "RightAlign",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "RightAlign",
+    "items": [
+      "Justification::RightAlign"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "LeftJustified",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "LeftJustified",
+    "items": [
+      "Justification::LeftJustified"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "CenterJustified",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "CenterJustified",
+    "items": [
+      "Justification::CenterJustified"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "RightJustified",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "RightJustified",
+    "items": [
+      "Justification::RightJustified"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "FullyJustified",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "FullyJustified",
+    "items": [
+      "Justification::FullyJustified"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "ToBindingSide",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "ToBindingSide",
+    "items": [
+      "Justification::ToBindingSide"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "Justification",
+    "value": "AwayFromBindingSide",
+    "pointer": "/paragraphs/0/attrs/justification",
+    "expected": "AwayFromBindingSide",
+    "items": [
+      "Justification::AwayFromBindingSide"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "StartParagraph",
+    "value": "Anywhere",
+    "pointer": "/paragraphs/0/attrs/start",
+    "expected": "Anywhere",
+    "items": [
+      "ParagraphStart",
+      "ParagraphStart::Anywhere"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "StartParagraph",
+    "value": "NextColumn",
+    "pointer": "/paragraphs/0/attrs/start",
+    "expected": "NextColumn",
+    "items": [
+      "ParagraphStart",
+      "ParagraphStart::NextColumn"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "StartParagraph",
+    "value": "NextFrame",
+    "pointer": "/paragraphs/0/attrs/start",
+    "expected": "NextFrame",
+    "items": [
+      "ParagraphStart",
+      "ParagraphStart::NextFrame"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "StartParagraph",
+    "value": "NextPage",
+    "pointer": "/paragraphs/0/attrs/start",
+    "expected": "NextPage",
+    "items": [
+      "ParagraphStart",
+      "ParagraphStart::NextPage"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "StartParagraph",
+    "value": "NextOddPage",
+    "pointer": "/paragraphs/0/attrs/start",
+    "expected": "NextOddPage",
+    "items": [
+      "ParagraphStart",
+      "ParagraphStart::NextOddPage"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "StartParagraph",
+    "value": "NextEvenPage",
+    "pointer": "/paragraphs/0/attrs/start",
+    "expected": "NextEvenPage",
+    "items": [
+      "ParagraphStart",
+      "ParagraphStart::NextEvenPage"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Capitalization",
+    "value": "Normal",
+    "pointer": "/paragraphs/0/runs/0/attrs/capitalization",
+    "expected": "Normal",
+    "items": [
+      "Capitalization::Normal"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Capitalization",
+    "value": "SmallCaps",
+    "pointer": "/paragraphs/0/runs/0/attrs/capitalization",
+    "expected": "SmallCaps",
+    "items": [
+      "Capitalization::SmallCaps"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Capitalization",
+    "value": "AllCaps",
+    "pointer": "/paragraphs/0/runs/0/attrs/capitalization",
+    "expected": "AllCaps",
+    "items": [
+      "Capitalization::AllCaps"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Capitalization",
+    "value": "CapToSmallCap",
+    "pointer": "/paragraphs/0/runs/0/attrs/capitalization",
+    "expected": "CapToSmallCap",
+    "items": [],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Capitalization",
+    "value": "LowerCase",
+    "pointer": "/paragraphs/0/runs/0/attrs/capitalization",
+    "expected": "LowerCase",
+    "items": [],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "Normal",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "Normal",
+    "items": [
+      "Position",
+      "Position::Normal"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "Superscript",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "Superscript",
+    "items": [
+      "Position",
+      "Position::Superscript"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "Subscript",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "Subscript",
+    "items": [
+      "Position",
+      "Position::Subscript"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "OTSuperscript",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "OtSuperscript",
+    "items": [
+      "Position",
+      "Position::OtSuperscript"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "OTSubscript",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "OtSubscript",
+    "items": [
+      "Position",
+      "Position::OtSubscript"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "OTNumerator",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "OtNumerator",
+    "items": [
+      "Position"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Position",
+    "value": "OTDenominator",
+    "pointer": "/paragraphs/0/runs/0/attrs/position",
+    "expected": "OtDenominator",
+    "items": [
+      "Position"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KerningMethod",
+    "value": "Metrics",
+    "pointer": "/paragraphs/0/runs/0/attrs/kerning_method",
+    "expected": "Metrics",
+    "items": [
+      "KerningMethod::Metrics"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KerningMethod",
+    "value": "MetricsRomanOnly",
+    "pointer": "/paragraphs/0/runs/0/attrs/kerning_method",
+    "expected": "MetricsRomanOnly",
+    "items": [
+      "KerningMethod::MetricsRomanOnly"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KerningMethod",
+    "value": "Optical",
+    "pointer": "/paragraphs/0/runs/0/attrs/kerning_method",
+    "expected": "Optical",
+    "items": [
+      "KerningMethod::Optical"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KerningMethod",
+    "value": "None",
+    "pointer": "/paragraphs/0/runs/0/attrs/kerning_method",
+    "expected": "None",
+    "items": [
+      "KerningMethod::None"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Leading",
+    "value": "Auto",
+    "pointer": "/paragraphs/0/runs/0/attrs/leading",
+    "expected": "Auto",
+    "items": [
+      "Leading::Auto"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "Leading",
+    "value": "19.5",
+    "pointer": "/paragraphs/0/runs/0/attrs/leading",
+    "expected": {
+      "Fixed": 19.5
+    },
+    "items": [
+      "Leading::Fixed",
+      "Leading::Fixed.0"
+    ],
+    "golden": "basic/noop",
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "TextColumnCount",
+    "value": "3",
+    "pointer": "/kind/TextFrame/columns",
+    "expected": 3,
+    "items": [
+      "TextFrame.columns"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "TextColumnGutter",
+    "value": "17.5",
+    "pointer": "/kind/TextFrame/gutter",
+    "expected": 17.5,
+    "items": [
+      "TextFrame.gutter"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "MinimumFirstBaselineOffset",
+    "value": "6.5",
+    "pointer": "/kind/TextFrame/min_first_baseline_offset",
+    "expected": 6.5,
+    "items": [
+      "TextFrame.min_first_baseline_offset"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "InsetSpacing",
+    "value": "7 8 9 10",
+    "pointer": "/kind/TextFrame/insets",
+    "expected": [
+      7.0,
+      8.0,
+      9.0,
+      10.0
+    ],
+    "items": [
+      "TextFrame.insets"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "InsetSpacing",
+    "value": "6.5",
+    "pointer": "/kind/TextFrame/insets",
+    "expected": [
+      6.5,
+      6.5,
+      6.5,
+      6.5
+    ],
+    "items": [
+      "TextFrame.insets"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "TextColumnFixedWidth",
+    "value": "97.5",
+    "pointer": "/kind/TextFrame/column_width",
+    "expected": 97.5,
+    "items": [
+      "TextFrame.column_width"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a",
+    "setup": [
+      [
+        "TextFramePreference",
+        "UseFixedColumnWidth",
+        "true"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "IgnoreWrap",
+    "value": "true",
+    "pointer": "/kind/TextFrame/ignore_wrap",
+    "expected": true,
+    "items": [
+      "TextFrame.ignore_wrap"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "IgnoreWrap",
+    "value": "false",
+    "pointer": "/kind/TextFrame/ignore_wrap",
+    "expected": false,
+    "items": [
+      "TextFrame.ignore_wrap"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "FirstBaselineOffset",
+    "value": "AscentOffset",
+    "pointer": "/kind/TextFrame/first_baseline",
+    "expected": "Ascent",
+    "items": [
+      "TextFrame.first_baseline",
+      "FirstBaseline::Ascent"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "FirstBaselineOffset",
+    "value": "CapHeight",
+    "pointer": "/kind/TextFrame/first_baseline",
+    "expected": "CapHeight",
+    "items": [
+      "TextFrame.first_baseline",
+      "FirstBaseline::CapHeight"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "FirstBaselineOffset",
+    "value": "XHeight",
+    "pointer": "/kind/TextFrame/first_baseline",
+    "expected": "XHeight",
+    "items": [
+      "TextFrame.first_baseline",
+      "FirstBaseline::XHeight"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "FirstBaselineOffset",
+    "value": "LeadingOffset",
+    "pointer": "/kind/TextFrame/first_baseline",
+    "expected": "Leading",
+    "items": [
+      "TextFrame.first_baseline"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "FirstBaselineOffset",
+    "value": "EmboxHeight",
+    "pointer": "/kind/TextFrame/first_baseline",
+    "expected": "EmBoxHeight",
+    "items": [
+      "TextFrame.first_baseline",
+      "FirstBaseline::EmBoxHeight"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "FirstBaselineOffset",
+    "value": "FixedHeight",
+    "pointer": "/kind/TextFrame/first_baseline",
+    "expected": "Fixed",
+    "items": [
+      "TextFrame.first_baseline",
+      "FirstBaseline::Fixed"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "VerticalJustification",
+    "value": "TopAlign",
+    "pointer": "/kind/TextFrame/vertical_justification",
+    "expected": "Top",
+    "items": [
+      "TextFrame.vertical_justification",
+      "VerticalJustification::Top"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "VerticalJustification",
+    "value": "CenterAlign",
+    "pointer": "/kind/TextFrame/vertical_justification",
+    "expected": "Center",
+    "items": [
+      "TextFrame.vertical_justification",
+      "VerticalJustification::Center"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "VerticalJustification",
+    "value": "BottomAlign",
+    "pointer": "/kind/TextFrame/vertical_justification",
+    "expected": "Bottom",
+    "items": [
+      "TextFrame.vertical_justification",
+      "VerticalJustification::Bottom"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "VerticalJustification",
+    "value": "JustifyAlign",
+    "pointer": "/kind/TextFrame/vertical_justification",
+    "expected": "Justify",
+    "items": [
+      "TextFrame.vertical_justification",
+      "VerticalJustification::Justify"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "AutoSizingType",
+    "value": "HeightOnly",
+    "pointer": "/kind/TextFrame/auto_size/kind",
+    "expected": "HeightOnly",
+    "items": [
+      "AutoSizeKind::HeightOnly"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "AutoSizingType",
+    "value": "WidthOnly",
+    "pointer": "/kind/TextFrame/auto_size/kind",
+    "expected": "WidthOnly",
+    "items": [
+      "AutoSizeKind::WidthOnly"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "AutoSizingType",
+    "value": "HeightAndWidth",
+    "pointer": "/kind/TextFrame/auto_size/kind",
+    "expected": "HeightAndWidth",
+    "items": [
+      "AutoSizeKind::HeightAndWidth"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_u10c.xml",
+    "tag": "TextFramePreference",
+    "key": "AutoSizingType",
+    "value": "HeightAndWidthProportionally",
+    "pointer": "/kind/TextFrame/auto_size/kind",
+    "expected": "HeightAndWidthProportionally",
+    "items": [
+      "AutoSizeKind::HeightAndWidthProportionally"
+    ],
+    "golden": "basic/noop",
+    "id": "u12a"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapMode",
+    "value": "BoundingBoxTextWrap",
+    "pointer": "/text_wrap/mode",
+    "expected": "BoundingBox",
+    "items": [
+      "TextWrap.mode",
+      "TextWrapMode",
+      "TextWrapMode::BoundingBox"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapMode",
+    "value": "Contour",
+    "pointer": "/text_wrap/mode",
+    "expected": "Contour",
+    "items": [
+      "TextWrap.mode",
+      "TextWrapMode",
+      "TextWrapMode::Contour"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapMode",
+    "value": "JumpObjectTextWrap",
+    "pointer": "/text_wrap/mode",
+    "expected": "JumpObject",
+    "items": [
+      "TextWrap.mode",
+      "TextWrapMode",
+      "TextWrapMode::JumpObject"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapMode",
+    "value": "NextColumnTextWrap",
+    "pointer": "/text_wrap/mode",
+    "expected": "NextColumn",
+    "items": [
+      "TextWrap.mode",
+      "TextWrapMode",
+      "TextWrapMode::NextColumn"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapSide",
+    "value": "BothSides",
+    "pointer": "/text_wrap/side",
+    "expected": "BothSides",
+    "items": [
+      "TextWrap.side",
+      "TextWrapSide",
+      "TextWrapSide::BothSides"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapSide",
+    "value": "LeftSide",
+    "pointer": "/text_wrap/side",
+    "expected": "LeftSide",
+    "items": [
+      "TextWrap.side",
+      "TextWrapSide",
+      "TextWrapSide::LeftSide"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapSide",
+    "value": "RightSide",
+    "pointer": "/text_wrap/side",
+    "expected": "RightSide",
+    "items": [
+      "TextWrap.side",
+      "TextWrapSide",
+      "TextWrapSide::RightSide"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapSide",
+    "value": "SideTowardsSpine",
+    "pointer": "/text_wrap/side",
+    "expected": "SideTowardsSpine",
+    "items": [
+      "TextWrap.side",
+      "TextWrapSide",
+      "TextWrapSide::SideTowardsSpine"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapSide",
+    "value": "SideAwayFromSpine",
+    "pointer": "/text_wrap/side",
+    "expected": "SideAwayFromSpine",
+    "items": [
+      "TextWrap.side",
+      "TextWrapSide",
+      "TextWrapSide::SideAwayFromSpine"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapSide",
+    "value": "LargestArea",
+    "pointer": "/text_wrap/side",
+    "expected": "LargestArea",
+    "items": [
+      "TextWrap.side",
+      "TextWrapSide",
+      "TextWrapSide::LargestArea"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "Inverse",
+    "value": "true",
+    "pointer": "/text_wrap/inverse",
+    "expected": true,
+    "items": [
+      "TextWrap.inverse"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "Inverse",
+    "value": "false",
+    "pointer": "/text_wrap/inverse",
+    "expected": false,
+    "items": [
+      "TextWrap.inverse"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "ApplyToMasterPageOnly",
+    "value": "true",
+    "pointer": "/text_wrap/master_only",
+    "expected": true,
+    "items": [
+      "TextWrap.master_only"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "ApplyToMasterPageOnly",
+    "value": "false",
+    "pointer": "/text_wrap/master_only",
+    "expected": false,
+    "items": [
+      "TextWrap.master_only"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapOffset",
+    "key": "Top",
+    "value": "9.5",
+    "pointer": "/text_wrap/offsets/0",
+    "expected": 9.5,
+    "items": [
+      "TextWrap.offsets"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapOffset",
+    "key": "Left",
+    "value": "9.5",
+    "pointer": "/text_wrap/offsets/1",
+    "expected": 9.5,
+    "items": [
+      "TextWrap.offsets"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapOffset",
+    "key": "Bottom",
+    "value": "9.5",
+    "pointer": "/text_wrap/offsets/2",
+    "expected": 9.5,
+    "items": [
+      "TextWrap.offsets"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapOffset",
+    "key": "Right",
+    "value": "9.5",
+    "pointer": "/text_wrap/offsets/3",
+    "expected": 9.5,
+    "items": [
+      "TextWrap.offsets"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [
+      [
+        "TextWrapPreference",
+        "TextWrapMode",
+        "BoundingBoxTextWrap"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapMode",
+    "value": "None",
+    "pointer": "/wraps",
+    "expected": false,
+    "items": [
+      "PageItem.wraps"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "TextWrapPreference",
+    "key": "TextWrapMode",
+    "value": "BoundingBoxTextWrap",
+    "pointer": "/wraps",
+    "expected": true,
+    "items": [
+      "PageItem.wraps"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "PathPointType",
+    "key": "Anchor",
+    "value": "61.5 72.25",
+    "pointer": "/paths/0/points/0/anchor",
+    "expected": {
+      "x": 61.5,
+      "y": 72.25
+    },
+    "items": [
+      "PathPoint.anchor",
+      "Point.x",
+      "Point.y"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "PathPointType",
+    "key": "LeftDirection",
+    "value": "61.5 72.25",
+    "pointer": "/paths/0/points/0/left",
+    "expected": {
+      "x": 61.5,
+      "y": 72.25
+    },
+    "items": [
+      "PathPoint.left",
+      "Point.x",
+      "Point.y"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "PathPointType",
+    "key": "RightDirection",
+    "value": "61.5 72.25",
+    "pointer": "/paths/0/points/0/right",
+    "expected": {
+      "x": 61.5,
+      "y": 72.25
+    },
+    "items": [
+      "PathPoint.right",
+      "Point.x",
+      "Point.y"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GeometryPathType",
+    "key": "PathOpen",
+    "value": "true",
+    "pointer": "/paths/0/open",
+    "expected": true,
+    "items": [
+      "SubPath.open"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GeometryPathType",
+    "key": "PathOpen",
+    "value": "false",
+    "pointer": "/paths/0/open",
+    "expected": false,
+    "items": [
+      "SubPath.open"
+    ],
+    "golden": "basic/noop",
+    "id": "ufe",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Normal",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Normal",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Normal"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Multiply",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Multiply",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Multiply"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Screen",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Screen",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Screen"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Overlay",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Overlay",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Overlay"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "SoftLight",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "SoftLight",
+    "items": [
+      "Satin.blend",
+      "BlendMode::SoftLight"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "HardLight",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "HardLight",
+    "items": [
+      "Satin.blend",
+      "BlendMode::HardLight"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "ColorDodge",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "ColorDodge",
+    "items": [
+      "Satin.blend",
+      "BlendMode::ColorDodge"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "ColorBurn",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "ColorBurn",
+    "items": [
+      "Satin.blend",
+      "BlendMode::ColorBurn"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Darken",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Darken",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Darken"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Lighten",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Lighten",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Lighten"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Difference",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Difference",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Difference"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Exclusion",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Exclusion",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Exclusion"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Hue",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Hue",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Hue"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Saturation",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Saturation",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Saturation"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Color",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Color",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Color"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "BlendMode",
+    "value": "Luminosity",
+    "pointer": "/print/fx/satin/blend",
+    "expected": "Luminosity",
+    "items": [
+      "Satin.blend",
+      "BlendMode::Luminosity"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "Opacity",
+    "value": "37.5",
+    "pointer": "/print/fx/satin/opacity",
+    "expected": 0.375,
+    "items": [
+      "Satin.opacity"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "Angle",
+    "value": "45.0",
+    "pointer": "/print/fx/satin/angle",
+    "expected": 45.0,
+    "items": [
+      "Satin.angle"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "Distance",
+    "value": "4.5",
+    "pointer": "/print/fx/satin/distance",
+    "expected": 4.5,
+    "items": [
+      "Satin.distance"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "Size",
+    "value": "3.25",
+    "pointer": "/print/fx/satin/size",
+    "expected": 3.25,
+    "items": [
+      "Satin.size"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "InvertEffect",
+    "value": "true",
+    "pointer": "/print/fx/satin/invert",
+    "expected": true,
+    "items": [
+      "Satin.invert"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "InvertEffect",
+    "value": "false",
+    "pointer": "/print/fx/satin/invert",
+    "expected": false,
+    "items": [
+      "Satin.invert"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "SatinSetting",
+    "key": "EffectColor",
+    "value": "Color/Paper",
+    "pointer": "/print/fx/satin/color",
+    "expected": {
+      "Swatch": {
+        "id": "Color/Paper",
+        "tint": 100.0
+      }
+    },
+    "items": [
+      "Satin.color"
+    ],
+    "golden": "basic/fx-satin-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "EffectColor",
+    "value": "Color/Paper",
+    "pointer": "/print/fx/drop_shadow/color",
+    "expected": {
+      "Swatch": {
+        "id": "Color/Paper",
+        "tint": 100.0
+      }
+    },
+    "items": [
+      "ShadowEffect.color"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "Opacity",
+    "value": "37.5",
+    "pointer": "/print/fx/drop_shadow/opacity",
+    "expected": 0.375,
+    "items": [
+      "ShadowEffect.opacity"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [
+      [
+        "DropShadowSetting",
+        "UseGlobalLight",
+        "false"
+      ]
+    ],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "XOffset",
+    "value": "4.5",
+    "pointer": "/print/fx/drop_shadow/x_offset",
+    "expected": 4.5,
+    "items": [
+      "ShadowEffect.x_offset"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [
+      [
+        "DropShadowSetting",
+        "UseGlobalLight",
+        "false"
+      ]
+    ],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "YOffset",
+    "value": "6.5",
+    "pointer": "/print/fx/drop_shadow/y_offset",
+    "expected": 6.5,
+    "items": [
+      "ShadowEffect.y_offset"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [
+      [
+        "DropShadowSetting",
+        "UseGlobalLight",
+        "false"
+      ]
+    ],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "Size",
+    "value": "3.25",
+    "pointer": "/print/fx/drop_shadow/size",
+    "expected": 3.25,
+    "items": [
+      "ShadowEffect.size"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [
+      [
+        "DropShadowSetting",
+        "UseGlobalLight",
+        "false"
+      ]
+    ],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "Spread",
+    "value": "25.0",
+    "pointer": "/print/fx/drop_shadow/spread",
+    "expected": 0.25,
+    "items": [
+      "ShadowEffect.spread"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [
+      [
+        "DropShadowSetting",
+        "UseGlobalLight",
+        "false"
+      ]
+    ],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "Noise",
+    "value": "17.5",
+    "pointer": "/print/fx/drop_shadow/noise",
+    "expected": 17.5,
+    "items": [
+      "ShadowEffect.noise"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [
+      [
+        "DropShadowSetting",
+        "UseGlobalLight",
+        "false"
+      ]
+    ],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "BlendMode",
+    "value": "Screen",
+    "pointer": "/print/fx/drop_shadow/blend",
+    "expected": "Screen",
+    "items": [
+      "ShadowEffect.blend"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "KnockedOut",
+    "value": "true",
+    "pointer": "/print/fx/drop_shadow/knocked_out",
+    "expected": true,
+    "items": [
+      "ShadowEffect.knocked_out"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "KnockedOut",
+    "value": "false",
+    "pointer": "/print/fx/drop_shadow/knocked_out",
+    "expected": false,
+    "items": [
+      "ShadowEffect.knocked_out"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "Technique",
+    "value": "Precise",
+    "pointer": "/print/fx/drop_shadow/precise",
+    "expected": true,
+    "items": [
+      "ShadowEffect.precise"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DropShadowSetting",
+    "key": "Technique",
+    "value": "Softer",
+    "pointer": "/print/fx/drop_shadow/precise",
+    "expected": false,
+    "items": [
+      "ShadowEffect.precise"
+    ],
+    "golden": "basic/fx-shadow-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Style",
+    "value": "InnerBevel",
+    "pointer": "/print/fx/bevel/style",
+    "expected": "Inner",
+    "items": [
+      "BevelStyle::Inner"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Style",
+    "value": "OuterBevel",
+    "pointer": "/print/fx/bevel/style",
+    "expected": "Outer",
+    "items": [
+      "BevelStyle::Outer"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Style",
+    "value": "Emboss",
+    "pointer": "/print/fx/bevel/style",
+    "expected": "Emboss",
+    "items": [
+      "BevelStyle::Emboss"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Style",
+    "value": "PillowEmboss",
+    "pointer": "/print/fx/bevel/style",
+    "expected": "Pillow",
+    "items": [
+      "BevelStyle::Pillow"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Technique",
+    "value": "Smooth",
+    "pointer": "/print/fx/bevel/technique",
+    "expected": "Smooth",
+    "items": [
+      "BevelTechnique::Smooth"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Technique",
+    "value": "ChiselHard",
+    "pointer": "/print/fx/bevel/technique",
+    "expected": "ChiselHard",
+    "items": [
+      "BevelTechnique::ChiselHard"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "BevelAndEmbossSetting",
+    "key": "Technique",
+    "value": "ChiselSoft",
+    "pointer": "/print/fx/bevel/technique",
+    "expected": "ChiselSoft",
+    "items": [
+      "BevelTechnique::ChiselSoft"
+    ],
+    "golden": "basic/fx-bevel-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "FeatherSetting",
+    "key": "CornerType",
+    "value": "Sharp",
+    "pointer": "/print/fx/feather/corners",
+    "expected": "Sharp",
+    "items": [
+      "FeatherCorners::Sharp"
+    ],
+    "golden": "basic/fx-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "FeatherSetting",
+    "key": "CornerType",
+    "value": "Rounded",
+    "pointer": "/print/fx/feather/corners",
+    "expected": "Rounded",
+    "items": [
+      "FeatherCorners::Rounded"
+    ],
+    "golden": "basic/fx-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "FeatherSetting",
+    "key": "CornerType",
+    "value": "Diffusion",
+    "pointer": "/print/fx/feather/corners",
+    "expected": "Diffusion",
+    "items": [
+      "FeatherCorners::Diffusion"
+    ],
+    "golden": "basic/fx-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DirectionalFeatherSetting",
+    "key": "FollowShapeMode",
+    "value": "AllEdges",
+    "pointer": "/print/fx/directional_feather/follow",
+    "expected": "AllEdges",
+    "items": [
+      "FollowShape::AllEdges"
+    ],
+    "golden": "basic/fx-dir-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DirectionalFeatherSetting",
+    "key": "FollowShapeMode",
+    "value": "FirstEdge",
+    "pointer": "/print/fx/directional_feather/follow",
+    "expected": "FirstEdge",
+    "items": [
+      "FollowShape::FirstEdge"
+    ],
+    "golden": "basic/fx-dir-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "DirectionalFeatherSetting",
+    "key": "FollowShapeMode",
+    "value": "LeadingEdge",
+    "pointer": "/print/fx/directional_feather/follow",
+    "expected": "LeadingEdge",
+    "items": [
+      "FollowShape::LeadingEdge"
+    ],
+    "golden": "basic/fx-dir-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GradientFeatherSetting",
+    "key": "Type",
+    "value": "Linear",
+    "pointer": "/print/fx/gradient_feather/kind",
+    "expected": "Linear",
+    "items": [
+      "GradientKind::Linear"
+    ],
+    "golden": "basic/fx-grad-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "GradientFeatherSetting",
+    "key": "Type",
+    "value": "Radial",
+    "pointer": "/print/fx/gradient_feather/kind",
+    "expected": "Radial",
+    "items": [
+      "GradientKind::Radial"
+    ],
+    "golden": "basic/fx-grad-feather-on",
+    "id": "uff",
+    "setup": [],
+    "overlay": true
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenSesameDot",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "SesameDot",
+    "items": [
+      "KentenKind::SesameDot"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenWhiteSesameDot",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "WhiteSesameDot",
+    "items": [
+      "KentenKind::WhiteSesameDot"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenFisheye",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "Fisheye",
+    "items": [
+      "KentenKind::Fisheye"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenBullseye",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "Bullseye",
+    "items": [
+      "KentenKind::Bullseye"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenBlackCircle",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "BlackCircle",
+    "items": [
+      "KentenKind::BlackCircle"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenWhiteCircle",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "WhiteCircle",
+    "items": [
+      "KentenKind::WhiteCircle"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenBlackTriangle",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "BlackTriangle",
+    "items": [
+      "KentenKind::BlackTriangle"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenWhiteTriangle",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "WhiteTriangle",
+    "items": [
+      "KentenKind::WhiteTriangle"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenSmallBlackCircle",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "SmallBlackCircle",
+    "items": [
+      "KentenKind::SmallBlackCircle"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "KentenSmallWhiteCircle",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "SmallWhiteCircle",
+    "items": [
+      "KentenKind::SmallWhiteCircle"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "CharacterStyleRange",
+    "key": "KentenKind",
+    "value": "Custom",
+    "pointer": "/paragraphs/0/runs/0/attrs/kenten/kind",
+    "expected": "Custom",
+    "items": [
+      "KentenKind::Custom"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderTopOrigin",
+    "value": "AscentTopOrigin",
+    "pointer": "/paragraphs/0/attrs/border/top",
+    "expected": "Ascent",
+    "items": [
+      "ParagraphBorder.top",
+      "TopOrigin",
+      "TopOrigin::Ascent"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderTopOrigin",
+    "value": "BaselineTopOrigin",
+    "pointer": "/paragraphs/0/attrs/border/top",
+    "expected": "Baseline",
+    "items": [
+      "ParagraphBorder.top",
+      "TopOrigin",
+      "TopOrigin::Baseline"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderTopOrigin",
+    "value": "LeadingTopOrigin",
+    "pointer": "/paragraphs/0/attrs/border/top",
+    "expected": "Leading",
+    "items": [
+      "ParagraphBorder.top",
+      "TopOrigin",
+      "TopOrigin::Leading"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderBottomOrigin",
+    "value": "DescentBottomOrigin",
+    "pointer": "/paragraphs/0/attrs/border/bottom",
+    "expected": "Descent",
+    "items": [
+      "ParagraphBorder.bottom",
+      "BottomOrigin::Descent"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderBottomOrigin",
+    "value": "BaselineBottomOrigin",
+    "pointer": "/paragraphs/0/attrs/border/bottom",
+    "expected": "Baseline",
+    "items": [
+      "ParagraphBorder.bottom",
+      "BottomOrigin::Baseline"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "RuleAboveOverprint",
+    "value": "true",
+    "pointer": "/paragraphs/0/attrs/rule_above/overprint",
+    "expected": true,
+    "items": [
+      "ParagraphRule.overprint"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "RuleAbove",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "RuleAboveOverprint",
+    "value": "false",
+    "pointer": "/paragraphs/0/attrs/rule_above/overprint",
+    "expected": false,
+    "items": [
+      "ParagraphRule.overprint"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "RuleAbove",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "RuleAboveWidth",
+    "value": "TextWidth",
+    "pointer": "/paragraphs/0/attrs/rule_above/width",
+    "expected": "Text",
+    "items": [
+      "ParagraphRule.width",
+      "RuleWidth",
+      "RuleWidth::Text"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "RuleAbove",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "RuleAboveWidth",
+    "value": "ColumnWidth",
+    "pointer": "/paragraphs/0/attrs/rule_above/width",
+    "expected": "Column",
+    "items": [
+      "ParagraphRule.width",
+      "RuleWidth",
+      "RuleWidth::Column"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "RuleAbove",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderOverprint",
+    "value": "true",
+    "pointer": "/paragraphs/0/attrs/border/overprint",
+    "expected": true,
+    "items": [
+      "ParagraphBorder.overprint"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderOverprint",
+    "value": "false",
+    "pointer": "/paragraphs/0/attrs/border/overprint",
+    "expected": false,
+    "items": [
+      "ParagraphBorder.overprint"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphBorderType",
+    "value": "StrokeStyle/$ID/Dashed",
+    "pointer": "/paragraphs/0/attrs/border/stroke_type",
+    "expected": "Dashed",
+    "items": [
+      "ParagraphBorder.stroke_type"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphBorderOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphShadingOverprint",
+    "value": "true",
+    "pointer": "/paragraphs/0/attrs/shading/overprint",
+    "expected": true,
+    "items": [
+      "ParagraphShading.overprint"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphShadingOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphShadingOverprint",
+    "value": "false",
+    "pointer": "/paragraphs/0/attrs/shading/overprint",
+    "expected": false,
+    "items": [
+      "ParagraphShading.overprint"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphShadingOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphShadingClipToFrame",
+    "value": "true",
+    "pointer": "/paragraphs/0/attrs/shading/clip_to_frame",
+    "expected": true,
+    "items": [
+      "ParagraphShading.clip_to_frame"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphShadingOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "ParagraphShadingClipToFrame",
+    "value": "false",
+    "pointer": "/paragraphs/0/attrs/shading/clip_to_frame",
+    "expected": false,
+    "items": [
+      "ParagraphShading.clip_to_frame"
+    ],
+    "golden": "basic/noop",
+    "id": "u118",
+    "setup": [
+      [
+        "ParagraphStyleRange",
+        "ParagraphShadingOn",
+        "true"
+      ]
+    ],
+    "overlay": false
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Model",
+    "value": "Process",
+    "pointer": "/swatches/Color~1Black/model",
+    "expected": "Process",
+    "items": [
+      "Swatch.model",
+      "ColorModel::Process"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Model",
+    "value": "Spot",
+    "pointer": "/swatches/Color~1Black/model",
+    "expected": "Spot",
+    "items": [
+      "Swatch.model",
+      "ColorModel::Spot"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Model",
+    "value": "Registration",
+    "pointer": "/swatches/Color~1Black/model",
+    "expected": "Registration",
+    "items": [
+      "Swatch.model",
+      "ColorModel::Registration"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Model",
+    "value": "MixedInkModel",
+    "pointer": "/swatches/Color~1Black/model",
+    "expected": "Mixed",
+    "items": [
+      "Swatch.model",
+      "ColorModel::Mixed"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "ColorOverride",
+    "value": "Specialpaper",
+    "pointer": "/swatches/Color~1Black/model",
+    "expected": "Paper",
+    "items": [
+      "ColorModel::Paper"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Space",
+    "value": "CMYK",
+    "pointer": "/swatches/Color~1Black/space",
+    "expected": "Cmyk",
+    "items": [
+      "Swatch.space",
+      "ColorSpace::Cmyk"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "ColorValue",
+        "10 20 30 40"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "ColorValue",
+    "value": "10 20 30 40",
+    "pointer": "/swatches/Color~1Black/values",
+    "expected": [
+      10.0,
+      20.0,
+      30.0,
+      40.0
+    ],
+    "items": [
+      "Swatch.values"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "Space",
+        "CMYK"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Space",
+    "value": "RGB",
+    "pointer": "/swatches/Color~1Black/space",
+    "expected": "Rgb",
+    "items": [
+      "Swatch.space",
+      "ColorSpace::Rgb"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "ColorValue",
+        "20 80 140"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "ColorValue",
+    "value": "20 80 140",
+    "pointer": "/swatches/Color~1Black/values",
+    "expected": [
+      20.0,
+      80.0,
+      140.0
+    ],
+    "items": [
+      "Swatch.values"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "Space",
+        "RGB"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Space",
+    "value": "LAB",
+    "pointer": "/swatches/Color~1Black/space",
+    "expected": "Lab",
+    "items": [
+      "Swatch.space",
+      "ColorSpace::Lab"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "ColorValue",
+        "50 10 20"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "ColorValue",
+    "value": "50 10 20",
+    "pointer": "/swatches/Color~1Black/values",
+    "expected": [
+      50.0,
+      10.0,
+      20.0
+    ],
+    "items": [
+      "Swatch.values"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "Space",
+        "LAB"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Space",
+    "value": "Gray",
+    "pointer": "/swatches/Color~1Black/space",
+    "expected": "Gray",
+    "items": [
+      "Swatch.space",
+      "ColorSpace::Gray"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "ColorValue",
+        "35"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "ColorValue",
+    "value": "35",
+    "pointer": "/swatches/Color~1Black/values",
+    "expected": [
+      35.0
+    ],
+    "items": [
+      "Swatch.values"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Color",
+        "Space",
+        "Gray"
+      ]
+    ]
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Name",
+    "value": "Interop black label",
+    "pointer": "/swatches/Color~1Black/name",
+    "expected": "Interop black label",
+    "items": [
+      "Swatch.name"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Resources/Graphic.xml",
+    "tag": "Color",
+    "key": "Self",
+    "value": "Color/Interop",
+    "pointer": "/swatches/Color~1Interop/id",
+    "expected": "Color/Interop",
+    "items": [
+      "Swatch.id"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "FillColor",
+    "value": "Swatch/None",
+    "pointer": "/fill",
+    "expected": "None",
+    "items": [
+      "Paint::None"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Rectangle",
+        "FillColor",
+        "Color/Black"
+      ]
+    ],
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "FillColor",
+    "value": "Color/Oracle Orange",
+    "pointer": "/fill/Swatch/id",
+    "expected": "Color/Oracle Orange",
+    "items": [
+      "Paint::Swatch",
+      "Paint::Swatch.id"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Rectangle",
+        "FillColor",
+        "Color/Black"
+      ]
+    ],
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Rectangle",
+    "key": "FillTint",
+    "value": "37.5",
+    "pointer": "/fill/Swatch/tint",
+    "expected": 37.5,
+    "items": [
+      "Paint::Swatch.tint"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [
+      [
+        "Rectangle",
+        "FillColor",
+        "Color/Black"
+      ]
+    ],
+    "id": "ufe"
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "TextVariable",
+    "key": "Self",
+    "value": "interop-variable",
+    "pointer": "/text_variables/interop-variable/id",
+    "expected": "interop-variable",
+    "items": [
+      "VariableDef.id"
+    ],
+    "golden": "basic/noop",
+    "index": 2,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "TextVariable",
+    "key": "Name",
+    "value": "Interop variable label",
+    "pointer": "/text_variables/dTextVariablenChapter Number/name",
+    "expected": "Interop variable label",
+    "items": [
+      "VariableDef.name"
+    ],
+    "golden": "basic/noop",
+    "index": 2,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "TextVariable",
+    "key": "VariableType",
+    "value": "CustomTextType",
+    "pointer": "/text_variables/dTextVariablenChapter Number/kind",
+    "expected": "CustomTextType",
+    "items": [
+      "VariableDef.kind"
+    ],
+    "golden": "basic/noop",
+    "index": 2,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "ChapterNumberVariablePreference",
+    "key": "TextBefore",
+    "value": "Interop label",
+    "pointer": "/text_variables/dTextVariablenChapter Number/text_before",
+    "expected": "Interop label",
+    "items": [
+      "VariableDef.text_before"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "ChapterNumberVariablePreference",
+    "key": "TextAfter",
+    "value": "Interop label",
+    "pointer": "/text_variables/dTextVariablenChapter Number/text_after",
+    "expected": "Interop label",
+    "items": [
+      "VariableDef.text_after"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "PageNumberVariablePreference",
+    "key": "Scope",
+    "value": "DocumentScope",
+    "pointer": "/text_variables/dTextVariablenLast Page Number/scope",
+    "expected": "DocumentScope",
+    "items": [
+      "VariableDef.scope"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "MatchParagraphStylePreference",
+    "key": "AppliedParagraphStyle",
+    "value": "ParagraphStyle/$ID/[No paragraph style]",
+    "pointer": "/text_variables/dTextVariablenRunning Header/style",
+    "expected": "ParagraphStyle/$ID/[No paragraph style]",
+    "items": [
+      "VariableDef.style"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "MatchParagraphStylePreference",
+    "key": "SearchStrategy",
+    "value": "LastOnPage",
+    "pointer": "/text_variables/dTextVariablenRunning Header/search",
+    "expected": "LastOnPage",
+    "items": [
+      "VariableDef.search"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "MatchParagraphStylePreference",
+    "key": "ChangeCase",
+    "value": "Uppercase",
+    "pointer": "/text_variables/dTextVariablenRunning Header/change_case",
+    "expected": "Uppercase",
+    "items": [
+      "VariableDef.change_case"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "MatchParagraphStylePreference",
+    "key": "DeleteEndPunctuation",
+    "value": "true",
+    "pointer": "/text_variables/dTextVariablenRunning Header/delete_end_punctuation",
+    "expected": true,
+    "items": [
+      "VariableDef.delete_end_punctuation"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "MatchParagraphStylePreference",
+    "key": "DeleteEndPunctuation",
+    "value": "false",
+    "pointer": "/text_variables/dTextVariablenRunning Header/delete_end_punctuation",
+    "expected": false,
+    "items": [
+      "VariableDef.delete_end_punctuation"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "designmap.xml",
+    "tag": "FileNameVariablePreference",
+    "key": "IncludePath",
+    "value": "true",
+    "pointer": "/text_variables/dTextVariablenFile Name/settings/IncludePath",
+    "expected": "true",
+    "items": [
+      "VariableDef.settings"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": []
+  },
+  {
+    "fixture": "basic",
+    "part": "Spreads/Spread_uf3.xml",
+    "tag": "Page",
+    "key": "GeometricBounds",
+    "value": "10 20 800 600",
+    "pointer": "/bounds",
+    "expected": {
+      "left": 20.0,
+      "top": 10.0,
+      "right": 600.0,
+      "bottom": 800.0
+    },
+    "items": [
+      "Rect.left",
+      "Rect.top",
+      "Rect.right",
+      "Rect.bottom"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [],
+    "id": "ufc"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "MinimumWordSpacing",
+    "value": "80.0",
+    "pointer": "/paragraphs/0/attrs/word_spacing/min",
+    "expected": 80.0,
+    "items": [
+      "SpacingRange.min"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [],
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "DesiredWordSpacing",
+    "value": "105.0",
+    "pointer": "/paragraphs/0/attrs/word_spacing/desired",
+    "expected": 105.0,
+    "items": [
+      "SpacingRange.desired"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [],
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "MaximumWordSpacing",
+    "value": "140.0",
+    "pointer": "/paragraphs/0/attrs/word_spacing/max",
+    "expected": 140.0,
+    "items": [
+      "SpacingRange.max"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [],
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "BulletsAndNumberingListType",
+    "value": "BulletList",
+    "pointer": "/paragraphs/0/attrs/list/kind",
+    "expected": "Bullet",
+    "items": [
+      "ListKind::Bullet"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [],
+    "id": "u118"
+  },
+  {
+    "fixture": "basic",
+    "part": "Stories/Story_u118.xml",
+    "tag": "ParagraphStyleRange",
+    "key": "BulletsAndNumberingListType",
+    "value": "NumberedList",
+    "pointer": "/paragraphs/0/attrs/list/kind",
+    "expected": "Numbered",
+    "items": [
+      "ListKind::Numbered"
+    ],
+    "golden": "basic/noop",
+    "index": 0,
+    "setup": [],
+    "id": "u118"
+  }
+]

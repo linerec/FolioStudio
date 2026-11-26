@@ -1,0 +1,12 @@
+.pdf-settings { display:flex; gap:16px; min-height:320px; }
+.pdf-settings nav { display:flex; flex-direction:column; width:125px; flex-shrink:0; gap:4px; }
+.pdf-settings nav button { text-align:left; }
+.pdf-settings nav .on { background:var(--accent, #376b9c); color:white; }
+.pdf-options { flex:1; min-width:0; max-height:440px; overflow:auto; }
+.pdf-options label { display:flex; align-items:center; gap:8px; margin:7px 0; }
+.pdf-options input[type=number] { width:90px; margin-left:auto; }
+.pdf-options pre { font-size:11px; white-space:pre-wrap; }
+.pdf-preset-dialog { width:760px; max-width:95vw; }
+.pdf-preset-dialog > label { display:flex; align-items:center; gap:12px; white-space:nowrap; }
+.pdf-preset-dialog > label > input { min-width:0; flex:1; }
+.pdf-preset-toolbar { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }

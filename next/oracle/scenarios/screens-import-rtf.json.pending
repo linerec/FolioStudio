@@ -1,0 +1,60 @@
+{
+ "fixture": "docxtext2",
+ "about": "screens-import: RTF tables with cell borders (what InDesign 2025 makes of clbrdr...).",
+ "scenarios": [
+  {
+   "name": "screens-rtf-border-a",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "screens-rtf-border-a.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "screens-rtf-border-b",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "screens-rtf-border-b.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "screens-rtf-border-c",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "screens-rtf-border-c.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

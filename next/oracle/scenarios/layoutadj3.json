@@ -1,0 +1,106 @@
+{
+ "fixture": "layoutadj3",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj3-big",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 800
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-wide",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 500
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-tall",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 400,
+     "height": 800
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-small",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-locked-off",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 800,
+     "allow_locked": false
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-locked-off-small",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250,
+     "allow_locked": false
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-locked-off-wide",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 500,
+     "allow_locked": false
+    }
+   ]
+  },
+  {
+   "name": "layoutadj3-locked-on",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 300,
+     "allow_locked": true
+    }
+   ]
+  }
+ ]
+}

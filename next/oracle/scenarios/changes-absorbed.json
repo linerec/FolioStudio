@@ -1,0 +1,50 @@
+{
+ "fixture": "editorial",
+ "extension": "changes",
+ "scenarios": [
+  {
+   "name": "changes-absorbed-delete-whole-insert",
+   "text": true,
+   "steps": [
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 2,
+     "end": 4,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  },
+  {
+   "name": "changes-absorbed-delete-touching",
+   "text": true,
+   "steps": [
+    {
+     "op": "setUser",
+     "name": "Reviewer C"
+    },
+    {
+     "op": "deleteTextAs",
+     "target": "body-0",
+     "start": 3,
+     "end": 4,
+     "user": "Reviewer C",
+     "date": "2026-10-23T00:00:00"
+    },
+    {
+     "op": "setUser",
+     "name": "Reviewer B"
+    }
+   ]
+  }
+ ]
+}

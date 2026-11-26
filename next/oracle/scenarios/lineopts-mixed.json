@@ -1,0 +1,112 @@
+{
+  "fixture": "text-format",
+  "about": "Mixed character line properties: set only Offset, preserving the other nine differences; each step checks undo.",
+  "scenarios": [
+    {
+      "name": "lineopts-mixed-underline",
+      "rules": [
+        "character.lines.mixed-values"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "underline": true,
+            "underlineWeight": 2,
+            "underlineOffset": 3,
+            "underlineType": "StrokeStyle/$ID/Solid",
+            "underlineColor": "Color/Black",
+            "underlineTint": 50,
+            "underlineGapColor": "Color/Paper",
+            "underlineGapTint": 30,
+            "underlineOverprint": false,
+            "underlineGapOverprint": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 4,
+          "props": {
+            "underline": false,
+            "underlineWeight": 4,
+            "underlineOffset": 5,
+            "underlineType": "StrokeStyle/$ID/Dashed",
+            "underlineColor": "Color/Paper",
+            "underlineTint": 70,
+            "underlineGapColor": "Color/Black",
+            "underlineGapTint": 60,
+            "underlineOverprint": true,
+            "underlineGapOverprint": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "underlineOffset": 7
+          }
+        }
+      ]
+    },
+    {
+      "name": "lineopts-mixed-strike",
+      "rules": [
+        "character.lines.mixed-values"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "strikeThru": true,
+            "strikeThroughWeight": 2,
+            "strikeThroughOffset": 3,
+            "strikeThroughType": "StrokeStyle/$ID/Solid",
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughTint": 50,
+            "strikeThroughGapColor": "Color/Paper",
+            "strikeThroughGapTint": 30,
+            "strikeThroughOverprint": false,
+            "strikeThroughGapOverprint": false
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 4,
+          "props": {
+            "strikeThru": false,
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 5,
+            "strikeThroughType": "StrokeStyle/$ID/Dashed",
+            "strikeThroughColor": "Color/Paper",
+            "strikeThroughTint": 70,
+            "strikeThroughGapColor": "Color/Black",
+            "strikeThroughGapTint": 60,
+            "strikeThroughOverprint": true,
+            "strikeThroughGapOverprint": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "strikeThroughOffset": 7
+          }
+        }
+      ]
+    }
+  ]
+}

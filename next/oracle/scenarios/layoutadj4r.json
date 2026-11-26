@@ -1,0 +1,44 @@
+{
+ "fixture": "layoutadj4r",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj4r-rtl-450x500",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 500
+    }
+   ]
+  },
+  {
+   "name": "layoutadj4r-rtl-200x250",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250
+    }
+   ]
+  },
+  {
+   "name": "layoutadj4r-rtl-margins",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "top_margin": 50,
+     "bottom_margin": 40,
+     "left_margin": 60,
+     "right_margin": 10
+    }
+   ]
+  }
+ ]
+}

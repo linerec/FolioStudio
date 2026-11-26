@@ -1,0 +1,9 @@
+{
+  "fixture": "hyphzones",
+  "scenarios": [
+    {"name":"noop","steps":[],"text":true},
+    {"name":"hyphzones-zone-zero","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenationZone":0}}],"text":true},
+    {"name":"hyphzones-zone-wide","steps":[{"op":"styleEdit","kind":"paragraph","style":"Hyphen Body","props":{"hyphenationZone":72}}],"text":true},
+    {"name":"hyphzones-zone-direct","steps":[{"op":"textFormat","target":"left","start":0,"end":1,"props":{"hyphenationZone":72}}],"text":true}
+  ]
+}

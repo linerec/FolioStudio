@@ -1,0 +1,95 @@
+{
+ "fixture": "typepath-c6-rect-cw",
+ "extension": "textpath",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "typepath-c8-rect-skew",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "SkewPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-rect-ribbon",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "RibbonPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-rect-stair",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "StairStepPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-rect-gravity",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathEffect": "GravityPathEffect"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-rect-ascender",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "TextAlignment": "AscenderTextAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-rect-descender",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "TextAlignment": "DescenderTextAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c8-rect-center",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "TextAlignment": "CenterTextAlignment"
+     }
+    }
+   ]
+  }
+ ],
+ "about": "Closed clockwise rectangle: path effects, text alignment, path alignment and spacing against InDesign 2025."
+}

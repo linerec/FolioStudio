@@ -1,0 +1,8 @@
+{
+  "fixture": "cjk-long",
+  "about": "한글 어절 31/32글자 경계, 하이픈이 꺼진 상태의 앞뒤 최소 글자 수, 끝 공백과 다음 어절.",
+  "scenarios": [
+    {"name": "noop", "text": true, "steps": []},
+    {"name": "cjk-long-lines", "text": true, "steps": [{"op": "recompose"}]}
+  ]
+}

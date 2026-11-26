@@ -1,0 +1,24 @@
+{
+  "fixture": "textpath-dup",
+  "about": "textpath-formatted.idml exported again by InDesign (fixtures/build-reexport.jsx): duplicating text on a path (build-b).",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "textpath-duplicate",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "path",
+          "by": [
+            20,
+            15
+          ],
+          "label": "copy"
+        }
+      ]
+    }
+  ]
+}

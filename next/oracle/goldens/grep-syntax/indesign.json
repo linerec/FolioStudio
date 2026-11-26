@@ -1,0 +1,2621 @@
+{
+"version": "20.5.5.119",
+"cases": [
+{
+"id": "lit-000",
+"pattern": "abc",
+"text": "abc ABC abcabc",
+"mask": "11100000111111"
+},
+{
+"id": "lit-001",
+"pattern": "a\\.c",
+"text": "a.c abc",
+"mask": "1110000"
+},
+{
+"id": "lit-002",
+"pattern": "\\(x\\)",
+"text": "(x) x",
+"mask": "11100"
+},
+{
+"id": "lit-003",
+"pattern": "a\\*",
+"text": "a* aa",
+"mask": "11000"
+},
+{
+"id": "lit-004",
+"pattern": "a\\\\b",
+"text": "a\\b ab",
+"mask": "111000"
+},
+{
+"id": "lit-005",
+"pattern": "a\\/b",
+"text": "a/b",
+"mask": "111"
+},
+{
+"id": "lit-006",
+"pattern": "a\\-b",
+"text": "a-b",
+"mask": "111"
+},
+{
+"id": "lit-007",
+"pattern": "a\\ b",
+"text": "a b",
+"mask": "111"
+},
+{
+"id": "lit-008",
+"pattern": "a b",
+"text": "a b",
+"mask": "111"
+},
+{
+"id": "lit-009",
+"pattern": "a.c",
+"text": "a.c abc a\nc a\rc",
+"mask": "111011100000000"
+},
+{
+"id": "lit-010",
+"pattern": "\\t",
+"text": "a\tb c",
+"mask": "01000"
+},
+{
+"id": "lit-011",
+"pattern": "\\n",
+"text": "a\nb",
+"mask": "010"
+},
+{
+"id": "lit-012",
+"pattern": "\\r",
+"text": "a\rb",
+"mask": "010"
+},
+{
+"id": "lit-013",
+"pattern": "\\x41",
+"text": "A a",
+"mask": "100"
+},
+{
+"id": "lit-014",
+"pattern": "\\x{41}",
+"text": "A a",
+"mask": "100"
+},
+{
+"id": "lit-015",
+"pattern": "\\x{3042}",
+"text": "\u3042\u3044\u3046",
+"mask": "100"
+},
+{
+"id": "lit-016",
+"pattern": "\\u0041",
+"text": "A a 0041",
+"mask": "00000000"
+},
+{
+"id": "lit-017",
+"pattern": "\\x{AC00}+",
+"text": "\uac00\ub098\ub2e4 \uac01",
+"mask": "10000"
+},
+{
+"id": "lit-018",
+"pattern": "\\e",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "lit-019",
+"pattern": "\\f",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "lit-020",
+"pattern": "\\a",
+"text": "a\u0007b",
+"mask": "000"
+},
+{
+"id": "lit-021",
+"pattern": "a{",
+"text": "a{ a",
+"mask": "1100"
+},
+{
+"id": "lit-022",
+"pattern": "}",
+"text": "a}",
+"mask": "01"
+},
+{
+"id": "lit-023",
+"pattern": "a]",
+"text": "a]",
+"mask": "11"
+},
+{
+"id": "lit-024",
+"pattern": "-",
+"text": "a-b",
+"mask": "010"
+},
+{
+"id": "shorthand-025",
+"pattern": ".",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "111111111111111111111"
+},
+{
+"id": "shorthand-026",
+"pattern": ".+",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "111111111111111111111"
+},
+{
+"id": "shorthand-027",
+"pattern": "\\d",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "001000000000000100000"
+},
+{
+"id": "shorthand-028",
+"pattern": "\\D",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "110111111111111011111"
+},
+{
+"id": "shorthand-029",
+"pattern": "\\w",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "111011010101010100000"
+},
+{
+"id": "shorthand-030",
+"pattern": "\\W",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "000100101010101011111"
+},
+{
+"id": "shorthand-031",
+"pattern": "\\s",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "000100001010101011110"
+},
+{
+"id": "shorthand-032",
+"pattern": "\\S",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "111011110101010100001"
+},
+{
+"id": "shorthand-033",
+"pattern": "\\l",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "010001010100000000000"
+},
+{
+"id": "shorthand-034",
+"pattern": "\\L",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "101110101011111111111"
+},
+{
+"id": "shorthand-035",
+"pattern": "\\u",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "100000000001000000000"
+},
+{
+"id": "shorthand-036",
+"pattern": "\\U",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "011111111110111111111"
+},
+{
+"id": "shorthand-037",
+"pattern": "\\h",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "000100001010101011110"
+},
+{
+"id": "shorthand-038",
+"pattern": "\\H",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "111011110101010100001"
+},
+{
+"id": "shorthand-039",
+"pattern": "\\v",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "000000000000000000000"
+},
+{
+"id": "shorthand-040",
+"pattern": "\\R",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "000000000000000000000"
+},
+{
+"id": "shorthand-041",
+"pattern": "\\N",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "000000000000000000000"
+},
+{
+"id": "shorthand-042",
+"pattern": "\\X",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t.",
+"mask": "111111111111111111111"
+},
+{
+"id": "shorthand-043",
+"pattern": ".",
+"text": "a\nb\rc\u2028d",
+"mask": "1010101"
+},
+{
+"id": "shorthand-044",
+"pattern": "\\d+",
+"text": "x12 \u0663\u0664 \uff13\uff14 5",
+"mask": "01101101101"
+},
+{
+"id": "shorthand-045",
+"pattern": "\\w+",
+"text": "abc_1 \uac00\ub098 \u00e9-\u00fc",
+"mask": "111110110101"
+},
+{
+"id": "shorthand-046",
+"pattern": "\\s+",
+"text": "a b\tc\u00a0d\u3000e\u2009f",
+"mask": "01010101010"
+},
+{
+"id": "shorthand-047",
+"pattern": "\\u+",
+"text": "ABC \u00c9a \u00c0\u00c9",
+"mask": "111010011"
+},
+{
+"id": "shorthand-048",
+"pattern": "\\l+",
+"text": "abc \u00e9a \u00e0\u00e9",
+"mask": "111011011"
+},
+{
+"id": "class-049",
+"pattern": "[[:alpha:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1100000001100111011101110"
+},
+{
+"id": "class-050",
+"pattern": "[[:alnum:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1110000001100111011101110"
+},
+{
+"id": "class-051",
+"pattern": "[[:digit:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0010000000000000000000000"
+},
+{
+"id": "class-052",
+"pattern": "[[:upper:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0100000000000000000000000"
+},
+{
+"id": "class-053",
+"pattern": "[[:lower:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000001000111011101110"
+},
+{
+"id": "class-054",
+"pattern": "[[:punct:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0000111100000000000000001"
+},
+{
+"id": "class-055",
+"pattern": "[[:space:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0001000010011000100010000"
+},
+{
+"id": "class-056",
+"pattern": "[[:blank:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0001000010010000100010000"
+},
+{
+"id": "class-057",
+"pattern": "[[:xdigit:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1110000000000111011100000"
+},
+{
+"id": "class-058",
+"pattern": "[[:word:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1110100001100111011101110"
+},
+{
+"id": "class-059",
+"pattern": "[[:print:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1111111111111111111111111"
+},
+{
+"id": "class-060",
+"pattern": "[[:graph:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1110111101100111011101111"
+},
+{
+"id": "class-061",
+"pattern": "[[:cntrl:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0000000000001000000000000"
+},
+{
+"id": "class-062",
+"pattern": "[[:^alpha:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0011111110011000100010001"
+},
+{
+"id": "class-063",
+"pattern": "[[:alpha:][:digit:]]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1110000001100111011101110"
+},
+{
+"id": "class-064",
+"pattern": "[abc]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000111011000000"
+},
+{
+"id": "class-065",
+"pattern": "[^abc]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0111111111111000100111111"
+},
+{
+"id": "class-066",
+"pattern": "[a-c]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000111011000000"
+},
+{
+"id": "class-067",
+"pattern": "[^a-c ]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0110111101101000000101111"
+},
+{
+"id": "class-068",
+"pattern": "[\\d.]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0010010000000000000000000"
+},
+{
+"id": "class-069",
+"pattern": "[\\w-]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1110100001100111011101110"
+},
+{
+"id": "class-070",
+"pattern": "[\\l\\d]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1010000001000111011101110"
+},
+{
+"id": "class-071",
+"pattern": "[\\u\\d]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0110000000000000000000000"
+},
+{
+"id": "class-072",
+"pattern": "[\\s]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0001000010011000100010000"
+},
+{
+"id": "class-073",
+"pattern": "[a-c&&[^b]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0000000000000000000000000"
+},
+{
+"id": "class-074",
+"pattern": "[a-c&&b-d]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000111011100000"
+},
+{
+"id": "class-075",
+"pattern": "[[a-b][x-z]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0000000000000000000000000"
+},
+{
+"id": "class-076",
+"pattern": "[]a]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000100000000001"
+},
+{
+"id": "class-077",
+"pattern": "[a\\]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000100000000001"
+},
+{
+"id": "class-078",
+"pattern": "[\\x41-\\x43]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0100000000000000000000000"
+},
+{
+"id": "class-079",
+"pattern": "[-a]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000100000000000"
+},
+{
+"id": "class-080",
+"pattern": "[a-]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1000000000000100000000000"
+},
+{
+"id": "class-081",
+"pattern": "[\\p{Lu}]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "0000000000000000000000000"
+},
+{
+"id": "class-082",
+"pattern": "[^\\p{L}]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]",
+"mask": "1111111111111111111111111"
+},
+{
+"id": "class-083",
+"pattern": "[[:alpha:]]+",
+"text": "\ud55c\uae00 abc \u00e9",
+"mask": "11011101"
+},
+{
+"id": "quant-084",
+"pattern": "a*",
+"text": "baaac",
+"mask": "00000"
+},
+{
+"id": "quant-085",
+"pattern": "a+",
+"text": "baaac aa",
+"mask": "01110011"
+},
+{
+"id": "quant-086",
+"pattern": "a?",
+"text": "baac",
+"mask": "0000"
+},
+{
+"id": "quant-087",
+"pattern": "a{2}",
+"text": "aaaaa",
+"mask": "11110"
+},
+{
+"id": "quant-088",
+"pattern": "a{2,}",
+"text": "a aa aaaa",
+"mask": "001101111"
+},
+{
+"id": "quant-089",
+"pattern": "a{1,2}",
+"text": "aaaaa",
+"mask": "11111"
+},
+{
+"id": "quant-090",
+"pattern": "a{,2}",
+"text": "aaaaa",
+"mask": "00000"
+},
+{
+"id": "quant-091",
+"pattern": "a{0,1}b",
+"text": "aab b",
+"mask": "01101"
+},
+{
+"id": "quant-092",
+"pattern": "a+?",
+"text": "aaa",
+"mask": "111"
+},
+{
+"id": "quant-093",
+"pattern": "a*?b",
+"text": "aaab",
+"mask": "1111"
+},
+{
+"id": "quant-094",
+"pattern": "a??b",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "quant-095",
+"pattern": "a{1,2}?",
+"text": "aaaa",
+"mask": "1111"
+},
+{
+"id": "quant-096",
+"pattern": "a{2}?",
+"text": "aaaa",
+"mask": "1111"
+},
+{
+"id": "quant-097",
+"pattern": "a++a",
+"text": "aaaa",
+"mask": "0000"
+},
+{
+"id": "quant-098",
+"pattern": "a*+a",
+"text": "aaaa",
+"mask": "0000"
+},
+{
+"id": "quant-099",
+"pattern": "a?+a",
+"text": "aa",
+"mask": "11"
+},
+{
+"id": "quant-100",
+"pattern": "a++b",
+"text": "aaab",
+"mask": "1111"
+},
+{
+"id": "quant-101",
+"pattern": "(ab)++",
+"text": "ababab",
+"mask": "111111"
+},
+{
+"id": "quant-102",
+"pattern": "(?:ab)*",
+"text": "ababc",
+"mask": "11110"
+},
+{
+"id": "quant-103",
+"pattern": ".*",
+"text": "abc def",
+"mask": "1111111"
+},
+{
+"id": "quant-104",
+"pattern": ".*?c",
+"text": "abcabc",
+"mask": "111111"
+},
+{
+"id": "quant-105",
+"pattern": ".+?",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "quant-106",
+"pattern": "b*",
+"text": "abba",
+"mask": "0000"
+},
+{
+"id": "quant-107",
+"pattern": "x*",
+"text": "yy",
+"mask": "00"
+},
+{
+"id": "group-108",
+"pattern": "(ab)+",
+"text": "ababab ab",
+"mask": "111111011"
+},
+{
+"id": "group-109",
+"pattern": "(?:ab)+",
+"text": "ababab ab",
+"mask": "111111011"
+},
+{
+"id": "group-110",
+"pattern": "(a)(b)",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "group-111",
+"pattern": "a|b",
+"text": "abc",
+"mask": "110"
+},
+{
+"id": "group-112",
+"pattern": "ab|cd",
+"text": "abcd",
+"mask": "1111"
+},
+{
+"id": "group-113",
+"pattern": "a(b|c)d",
+"text": "abd acd aed",
+"mask": "11101110000"
+},
+{
+"id": "group-114",
+"pattern": "(?i)abc",
+"text": "ABC abc",
+"mask": "1110111"
+},
+{
+"id": "group-115",
+"pattern": "a(?i)bc",
+"text": "aBC ABC",
+"mask": "1110000"
+},
+{
+"id": "group-116",
+"pattern": "(?i)a(?-i)b",
+"text": "aB AB Ab ab",
+"mask": "00000011011"
+},
+{
+"id": "group-117",
+"pattern": "(?i:a)b",
+"text": "Ab AB",
+"mask": "11000"
+},
+{
+"id": "group-118",
+"pattern": "(?i)\\u",
+"text": "aB",
+"mask": "11"
+},
+{
+"id": "group-119",
+"pattern": "(?i)[a-c]+",
+"text": "AbC",
+"mask": "111"
+},
+{
+"id": "group-120",
+"pattern": "(?i)\u00e9",
+"text": "\u00c9 \u00e9",
+"mask": "101"
+},
+{
+"id": "group-121",
+"pattern": "(?i)\u00df",
+"text": "SS \u00df",
+"mask": "0001"
+},
+{
+"id": "group-122",
+"pattern": "(?s).",
+"text": "a\nb",
+"mask": "111"
+},
+{
+"id": "group-123",
+"pattern": "(?s)a.b",
+"text": "a\nb",
+"mask": "111"
+},
+{
+"id": "group-124",
+"pattern": "(?m)^b",
+"text": "a\rb",
+"mask": "001"
+},
+{
+"id": "group-125",
+"pattern": "(?x) a b ",
+"text": "ab a b",
+"mask": "110000"
+},
+{
+"id": "group-126",
+"pattern": "(?x)a # c\nb",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "group-127",
+"pattern": "(?<n>a)b",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "group-128",
+"pattern": "(?P<n>a)b",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "group-129",
+"pattern": "(?>a+)b",
+"text": "aaab",
+"mask": "1111"
+},
+{
+"id": "group-130",
+"pattern": "(?>a+)a",
+"text": "aaaa",
+"mask": "0000"
+},
+{
+"id": "group-131",
+"pattern": "()",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "group-132",
+"pattern": "(a)|b",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "group-133",
+"pattern": "a||b",
+"text": "ab",
+"mask": "10"
+},
+{
+"id": "group-134",
+"pattern": "(|a)b",
+"text": "ab",
+"mask": "11"
+},
+{
+"id": "group-135",
+"pattern": "(?#comment)a",
+"text": "a",
+"mask": "1"
+},
+{
+"id": "group-136",
+"pattern": "(?i",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "group-137",
+"pattern": "(a",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "group-138",
+"pattern": "a)",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "group-139",
+"pattern": "*a",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "group-140",
+"pattern": "a**",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "look-141",
+"pattern": "a(?=b)",
+"text": "ab ac a",
+"mask": "1000000"
+},
+{
+"id": "look-142",
+"pattern": "a(?!b)",
+"text": "ab ac a",
+"mask": "0001001"
+},
+{
+"id": "look-143",
+"pattern": "(?<=a)b",
+"text": "ab cb b",
+"mask": "0100000"
+},
+{
+"id": "look-144",
+"pattern": "(?<!a)b",
+"text": "ab cb b",
+"mask": "0000101"
+},
+{
+"id": "look-145",
+"pattern": "(?<=ab)c",
+"text": "abc xbc",
+"mask": "0010000"
+},
+{
+"id": "look-146",
+"pattern": "(?<=a|bc)d",
+"text": "ad bcd xd",
+"mask": "000000000"
+},
+{
+"id": "look-147",
+"pattern": "(?<=a+)b",
+"text": "aab",
+"mask": "000"
+},
+{
+"id": "look-148",
+"pattern": "(?<=a*)b",
+"text": "aab",
+"mask": "000"
+},
+{
+"id": "look-149",
+"pattern": "(?<=a{1,2})b",
+"text": "aab",
+"mask": "000"
+},
+{
+"id": "look-150",
+"pattern": "(?=a)",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "look-151",
+"pattern": "(?=.*x)a",
+"text": "ax a",
+"mask": "1000"
+},
+{
+"id": "look-152",
+"pattern": "\\w+(?= x)",
+"text": "ab x cd y",
+"mask": "110000000"
+},
+{
+"id": "look-153",
+"pattern": "(?<=^)a",
+"text": "a",
+"mask": "1"
+},
+{
+"id": "look-154",
+"pattern": "(?<=\\s)\\w+",
+"text": "ab cd ef",
+"mask": "00011011"
+},
+{
+"id": "look-155",
+"pattern": "(?<![a-z])\\d+",
+"text": "a12 12 b3 7",
+"mask": "00101100001"
+},
+{
+"id": "look-156",
+"pattern": "\\d+(?!\\d)",
+"text": "123",
+"mask": "111"
+},
+{
+"id": "look-157",
+"pattern": "(?<=\\()\\d+(?=\\))",
+"text": "(12) 34",
+"mask": "0110000"
+},
+{
+"id": "look-158",
+"pattern": "(?<=a)(?<=b)c",
+"text": "abc",
+"mask": "000"
+},
+{
+"id": "look-159",
+"pattern": "(?<=(a))b",
+"text": "ab",
+"mask": "01"
+},
+{
+"id": "look-160",
+"pattern": "(?<=\\b)a",
+"text": "a ba",
+"mask": "1000"
+},
+{
+"id": "look-161",
+"pattern": "(?=a)a(?!b)",
+"text": "aab",
+"mask": "100"
+},
+{
+"id": "backref-162",
+"pattern": "(a)\\1",
+"text": "aa ab",
+"mask": "11000"
+},
+{
+"id": "backref-163",
+"pattern": "(\\w)\\1",
+"text": "aabbc",
+"mask": "11110"
+},
+{
+"id": "backref-164",
+"pattern": "(a)(b)\\2\\1",
+"text": "abba ab",
+"mask": "1111000"
+},
+{
+"id": "backref-165",
+"pattern": "(?<x>a)\\k<x>",
+"text": "aa ab",
+"mask": "11000"
+},
+{
+"id": "backref-166",
+"pattern": "(a)|\\1",
+"text": "a",
+"mask": "1"
+},
+{
+"id": "backref-167",
+"pattern": "\\1(a)",
+"text": "aa",
+"mask": "00"
+},
+{
+"id": "backref-168",
+"pattern": "(a)\\2",
+"text": "aa",
+"mask": "11"
+},
+{
+"id": "backref-169",
+"pattern": "(?i)(a)\\1",
+"text": "aA aa",
+"mask": "11011"
+},
+{
+"id": "backref-170",
+"pattern": "(\\w+) \\1",
+"text": "the the cat cat dog",
+"mask": "1111111011111110000"
+},
+{
+"id": "backref-171",
+"pattern": "(a*)\\1",
+"text": "aaaa",
+"mask": "1111"
+},
+{
+"id": "backref-172",
+"pattern": "(a)(?:b)\\1",
+"text": "aba",
+"mask": "111"
+},
+{
+"id": "backref-173",
+"pattern": "(a)\\10",
+"text": "aa0",
+"mask": "111"
+},
+{
+"id": "backref-174",
+"pattern": "(a)\\0",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "backref-175",
+"pattern": "(.)\\1\\1",
+"text": "aaab",
+"mask": "1110"
+},
+{
+"id": "anchor-176",
+"pattern": "^a",
+"text": "ab\rab\rba",
+"mask": "10010000"
+},
+{
+"id": "anchor-177",
+"pattern": "a$",
+"text": "ba\rab\rba",
+"mask": "01000001"
+},
+{
+"id": "anchor-178",
+"pattern": "^",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "anchor-179",
+"pattern": "$",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "anchor-180",
+"pattern": "^$",
+"text": "\ra\r",
+"mask": "000"
+},
+{
+"id": "anchor-181",
+"pattern": "\\ba",
+"text": "a ba b-a",
+"mask": "10000001"
+},
+{
+"id": "anchor-182",
+"pattern": "a\\b",
+"text": "a ab a-b",
+"mask": "10000100"
+},
+{
+"id": "anchor-183",
+"pattern": "\\Ba",
+"text": "a ba",
+"mask": "0001"
+},
+{
+"id": "anchor-184",
+"pattern": "a\\B",
+"text": "a ab a b",
+"mask": "00100000"
+},
+{
+"id": "anchor-185",
+"pattern": "\\Aa",
+"text": "a\ra",
+"mask": "100"
+},
+{
+"id": "anchor-186",
+"pattern": "a\\Z",
+"text": "a\ra",
+"mask": "001"
+},
+{
+"id": "anchor-187",
+"pattern": "a\\z",
+"text": "a\ra",
+"mask": "001"
+},
+{
+"id": "anchor-188",
+"pattern": "^a",
+"text": "a\nb\na",
+"mask": "10001"
+},
+{
+"id": "anchor-189",
+"pattern": "a$",
+"text": "a\nb\na",
+"mask": "10001"
+},
+{
+"id": "anchor-190",
+"pattern": "(?m)^a",
+"text": "a\nb\na",
+"mask": "10001"
+},
+{
+"id": "anchor-191",
+"pattern": "(?m)a$",
+"text": "a\nb\na",
+"mask": "10001"
+},
+{
+"id": "anchor-192",
+"pattern": "^\\w+",
+"text": "ab cd",
+"mask": "11000"
+},
+{
+"id": "anchor-193",
+"pattern": "\\w+$",
+"text": "ab cd",
+"mask": "00011"
+},
+{
+"id": "anchor-194",
+"pattern": "\\<a",
+"text": "a ba",
+"mask": "1000"
+},
+{
+"id": "anchor-195",
+"pattern": "a\\>",
+"text": "a ab",
+"mask": "1000"
+},
+{
+"id": "anchor-196",
+"pattern": "\\Ga",
+"text": "aab",
+"mask": "110"
+},
+{
+"id": "anchor-197",
+"pattern": "\\b\u00e9",
+"text": "a\u00e9 \u00e9",
+"mask": "0001"
+},
+{
+"id": "anchor-198",
+"pattern": "\\b\uac00",
+"text": "\uac00 a\uac00",
+"mask": "1000"
+},
+{
+"id": "anchor-199",
+"pattern": "^~m",
+"text": "\u2003a",
+"mask": "10"
+},
+{
+"id": "anchor-200",
+"pattern": "\\bx",
+"text": "\uac00x x",
+"mask": "0001"
+},
+{
+"id": "unicode-201",
+"pattern": "\\p{L}+",
+"text": "ab\uac00\u00e91",
+"mask": "11010"
+},
+{
+"id": "unicode-202",
+"pattern": "\\p{Lu}",
+"text": "aB\u00c9",
+"mask": "011"
+},
+{
+"id": "unicode-203",
+"pattern": "\\p{Ll}",
+"text": "aB\u00e9",
+"mask": "101"
+},
+{
+"id": "unicode-204",
+"pattern": "\\p{Nd}+",
+"text": "1\u0663\uff13a",
+"mask": "1110"
+},
+{
+"id": "unicode-205",
+"pattern": "\\p{N}",
+"text": "1\u00bda",
+"mask": "000"
+},
+{
+"id": "unicode-206",
+"pattern": "\\p{P}",
+"text": "a,.!-",
+"mask": "00000"
+},
+{
+"id": "unicode-207",
+"pattern": "\\p{S}",
+"text": "a+$\u00a9",
+"mask": "0000"
+},
+{
+"id": "unicode-208",
+"pattern": "\\p{Z}",
+"text": "a b\u00a0",
+"mask": "0000"
+},
+{
+"id": "unicode-209",
+"pattern": "\\p{Zs}",
+"text": "a b\u00a0\t",
+"mask": "01010"
+},
+{
+"id": "unicode-210",
+"pattern": "\\p{Han}+",
+"text": "\u6f22\u5b57\u304b\u306a\ud55c\uae00",
+"mask": "000000"
+},
+{
+"id": "unicode-211",
+"pattern": "\\p{Hiragana}+",
+"text": "\u6f22\u5b57\u304b\u306a\u30ab\u30ca",
+"mask": "000000"
+},
+{
+"id": "unicode-212",
+"pattern": "\\p{Katakana}+",
+"text": "\u304b\u306a\u30ab\u30ca",
+"mask": "0000"
+},
+{
+"id": "unicode-213",
+"pattern": "\\p{Hangul}+",
+"text": "\ud55c\uae00ab",
+"mask": "0000"
+},
+{
+"id": "unicode-214",
+"pattern": "\\p{Latin}+",
+"text": "ab\uac00\u00e9",
+"mask": "0000"
+},
+{
+"id": "unicode-215",
+"pattern": "\\p{Cyrillic}+",
+"text": "ab\u0416\u0436",
+"mask": "0000"
+},
+{
+"id": "unicode-216",
+"pattern": "\\p{Greek}",
+"text": "ab\u03b1",
+"mask": "000"
+},
+{
+"id": "unicode-217",
+"pattern": "\\P{L}+",
+"text": "ab1 2",
+"mask": "00111"
+},
+{
+"id": "unicode-218",
+"pattern": "\\p{IsGreek}",
+"text": "a\u03b1",
+"mask": "00"
+},
+{
+"id": "unicode-219",
+"pattern": "\\p{Alphabetic}+",
+"text": "ab1\uac00",
+"mask": "0000"
+},
+{
+"id": "unicode-220",
+"pattern": "\\p{Uppercase}",
+"text": "aB",
+"mask": "00"
+},
+{
+"id": "unicode-221",
+"pattern": "\\p{javaLowerCase}",
+"text": "aB",
+"mask": "00"
+},
+{
+"id": "unicode-222",
+"pattern": "[\uac00-\ud7a3]+",
+"text": "\uac00\ub098 abc \ub2e4",
+"mask": "11000001"
+},
+{
+"id": "unicode-223",
+"pattern": "[\u3041-\u3093]+",
+"text": "\u304b\u306a\u30ab\u30ca",
+"mask": "1100"
+},
+{
+"id": "unicode-224",
+"pattern": "[\u4e00-\u9fa5]+",
+"text": "\u6f22\u5b57\u304b\u306a",
+"mask": "1100"
+},
+{
+"id": "unicode-225",
+"pattern": "\\p{XYZ}",
+"text": "a",
+"mask": "0"
+},
+{
+"id": "unicode-226",
+"pattern": "\\N{LATIN SMALL LETTER A}",
+"text": "a",
+"mask": "1"
+},
+{
+"id": "korean-227",
+"pattern": "\\w+",
+"text": "\uc548\ub155 \ud558\uc138\uc694, abc",
+"mask": "11011100111"
+},
+{
+"id": "korean-228",
+"pattern": "\\b\\w+\\b",
+"text": "\uc548\ub155 \ud558\uc138\uc694",
+"mask": "110111"
+},
+{
+"id": "korean-229",
+"pattern": "\\l+",
+"text": "\uc548\ub155 abc",
+"mask": "000111"
+},
+{
+"id": "korean-230",
+"pattern": "\\u+",
+"text": "\uc548\ub155 ABC",
+"mask": "000111"
+},
+{
+"id": "korean-231",
+"pattern": "[[:alpha:]]+",
+"text": "\uc548\ub155 abc",
+"mask": "110111"
+},
+{
+"id": "korean-232",
+"pattern": ".+",
+"text": "\uc548\ub155\ud558\uc138\uc694",
+"mask": "11111"
+},
+{
+"id": "korean-233",
+"pattern": "\\S+",
+"text": "\uc548\ub155 \ud558\uc138\uc694",
+"mask": "110111"
+},
+{
+"id": "korean-234",
+"pattern": "[^ ]+",
+"text": "\uc548\ub155 \ud558\uc138\uc694",
+"mask": "110111"
+},
+{
+"id": "korean-235",
+"pattern": "\\d+",
+"text": "\uc81c3\ud68c 2026\ub144",
+"mask": "010011110"
+},
+{
+"id": "korean-236",
+"pattern": "\u300c[^\u300d]*\u300d",
+"text": "\uadf8\ub294 \u300c\uc548\ub155\u300d \ud558\uace0",
+"mask": "0001111000"
+},
+{
+"id": "korean-237",
+"pattern": "([\uac00-\ud7a3]+)(\uc740|\ub294)",
+"text": "\ub098\ub294 \ucc45\uc740",
+"mask": "11011"
+},
+{
+"id": "code-238",
+"pattern": "~_",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-239",
+"pattern": "~=",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "001000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-240",
+"pattern": "~-",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000010000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-241",
+"pattern": "~~",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000100000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-242",
+"pattern": "~{",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000001000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-243",
+"pattern": "~}",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000010000010000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-244",
+"pattern": "~[",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000100000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-245",
+"pattern": "~]",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000001000100000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-246",
+"pattern": "~\"",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-247",
+"pattern": "~'",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-248",
+"pattern": "~m",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000001000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-249",
+"pattern": "~n",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-250",
+"pattern": "~N",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-251",
+"pattern": "~f",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-252",
+"pattern": "~s",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000001000000000000"
+},
+{
+"id": "code-253",
+"pattern": "~t",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-254",
+"pattern": "~S",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000001000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-255",
+"pattern": "~b",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-256",
+"pattern": "~|",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000010000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-257",
+"pattern": "~<",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000100000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-258",
+"pattern": "~>",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000010000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-259",
+"pattern": "~/",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000100000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-260",
+"pattern": "~.",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000001000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-261",
+"pattern": "~3",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000010000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-262",
+"pattern": "~%",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000001000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-263",
+"pattern": "~4",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000100000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-264",
+"pattern": "~y",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-265",
+"pattern": "~i",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-266",
+"pattern": "~e",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000001000000000000000000000000000000000000000"
+},
+{
+"id": "code-267",
+"pattern": "~h",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-268",
+"pattern": "~k",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000100"
+},
+{
+"id": "code-269",
+"pattern": "~M",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-270",
+"pattern": "~R",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-271",
+"pattern": "~P",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-272",
+"pattern": "~L",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-273",
+"pattern": "~E",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-274",
+"pattern": "~j",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000100000000000000000000000000000000000000000"
+},
+{
+"id": "code-275",
+"pattern": "~J",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-276",
+"pattern": "~a",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-277",
+"pattern": "~F",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-278",
+"pattern": "~I",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-279",
+"pattern": "~x",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-280",
+"pattern": "~X",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-281",
+"pattern": "~V",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-282",
+"pattern": "~#",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-283",
+"pattern": "~8",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000001000000000000000000000000000"
+},
+{
+"id": "code-284",
+"pattern": "~2",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000010000000000000000000000000000000000000"
+},
+{
+"id": "code-285",
+"pattern": "~6",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000100000000000000000000000000000"
+},
+{
+"id": "code-286",
+"pattern": "~7",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000010000000000000000000000000000000"
+},
+{
+"id": "code-287",
+"pattern": "~r",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000100000000000000000000000000000000000"
+},
+{
+"id": "code-288",
+"pattern": "~d",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000001000000000000000000000000000000000"
+},
+{
+"id": "code-289",
+"pattern": "~g",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-290",
+"pattern": "~D",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-291",
+"pattern": "~G",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-292",
+"pattern": "~H",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-293",
+"pattern": "~0",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-294",
+"pattern": "~1",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-295",
+"pattern": "~5",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-296",
+"pattern": "~9",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-297",
+"pattern": "~A",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-298",
+"pattern": "~?",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-299",
+"pattern": "~!",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-300",
+"pattern": "~@",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-301",
+"pattern": "~$",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-302",
+"pattern": "~^",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-303",
+"pattern": "~&",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-304",
+"pattern": "~*",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-305",
+"pattern": "~(",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000010000000000"
+},
+{
+"id": "code-306",
+"pattern": "~)",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-307",
+"pattern": "~+",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-308",
+"pattern": "~,",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-309",
+"pattern": "~:",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-310",
+"pattern": "~;",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-311",
+"pattern": "~\\",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-312",
+"pattern": "~B",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-313",
+"pattern": "~C",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-314",
+"pattern": "~K",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-315",
+"pattern": "~O",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-316",
+"pattern": "~Q",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-317",
+"pattern": "~T",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-318",
+"pattern": "~U",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-319",
+"pattern": "~W",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-320",
+"pattern": "~Y",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-321",
+"pattern": "~Z",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-322",
+"pattern": "~c",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-323",
+"pattern": "~l",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-324",
+"pattern": "~o",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-325",
+"pattern": "~p",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-326",
+"pattern": "~q",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-327",
+"pattern": "~u",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-328",
+"pattern": "~v",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-329",
+"pattern": "~w",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-330",
+"pattern": "~z",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028xxxx~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012",
+"mask": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+{
+"id": "code-331",
+"pattern": "A~SB",
+"text": "A\u00a0B",
+"mask": "111"
+},
+{
+"id": "code-332",
+"pattern": "C~<D",
+"text": "C\u2009D",
+"mask": "111"
+},
+{
+"id": "code-333",
+"pattern": "a~_b",
+"text": "a\u2014b",
+"mask": "111"
+},
+{
+"id": "code-334",
+"pattern": "~m+",
+"text": "\u2003\u2003x",
+"mask": "110"
+},
+{
+"id": "code-335",
+"pattern": "[~m~>]+",
+"text": "\u2003\u2002x",
+"mask": "110"
+},
+{
+"id": "code-336",
+"pattern": "[^~m]",
+"text": "a\u2003",
+"mask": "10"
+},
+{
+"id": "code-337",
+"pattern": "a~?b",
+"text": "a?b",
+"mask": "000"
+},
+{
+"id": "code-338",
+"pattern": "~+",
+"text": "a+b",
+"mask": "000"
+},
+{
+"id": "code-339",
+"pattern": "~\\d",
+"text": "~1",
+"mask": "11"
+},
+{
+"id": "code-340",
+"pattern": "~~",
+"text": "~a~",
+"mask": "000"
+},
+{
+"id": "code-341",
+"pattern": "a~",
+"text": "a~",
+"mask": "11"
+},
+{
+"id": "code-342",
+"pattern": "~",
+"text": "a~",
+"mask": "01"
+},
+{
+"id": "r2-343",
+"pattern": "a?",
+"text": "aab",
+"mask": "110"
+},
+{
+"id": "r2-344",
+"pattern": "a*",
+"text": "aab b",
+"mask": "11000"
+},
+{
+"id": "r2-345",
+"pattern": "a*?",
+"text": "aab",
+"mask": "000"
+},
+{
+"id": "r2-346",
+"pattern": "(a|)",
+"text": "aab",
+"mask": "110"
+},
+{
+"id": "r2-347",
+"pattern": "b?",
+"text": "bba",
+"mask": "110"
+},
+{
+"id": "r2-348",
+"pattern": "(?=b)|a",
+"text": "ab",
+"mask": "10"
+},
+{
+"id": "r2-349",
+"pattern": "a*",
+"text": "baa",
+"mask": "000"
+},
+{
+"id": "r2-350",
+"pattern": "b*",
+"text": "bba",
+"mask": "110"
+},
+{
+"id": "r2-351",
+"pattern": "\\b",
+"text": "ab cd",
+"mask": "00000"
+},
+{
+"id": "r2-352",
+"pattern": "(?<=ab|cd)e",
+"text": "abe cde xe",
+"mask": "0010001000"
+},
+{
+"id": "r2-353",
+"pattern": "(?<=a|b)c",
+"text": "ac bc xc",
+"mask": "01001000"
+},
+{
+"id": "r2-354",
+"pattern": "(?<=a{2})b",
+"text": "aab ab",
+"mask": "001000"
+},
+{
+"id": "r2-355",
+"pattern": "(?<=\\w{2})b",
+"text": "aab ab",
+"mask": "001000"
+},
+{
+"id": "r2-356",
+"pattern": "(?<=(?i)a)b",
+"text": "Ab ab",
+"mask": "01001"
+},
+{
+"id": "r2-357",
+"pattern": "(?<!ab|cd)e",
+"text": "abe cde xe",
+"mask": "0000000001"
+},
+{
+"id": "r2-358",
+"pattern": "(?<=a.)c",
+"text": "abc",
+"mask": "001"
+},
+{
+"id": "r2-359",
+"pattern": "(?<=[ab])c",
+"text": "ac bc xc",
+"mask": "01001000"
+},
+{
+"id": "r2-360",
+"pattern": "(?<=ab?)c",
+"text": "abc ac",
+"mask": "000000"
+},
+{
+"id": "r2-361",
+"pattern": "(a)\\2",
+"text": "aa",
+"mask": "11"
+},
+{
+"id": "r2-362",
+"pattern": "(a)\\2",
+"text": "ab",
+"mask": "00"
+},
+{
+"id": "r2-363",
+"pattern": "(a)(b)\\3",
+"text": "abb",
+"mask": "000"
+},
+{
+"id": "r2-364",
+"pattern": "(a)\\k<n>",
+"text": "aa",
+"mask": "00"
+},
+{
+"id": "r2-365",
+"pattern": "(?<n>a)\\1",
+"text": "aa",
+"mask": "11"
+},
+{
+"id": "r2-366",
+"pattern": "a{2,1}",
+"text": "aaa",
+"mask": "000"
+},
+{
+"id": "r2-367",
+"pattern": "a{1,2,3}",
+"text": "aaa",
+"mask": "000"
+},
+{
+"id": "r2-368",
+"pattern": "a{x}",
+"text": "a{x}",
+"mask": "1111"
+},
+{
+"id": "r2-369",
+"pattern": "a{}",
+"text": "a{}",
+"mask": "111"
+},
+{
+"id": "r2-370",
+"pattern": "a{1",
+"text": "a{1",
+"mask": "111"
+},
+{
+"id": "r2-371",
+"pattern": "a{1,}",
+"text": "aaa",
+"mask": "111"
+},
+{
+"id": "r2-372",
+"pattern": "a{0}b",
+"text": "ab b",
+"mask": "0101"
+},
+{
+"id": "r2-373",
+"pattern": "\\Qa.b\\E",
+"text": "a.b axb",
+"mask": "1110000"
+},
+{
+"id": "r2-374",
+"pattern": "\\Qa.b",
+"text": "a.b axb",
+"mask": "1110000"
+},
+{
+"id": "r2-375",
+"pattern": "\\v",
+"text": "a\nb\rc",
+"mask": "01010"
+},
+{
+"id": "r2-376",
+"pattern": "\\R",
+"text": "a\nb\rc",
+"mask": "01010"
+},
+{
+"id": "r2-377",
+"pattern": "\\h+",
+"text": "a \t\u00a0b",
+"mask": "01110"
+},
+{
+"id": "r2-378",
+"pattern": "(?i)\u00c0\u00c9",
+"text": "\u00e0\u00e9 \u00c0\u00c9",
+"mask": "11011"
+},
+{
+"id": "r2-379",
+"pattern": "(?i)[\u00e0-\u00e9]+",
+"text": "\u00c0\u00c9",
+"mask": "11"
+},
+{
+"id": "r2-380",
+"pattern": "(?i)\\l+",
+"text": "aB",
+"mask": "11"
+},
+{
+"id": "r2-381",
+"pattern": "(?i)\\L",
+"text": "aB1",
+"mask": "001"
+},
+{
+"id": "r2-382",
+"pattern": "(?-i)a",
+"text": "aA",
+"mask": "10"
+},
+{
+"id": "r2-383",
+"pattern": ".",
+"text": "a\u0085b\u2029cd",
+"mask": "101011"
+},
+{
+"id": "r2-384",
+"pattern": "^a",
+"text": "a\u2028a",
+"mask": "100"
+},
+{
+"id": "r2-385",
+"pattern": "a$",
+"text": "a\u2028a",
+"mask": "000"
+},
+{
+"id": "r2-386",
+"pattern": "a\u2028",
+"text": "a\u2028",
+"mask": "11"
+},
+{
+"id": "prop-387",
+"pattern": "\\p{L}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "10000000000000000000"
+},
+{
+"id": "prop-388",
+"pattern": "\\p{Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "01000000000000000000"
+},
+{
+"id": "prop-389",
+"pattern": "\\p{Ll}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "10000000000000000000"
+},
+{
+"id": "prop-390",
+"pattern": "\\p{Lt}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00100000000000000000"
+},
+{
+"id": "prop-391",
+"pattern": "\\p{Lm}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00010000000000000000"
+},
+{
+"id": "prop-392",
+"pattern": "\\p{Lo}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00001100000000000000"
+},
+{
+"id": "prop-393",
+"pattern": "\\p{LC}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-394",
+"pattern": "\\p{L&}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-395",
+"pattern": "\\p{M}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-396",
+"pattern": "\\p{Mn}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000010000"
+},
+{
+"id": "prop-397",
+"pattern": "\\p{N}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-398",
+"pattern": "\\p{Nd}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000010000000000000"
+},
+{
+"id": "prop-399",
+"pattern": "\\p{Nl}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000100000000000"
+},
+{
+"id": "prop-400",
+"pattern": "\\p{No}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000001000000000000"
+},
+{
+"id": "prop-401",
+"pattern": "\\p{P}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-402",
+"pattern": "\\p{Pc}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000010"
+},
+{
+"id": "prop-403",
+"pattern": "\\p{Pd}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000010000000000"
+},
+{
+"id": "prop-404",
+"pattern": "\\p{Ps}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000001000000000"
+},
+{
+"id": "prop-405",
+"pattern": "\\p{Pe}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000100000000"
+},
+{
+"id": "prop-406",
+"pattern": "\\p{Po}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000010000000"
+},
+{
+"id": "prop-407",
+"pattern": "\\p{S}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000001100"
+},
+{
+"id": "prop-408",
+"pattern": "\\p{Sm}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000100000"
+},
+{
+"id": "prop-409",
+"pattern": "\\p{Sc}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000001000000"
+},
+{
+"id": "prop-410",
+"pattern": "\\p{Sk}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-411",
+"pattern": "\\p{So}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-412",
+"pattern": "\\p{Z}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-413",
+"pattern": "\\p{Zs}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000001000"
+},
+{
+"id": "prop-414",
+"pattern": "\\p{Zl}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000100"
+},
+{
+"id": "prop-415",
+"pattern": "\\p{C}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-416",
+"pattern": "\\p{Cc}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-417",
+"pattern": "\\p{Cf}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-418",
+"pattern": "\\p{Letter}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "11111100000000000000"
+},
+{
+"id": "prop-419",
+"pattern": "\\p{Uppercase_Letter}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "01000000000000000000"
+},
+{
+"id": "prop-420",
+"pattern": "\\p{Lowercase_Letter}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "10000000000000000000"
+},
+{
+"id": "prop-421",
+"pattern": "\\p{lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "01000000000000000000"
+},
+{
+"id": "prop-422",
+"pattern": "\\p{ASCII}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "11000010011111101010"
+},
+{
+"id": "prop-423",
+"pattern": "\\p{Alpha}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "11111100000000000000"
+},
+{
+"id": "prop-424",
+"pattern": "\\p{IsLu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-425",
+"pattern": "\\p{gc=Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-426",
+"pattern": "\\p{General_Category=Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-427",
+"pattern": "\\p{^Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-428",
+"pattern": "\\pL",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "10000000000000000000"
+},
+{
+"id": "prop-429",
+"pattern": "\\pLu",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-430",
+"pattern": "\\P{Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "10111111111111111110"
+},
+{
+"id": "prop-431",
+"pattern": "\\P{L}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "01111111111111111110"
+},
+{
+"id": "prop-432",
+"pattern": "\\p{L}+",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "10000000000000000000"
+},
+{
+"id": "prop-433",
+"pattern": "[\\p{L}]",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+},
+{
+"id": "prop-434",
+"pattern": "[^\\p{Lu}]",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "11111111111111111110"
+},
+{
+"id": "prop-435",
+"pattern": "[\\P{Lu}]",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301 \u2028_\u00ad",
+"mask": "00000000000000000000"
+}
+]
+}

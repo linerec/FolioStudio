@@ -1,0 +1,8 @@
+{
+  "fixture":"basic",
+  "scenarios":[
+    {"name":"pages-existing-move","steps":[{"op":"movePages","pages":[0]}]},
+    {"name":"pages-existing-delete","steps":[{"op":"deletePages","pages":[0]}]},
+    {"name":"pages-existing-duplicate","steps":[{"op":"duplicateSpread","spread":1}]}
+  ]
+}

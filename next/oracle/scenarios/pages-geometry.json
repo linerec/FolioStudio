@@ -1,0 +1,10 @@
+{
+  "fixture": "pages-single",
+  "extension": "page-geometry",
+  "scenarios": [
+    {"name":"page-geometry-width","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-150,-200,250,200]}]},
+    {"name":"page-geometry-landscape","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-150,-200,250,100]}]},
+    {"name":"page-geometry-move","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[-130,-170,170,230]}]},
+    {"name":"page-geometry-second","window":false,"steps":[{"op":"setPageGeometry","pages":["u169"],"bounds":[-180,-180,170,270]}]}
+  ]
+}

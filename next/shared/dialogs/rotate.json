@@ -1,0 +1,69 @@
+{
+  "title": "회전",
+  "style": "transform",
+  "target": "selection",
+  "fields": [
+    {
+      "name": "angle",
+      "label": "각도",
+      "type": "number",
+      "unit": "angle",
+      "default": 0,
+      "min": -3600000,
+      "max": 3600000,
+      "group": "회전"
+    },
+    {
+      "name": "anchor",
+      "type": "enum",
+      "default": "topLeft",
+      "hidden": true,
+      "options": [
+        "topLeft",
+        "top",
+        "topRight",
+        "left",
+        "center",
+        "right",
+        "bottomLeft",
+        "bottom",
+        "bottomRight"
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "rotate",
+        "ids": "$ids",
+        "by": "$angle",
+        "anchor": "$anchor"
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          0,
+          0
+        ]
+      },
+      {
+        "op": "rotate",
+        "ids": [
+          "@copies"
+        ],
+        "by": "$angle",
+        "anchor": "$anchor"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u149" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="true" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<GridDataInformation FontStyle="$ID/" PointSize="9.21259842519685" CharacterAki="0" LineAki="6.909448818897637" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Endnotes</Content>
+				<Br />
+				<EndnoteRange Self="u16a" SourceEndnote="u16d">
+					<Content>﻿<?ACE 4?>	Middle body.﻿</Content>
+				</EndnoteRange>
+				<Br />
+			</CharacterStyleRange>
+			<EndnoteRange Self="u16b" SourceEndnote="u16e">
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<Content>﻿<?ACE 4?>	La</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold">
+					<Content>s</Content>
+				</CharacterStyleRange>
+				<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+					<Content>t body.</Content>
+					<Br />
+					<Content>Another paragraph.﻿</Content>
+				</CharacterStyleRange>
+			</EndnoteRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

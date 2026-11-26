@@ -1,0 +1,14 @@
+<FootnoteOption StartAt="1" Prefix="" Suffix="" FootnoteTextStyle="ParagraphStyle/$ID/NormalParagraphStyle" FootnoteMarkerStyle="CharacterStyle/$ID/[No character style]" SeparatorText="&#9;" SpaceBetween="0" Spacer="0" FootnoteFirstBaselineOffset="LeadingOffset" FootnoteMinimumFirstBaselineOffset="0" EosPlacement="false" NoSplitting="false" RuleOn="true" RuleLineWeight="1" RuleTint="100" RuleGapTint="100" RuleGapOverprint="false" RuleOverprint="false" RuleLeftIndent="0" RuleWidth="72" RuleOffset="0" ContinuingRuleOn="true" ContinuingRuleLineWeight="1" ContinuingRuleTint="100" ContinuingRuleGapTint="100" ContinuingRuleOverprint="false" ContinuingRuleGapOverprint="false" ContinuingRuleLeftIndent="0" ContinuingRuleWidth="288" ContinuingRuleOffset="0" EnableStraddling="true">
+  <Properties>
+    <FootnoteNumberingStyle type="enumeration">Arabic</FootnoteNumberingStyle>
+    <RestartNumbering type="enumeration">DontRestart</RestartNumbering>
+    <ShowPrefixSuffix type="enumeration">NoPrefixSuffix</ShowPrefixSuffix>
+    <MarkerPositioning type="enumeration">SuperscriptMarker</MarkerPositioning>
+    <RuleType type="object">StrokeStyle/$ID/Solid</RuleType>
+    <RuleColor type="object">Color/Black</RuleColor>
+    <RuleGapColor type="object">Swatch/None</RuleGapColor>
+    <ContinuingRuleType type="object">StrokeStyle/$ID/Solid</ContinuingRuleType>
+    <ContinuingRuleColor type="object">Color/Black</ContinuingRuleColor>
+    <ContinuingRuleGapColor type="object">Swatch/None</ContinuingRuleGapColor>
+  </Properties>
+</FootnoteOption>

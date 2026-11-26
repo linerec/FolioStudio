@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u12e" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Body">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>First paragraph for a footnote</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Position="Superscript">
+				<Footnote>
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content><?ACE 4?>	First note. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body.</Content>
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+				</Footnote>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>.</Content>
+				<Br />
+				<Content>Second paragraph for another note.</Content>
+				<Br />
+				<Content>Third paragraph ends here.</Content>
+				<Br />
+				<Content>Body line 1.</Content>
+				<Br />
+				<Content>Body line 2.</Content>
+				<Br />
+				<Content>Body line 3.</Content>
+				<Br />
+				<Content>Body line 4.</Content>
+				<Br />
+				<Content>Body line 5.</Content>
+				<Br />
+				<Content>Body line 6.</Content>
+				<Br />
+				<Content>Body line 7.</Content>
+				<Br />
+				<Content>Body line 8.</Content>
+				<Br />
+				<Content>Body line 9.</Content>
+				<Br />
+				<Content>Body line 10.</Content>
+				<Br />
+				<Content>Body line 11.</Content>
+				<Br />
+				<Content>Body line 12.</Content>
+				<Br />
+				<Content>Body line 13.</Content>
+				<Br />
+				<Content>Body line 14.</Content>
+				<Br />
+				<Content>Body line 15.</Content>
+				<Br />
+				<Content>Body line 16.</Content>
+				<Br />
+				<Content>Body line 17.</Content>
+				<Br />
+				<Content>Body line 18.</Content>
+				<Br />
+				<Content>Body line 19.</Content>
+				<Br />
+				<Content>Body line 20.</Content>
+				<Br />
+				<Content>Body line 21.</Content>
+				<Br />
+				<Content>Body line 22.</Content>
+				<Br />
+				<Content>Body line 23.</Content>
+				<Br />
+				<Content>Body line 24.</Content>
+				<Br />
+				<Content>Body line 25.</Content>
+				<Br />
+				<Content>Body line 26.</Content>
+				<Br />
+				<Content>Body line 27.</Content>
+				<Br />
+				<Content>Body line 28.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

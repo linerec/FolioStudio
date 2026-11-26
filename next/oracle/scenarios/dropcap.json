@@ -1,0 +1,555 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "dropcap-noop-ref",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 0,
+      "dropCapCharacters": 0
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-3-1",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-2-1",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 2,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-3-2",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-4-1",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 4,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-3-1-size",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 250,
+     "props": {
+      "pointSize": 16,
+      "leading": 22
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-short",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Short one.\rSecond paragraph follows here with a bit more text to wrap onto the next line and the next.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-korean",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "korean-format",
+     "at": 0,
+     "text": "한글 문단의 시작에는 큰 글자를 놓을 수 있습니다. 좋은 조판은 글자가 쪽 안으로 스며들어 의미만 남기고, 장식 문자는 문단의 시작을 조용히 알려 줍니다. 줄 수와 글자 수를 바꾸어 위치를 확인합니다.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 2,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-para2",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "First paragraph is short.\rTypography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 30,
+     "end": 30,
+     "props": {
+      "spaceBefore": 8,
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-1-3",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 1,
+      "dropCapCharacters": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-noalign",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 0
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-noalign-2",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 2,
+      "dropCapDetail": 0
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-desc-g",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "gypsies travel along the quiet roads of the hills, singing songs about the people they meet on the way, and they never stay long in one place at all.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-desc-gy4",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "gypsies travel along the quiet roads of the hills, singing songs about the people they meet on the way, and they never stay long in one place at all.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 4,
+      "dropCapCharacters": 2,
+      "dropCapDetail": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-desc-Q",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Quietly the typography settles into the page, a calm craft of arranging letters so that language becomes legible and appealing to the reader.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 2,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-desc-T",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-style-bold",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setDropCapStyle",
+     "style": "ParagraphStyle/Format Body",
+     "character_style": "CharacterStyle/Format Bold"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-style-large",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setDropCapStyle",
+     "style": "ParagraphStyle/Format Body",
+     "character_style": "CharacterStyle/Format Large"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-style-serif",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setDropCapStyle",
+     "style": "ParagraphStyle/Format Body",
+     "character_style": "CharacterStyle/Format Serif"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-style-serif-g",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "gypsies travel along the quiet roads of the hills, singing songs about the people they meet on the way, and they never stay long in one place at all.\r"
+    },
+    {
+     "op": "setDropCapStyle",
+     "style": "ParagraphStyle/Format Body",
+     "character_style": "CharacterStyle/Format Serif"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-style-italic",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "Typography is the craft of arranging letters so that language becomes legible and appealing to the reader. Good type disappears into the page, carrying meaning without drawing attention to itself, and a drop cap marks the start with quiet confidence.\r"
+    },
+    {
+     "op": "setDropCapStyle",
+     "style": "ParagraphStyle/Format Body",
+     "character_style": "CharacterStyle/Format Italic"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-korean-noalign",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "korean-format",
+     "at": 0,
+     "text": "하나의 문단이 시작됩니다. 좋은 조판은 글자가 쪽 안으로 스며들어 의미만 남기고, 장식 문자는 문단의 시작을 조용히 알려 줍니다. 줄 수와 글자 수를 바꾸어 위치를 확인합니다.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 2,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 0
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-korean-desc",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "korean-format",
+     "at": 0,
+     "text": "강아지가 마당에서 뛰어놀고 있습니다. 좋은 조판은 글자가 쪽 안으로 스며들어 의미만 남기고, 장식 문자는 문단의 시작을 조용히 알려 줍니다. 줄 수와 글자 수를 바꾸어 위치를 확인합니다.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "dropcap-korean-desc-nb",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "korean-format",
+     "at": 0,
+     "text": "하나의 문단이 시작됩니다. 좋은 조판은 글자가 쪽 안으로 스며들어 의미만 남기고, 장식 문자는 문단의 시작을 조용히 알려 줍니다. 줄 수와 글자 수를 바꾸어 위치를 확인합니다.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "dropCapLines": 3,
+      "dropCapCharacters": 1,
+      "dropCapDetail": 3
+     }
+    }
+   ]
+  }
+ ]
+}

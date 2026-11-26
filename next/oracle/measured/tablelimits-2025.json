@@ -1,0 +1,597 @@
+{
+ "about": "InDesign 2025 (20.5.5.119) table size limits by DOM. create: Table.add with bodyRowCount/columnCount/headerRowCount/footerRowCount (each has its own range: body 1-10000, columns 1-200, header 0-25, footer 0-25; the sum is not limited: 9999 body + 1 header + 1 footer = 10001 rows is made). setup: the same fields as properties of an existing table (Table Options > Table Setup). grow: Rows.add, Columns.add and Cell.split have no limit of their own (a table reached 13000 rows by Rows.add, 251 columns by Columns.add, 10001 rows and 201 columns by split; \"Cells too small to split\" is a size message of a 9999-row table in a 500 pt frame, not a count). Probe: next/oracle/indesign/tablelimit-probe.jsx.",
+ "create": [
+  {
+   "body": 9999,
+   "columns": 1,
+   "header": 0,
+   "footer": 0,
+   "ok": true,
+   "rows": 9999
+  },
+  {
+   "body": 10000,
+   "columns": 1,
+   "header": 0,
+   "footer": 0,
+   "ok": true,
+   "rows": 10000
+  },
+  {
+   "body": 10001,
+   "columns": 1,
+   "header": 0,
+   "footer": 0,
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  },
+  {
+   "body": 20000,
+   "columns": 1,
+   "header": 0,
+   "footer": 0,
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  },
+  {
+   "body": 9998,
+   "columns": 1,
+   "header": 1,
+   "footer": 1,
+   "ok": true,
+   "rows": 10000
+  },
+  {
+   "body": 9999,
+   "columns": 1,
+   "header": 1,
+   "footer": 1,
+   "ok": true,
+   "rows": 10001
+  },
+  {
+   "body": 10000,
+   "columns": 1,
+   "header": 1,
+   "footer": 0,
+   "ok": true,
+   "rows": 10001
+  },
+  {
+   "body": 10000,
+   "columns": 1,
+   "header": 0,
+   "footer": 1,
+   "ok": true,
+   "rows": 10001
+  },
+  {
+   "body": 1,
+   "columns": 1,
+   "header": 5000,
+   "footer": 5000,
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "body": 1,
+   "columns": 1,
+   "header": 5000,
+   "footer": 5001,
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "body": 1,
+   "columns": 1,
+   "header": 25,
+   "footer": 0,
+   "ok": true,
+   "rows": 26
+  },
+  {
+   "body": 1,
+   "columns": 1,
+   "header": 26,
+   "footer": 0,
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "body": 1,
+   "columns": 1,
+   "header": 100,
+   "footer": 0,
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "body": 1,
+   "columns": 1,
+   "header": 0,
+   "footer": 26,
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "body": 10000,
+   "columns": 3,
+   "header": 0,
+   "footer": 0,
+   "ok": true,
+   "rows": 10000
+  },
+  {
+   "body": 1,
+   "columns": 200,
+   "header": 0,
+   "footer": 0,
+   "ok": true,
+   "rows": 1
+  },
+  {
+   "body": 0,
+   "columns": 1,
+   "header": 0,
+   "footer": 0,
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  },
+  {
+   "body": 1,
+   "columns": 0,
+   "header": 0,
+   "footer": 0,
+   "ok": false,
+   "range": "Long Integer (1 - 200)"
+  }
+ ],
+ "setup": [
+  {
+   "prop": "bodyRowCount",
+   "value": 10000,
+   "base": "3x2 h0 f0",
+   "ok": true
+  },
+  {
+   "prop": "bodyRowCount",
+   "value": 10001,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  },
+  {
+   "prop": "bodyRowCount",
+   "value": 20000,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  },
+  {
+   "prop": "bodyRowCount",
+   "value": 0,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  },
+  {
+   "prop": "columnCount",
+   "value": 200,
+   "base": "3x2 h0 f0",
+   "ok": true
+  },
+  {
+   "prop": "columnCount",
+   "value": 201,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (1 - 200)"
+  },
+  {
+   "prop": "columnCount",
+   "value": 500,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (1 - 200)"
+  },
+  {
+   "prop": "headerRowCount",
+   "value": 25,
+   "base": "3x2 h0 f0",
+   "ok": true
+  },
+  {
+   "prop": "headerRowCount",
+   "value": 26,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "prop": "footerRowCount",
+   "value": 25,
+   "base": "3x2 h0 f0",
+   "ok": true
+  },
+  {
+   "prop": "footerRowCount",
+   "value": 26,
+   "base": "3x2 h0 f0",
+   "ok": false,
+   "range": "Long Integer (0 - 25)"
+  },
+  {
+   "prop": "headerRowCount",
+   "value": 2,
+   "base": "2x2 h0 f0",
+   "ok": true
+  },
+  {
+   "prop": "headerRowCount",
+   "value": 3,
+   "base": "2x2 h0 f0",
+   "ok": true
+  },
+  {
+   "prop": "bodyRowCount",
+   "value": 0,
+   "base": "3x2 h1 f0",
+   "ok": false,
+   "range": "Long Integer (1 - 10000)"
+  }
+ ],
+ "grow": [
+  {
+   "case": "rows n9999 c1 h0 f0 after@0",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10000,
+    "columns": 1,
+    "body": 10000,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10000 c1 h0 f0 after@0",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10001,
+    "columns": 1,
+    "body": 10001,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10000 c1 h0 f0 after@9999",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10001,
+    "columns": 1,
+    "body": 10001,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10001 c1 h1 f0 after@5",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10002,
+    "columns": 1,
+    "body": 10001,
+    "header": 1,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10000 c1 h1 f0 after@5",
+   "ok": true,
+   "added": 2,
+   "shape": {
+    "tables": 1,
+    "rows": 10002,
+    "columns": 1,
+    "body": 10001,
+    "header": 1,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10001 c1 h1 f0 after@0",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10002,
+    "columns": 1,
+    "body": 10000,
+    "header": 2,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10001 c1 h1 f0 before@0",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10002,
+    "columns": 1,
+    "body": 10000,
+    "header": 2,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n30 c1 h25 f0 after@0",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 31,
+    "columns": 1,
+    "body": 5,
+    "header": 26,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n30 c1 h25 f0 before@0",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 31,
+    "columns": 1,
+    "body": 5,
+    "header": 26,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n30 c1 h0 f25 after@29",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 31,
+    "columns": 1,
+    "body": 5,
+    "header": 0,
+    "footer": 26
+   }
+  },
+  {
+   "case": "rows n10001 c1 h0 f1 after@10000",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 10002,
+    "columns": 1,
+    "body": 10000,
+    "header": 0,
+    "footer": 2
+   }
+  },
+  {
+   "case": "rows n9990 c1 h0 f0 after@3",
+   "ok": true,
+   "added": 20,
+   "shape": {
+    "tables": 1,
+    "rows": 10010,
+    "columns": 1,
+    "body": 10010,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n9990 c1 h0 f0 before@3",
+   "ok": true,
+   "added": 20,
+   "shape": {
+    "tables": 1,
+    "rows": 10010,
+    "columns": 1,
+    "body": 10010,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n200 c200 h0 f0 after@0",
+   "ok": true,
+   "added": 5,
+   "shape": {
+    "tables": 1,
+    "rows": 205,
+    "columns": 200,
+    "body": 205,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "rows n10000 c1 h0 f0 after@0",
+   "ok": true,
+   "added": 3000,
+   "shape": {
+    "tables": 1,
+    "rows": 13000,
+    "columns": 1,
+    "body": 13000,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "columns n199 r2 after x1",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 2,
+    "columns": 200,
+    "body": 2,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "columns n200 r2 after x1",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 2,
+    "columns": 201,
+    "body": 2,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "columns n200 r2 before x1",
+   "ok": true,
+   "added": 1,
+   "shape": {
+    "tables": 1,
+    "rows": 2,
+    "columns": 201,
+    "body": 2,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "columns n190 r2 after x20",
+   "ok": true,
+   "added": 20,
+   "shape": {
+    "tables": 1,
+    "rows": 2,
+    "columns": 210,
+    "body": 2,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "columns n1 r1 after x250",
+   "ok": true,
+   "added": 250,
+   "shape": {
+    "tables": 1,
+    "rows": 1,
+    "columns": 251,
+    "body": 1,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "split horizontal rows9999 cols1 h0 f0",
+   "ok": false,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 9999,
+    "columns": 1,
+    "body": 9999,
+    "header": 0,
+    "footer": 0
+   },
+   "error": "Error: Cells too small to split."
+  },
+  {
+   "case": "split horizontal rows10000 cols1 h0 f0",
+   "ok": true,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 10001,
+    "columns": 1,
+    "body": 10001,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "split vertical rows2 cols199 h0 f0",
+   "ok": true,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 2,
+    "columns": 200,
+    "body": 2,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "split vertical rows2 cols200 h0 f0",
+   "ok": true,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 2,
+    "columns": 201,
+    "body": 2,
+    "header": 0,
+    "footer": 0
+   }
+  },
+  {
+   "case": "split horizontal rows10001 cols1 h1 f0",
+   "ok": true,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 10002,
+    "columns": 1,
+    "body": 10001,
+    "header": 1,
+    "footer": 0
+   }
+  },
+  {
+   "case": "split horizontal rows30 cols1 h25 f0",
+   "ok": true,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 31,
+    "columns": 1,
+    "body": 5,
+    "header": 26,
+    "footer": 0
+   }
+  },
+  {
+   "case": "split horizontal rows30 cols1 h0 f25",
+   "ok": true,
+   "added": null,
+   "shape": {
+    "tables": 1,
+    "rows": 31,
+    "columns": 1,
+    "body": 5,
+    "header": 0,
+    "footer": 26
+   }
+  }
+ ]
+}

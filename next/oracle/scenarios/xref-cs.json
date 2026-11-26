@@ -1,0 +1,1044 @@
+{
+  "fixture": "xref-cs",
+  "extension": "xref",
+  "scenarios": [
+    {
+      "name": "noop",
+      "text": true,
+      "steps": []
+    },
+    {
+      "name": "xrefcs-block",
+      "text": true,
+      "rules": [
+        "xref.character-style"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-format",
+      "text": true,
+      "rules": [
+        "xref.character-style"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F fmtcs",
+          "name": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-page",
+      "text": true,
+      "rules": [
+        "xref.character-style"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F pageblockcs",
+          "name": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-create",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "Created format",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-edit",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "Renamed format",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "PageNumberBuildingBlock",
+                "text": "",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "!",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-duplicate",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "duplicateCrossReferenceFormat",
+          "target": "source",
+          "id": "F fmtcs",
+          "name": "Copied format"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-delete",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "deleteCrossReferenceFormat",
+          "target": "source",
+          "id": "F fmtcs"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-empty",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "Empty format",
+            "characterStyle": "n",
+            "blocks": []
+          }
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "Empty format",
+            "name": "Filled format",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-single",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "Styled text",
+            "characterStyle": "CharacterStyle/Bold",
+            "blocks": [
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "Styled text",
+          "name": "Single styled"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-update",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Updated"
+        },
+        {
+          "op": "insertText",
+          "target": "target",
+          "at": 7,
+          "text": "new "
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Updated"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-used-edit",
+      "text": true,
+      "rules": [
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Used"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "Used format",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "changed ",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-nested",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-nested",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-nested",
+          "name": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-nested-update",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-nested",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-nested",
+          "name": "Styled reference"
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-nested-page",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-nested-page",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "p. ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "PageNumberBuildingBlock",
+                "text": "",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-nested-page",
+          "name": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-nested-page-update",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-nested-page",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "p. ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "PageNumberBuildingBlock",
+                "text": "",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-nested-page",
+          "name": "Styled reference"
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-reverse",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-reverse",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-reverse",
+          "name": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-reverse-update",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-reverse",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-reverse",
+          "name": "Styled reference"
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-update-twice",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Updated"
+        },
+        {
+          "op": "insertText",
+          "target": "target",
+          "at": 7,
+          "text": "new "
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Updated"
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Updated"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-used-page",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "F blockcs",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "p. ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "PageNumberBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-used-style",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "F blockcs",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "changed ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-update-unchanged",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-nested-changed",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-nested",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-nested",
+          "name": "Styled reference"
+        },
+        {
+          "op": "insertText",
+          "target": "target",
+          "at": 7,
+          "text": "new "
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-reverse-changed",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-reverse",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "xrefcs-reverse",
+          "name": "Styled reference"
+        },
+        {
+          "op": "insertText",
+          "target": "target",
+          "at": 7,
+          "text": "new "
+        },
+        {
+          "op": "updateCrossReference",
+          "target": "source",
+          "link": "Styled reference"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-used-empty",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "F blockcs",
+            "characterStyle": "n",
+            "blocks": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-used-same-text",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "F blockcs",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-set-same-text",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "",
+            "name": "xrefcs-nested",
+            "characterStyle": "CharacterStyle/Ital",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "see ",
+                "characterStyle": "CharacterStyle/Bold",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        },
+        {
+          "op": "setCrossReference",
+          "target": "source",
+          "link": "Styled reference",
+          "name": "Styled reference",
+          "destinationName": "Styled reference",
+          "format": "xrefcs-nested"
+        }
+      ]
+    },
+    {
+      "name": "xrefcs-used-two",
+      "text": true,
+      "rules": [
+        "xref.character-style",
+        "xref.format-edit"
+      ],
+      "steps": [
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 11,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Styled reference"
+        },
+        {
+          "op": "insertCrossReference",
+          "target": "source",
+          "at": 0,
+          "targetLabel": "target",
+          "target_at": 0,
+          "destination": "",
+          "format": "F blockcs",
+          "name": "Second styled reference"
+        },
+        {
+          "op": "saveCrossReferenceFormat",
+          "target": "source",
+          "format": {
+            "id": "F blockcs",
+            "name": "F blockcs",
+            "characterStyle": "n",
+            "blocks": [
+              {
+                "kind": "CustomStringBuildingBlock",
+                "text": "changed ",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              },
+              {
+                "kind": "ParagraphTextBuildingBlock",
+                "text": "",
+                "characterStyle": "n",
+                "delimiter": "",
+                "includeDelimiter": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

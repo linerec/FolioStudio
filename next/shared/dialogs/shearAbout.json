@@ -1,0 +1,63 @@
+{
+  "title": "기울이기",
+  "style": "transform",
+  "target": "selection",
+  "fields": [
+    {
+      "name": "angle",
+      "label": "기울이기 각도",
+      "type": "number",
+      "unit": "angle",
+      "default": 0,
+      "min": -89.9999,
+      "max": 89.9999,
+      "group": "기울이기",
+      "rangeMessage": "기울이기 각도는 −90°와 90° 사이여야 합니다."
+    },
+    {
+      "name": "point",
+      "type": "json",
+      "hidden": true,
+      "default": [
+        0,
+        0
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "shearAbout",
+        "ids": "$ids",
+        "by": "$angle",
+        "point": "$point"
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          0,
+          0
+        ]
+      },
+      {
+        "op": "shearAbout",
+        "ids": [
+          "@copies"
+        ],
+        "by": "$angle",
+        "point": "$point"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ],
+  "note": "가로 축을 기준으로 기울입니다."
+}

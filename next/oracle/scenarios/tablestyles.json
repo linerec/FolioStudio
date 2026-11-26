@@ -1,0 +1,1571 @@
+{
+ "fixture": "tablestyles",
+ "about": "Cell Styles and Table Styles panels: applying a style (the cell or table keeps its own overrides unless cleared), Clear Overrides, and creating, editing, deleting styles. DOM: cell.appliedCellStyle, table.appliedTableStyle, clearCellStyleOverrides, cellStyles.add / remove(replacement).",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "cs-apply-one",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-range",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       2,
+       1
+      ],
+      [
+       2,
+       2
+      ]
+     ],
+     "style": "Oracle Cell Blue"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-header",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Child"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-local",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      1,
+      1
+     ],
+     "props": {
+      "fillColor": "Oracle Blue",
+      "fillTint": 50
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-none",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "[None]"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-clear",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      1,
+      1
+     ],
+     "props": {
+      "fillColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "clearCellOverrides",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-two",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Blue"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-frame",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyTableStyle",
+     "style": "Oracle Frame"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-local",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 2,
+      "startRowFillColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-none",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "[None]"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-clear",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "clearTableOverrides"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-cell",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "cs-create",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "New Cell",
+     "props": {
+      "fillColor": "Oracle Blue",
+      "topEdgeStrokeWeight": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "cs-create-based",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "New Child",
+     "props": {
+      "basedOn": "Oracle Cell Orange",
+      "fillTint": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cs-edit",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "edit",
+     "name": "Oracle Cell Orange",
+     "props": {
+      "fillColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cs-edit-rename",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Child"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "edit",
+     "name": "Oracle Cell Orange",
+     "rename": "Oracle Cell Renamed"
+    }
+   ]
+  },
+  {
+   "name": "cs-delete",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "delete",
+     "name": "Oracle Cell Orange",
+     "replacement": "Oracle Cell Blue"
+    }
+   ]
+  },
+  {
+   "name": "cs-delete-none",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "delete",
+     "name": "Oracle Cell Orange",
+     "replacement": "[None]"
+    }
+   ]
+  },
+  {
+   "name": "ts-create",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "table",
+     "do": "create",
+     "name": "New Table",
+     "props": {
+      "startRowFillColor": "Oracle Blue",
+      "startRowFillCount": 2,
+      "headerRegionCellStyle": "Oracle Cell Orange"
+     }
+    }
+   ]
+  },
+  {
+   "name": "ts-edit",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "table",
+     "do": "edit",
+     "name": "Oracle Zebra",
+     "props": {
+      "startRowFillCount": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "ts-delete",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "table",
+     "do": "delete",
+     "name": "Oracle Zebra",
+     "replacement": "[None]"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-blue-none",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Blue"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "[None]"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-blue-orange",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Blue"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-last",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       3,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-box",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "Box",
+     "props": {
+      "topEdgeStrokeWeight": 1,
+      "leftEdgeStrokeWeight": 1,
+      "bottomEdgeStrokeWeight": 1,
+      "rightEdgeStrokeWeight": 1
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "Box"
+    }
+   ]
+  },
+  {
+   "name": "cs-apply-adjacent",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-zebra-frame",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Frame"
+    }
+   ]
+  },
+  {
+   "name": "ts-apply-twice",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w0",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 0
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w0_25",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 0.25
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w0_5",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 0.5
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w1_5",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 1.5
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w2",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w3",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 3
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-w8",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeWeight": 8
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-color",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "bottomEdgeStrokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-top",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "topEdgeStrokeWeight": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-tb",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "topEdgeStrokeWeight": 2,
+      "bottomEdgeStrokeWeight": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-lr",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "leftEdgeStrokeWeight": 2,
+      "rightEdgeStrokeWeight": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-tlb",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "topEdgeStrokeWeight": 2,
+      "leftEdgeStrokeWeight": 2,
+      "bottomEdgeStrokeWeight": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-tl",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "topEdgeStrokeWeight": 2,
+      "leftEdgeStrokeWeight": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-edge-box3",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "create",
+     "name": "W",
+     "props": {
+      "topEdgeStrokeWeight": 3,
+      "leftEdgeStrokeWeight": 3,
+      "bottomEdgeStrokeWeight": 3,
+      "rightEdgeStrokeWeight": 3
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       2,
+       1
+      ]
+     ],
+     "style": "W"
+    }
+   ]
+  },
+  {
+   "name": "cs-clear-inset",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      1,
+      1
+     ],
+     "props": {
+      "topInset": 10,
+      "leftInset": 9
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "clearCellOverrides",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cs-clear-stroke",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      1,
+      1
+     ],
+     "props": {
+      "topEdgeStrokeWeight": 3,
+      "topEdgeStrokeColor": "Oracle Orange"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "clearCellOverrides",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "cs-clear-many",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      1,
+      1
+     ],
+     "props": {
+      "fillColor": "Oracle Blue",
+      "fillTint": 50,
+      "verticalJustification": "VerticalJustification.CENTER_ALIGN",
+      "bottomEdgeStrokeWeight": 4
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "clearCellOverrides",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "ts-clear-border",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyTableStyle",
+     "style": "Oracle Frame"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "topBorderStrokeWeight": 5,
+      "spaceBefore": 12,
+      "startRowFillCount": 2,
+      "columnFillsPriority": true
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "clearTableOverrides"
+    }
+   ]
+  },
+  {
+   "name": "ts-clear-plain",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "tableProps",
+     "props": {
+      "topBorderStrokeWeight": 5,
+      "spaceAfter": 3,
+      "startRowStrokeCount": 1,
+      "endRowFillCount": 1
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "clearTableOverrides"
+    }
+   ]
+  },
+  {
+   "name": "ts-clear-cells",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "fillColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "clearTableOverrides"
+    }
+   ]
+  },
+  {
+   "name": "cs-duplicate",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "duplicate",
+     "name": "Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "ts-duplicate",
+   "steps": [
+    {
+     "op": "tableStyleDef",
+     "kind": "table",
+     "do": "duplicate",
+     "name": "Oracle Zebra"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-new",
+   "steps": [
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-move",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Oracle Cell Orange",
+     "group": "Grp"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-rename",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Oracle Cell Orange",
+     "group": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "rename",
+     "name": "Grp",
+     "rename": "Grp2"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-create-style",
+   "steps": [
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "createStyle",
+     "group": "Grp",
+     "name": "Inner",
+     "props": {
+      "fillTint": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cs-group-nested",
+   "steps": [
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Sub",
+     "parent": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Oracle Cell Orange",
+     "group": "Grp:Sub"
+    }
+   ]
+  },
+  {
+   "name": "ts-group-move",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl2",
+     "do": "applyTableStyle",
+     "style": "Oracle Zebra"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "table",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "table",
+     "do": "move",
+     "style": "Oracle Zebra",
+     "group": "Grp"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-out",
+   "steps": [
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Oracle Cell Orange",
+     "group": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Grp:Oracle Cell Orange",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "name": "cs-group-duplicate",
+   "steps": [
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Oracle Cell Orange",
+     "group": "Grp"
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "duplicate",
+     "name": "Grp:Oracle Cell Orange"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-delete-empty",
+   "steps": [
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "delete",
+     "name": "Grp"
+    }
+   ]
+  },
+  {
+   "name": "cs-group-delete",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "create",
+     "name": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "move",
+     "style": "Oracle Cell Orange",
+     "group": "Grp"
+    },
+    {
+     "op": "tableStyleGroup",
+     "kind": "cell",
+     "do": "delete",
+     "name": "Grp"
+    }
+   ]
+  },
+  {
+   "name": "cs-redefine",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      1,
+      1
+     ],
+     "props": {
+      "fillColor": "Oracle Blue",
+      "fillTint": 50,
+      "verticalJustification": "VerticalJustification.BOTTOM_ALIGN",
+      "bottomEdgeStrokeWeight": 4
+     }
+    },
+    {
+     "op": "tableStyleDef",
+     "kind": "cell",
+     "do": "edit",
+     "name": "Oracle Cell Orange",
+     "props": {
+      "fillColor": "Oracle Blue",
+      "fillTint": 50,
+      "verticalJustification": "VerticalJustification.BOTTOM_ALIGN",
+      "bottomEdgeStrokeWeight": 4
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "applyCellStyle",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ],
+     "style": "Oracle Cell Orange"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "clearCellOverrides",
+     "cells": [
+      [
+       1,
+       1
+      ]
+     ]
+    }
+   ]
+  },
+    {"name": "ts-break-link", "window": true, "steps": [{"op": "table", "target": "tbl2", "do": "applyTableStyle", "style": "Oracle Zebra"}, {"op": "table", "target": "tbl2", "do": "select", "from": [0, 0], "to": [5, 2]}, {"op": "menu", "id": 132107, "panel": "Table Styles"}]},
+    {"name": "cs-break-link", "window": true, "steps": [{"op": "table", "target": "tbl", "do": "applyCellStyle", "cells": [[1, 1]], "style": "Oracle Cell Orange"}, {"op": "table", "target": "tbl", "do": "select", "from": [1, 1], "to": [1, 1]}, {"op": "menu", "id": 132129, "panel": "Cell Styles"}]},
+    {"name": "cs-clear-not-defined", "window": true, "steps": [{"op": "table", "target": "tbl", "do": "applyCellStyle", "cells": [[1, 1]], "style": "Oracle Cell Orange"}, {"op": "table", "target": "tbl", "do": "cellProps", "cell": [1, 1], "props": {"fillColor": "Oracle Blue", "fillTint": 50, "topInset": 9}}, {"op": "table", "target": "tbl", "do": "select", "from": [1, 1], "to": [1, 1]}, {"op": "menu", "id": 132179, "panel": "Cell Styles"}]}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "이미지 색상 설정",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "imageColor",
+  "description": "Object > Image Color Settings: ids is the frame of a placed raster picture; the source profile (the document's default, or an installed profile of the picture's colour space) and the rendering intent.",
+  "note": "지정한 프로파일과 렌더링 의도는 파일에 저장되고 PDF/X-1a 출력에서 CMYK·RGB 그림의 색 변환에 쓰입니다. 문서 창의 그림 색은 바뀌지 않습니다.",
+  "fields": [
+    {
+      "name": "profile",
+      "label": "ICC 프로파일",
+      "type": "choice",
+      "source": "imageProfiles",
+      "default": "$ID/Use Document Default"
+    },
+    {
+      "name": "intent",
+      "label": "렌더링 의도",
+      "type": "enum",
+      "default": "UseColorSettings",
+      "options": [
+        {
+          "value": "UseColorSettings",
+          "label": "문서 기본값 사용"
+        },
+        {
+          "value": "Perceptual",
+          "label": "지각적"
+        },
+        {
+          "value": "RelativeColorimetric",
+          "label": "상대 색도계"
+        },
+        {
+          "value": "Saturation",
+          "label": "채도"
+        },
+        {
+          "value": "AbsoluteColorimetric",
+          "label": "절대 색도계"
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setImageColor",
+        "ids": "$ids",
+        "profile": "$profile",
+        "intent": "$intent"
+      }
+    ]
+  }
+}

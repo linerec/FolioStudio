@@ -1,0 +1,544 @@
+{
+ "fixture": "keepspan3c",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "keepspan3c-plain",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 15,
+     "end": 16,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 3,
+     "end": 4,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspan3c-mid-all",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 15,
+     "end": 16,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 3,
+     "end": 4,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspan3c-mid-next1",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 15,
+     "end": 16,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 3,
+     "end": 4,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepWithNext": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspan3c-mid-first2",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 15,
+     "end": 16,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 3,
+     "end": 4,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "keepLinesTogether": true,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspan3c-lead-next2",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 15,
+     "end": 16,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 3,
+     "end": 4,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspan3c-lead-all",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 6,
+     "end": 7,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p1",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true,
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p2",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true,
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p3",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true,
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 15,
+     "end": 16,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p4",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true,
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 3,
+     "end": 4,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p5",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true,
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 9,
+     "end": 10,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "p6",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true,
+      "keepWithNext": 1
+     }
+    }
+   ]
+  }
+ ]
+}

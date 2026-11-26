@@ -1,0 +1,69 @@
+{
+  "fixture": "basic-bleed",
+  "about": "Derived from basic: bleed top 3, bottom 6, inside 9, outside 12 pt (Align panel: Align to Bleed).",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "align-bleed-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "bleed"
+        }
+      ]
+    },
+    {
+      "name": "align-bleed-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "bleed"
+        }
+      ]
+    },
+    {
+      "name": "align-bleed-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "bleed"
+        }
+      ]
+    },
+    {
+      "name": "align-bleed-facing",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img",
+            "tf"
+          ],
+          "how": "bottom",
+          "bounds": "bleed"
+        }
+      ]
+    }
+  ]
+}

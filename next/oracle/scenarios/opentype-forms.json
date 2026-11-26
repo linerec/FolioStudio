@@ -1,0 +1,149 @@
+{
+  "fixture": "opentype-forms",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "form-arabic-none",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "arabic",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "positionalForm": "NONE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "form-arabic-calculate",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "arabic",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "positionalForm": "CALCULATE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "form-arabic-initial",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "arabic",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "positionalForm": "INITIAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "form-arabic-medial",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "arabic",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "positionalForm": "MEDIAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "form-arabic-final",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "arabic",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "positionalForm": "FINAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "form-arabic-isolated",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "arabic",
+          "start": 0,
+          "end": 8,
+          "props": {
+            "positionalForm": "ISOLATED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "zero-cascadia",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "zero",
+          "start": 0,
+          "end": 15,
+          "props": {
+            "otfSlashedZero": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "numerator-courier",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "unsupported",
+          "start": 0,
+          "end": 17,
+          "props": {
+            "position": "OT_NUMERATOR"
+          }
+        }
+      ]
+    },
+    {
+      "name": "denominator-courier",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "unsupported",
+          "start": 0,
+          "end": 17,
+          "props": {
+            "position": "OT_DENOMINATOR"
+          }
+        }
+      ]
+    },
+    {
+      "name": "all-small-caps-courier",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "unsupported",
+          "start": 0,
+          "end": 17,
+          "props": {
+            "capitalization": "CAP_TO_SMALL_CAP"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fixture": "typepath-c5-multi",
+  "about": "Create path text on an open multi-anchor path (line, S curve, hairpin, arc): the new TextPath's EndBracket is InDesign's length of the whole path.",
+  "extension": "textpath2",
+  "scenarios": [
+    {
+      "name": "typepath-c5-multi-create",
+      "steps": [
+        {"op": "removeTextFromPath", "target": "path"},
+        {"op": "createTextPath", "target": "path", "text": "AV Oag"}
+      ]
+    }
+  ]
+}

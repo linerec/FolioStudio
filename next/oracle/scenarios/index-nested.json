@@ -1,0 +1,23 @@
+{
+  "fixture": "index-nested",
+  "extension": "index-c2",
+  "comparison": "index",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {
+      "name": "index-nested-marker-pages",
+      "steps": [
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": false,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    }
+  ]
+}

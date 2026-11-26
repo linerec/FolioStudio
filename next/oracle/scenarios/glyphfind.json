@@ -1,0 +1,347 @@
+{
+ "fixture": "text-format",
+ "about": "Edit > Find/Change > Glyph > Change (Arial/Malgun Gothic, system fonts): found glyphs become the character of the change glyph (lowest Unicode of it; U+FFFD + CustomGlyph when it has none) in the change face. Glyph ids are per font.",
+ "scenarios": [
+  {
+   "name": "glyphfind-same-face",
+   "rules": [
+    "glyphfind.change"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AaA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 37
+     },
+     "scope": "story"
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-other-style",
+   "rules": [
+    "glyphfind.change"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AaA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Bold",
+      "glyphId": 36
+     },
+     "scope": "story"
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-other-font",
+   "rules": [
+    "glyphfind.change"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AaA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Malgun Gothic",
+      "style": "Regular",
+      "glyphId": 2846
+     },
+     "scope": "story"
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-unmapped",
+   "rules": [
+    "glyphfind.change",
+    "glyphfind.custom"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AaA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 155
+     },
+     "scope": "story"
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-custom-back",
+   "rules": [
+    "glyphfind.change",
+    "glyphfind.custom"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AaA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 155
+     },
+     "scope": "story"
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 155
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "scope": "story"
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-selection",
+   "rules": [
+    "glyphfind.scope"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AAAA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 4,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 37
+     },
+     "scope": "selection",
+     "start": 1,
+     "end": 3
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-face-matters",
+   "rules": [
+    "glyphfind.match"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AAA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 1,
+     "end": 2,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Bold"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 37
+     },
+     "scope": "story"
+    }
+   ]
+  },
+  {
+   "name": "glyphfind-shared-glyph",
+   "rules": [
+    "glyphfind.change"
+   ],
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "AaA"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 3,
+     "props": {
+      "appliedFont": "Arial",
+      "fontStyle": "Regular"
+     }
+    },
+    {
+     "op": "glyphChange",
+     "target": "format",
+     "find": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 36
+     },
+     "change": {
+      "family": "Arial",
+      "style": "Regular",
+      "glyphId": 3
+     },
+     "scope": "story"
+    }
+   ]
+  }
+ ]
+}

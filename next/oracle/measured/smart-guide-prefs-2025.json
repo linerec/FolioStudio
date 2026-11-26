@@ -1,0 +1,35 @@
+{
+  "source": "InDesign 2025 20.5.5.119, DOM app.smartGuidePreferences (artifacts/guideprefs-c1-20261107/probe-prefs.jsx, result measurement/probe-prefs.json), 2026-11-07; the drag effects are artifacts/smartguides-c2-20261103/out/s4_prefs.rows.json (real mouse)",
+  "properties": ["enabled", "alignToObjectEdges", "alignToObjectCenter", "smartDimensions", "smartSpacing", "guideColor"],
+  "dialogLabels": {
+    "group": "Smart Guide Options",
+    "alignToObjectCenter": "Align to Object Center",
+    "alignToObjectEdges": "Align to Object Edges",
+    "smartDimensions": "Smart Dimensions",
+    "smartSpacing": "Smart Spacing"
+  },
+  "defaults": { "alignToObjectCenter": true, "alignToObjectEdges": true, "smartDimensions": true, "smartSpacing": true },
+  "guideColorFound": "GRID_GREEN",
+  "guideColor": {
+    "dom": "app.smartGuidePreferences.guideColor", "default": "GRID_GREEN", "choices": "the 37 UIColors (engine UI_COLORS order)",
+    "choicesMeasured": ["LIGHT_BLUE", "RED", "GREEN", "BLUE", "YELLOW", "MAGENTA", "CYAN", "GRAY", "BLACK", "ORANGE", "DARK_GREEN", "TEAL", "TAN", "BROWN", "VIOLET", "GOLD", "DARK_BLUE", "PINK", "LAVENDER", "BRICK_RED", "OLIVE_GREEN", "PEACH", "BURGUNDY", "GRASS_GREEN", "OCHRE", "PURPLE", "LIGHT_GRAY", "CHARCOAL", "GRID_BLUE", "GRID_ORANGE", "FIESTA", "LIGHT_OLIVE", "LIPSTICK", "CUTE_TEAL", "SULPHUR", "GRID_GREEN", "WHITE"],
+    "drawnPixelDefault": "rgb(156,222,156) (smartguides-c2, real mouse, 1 device pixel, white background); the page-middle line rgb(255,79,255)",
+    "domMeasured": "InDesign 2025 20.5.5.119, artifacts/guidecolor-c1-20261107/probe-guidecolor.jsx (result measurement/probe-guidecolor.json), 2026-11-07: reading with no document gives the UIColors enumerator GRID_GREEN (typeof object); all 37 UIColors names (LIGHT_BLUE ... GRID_GREEN, WHITE, the engine UI_COLORS order) write and read back as themselves; an RGB array of 3 reals 0-255 is also accepted and reads back as that array ([255,0,0], [10,20,30]; the dialog's own custom-colour path is not measured); a string 'RED', a Boolean, the number 3 and a 2-element array are refused (Invalid value for set property 'guideColor'. Expected Array of 3 Reals (0 - 255) or UIColors enumerator); application-wide: the value set before a document was opened stayed with it open, a value set with a document open stayed after it was closed and in a second document.",
+    "drawnPixels": { "LIGHT_BLUE": [79, 153, 255], "RED": [255, 0, 0], "GREEN": [79, 255, 79], "BLUE": [0, 0, 255], "YELLOW": [255, 255, 79], "MAGENTA": [255, 79, 255], "CYAN": [0, 255, 255], "GRAY": [127, 127, 127], "BLACK": [0, 0, 0], "ORANGE": [255, 102, 0], "DARK_GREEN": [0, 84, 0], "TEAL": [0, 153, 153], "TAN": [204, 153, 102], "BROWN": [153, 51, 0], "VIOLET": [153, 51, 255], "GOLD": [255, 153, 0], "DARK_BLUE": [0, 0, 135], "PINK": [255, 153, 204], "LAVENDER": [153, 153, 255], "BRICK_RED": [153, 0, 0], "OLIVE_GREEN": [102, 102, 0], "PEACH": [255, 153, 153], "BURGUNDY": [153, 0, 51], "GRASS_GREEN": [153, 204, 0], "OCHRE": [153, 102, 0], "PURPLE": [102, 0, 102], "LIGHT_GRAY": [186, 186, 186], "CHARCOAL": [171, 163, 181], "GRID_BLUE": [122, 186, 217], "GRID_ORANGE": [255, 181, 107], "FIESTA": [247, 89, 107], "LIGHT_OLIVE": [140, 166, 107], "LIPSTICK": [207, 130, 181], "CUTE_TEAL": [130, 207, 194], "SULPHUR": [207, 207, 130], "GRID_GREEN": [156, 222, 156], "WHITE": null },
+    "drawnPixelsSource": "smartguides-c3, 2026-11-12, InDesign 2025 20.5.5.119, real mouse drag with a screenshot while the button is held (artifacts/smartguides-c3-20261023/tools/i6_color.py, out/i6_a.log i6_b.log i6_c.log): the 1 px alignment line between two objects over the white page, all 120 pixels of it the same value; WHITE is null because a white line on the white page cannot be told from the page (an RGB array [255,255,255] gave the same); RGB arrays are drawn as given ([255,0,0], [0,0,255], [0,255,0], [128,128,128], [0,0,0]); the page-middle line stayed rgb(255,79,255) for every choice",
+    "notMeasured": "what the Preferences dialog's colour list offers beyond the 37 UIColors (a custom-colour entry)",
+    "folioGapRgb": "the DOM accepts an RGB array too; the Folio box offers the 37 names only (as the other interface-colour boxes: grid, guides, layers)",
+    "folioDraws": "the same pixel values (query uiColors, field indesign: the model's conditions::indicator_rgb, Gray as the screen shows it, 127)"
+  },
+  "masterEnabledFound": false,
+  "masterNote": "app.smartGuidePreferences.enabled is the View > Grids & Guides > Smart Guides switch; the property named smartGuides does not exist (reading and writing it throws). It read false in this session (left by an earlier measurement, not a factory value); it is not a Preferences dialog box.",
+  "applicationWide": "the four options read the same with no document, with a document open, after it is closed and in a second document; a value set while a document was open stayed after it was closed",
+  "independent": "writing one option false and back changed only that option (each of the four, round trip)",
+  "valueType": "Boolean: a string is refused (Invalid value for set property ... Expected Boolean); the number 0 is read back as false",
+  "effectsOfTurningOneOff": {
+    "alignToObjectCenter": { "centerSnap": false, "edgeSnap": true, "spacing": true, "dimensions": true },
+    "alignToObjectEdges": { "centerSnap": true, "edgeSnap": false, "spacing": true, "dimensions": true },
+    "smartDimensions": { "centerSnap": true, "edgeSnap": true, "spacing": true, "dimensions": false },
+    "smartSpacing": { "centerSnap": true, "edgeSnap": true, "spacing": false, "dimensions": true }
+  }
+}

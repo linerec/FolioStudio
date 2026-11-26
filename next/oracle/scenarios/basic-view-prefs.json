@@ -1,0 +1,126 @@
+{
+ "fixture": "basic",
+ "about": "View > Grids & Guides toggles are document preferences: Lock Guides (GuidePreference/GuidesLocked), Snap to Guides (GuidesSnapto), Guides in Back, Lock Column Guides (DocumentPreference/ColumnGuideLocked), Show Baseline Grid, Show Document Grid, Snap to Document Grid, Grids in Back (GridPreference). DOM guidePreferences / gridPreferences / documentPreferences.",
+ "scenarios": [
+  {
+   "name": "view-guides-locked",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "guidesLocked",
+     "value": true
+    }
+   ]
+  },
+  {
+   "name": "view-guides-locked-off",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "guidesLocked",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "guidesLocked",
+     "value": false
+    }
+   ]
+  },
+  {
+   "name": "view-guides-snap-off",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "guidesSnap",
+     "value": false
+    }
+   ]
+  },
+  {
+   "name": "view-guides-in-back",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "guidesInBack",
+     "value": true
+    }
+   ]
+  },
+  {
+   "name": "view-column-guides-unlocked",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "columnGuidesLocked",
+     "value": false
+    }
+   ]
+  },
+  {
+   "name": "view-baseline-grid",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineGridShown",
+     "value": true
+    }
+   ]
+  },
+  {
+   "name": "view-document-grid",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "documentGridShown",
+     "value": true
+    }
+   ]
+  },
+  {
+   "name": "view-document-grid-snap",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "documentGridSnap",
+     "value": true
+    }
+   ]
+  },
+  {
+   "name": "view-grids-in-front",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "gridsInBack",
+     "value": false
+    }
+   ]
+  },
+  {
+   "name": "view-all-grid-prefs",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineGridShown",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "documentGridShown",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "documentGridSnap",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "guidesLocked",
+     "value": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "fixture": "layoutadj5r",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj5r-rtl-450x500",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 500
+    }
+   ]
+  },
+  {
+   "name": "layoutadj5r-rtl-200x250",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250
+    }
+   ]
+  },
+  {
+   "name": "layoutadj5r-rtl-150x200",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 150,
+     "height": 200
+    }
+   ]
+  }
+ ]
+}

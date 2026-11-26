@@ -1,0 +1,6 @@
+/* The shared number field inside a dialog box: the dialogs' own rules for `input` and `button` (a fixed width, big padding) are for plain
+   boxes; here the box has the width the caller gave it and the ▲▼ / ▾ buttons stay small. Loaded by lengthfield.tsx. */
+.dialog .nf, .card.dialog .nf, .page-dialog .nf { flex: 0 1 auto; }
+.dialog .nf-box .nf-input, .card.dialog.style-options .nf-box .nf-input, .page-dialog .nf-box .nf-input { width: 100%; min-width: 0; flex: 1 1 auto; box-sizing: border-box; }
+.dialog .nf-buttons button, .card.dialog.style-options .nf-buttons button, .page-dialog .nf-buttons button { padding: 0; min-width: 0; }
+.dialog .nf-label { white-space: nowrap; }

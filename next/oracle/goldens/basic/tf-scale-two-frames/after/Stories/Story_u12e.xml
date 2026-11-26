@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u12e" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenationZone="43.199999999999996" RuleAboveLineWeight="0.7" RuleBelowLineWeight="0.7" SplitColumnInsideGutter="7.199999999999999" ParagraphBorderTopLeftCornerRadius="10.998181667894016" ParagraphBorderTopRightCornerRadius="10.998181667894016" ParagraphBorderBottomLeftCornerRadius="10.998181667894016" ParagraphBorderBottomRightCornerRadius="10.998181667894016" ParagraphShadingTopLeftCornerRadius="10.998181667894016" ParagraphShadingTopRightCornerRadius="10.998181667894016" ParagraphShadingBottomLeftCornerRadius="10.998181667894016" ParagraphShadingBottomRightCornerRadius="10.998181667894016" ParagraphBorderTopLineWeight="0.916515138991168" ParagraphBorderBottomLineWeight="0.916515138991168" ParagraphBorderLeftLineWeight="0.916515138991168" ParagraphBorderRightLineWeight="0.916515138991168">
+			<Properties>
+				<SameParaStyleSpacing type="unit">-0.7</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="7" HorizontalScale="171.42857142857144" StrokeWeight="0.916515138991168" MiterLimit="3.666060555964672" RubyFontSize="-0.7" RubyXScale="171.42857142857144" KentenFontSize="-0.7" KentenXScale="171.42857142857144">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Threaded line 1 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 2 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 3 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 4 flows from the first frame into the </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="10">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>second.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="10">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Threaded line 5 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 6 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 7 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 8 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 9 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 10 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 11 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 12 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 13 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 14 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 15 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 16 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 17 flows from the first frame into the second.</Content>
+				<Br />
+				<Content>Threaded line 18 flows from the first frame into the second.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

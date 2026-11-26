@@ -1,0 +1,296 @@
+{
+ "fixture": "outlines-range",
+ "about": "Type > Create Outlines on a text range (TextRange.createOutlines in InDesign 2025, hidden document): every line and every run of one paint of the selected characters becomes one inline Polygon (anchored object in the story) in place of its characters; whitespace at the ends of a run stays text. The host fills `shapes`, so the steps carry it empty. Rules: next/oracle/rules/outlines-c2.ko.md.",
+ "extension": "outlines",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "range-one",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "one",
+     "start": 1,
+     "end": 2,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-multi",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "one",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-first",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "one",
+     "start": 0,
+     "end": 1,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-last",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "one",
+     "start": 5,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-all",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "one",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-track",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "track",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-colors",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "colors",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-sizes",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "sizes",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-shift",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "shift",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-lead",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "lead",
+     "start": 0,
+     "end": 7,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-kern",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kern",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-skew",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "skew",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-hangul",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "hangul",
+     "start": 0,
+     "end": 3,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-fontmix",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "fontmix",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-wrap",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "wrap",
+     "start": 2,
+     "end": 10,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-wrap-all",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "wrap",
+     "start": 0,
+     "end": 14,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-para",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "para",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-para-part",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "para",
+     "start": 1,
+     "end": 4,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "range-inline",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "inline",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  }
+ ]
+}

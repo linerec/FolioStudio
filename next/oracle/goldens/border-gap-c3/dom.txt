@@ -1,0 +1,13 @@
+strokeStyles: Triple|Thick - Thin - Thick|Thin - Thick - Thin|Thick - Thick|Thick - Thin|Thin - Thick|Thin - Thin|Japanese Dots|White Diamond|Left Slant Hash|Right Slant Hash|Straight Hash|Wavy|Dotted|Dashed (3 and 2)|Dashed (4 and 4)|Dashed|Solid
+props: paragraphBorderGapOverprint,paragraphBorderGapTint,paragraphBorderGapColor,paragraphBorderType,paragraphBorderStrokeEndCap,paragraphBorderStrokeEndJoin
+type Solid: Solid
+gap 0: GapRed 60 false
+type Dashed: Dashed
+gap 1: GapRed 61 true
+type Dotted: Dotted
+gap 2: GapRed 62 false
+type Japanese Dots: Japanese Dots
+gap 3: GapRed 63 true
+type Wavy: Wavy
+gap 4: GapRed 64 false
+defaults: type=Solid gapcolor=None gaptint=-1 gapovp=false

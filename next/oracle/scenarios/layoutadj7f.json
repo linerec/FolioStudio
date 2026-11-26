@@ -1,0 +1,44 @@
+{
+ "fixture": "layoutadj7f",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj7f-auto-size",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 500,
+     "auto_adjust_margins": true
+    }
+   ]
+  },
+  {
+   "name": "layoutadj7f-auto-shrink",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250,
+     "auto_adjust_margins": true
+    }
+   ]
+  },
+  {
+   "name": "layoutadj7f-auto-width",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 400,
+     "auto_adjust_margins": true
+    }
+   ]
+  }
+ ]
+}

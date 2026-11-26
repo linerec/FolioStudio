@@ -1,0 +1,239 @@
+{
+  "fixture": "basic",
+  "about": "Object > Content > Text (menu action 11296 in a window): an empty frame becomes a text frame with a new empty story; and an empty text frame to Graphic / Unassigned (11295, 11297).",
+  "scenarios": [
+    {
+      "name": "obj-content-text",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-fill",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-oval",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "oval"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-rotated",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-rot"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-graphic",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11295,
+          "action": "Graphic"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-back",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        },
+        {
+          "op": "menu",
+          "id": 11297,
+          "action": "Unassigned"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-to-graphic",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        },
+        {
+          "op": "menu",
+          "id": 11295,
+          "action": "Graphic"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-poly",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "poly"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-group-member",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "grp-a"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-oval-back",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "oval"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        },
+        {
+          "op": "menu",
+          "id": 11297,
+          "action": "Unassigned"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-poly-back",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "poly"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        },
+        {
+          "op": "menu",
+          "id": 11297,
+          "action": "Unassigned"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-two",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "targets": [
+            "r-plain",
+            "oval"
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-text-then-type",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        },
+        {
+          "op": "menu",
+          "id": 11297,
+          "action": "Unassigned"
+        },
+        {
+          "op": "menu",
+          "id": 11296,
+          "action": "Text"
+        }
+      ]
+    }
+  ]
+}

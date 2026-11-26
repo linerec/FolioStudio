@@ -1,0 +1,111 @@
+{
+ "fixture": "basic",
+ "about": "The Ink Manager: converting a spot ink to process, Ink Alias (AliasInkName on the Ink and SpotInkAliasSpotColorReference on the swatch).",
+ "scenarios": [
+  {
+   "name": "ink-convert",
+   "steps": [
+    {
+     "op": "swatchNew",
+     "name": "PMS 485",
+     "model": "spot",
+     "space": "cmyk",
+     "value": [
+      0,
+      95,
+      100,
+      0
+     ]
+    },
+    {
+     "op": "inkSet",
+     "name": "PMS 485",
+     "props": {
+      "convertToProcess": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "ink-alias",
+   "steps": [
+    {
+     "op": "swatchNew",
+     "name": "PMS 485",
+     "model": "spot",
+     "space": "cmyk",
+     "value": [
+      0,
+      95,
+      100,
+      0
+     ]
+    },
+    {
+     "op": "inkSet",
+     "name": "PMS 485",
+     "props": {
+      "alias": "Oracle Spot"
+     }
+    }
+   ]
+  },
+  {
+   "name": "ink-type-opaque",
+   "steps": [
+    {
+     "op": "inkSet",
+     "name": "Oracle Spot",
+     "props": {
+      "inkType": "opaque"
+     }
+    }
+   ]
+  },
+  {
+   "name": "ink-alias-process",
+   "steps": [
+    {
+     "op": "inkSet",
+     "name": "Oracle Spot",
+     "props": {
+      "alias": "Process Cyan"
+     }
+    }
+   ]
+  },
+  {
+   "name": "ink-all-spots",
+   "steps": [
+    {
+     "op": "swatchNew",
+     "name": "PMS 485",
+     "model": "spot",
+     "space": "cmyk",
+     "value": [
+      0,
+      95,
+      100,
+      0
+     ]
+    },
+    {
+     "op": "inkAllSpots",
+     "on": true
+    }
+   ]
+  },
+  {
+   "name": "ink-convert-used",
+   "steps": [
+    {
+     "op": "inkSet",
+     "name": "Oracle Spot",
+     "props": {
+      "convertToProcess": true
+     }
+    }
+   ]
+  }
+ ]
+}

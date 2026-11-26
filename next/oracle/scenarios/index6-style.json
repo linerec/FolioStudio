@@ -1,0 +1,65 @@
+{
+ "fixture": "index-c3-ranges",
+ "extension": "index6",
+ "comparison": "index",
+ "scenarios": [
+  {
+   "name": "index6-style-ref",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "MineHead",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "MineOther",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "MineEnd",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexStyleReference",
+     "target": "format",
+     "at": 437,
+     "topic": "u1f3TopicnMineEnd",
+     "style": "ParagraphStyle/Format Heading"
+    },
+    {
+     "op": "addIndexStyleReference",
+     "target": "format",
+     "at": 418,
+     "topic": "u1f3TopicnMineOther",
+     "style": "ParagraphStyle/Format Other"
+    },
+    {
+     "op": "addIndexStyleReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1f3TopicnMineHead",
+     "style": "ParagraphStyle/Format Heading"
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": false,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  }
+ ]
+}

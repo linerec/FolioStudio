@@ -1,0 +1,420 @@
+{
+ "fixture": "docxtext4",
+ "about": "Place an RTF file with a style sheet: the styles come in, paragraphs and runs carry what differs from them (docxtext-c4).",
+ "scenarios": [
+  {
+   "name": "docxtext-c4-rtf-r01",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-r01.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-r02",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-r02.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-r03",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-r03.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-r04",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-r04.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-r05",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-r05.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-r06",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-r06.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t01",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t01.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t02",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t02.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t03",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t03.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t04",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t04.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t05",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t05.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t06",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t06.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t07",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t07.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t08",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t08.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t09",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t09.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t10",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t10.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t11",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t11.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t12",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t12.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t13",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t13.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t14",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t14.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t15",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t15.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t17",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t17.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c4-rtf-t18",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext4-t18.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

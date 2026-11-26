@@ -1,0 +1,36 @@
+[package]
+build = "../../test-inputs.rs"
+name = "folio-links"
+description = "Linked files: InDesign-style relink search, file-name index, header-only probing"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+# NFC/NFD matching of file names (Korean names from macOS are often NFD). MIT OR Apache-2.0.
+unicode-normalization = "=0.1.24"
+# zlib for PNG iCCP and PDF Flate streams; same backend the IDML reader already builds.
+flate2 = { version = "=1.1.10", default-features = false, features = ["zlib-rs"] }
+# Memory-mapped PDF reading (only the cross-reference and object regions are touched).
+memmap2 = "=0.9.11"
+# PDF source previews and measured content bounds. No bundled fonts or CMap tables.
+hayro = { version = "=0.8.0", default-features = false }
+# The same PDF reader used by print export; needed to select boxes for preview rendering.
+lopdf = { version = "=0.45.0", default-features = false }
+sha2 = "=0.11.1"
+
+# Only for the `links_report` example (`--features cli`).
+folio-idml = { workspace = true, optional = true }
+
+[features]
+cli = ["dep:folio-idml"]
+
+[[example]]
+name = "links_report"
+required-features = ["cli"]
+
+[dev-dependencies]
+flate2 = { version = "=1.1.10", default-features = false, features = ["zlib-rs"] }

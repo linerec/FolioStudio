@@ -1,0 +1,313 @@
+{
+ "fixture": "charpanel-c3",
+ "about": "Character panel Horizontal Scale and Vertical Scale (25%-400%): glyph widths, line height with explicit and auto leading, mixed scales on one line.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "cp-hscale-150",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-60",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 60
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-frac",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 133.5
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-25",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 40,
+     "props": {
+      "horizontalScale": 25
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-400",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "horizontalScale": 400
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-mixed",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 10,
+     "end": 30,
+     "props": {
+      "horizontalScale": 200
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-underline",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 29,
+     "props": {
+      "underline": true
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 29,
+     "props": {
+      "horizontalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-tracking",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "tracking": 100
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-reset",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 150
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 100
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-vscale-150",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "verticalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-vscale-50",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "verticalScale": 50
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-vscale-word",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "verticalScale": 200
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-vscale-auto",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 75,
+     "end": 154,
+     "props": {
+      "verticalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-vscale-auto-word",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 90,
+     "end": 100,
+     "props": {
+      "verticalScale": 250
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-scale-both",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 120,
+      "verticalScale": 80
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-serif",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "serif",
+     "start": 0,
+     "end": 60,
+     "props": {
+      "horizontalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-korean",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "horizontalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-vscale-korean",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "verticalScale": 150
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-hscale-size",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "pointSize": 20
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 75
+     }
+    }
+   ]
+  }
+ ]
+}

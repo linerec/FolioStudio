@@ -1,0 +1,110 @@
+{
+  "fixture": "basic",
+  "about": "Ruler guides: dragged onto a page or (Ctrl) onto the spread, moved, deleted, on a layer.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "guide-new-h",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 0,
+          "orientation": "horizontal",
+          "location": 200
+        }
+      ]
+    },
+    {
+      "name": "guide-new-v",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 0,
+          "orientation": "vertical",
+          "location": 150
+        }
+      ]
+    },
+    {
+      "name": "guide-new-right-page",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 2,
+          "orientation": "vertical",
+          "location": 700
+        }
+      ]
+    },
+    {
+      "name": "guide-new-left-page",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 1,
+          "orientation": "vertical",
+          "location": 100
+        }
+      ]
+    },
+    {
+      "name": "guide-new-spread",
+      "steps": [
+        {
+          "op": "guideNew",
+          "spread": 1,
+          "orientation": "horizontal",
+          "location": 300
+        }
+      ]
+    },
+    {
+      "name": "guide-new-layer",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 0,
+          "orientation": "horizontal",
+          "location": 120,
+          "layer": "Top"
+        }
+      ]
+    },
+    {
+      "name": "guide-move",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 0,
+          "orientation": "horizontal",
+          "location": 200
+        },
+        {
+          "op": "guideMove",
+          "page": 0,
+          "index": 0,
+          "location": 260
+        }
+      ]
+    },
+    {
+      "name": "guide-delete",
+      "steps": [
+        {
+          "op": "guideNew",
+          "page": 0,
+          "orientation": "horizontal",
+          "location": 200
+        },
+        {
+          "op": "guideDelete",
+          "page": 0,
+          "index": 0
+        }
+      ]
+    }
+  ]
+}

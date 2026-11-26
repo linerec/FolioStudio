@@ -1,0 +1,14 @@
+{
+  "fixture":"basic",
+  "about":"Explicit destination spread, followed by a displacement in that spread. Hidden moves do not choose another spread automatically.",
+  "scenarios":[
+    {"name":"spread-move-plain","steps":[{"op":"moveToSpread","target":"r-plain","spread":1,"by":[-500,20]}]},
+    {"name":"spread-move-rotated","steps":[{"op":"moveToSpread","target":"r-rot","spread":1,"by":[20,30]}]},
+    {"name":"spread-move-group","steps":[{"op":"moveToSpread","target":"grp","spread":1,"by":[-400,-400]}]},
+    {"name":"spread-move-text","steps":[{"op":"moveToSpread","target":"tf","spread":0,"by":[600,20]}]},
+    {"name":"spread-move-threaded","steps":[{"op":"moveToSpread","target":"tf-1","spread":0,"by":[600,-50]}]},
+    {"name":"spread-move-image","steps":[{"op":"moveToSpread","target":"img","spread":0,"by":[15,200]}]},
+    {"name":"spread-move-twice","steps":[{"op":"moveToSpread","target":"r-plain","spread":1,"by":[-500,20]},{"op":"moveToSpread","target":"r-plain","spread":0,"by":[500,-20]}]},
+    {"name":"spread-move-two","steps":[{"op":"moveToSpread","target":"r-plain","spread":1,"by":[-500,20]},{"op":"moveToSpread","target":"r-fill","spread":1,"by":[-500,20]}]}
+  ]
+}

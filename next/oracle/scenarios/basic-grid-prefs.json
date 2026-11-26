@@ -1,0 +1,194 @@
+{
+ "fixture": "basic",
+ "about": "Edit > Preferences > Grids: the baseline grid (start, increment, view threshold, relative to, colour) and the document grid (gridline spacing, subdivisions, colour; a colour is an interface colour name or a custom RGB list) are document settings in IDML GridPreference. Lengths in points.",
+ "scenarios": [
+  {
+   "name": "grid-baseline-start",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineStart",
+     "value": 18
+    }
+   ]
+  },
+  {
+   "name": "grid-baseline-division",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineDivision",
+     "value": 14.4
+    }
+   ]
+  },
+  {
+   "name": "grid-baseline-threshold",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineThreshold",
+     "value": 50
+    }
+   ]
+  },
+  {
+   "name": "grid-baseline-relative-margin",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineRelativeTo",
+     "value": "margin"
+    }
+   ]
+  },
+  {
+   "name": "grid-baseline-color",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineColor",
+     "value": "Red"
+    }
+   ]
+  },
+  {
+   "name": "grid-baseline-color-custom",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineColor",
+     "value": [
+      255,
+      128,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "grid-document-division",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "horizontalDivision",
+     "value": 36
+    },
+    {
+     "op": "viewPref",
+     "name": "verticalDivision",
+     "value": 18
+    }
+   ]
+  },
+  {
+   "name": "grid-document-subdivision",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "horizontalSubdivision",
+     "value": 4
+    },
+    {
+     "op": "viewPref",
+     "name": "verticalSubdivision",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "name": "grid-color",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "gridColor",
+     "value": "CuteTeal"
+    }
+   ]
+  },
+  {
+   "name": "grid-color-custom",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "gridColor",
+     "value": [
+      10,
+      20,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "name": "grid-all",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "baselineGridShown",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "baselineStart",
+     "value": 20
+    },
+    {
+     "op": "viewPref",
+     "name": "baselineDivision",
+     "value": 15
+    },
+    {
+     "op": "viewPref",
+     "name": "baselineThreshold",
+     "value": 100
+    },
+    {
+     "op": "viewPref",
+     "name": "baselineRelativeTo",
+     "value": "margin"
+    },
+    {
+     "op": "viewPref",
+     "name": "baselineColor",
+     "value": "Magenta"
+    },
+    {
+     "op": "viewPref",
+     "name": "documentGridShown",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "horizontalDivision",
+     "value": 50
+    },
+    {
+     "op": "viewPref",
+     "name": "verticalDivision",
+     "value": 25
+    },
+    {
+     "op": "viewPref",
+     "name": "horizontalSubdivision",
+     "value": 5
+    },
+    {
+     "op": "viewPref",
+     "name": "verticalSubdivision",
+     "value": 5
+    },
+    {
+     "op": "viewPref",
+     "name": "gridColor",
+     "value": "Sulphur"
+    },
+    {
+     "op": "viewPref",
+     "name": "gridsInBack",
+     "value": false
+    }
+   ]
+  }
+ ]
+}

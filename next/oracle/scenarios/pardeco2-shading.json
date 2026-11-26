@@ -1,0 +1,166 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "pardeco2-shade-solid",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-shade-offsets",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 26,
+     "end": 34,
+     "props": {
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 35,
+      "paragraphShadingTopOffset": 4,
+      "paragraphShadingLeftOffset": 6,
+      "paragraphShadingBottomOffset": 3,
+      "paragraphShadingRightOffset": 8,
+      "paragraphShadingTopOrigin": "LEADING_TOP_ORIGIN",
+      "paragraphShadingBottomOrigin": "BASELINE_BOTTOM_ORIGIN",
+      "paragraphShadingWidth": "TEXT_WIDTH"
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-border-box",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "paragraphBorderOn": true,
+      "paragraphBorderColor": "Color/Black",
+      "paragraphBorderTint": 80,
+      "paragraphBorderTopLineWeight": 1,
+      "paragraphBorderLeftLineWeight": 2,
+      "paragraphBorderBottomLineWeight": 3,
+      "paragraphBorderRightLineWeight": 4,
+      "paragraphBorderTopOffset": 2,
+      "paragraphBorderLeftOffset": 3,
+      "paragraphBorderBottomOffset": 4,
+      "paragraphBorderRightOffset": 5
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-border-merge",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 40,
+     "props": {
+      "paragraphBorderOn": true,
+      "paragraphBorderColor": "Color/Black",
+      "paragraphBorderTopLineWeight": 1.5,
+      "paragraphBorderLeftLineWeight": 1.5,
+      "paragraphBorderBottomLineWeight": 1.5,
+      "paragraphBorderRightLineWeight": 1.5,
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 15
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-border-nomerge",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 40,
+     "props": {
+      "paragraphBorderOn": true,
+      "paragraphBorderColor": "Color/Black",
+      "paragraphBorderTopLineWeight": 1.5,
+      "paragraphBorderLeftLineWeight": 1.5,
+      "paragraphBorderBottomLineWeight": 1.5,
+      "paragraphBorderRightLineWeight": 1.5,
+      "mergeConsecutiveParaBorders": false,
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 15
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-shade-style-heading",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "props": {
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 25,
+      "paragraphBorderOn": true,
+      "paragraphBorderColor": "Color/Black",
+      "paragraphBorderTopLineWeight": 2,
+      "paragraphBorderLeftLineWeight": 2,
+      "paragraphBorderBottomLineWeight": 2,
+      "paragraphBorderRightLineWeight": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-shade-korean",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 2,
+     "end": 8,
+     "props": {
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 100
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-shade-heading",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "destination",
+     "start": 2,
+     "end": 8,
+     "props": {
+      "paragraphShadingOn": true,
+      "paragraphShadingColor": "Color/Black",
+      "paragraphShadingTint": 100
+     }
+    }
+   ]
+  }
+ ]
+}

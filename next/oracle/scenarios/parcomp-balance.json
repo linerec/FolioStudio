@@ -1,0 +1,157 @@
+{
+  "fixture": "parcomp-balance",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "parcomp-balance-on",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance0",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance1",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance2",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance3",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer"
+          }
+        }
+      ]
+    },
+    {
+      "name": "parcomp-balance-single",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance0",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Single"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance1",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Single"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance2",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Single"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance3",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Single"
+          }
+        }
+      ]
+    },
+    {
+      "name": "parcomp-balance-world",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "balance0",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer Optyca"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance1",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer Optyca"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance2",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer Optyca"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "balance3",
+          "start": 0,
+          "end": 132,
+          "props": {
+            "balanceRaggedLines": true,
+            "composer": "$ID/HL Composer Optyca"
+          }
+        }
+      ]
+    },
+    {
+      "name": "parcomp-balance-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Parcomp Balance",
+          "props": {
+            "balanceRaggedLines": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+ "fixture": "pages",
+ "about": "Preferences > Guides & Pasteboard > Pasteboard Options: the pasteboard margins (PasteboardMargins; the vertical one is MinimumSpaceAboveAndBelow) and Match Preview Background to Theme Color change how far apart InDesign lays the spreads (Spread ItemTransform y). Measured on the pages fixture (3 spreads).",
+ "scenarios": [
+  {
+   "name": "pasteboard-margins-0-0",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "pasteboardMargins",
+     "value": [
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-margins-30-40",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "pasteboardMargins",
+     "value": [
+      30,
+      40
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-margins-v-100",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "pasteboardMargins",
+     "value": [
+      -1,
+      100
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-match-theme",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "matchPreviewBackground",
+     "value": true
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-match-and-back",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "matchPreviewBackground",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "matchPreviewBackground",
+     "value": false
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-match-and-margins",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "matchPreviewBackground",
+     "value": true
+    },
+    {
+     "op": "viewPref",
+     "name": "pasteboardMargins",
+     "value": [
+      10,
+      20
+     ]
+    }
+   ]
+  }
+ ]
+}

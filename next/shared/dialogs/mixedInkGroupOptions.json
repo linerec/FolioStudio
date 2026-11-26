@@ -1,0 +1,31 @@
+{
+  "title": "혼합 잉크 그룹 옵션",
+  "label": "혼합 잉크 그룹 이름 바꾸기",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "mixedInkGroup",
+  "description": "Swatches panel > Swatch Options on a mixed ink group: ids is the group id; renames it, and its swatches take the new name too (not another group's name).",
+  "note": "그룹의 견본 이름도 함께 바뀝니다.",
+  "fields": [
+    {
+      "name": "name",
+      "label": "혼합 잉크 그룹 이름",
+      "type": "text",
+      "required": true,
+      "trim": true,
+      "unique": "mixedInkGroups",
+      "uniqueMessage": "같은 이름의 혼합 잉크 그룹이 이미 있습니다.",
+      "maxLength": 256,
+      "default": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "renameMixedInkGroup",
+        "id": "$ids0",
+        "name": "$name"
+      }
+    ]
+  }
+}

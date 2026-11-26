@@ -1,0 +1,2157 @@
+{
+"version": "20.5.5.119",
+"cases": [
+{
+"id": "id-note",
+"mode": "plain",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"mask": "---"
+},
+{
+"id": "gen-note-dot",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": ".",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+],
+"mask": "R-R"
+},
+{
+"id": "gen-note-w",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\w",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+],
+"mask": "R-R"
+},
+{
+"id": "gen-note-adotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "a.b",
+"find": [],
+"mask": "---"
+},
+{
+"id": "gen-note-S",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\S",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+],
+"mask": "R-R"
+},
+{
+"id": "gen-note-nota",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "[^a]",
+"find": [
+[
+2,
+1
+]
+],
+"mask": "--R"
+},
+{
+"id": "gen-note-s",
+"mode": "grep",
+"parts": [
+"ab ",
+{
+"m": "NOTE"
+},
+" cd"
+],
+"count": 7,
+"pattern": "\\s",
+"find": [
+[
+2,
+1
+],
+[
+4,
+1
+]
+],
+"mask": "--R-R--"
+},
+{
+"id": "gen-note-wplus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\w+",
+"find": [
+[
+0,
+3
+]
+],
+"mask": "RRR"
+},
+{
+"id": "mt-note-lit",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "ab",
+"find": [
+[
+0,
+3
+]
+],
+"mask": "RRR"
+},
+{
+"id": "mt-note-ww",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\w\\w",
+"find": [
+[
+0,
+3
+]
+],
+"mask": "RRR"
+},
+{
+"id": "mt-note-w2",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\w{2}",
+"find": [
+[
+0,
+3
+]
+],
+"mask": "RRR"
+},
+{
+"id": "mt-note-aW",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "a\\W",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-W",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\W",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-as",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "a\\s",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-s",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\s",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-splus",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\s+",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-h",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\h",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-H",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "\\H",
+"find": [
+[
+0,
+1
+],
+[
+2,
+1
+]
+],
+"mask": "R-R"
+},
+{
+"id": "mt-note-hex7",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "a\\x{0007}b",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-look",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "a(?=b)",
+"find": [
+[
+0,
+1
+]
+],
+"mask": "R--"
+},
+{
+"id": "mt-note-behind",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "(?<=a)b",
+"find": [
+[
+2,
+1
+]
+],
+"mask": "--R"
+},
+{
+"id": "mt-note-dollar",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "b$",
+"find": [
+[
+2,
+1
+]
+],
+"mask": "--R"
+},
+{
+"id": "mt-note-caret",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "^a",
+"find": [
+[
+0,
+1
+]
+],
+"mask": "R--"
+},
+{
+"id": "mt-note-notw",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "[^\\w]",
+"find": [],
+"mask": "---"
+},
+{
+"id": "mt-note-anotb",
+"mode": "grep",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"count": 3,
+"pattern": "a[^b]",
+"find": [],
+"mask": "---"
+},
+{
+"id": "nw-note",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "NOTE"
+},
+"cd ef"
+],
+"count": 8,
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+],
+"mask": "AAAAAABB"
+},
+{
+"id": "nc-note",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"bcd"
+],
+"count": 5,
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+],
+"mask": "AAAAB"
+},
+{
+"id": "ne-note-in-word",
+"mode": "nested",
+"parts": [
+"ab",
+{
+"m": "NOTE"
+},
+"cd ef"
+],
+"count": 8,
+"items": [
+{
+"style": "A",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": false
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+],
+"mask": "AAAAABBB"
+},
+{
+"id": "ng-c3-note",
+"mode": "nested",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b",
+{
+"m": "END_NESTED_STYLE"
+},
+"cd"
+],
+"count": 6,
+"items": [
+{
+"style": "A",
+"delim": "ANY_CHARACTER",
+"rep": 3,
+"incl": true
+},
+{
+"style": "B",
+"delim": "ANY_WORD",
+"rep": 1,
+"incl": true
+}
+],
+"mask": "AAAA--"
+},
+{
+"id": "note-tildeI-in-word",
+"mode": "grep",
+"pattern": "a~Ib",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-note-tildeI-or",
+"mode": "grep",
+"pattern": "~I|b",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "index-tildeI-in-word",
+"mode": "grep",
+"pattern": "a~Ib",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRR"
+},
+{
+"id": "index-tildeI-star",
+"mode": "grep",
+"pattern": "a~I*b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRR"
+},
+{
+"id": "odd-INDEX-or1",
+"mode": "grep",
+"pattern": "~I|b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-R-"
+},
+{
+"id": "odd-INDEX-or2",
+"mode": "grep",
+"pattern": "b|~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-INDEX-or3",
+"mode": "grep",
+"pattern": "(?:~I|a)b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-INDEX-plainb",
+"mode": "grep",
+"pattern": "b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "--R"
+},
+{
+"id": "odd-INDEX-tI_b",
+"mode": "grep",
+"pattern": "~Ib",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-INDEX-aTI",
+"mode": "grep",
+"pattern": "a~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RR-"
+},
+{
+"id": "odd-INDEX-TIw",
+"mode": "grep",
+"pattern": "~I\\w",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-INDEX-wTI",
+"mode": "grep",
+"pattern": "\\w~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RR-"
+},
+{
+"id": "odd-INDEX-grp",
+"mode": "grep",
+"pattern": "(~I)",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-R-"
+},
+{
+"id": "odd-NOTE-or1",
+"mode": "grep",
+"pattern": "~I|b",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-or2",
+"mode": "grep",
+"pattern": "b|~I",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-or3",
+"mode": "grep",
+"pattern": "(?:~I|a)b",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-plainb",
+"mode": "grep",
+"pattern": "b",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "--R"
+},
+{
+"id": "odd-NOTE-tI_b",
+"mode": "grep",
+"pattern": "~Ib",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-aTI",
+"mode": "grep",
+"pattern": "a~I",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-TIw",
+"mode": "grep",
+"pattern": "~I\\w",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-wTI",
+"mode": "grep",
+"pattern": "\\w~I",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-NOTE-grp",
+"mode": "grep",
+"pattern": "(~I)",
+"parts": [
+"a",
+{
+"m": "NOTE"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-none-or1",
+"mode": "grep",
+"pattern": "~I|b",
+"parts": [
+"ab"
+],
+"mask": "--"
+},
+{
+"id": "odd-none-or2",
+"mode": "grep",
+"pattern": "b|~I",
+"parts": [
+"ab"
+],
+"mask": "--"
+},
+{
+"id": "odd-nbsp-or1",
+"mode": "grep",
+"pattern": "~S|b",
+"parts": [
+"a b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-nbsp-or2",
+"mode": "grep",
+"pattern": "b|~S",
+"parts": [
+"a b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-dash-or",
+"mode": "grep",
+"pattern": "~_|b",
+"parts": [
+"a—b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-foot-or1",
+"mode": "grep",
+"pattern": "~F|b",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-foot-or2",
+"mode": "grep",
+"pattern": "b|~F",
+"parts": [
+"a",
+{
+"m": "FOOTNOTE"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-sect-or1",
+"mode": "grep",
+"pattern": "~x|b",
+"parts": [
+"a",
+{
+"m": "SECTION_MARKER"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-page-or1",
+"mode": "grep",
+"pattern": "~#|b",
+"parts": [
+"a",
+{
+"m": "AUTO_PAGE_NUMBER"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-endn-or1",
+"mode": "grep",
+"pattern": "~h|b",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-endn-or2",
+"mode": "grep",
+"pattern": "b|~h",
+"parts": [
+"a",
+{
+"m": "END_NESTED_STYLE"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-ind-or1",
+"mode": "grep",
+"pattern": "~i|b",
+"parts": [
+"a",
+{
+"m": "INDENT_HERE_TAB"
+},
+"b"
+],
+"mask": "-RR"
+},
+{
+"id": "odd-index-or-hex",
+"mode": "grep",
+"pattern": "\\x{FEFF}|b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "--R"
+},
+{
+"id": "odd-index-or-I2",
+"mode": "grep",
+"pattern": "~I|~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-index-or-ab",
+"mode": "grep",
+"pattern": "~I|a",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-R-"
+},
+{
+"id": "odd-index-or-nonmarker",
+"mode": "grep",
+"pattern": "~I|[ab]",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-R-"
+},
+{
+"id": "odd-index-ab-or",
+"mode": "grep",
+"pattern": "(ab)|~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-index-ab-or2",
+"mode": "grep",
+"pattern": "~I|(ab)",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-R-"
+},
+{
+"id": "odd-index-alt-in-grp",
+"mode": "grep",
+"pattern": "a(~I|x)b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRR"
+},
+{
+"id": "odd-index-opt",
+"mode": "grep",
+"pattern": "a~I?b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRR"
+},
+{
+"id": "odd-index-plus",
+"mode": "grep",
+"pattern": "a~I+b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRR"
+},
+{
+"id": "odd-index-2",
+"mode": "grep",
+"pattern": "a~I~Ib",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRRR"
+},
+{
+"id": "odd-index-2b",
+"mode": "grep",
+"pattern": "~I{2}",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-RR-"
+},
+{
+"id": "odd-index-2c",
+"mode": "grep",
+"pattern": "~I+",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-RR-"
+},
+{
+"id": "odd-index-2d",
+"mode": "grep",
+"pattern": "~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-RR-"
+},
+{
+"id": "odd-index-set",
+"mode": "grep",
+"pattern": "[~I]",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "-R-"
+},
+{
+"id": "odd-index-neg",
+"mode": "grep",
+"pattern": "[^~I]",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "RRR"
+},
+{
+"id": "odd-index-look",
+"mode": "grep",
+"pattern": "(?=~I)",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-index-lookb",
+"mode": "grep",
+"pattern": "(?<=~I)b",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-index-lookb2",
+"mode": "grep",
+"pattern": "(?<=a)~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "odd-index-first",
+"mode": "grep",
+"pattern": "~Ia",
+"parts": [
+{
+"m": "INDEX"
+},
+"a",
+"b"
+],
+"mask": "RR-"
+},
+{
+"id": "odd-index-last",
+"mode": "grep",
+"pattern": "b~I",
+"parts": [
+"a",
+"b",
+{
+"m": "INDEX"
+}
+],
+"mask": "-RR"
+},
+{
+"id": "odd-index-start",
+"mode": "grep",
+"pattern": "^~I",
+"parts": [
+{
+"m": "INDEX"
+},
+"ab"
+],
+"mask": "---"
+},
+{
+"id": "odd-index-end",
+"mode": "grep",
+"pattern": "~I$",
+"parts": [
+"ab",
+{
+"m": "INDEX"
+}
+],
+"mask": "--R"
+},
+{
+"id": "odd-index-wb",
+"mode": "grep",
+"pattern": "\\b~I",
+"parts": [
+"a",
+{
+"m": "INDEX"
+},
+"b"
+],
+"mask": "---"
+},
+{
+"id": "a2-tilde-21",
+"mode": "grep",
+"pattern": "~!",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-22",
+"mode": "grep",
+"pattern": "~\"",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-23",
+"mode": "grep",
+"pattern": "~#",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-24",
+"mode": "grep",
+"pattern": "~$",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-25",
+"mode": "grep",
+"pattern": "~%",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------------R---------------------------------------------"
+},
+{
+"id": "a2-tilde-26",
+"mode": "grep",
+"pattern": "~&",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-27",
+"mode": "grep",
+"pattern": "~'",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-28",
+"mode": "grep",
+"pattern": "~(",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------------------------------------------R---------------"
+},
+{
+"id": "a2-tilde-29",
+"mode": "grep",
+"pattern": "~)",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-2A",
+"mode": "grep",
+"pattern": "~*",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-2B",
+"mode": "grep",
+"pattern": "~+",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-2C",
+"mode": "grep",
+"pattern": "~,",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-2D",
+"mode": "grep",
+"pattern": "~-",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----R-------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-2E",
+"mode": "grep",
+"pattern": "~.",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------R-----------------------------------------------"
+},
+{
+"id": "a2-tilde-2F",
+"mode": "grep",
+"pattern": "~/",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------------------------------R-------------------------------------------------"
+},
+{
+"id": "a2-tilde-30",
+"mode": "grep",
+"pattern": "~0",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-31",
+"mode": "grep",
+"pattern": "~1",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-32",
+"mode": "grep",
+"pattern": "~2",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------R-----------------------------------"
+},
+{
+"id": "a2-tilde-33",
+"mode": "grep",
+"pattern": "~3",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------R-----------------------------------------"
+},
+{
+"id": "a2-tilde-34",
+"mode": "grep",
+"pattern": "~4",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------------------------------------R-------------------------------------------"
+},
+{
+"id": "a2-tilde-35",
+"mode": "grep",
+"pattern": "~5",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-36",
+"mode": "grep",
+"pattern": "~6",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------R-----------------------------"
+},
+{
+"id": "a2-tilde-37",
+"mode": "grep",
+"pattern": "~7",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------------------------------R---------------------------"
+},
+{
+"id": "a2-tilde-38",
+"mode": "grep",
+"pattern": "~8",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------------------------------------------R-------------------------------------"
+},
+{
+"id": "a2-tilde-39",
+"mode": "grep",
+"pattern": "~9",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-3A",
+"mode": "grep",
+"pattern": "~:",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-3B",
+"mode": "grep",
+"pattern": "~;",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-3C",
+"mode": "grep",
+"pattern": "~<",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------R---------------------------------------------------------"
+},
+{
+"id": "a2-tilde-3D",
+"mode": "grep",
+"pattern": "~=",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---R---------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-3E",
+"mode": "grep",
+"pattern": "~>",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------------------R-------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-3F",
+"mode": "grep",
+"pattern": "~?",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-40",
+"mode": "grep",
+"pattern": "~@",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-41",
+"mode": "grep",
+"pattern": "~A",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-42",
+"mode": "grep",
+"pattern": "~B",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-43",
+"mode": "grep",
+"pattern": "~C",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-44",
+"mode": "grep",
+"pattern": "~D",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-45",
+"mode": "grep",
+"pattern": "~E",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-46",
+"mode": "grep",
+"pattern": "~F",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-47",
+"mode": "grep",
+"pattern": "~G",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-48",
+"mode": "grep",
+"pattern": "~H",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-49",
+"mode": "grep",
+"pattern": "~I",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-4A",
+"mode": "grep",
+"pattern": "~J",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-4B",
+"mode": "grep",
+"pattern": "~K",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-4C",
+"mode": "grep",
+"pattern": "~L",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-4D",
+"mode": "grep",
+"pattern": "~M",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-4E",
+"mode": "grep",
+"pattern": "~N",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-4F",
+"mode": "grep",
+"pattern": "~O",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-50",
+"mode": "grep",
+"pattern": "~P",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-51",
+"mode": "grep",
+"pattern": "~Q",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-52",
+"mode": "grep",
+"pattern": "~R",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-53",
+"mode": "grep",
+"pattern": "~S",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------R-----------------------------------------------------"
+},
+{
+"id": "a2-tilde-54",
+"mode": "grep",
+"pattern": "~T",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-55",
+"mode": "grep",
+"pattern": "~U",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-56",
+"mode": "grep",
+"pattern": "~V",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-57",
+"mode": "grep",
+"pattern": "~W",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-58",
+"mode": "grep",
+"pattern": "~X",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-59",
+"mode": "grep",
+"pattern": "~Y",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-5A",
+"mode": "grep",
+"pattern": "~Z",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-5B",
+"mode": "grep",
+"pattern": "~[",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------R-----------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-5C",
+"mode": "grep",
+"pattern": "~\\",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-5D",
+"mode": "grep",
+"pattern": "~]",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------R---R-----------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-5E",
+"mode": "grep",
+"pattern": "~^",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-5F",
+"mode": "grep",
+"pattern": "~_",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-R-----------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-60",
+"mode": "grep",
+"pattern": "~`",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-61",
+"mode": "grep",
+"pattern": "~a",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-62",
+"mode": "grep",
+"pattern": "~b",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-63",
+"mode": "grep",
+"pattern": "~c",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-64",
+"mode": "grep",
+"pattern": "~d",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------------------------------------------------R-------------------------------"
+},
+{
+"id": "a2-tilde-65",
+"mode": "grep",
+"pattern": "~e",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------------------R---------------------------------------"
+},
+{
+"id": "a2-tilde-66",
+"mode": "grep",
+"pattern": "~f",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------R-----------------------------------------------------------"
+},
+{
+"id": "a2-tilde-67",
+"mode": "grep",
+"pattern": "~g",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-68",
+"mode": "grep",
+"pattern": "~h",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-69",
+"mode": "grep",
+"pattern": "~i",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-6A",
+"mode": "grep",
+"pattern": "~j",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------------------------------------R---------------------"
+},
+{
+"id": "a2-tilde-6B",
+"mode": "grep",
+"pattern": "~k",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------R-----------------------"
+},
+{
+"id": "a2-tilde-6C",
+"mode": "grep",
+"pattern": "~l",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-6D",
+"mode": "grep",
+"pattern": "~m",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------R---------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-6E",
+"mode": "grep",
+"pattern": "~n",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-6F",
+"mode": "grep",
+"pattern": "~o",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-70",
+"mode": "grep",
+"pattern": "~p",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-71",
+"mode": "grep",
+"pattern": "~q",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-72",
+"mode": "grep",
+"pattern": "~r",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------------------------R---------------------------------"
+},
+{
+"id": "a2-tilde-73",
+"mode": "grep",
+"pattern": "~s",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------------------------------R---------------------------------------------------"
+},
+{
+"id": "a2-tilde-74",
+"mode": "grep",
+"pattern": "~t",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-75",
+"mode": "grep",
+"pattern": "~u",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-76",
+"mode": "grep",
+"pattern": "~v",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-77",
+"mode": "grep",
+"pattern": "~w",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-78",
+"mode": "grep",
+"pattern": "~x",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-79",
+"mode": "grep",
+"pattern": "~y",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-7A",
+"mode": "grep",
+"pattern": "~z",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------------------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-7B",
+"mode": "grep",
+"pattern": "~{",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "---------R---------------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-7C",
+"mode": "grep",
+"pattern": "~|",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------------------------R-------------------------------------------------------"
+},
+{
+"id": "a2-tilde-7D",
+"mode": "grep",
+"pattern": "~}",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-----------R-----R-------------------------------------------------------------------"
+},
+{
+"id": "a2-tilde-7E",
+"mode": "grep",
+"pattern": "~~",
+"parts": [
+"x—x–x­x‑x“x”x‘x’x\"x'x x x x x x x x x x x x x…x•x©x®x™x§x¶x°x​x‌x‍x\tx　x⁠x x0x_x~xaxBx"
+],
+"mask": "-------R-----------------------------------------------------------------------------"
+}
+]
+}

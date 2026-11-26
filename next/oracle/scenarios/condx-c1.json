@@ -1,0 +1,23 @@
+{
+ "fixture": "panels-conditions",
+ "extension": "panels-conditions",
+ "about": "Condition definitions (create/delete), visibility (HiddenText) and indicator modes on the Print(visible)/Web(hidden) fixture. Not here (measured, not implemented): condx-indicators-print (PDF underlines), hidden-only apply, hiding across a paragraph break: artifacts/condx-c1-20261023/research.",
+ "scenarios": [
+  {"name": "condx-create-many", "steps": [{"op": "createCondition", "name": "C01"}, {"op": "createCondition", "name": "C02"}, {"op": "createCondition", "name": "C03"}, {"op": "createCondition", "name": "C04"}, {"op": "createCondition", "name": "C05"}, {"op": "createCondition", "name": "C06"}, {"op": "createCondition", "name": "C07"}, {"op": "createCondition", "name": "C08"}, {"op": "createCondition", "name": "C09"}, {"op": "createCondition", "name": "C10"}, {"op": "createCondition", "name": "C11"}, {"op": "createCondition", "name": "C12"}]},
+  {"name": "condx-create-case", "steps": [{"op": "createCondition", "name": "web"}]},
+  {"name": "condx-create-after-delete", "steps": [{"op": "deleteCondition", "name": "Print"}, {"op": "createCondition", "name": "N1"}, {"op": "createCondition", "name": "N2"}]},
+  {"name": "condx-delete-print", "steps": [{"op": "deleteCondition", "name": "Print"}]},
+  {"name": "condx-delete-web", "steps": [{"op": "deleteCondition", "name": "Web"}]},
+  {"name": "condx-delete-both", "steps": [{"op": "deleteCondition", "name": "Print"}, {"op": "deleteCondition", "name": "Web"}]},
+  {"name": "condx-hide-print", "steps": [{"op": "setConditionVisible", "name": "Print", "visible": false}]},
+  {"name": "condx-hide-two-ranges", "steps": [{"op": "applyConditions", "target": "format", "start": 11, "end": 16, "conditions": ["Print"]}, {"op": "setConditionVisible", "name": "Print", "visible": false}]},
+  {"name": "condx-indicators-hide", "steps": [{"op": "setConditionIndicators", "mode": "HIDE_INDICATORS"}]},
+  {"name": "condx-indicators-show", "steps": [{"op": "setConditionIndicators", "mode": "SHOW_INDICATORS"}]},
+  {"name": "condx-create-after-delete-web", "steps": [{"op": "deleteCondition", "name": "Web"}, {"op": "createCondition", "name": "N1"}]},
+  {"name": "condx-show-print", "steps": [{"op": "setConditionVisible", "name": "Print", "visible": false}, {"op": "setConditionVisible", "name": "Print", "visible": true}]},
+  {"name": "condx-hide-print-delete-web", "steps": [{"op": "setConditionVisible", "name": "Print", "visible": false}, {"op": "deleteCondition", "name": "Web"}]},
+  {"name": "condx-hide-print-delete-print", "steps": [{"op": "setConditionVisible", "name": "Print", "visible": false}, {"op": "deleteCondition", "name": "Print"}]},
+  {"name": "condx-hide-print-delete-both", "steps": [{"op": "setConditionVisible", "name": "Print", "visible": false}, {"op": "deleteCondition", "name": "Print"}, {"op": "deleteCondition", "name": "Web"}]},
+  {"name": "condx-hide-two-ranges-show-web", "steps": [{"op": "applyConditions", "target": "format", "start": 11, "end": 16, "conditions": ["Print"]}, {"op": "setConditionVisible", "name": "Print", "visible": false}, {"op": "setConditionVisible", "name": "Web", "visible": true}]}
+ ]
+}

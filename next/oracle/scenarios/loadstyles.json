@@ -1,0 +1,180 @@
+{
+  "fixture": "loadstyles",
+  "about": "Load Paragraph Styles / Load Character Styles / Load All Text Styles / Load Object Styles (document.importStyles from loadstyles-other): new styles and groups come in, a name that exists is overwritten (Use Incoming Style Definition), renamed (Auto-Rename) or left (skip); the swatches the styles use, the styles they are based on and name.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "ls-para-overwrite",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "paragraph",
+          "clash": "overwrite"
+        }
+      ]
+    },
+    {
+      "name": "ls-para-rename",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "paragraph",
+          "clash": "rename"
+        }
+      ]
+    },
+    {
+      "name": "ls-para-skip",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "paragraph",
+          "clash": "skip"
+        }
+      ]
+    },
+    {
+      "name": "ls-char-overwrite",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "character",
+          "clash": "overwrite"
+        }
+      ]
+    },
+    {
+      "name": "ls-char-rename",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "character",
+          "clash": "rename"
+        }
+      ]
+    },
+    {
+      "name": "ls-text-overwrite",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "text",
+          "clash": "overwrite"
+        }
+      ]
+    },
+    {
+      "name": "ls-object-overwrite",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "object",
+          "clash": "overwrite"
+        }
+      ]
+    },
+    {
+      "name": "ls-object-rename",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "object",
+          "clash": "rename"
+        }
+      ]
+    },
+    {
+      "name": "ls-object-skip",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "object",
+          "clash": "skip"
+        }
+      ]
+    },
+    {
+      "name": "ls-text-rename",
+      "steps": [
+        {
+          "op": "importStyles",
+          "from": "loadstyles-other",
+          "format": "text",
+          "clash": "rename"
+        }
+      ]
+    },
+    {
+      "name": "ls-copy-para",
+      "steps": [
+        {
+          "op": "textStyle",
+          "do": "copyToGroup",
+          "kind": "paragraph",
+          "style": "Head",
+          "group": "Heads"
+        }
+      ]
+    },
+    {
+      "name": "ls-copy-para-from-group",
+      "steps": [
+        {
+          "op": "textStyle",
+          "do": "groupCreate",
+          "kind": "paragraph",
+          "name": "Moved"
+        },
+        {
+          "op": "textStyle",
+          "do": "copyToGroup",
+          "kind": "paragraph",
+          "style": "Heads:Sub",
+          "group": "Moved"
+        }
+      ]
+    },
+    {
+      "name": "ls-copy-char",
+      "steps": [
+        {
+          "op": "textStyle",
+          "do": "groupCreate",
+          "kind": "character",
+          "name": "Fonts"
+        },
+        {
+          "op": "textStyle",
+          "do": "copyToGroup",
+          "kind": "character",
+          "style": "Em",
+          "group": "Fonts"
+        }
+      ]
+    },
+    {
+      "name": "ls-copy-para-late",
+      "steps": [
+        {
+          "op": "textStyle",
+          "do": "copyToGroup",
+          "kind": "paragraph",
+          "style": "Target Only",
+          "group": "Heads"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "fixture": "typepath-c6-rect-cw",
+  "extension": "textpath",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "typepath-c6-rect-cw-flip",
+      "steps": [{"op": "setTextPathOptions", "target": "path", "props": {"FlipPathEffect": "Flipped"}}]
+    }
+  ],
+  "about": "Type on a closed path with straight sides, anchors rect-cw, with and without flip, measured against InDesign 2025."
+}

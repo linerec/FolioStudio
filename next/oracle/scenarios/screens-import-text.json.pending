@@ -1,0 +1,28 @@
+{
+ "fixture": "basic",
+ "about": "screens-import: File > Place a text file into a rectangle / oval (the shape becomes a text frame) and into a threaded frame. (the id numbers of the goldens differ from the fixture's: checked by crates/edit/tests/screens_import.rs)",
+ "scenarios": [
+  {
+   "name": "placetext-into-rect",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-utf8.txt",
+     "target": "r-plain"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-into-oval",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-utf8.txt",
+     "target": "oval"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

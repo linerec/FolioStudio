@@ -1,0 +1,40 @@
+{
+  "title": "각주 및 미주 변환",
+  "target": "none",
+  "keepOpen": true,
+  "keepValues": ["direction"],
+  "okLabel": "변환",
+  "cancelLabel": "완료",
+  "appliedNote": "변환했습니다.",
+  "description": "Type > Convert Footnotes and Endnotes: every footnote of the document to an endnote, or every endnote to a footnote. Convert applies and the dialog stays open with the same direction (as InDesign's); Done closes it. Only the whole document is converted (the selection scope is not supported).",
+  "fields": [
+    {
+      "name": "direction",
+      "label": "변환 방향",
+      "type": "enum",
+      "default": "footnotesToEndnotes",
+      "options": [
+        { "value": "footnotesToEndnotes", "label": "각주를 미주로" },
+        { "value": "endnotesToFootnotes", "label": "미주를 각주로" }
+      ]
+    },
+    {
+      "name": "scope",
+      "label": "범위",
+      "type": "enum",
+      "default": "document",
+      "options": [{ "value": "document", "label": "문서" }]
+    },
+    {
+      "name": "selection",
+      "label": "선택 영역",
+      "type": "boolean",
+      "default": false,
+      "disabled": true,
+      "disabledNote": "선택 영역 범위는 지원하지 않습니다. 문서 전체를 변환합니다."
+    }
+  ],
+  "actions": {
+    "ok": [{ "op": "convertNotes", "direction": "$direction", "scope": "$scope" }]
+  }
+}

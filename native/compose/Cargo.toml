@@ -1,0 +1,13 @@
+[package]
+name = "folio-compose"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Paragraph line breaking, hyphenation and justified text placement"
+
+[dependencies]
+serde_json = "=1.0.154"
+
+[[bin]]
+name = "compose-conformance"
+path = "src/bin/compose-conformance.rs"

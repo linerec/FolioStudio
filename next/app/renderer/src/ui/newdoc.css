@@ -1,0 +1,4 @@
+/* The number boxes of File > New > Document are the shared number field (controls/numberfield.tsx): the dialog's rule that gives a plain input a
+   fixed width must not stretch the box inside it (the box has the width the dialog gave it). */
+.newdoc-dialog form .newdoc-cols fieldset .nf { flex: 0 0 auto; }
+.newdoc-dialog form .newdoc-cols fieldset .nf-box input.nf-input { width: 100%; flex: 1 1 auto; }

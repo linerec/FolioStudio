@@ -1,0 +1,488 @@
+{
+  "fixture": "pdfplace",
+  "about": "직접 PDF/AI 배치: 클릭, 프레임, 쪽, 자르기, 투명 배경, 맞춤, 교체, 다시 연결",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "pdf-place-click",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-frame",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "target": "frame"
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-page2",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-multi.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 2,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-crop-content",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropContentVisibleLayers",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-crop-all",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropContentAllLayers",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-crop-art",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropArt",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-crop-trim",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropTrim",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-crop-bleed",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropBleed",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-crop-media",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropMedia",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-transparent",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-alpha.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "target": "overprint"
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-opaque",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-alpha.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": false
+          },
+          "target": "overprint"
+        }
+      ]
+    },
+    {
+      "name": "ai-place",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-compatible.ai",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropArt",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-drag",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropArt",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "rect": [
+            60,
+            60,
+            360,
+            240
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-fit",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropTrim",
+            "transparentBackground": true
+          },
+          "target": "frame"
+        },
+        {
+          "op": "fit",
+          "target": "frame",
+          "how": "fill"
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-replace",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropArt",
+            "transparentBackground": true
+          },
+          "target": "frame"
+        },
+        {
+          "op": "placeGraphic",
+          "target": "frame",
+          "file": "pdfplace-multi.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 2,
+            "crop": "CropTrim",
+            "transparentBackground": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-font",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-font.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            60,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-three",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-multi.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            30,
+            80
+          ]
+        },
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-multi.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 2,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            210,
+            80
+          ]
+        },
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-multi.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 3,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "page": 0,
+          "point": [
+            390,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-replace-tall",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-multi.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 2,
+            "crop": "CropTrim",
+            "transparentBackground": true
+          },
+          "target": "frame"
+        },
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropPDF",
+            "transparentBackground": true
+          },
+          "target": "frame"
+        }
+      ]
+    },
+    {
+      "name": "pdf-place-relink",
+      "rules": [
+        "graphics.pdf-place"
+      ],
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "pdfplace-single.pdf",
+          "contentAware": false,
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropTrim",
+            "transparentBackground": false
+          },
+          "target": "frame"
+        },
+        {
+          "op": "relinkGraphic",
+          "target": "frame",
+          "file": "pdfplace-multi.pdf",
+          "pdf": {
+            "pageNumber": 1,
+            "crop": "CropTrim",
+            "transparentBackground": false
+          }
+        }
+      ]
+    }
+  ]
+}

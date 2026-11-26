@@ -1,0 +1,10 @@
+{
+  "fixture": "pages",
+  "extension": "page-geometry",
+  "scenarios": [
+    {"name":"page-geometry-cover","window":false,"steps":[{"op":"setPageGeometry","pages":["u14c"],"bounds":[0,-200,400,100]}]},
+    {"name":"page-geometry-left","window":false,"steps":[{"op":"setPageGeometry","pages":["u16a"],"bounds":[-400,-250,0,250]}]},
+    {"name":"page-geometry-right","window":false,"steps":[{"op":"setPageGeometry","pages":["u16b"],"bounds":[-50,-150,350,150]}]},
+    {"name":"page-geometry-many","window":false,"steps":[{"op":"setPageGeometry","pages":["u16a","u16b"],"bounds":[-300,-200,100,200]}]}
+  ]
+}

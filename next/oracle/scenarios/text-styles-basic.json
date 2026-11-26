@@ -1,0 +1,17 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {"name":"style-basic-caps","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"capitalization":"ALL_CAPS"}}]},
+    {"name":"style-basic-smallcaps","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"character","style":"Format Bold","props":{"capitalization":"SMALL_CAPS"}}]},
+    {"name":"style-basic-underline","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"underline":true}}]},
+    {"name":"style-basic-strike","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"strikeThru":true}}]},
+    {"name":"style-basic-ligatures","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"ligatures":false}}]},
+    {"name":"style-basic-nobreak","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"noBreak":true}}]},
+    {"name":"style-basic-super","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"position":"SUPERSCRIPT"}}]},
+    {"name":"style-basic-sub","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"character","style":"Format Bold","props":{"position":"SUBSCRIPT"}}]},
+    {"name":"style-basic-paragraph","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"capitalization":"ALL_CAPS","underline":true,"strikeThru":true,"ligatures":false,"noBreak":true,"position":"SUPERSCRIPT","kerningMethod":"Metrics"}}]},
+    {"name":"style-basic-character","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"character","style":"Format Bold","props":{"capitalization":"SMALL_CAPS","underline":true,"strikeThru":true,"ligatures":false,"noBreak":true,"position":"SUBSCRIPT","kerningMethod":"Metrics"}}]},
+    {"name":"style-basic-reset","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"capitalization":"ALL_CAPS","underline":true,"strikeThru":true,"ligatures":false,"noBreak":true,"position":"SUPERSCRIPT"}},{"op":"styleEdit","kind":"paragraph","style":"Format Body","props":{"capitalization":"NORMAL","underline":false,"strikeThru":false,"ligatures":true,"noBreak":false,"position":"NORMAL"}}]},
+    {"name":"style-basic-character-inherit","rules":["styles.basic.options"],"steps":[{"op":"styleEdit","kind":"character","style":"Format Bold","props":{"ligatures":false,"noBreak":true,"position":"SUPERSCRIPT"}},{"op":"styleEdit","kind":"character","style":"Format Large","props":{"ligatures":false,"noBreak":true,"position":"SUPERSCRIPT"}}]}
+  ]
+}

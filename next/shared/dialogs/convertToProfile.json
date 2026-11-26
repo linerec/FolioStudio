@@ -1,0 +1,44 @@
+{
+  "title": "프로필로 변환",
+  "target": "none",
+  "defaults": "convertToProfile",
+  "className": "color-settings-dialog convert-profile-dialog",
+  "description": "Edit > Convert to Profile: the document's colour numbers go from its profiles (sourceRgb, sourceCmyk: the engine's defaults when it names none) to the destination profiles (installed on this computer; Folio bundles none), with the intent and black point compensation; it starts at the working spaces and the colour settings' intent (preferences colorSettings.*). The dialog shows how many swatches would change (the engine's trial convertToProfilePlan, asked again when a value changes: dialogPreview). OK sends convertToProfile as one undo step; to the profiles the document has, nothing is sent. Placed pictures are not changed.",
+  "note": "문서의 색상 수치를 다른 프로필의 수치로 바꾸고 문서에 그 프로필을 지정합니다. 배치된 그림은 바뀌지 않습니다.",
+  "noneWhenSame": [["destRgb", "sourceRgb"], ["destCmyk", "sourceCmyk"]],
+  "fields": [
+    { "name": "sourceRgb", "label": "RGB 프로필", "type": "text", "default": "sRGB IEC61966-2.1", "disabled": true, "group": "원본 공간" },
+    { "name": "sourceCmyk", "label": "CMYK 프로필", "type": "text", "default": "U.S. Web Coated (SWOP) v2", "disabled": true, "group": "원본 공간" },
+    { "name": "destRgb", "label": "RGB", "type": "choice", "source": "rgbProfiles", "default": "sRGB IEC61966-2.1", "group": "대상 공간" },
+    { "name": "destCmyk", "label": "CMYK", "type": "choice", "source": "cmykProfiles", "default": "U.S. Web Coated (SWOP) v2", "group": "대상 공간" },
+    { "name": "engine", "label": "엔진", "type": "enum", "default": "Adobe (ACE)", "local": true, "group": "변환 옵션",
+      "options": [ { "value": "Adobe (ACE)", "label": "ACE", "native": true } ] },
+    { "name": "intent", "label": "렌더링 의도", "type": "enum", "default": "RELATIVE_COLORIMETRIC", "group": "변환 옵션",
+      "options": [
+        { "value": "PERCEPTUAL", "label": "가시 범위" },
+        { "value": "SATURATION", "label": "채도" },
+        { "value": "RELATIVE_COLORIMETRIC", "label": "상대 색도계" },
+        { "value": "ABSOLUTE_COLORIMETRIC", "label": "절대 색도계" }
+      ] },
+    { "name": "bpc", "label": "검정 점 보정 사용", "type": "boolean", "default": true, "group": "변환 옵션" },
+    { "name": "preview", "label": "미리 보기", "type": "boolean", "default": false, "disabled": true, "local": true,
+      "disabledNote": "프로필로 변환은 미리 보기를 지원하지 않습니다. 변환한 뒤 실행 취소로 되돌릴 수 있습니다.", "group": "" }
+  ],
+  "preview": {
+    "kind": "text",
+    "field": "plan",
+    "query": "convertToProfilePlan",
+    "args": {
+      "rgbProfile": "$destRgb", "cmykProfile": "$destCmyk", "blackPointCompensation": "$bpc",
+      "intent": { "$": "intent", "map": { "PERCEPTUAL": "Perceptual", "SATURATION": "Saturation", "RELATIVE_COLORIMETRIC": "RelativeColorimetric", "ABSOLUTE_COLORIMETRIC": "AbsoluteColorimetric" } }
+    },
+    "text": "바뀔 견본: RGB {rgb}개, CMYK {cmyk}개, 이름이 바뀌는 견본 {renamed}개",
+    "failed": "바뀔 견본을 계산하지 못했습니다: {0}"
+  },
+  "actions": {
+    "ok": [
+      { "op": "convertToProfile", "rgb_profile": "$destRgb", "cmyk_profile": "$destCmyk", "black_point_compensation": "$bpc",
+        "intent": { "$": "intent", "map": { "PERCEPTUAL": "Perceptual", "SATURATION": "Saturation", "RELATIVE_COLORIMETRIC": "RelativeColorimetric", "ABSOLUTE_COLORIMETRIC": "AbsoluteColorimetric" } } }
+    ]
+  }
+}

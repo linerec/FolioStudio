@@ -1,0 +1,31 @@
+[workspace]
+resolver = "3"
+members = ["crates/model", "crates/color", "crates/idml", "crates/text", "crates/render", "crates/server", "crates/links", "crates/preflight", "crates/pdf", "crates/package", "crates/project", "crates/edit", "crates/spell", "crates/textimport", "crates/math", "crates/dbsource"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace.dependencies]
+folio-model = { path = "crates/model" }
+folio-color = { path = "crates/color" }
+folio-idml = { path = "crates/idml" }
+folio-text = { path = "crates/text" }
+folio-render = { path = "crates/render" }
+folio-links = { path = "crates/links" }
+folio-preflight = { path = "crates/preflight" }
+folio-pdf = { path = "crates/pdf" }
+folio-package = { path = "crates/package" }
+folio-project = { path = "crates/project" }
+folio-edit = { path = "crates/edit" }
+folio-spell = { path = "crates/spell" }
+folio-textimport = { path = "crates/textimport" }
+folio-math = { path = "crates/math" }
+folio-dbsource = { path = "crates/dbsource" }
+folio-compose = { path = "../../native/compose" }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+
+[profile.release]
+debug = "line-tables-only"

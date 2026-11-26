@@ -1,0 +1,102 @@
+{
+  "panels": {
+    "pages": {},
+    "layers": {},
+    "links": {},
+    "stroke": {},
+    "color": {},
+    "swatches": {},
+    "gradient": {},
+    "project": {},
+    "preflight": {},
+    "separations": {},
+    "info": {},
+    "character": {},
+    "paragraph": {},
+    "paragraphStyles": {},
+    "characterStyles": {},
+    "objectStyles": {},
+    "cellStyles": {},
+    "tableStyles": {},
+    "align": {},
+    "transform": {},
+    "textWrap": {},
+    "effects": {},
+    "history": {},
+    "properties": {},
+    "pathfinder": {},
+    "attributes": {},
+    "scriptLabel": {},
+    "toolHints": {},
+    "backgroundTasks": {},
+    "tabs": {},
+    "table": {},
+    "hyperlinks": {},
+    "crossReferences": {},
+    "notes": {},
+    "changes": {},
+    "conditionalText": {},
+    "index": {},
+    "trapPresets": {},
+    "flattenerPreview": {},
+    "glyphs": {},
+    "dataMerge": {},
+    "pdfComments": {},
+    "mathExpressions": {},
+    "explorer": {},
+    "toolbox": {}
+  },
+  "default": {
+    "strip": [
+      [
+        "pages",
+        "layers",
+        "links"
+      ],
+      [
+        "stroke",
+        "color"
+      ],
+      [
+        "swatches"
+      ]
+    ],
+    "column": [
+      [
+        "project"
+      ]
+    ],
+    "active": {
+      "pages": "pages",
+      "stroke": "stroke",
+      "swatches": "swatches",
+      "project": "project",
+      "explorer": "explorer",
+      "toolbox": "toolbox"
+    },
+    "columnCollapsed": false,
+    "folded": {},
+    "floating": [],
+    "left": [
+      [
+        "explorer"
+      ],
+      [
+        "toolbox"
+      ]
+    ],
+    "layout": {
+      "left": {
+        "dir": "col",
+        "parts": [
+          0,
+          1
+        ],
+        "sizes": [
+          0.64,
+          0.36
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+/* Folio design tokens: the one place for colour, type, spacing, corners, depth and motion (contract: next/app/DESIGN.md).
+   Direction "Graphite & Ink" (uix-a, 2026-11-20): cool graphite neutrals (a faint blue tint), one ink-blue accent, the white page left alone.
+   Four interface brightnesses as InDesign's Preferences ▸ Interface (data-theme on <html>, saved in the engine's user settings).
+   Colours are hex on purpose: the window chrome (Electron titleBarOverlay) and the rulers' canvas read some of them. */
+
+/* The interface font (uix-b1, 2026-11-20): Pretendard Variable 1.3.9, SIL OFL 1.1 (renderer/public/licenses/OFL-Pretendard.txt, shipped as dist/licenses/),
+   bundled unmodified (2.06 MB, weights 45–920 in one file) so the app reads the same on Windows, Mac, Linux and mobile.
+   Its own family name here ('Folio UI Sans') keeps it apart from the document fonts: documents never see it. */
+@font-face {
+  font-family: 'Folio UI Sans';
+  src: url('../assets/fonts/PretendardVariable.woff2') format('woff2-variations'), url('../assets/fonts/PretendardVariable.woff2') format('woff2');
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: block;
+}
+
+:root, :root[data-theme='dark'] {
+  /* surfaces, from the back to the front */
+  --app: #16171a;          /* window background, behind everything */
+  --chrome: #1b1c20;       /* title row with the menus */
+  --bar: #212226;          /* control bar, tools, document tabs, status line */
+  --panel: #26272c;        /* panels, menus, dialogs */
+  --tab: #1d1e22;          /* the strip that holds tabs */
+  --field: #18191c;        /* inputs */
+  --field-line: #3a3c43;
+  --line: #303238;         /* a divider inside one surface */
+  --line-dark: #111214;    /* the seam between two surfaces */
+  --hover: #2e3036;
+  --pressed: #373940;
+  /* text */
+  --text: #e3e4e8;
+  --muted: #9b9ea8;
+  --disabled: #6b6b6b;    /* greyed out: a pure grey (R=G=B) in every theme, never tinted (no-red-marks-ui checks it) */
+  /* the one accent, and what sits on it */
+  --accent: #2f6fdc;
+  --accent-hover: #2a63c8;   /* darker on hover: white text stays above 4.5:1 */
+  --accent-text: #ffffff;
+  --accent-fg: #79a6ff;    /* the accent as text or an icon on a surface */
+  --list-sel: #26416e;
+  --focus: #6b9cff;
+  /* meaning */
+  --warn: #e8a33d;
+  --bad: #ef5f57;
+  --bad-fill: #d63c35;     /* a badge with white text */
+  --ok: #4cc48d;
+  /* the document area (the page itself stays white) */
+  --pasteboard: #2a2b30;
+  --page-shadow: rgba(0, 0, 0, 0.6);
+  --ruler-bg: #202125;
+  --ruler-fg: #a3a6ae;
+  --ruler-mouse: #eef0f4;
+  --chrome-symbol: #dfe1e6;
+  /* depth */
+  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.42), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-dialog: 0 24px 64px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --scrim: rgba(8, 9, 11, 0.55);
+  --scroll-thumb: #3d3f46;
+  --scroll-thumb-hover: #4c4f57;
+}
+:root[data-theme='mediumDark'] {
+  --app: #34353a; --chrome: #3b3c41; --bar: #44454b; --panel: #4c4d54; --tab: #404146; --field: #3a3b40; --field-line: #686a72;
+  --line: #5a5c63; --line-dark: #2a2b2f; --hover: #56585f; --pressed: #61636a;
+  --text: #f2f3f5; --muted: #c5c7ce; --disabled: #8e8e8e;
+  --accent-fg: #a3c2ff; --list-sel: #3a5f9a; --focus: #8fb4ff;
+  --warn: #f3b95a; --bad: #ffa59f; --bad-fill: #d63c35; --ok: #6fd3a2;
+  --pasteboard: #55565c; --ruler-bg: #44454b; --ruler-fg: #d3d5db; --ruler-mouse: #ffffff; --chrome-symbol: #f2f3f5;
+  --scroll-thumb: #6a6c74; --scroll-thumb-hover: #7a7c84;
+}
+:root[data-theme='mediumLight'] {
+  --app: #a3a4a9; --chrome: #afb0b5; --bar: #b8b9be; --panel: #c1c2c7; --tab: #b0b1b6; --field: #e2e3e7; --field-line: #8a8c93;
+  --line: #a6a8ae; --line-dark: #8b8d93; --hover: #cbccd1; --pressed: #d4d5da;
+  --text: #17181b; --muted: #3f4148; --disabled: #6e6e6e;
+  --accent-fg: #173f8f; --list-sel: #86ade6; --focus: #1f5bc9;
+  --warn: #6b4100; --bad: #951a1a; --bad-fill: #c42b2b; --ok: #155a39;
+  --pasteboard: #aeafb4; --ruler-bg: #c8c9ce; --ruler-fg: #2c2d31; --ruler-mouse: #000000; --page-shadow: rgba(0, 0, 0, 0.35); --chrome-symbol: #17181b;
+  --shadow-pop: 0 8px 24px rgba(20, 22, 28, 0.28), 0 1px 2px rgba(20, 22, 28, 0.2);
+  --shadow-dialog: 0 24px 64px rgba(20, 22, 28, 0.32), 0 2px 6px rgba(20, 22, 28, 0.2);
+  --scrim: rgba(20, 22, 28, 0.35); --scroll-thumb: #8f9198; --scroll-thumb-hover: #7d7f86;
+}
+:root[data-theme='light'] {
+  --app: #d4d5da; --chrome: #e4e5e9; --bar: #edeef1; --panel: #f4f5f7; --tab: #e3e4e8; --field: #ffffff; --field-line: #b4b6bd;
+  --line: #dcdde2; --line-dark: #c3c5cb; --hover: #e4e6ea; --pressed: #d8dadf;
+  --text: #1f2024; --muted: #5c5f68; --disabled: #a3a3a3;
+  --accent-fg: #1f5bc9; --list-sel: #c9dbfb; --focus: #2f6fdc;
+  --warn: #8a5300; --bad: #c42b2b; --bad-fill: #c42b2b; --ok: #17663f;
+  --pasteboard: #d9dade; --ruler-bg: #f2f3f5; --ruler-fg: #4a4c53; --ruler-mouse: #000000; --page-shadow: rgba(0, 0, 0, 0.28); --chrome-symbol: #1f2024;
+  --shadow-pop: 0 8px 24px rgba(20, 22, 28, 0.16), 0 1px 2px rgba(20, 22, 28, 0.12);
+  --shadow-dialog: 0 24px 64px rgba(20, 22, 28, 0.22), 0 2px 6px rgba(20, 22, 28, 0.12);
+  --scrim: rgba(20, 22, 28, 0.28); --scroll-thumb: #c3c5cb; --scroll-thumb-hover: #a9abb2;
+}
+:root[data-theme='dark'], :root[data-theme='mediumDark'], :root:not([data-theme]) { color-scheme: dark; }
+:root[data-theme='mediumLight'], :root[data-theme='light'] { color-scheme: light; }
+
+/* type, spacing (a 4px grid), corners, sizes, motion: the same in every theme */
+:root {
+  --font-ui: 'Folio UI Sans', 'Pretendard Variable', 'Pretendard', 'Segoe UI Variable Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', system-ui, sans-serif;
+  --font-mono: 'Cascadia Mono', 'SF Mono', Menlo, Consolas, 'D2Coding', monospace;
+  --fs-2xs: 10px;   /* tiny markers only (page prefixes); never running text */
+  --fs-xs: 11px;    /* captions, shortcuts, badges, panel footers */
+  --fs-sm: 11.5px;  /* dense bars: control bar, tabs, status line, panel rows */
+  --fs-md: 12px;    /* the base */
+  --fs-lg: 13px;    /* emphasis, dialog body */
+  --fs-xl: 15px;    /* dialog titles */
+  --fs-2xl: 20px;
+  --fs-3xl: 28px;
+  --fw-regular: 400; --fw-medium: 500; --fw-semibold: 600;
+  --lh-tight: 1.25; --lh-ui: 1.4; --lh-text: 1.55;
+  --sp-0_5: 2px; --sp-1: 4px; --sp-1_5: 6px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 20px; --sp-6: 24px; --sp-8: 32px;
+  --r-xs: 2px;      /* dense fields of the control bar */
+  --r-sm: 4px;      /* buttons, inputs, menu items, tool buttons */
+  --r-md: 6px;      /* menus, flyouts, floating panels */
+  --r-lg: 10px;     /* dialogs */
+  --h-dense: 20px; --h-control: 24px; --h-row: 24px;
+  --border: var(--line);   /* an older name some feature styles use: a divider */
+  --dur-fast: 100ms; --dur-base: 160ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

@@ -1,0 +1,411 @@
+{
+  "fixture": "opentype",
+  "scenarios": [
+    {
+      "name": "ot-style-character-otfDiscretionaryLigature",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfDiscretionaryLigature": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfDiscretionaryLigature",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfDiscretionaryLigature": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfFraction",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfFraction": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfFraction",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfFraction": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfOrdinal",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfOrdinal": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfOrdinal",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfOrdinal": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfSwash",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfSwash",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfTitling",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfTitling": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfTitling",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfTitling": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfContextualAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfContextualAlternate": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfContextualAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfContextualAlternate": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfSlashedZero",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfSlashedZero": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfSlashedZero",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfSlashedZero": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfHistorical",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfHistorical": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfHistorical",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfHistorical": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfOverlapSwash",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfOverlapSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfOverlapSwash",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfOverlapSwash": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfStylisticAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfStylisticAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfStylisticAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfStylisticAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfJustificationAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfJustificationAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfJustificationAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfJustificationAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfStretchedAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfStretchedAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfStretchedAlternate",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfStretchedAlternate": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfStylisticSets",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfStylisticSets": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfStylisticSets",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfStylisticSets": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-positionalForm",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "positionalForm": "INITIAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-positionalForm",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "positionalForm": "INITIAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-character-otfFigureStyle",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "OT test",
+          "props": {
+            "otfFigureStyle": "TABULAR_LINING"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-paragraph-otfFigureStyle",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "OT Calibri",
+          "props": {
+            "otfFigureStyle": "TABULAR_LINING"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ot-style-create",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "character",
+          "name": "OT generated",
+          "props": {
+            "otfFraction": true,
+            "otfStylisticSets": 1048575,
+            "positionalForm": "FINAL",
+            "otfFigureStyle": "PROPORTIONAL_OLDSTYLE"
+          }
+        }
+      ]
+    }
+  ]
+}

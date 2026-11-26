@@ -1,0 +1,62 @@
+{
+  "about": "Ink elements of Resources/Graphic.xml in a new document, exported from InDesign 2025 (20.5.5.119) by newdoc-inks-probe.jsx",
+  "cases": [
+    "default",
+    "letter-facing-1",
+    "single-3"
+  ],
+  "inks": [
+    {
+      "Self": "Ink/$ID/Process Cyan",
+      "Name": "$ID/Process Cyan",
+      "Angle": "75",
+      "ConvertToProcess": "false",
+      "Frequency": "70",
+      "NeutralDensity": "0.61",
+      "PrintInk": "true",
+      "TrapOrder": "1",
+      "InkType": "Normal"
+    },
+    {
+      "Self": "Ink/$ID/Process Magenta",
+      "Name": "$ID/Process Magenta",
+      "Angle": "15",
+      "ConvertToProcess": "false",
+      "Frequency": "70",
+      "NeutralDensity": "0.76",
+      "PrintInk": "true",
+      "TrapOrder": "2",
+      "InkType": "Normal"
+    },
+    {
+      "Self": "Ink/$ID/Process Yellow",
+      "Name": "$ID/Process Yellow",
+      "Angle": "0",
+      "ConvertToProcess": "false",
+      "Frequency": "70",
+      "NeutralDensity": "0.16",
+      "PrintInk": "true",
+      "TrapOrder": "3",
+      "InkType": "Normal"
+    },
+    {
+      "Self": "Ink/$ID/Process Black",
+      "Name": "$ID/Process Black",
+      "Angle": "45",
+      "ConvertToProcess": "false",
+      "Frequency": "70",
+      "NeutralDensity": "1.7",
+      "PrintInk": "true",
+      "TrapOrder": "4",
+      "InkType": "Normal"
+    }
+  ],
+  "kindOrder": [
+    "Color",
+    "Ink",
+    "PastedSmoothShade",
+    "Swatch",
+    "Gradient",
+    "StrokeStyle"
+  ]
+}

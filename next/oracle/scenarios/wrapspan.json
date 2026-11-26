@@ -1,0 +1,139 @@
+{
+ "fixture": "wrapspan",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "wrapspan-span",
+   "text": true,
+   "rules": [
+    "paragraph.columns.text-wrap"
+   ],
+   "steps": [
+    {
+     "op": "textWrap",
+     "target": "w0",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f0",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 3
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w1",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f1",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 3
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w2",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f2",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 3
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w4",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f4",
+     "start": 61,
+     "end": 62,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 3
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w5",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f5",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 2
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w7",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f7",
+     "start": 54,
+     "end": 55,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 4
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w8",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f8",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 5
+     }
+    },
+    {
+     "op": "textWrap",
+     "target": "w9",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "f9",
+     "start": 75,
+     "end": 76,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 2
+     }
+    }
+   ]
+  }
+ ]
+}

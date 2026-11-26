@@ -1,0 +1,11 @@
+{
+  "fixture": "footnotes",
+  "extension": "endnotes-c1",
+  "about": "Type > Insert Endnote (menu action, window document; InDesign 20.5). First endnote: a last page with the endnote text frame and the endnote story. A selected range keeps its text and gets the reference after its end. Later references: their bodies stay in reference order (before the next one's, or after the last).",
+  "scenarios": [
+    {"name": "endnote-first", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 30}]},
+    {"name": "endnote-selection", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 34, "selectFrom": 30}]},
+    {"name": "endnote-append", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 30}, {"op": "insertEndnote", "target": "body-0", "at": 61}]},
+    {"name": "endnote-before", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 60}, {"op": "insertEndnote", "target": "body-0", "at": 30}]}
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "fixture": "basic",
+  "about": "Swatches panel menu: Sort (all swatches by name / by colour values, with tints, gradients, RGB and spot swatches mixed in), New Color Group. Add Unnamed Colors cannot be captured: scripting cannot make an unnamed colour (colors.add names it with its value).",
+  "scenarios": [
+    {
+      "name": "swatch-sort-name",
+      "steps": [
+        {
+          "op": "swatchNew",
+          "name": "Zeta",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Alpha",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            50,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Mid",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            50,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 16419,
+          "action": "All Swatches By Name",
+          "panel": "Swatches"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "swatch-sort-value",
+      "steps": [
+        {
+          "op": "swatchNew",
+          "name": "Zeta",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Alpha",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            50,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Mid",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            50,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Blue1",
+          "model": "process",
+          "space": "rgb",
+          "value": [
+            0,
+            0,
+            255
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 16421,
+          "action": "All Swatches By Color Values",
+          "panel": "Swatches"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "swatch-group-new",
+      "steps": [
+        {
+          "op": "swatchNew",
+          "name": "Zeta",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Alpha",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            50,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Mid",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            50,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "colorGroupNew",
+          "name": "Group A",
+          "swatches": [
+            "Zeta",
+            "Alpha"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "swatch-sort-value2",
+      "window": true,
+      "steps": [
+        {
+          "op": "swatchNew",
+          "name": "Red1",
+          "model": "process",
+          "space": "rgb",
+          "value": [
+            255,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Green1",
+          "model": "process",
+          "space": "rgb",
+          "value": [
+            0,
+            255,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "SpotA",
+          "model": "spot",
+          "space": "cmyk",
+          "value": [
+            30,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Zeta",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "op": "tintNew",
+          "base": "Oracle Blue",
+          "tint": 50
+        },
+        {
+          "op": "newGradient",
+          "name": "Grad",
+          "kind": "Linear",
+          "stops": [
+            {
+              "color": "Color/Black",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Paper",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 16421,
+          "action": "All Swatches By Color Values",
+          "panel": "Swatches"
+        }
+      ]
+    },
+    {
+      "name": "swatch-sort-name2",
+      "window": true,
+      "steps": [
+        {
+          "op": "swatchNew",
+          "name": "Red1",
+          "model": "process",
+          "space": "rgb",
+          "value": [
+            255,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Green1",
+          "model": "process",
+          "space": "rgb",
+          "value": [
+            0,
+            255,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "SpotA",
+          "model": "spot",
+          "space": "cmyk",
+          "value": [
+            30,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "swatchNew",
+          "name": "Zeta",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            0,
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "op": "tintNew",
+          "base": "Oracle Blue",
+          "tint": 50
+        },
+        {
+          "op": "newGradient",
+          "name": "Grad",
+          "kind": "Linear",
+          "stops": [
+            {
+              "color": "Color/Black",
+              "location": 0,
+              "midpoint": 50
+            },
+            {
+              "color": "Color/Paper",
+              "location": 100,
+              "midpoint": 50
+            }
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 16419,
+          "action": "All Swatches By Name",
+          "panel": "Swatches"
+        }
+      ]
+    },
+    {
+      "name": "swatch-mixed-new",
+      "window": true,
+      "steps": [
+        {
+          "op": "mixedNew",
+          "name": "Mixed 1",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "percentages": [
+            50,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swatch-mixed-three",
+      "window": true,
+      "steps": [
+        {
+          "op": "mixedNew",
+          "name": "Mixed 3",
+          "inks": [
+            "Oracle Spot",
+            "Process Black",
+            "Process Yellow"
+          ],
+          "percentages": [
+            100,
+            10.5,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

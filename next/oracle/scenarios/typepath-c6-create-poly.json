@@ -1,0 +1,14 @@
+{
+  "fixture": "typepath-c6-poly",
+  "about": "Create path text on a closed shape (poly): the new TextPath's EndBracket and default options as InDesign makes them.",
+  "extension": "textpath2",
+  "scenarios": [
+    {
+      "name": "typepath-c6-create-poly",
+      "steps": [
+        {"op": "removeTextFromPath", "target": "path"},
+        {"op": "createTextPath", "target": "path", "text": "AV Oag"}
+      ]
+    }
+  ]
+}

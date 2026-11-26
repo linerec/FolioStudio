@@ -1,0 +1,118 @@
+{
+  "fixture": "drawtools-text-fixed",
+  "about": "New text frames with document auto sizing or fixed column defaults. Hidden DOM capture.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "drawtools-text-fixed-empty",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "drawtools-text-fixed-fill",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        },
+        {
+          "op": "insertText",
+          "target": "created",
+          "at": 0,
+          "text": "Drawing tool\rSecond line"
+        }
+      ]
+    },
+    {
+      "name": "drawtools-text-fixed-width-59",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            139,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "drawtools-text-fixed-width-60",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            140,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "drawtools-text-fixed-width-61",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            141,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "drawtools-text-fixed-width-132",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            212,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "title": "프로필 정의",
+  "target": "none",
+  "defaults": "preflightProfiles",
+  "build": "preflightProfiles",
+  "link": "preflightProfiles",
+  "style": "wide",
+  "description": "Preflight panel > Define Profiles: the document's profiles, edited one at a time (`profile`: its place in the list; none = a new profile) and saved together. The boxes are the profile's name, whether it is the working profile (`useAsActive`), one box per rule of the engine's list (`rule.<ID>`, on = checked) under its category with a box for the whole category (`category.<name>`), and the numbers (`param.<key>`). Picking another profile keeps what the boxes hold in the list. Setting `import` to true reads the profile file `path` (a JSON file of the project, relative to its root) as a new profile; setting `export` to true writes the profile in the boxes there. OK sends every profile and the working one (setPreflightProfiles); no two profiles may have the same name. `namePrefix` is the name a new profile is given.",
+  "fields": [
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "New Preflight Profile",
+      "hidden": true
+    },
+    {
+      "name": "profiles",
+      "type": "json",
+      "default": [],
+      "hidden": true
+    },
+    {
+      "name": "active",
+      "type": "text",
+      "default": "",
+      "hidden": true,
+      "maxLength": 1000
+    },
+    {
+      "name": "import",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "export",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "profile",
+      "label": "저장된 프로필",
+      "type": "choice",
+      "source": "preflightProfileList",
+      "none": "새 사전 검사 프로필",
+      "default": ""
+    },
+    {
+      "name": "name",
+      "label": "프로필 이름",
+      "type": "text",
+      "default": "",
+      "required": true,
+      "maxLength": 256
+    },
+    {
+      "name": "useAsActive",
+      "label": "작업 중인 프로필로 사용",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "path",
+      "label": "프로젝트 상대 JSON 경로",
+      "type": "text",
+      "default": "preflight-profile.json",
+      "local": true,
+      "maxLength": 1000,
+      "group": "파일"
+    }
+  ],
+  "buttons": [
+    {
+      "label": "새로 만들기",
+      "field": "new",
+      "set": {
+        "field": "profile",
+        "value": ""
+      }
+    },
+    {
+      "label": "불러오기",
+      "field": "import",
+      "set": {
+        "field": "import",
+        "value": true
+      },
+      "disabledWhen": {
+        "path": ""
+      }
+    },
+    {
+      "label": "내보내기",
+      "field": "export",
+      "set": {
+        "field": "export",
+        "value": true
+      },
+      "disabledWhen": [
+        {
+          "path": ""
+        },
+        {
+          "name": ""
+        }
+      ]
+    }
+  ]
+}

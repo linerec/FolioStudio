@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="uee" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>H:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9" PageNumberType="TextVariable">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<TextVariableInstance Self="u194" Name="By Head" ResultText="&lt;By Head&gt;" AssociatedTextVariable="dTextVariablenBy Head" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content> A:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9" PageNumberType="TextVariable">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<TextVariableInstance Self="u195" Name="By Accent" ResultText="&lt;By Accent&gt;" AssociatedTextVariable="dTextVariablenBy Accent" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content> P<?ACE 18?>/</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9" PageNumberType="TextVariable">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<TextVariableInstance Self="u196" Name="Last Page Number" ResultText="1" AssociatedTextVariable="dTextVariablenLast Page Number" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content> C</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9" PageNumberType="TextVariable">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<TextVariableInstance Self="u197" Name="Chapter Number" ResultText="1" AssociatedTextVariable="dTextVariablenChapter Number" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="9" PageNumberType="TextVariable">
+				<Properties>
+					<Leading type="unit">12</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<TextVariableInstance Self="u198" Name="Custom Note" ResultText="Custom note" AssociatedTextVariable="dTextVariablenCustom Note" />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

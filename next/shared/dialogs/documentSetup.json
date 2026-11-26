@@ -1,0 +1,54 @@
+{
+  "title": "문서 설정",
+  "target": "none",
+  "defaults": "documentSize",
+  "link": "orientation",
+  "fields": [
+    {
+      "name": "width",
+      "label": "너비 (pt)",
+      "type": "number",
+      "default": 612,
+      "min": 1,
+      "max": 15552,
+      "group": ""
+    },
+    {
+      "name": "height",
+      "label": "높이 (pt)",
+      "type": "number",
+      "default": 792,
+      "min": 1,
+      "max": 15552,
+      "group": ""
+    },
+    {
+      "name": "orientation",
+      "label": "방향",
+      "type": "enum",
+      "default": "portrait",
+      "options": [
+        {
+          "value": "portrait",
+          "label": "세로"
+        },
+        {
+          "value": "landscape",
+          "label": "가로"
+        }
+      ],
+      "group": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "documentSetup",
+        "width": "$width",
+        "height": "$height"
+      }
+    ]
+  },
+  "note": "레이아웃 조정: 끔",
+  "description": "width and height are the page size in points; the values start from the document's page size, and setting orientation turns the size."
+}

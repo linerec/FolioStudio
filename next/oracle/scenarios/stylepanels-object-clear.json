@@ -1,0 +1,125 @@
+{
+  "fixture": "objectstyles",
+  "scenarios": [
+    {
+      "name": "sp-object-clear-corners",
+      "window": true,
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "enableStrokeAndCornerOptions": false
+          }
+        },
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "sp-object-clear-opacity",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 35
+              }
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box"
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "objectEffectsEnablingSettings": {
+              "enableTransparency": false
+            }
+          }
+        },
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-plain"
+        }
+      ]
+    },
+    {
+      "name": "sp-object-clear-wrap",
+      "window": true,
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "enableTextWrapAndOthers": false
+          }
+        },
+        {
+          "op": "textWrap",
+          "target": "r-fill",
+          "mode": "BOUNDING_BOX_TEXT_WRAP",
+          "offsets": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "inverse": true,
+          "masterOnly": true
+        },
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "sp-object-clear-enabled",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 35
+              }
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box"
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "enableTextWrapAndOthers": true
+          }
+        },
+        {
+          "op": "textWrap",
+          "target": "r-plain",
+          "mode": "BOUNDING_BOX_TEXT_WRAP"
+        },
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-plain"
+        }
+      ]
+    }
+  ]
+}

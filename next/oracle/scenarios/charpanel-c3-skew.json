@@ -1,0 +1,173 @@
+{
+ "fixture": "charpanel-c3",
+ "about": "Character panel Skew (-85 to 85 degrees): the glyphs lean, the widths and line height do not change.",
+ "scenarios": [
+  {
+   "name": "cp-skew-15",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "skew": 15
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-neg15",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "skew": -15
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-45",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 40,
+     "props": {
+      "skew": 45
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-85",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "skew": 85
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-neg85",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "skew": -85
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-word",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "skew": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-italic",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "fontStyle": "Italic"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "skew": 15
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-hscale",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "horizontalScale": 150
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "skew": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-serif",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "serif",
+     "start": 0,
+     "end": 60,
+     "props": {
+      "skew": 25
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-skew-reset",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "skew": 15
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "skew": 0
+     }
+    }
+   ]
+  }
+ ]
+}

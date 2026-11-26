@@ -1,0 +1,1 @@
+{"fixture": "text-shapes2", "about": "More frames that are not rectangles: insets (an offset path) with polygons, rounded corners, a stroke and columns; columns cutting circles and rounded rectangles (textAfter lines: start, end, baseline, left, right).", "scenarios": [{"name": "noop", "steps": []}, {"name": "ts2-lines", "steps": [{"op": "recompose"}]}]}

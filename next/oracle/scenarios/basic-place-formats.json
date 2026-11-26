@@ -1,0 +1,115 @@
+{
+  "fixture": "basic",
+  "about": "File > Place more formats: TIFF (RGB, CMYK, gray), JPEG (CMYK, gray, EXIF orientation 6), PSD.",
+  "scenarios": [
+    {
+      "name": "place-tiff",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-72.tif",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-tiff-cmyk",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-cmyk.tif",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-tiff-gray",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-gray.tif",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-jpeg-cmyk",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-cmyk.jpg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-jpeg-gray",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-gray.jpg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-jpeg-exif6",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-exif6.jpg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-psd",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-rgb.psd",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-point-exif6",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-exif6.jpg",
+          "page": 0,
+          "point": [
+            80,
+            200
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-point-cmyk",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-cmyk.tif",
+          "page": 0,
+          "point": [
+            80,
+            200
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    }
+  ]
+}

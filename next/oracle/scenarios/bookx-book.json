@@ -1,0 +1,10 @@
+{
+  "fixture": "bookx-book",
+  "about": "The existing section command used by a future transactional book numbering operation; book membership is a separate Folio container.",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"bookx-book-number-start","steps":[{"op":"setSection","page":0,"start":3,"style":"ARABIC"}]},
+    {"name":"bookx-c2-chapter-manual","steps":[{"op":"setChapterNumber","number":5,"source":"UserDefined"}]},
+    {"name":"bookx-c2-chapter-auto","steps":[{"op":"setChapterNumber","number":6,"source":"ContinueFromPreviousDocument"}]}
+  ]
+}

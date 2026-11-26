@@ -1,0 +1,168 @@
+{
+ "fixture": "tables",
+ "about": "Table > Cell Options > Diagonal Lines and Graphic, Convert Cell to Graphic Cell / Text Cell: the DOM's cell properties (diagonal lines, cell type, graphic insets, clipping) one by one; the cell attributes InDesign writes where they differ from the default. Convert Cell to Graphic Cell is the Table menu action 66869 (66868: to Text Cell), enabled with the cursor in an empty cell (a cell with text: disabled in the cursor and the cell selection).",
+ "scenarios": [
+  {
+   "name": "cell-diag-one",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "topLeftDiagonalLine": true,
+      "diagonalLineStrokeWeight": 2,
+      "diagonalLineStrokeColor": "Oracle Orange"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cell-diag-default",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "topRightDiagonalLine": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "cell-diag-both",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      2
+     ],
+     "props": {
+      "topLeftDiagonalLine": true,
+      "topRightDiagonalLine": true,
+      "diagonalLineInFront": true,
+      "diagonalLineStrokeWeight": 1.5,
+      "diagonalLineStrokeTint": 50,
+      "diagonalLineStrokeColor": "Oracle Blue",
+      "diagonalLineStrokeType": "Dashed"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cell-to-graphic",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "cellType": "CellTypeEnum.GRAPHIC_TYPE_CELL"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cell-to-text",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "cellType": "CellTypeEnum.GRAPHIC_TYPE_CELL"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "cellType": "CellTypeEnum.TEXT_TYPE_CELL"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cell-graphic-insets",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "cellType": "CellTypeEnum.GRAPHIC_TYPE_CELL"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cellProps",
+     "cell": [
+      2,
+      1
+     ],
+     "props": {
+      "topInset": 8,
+      "leftInset": 10,
+      "bottomInset": 6,
+      "rightInset": 4
+     }
+    }
+   ]
+  },
+  {
+   "name": "cell-menu-graphic-empty",
+   "window": true,
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addRows",
+     "at": 3
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "cursor",
+     "cell": [
+      4,
+      1
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 66869
+    }
+   ]
+  }
+ ]
+}

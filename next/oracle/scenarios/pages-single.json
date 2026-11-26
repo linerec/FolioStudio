@@ -1,0 +1,12 @@
+{
+  "fixture":"pages-single",
+  "scenarios":[
+    {"name":"noop","steps":[]},
+    {"name":"single-pages-insert","steps":[{"op":"insertPages","count":1,"before":1,"master":null}]},
+    {"name":"single-pages-delete","steps":[{"op":"deletePages","pages":[0]}]},
+    {"name":"single-pages-move","steps":[{"op":"movePages","pages":[2],"before":0}]},
+    {"name":"single-pages-duplicate","steps":[{"op":"duplicateSpread","spread":2}]},
+    {"name":"single-pages-size","steps":[{"op":"documentSetup","width":400,"height":300}]},
+    {"name":"single-pages-section","steps":[{"op":"setSection","page":1,"start":10,"style":"ARABIC"}]}
+  ]
+}

@@ -1,0 +1,181 @@
+{
+ "fixture": "basic",
+ "about": "Control bar (object) transforms of a whole selection and of a placed graphic's content (geom-c1). Several objects are one selection: a plural specifier's transform() works on the union of their visible boxes, the reference point is the union's. A placed graphic's shear is the control bar's shear field with the content selected (the property shearAngle, about the graphic's own reference point).",
+ "scenarios": [
+  {
+   "name": "gm-scale-many-plain",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill"
+     ],
+     "sx": 0.5,
+     "sy": 2,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "gm-scale-many-tl",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "sx": 0.5,
+     "sy": 1,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "gm-scale-many-center",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "gm-scale-many-br",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "bottomRight"
+    }
+   ]
+  },
+  {
+   "name": "gm-shear-many-center",
+   "steps": [
+    {
+     "op": "shearByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "by": 20,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "gm-shear-many-tl",
+   "steps": [
+    {
+     "op": "shearByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "by": 20,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "gm-content-shear",
+   "steps": [
+    {
+     "op": "setGraphic",
+     "target": "img",
+     "props": {
+      "shearAngle": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "gm-content-shear-neg",
+   "steps": [
+    {
+     "op": "setGraphic",
+     "target": "img",
+     "props": {
+      "shearAngle": -15
+     }
+    }
+   ]
+  },
+  {
+   "name": "gm-scale-many-nostroke",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "gm-shear-many-nostroke",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "shearByMany",
+     "targets": [
+      "r-plain",
+      "r-fill",
+      "r-rot",
+      "r-shear"
+     ],
+     "by": 20,
+     "anchor": "center"
+    }
+   ]
+  }
+ ]
+}

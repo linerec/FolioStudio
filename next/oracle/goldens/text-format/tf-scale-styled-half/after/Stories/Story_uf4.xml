@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="uf4" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Body" LeftIndent="2.5" HyphenationZone="18" RuleAboveLineWeight="0.5" RuleBelowLineWeight="0.5" SplitColumnInsideGutter="3" ParagraphBorderTopLeftCornerRadius="6" ParagraphBorderTopRightCornerRadius="6" ParagraphBorderBottomLeftCornerRadius="6" ParagraphBorderBottomRightCornerRadius="6" ParagraphShadingTopLeftCornerRadius="6" ParagraphShadingTopRightCornerRadius="6" ParagraphShadingBottomLeftCornerRadius="6" ParagraphShadingBottomRightCornerRadius="6" ParagraphBorderTopLineWeight="0.5" ParagraphBorderBottomLineWeight="0.5" ParagraphBorderLeftLineWeight="0.5" ParagraphBorderRightLineWeight="0.5">
+			<Properties>
+				<SameParaStyleSpacing type="unit">-0.5</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>Alpha </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>b</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold" PointSize="7" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>ol</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>d</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Italic" PointSize="7.5" StrokeWeight="0.5" Tracking="20" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>LARGE</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content> tail.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Other" FirstLineIndent="1.5" HyphenationZone="18" SpaceAfter="3" RuleAboveLineWeight="0.5" RuleBelowLineWeight="0.5" SplitColumnInsideGutter="3" ParagraphBorderTopLeftCornerRadius="6" ParagraphBorderTopRightCornerRadius="6" ParagraphBorderBottomLeftCornerRadius="6" ParagraphBorderBottomRightCornerRadius="6" ParagraphShadingTopLeftCornerRadius="6" ParagraphShadingTopRightCornerRadius="6" ParagraphShadingBottomLeftCornerRadius="6" ParagraphShadingBottomRightCornerRadius="6" ParagraphBorderTopLineWeight="0.5" ParagraphBorderBottomLineWeight="0.5" ParagraphBorderLeftLineWeight="0.5" ParagraphBorderRightLineWeight="0.5">
+			<Properties>
+				<SameParaStyleSpacing type="unit">-0.5</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>Second paragraph here.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Body" HyphenationZone="18" RuleAboveLineWeight="0.5" RuleBelowLineWeight="0.5" SplitColumnInsideGutter="3" ParagraphBorderTopLeftCornerRadius="6" ParagraphBorderTopRightCornerRadius="6" ParagraphBorderBottomLeftCornerRadius="6" ParagraphBorderBottomRightCornerRadius="6" ParagraphShadingTopLeftCornerRadius="6" ParagraphShadingTopRightCornerRadius="6" ParagraphShadingBottomLeftCornerRadius="6" ParagraphShadingBottomRightCornerRadius="6" ParagraphBorderTopLineWeight="0.5" ParagraphBorderBottomLineWeight="0.5" ParagraphBorderLeftLineWeight="0.5" ParagraphBorderRightLineWeight="0.5">
+			<Properties>
+				<SameParaStyleSpacing type="unit">-0.5</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="6" StrokeWeight="0.5" MiterLimit="2" RubyFontSize="-0.5" KentenFontSize="-0.5">
+				<Properties>
+					<Leading type="unit">8</Leading>
+				</Properties>
+				<Content>Third line AV To office.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

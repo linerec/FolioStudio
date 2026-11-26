@@ -1,0 +1,43 @@
+[package]
+name = "folio-dbsource"
+description = "Data Merge from a database: connection settings, query definitions, read-only drivers, results as a data source"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+# The external dependencies of the database source live in this crate only (dbmerge DESIGN 1).
+# Versions are pinned; licences MIT / Apache-2.0 / BSD family (ISC). Notices: THIRD-PARTY-NOTICES.md in this folder.
+[dependencies]
+folio-idml.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "=0.11.1"
+# a password in memory is overwritten when it is dropped (Apache-2.0 OR MIT; rustls already brings it)
+zeroize = "=1.9.2"
+
+# The drivers on every platform (dbplatform-c1, 2026-11-19; before: desktop only). ring (TLS) compiles C and assembly for the target:
+# on Windows the MSVC tools, the Linux and macOS cross checks zig cc, Android the NDK clang (portability-check.sh), a real iOS build Xcode.
+postgres = { version = "=0.19.14", default-features = false }
+tokio-postgres-rustls = { version = "=0.14.0", default-features = false, features = ["ring"] }
+rustls = { version = "=0.23.46", default-features = false, features = ["ring", "std", "tls12", "logging"] }
+# TLS: rustls with the ring provider (the same stack as PostgreSQL); the driver brings Mozilla's root list (webpki-roots, CDLA-Permissive-2.0: a data licence the project takes)
+mysql = { version = "=28.0.4", default-features = false, features = ["minimal-rust", "rustls-tls-ring"] }
+# tokio-postgres asks whoami for a default user name (Folio always gives one); the stub keeps whoami from linking the
+# SystemConfiguration and CoreFoundation frameworks, which the macOS cross link (cargo zigbuild, no SDK) cannot find
+whoami = { version = "=2.1.3", features = ["force-stub"] }
+# SQL Server / Azure SQL (TDS 7.3+), pure Rust, MIT OR Apache-2.0. Built without its own TLS: Folio's rustls runs inside the TDS stream
+# (drivers/sqlserver.rs), the same roots and fingerprint pinning as PostgreSQL; its futures run on this thread over a blocking socket
+tiberius = { version = "=0.13.0", default-features = false, features = ["tds73"] }
+futures-util = { version = "=0.3.34", default-features = false, features = ["io", "std"] }
+
+# SQLite: compiled in (the bundled C) on the desktop and Android (Android gives apps no public system SQLite); iOS links the system's
+# libsqlite3 (a public iOS library), so nothing of SQLite is compiled there.
+[target.'cfg(not(target_os = "ios"))'.dependencies]
+rusqlite = { version = "=0.43.0", default-features = false, features = ["bundled", "hooks"] }
+[target.'cfg(target_os = "ios")'.dependencies]
+rusqlite = { version = "=0.43.0", default-features = false, features = ["hooks"] }
+# the iOS keychain (an iOS app cannot start /usr/bin/security as the macOS build does); MIT OR Apache-2.0, Rust bindings only
+security-framework = { version = "=3.7.0", default-features = false }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows-sys = { version = "=0.61.2", features = ["Win32_Foundation", "Win32_Security_Credentials", "Win32_Security_Cryptography"] }

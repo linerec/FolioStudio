@@ -1,0 +1,206 @@
+{
+  "fixture": "text-format",
+  "extension": "trapx",
+  "about": "Trap presets in a hidden document: create/edit/rename/duplicate/delete and page assignment. Goldens captured with capture.py (InDesign 20.5.5.119).",
+  "scenarios": [
+    {
+      "name": "trapx-create-assign",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Panel Trap",
+            "default_width": 0.4
+          }
+        },
+        {
+          "op": "trapAssign",
+          "pages": [
+            0
+          ],
+          "preset": "TrapPreset/Panel Trap"
+        }
+      ]
+    },
+    {
+      "name": "trapx-delete-replace",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Panel Trap",
+            "default_width": 0.4
+          }
+        },
+        {
+          "op": "trapAssign",
+          "pages": [
+            0
+          ],
+          "preset": "TrapPreset/Panel Trap"
+        },
+        {
+          "op": "trapPresetDelete",
+          "id": "TrapPreset/Panel Trap",
+          "replacement": "TrapPreset/$ID/kDefaultTrapStyleName"
+        }
+      ]
+    },
+    {
+      "name": "trapx-enum-words",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Round Overlap Choke",
+            "join": "RoundEndJoin",
+            "end": "OverlapTrapEnds",
+            "image_placement": "Choke"
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Bevel Neutral",
+            "join": "BevelEndJoin",
+            "image_placement": "ImageNeutralDensity"
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Spread",
+            "image_placement": "ImagesOverSpread"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trapx-edit-values",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Wide",
+            "default_width": 2.0,
+            "black_width": 3.0,
+            "objects_to_images": false,
+            "images_to_images": false,
+            "internal_images": true,
+            "one_bit_images": false,
+            "step_threshold": 15.0,
+            "black_color_threshold": 90.0,
+            "black_density": 2.0,
+            "sliding_threshold": 60.0,
+            "color_reduction": 80.0
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "id": "TrapPreset/Wide",
+            "default_width": 0.0,
+            "black_density": 0.001,
+            "step_threshold": 1.0,
+            "sliding_threshold": 100.0
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "id": "TrapPreset/$ID/kDefaultTrapStyleName",
+            "default_width": 0.9,
+            "black_width": 1.1
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "id": "TrapPreset/$ID/k[No Trap Preset]",
+            "default_width": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "name": "trapx-rename-order",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Zeta"
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Old Name",
+            "default_width": 0.4
+          }
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Mid"
+          }
+        },
+        {
+          "op": "trapAssign",
+          "pages": [
+            0
+          ],
+          "preset": "TrapPreset/Old Name"
+        },
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "id": "TrapPreset/Old Name",
+            "name": "New Name"
+          }
+        }
+      ]
+    },
+    {
+      "name": "trapx-duplicate",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Base",
+            "default_width": 0.7
+          }
+        },
+        {
+          "op": "trapPresetDuplicate",
+          "id": "TrapPreset/Base",
+          "name": ""
+        },
+        {
+          "op": "trapPresetDuplicate",
+          "id": "TrapPreset/Base",
+          "name": ""
+        },
+        {
+          "op": "trapPresetDuplicate",
+          "id": "TrapPreset/Base Copy 1",
+          "name": ""
+        },
+        {
+          "op": "trapPresetDuplicate",
+          "id": "TrapPreset/Base",
+          "name": "Named Copy"
+        },
+        {
+          "op": "trapPresetDuplicate",
+          "id": "TrapPreset/$ID/kDefaultTrapStyleName",
+          "name": ""
+        },
+        {
+          "op": "trapPresetDuplicate",
+          "id": "TrapPreset/$ID/k[No Trap Preset]",
+          "name": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "fixture": "basic",
+  "about": "Text frame copies, their independent stories, and copies inside groups.",
+  "scenarios": [
+    {
+      "name": "duplicate-text",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "tf",
+          "by": [
+            20,
+            15
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-thread-first",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "tf-1",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-thread-last",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "tf-2",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-text-group",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "tf",
+            "tf-1"
+          ],
+          "label": "text-group"
+        },
+        {
+          "op": "duplicate",
+          "target": "text-group",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-text-rotated",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "tf",
+          "by": 20
+        },
+        {
+          "op": "duplicate",
+          "target": "tf",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-thread-group",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "tf-1",
+            "tf-2"
+          ],
+          "label": "text-group"
+        },
+        {
+          "op": "duplicate",
+          "target": "text-group",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-text-twice",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "tf",
+          "by": [
+            10,
+            10
+          ],
+          "label": "copy"
+        },
+        {
+          "op": "duplicate",
+          "target": "copy",
+          "by": [
+            10,
+            10
+          ],
+          "label": "copy2"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-thread-empty-first",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "tf-1",
+          "size": [
+            30,
+            5
+          ]
+        },
+        {
+          "op": "duplicate",
+          "target": "tf-1",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-thread-empty-last",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "tf-1",
+          "size": [
+            350,
+            650
+          ]
+        },
+        {
+          "op": "duplicate",
+          "target": "tf-2",
+          "by": [
+            15,
+            20
+          ],
+          "label": "copy"
+        }
+      ]
+    },
+    {"name": "duplicate-thread-table-first", "steps": [{"op": "table", "target": "tf-1", "do": "insert", "at": 0, "rows": 2, "columns": 2}, {"op": "table", "target": "tf-1", "do": "rowProps", "at": 0, "props": {"autoGrow": false, "height": 20}}, {"op": "table", "target": "tf-1", "do": "rowProps", "at": 1, "props": {"autoGrow": false, "height": 20}}, {"op": "duplicate", "target": "tf-1", "by": [15, 20], "label": "copy"}]},
+    {"name": "duplicate-thread-table-last", "steps": [{"op": "table", "target": "tf-1", "do": "insert", "at": 0, "rows": 2, "columns": 2}, {"op": "table", "target": "tf-1", "do": "rowProps", "at": 0, "props": {"autoGrow": false, "height": 20}}, {"op": "table", "target": "tf-1", "do": "rowProps", "at": 1, "props": {"autoGrow": false, "height": 20}}, {"op": "duplicate", "target": "tf-2", "by": [15, 20], "label": "copy"}]}
+  ]
+}

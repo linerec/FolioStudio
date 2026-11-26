@@ -1,0 +1,153 @@
+{
+  "fixture": "basic",
+  "about": "Character stroke width, tint, paint order and partial ranges.",
+  "scenarios": [
+    {
+      "name": "text-stroke",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 20,
+          "props": {
+            "strokeColor": "Color/Oracle Blue",
+            "strokeTint": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "textstroke-weight",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 20,
+          "props": {
+            "strokeColor": "Color/Oracle Orange",
+            "strokeWeight": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "textstroke-overlap",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 20,
+          "props": {
+            "pointSize": 36,
+            "tracking": -300,
+            "fillColor": "Color/Oracle Blue",
+            "strokeColor": "Color/Oracle Orange",
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "textstroke-caret",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 8,
+          "props": {
+            "strokeColor": "Color/Oracle Blue",
+            "strokeWeight": 1.5,
+            "strokeTint": 40
+          }
+        },
+        {
+          "op": "insertText",
+          "target": "tf",
+          "at": 8,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "textstroke-no-fill",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 20,
+          "props": {
+            "fillColor": "Swatch/None",
+            "strokeColor": "Color/Oracle Blue",
+            "strokeWeight": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "textstroke-zero",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 20,
+          "props": {
+            "strokeColor": "Color/Oracle Blue",
+            "strokeWeight": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "textstroke-mixed",
+      "rules": [
+        "textstroke.paint"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 8,
+          "end": 20,
+          "props": {
+            "strokeColor": "Color/Oracle Blue",
+            "strokeWeight": 1
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "tf",
+          "start": 14,
+          "end": 20,
+          "props": {
+            "strokeColor": "Color/Oracle Orange",
+            "strokeWeight": 2
+          }
+        }
+      ]
+    }
+  ]
+}

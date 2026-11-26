@@ -1,0 +1,262 @@
+{
+  "fixture": "pages",
+  "about": "Settings of pages and spreads in the Pages panel menu: Page Attributes > Color Label (a page's, a parent's), Parent Pages > Show Parent Items, Page Attributes > Spread Flattening (None, Custom and its values, kept at every level).",
+  "scenarios": [
+    {
+      "name": "setting-noop",
+      "steps": []
+    },
+    {
+      "name": "color-gold",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            1
+          ],
+          "color": "Gold"
+        }
+      ]
+    },
+    {
+      "name": "color-light-blue",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            0
+          ],
+          "color": "LightBlue"
+        }
+      ]
+    },
+    {
+      "name": "color-dark-green",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            3
+          ],
+          "color": "DarkGreen"
+        }
+      ]
+    },
+    {
+      "name": "color-violet",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            4
+          ],
+          "color": "Violet"
+        }
+      ]
+    },
+    {
+      "name": "color-white",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            2
+          ],
+          "color": "White"
+        }
+      ]
+    },
+    {
+      "name": "color-nothing",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            2
+          ],
+          "color": "Nothing"
+        }
+      ]
+    },
+    {
+      "name": "color-several",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            0,
+            2,
+            4
+          ],
+          "color": "Red"
+        }
+      ]
+    },
+    {
+      "name": "color-back-to-parent",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "pages": [
+            1
+          ],
+          "color": "Pink"
+        },
+        {
+          "op": "setPageColor",
+          "pages": [
+            1
+          ],
+          "color": "UseMasterColor"
+        }
+      ]
+    },
+    {
+      "name": "color-parent",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "masters": [
+            0
+          ],
+          "color": "Pink"
+        }
+      ]
+    },
+    {
+      "name": "color-second-parent",
+      "steps": [
+        {
+          "op": "setPageColor",
+          "masters": [
+            1
+          ],
+          "color": "Tan"
+        }
+      ]
+    },
+    {
+      "name": "parent-items-off",
+      "steps": [
+        {
+          "op": "setSpreadShowMaster",
+          "spreads": [
+            1
+          ],
+          "show": false
+        }
+      ]
+    },
+    {
+      "name": "parent-items-off-all",
+      "steps": [
+        {
+          "op": "setSpreadShowMaster",
+          "spreads": [
+            0,
+            1,
+            2
+          ],
+          "show": false
+        }
+      ]
+    },
+    {
+      "name": "parent-items-back-on",
+      "steps": [
+        {
+          "op": "setSpreadShowMaster",
+          "spreads": [
+            1
+          ],
+          "show": false
+        },
+        {
+          "op": "setSpreadShowMaster",
+          "spreads": [
+            1
+          ],
+          "show": true
+        }
+      ]
+    },
+    {
+      "name": "flatten-none",
+      "steps": [
+        {
+          "op": "setSpreadFlattener",
+          "spreads": [
+            1
+          ],
+          "level": "None"
+        }
+      ]
+    },
+    {
+      "name": "flatten-custom",
+      "steps": [
+        {
+          "op": "setSpreadFlattener",
+          "spreads": [
+            2
+          ],
+          "level": "Custom"
+        }
+      ]
+    },
+    {
+      "name": "flatten-custom-values",
+      "steps": [
+        {
+          "op": "setSpreadFlattener",
+          "spreads": [
+            1
+          ],
+          "level": "Custom",
+          "balance": 80,
+          "lineArt": 600,
+          "gradient": 300,
+          "clip": true,
+          "strokes": true,
+          "text": true
+        }
+      ]
+    },
+    {
+      "name": "flatten-values-cut",
+      "steps": [
+        {
+          "op": "setSpreadFlattener",
+          "spreads": [
+            1
+          ],
+          "level": "Custom",
+          "lineArt": 20000,
+          "gradient": 5000
+        }
+      ]
+    },
+    {
+      "name": "flatten-values-kept",
+      "steps": [
+        {
+          "op": "setSpreadFlattener",
+          "spreads": [
+            1
+          ],
+          "level": "Custom",
+          "balance": 25,
+          "lineArt": 150,
+          "text": true
+        },
+        {
+          "op": "setSpreadFlattener",
+          "spreads": [
+            1
+          ],
+          "level": "Default"
+        }
+      ]
+    }
+  ]
+}

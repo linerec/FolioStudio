@@ -1,0 +1,10 @@
+{
+  "fixture": "footnotes2-endnotes",
+  "extension": "endnotes-c1",
+  "about": "Type > Insert Endnote when the document already has an endnote story with two bodies (the first of two paragraphs): the new body goes before the first, between the two, after the last, in reference order (InDesign 20.5, window document).",
+  "scenarios": [
+    {"name": "endnote-existing-before", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 10}]},
+    {"name": "endnote-existing-between", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 45}]},
+    {"name": "endnote-existing-after", "window": true, "steps": [{"op": "insertEndnote", "target": "body-0", "at": 90}]}
+  ]
+}

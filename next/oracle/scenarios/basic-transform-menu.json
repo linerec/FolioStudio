@@ -1,0 +1,17 @@
+{
+  "fixture": "basic",
+  "about": "Object ▸ Transform ▸ Rotate 90° CW / CCW, Rotate 180°, Flip Horizontal / Vertical (menu actions 118812, 118813, 118811, 118814, 118846 in a window) about the reference point, on one object and on a selection.",
+  "scenarios": [
+    {"name": "menu-rotate-cw", "window": true, "steps": [{"op": "select", "target": "r-fill"}, {"op": "menu", "id": 118812, "action": "Rotate 90 CW", "anchor": "center"}]},
+    {"name": "menu-rotate-ccw", "window": true, "steps": [{"op": "select", "target": "r-fill"}, {"op": "menu", "id": 118813, "action": "Rotate 90 CCW", "anchor": "center"}]},
+    {"name": "menu-rotate-180", "window": true, "steps": [{"op": "select", "target": "r-fill"}, {"op": "menu", "id": 118811, "action": "Rotate 180", "anchor": "center"}]},
+    {"name": "menu-flip-horizontal", "window": true, "steps": [{"op": "select", "target": "r-fill"}, {"op": "menu", "id": 118814, "action": "Flip Horizontal", "anchor": "center"}]},
+    {"name": "menu-flip-vertical", "window": true, "steps": [{"op": "select", "target": "r-fill"}, {"op": "menu", "id": 118846, "action": "Flip Vertical", "anchor": "center"}]},
+    {"name": "menu-rotate-cw-top-left", "window": true, "steps": [{"op": "select", "target": "r-fill"}, {"op": "menu", "id": 118812, "action": "Rotate 90 CW", "anchor": "topLeft"}]},
+    {"name": "menu-rotate-cw-two", "window": true, "steps": [{"op": "select", "targets": ["r-plain", "oval"]}, {"op": "menu", "id": 118812, "action": "Rotate 90 CW", "anchor": "center"}]},
+    {"name": "menu-flip-horizontal-two", "window": true, "steps": [{"op": "select", "targets": ["r-plain", "oval"]}, {"op": "menu", "id": 118814, "action": "Flip Horizontal", "anchor": "center"}]},
+    {"name": "menu-rotate-cw-rotated", "window": true, "steps": [{"op": "select", "target": "r-rot"}, {"op": "menu", "id": 118812, "action": "Rotate 90 CW", "anchor": "center"}]},
+    {"name": "menu-rotate-ccw-text", "window": true, "steps": [{"op": "select", "target": "tf"}, {"op": "menu", "id": 118813, "action": "Rotate 90 CCW", "anchor": "bottomRight"}]},
+    {"name": "menu-flip-vertical-group", "window": true, "steps": [{"op": "select", "target": "grp"}, {"op": "menu", "id": 118846, "action": "Flip Vertical", "anchor": "center"}]}
+  ]
+}

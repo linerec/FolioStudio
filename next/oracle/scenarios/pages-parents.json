@@ -1,0 +1,329 @@
+{
+  "fixture": "pages",
+  "about": "Pages panel parents: New Parent, Duplicate, Delete (used or not), Parent Page Options (prefix, name, based on).",
+  "scenarios": [
+    {
+      "name": "parent-new",
+      "steps": [
+        {
+          "op": "parentNew"
+        }
+      ]
+    },
+    {
+      "name": "parent-new-one-page",
+      "steps": [
+        {
+          "op": "parentNew",
+          "pageCount": 1
+        }
+      ]
+    },
+    {
+      "name": "parent-new-named",
+      "steps": [
+        {
+          "op": "parentNew",
+          "prefix": "C",
+          "name": "Cover"
+        }
+      ]
+    },
+    {
+      "name": "parent-duplicate",
+      "steps": [
+        {
+          "op": "parentDuplicate",
+          "master": 0
+        }
+      ]
+    },
+    {
+      "name": "parent-delete-unused",
+      "steps": [
+        {
+          "op": "parentDelete",
+          "master": 1
+        }
+      ]
+    },
+    {
+      "name": "parent-delete-used",
+      "steps": [
+        {
+          "op": "parentDelete",
+          "master": 0
+        }
+      ]
+    },
+    {
+      "name": "parent-rename",
+      "steps": [
+        {
+          "op": "parentSet",
+          "master": 1,
+          "prefix": "X",
+          "name": "Extra"
+        }
+      ]
+    },
+    {
+      "name": "parent-based-on",
+      "steps": [
+        {
+          "op": "parentSet",
+          "master": 1,
+          "basedOn": 0
+        }
+      ]
+    },
+    {
+      "name": "parent-based-on-none",
+      "steps": [
+        {
+          "op": "parentSet",
+          "master": 1,
+          "basedOn": 0
+        },
+        {
+          "op": "parentSet",
+          "master": 1,
+          "basedOn": -1
+        }
+      ]
+    },
+    {
+      "name": "parent-new-three-pages",
+      "steps": [
+        {
+          "op": "parentNew",
+          "pageCount": 3
+        }
+      ]
+    },
+    {
+      "name": "parent-new-four-pages",
+      "steps": [
+        {
+          "op": "parentNew",
+          "pageCount": 4
+        }
+      ]
+    },
+    {
+      "name": "parent-new-five-pages",
+      "steps": [
+        {
+          "op": "parentNew",
+          "pageCount": 5
+        }
+      ]
+    },
+    {
+      "name": "parent-new-ten-pages",
+      "steps": [
+        {
+          "op": "parentNew",
+          "pageCount": 10
+        }
+      ]
+    },
+    {
+      "name": "parent-save-three-page-spread",
+      "steps": [
+        {
+          "op": "setPageShuffle",
+          "allowed": false
+        },
+        {
+          "op": "setPageShuffle",
+          "spread": 1,
+          "allowed": false
+        },
+        {
+          "op": "movePages",
+          "pages": [
+            4
+          ],
+          "before": 2
+        },
+        {
+          "op": "saveAsParent",
+          "spread": 1
+        }
+      ]
+    },
+    {
+      "name": "parent-three-plain-page-0",
+      "steps": [
+        {
+          "op": "setPageShuffle",
+          "allowed": false
+        },
+        {
+          "op": "setPageShuffle",
+          "spread": 1,
+          "allowed": false
+        },
+        {
+          "op": "movePages",
+          "pages": [
+            4
+          ],
+          "before": 2
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "master": null,
+          "current": true
+        },
+        {
+          "op": "saveAsParent",
+          "spread": 1
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            0
+          ],
+          "master": 2,
+          "current": true
+        }
+      ]
+    },
+    {
+      "name": "parent-three-plain-page-1",
+      "steps": [
+        {
+          "op": "setPageShuffle",
+          "allowed": false
+        },
+        {
+          "op": "setPageShuffle",
+          "spread": 1,
+          "allowed": false
+        },
+        {
+          "op": "movePages",
+          "pages": [
+            4
+          ],
+          "before": 2
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "master": null,
+          "current": true
+        },
+        {
+          "op": "saveAsParent",
+          "spread": 1
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            1
+          ],
+          "master": 2,
+          "current": true
+        }
+      ]
+    },
+    {
+      "name": "parent-three-plain-page-2",
+      "steps": [
+        {
+          "op": "setPageShuffle",
+          "allowed": false
+        },
+        {
+          "op": "setPageShuffle",
+          "spread": 1,
+          "allowed": false
+        },
+        {
+          "op": "movePages",
+          "pages": [
+            4
+          ],
+          "before": 2
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "master": null,
+          "current": true
+        },
+        {
+          "op": "saveAsParent",
+          "spread": 1
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            2
+          ],
+          "master": 2,
+          "current": true
+        }
+      ]
+    },
+    {
+      "name": "parent-three-plain-page-3",
+      "steps": [
+        {
+          "op": "setPageShuffle",
+          "allowed": false
+        },
+        {
+          "op": "setPageShuffle",
+          "spread": 1,
+          "allowed": false
+        },
+        {
+          "op": "movePages",
+          "pages": [
+            4
+          ],
+          "before": 2
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "master": null,
+          "current": true
+        },
+        {
+          "op": "saveAsParent",
+          "spread": 1
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            3
+          ],
+          "master": 2,
+          "current": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "fixture": "basic",
+  "about": "Object menu, menu actions in a window: Effects > Clear Effects (67880) and Clear All Transparency (67897) on an object with opacity, a blending mode and a drop shadow; Transform > Clear Transformations (118851, Transform panel menu) on rotated and sheared objects; Content > Graphic / Unassigned (11295, 11297; Text, 11296, makes a text frame and a story: measured in artifacts/object-menu-20261021/later, not built yet). InDesign leaves Clear Effects off when only another level has effects, and Unassigned off for a frame with text or a graphic.",
+  "scenarios": [
+    {
+      "name": "obj-clear-effects",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50,
+                "blendMode": "BlendMode.MULTIPLY"
+              },
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        },
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 67880,
+          "action": "Clear Effects"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-all-transparency",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50,
+                "blendMode": "BlendMode.MULTIPLY"
+              },
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "fillTransparencySettings": {
+              "blendingSettings": {
+                "opacity": 40
+              }
+            }
+          }
+        },
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 67897,
+          "action": "Clear All Transparency"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-transformations-rotated",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-rot"
+        },
+        {
+          "op": "menu",
+          "id": 118851,
+          "action": "Clear Transformations",
+          "panel": "$ID/Transform"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-transformations-sheared",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-shear"
+        },
+        {
+          "op": "menu",
+          "id": 118851,
+          "action": "Clear Transformations",
+          "panel": "$ID/Transform"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-graphic",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11295,
+          "action": "Graphic"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-all-transparency-image",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "img",
+          "props": {
+            "contentTransparencySettings": {
+              "blendingSettings": {
+                "opacity": 60
+              }
+            },
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        },
+        {
+          "op": "select",
+          "target": "img"
+        },
+        {
+          "op": "menu",
+          "id": 67897,
+          "action": "Clear All Transparency"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-effects-group",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              },
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD"
+              }
+            }
+          }
+        },
+        {
+          "op": "select",
+          "target": "grp"
+        },
+        {
+          "op": "menu",
+          "id": 67880,
+          "action": "Clear Effects"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-effects-values",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "distance": 20,
+                "size": 12
+              }
+            }
+          }
+        },
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 67880,
+          "action": "Clear Effects"
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-transformations-group",
+      "window": true,
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": 20
+        },
+        {
+          "op": "select",
+          "target": "grp"
+        },
+        {
+          "op": "menu",
+          "id": 118851,
+          "action": "Clear Transformations",
+          "panel": "$ID/Transform"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-transformations-image",
+      "window": true,
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "img",
+          "by": 25
+        },
+        {
+          "op": "select",
+          "target": "img"
+        },
+        {
+          "op": "menu",
+          "id": 118851,
+          "action": "Clear Transformations",
+          "panel": "$ID/Transform"
+        }
+      ]
+    },
+    {
+      "name": "obj-clear-transformations-oval-flipped",
+      "window": true,
+      "steps": [
+        {
+          "op": "flip",
+          "target": "oval",
+          "how": "horizontal"
+        },
+        {
+          "op": "rotate",
+          "target": "oval",
+          "by": 10
+        },
+        {
+          "op": "select",
+          "target": "oval"
+        },
+        {
+          "op": "menu",
+          "id": 118851,
+          "action": "Clear Transformations",
+          "panel": "$ID/Transform"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-unassigned",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 11295,
+          "action": "Graphic"
+        },
+        {
+          "op": "menu",
+          "id": 11297,
+          "action": "Unassigned"
+        }
+      ]
+    },
+    {
+      "name": "obj-content-graphic-oval",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "oval"
+        },
+        {
+          "op": "menu",
+          "id": 11295,
+          "action": "Graphic"
+        }
+      ]
+    }
+  ]
+}

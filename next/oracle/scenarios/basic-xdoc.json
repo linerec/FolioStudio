@@ -1,0 +1,14 @@
+{
+  "fixture": "basic",
+  "about": "Edit > Paste of objects copied in another document (fixture basic-other): a swatch whose name basic already has with other values (o-blue), new swatches and styles (o-card, o-spot, o-text), [Basic Paragraph] defined differently (o-basic), a placed image (o-img), two items from two layers.",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "xdoc-blue", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-blue"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted"]}], "window": true},
+    {"name": "xdoc-card", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-card"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted"]}], "window": true},
+    {"name": "xdoc-spot", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-spot"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted"]}], "window": true},
+    {"name": "xdoc-text", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-text"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted"]}], "window": true},
+    {"name": "xdoc-basic-para", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-basic"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted"]}], "window": true},
+    {"name": "xdoc-img", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-img"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted"]}], "window": true},
+    {"name": "xdoc-two-layers", "steps": [{"op": "copyFrom", "fixture": "basic-other", "targets": ["o-blue", "o-card"]}, {"op": "clipboard", "how": "pasteInPlace", "labels": ["pasted-a", "pasted-b"]}], "window": true}
+  ]
+}

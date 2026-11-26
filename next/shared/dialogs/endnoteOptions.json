@@ -1,0 +1,250 @@
+{
+  "title": "문서 미주 옵션",
+  "target": "none",
+  "defaults": "endnoteOptions",
+  "skipEmpty": true,
+  "description": "Type > Document Endnote Options: numbering (style, start number, restart in every story), prefix and suffix and where they show, the reference's position and character style, the endnote's paragraph style and separator, the title and its style, the scope and how the endnote frame is made; the values start from the document and only those that differ are sent.",
+  "fields": [
+    {
+      "name": "EndnoteNumberingStyle",
+      "label": "번호 매기기 스타일",
+      "type": "enum",
+      "default": "Arabic",
+      "options": [
+        {
+          "value": "Arabic",
+          "label": "1, 2, 3…"
+        },
+        {
+          "value": "UpperRoman",
+          "label": "I, II, III…"
+        },
+        {
+          "value": "LowerRoman",
+          "label": "i, ii, iii…"
+        },
+        {
+          "value": "UpperLetters",
+          "label": "A, B, C…"
+        },
+        {
+          "value": "LowerLetters",
+          "label": "a, b, c…"
+        },
+        {
+          "value": "Asterisks",
+          "label": "*, **, ***…"
+        },
+        {
+          "value": "Symbols",
+          "label": "*, †, ‡, §, ¶…"
+        },
+        {
+          "value": "SingleLeadingZeros",
+          "label": "01, 02, 03…"
+        },
+        {
+          "value": "DoubleLeadingZeros",
+          "label": "001, 002, 003…"
+        },
+        {
+          "value": "FullWidthArabic",
+          "label": "１, ２, ３…"
+        },
+        {
+          "value": "Kanji",
+          "label": "一, 二, 三…"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "StartEndnoteNumberAt",
+      "label": "시작 번호",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "max": 100000,
+      "integer": true,
+      "rangeMessage": "시작 번호에 1부터 100000까지의 정수를 입력하세요.",
+      "tab": "numbering"
+    },
+    {
+      "name": "RestartEndnoteNumbering",
+      "label": "번호 다시 시작",
+      "type": "enum",
+      "default": "Continuous",
+      "options": [
+        {
+          "value": "Continuous",
+          "label": "문서 전체에 이어서"
+        },
+        {
+          "value": "StoryRestart",
+          "label": "스토리마다"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "ShowEndnotePrefixSuffix",
+      "label": "접두·접미 표시",
+      "type": "enum",
+      "default": "NoPrefixSuffix",
+      "options": [
+        {
+          "value": "NoPrefixSuffix",
+          "label": "없음"
+        },
+        {
+          "value": "PrefixSuffixReference",
+          "label": "본문 참조"
+        },
+        {
+          "value": "PrefixSuffixMarker",
+          "label": "미주 번호"
+        },
+        {
+          "value": "PrefixSuffixBoth",
+          "label": "본문 참조와 미주 번호"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnotePrefix",
+      "label": "접두어",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnoteSuffix",
+      "label": "접미어",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnoteMarkerPositioning",
+      "label": "참조 번호 위치",
+      "type": "enum",
+      "default": "SuperscriptMarker",
+      "options": [
+        {
+          "value": "SuperscriptMarker",
+          "label": "위 첨자"
+        },
+        {
+          "value": "NormalMarker",
+          "label": "일반"
+        },
+        {
+          "value": "SubscriptMarker",
+          "label": "아래 첨자"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnoteMarkerStyle",
+      "label": "참조 문자 스타일",
+      "type": "choice",
+      "source": "characterStyles",
+      "default": "",
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnoteTextStyle",
+      "label": "미주 단락 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "default": "",
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnoteSeparatorText",
+      "label": "번호 뒤 분리자",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "numbering"
+    },
+    {
+      "name": "EndnoteTitle",
+      "label": "미주 제목",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "layout"
+    },
+    {
+      "name": "EndnoteTitleStyle",
+      "label": "제목 단락 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "default": "",
+      "tab": "layout"
+    },
+    {
+      "name": "ScopeValue",
+      "label": "범위",
+      "type": "enum",
+      "default": "EndnoteDocumentScope",
+      "options": [
+        {
+          "value": "EndnoteDocumentScope",
+          "label": "문서"
+        },
+        {
+          "value": "StoryScope",
+          "label": "스토리"
+        }
+      ],
+      "tab": "layout"
+    },
+    {
+      "name": "FrameCreateOption",
+      "label": "미주 틀 만들기",
+      "type": "enum",
+      "default": "NewPage",
+      "options": [
+        {
+          "value": "NewPage",
+          "label": "새 페이지에"
+        },
+        {
+          "value": "LoadEndnotePlaceGun",
+          "label": "직접 놓기"
+        }
+      ],
+      "tab": "layout"
+    }
+  ],
+  "note": [
+    "번호 서식·접두어·접미어는 기존 미주 번호에도 바로 적용됩니다.",
+    "참조 번호 위치·문자 스타일, 미주 단락 스타일, 제목·분리자는 새로 넣는 미주부터 적용됩니다."
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setEndnoteOptions",
+        "props": {
+          "$changed": true
+        }
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "id": "numbering",
+      "label": "번호 매기기 및 서식"
+    },
+    {
+      "id": "layout",
+      "label": "레이아웃"
+    }
+  ]
+}

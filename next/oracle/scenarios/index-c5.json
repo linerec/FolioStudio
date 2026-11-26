@@ -1,0 +1,2194 @@
+{
+ "fixture": "index-c3",
+ "extension": "index-c3",
+ "comparison": "index",
+ "scenarios": [
+  {
+   "name": "index-c5-quote-a",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "\"q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "'q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": ",q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": ".q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": ":q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": ";q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "?q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "[q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "\\q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "]q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "^q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "`q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "{q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "}q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "«q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "»q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‘q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "’q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "“q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "”q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "„q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‚q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‹q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "›q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‟q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‛q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "「q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "」q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "『q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "』q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〈q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〉q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "《q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "》q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "【q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "】q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn\"q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn'q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn,q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn.q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn;q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn?q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn[q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn\\q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn]q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn^q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn`q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn{q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn}q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn«q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn»q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‹q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn›q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn「q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn」q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn『q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn』q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn〈q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn〉q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn《q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn》q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn【q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn】q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": true,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  },
+  {
+   "name": "index-c5-quote-b",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〔q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〕q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "（q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "）q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "［q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "］q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "｛q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "｝q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "｡q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "､q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "、q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "。q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "·q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "・q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‐q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‑q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "–q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "—q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "―q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‖q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‥q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‼q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "′q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "″q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "※q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "⁇q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‰q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "❝q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "❞q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〝q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〞q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "＂q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "＇q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "❛q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "❜q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn〔q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn〕q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn（q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn）q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn［q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn］q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn｛q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn｝q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn｡q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn､q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn·q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn・q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‐q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn–q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn—q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn―q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‖q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‥q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‼q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn′q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn″q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn※q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn⁇q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‰q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn❝q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn❞q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn〝q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn＇q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn❛q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn❜q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": true,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  },
+  {
+   "name": "index-c5-quote-c",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a'b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a‘b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a’b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a‚b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a‛b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a\"b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a“b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a”b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a„b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a‟b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a«b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a»b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a‹b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a›b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "c'",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "c‘",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "c’",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "c\"",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "c”",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "'apple",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "apple",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Apple",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‘Banana",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "banana",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "«cherry",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "cherry",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "it's",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "don't",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "rock 'n' roll",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "He said \"hi\"",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "d’e",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "1'2",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "'1",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‘‘dd",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "'“ee",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna'b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna\"b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna«b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna»b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna‹b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna›b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnc'",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnc\"",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn'apple",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnapple",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7TopicnApple",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‘Banana",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnbanana",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn«cherry",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicncherry",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnit's",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicndon't",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnrock 'n' roll",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7TopicnHe said \"hi\"",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnd’e",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn1'2",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn'1",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‘‘dd",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn'“ee",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": true,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  },
+  {
+   "name": "index-c5-quote-d",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "a‘b",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "c”d",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‘e",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "“f",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "’g",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "”h",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‚i",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "„j",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "k’",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "l“",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "m‛n",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "o‟p",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "‘’q",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "r’’",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicna‘b",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnc”d",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‘e",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn“f",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn’g",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn”h",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‚i",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn„j",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnk’",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnl“",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnm‛n",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicno‟p",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn‘’q",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicnr’’",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": true,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  },
+  {
+   "name": "index-c5-han",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "々",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "〇",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "一",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "⼀",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "丁",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "中",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "⺀",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "丿",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "乂",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "亅",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "二",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "亠",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "人",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "侮",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "⽅",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "更",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "海",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "豈",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "鹿",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "龍",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn々",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn〇",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn一",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn⼀",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn丁",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn中",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn⺀",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn丿",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn乂",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn亅",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn二",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn亠",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn人",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn侮",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn⽅",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn更",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn海",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn豈",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn鹿",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7Topicn龍",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": true,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  },
+  {
+   "name": "index-c5-mixed",
+   "pdf": false,
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Mix1",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Mix2",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Mix3",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Mix4",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "OnlyHide",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Parent5",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Mix7",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u1e7TopicnParent5",
+     "name": "Child5",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u1e7TopicnMix7",
+     "name": "Child7",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 34,
+     "topic": "u1e7TopicnMix3",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 34,
+     "topic": "u1e7TopicnMix7TopicnChild7",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 21,
+     "topic": "u1e7TopicnMix3",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 21,
+     "topic": "u1e7TopicnMix2",
+     "kind": "ForNextNPages",
+     "limit": 2
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 21,
+     "topic": "u1e7TopicnParent5TopicnChild5",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 21,
+     "topic": "u1e7TopicnMix7",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 21,
+     "topic": "u1e7TopicnMix7",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 11,
+     "topic": "u1e7TopicnMix2",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 11,
+     "topic": "u1e7TopicnMix4",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 11,
+     "topic": "u1e7TopicnMix4",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 11,
+     "topic": "u1e7TopicnMix4",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 11,
+     "topic": "u1e7TopicnOnlyHide",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7TopicnMix1",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7TopicnMix1",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7TopicnParent5",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 0,
+     "topic": "u1e7TopicnParent5",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "generateIndex",
+     "page": "",
+     "frame": "",
+     "replace": true,
+     "title": "Index",
+     "headings": true,
+     "font": "Malgun Gothic",
+     "locations": []
+    }
+   ]
+  }
+ ]
+}

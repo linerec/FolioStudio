@@ -1,0 +1,8 @@
+.math-panel { padding: 8px; font-size: 12px; display: flex; flex-direction: column; gap: 8px; }
+.math-panel-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.math-panel ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.math-panel li { display: flex; flex-direction: column; gap: 2px; padding: 5px 6px; border: 1px solid transparent; border-radius: var(--r-sm); cursor: default; }
+.math-panel li[aria-selected="true"] { border-color: var(--accent); background: var(--list-sel); }
+.math-panel li .math-source { font-family: var(--font-mono); overflow-wrap: anywhere; }
+.math-panel li .math-meta { color: var(--muted); }
+.math-panel .p-empty { color: var(--muted); margin: 0; }

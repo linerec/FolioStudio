@@ -1,0 +1,114 @@
+{
+  "fixture": "basic-margins",
+  "about": "Derived from basic: top 24, bottom 48, inside 30, outside 60 pt.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "align-asymmetric-left-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "tf"
+          ],
+          "how": "left",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-left-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "tf"
+          ],
+          "how": "right",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-left-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "tf"
+          ],
+          "how": "top",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-left-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "tf"
+          ],
+          "how": "bottom",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-right-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img"
+          ],
+          "how": "left",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-right-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img"
+          ],
+          "how": "right",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-right-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img"
+          ],
+          "how": "top",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-asymmetric-right-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img"
+          ],
+          "how": "bottom",
+          "bounds": "margin"
+        }
+      ]
+    }
+  ]
+}

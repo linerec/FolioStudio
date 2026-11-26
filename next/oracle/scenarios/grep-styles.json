@@ -1,0 +1,245 @@
+{
+  "fixture": "grep-styles",
+  "extension": "grep-styles",
+  "scenarios": [
+    {
+      "name": "noop",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": []
+    },
+    {
+      "name": "grep-basic",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": [
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 0",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "word"
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "expression": "\\d+"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "\\([^)]*\\)"
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "grep-overlap",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": [
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 0",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "(?i)word"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "word"
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "expression": "word"
+            }
+          ]
+        },
+        {
+          "op": "textFormat",
+          "target": "grep-1",
+          "start": 0,
+          "end": 3,
+          "props": {
+            "fillColor": "Color/Grep Blue"
+          }
+        },
+        {
+          "op": "characterStyle",
+          "target": "grep-1",
+          "start": 4,
+          "end": 7,
+          "style": "Blue"
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 1",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "(?i)abc"
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "expression": "(?i)abc"
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "grep-reorder-delete",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": [
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 0",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "word"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "word"
+            }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 0",
+          "rules": [
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "word"
+            },
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "word"
+            }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 1",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "abc"
+            }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 1",
+          "rules": []
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "grep-boundaries-codes",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": [
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 1",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "\\u+"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "\\l+"
+            }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 2",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "first\\nsecond"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "second\\rthird"
+            }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 3",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "A~SB"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "C~<D"
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "grep-syntax-features",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": [
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 0",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "(?<=\\()\\w+(?=\\))"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "\\d{2}"
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "expression": "\\b\\u\\l+\\b"
+            }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/Grep 1",
+          "rules": [
+            {
+              "style": "CharacterStyle/Red",
+              "expression": "[[:alpha:]]+(?=\\s\\d)"
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "expression": "(?<=\\d\\s)a"
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "expression": "(?i)(a)bc\\s\\1"
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    }
+  ]
+}

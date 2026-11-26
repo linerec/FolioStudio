@@ -1,0 +1,497 @@
+{
+ "detected": {
+  "ascii.csv": [
+   "comma",
+   "ascii"
+  ],
+  "tab.txt": [
+   "tab",
+   "ascii"
+  ],
+  "u16le_tab.txt": [
+   "tab",
+   "unicode"
+  ],
+  "u16le_nobom.csv": [
+   "comma",
+   "unicode"
+  ],
+  "sjis.csv": [
+   "comma",
+   "shiftJis"
+  ],
+  "u8.csv": [
+   "comma",
+   "shiftJis"
+  ],
+  "cp1252.csv": [
+   "comma",
+   "ascii"
+  ],
+  "cp949.csv": [
+   "comma",
+   "ascii"
+  ],
+  "semicolon.csv": [
+   "semicolon",
+   "ascii"
+  ]
+ },
+ "cases": [
+  {
+   "name": "e-ascii",
+   "file": "ascii.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain"
+   ]
+  },
+  {
+   "name": "e-tab",
+   "file": "tab.txt",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain"
+   ]
+  },
+  {
+   "name": "e-u16le",
+   "file": "u16le_tab.txt",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "한글|서울|korean",
+    "日本語|東京|japanese",
+    "Zoë|Köln|latin"
+   ]
+  },
+  {
+   "name": "f-u8-def",
+   "file": "u8.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "﨑懋¸€|懍垪|korean",
+    "譌¥譛¬隱|譚±莠¬|japanese",
+    "ZoÃ«|KÃ¶ln|latin"
+   ]
+  },
+  {
+   "name": "f-u8-uni",
+   "file": "u8.csv",
+   "delimiter": "",
+   "encoding": "unicode",
+   "platform": "",
+   "preserveSpaces": false,
+   "reject": true
+  },
+  {
+   "name": "f-u16lenb-def",
+   "file": "u16le_nobom.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "한글|서울|korean",
+    "日本語|東京|japanese",
+    "Zoë|Köln|latin"
+   ]
+  },
+  {
+   "name": "f-u16lenb-uni",
+   "file": "u16le_nobom.csv",
+   "delimiter": "",
+   "encoding": "unicode",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "한글|서울|korean",
+    "日本語|東京|japanese",
+    "Zoë|Köln|latin"
+   ]
+  },
+  {
+   "name": "g-u16benb-uni",
+   "file": "u16be_nobom.csv",
+   "delimiter": "",
+   "encoding": "unicode",
+   "platform": "",
+   "preserveSpaces": false,
+   "reject": true
+  },
+  {
+   "name": "g-u16benb-mac",
+   "file": "u16be_nobom.csv",
+   "delimiter": "",
+   "encoding": "unicode",
+   "platform": "macintosh",
+   "preserveSpaces": false,
+   "reject": true
+  },
+  {
+   "name": "g-u16lenb-mac",
+   "file": "u16le_nobom.csv",
+   "delimiter": "",
+   "encoding": "unicode",
+   "platform": "macintosh",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "한글|서울|korean",
+    "日本語|東京|japanese",
+    "Zoë|Köln|latin"
+   ]
+  },
+  {
+   "name": "g-u8-ascii-mac",
+   "file": "u8.csv",
+   "delimiter": "",
+   "encoding": "ascii",
+   "platform": "macintosh",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "í•œê¸€|ì„œìš¸|korean",
+    "æ—¥æœ¬èªž|æ ±äº¬|japanese",
+    "ZoÃ«|KÃ¶ln|latin"
+   ]
+  },
+  {
+   "name": "h-sjis-def",
+   "file": "sjis.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Tokyo|plain",
+    "日本語|東京|kanji",
+    "±²³|大阪|kana"
+   ]
+  },
+  {
+   "name": "h-sjis-sjis",
+   "file": "sjis.csv",
+   "delimiter": "",
+   "encoding": "shiftJis",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Tokyo|plain",
+    "日本語|東京|kanji",
+    "±²³|大阪|kana"
+   ]
+  },
+  {
+   "name": "h-1252-def",
+   "file": "cp1252.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "Zoë|Köln|latin"
+   ]
+  },
+  {
+   "name": "h-1252-mac",
+   "file": "cp1252.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "macintosh",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "Zoë|Köln|latin"
+   ]
+  },
+  {
+   "name": "i-949-def",
+   "file": "cp949.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "ÇÑ±Û|¼­¿ï|korean"
+   ]
+  },
+  {
+   "name": "i-semi",
+   "file": "semicolon.csv",
+   "delimiter": "semicolon",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain"
+   ]
+  },
+  {
+   "name": "i-comma-as-tab",
+   "file": "ascii.csv",
+   "delimiter": "tab",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name,City,Note"
+   ],
+   "records": [
+    "Alice,Seoul,plain"
+   ]
+  },
+  {
+   "name": "i-spaces-on",
+   "file": "spaces.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": true,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    " Alice | Seoul |  two  spaces ",
+    "  quoted  |x|y"
+   ]
+  },
+  {
+   "name": "j-spaces-off",
+   "file": "spaces.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": true,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    " Alice | Seoul |  two  spaces ",
+    "  quoted  |x|y"
+   ]
+  },
+  {
+   "name": "j-cr",
+   "file": "cr.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": true,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "Bob|Busan|cr"
+   ]
+  },
+  {
+   "name": "j-lf",
+   "file": "lf.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": true,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "Bob|Busan|lf"
+   ]
+  },
+  {
+   "name": "j-cr-mac",
+   "file": "cr.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "macintosh",
+   "preserveSpaces": true,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "Bob|Busan|cr"
+   ]
+  },
+  {
+   "name": "l-spaces-off",
+   "file": "spaces.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|two  spaces",
+    "quoted|x|y"
+   ]
+  },
+  {
+   "name": "l-u8-ascii",
+   "file": "u8.csv",
+   "delimiter": "",
+   "encoding": "ascii",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "í•œê¸€|ì„œìš¸|korean",
+    "æ—¥æœ¬èªž|æ ±äº¬|japanese",
+    "ZoÃ«|KÃ¶ln|latin"
+   ]
+  },
+  {
+   "name": "l-sjis-ascii",
+   "file": "sjis.csv",
+   "delimiter": "",
+   "encoding": "ascii",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Tokyo|plain",
+    "“ú–{Œê|“Œ‹ž|kanji",
+    "±²³|‘å ã|kana"
+   ]
+  },
+  {
+   "name": "l-1252-sjis",
+   "file": "cp1252.csv",
+   "delimiter": "",
+   "encoding": "shiftJis",
+   "platform": "",
+   "preserveSpaces": false,
+   "fields": [
+    "Name",
+    "City",
+    "Note"
+   ],
+   "records": [
+    "Alice|Seoul|plain",
+    "Zo|Kn|latin"
+   ]
+  },
+  {
+   "name": "e-u8bom",
+   "file": "u8bom.csv",
+   "delimiter": "",
+   "encoding": "",
+   "platform": "",
+   "preserveSpaces": false,
+   "reject": true
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+  "fixture": "pages",
+  "extension": "trapx",
+  "about": "Trap preset assignment to several pages (the 5-page fixture).",
+  "scenarios": [
+    {
+      "name": "trapx-assign-pages",
+      "steps": [
+        {
+          "op": "trapPresetSave",
+          "preset": {
+            "name": "Multi",
+            "default_width": 0.5
+          }
+        },
+        {
+          "op": "trapAssign",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "preset": "TrapPreset/Multi"
+        },
+        {
+          "op": "trapAssign",
+          "pages": [
+            0
+          ],
+          "preset": "TrapPreset/$ID/k[No Trap Preset]"
+        },
+        {
+          "op": "trapAssign",
+          "pages": [
+            4
+          ],
+          "preset": "TrapPreset/$ID/kDefaultTrapStyleName"
+        }
+      ]
+    }
+  ]
+}

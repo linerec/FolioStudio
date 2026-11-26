@@ -1,0 +1,27 @@
+/* The shared number / combo field (numberfield.tsx). */
+.nf { display: inline-flex; align-items: center; gap: 4px; position: relative; }
+.nf-label { color: var(--muted); font-size: var(--fs-sm); user-select: none; }
+.nf-scrub { cursor: ew-resize; user-select: none; }
+body.nf-scrubbing, body.nf-scrubbing * { cursor: ew-resize !important; user-select: none !important; }
+.nf-box { display: inline-flex; align-items: stretch; position: relative; box-sizing: border-box; }
+.nf-input { flex: 1 1 auto; min-width: 0; width: 100%; box-sizing: border-box; padding-right: 4px; }
+.nf-box:hover .nf-buttons, .nf-box:focus-within .nf-buttons { opacity: 1; }
+.nf-buttons { position: absolute; right: 1px; top: 1px; bottom: 1px; display: flex; align-items: stretch; opacity: 0; }
+.nf-spin { display: flex; flex-direction: column; width: 13px; }
+.nf-buttons button { position: relative; padding: 0; margin: 0; border: 0; border-radius: 0; background: var(--field); cursor: default; }
+.nf-buttons button:hover { background: var(--hover); }
+.nf-spin button { flex: 1 1 50%; min-height: 0; }
+.nf-up::after, .nf-down::after, .nf-drop::after { content: ''; position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform: translate(-50%, -50%); border: 3px solid transparent; }
+.nf-up::after { border-bottom: 4px solid var(--muted); border-top-width: 0; }
+.nf-down::after { border-top: 4px solid var(--muted); border-bottom-width: 0; }
+.nf-drop { width: 14px; }
+.nf-drop::after { border-top: 4px solid var(--muted); border-bottom-width: 0; }
+.nf-box:has(.nf-buttons) .nf-input { padding-right: 16px; }
+.nf-box:has(.nf-drop) .nf-input { padding-right: 30px; }
+.nf.disabled .nf-label { opacity: 0.5; cursor: default; }
+.nf-list { position: fixed; z-index: 1000; max-height: 260px; overflow-y: auto; padding: var(--sp-1); background: var(--panel); color: var(--text); border: 1px solid var(--line-dark); border-radius: var(--r-md); box-shadow: var(--shadow-pop); font-size: var(--fs-sm); }
+.nf-item { padding: 2px 8px; border-radius: var(--r-sm); white-space: nowrap; cursor: default; font-variant-numeric: tabular-nums; }
+.nf-item.on { background: var(--accent); color: var(--accent-text); }
+/* inside the control bar's .cp-input: the box fills it and the field's own buttons stand in for its decorative spinner */
+.cp-input .nf, .cp-input .nf-box { width: 100%; }
+.cp-input .nf-input { padding-right: 16px; }

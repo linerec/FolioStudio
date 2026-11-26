@@ -1,0 +1,672 @@
+{
+ "fixture": "docxtext4",
+ "about": "Place an RTF file with tables (w*) or lists (l*): the table, its cells and the list paragraphs come in like InDesign's (docxtext-c5).",
+ "scenarios": [
+  {
+   "name": "docxtext-c5-rtf-w01",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w01.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w02",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w02.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w04",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w04.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w06",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w06.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w07",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w07.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w08",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w08.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w09",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w09.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w10",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w10.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w11",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w11.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w12",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w12.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w13b",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w13b.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w14",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w14.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w15",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w15.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w16",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w16.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w17",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w17.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w19",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w19.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w21",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w21.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-w25",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-w25.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l01",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l01.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l02",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l02.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l03",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l03.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l04",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l04.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l05",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l05.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l06",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l06.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l07",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l07.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l08",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l08.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l09",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l09.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l10",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l10.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l11",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l11.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l13",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l13.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l14",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l14.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l15",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l15.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l16",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l16.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l18",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l18.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l19",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l19.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l20",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l20.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c5-rtf-l21",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext5-l21.rtf",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

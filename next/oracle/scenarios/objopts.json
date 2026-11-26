@@ -1,0 +1,10 @@
+{
+  "fixture": "basic",
+  "extension": "objopts",
+  "scenarios": [
+    {"name":"oo-fitting","steps":[{"op":"setFrameFitting","target":"img","props":{"autoFit":true,"topCrop":2,"bottomCrop":3,"leftCrop":4,"rightCrop":5,"fittingAlignment":"BottomRightAnchor","fittingOnEmptyFrame":"FillProportionally"}}]},
+    {"name":"oo-fitting-empty","steps":[{"op":"setFrameFitting","target":"r-plain","props":{"autoFit":true,"topCrop":-2,"bottomCrop":3,"leftCrop":4,"rightCrop":5,"fittingAlignment":"TopLeftAnchor","fittingOnEmptyFrame":"Proportionally"}}]},
+    {"name":"oo-fitting-clear","steps":[{"op":"setFrameFitting","target":"img","props":{"autoFit":true,"leftCrop":5,"fittingAlignment":"TopLeftAnchor"}},{"op":"clearFrameFitting","target":"img"}]},
+    {"name":"oo-fitting-clear-empty","steps":[{"op":"setFrameFitting","target":"r-plain","props":{"autoFit":true,"rightCrop":8,"fittingOnEmptyFrame":"ContentToFrame"}},{"op":"clearFrameFitting","target":"r-plain"}]}
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "fixture": "basic",
+  "about": "Object > Corner Options: shape and size, all corners or one, removed, on rotated, polygon, oval, text frame.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "corner-rounded-all",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 12,
+            "topRightCornerRadius": 12,
+            "bottomLeftCornerRadius": 12,
+            "bottomRightCornerRadius": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-bevel-all",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.BEVEL_CORNER",
+            "topRightCornerOption": "CornerOptions.BEVEL_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.BEVEL_CORNER",
+            "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+            "topLeftCornerRadius": 20,
+            "topRightCornerRadius": 20,
+            "bottomLeftCornerRadius": 20,
+            "bottomRightCornerRadius": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-fancy-all",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.FANCY_CORNER",
+            "topRightCornerOption": "CornerOptions.FANCY_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.FANCY_CORNER",
+            "bottomRightCornerOption": "CornerOptions.FANCY_CORNER",
+            "topLeftCornerRadius": 15,
+            "topRightCornerRadius": 15,
+            "bottomLeftCornerRadius": 15,
+            "bottomRightCornerRadius": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-inset-all",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.INSET_CORNER",
+            "topRightCornerOption": "CornerOptions.INSET_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.INSET_CORNER",
+            "bottomRightCornerOption": "CornerOptions.INSET_CORNER",
+            "topLeftCornerRadius": 10,
+            "topRightCornerRadius": 10,
+            "bottomLeftCornerRadius": 10,
+            "bottomRightCornerRadius": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-inverse-all",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.INVERSE_ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.INVERSE_ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.INVERSE_ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.INVERSE_ROUNDED_CORNER",
+            "topLeftCornerRadius": 10,
+            "topRightCornerRadius": 10,
+            "bottomLeftCornerRadius": 10,
+            "bottomRightCornerRadius": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-one",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-mixed",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 8,
+            "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+            "bottomRightCornerRadius": 16
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-radius-only",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 12,
+            "topRightCornerRadius": 12,
+            "bottomLeftCornerRadius": 12,
+            "bottomRightCornerRadius": 12
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerRadius": 30,
+            "topRightCornerRadius": 30,
+            "bottomLeftCornerRadius": 30,
+            "bottomRightCornerRadius": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-none",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 12,
+            "topRightCornerRadius": 12,
+            "bottomLeftCornerRadius": 12,
+            "bottomRightCornerRadius": 12
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.NONE",
+            "topRightCornerOption": "CornerOptions.NONE",
+            "bottomLeftCornerOption": "CornerOptions.NONE",
+            "bottomRightCornerOption": "CornerOptions.NONE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-rotated",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 12,
+            "topRightCornerRadius": 12,
+            "bottomLeftCornerRadius": 12,
+            "bottomRightCornerRadius": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-polygon",
+      "steps": [
+        {
+          "op": "set",
+          "target": "poly",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 8,
+            "topRightCornerRadius": 8,
+            "bottomLeftCornerRadius": 8,
+            "bottomRightCornerRadius": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-oval",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 8,
+            "topRightCornerRadius": 8,
+            "bottomLeftCornerRadius": 8,
+            "bottomRightCornerRadius": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-text-frame",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 10,
+            "topRightCornerRadius": 10,
+            "bottomLeftCornerRadius": 10,
+            "bottomRightCornerRadius": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-big-radius",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 200,
+            "topRightCornerRadius": 200,
+            "bottomLeftCornerRadius": 200,
+            "bottomRightCornerRadius": 200
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-br-only",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "bottomRightCornerOption": "CornerOptions.BEVEL_CORNER",
+            "bottomRightCornerRadius": 16
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-none-keeps-radius",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 20,
+            "topRightCornerRadius": 20,
+            "bottomLeftCornerRadius": 20,
+            "bottomRightCornerRadius": 20
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.NONE",
+            "topRightCornerOption": "CornerOptions.NONE",
+            "bottomLeftCornerOption": "CornerOptions.NONE",
+            "bottomRightCornerOption": "CornerOptions.NONE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-radius-no-shape",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topRightCornerRadius": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-one-off",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 20,
+            "topRightCornerRadius": 20,
+            "bottomLeftCornerRadius": 20,
+            "bottomRightCornerRadius": 20
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.NONE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-radius-default",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 20,
+            "topRightCornerRadius": 20,
+            "bottomLeftCornerRadius": 20,
+            "bottomRightCornerRadius": 20
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "topLeftCornerRadius": 12,
+            "topRightCornerRadius": 12,
+            "bottomLeftCornerRadius": 12,
+            "bottomRightCornerRadius": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "corner-text-frame-back",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "bottomRightCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 10,
+            "topRightCornerRadius": 10,
+            "bottomLeftCornerRadius": 10,
+            "bottomRightCornerRadius": 10
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "topLeftCornerOption": "CornerOptions.NONE",
+            "topRightCornerOption": "CornerOptions.NONE",
+            "bottomLeftCornerOption": "CornerOptions.NONE",
+            "bottomRightCornerOption": "CornerOptions.NONE"
+          }
+        }
+      ]
+    }
+  ]
+}

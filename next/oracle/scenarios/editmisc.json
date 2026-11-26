@@ -1,0 +1,12 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {"name":"editmisc-clear-range","text":true,"steps":[{"op":"clearTextOverrides","target":"format","start":7,"end":18}]},
+    {"name":"editmisc-clear-mixed","text":true,"steps":[{"op":"clearTextOverrides","target":"format","start":7,"end":30}]},
+    {"name":"editmisc-clear-caret","text":true,"steps":[{"op":"clearTextOverrides","target":"format","start":8,"end":8}]},
+    {"name":"editmisc-clear-small","text":true,"steps":[{"op":"clearTextOverrides","target":"format","start":2,"end":3}]},
+    {"name":"editmisc-quick-paragraph","text":true,"steps":[{"op":"paragraphStyle","target":"format","start":6,"end":10,"style":"Format Heading","clear":false}]},
+    {"name":"editmisc-quick-character","text":true,"steps":[{"op":"characterStyle","target":"format","start":6,"end":10,"style":"Format Italic","clear":false}]},
+    {"name":"editmisc-quick-object","text":true,"steps":[{"op":"applyObjectStyle","target":"format","style":"$ID/[Normal Graphics Frame]","clear":false}]}
+  ]
+}

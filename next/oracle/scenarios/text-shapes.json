@@ -1,0 +1,18 @@
+{
+  "fixture": "text-shapes",
+  "about": "Where InDesign sets each line in frames that are not rectangles (textAfter lines: start, end, baseline, left, right).",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "ts-lines",
+      "steps": [
+        {
+          "op": "recompose"
+        }
+      ]
+    }
+  ]
+}

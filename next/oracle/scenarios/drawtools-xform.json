@@ -1,0 +1,103 @@
+{
+ "fixture": "pages-xform",
+ "about": "Drawing on spreads and pages with transforms View > Rotate Spread cannot make (an IDML written elsewhere): turned and scaled, scaled, a turned page.",
+ "scenarios": [
+  {
+   "name": "xform-turnscale-rect",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "xform-scale-rect",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 4,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "xform-turnscale-oval",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "ellipse",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "xform-scale-text",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "page": 4,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "xform-scale-poly5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 4,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 0,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  }
+ ]
+}

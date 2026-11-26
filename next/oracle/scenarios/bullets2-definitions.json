@@ -1,0 +1,13 @@
+{
+  "fixture": "text",
+  "extension": "bullets-definitions",
+  "scenarios": [
+    {"name":"bullets2-list-defaults","steps":[
+      {"op":"setNumberingList","id":"","name":"Default options","props":{}}
+    ]},
+    {"name":"bullets2-list-edit-options","steps":[
+      {"op":"setNumberingList","id":"","name":"Shared","props":{}},
+      {"op":"setNumberingList","id":"NumberingList/Shared","name":"Shared","props":{"acrossStories":false,"acrossDocuments":false}}
+    ]}
+  ]
+}

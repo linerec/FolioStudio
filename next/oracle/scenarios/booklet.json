@@ -1,0 +1,19 @@
+{
+  "fixture": "booklet",
+  "extension": "printing-booklet",
+  "comparison": "booklet",
+  "scenarios": [
+    {"name":"booklet-saddle","steps":[],"pdf":false,"options":{"bookletType":"saddle"}},
+    {"name":"booklet-perfect","steps":[],"pdf":false,"options":{"bookletType":"perfectBound","signatureSize":4}},
+    {"name":"booklet-consecutive3","steps":[],"pdf":false,"options":{"bookletType":"consecutive3"}},
+    {"name":"booklet-consecutive4","steps":[],"pdf":false,"options":{"bookletType":"consecutive4"}},
+    {"name":"booklet-gap","steps":[],"pdf":false,"options":{"bookletType":"consecutive2","gap":12}},
+    {"name":"booklet-margins","steps":[],"pdf":false,"options":{"bookletType":"saddle","autoMargins":false,"margins":[10,20,30,40]}},
+    {"name":"booklet-creep","steps":[],"pdf":false,"options":{"bookletType":"saddle","creep":12}},
+    {"name":"booklet-range","steps":[],"pdf":false,"options":{"bookletType":"saddle","range":"+2-+5"}},
+    {"name":"booklet-bleed","steps":[],"pdf":false,"options":{"bookletType":"consecutive2","gap":12,"bleedBetweenPages":6}},
+    {"name":"booklet-saddle-gap","steps":[],"pdf":false,"options":{"bookletType":"saddle","gap":12,"bleedBetweenPages":6}},
+    {"name":"booklet-perfect-gap","steps":[],"pdf":false,"options":{"bookletType":"perfectBound","signatureSize":4,"gap":12,"bleedBetweenPages":6}},
+    {"name":"booklet-no-blank","steps":[],"pdf":false,"options":{"bookletType":"consecutive3","printBlankPrinterSpreads":false}}
+  ]
+}

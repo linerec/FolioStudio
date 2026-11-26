@@ -1,0 +1,10 @@
+{
+  "fixture": "objlayer-c3",
+  "extension": "objlayer-c3",
+  "scenarios": [
+    {"name":"noop", "steps":[]},
+    {"name":"ocg-show-blue", "steps":[{"op":"setGraphicLayerVisibility","target":"ocg","layer":6,"visible":true}]},
+    {"name":"ocg-hide-red", "steps":[{"op":"setGraphicLayerVisibility","target":"ocg","layer":6,"visible":true},{"op":"setGraphicLayerVisibility","target":"ocg","layer":5,"visible":false}]},
+    {"name":"ocg-hide-all", "steps":[{"op":"setGraphicLayerVisibility","target":"ocg","layer":5,"visible":false}]}
+  ]
+}

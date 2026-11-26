@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u14b" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Vertical" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" Composer="HL Composer J" Hyphenation="false">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Swatch/None" Ligatures="false">
+				<Properties>
+					<Leading type="unit">20</Leading>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>첫째 단의 첫 줄</Content>
+				<Br />
+				<Content>첫째 단의 둘째 줄</Content>
+				<Br />
+				<Content>셋째 줄입니다</Content>
+				<Br />
+				<Content>넷째 줄입니다</Content>
+				<Br />
+				<Content>다섯째 줄</Content>
+				<Br />
+				<Content>여섯째 줄</Content>
+				<Br />
+				<Content>일곱째 줄</Content>
+				<Br />
+				<Content>여덟째 줄</Content>
+				<Br />
+				<Content>아홉째 줄</Content>
+				<Br />
+				<Content>열째 줄</Content>
+				<Br />
+				<Content>열한째 줄</Content>
+				<Br />
+				<Content>열두째 줄</Content>
+				<Br />
+				<Content>열셋째 줄</Content>
+				<Br />
+				<Content>열넷째 줄</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

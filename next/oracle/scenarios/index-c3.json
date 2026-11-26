@@ -1,0 +1,451 @@
+{
+  "fixture": "index-c3",
+  "extension": "index-c3",
+  "comparison": "index",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "index-c3-levels",
+      "steps": [
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "L1",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnL1",
+          "name": "L2",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnL1TopicnL2",
+          "name": "L3",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnL1TopicnL2TopicnL3",
+          "name": "L4",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "M1",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnM1",
+          "name": "M2",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnM1TopicnM2",
+          "name": "M3",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 426,
+          "topic": "u1e7TopicnM1TopicnM2TopicnM3",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 34,
+          "topic": "u1e7TopicnL1TopicnL2TopicnL3TopicnL4",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 21,
+          "topic": "u1e7TopicnL1TopicnL2TopicnL3",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 11,
+          "topic": "u1e7TopicnL1TopicnL2",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u1e7TopicnL1",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c3-userstyles",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserTitle",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 20,
+            "fontStyle": "Bold",
+            "spaceAfter": 6
+          }
+        },
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserHead",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 14,
+            "fontStyle": "Bold",
+            "spaceBefore": 9
+          }
+        },
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserL1",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 11,
+            "leftIndent": 11,
+            "firstLineIndent": -11
+          }
+        },
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserL2",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 11,
+            "leftIndent": 22,
+            "firstLineIndent": -11
+          }
+        },
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserL3",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 11,
+            "leftIndent": 33,
+            "firstLineIndent": -11
+          }
+        },
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserL4",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 11,
+            "leftIndent": 44,
+            "firstLineIndent": -11
+          }
+        },
+        {
+          "op": "setIndexGenerationStyles",
+          "title": "ParagraphStyle/UserTitle",
+          "section_heading": "ParagraphStyle/UserHead",
+          "levels": [
+            "ParagraphStyle/UserL1",
+            "ParagraphStyle/UserL2",
+            "ParagraphStyle/UserL3",
+            "ParagraphStyle/UserL4"
+          ]
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "A1",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnA1",
+          "name": "B2",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnA1TopicnB2",
+          "name": "C3",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnA1TopicnB2TopicnC3",
+          "name": "D4",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 34,
+          "topic": "u1e7TopicnA1TopicnB2TopicnC3TopicnD4",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 21,
+          "topic": "u1e7TopicnA1TopicnB2TopicnC3",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 11,
+          "topic": "u1e7TopicnA1TopicnB2",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u1e7TopicnA1",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c3-userstyles-partial",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "UserL1",
+          "props": {
+            "appliedFont": "Malgun Gothic",
+            "pointSize": 11,
+            "leftIndent": 11,
+            "firstLineIndent": -11
+          }
+        },
+        {
+          "op": "setIndexGenerationStyles",
+          "title": "",
+          "section_heading": "",
+          "levels": [
+            "ParagraphStyle/UserL1"
+          ]
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "A1",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "u1e7TopicnA1",
+          "name": "B2",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 11,
+          "topic": "u1e7TopicnA1TopicnB2",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u1e7TopicnA1",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c3-latin",
+      "steps": [
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Çedilla",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Cat",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Ñandu",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Nap",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Øre",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Über",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Uber",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 426,
+          "topic": "u1e7TopicnÇedilla",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 416,
+          "topic": "u1e7TopicnCat",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 402,
+          "topic": "u1e7TopicnÑandu",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 34,
+          "topic": "u1e7TopicnNap",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 21,
+          "topic": "u1e7TopicnØre",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 11,
+          "topic": "u1e7TopicnÜber",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u1e7TopicnUber",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    }
+  ]
+}

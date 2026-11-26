@@ -1,0 +1,40 @@
+[package]
+name = "folio-pdf"
+description = "Print output: PDF/X-4, PDF/X-1a and PDF/X-3 in the document's own inks"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+folio-text.workspace = true
+folio-idml.workspace = true
+folio-links.workspace = true
+folio-color.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+# PDF object writer (typst project). MIT OR Apache-2.0.
+pdf-writer = "=0.15.0"
+# OpenType subsetting for embedding, incl. instancing variable fonts (typst project). MIT OR Apache-2.0.
+subsetter = "=0.2.6"
+# Font tables (widths, cmap, GSUB) for embedding; already used by folio-text. MIT OR Apache-2.0.
+ttf-parser = "=0.25.1"
+# Flate for content, fonts and images; same pure-Rust zlib backend the workspace builds.
+flate2 = { version = "=1.1.10", default-features = false, features = ["zlib-rs"] }
+# Linked image decoding (PNG, TIFF); same versions the renderer uses. MIT OR Apache-2.0.
+image = { version = "=0.25.10", default-features = false, features = ["png", "jpeg", "bmp"] }
+tiff = "=0.11.3"
+weezl = "=0.1.12"
+# Placed PDF / AI pages copied as Form XObjects. MIT. No default features: no clock, no threads.
+lopdf = { version = "=0.45.0", default-features = false }
+# Rasterising silhouettes for live effects (drop shadow, glow, feather); the renderer's version.
+tiny-skia = "=0.12.0"
+# The effect rasteriser shared with the screen (silhouettes, blur, inner effects).
+folio-render.workspace = true
+# Baseline JPEG for images PDF/X-1a converts to CMYK (InDesign: "Automatic (JPEG), Maximum" = quality 95).
+# (MIT OR Apache-2.0) AND IJG: "this software is based in part on the work of the Independent JPEG Group".
+jpeg-encoder = { version = "=0.7.1", default-features = false, features = ["std"] }
+
+[[bin]]
+name = "folio-pdf"
+path = "src/bin/folio-pdf.rs"

@@ -1,0 +1,103 @@
+{
+ "fixture": "typepath-c6-poly",
+ "extension": "textpath",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "typepath-c10-poly-mid-top",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "100",
+      "EndBracket": "700"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-poly-mid-bottom",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "100",
+      "EndBracket": "700"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-poly-late-top",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "500",
+      "EndBracket": "950"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "TopPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-poly-late-bottom",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "StartBracket": "500",
+      "EndBracket": "950"
+     }
+    },
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathAlignment": "BottomPathAlignment"
+     }
+    }
+   ]
+  },
+  {
+   "name": "typepath-c10-poly-spacing8",
+   "steps": [
+    {
+     "op": "setTextPathOptions",
+     "target": "path",
+     "props": {
+      "PathSpacing": "8"
+     }
+    }
+   ]
+  }
+ ],
+ "about": "Closed clockwise pentagon (stroke 6, miter join) against InDesign 2025: path alignment Top/Bottom (typepath-c10). Start 0 on the closing vertex of a non-rectangle is a numeric tie in InDesign (start 0 or the offset length), so those ranges are not in the set; ranges that end within a trimmed inner corner come out as a tiny difference of two float32 sums (0.8285 past the offset length), too small for the oracle's 1e-6 tolerance, and stay out too (unit test in model/src/textpath.rs). Pentagon spacing -6 (inward offset on a polygon) stays out: print change error 1.13, the cause is not found (a rectangle's -6 and -12 pass, 0.12)."
+}

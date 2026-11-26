@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u12d" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="true" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>AB</Content>
+				<Change Date="2026-10-22T21:22:43" ChangeType="InsertedText" UserName="Reviewer A" AppliedDocumentUser="dDocumentUser1">
+					<Content>x</Content>
+				</Change>
+				<Change Date="2026-10-22T22:16:56" ChangeType="InsertedText" UserName="Reviewer B" AppliedDocumentUser="dDocumentUser0">
+					<Content> memo </Content>
+				</Change>
+				<Change Date="2026-10-22T21:22:43" ChangeType="InsertedText" UserName="Reviewer A" AppliedDocumentUser="dDocumentUser1">
+					<Content>y</Content>
+				</Change>
+				<Change Date="2026-10-22T21:22:43" ChangeType="DeletedText" UserName="Reviewer B" AppliedDocumentUser="dDocumentUser0">
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content>CD</Content>
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+				</Change>
+				<Content>E</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

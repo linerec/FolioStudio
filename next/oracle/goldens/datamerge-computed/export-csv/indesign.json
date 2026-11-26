@@ -1,0 +1,97 @@
+{
+ "source": "artifacts/mergeexpr-c1-20261023/indesign/*-probe.json (next/oracle/indesign/mergeexpr-export-probe.jsx, InDesign 2025 20.5.5.119)",
+ "what": "an IDML Folio exported for a document with Data Merge computed fields, opened in InDesign (copy, hidden, not saved): the data source is the CSV of values Folio wrote",
+ "cases": {
+  "utf16": {
+   "csv": "UTF-16 LE with a byte order mark, comma separated, no DataSourceFileType",
+   "fields": [
+    [
+     "성",
+     "TEXT_FIELD"
+    ],
+    [
+     "이름",
+     "TEXT_FIELD"
+    ],
+    [
+     "가격",
+     "TEXT_FIELD"
+    ],
+    [
+     "재고",
+     "TEXT_FIELD"
+    ],
+    [
+     "코드",
+     "TEXT_FIELD"
+    ],
+    [
+     "날짜",
+     "TEXT_FIELD"
+    ],
+    [
+     "사진",
+     "IMAGE_FIELD"
+    ],
+    [
+     "이름 전체",
+     "TEXT_FIELD"
+    ],
+    [
+     "가격표",
+     "TEXT_FIELD"
+    ],
+    [
+     "그림",
+     "IMAGE_FIELD"
+    ],
+    [
+     "상태",
+     "TEXT_FIELD"
+    ],
+    [
+     "라벨",
+     "TEXT_FIELD"
+    ]
+   ],
+   "textPlaceholders": 1,
+   "mergedPages": 3,
+   "mergedStories": [
+    "김 철수 · 15,000원",
+    "이 영희 · 8,000원",
+    "박 민수 ·"
+   ]
+  },
+  "ascii": {
+   "csv": "ASCII, comma separated, DataSourceFileType=CommaSeparated",
+   "fields": [
+    [
+     "First",
+     "TEXT_FIELD"
+    ],
+    [
+     "Last",
+     "TEXT_FIELD"
+    ],
+    [
+     "Code",
+     "TEXT_FIELD"
+    ],
+    [
+     "Full",
+     "TEXT_FIELD"
+    ],
+    [
+     "Link",
+     "QRCODE_FIELD"
+    ]
+   ],
+   "textPlaceholders": 1,
+   "mergedPages": 2,
+   "mergedStories": [
+    "Ada LOVELACE",
+    "Alan TURING, A."
+   ]
+  }
+ }
+}

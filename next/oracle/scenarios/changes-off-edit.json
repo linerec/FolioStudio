@@ -1,0 +1,8 @@
+{
+  "fixture":"editorial", "extension":"changes", "scenarios":[
+    {"name":"changes-off-type","text":true,"steps":[{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"insertTextAs","target":"body-0","at":1,"text":"Q","user":"Reviewer B","date":"2026-10-22T22:00:00"}]},
+    {"name":"changes-off-type-inside","text":true,"steps":[{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"insertTextAs","target":"body-0","at":3,"text":"Q","user":"Reviewer B","date":"2026-10-22T22:00:00"}]},
+    {"name":"changes-off-delete","text":true,"steps":[{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"deleteTextAs","target":"body-0","start":1,"end":3,"user":"Reviewer B","date":"2026-10-22T22:00:00"}]},
+    {"name":"changes-off-delete-across","text":true,"steps":[{"op":"setTrackChanges","target":"body-0","document":false,"enabled":false},{"op":"deleteTextAs","target":"body-0","start":3,"end":5,"user":"Reviewer B","date":"2026-10-22T22:00:00"}]}
+  ]
+}

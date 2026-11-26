@@ -1,0 +1,122 @@
+{
+ "fixture": "charpanel-c3",
+ "about": "Character panel Language: the language changes the hyphenation dictionary (and nothing else that shows).",
+ "scenarios": [
+  {
+   "name": "cp-lang-uk",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "appliedLanguage": "English: UK"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "cp-lang-none",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "appliedLanguage": "[No Language]"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-lang-german",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "appliedLanguage": "German: Reformed"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "cp-lang-french",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "appliedLanguage": "French"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "cp-lang-spanish",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "appliedLanguage": "Spanish: Castilian"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "cp-lang-part",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 40,
+     "props": {
+      "appliedLanguage": "[No Language]"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-lang-usa",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 0,
+     "end": 102,
+     "props": {
+      "appliedLanguage": "English: USA"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-lang-p2",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "hyph",
+     "start": 103,
+     "end": 175,
+     "props": {
+      "appliedLanguage": "[No Language]"
+     }
+    }
+   ]
+  }
+ ]
+}

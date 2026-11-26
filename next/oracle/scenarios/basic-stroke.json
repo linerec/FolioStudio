@@ -1,0 +1,645 @@
+{
+  "fixture": "basic",
+  "about": "Stroke panel: cap, join, miter limit, alignment, stroke type, arrowheads, gap colour.",
+  "scenarios": [
+    {
+      "name": "stroke-cap-round",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "endCap": "EndCap.ROUND_END_CAP",
+            "strokeWeight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-cap-projecting",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "endCap": "EndCap.PROJECTING_END_CAP",
+            "strokeWeight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-join-round",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "endJoin": "EndJoin.ROUND_END_JOIN",
+            "strokeWeight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-join-bevel",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "endJoin": "EndJoin.BEVEL_END_JOIN",
+            "strokeWeight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-miter",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "miterLimit": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-inside",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeAlignment": "StrokeAlignment.INSIDE_ALIGNMENT",
+            "strokeWeight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-outside",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeAlignment": "StrokeAlignment.OUTSIDE_ALIGNMENT",
+            "strokeWeight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-dashed",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Dashed",
+            "strokeWeight": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-dotted",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Dotted",
+            "strokeWeight": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-thick-thin",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Thick - Thin",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-back-solid",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Dashed",
+            "strokeWeight": 2
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Solid"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-arrow-start",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "leftLineEnd": "ArrowHead.TRIANGLE_ARROW_HEAD",
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-arrow-end",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "rightLineEnd": "ArrowHead.CIRCLE_SOLID_ARROW_HEAD",
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-arrow-scale",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "leftLineEnd": "ArrowHead.TRIANGLE_ARROW_HEAD",
+            "leftArrowHeadScale": 200,
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-gap-color",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Dashed",
+            "strokeWeight": 3,
+            "gapColor": "Oracle Blue",
+            "gapTint": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-thick-thick",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Thick - Thick",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-thick-thin-thick",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Thick - Thin - Thick",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-thin-thick",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Thin - Thick",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-thin-thick-thin",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Thin - Thick - Thin",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-thin-thin",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Thin - Thin",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-triple",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Triple",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-dashed-3-2",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Dashed (3 and 2)",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-dashed-4-4",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Dashed (4 and 4)",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-left-slant-hash",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Left Slant Hash",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-right-slant-hash",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Right Slant Hash",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-straight-hash",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Straight Hash",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-wavy",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Wavy",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-white-diamond",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "White Diamond",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-japanese-dots",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Japanese Dots",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-inside-round",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 12,
+            "strokeAlignment": "StrokeAlignment.INSIDE_ALIGNMENT",
+            "endJoin": "EndJoin.ROUND_END_JOIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-outside-round",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 12,
+            "strokeAlignment": "StrokeAlignment.OUTSIDE_ALIGNMENT",
+            "endJoin": "EndJoin.ROUND_END_JOIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-outside-bevel",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 12,
+            "strokeAlignment": "StrokeAlignment.OUTSIDE_ALIGNMENT",
+            "endJoin": "EndJoin.BEVEL_END_JOIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-inside-oval",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeColor": "Black",
+            "strokeWeight": 12,
+            "strokeAlignment": "StrokeAlignment.INSIDE_ALIGNMENT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-outside-oval",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeColor": "Black",
+            "strokeWeight": 12,
+            "strokeAlignment": "StrokeAlignment.OUTSIDE_ALIGNMENT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-align-outside-poly",
+      "steps": [
+        {
+          "op": "set",
+          "target": "poly",
+          "props": {
+            "strokeWeight": 8,
+            "strokeAlignment": "StrokeAlignment.OUTSIDE_ALIGNMENT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-weight-unstroked",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-weight-unstroked-again",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeWeight": 4
+          }
+        },
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeColor": "None"
+          }
+        },
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-wavy-r-plain-4",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Wavy",
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-wavy-r-plain-8",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Wavy",
+            "strokeWeight": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-wavy-r-plain-10",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "Wavy",
+            "strokeWeight": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-wavy-line-6",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "strokeType": "Wavy",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-wavy-oval-6",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeColor": "Black",
+            "strokeType": "Wavy",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-white-diamond-r-plain-4",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "White Diamond",
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-white-diamond-r-plain-8",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "White Diamond",
+            "strokeWeight": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-white-diamond-r-plain-10",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeType": "White Diamond",
+            "strokeWeight": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-white-diamond-line-6",
+      "steps": [
+        {
+          "op": "set",
+          "target": "line",
+          "props": {
+            "strokeType": "White Diamond",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-type-white-diamond-oval-6",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeColor": "Black",
+            "strokeType": "White Diamond",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    }
+  ]
+}

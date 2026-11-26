@@ -1,0 +1,186 @@
+{
+  "fixture": "index-c2",
+  "extension": "index-c2",
+  "comparison": "index",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {
+      "name": "index-c2-range-end",
+      "steps": [
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-no-headings",
+      "steps": [
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "찾아보기",
+          "headings": false,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-replace",
+      "steps": [
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "찾아보기",
+          "headings": false,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-new",
+      "steps": [
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": false,
+          "title": "Second",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-range-merge",
+      "steps": [
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 15,
+          "topic": "u176TopicnRange",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-range-suppress",
+      "steps": [
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Hidden",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 15,
+          "topic": "u176TopicnHidden",
+          "kind": "SuppressPageNumbers",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-deduplicate",
+      "steps": [
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Alpha",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 5,
+          "topic": "u176TopicnAlpha",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 8,
+          "topic": "u176TopicnAlpha",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Unused",
+          "sort_order": ""
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    }
+  ]
+}

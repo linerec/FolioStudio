@@ -1,0 +1,111 @@
+{
+  "title": "패스에 입력 옵션",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "textPathOptions",
+  "okDisabledWhen": { "supported": false },
+  "distinct": [["StartBracket", "EndBracket"]],
+  "description": "Type > Type on a Path > Options: the path alignment, effect, text alignment, flip, spacing and the start and end brackets (points along the path) of one text on a path. The values start from the path; OK sends all seven as IDML writes them. A path Folio does not edit yet (threaded, or a shape it cannot follow) opens read-only, and the two brackets may not be equal.",
+  "fields": [
+    {
+      "name": "supported",
+      "type": "boolean",
+      "default": true,
+      "hidden": true
+    },
+    {
+      "name": "PathAlignment",
+      "label": "패스 정렬",
+      "type": "enum",
+      "default": "CenterPathAlignment",
+      "options": [
+        { "value": "TopPathAlignment", "label": "위" },
+        { "value": "CenterPathAlignment", "label": "가운데" },
+        { "value": "BottomPathAlignment", "label": "아래" }
+      ],
+      "disabledWhen": { "supported": false }
+    },
+    {
+      "name": "PathEffect",
+      "label": "패스 글자 효과",
+      "type": "enum",
+      "default": "RainbowPathEffect",
+      "options": [
+        { "value": "RainbowPathEffect", "label": "무지개" },
+        { "value": "SkewPathEffect", "label": "비스듬히" },
+        { "value": "RibbonPathEffect", "label": "3D 리본" },
+        { "value": "StairStepPathEffect", "label": "계단" },
+        { "value": "GravityPathEffect", "label": "중력" }
+      ],
+      "disabledWhen": { "supported": false }
+    },
+    {
+      "name": "TextAlignment",
+      "label": "패스 글자 정렬",
+      "type": "enum",
+      "default": "BaselineTextAlignment",
+      "options": [
+        { "value": "AscenderTextAlignment", "label": "위" },
+        { "value": "DescenderTextAlignment", "label": "아래" },
+        { "value": "CenterTextAlignment", "label": "가운데" },
+        { "value": "BaselineTextAlignment", "label": "기준선" }
+      ],
+      "disabledWhen": { "supported": false }
+    },
+    {
+      "name": "FlipPathEffect",
+      "label": "패스 글자 뒤집기",
+      "type": "boolean",
+      "default": false,
+      "disabledWhen": { "supported": false }
+    },
+    {
+      "name": "PathSpacing",
+      "label": "패스 글자 간격 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": -100000,
+      "max": 100000,
+      "disabledWhen": { "supported": false }
+    },
+    {
+      "name": "StartBracket",
+      "label": "시작 괄호 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "disabledWhen": { "supported": false }
+    },
+    {
+      "name": "EndBracket",
+      "label": "끝 괄호 (pt)",
+      "type": "number",
+      "default": 100,
+      "min": 0,
+      "max": 1000000,
+      "disabledWhen": { "supported": false }
+    }
+  ],
+  "note": [
+    "여러 마디로 된 열린 패스의 효과·뒤집기·글자 정렬·간격, 닫힌 도형(사각형·다각형·타원)의 글 배치·뒤집기·글 만들기·간격(모서리에서 둥글게 돌아감)·한 바퀴 감기는 시작·끝 괄호(끝이 시작보다 앞), 직선 변으로 된 닫힌 도형(사각형·다각형)의 패스 정렬(위·아래: 글이 선 윤곽을 따라 걷고 괄호가 새 윤곽 길이로 옮겨짐), 두 패스에 걸친 글 표시를 지원합니다.",
+    { "text": "이 패스의 옵션은 아직 편집할 수 없습니다. 원문은 보존됩니다.", "when": { "supported": false } }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setTextPathOptions",
+        "ids": "$ids",
+        "props": {
+          "PathAlignment": "$PathAlignment",
+          "TextAlignment": "$TextAlignment",
+          "PathEffect": "$PathEffect",
+          "FlipPathEffect": { "$if": "FlipPathEffect", "then": "Flipped", "else": "NotFlipped" },
+          "PathSpacing": { "$": "PathSpacing", "text": true },
+          "StartBracket": { "$": "StartBracket", "text": true },
+          "EndBracket": { "$": "EndBracket", "text": true }
+        }
+      }
+    ]
+  }
+}

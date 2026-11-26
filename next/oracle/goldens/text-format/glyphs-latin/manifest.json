@@ -1,0 +1,45 @@
+{
+  "fixture": "text-format",
+  "scenario": "glyphs-latin",
+  "indesign": "20.5.5.119",
+  "measured": "2026-10-26",
+  "os": "Windows",
+  "fixtureSha256": "734a31b444eef4fef24a6da7f78e1bf595db8a883a0de4831a1fea8a42dbefa6",
+  "runnerSha256": "577d465de52f7fa40d46eca9ad5589ea557c59033916f1d1aaca3f9670f58d96",
+  "repeatRunnerSha256": "6254013de4d141d33ca307875bada93c38ce46f68cba08241c47d5afd4bda863",
+  "captureSha256": "3bca9a5fdd71c26387577519c988f94e82361be03ad8332dd5eead62aae1dc50",
+  "repeatIdentical": true,
+  "repeatEquivalent": true,
+  "normalization": "none",
+  "pdfPreset": "[PDF/X-4:2008]",
+  "hiddenDocument": true,
+  "closedWithoutSaving": true,
+  "preferences": {
+    "dimensionsIncludeStrokeWeight": true,
+    "transformPrefsBefore": {
+      "adjustStrokeWeightWhenScaling": "true",
+      "adjustEffectsWhenScaling": "true",
+      "dimensionsIncludeStrokeWeight": "true",
+      "transformsAreTotals": "ERR Object does not support the property or method 'transformsAreTotals'",
+      "whenScaling": "APPLY_TO_CONTENT"
+    }
+  },
+  "raw": {
+    "first": {
+      "after.idml": "7395ab67f9800dfaaa96dbe7fff8267263651f1d02debfbd3a32f787193452a2",
+      "after.pdf": "f7d0c41cce7ebab51a554a0387b2766811c4c9e3da11e71bed7a7f5bcc407633",
+      "before.idml": "17d95c6794085fd4b0474d19b233d1268a4b82f59a1c2aa34e11c47dcd8c2fd5",
+      "indesign.json": "0b0b88163e71c7bff05287e4409a6a213a14c36e226731c69e025df26e3a185f"
+    },
+    "repeat": {
+      "after.idml": "99d9744101c29988243fb560c866899a8dfa8b60a9f418ece3d81b13a11dcbba",
+      "after.pdf": "00e3ce867be6f0c185544a42bafdf8f7fa9e0e62018461b56741d55750d4f76d",
+      "before.idml": "c14e944e760de1663513c06b2e24db4918c71655d51d292064d4d6fed6ca00e7",
+      "indesign.json": "0b0b88163e71c7bff05287e4409a6a213a14c36e226731c69e025df26e3a185f"
+    }
+  },
+  "rawArchive": "artifacts/glyphs-20261023/raw/<sha256>.<extension>",
+  "history": [
+    "Initial new-case capture; second capture in separate staging, accepted goldens unchanged."
+  ]
+}

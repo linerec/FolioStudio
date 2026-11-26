@@ -1,0 +1,406 @@
+{
+  "fixture": "basic-create",
+  "about": "Native new page items, document defaults, geometry, active layer and new Story.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "create-rectangle",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-ellipse",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "ellipse",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-polygon",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-line",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "line",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-rectangleFrame",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangleFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-ellipseFrame",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "ellipseFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-polygonFrame",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "polygonFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-textFrame",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-page-1",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 1,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-page-2",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 2,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-line-horizontal",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "line",
+          "page": 0,
+          "rect": [
+            80,
+            220,
+            240,
+            220
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-line-vertical",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "line",
+          "page": 0,
+          "rect": [
+            120,
+            200,
+            120,
+            360
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-line-reverse",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "line",
+          "page": 0,
+          "rect": [
+            240,
+            300,
+            80,
+            200
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-line-diagonal45",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "line",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            180,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-polygon-3",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 3,
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-polygon-5",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 5,
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-polygon-8",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 8,
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-square",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            180,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-circle-center",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "ellipse",
+          "page": 0,
+          "rect": [
+            40,
+            160,
+            120,
+            240
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-layer-top",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "layer": "Top",
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        }
+      ]
+    },
+    {
+      "name": "create-text-and-type",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 2,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        },
+        {
+          "op": "insertText",
+          "target": "created",
+          "at": 0,
+          "text": "New frame. ??\rSecond line."
+        }
+      ]
+    },
+    {
+      "name": "create-twice",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "one"
+        },
+        {
+          "op": "createItem",
+          "kind": "ellipse",
+          "page": 0,
+          "rect": [
+            160,
+            250,
+            280,
+            350
+          ],
+          "label": "two"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "fixture": "text-format",
+  "about": "Document type sizes change composed glyphs.",
+  "scenarios": [
+    {
+      "name": "prefs-print-superscript",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "SUPERSCRIPT"
+          }
+        },
+        {
+          "op": "setDocPrefs",
+          "props": {
+            "TextPreference.SuperscriptSize": 80,
+            "TextPreference.SuperscriptPosition": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "prefs-print-subscript",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "position": "SUBSCRIPT"
+          }
+        },
+        {
+          "op": "setDocPrefs",
+          "props": {
+            "TextPreference.SubscriptSize": 75,
+            "TextPreference.SubscriptPosition": -20
+          }
+        }
+      ]
+    },
+    {
+      "name": "prefs-print-smallcaps",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "capitalization": "SMALL_CAPS"
+          }
+        },
+        {
+          "op": "setDocPrefs",
+          "props": {
+            "TextPreference.SmallCap": 90
+          }
+        }
+      ]
+    }
+  ]
+}

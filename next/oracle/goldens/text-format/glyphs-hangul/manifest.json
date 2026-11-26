@@ -1,0 +1,45 @@
+{
+  "fixture": "text-format",
+  "scenario": "glyphs-hangul",
+  "indesign": "20.5.5.119",
+  "measured": "2026-10-26",
+  "os": "Windows",
+  "fixtureSha256": "734a31b444eef4fef24a6da7f78e1bf595db8a883a0de4831a1fea8a42dbefa6",
+  "runnerSha256": "577d465de52f7fa40d46eca9ad5589ea557c59033916f1d1aaca3f9670f58d96",
+  "repeatRunnerSha256": "6254013de4d141d33ca307875bada93c38ce46f68cba08241c47d5afd4bda863",
+  "captureSha256": "3bca9a5fdd71c26387577519c988f94e82361be03ad8332dd5eead62aae1dc50",
+  "repeatIdentical": true,
+  "repeatEquivalent": true,
+  "normalization": "none",
+  "pdfPreset": "[PDF/X-4:2008]",
+  "hiddenDocument": true,
+  "closedWithoutSaving": true,
+  "preferences": {
+    "dimensionsIncludeStrokeWeight": true,
+    "transformPrefsBefore": {
+      "adjustStrokeWeightWhenScaling": "true",
+      "adjustEffectsWhenScaling": "true",
+      "dimensionsIncludeStrokeWeight": "true",
+      "transformsAreTotals": "ERR Object does not support the property or method 'transformsAreTotals'",
+      "whenScaling": "APPLY_TO_CONTENT"
+    }
+  },
+  "raw": {
+    "first": {
+      "after.idml": "09e39e6fe48d04e00b2d7150a170860a07fbb1af4ab9d333a6b0c5c0976e1b30",
+      "after.pdf": "6691a50ea9586b700dc87238f58e6c61edf9516ae7a16669bfc0fb7fec740db3",
+      "before.idml": "26e73ae70fd8cadd8461abad7aa525ee41f3d14816c244f54fe7ed6416de5eb6",
+      "indesign.json": "086a6a5f3bd209c20685241b1116cc829bb45fe6092e3b3883ba41602bc03fa6"
+    },
+    "repeat": {
+      "after.idml": "c7671dd884353a0a1c33ee26085c7bf0bd0a0da5a40e0cbbf300726676130325",
+      "after.pdf": "165cc068c0a828c90a57954245c847e809d591496aabfa8f85a934a5c374f31a",
+      "before.idml": "f5eff0b9c25e9a1270da930331d8664302f828e91bc0abd615accb15807595ab",
+      "indesign.json": "086a6a5f3bd209c20685241b1116cc829bb45fe6092e3b3883ba41602bc03fa6"
+    }
+  },
+  "rawArchive": "artifacts/glyphs-20261023/raw/<sha256>.<extension>",
+  "history": [
+    "Initial new-case capture; second capture in separate staging, accepted goldens unchanged."
+  ]
+}

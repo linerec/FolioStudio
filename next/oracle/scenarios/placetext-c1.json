@@ -1,0 +1,140 @@
+{
+ "fixture": "text",
+ "about": "Place a text file (.txt) into a text frame or a new frame: encodings, line ends, quotes (placetext-c1).",
+ "scenarios": [
+  {
+   "name": "placetext-txt-utf8bom",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-utf8-bom.txt",
+     "target": "mixed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-txt-ansi",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-utf8.txt",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-newframe",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-utf16le.txt",
+     "page": 0,
+     "rect": [
+      100,
+      100,
+      300,
+      200
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-txt-crlf-end",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-crlf-end.txt",
+     "target": "special",
+     "txt": {
+      "characterSet": "TextImportCharacterSet.UTF8"
+     }
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-txt-quotes",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-quotes.txt",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-strip-both",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-wrapped.txt",
+     "target": "korean",
+     "txt": {
+      "stripReturnsBetweenLines": true,
+      "stripReturnsBetweenParagraphs": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-spaces-tabs",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-spaces.txt",
+     "target": "korean",
+     "txt": {
+      "convertSpacesIntoTabs": true,
+      "spacesIntoTabsCount": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-trailing-korean",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-wrapped.txt",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-trailing-mixed",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-wrapped.txt",
+     "target": "mixed"
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-drop-controls",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-drop.txt",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-txt-invalid-utf8",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-badutf8.txt",
+     "target": "korean",
+     "txt": {
+      "characterSet": "TextImportCharacterSet.UTF8"
+     }
+    }
+   ]
+  }
+ ]
+}

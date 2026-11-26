@@ -1,0 +1,701 @@
+{
+ "fixture": "tables",
+ "about": "Table Options > Row Strokes / Column Strokes / Fills (alternating patterns): the table's attributes, written where they differ from the applied table style; the DOM's table properties one by one (the pattern is the counts; `alternatingFills` writes no attribute).",
+ "scenarios": [
+  {
+   "name": "alt-fill-rows",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "startRowFillTint": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-rows-colors",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 2,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "endRowFillColor": "Oracle Blue",
+      "endRowFillTint": 50,
+      "endRowFillOverprint": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-rows-skip",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Blue",
+      "skipFirstAlternatingFillRows": 1,
+      "skipLastAlternatingFillRows": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-columns",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnFillCount": 1,
+      "endColumnFillCount": 1,
+      "startColumnFillColor": "Oracle Blue",
+      "startColumnFillTint": 40,
+      "columnFillsPriority": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-both",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "startColumnFillCount": 1,
+      "endColumnFillCount": 1,
+      "startColumnFillColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-both-columns-first",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "startColumnFillCount": 1,
+      "endColumnFillCount": 1,
+      "startColumnFillColor": "Oracle Blue",
+      "columnFillsPriority": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-off",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "startRowFillTint": 30
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 0,
+      "endRowFillCount": 0,
+      "startRowFillColor": "Black",
+      "startRowFillTint": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-count-back",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 2,
+      "startRowFillTint": 60
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillTint": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 3,
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 1,
+      "endRowStrokeColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-dashed",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 2,
+      "startRowStrokeType": "Dashed",
+      "startRowStrokeColor": "Oracle Blue",
+      "startRowStrokeGapColor": "Oracle Orange",
+      "startRowStrokeGapTint": 50,
+      "startRowStrokeTint": 80
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-skip",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 2,
+      "startRowStrokeWeight": 4,
+      "startRowStrokeColor": "Oracle Orange",
+      "skipFirstAlternatingStrokeRows": 1,
+      "skipLastAlternatingStrokeRows": 1,
+      "startRowStrokeOverprint": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-column-stroke",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnStrokeCount": 1,
+      "endColumnStrokeCount": 1,
+      "startColumnStrokeWeight": 3,
+      "startColumnStrokeColor": "Oracle Blue",
+      "endColumnStrokeWeight": 1,
+      "endColumnStrokeColor": "Oracle Orange"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-column-stroke-dotted",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnStrokeCount": 1,
+      "endColumnStrokeCount": 1,
+      "startColumnStrokeWeight": 2,
+      "startColumnStrokeType": "Dotted",
+      "startColumnStrokeColor": "Oracle Orange",
+      "endColumnStrokeWeight": 2,
+      "endColumnLineStyle": "Dashed",
+      "endColumnStrokeColor": "Oracle Blue",
+      "endColumnStrokeGapColor": "Oracle Orange"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-column-stroke-skip",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnStrokeCount": 1,
+      "endColumnStrokeCount": 1,
+      "startColumnStrokeWeight": 3,
+      "startColumnStrokeColor": "Oracle Orange",
+      "skipFirstAlternatingStrokeColumns": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-strokes-and-fills",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Blue",
+      "startRowFillTint": 25
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 2,
+      "startRowStrokeColor": "Oracle Orange"
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnStrokeCount": 1,
+      "endColumnStrokeCount": 1,
+      "endColumnStrokeWeight": 2,
+      "endColumnStrokeColor": "Oracle Orange"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-header-two-fills",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "headerRowCount": 2
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-eight",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addRows",
+     "at": 3,
+     "count": 5,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 4,
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 1,
+      "endRowStrokeColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-skip-both",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addRows",
+     "at": 3,
+     "count": 5,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 4,
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 1,
+      "endRowStrokeColor": "Oracle Blue",
+      "skipFirstAlternatingStrokeRows": 2,
+      "skipLastAlternatingStrokeRows": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-skip-first",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addRows",
+     "at": 3,
+     "count": 5,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 4,
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 1,
+      "endRowStrokeColor": "Oracle Blue",
+      "skipFirstAlternatingStrokeRows": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-skip-last",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addRows",
+     "at": 3,
+     "count": 5,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 4,
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 1,
+      "endRowStrokeColor": "Oracle Blue",
+      "skipLastAlternatingStrokeRows": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-2-1-skip",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addRows",
+     "at": 3,
+     "count": 5,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 2,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 4,
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 1,
+      "endRowStrokeColor": "Oracle Blue",
+      "skipFirstAlternatingStrokeRows": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-column-stroke-skip-both",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addColumns",
+     "at": 2,
+     "count": 3,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnStrokeCount": 1,
+      "endColumnStrokeCount": 1,
+      "startColumnStrokeWeight": 4,
+      "startColumnStrokeColor": "Oracle Orange",
+      "endColumnStrokeWeight": 1,
+      "endColumnStrokeColor": "Oracle Blue",
+      "skipFirstAlternatingStrokeColumns": 1,
+      "skipLastAlternatingStrokeColumns": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-column-stroke-six",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addColumns",
+     "at": 2,
+     "count": 3,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnStrokeCount": 1,
+      "endColumnStrokeCount": 1,
+      "startColumnStrokeWeight": 4,
+      "startColumnStrokeColor": "Oracle Orange",
+      "endColumnStrokeWeight": 1,
+      "endColumnStrokeColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-columns-no-priority",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "footerRowCount": 1
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnFillCount": 1,
+      "endColumnFillCount": 1,
+      "startColumnFillColor": "Oracle Blue",
+      "skipFirstAlternatingFillColumns": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-rows-footer",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "footerRowCount": 1
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-gap-default",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 3,
+      "startRowStrokeType": "Dashed",
+      "startRowStrokeColor": "Oracle Blue"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-gap-none",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowFillCount": 1,
+      "endRowFillCount": 1,
+      "startRowFillColor": "Oracle Orange",
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 3,
+      "startRowStrokeType": "Dashed",
+      "startRowStrokeColor": "Oracle Blue",
+      "startRowStrokeGapColor": "None"
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-gap-tint",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 3,
+      "startRowStrokeType": "Dashed",
+      "startRowStrokeColor": "Oracle Blue",
+      "startRowStrokeGapColor": "Oracle Orange",
+      "startRowStrokeGapTint": 40
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-columns-footer",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "footerRowCount": 1
+     }
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnFillCount": 1,
+      "endColumnFillCount": 1,
+      "startColumnFillColor": "Oracle Blue",
+      "columnFillsPriority": true,
+      "skipFirstAlternatingFillColumns": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-fill-columns-skip-both",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "addColumns",
+     "at": 2,
+     "count": 3,
+     "where": "after"
+    },
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startColumnFillCount": 1,
+      "endColumnFillCount": 1,
+      "startColumnFillColor": "Oracle Blue",
+      "columnFillsPriority": true,
+      "skipFirstAlternatingFillColumns": 1,
+      "skipLastAlternatingFillColumns": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "alt-row-stroke-dotted",
+   "steps": [
+    {
+     "op": "table",
+     "target": "tbl",
+     "do": "tableProps",
+     "props": {
+      "startRowStrokeCount": 1,
+      "endRowStrokeCount": 1,
+      "startRowStrokeWeight": 3,
+      "startRowStrokeType": "Dotted",
+      "startRowStrokeColor": "Oracle Orange",
+      "endRowStrokeWeight": 2,
+      "endRowStrokeType": "Dotted",
+      "endRowStrokeColor": "Oracle Blue"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+  "fixture": "parcomp-grid-margin",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"parcomp-grid-margin-all","steps":[{"op":"textFormat","target":"grid","start":0,"end":186,"props":{"alignToBaseline":true}}]},
+    {"name":"parcomp-grid-margin-first","steps":[{"op":"textFormat","target":"grid","start":0,"end":186,"props":{"alignToBaseline":true,"gridAlignFirstLineOnly":true}}]},
+    {"name":"parcomp-grid-margin-disabled","steps":[{"op":"textFormat","target":"grid","start":0,"end":186,"props":{"gridAlignFirstLineOnly":true}}]},
+    {"name":"parcomp-grid-margin-style","steps":[{"op":"styleEdit","kind":"paragraph","style":"Parcomp Grid","props":{"alignToBaseline":true,"gridAlignFirstLineOnly":true}}]}
+  ]
+}

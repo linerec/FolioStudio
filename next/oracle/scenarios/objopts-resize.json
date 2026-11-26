@@ -1,0 +1,4 @@
+{"fixture":"basic","extension":"objopts","scenarios":[
+ {"name":"oo-fitting-resize","steps":[{"op":"setFrameFitting","target":"img","props":{"autoFit":true,"topCrop":2,"leftCrop":4,"fittingAlignment":"BottomRightAnchor","fittingOnEmptyFrame":"FillProportionally"}},{"op":"resize","target":"img","size":[160,100],"anchor":"topLeft"}]},
+ {"name":"oo-fitting-resize-off","steps":[{"op":"setFrameFitting","target":"img","props":{"autoFit":false,"topCrop":2,"leftCrop":4,"fittingAlignment":"BottomRightAnchor","fittingOnEmptyFrame":"FillProportionally"}},{"op":"resize","target":"img","size":[160,100],"anchor":"topLeft"}]}
+]}

@@ -1,0 +1,358 @@
+{
+ "fixture": "pages",
+ "about": "Editing the text and guides of a parent (master spread, opened like a document in the editor): the same edits as on a page, on the objects and ruler guides of the parent; the pages that use the parent change with it. Parents of three pages included.",
+ "scenarios": [
+  {
+   "name": "master-text-insert",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "master-0-0",
+     "at": 0,
+     "text": "Folio "
+    }
+   ]
+  },
+  {
+   "name": "master-text-insert-after",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "master-0-1",
+     "at": 1,
+     "text": " pages"
+    }
+   ]
+  },
+  {
+   "name": "master-text-format",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "master-0-0",
+     "at": 0,
+     "text": "Folio "
+    },
+    {
+     "op": "textFormat",
+     "target": "master-0-0",
+     "start": 0,
+     "end": 5,
+     "props": {
+      "pointSize": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "master-text-delete",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "master-1-0",
+     "at": 0,
+     "text": "Folio "
+    },
+    {
+     "op": "deleteText",
+     "target": "master-1-0",
+     "start": 1,
+     "end": 4
+    }
+   ]
+  },
+  {
+   "name": "master-text-new-frame",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "master": 0,
+     "page": 0,
+     "rect": [
+      24,
+      24,
+      150,
+      60
+     ],
+     "label": "new-master-text"
+    },
+    {
+     "op": "insertText",
+     "target": "new-master-text",
+     "at": 0,
+     "text": "Header"
+    }
+   ]
+  },
+  {
+   "name": "master-text-new-right",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "master": 0,
+     "page": 1,
+     "rect": [
+      150,
+      24,
+      276,
+      60
+     ],
+     "label": "new-master-text"
+    },
+    {
+     "op": "insertText",
+     "target": "new-master-text",
+     "at": 0,
+     "text": "Header"
+    }
+   ]
+  },
+  {
+   "name": "master-guide-h",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "horizontal",
+     "location": 200,
+     "page": 0
+    }
+   ]
+  },
+  {
+   "name": "master-guide-v-left",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "vertical",
+     "location": 150,
+     "page": 0
+    }
+   ]
+  },
+  {
+   "name": "master-guide-v-right",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "vertical",
+     "location": 450,
+     "page": 1
+    }
+   ]
+  },
+  {
+   "name": "master-guide-spread",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 1,
+     "orientation": "horizontal",
+     "location": 300,
+     "spread": true
+    }
+   ]
+  },
+  {
+   "name": "master-guide-move",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "horizontal",
+     "location": 200,
+     "page": 0
+    },
+    {
+     "op": "guideMove",
+     "master": 0,
+     "page": 0,
+     "index": 0,
+     "location": 260
+    }
+   ]
+  },
+  {
+   "name": "master-guide-delete",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "horizontal",
+     "location": 200,
+     "page": 0
+    },
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "vertical",
+     "location": 150,
+     "page": 0
+    },
+    {
+     "op": "guideDelete",
+     "master": 0,
+     "page": 0,
+     "index": 0
+    }
+   ]
+  },
+  {
+   "name": "master-guide-options",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "horizontal",
+     "location": 200,
+     "page": 0
+    },
+    {
+     "op": "guideOptions",
+     "master": 0,
+     "page": 0,
+     "index": 0,
+     "props": {
+      "viewThreshold": 25,
+      "guideColor": "Red"
+     }
+    }
+   ]
+  },
+  {
+   "name": "master-guide-two-parents",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "horizontal",
+     "location": 200,
+     "page": 0
+    },
+    {
+     "op": "guideNew",
+     "master": 1,
+     "orientation": "vertical",
+     "location": 420,
+     "page": 1
+    }
+   ]
+  },
+  {
+   "name": "master-guide-two-same",
+   "steps": [
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "horizontal",
+     "location": 200,
+     "page": 0
+    },
+    {
+     "op": "guideNew",
+     "master": 0,
+     "orientation": "vertical",
+     "location": 150,
+     "page": 0
+    }
+   ]
+  },
+  {
+   "name": "doc-guide-two-same",
+   "steps": [
+    {
+     "op": "guideNew",
+     "page": 0,
+     "orientation": "horizontal",
+     "location": 200
+    },
+    {
+     "op": "guideNew",
+     "page": 0,
+     "orientation": "vertical",
+     "location": 150
+    }
+   ]
+  },
+  {
+   "name": "master3-text",
+   "steps": [
+    {
+     "op": "parentNew",
+     "pageCount": 3
+    },
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "master": 2,
+     "page": 2,
+     "rect": [
+      24,
+      24,
+      150,
+      60
+     ],
+     "label": "new-master-text"
+    },
+    {
+     "op": "insertText",
+     "target": "new-master-text",
+     "at": 0,
+     "text": "Third"
+    }
+   ]
+  },
+  {
+   "name": "master3-guide",
+   "steps": [
+    {
+     "op": "parentNew",
+     "pageCount": 3
+    },
+    {
+     "op": "guideNew",
+     "master": 2,
+     "orientation": "vertical",
+     "location": 750,
+     "page": 2
+    }
+   ]
+  },
+  {
+   "name": "master3-guide-middle",
+   "steps": [
+    {
+     "op": "parentNew",
+     "pageCount": 3
+    },
+    {
+     "op": "guideNew",
+     "master": 2,
+     "orientation": "vertical",
+     "location": 450,
+     "page": 1
+    }
+   ]
+  },
+  {
+   "name": "master3-guide-spread",
+   "steps": [
+    {
+     "op": "parentNew",
+     "pageCount": 3
+    },
+    {
+     "op": "guideNew",
+     "master": 2,
+     "orientation": "horizontal",
+     "location": 100,
+     "spread": true
+    }
+   ]
+  }
+ ]
+}

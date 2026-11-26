@@ -1,0 +1,3306 @@
+{
+ "note": "InDesign 2025 DOM measurements, see artifacts/menurest-c1-20261023/STATUS.ko.md",
+ "cases": [
+  {
+   "name": "probe-paragraph-1-dupB",
+   "before": {
+    "Resources/Styles.xml": "probe/paragraph-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T1|T1|ParagraphStyle/T1|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T2|T2|ParagraphStyle/T2|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A|$ID/A||",
+    "2|ParagraphStyle|ParagraphStyle/A%3aA1|A:A1|ParagraphStyle/A%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB1|B copy:B1|ParagraphStyle/B copy%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB2|B copy:B2|ParagraphStyle/T1|ParagraphStyle/B copy%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy%3aBS%3aBS1|B copy:BS:BS1|ParagraphStyle/B copy%3aBS%3aBS1|ParagraphStyle/B copy%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B|$ID/B||",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB1|B:B1|ParagraphStyle/B%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB2|B:B2|ParagraphStyle/T1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS%3aBS1|B:BS:BS1|ParagraphStyle/B%3aBS%3aBS1|ParagraphStyle/B%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/C|$ID/C||",
+    "2|ParagraphStyle|ParagraphStyle/C%3aC1|C:C1|ParagraphStyle/C%3aC1|ParagraphStyle/B%3aB2",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-paragraph-2-dupB2",
+   "before": {
+    "Resources/Styles.xml": "probe/paragraph-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T1|T1|ParagraphStyle/T1|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T2|T2|ParagraphStyle/T2|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A|$ID/A||",
+    "2|ParagraphStyle|ParagraphStyle/A%3aA1|A:A1|ParagraphStyle/A%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB1|B copy:B1|ParagraphStyle/B copy%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB2|B copy:B2|ParagraphStyle/T1|ParagraphStyle/B copy%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy%3aBS%3aBS1|B copy:BS:BS1|ParagraphStyle/B copy%3aBS%3aBS1|ParagraphStyle/B copy%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB1|B copy 2:B1|ParagraphStyle/B copy 2%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB2|B copy 2:B2|ParagraphStyle/T1|ParagraphStyle/B copy 2%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1|ParagraphStyle/B copy 2%3aBS%3aBS1|ParagraphStyle/B copy 2%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B|$ID/B||",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB1|B:B1|ParagraphStyle/B%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB2|B:B2|ParagraphStyle/T1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS%3aBS1|B:BS:BS1|ParagraphStyle/B%3aBS%3aBS1|ParagraphStyle/B%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/C|$ID/C||",
+    "2|ParagraphStyle|ParagraphStyle/C%3aC1|C:C1|ParagraphStyle/C%3aC1|ParagraphStyle/B%3aB2",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-paragraph-3-dupBS",
+   "before": {
+    "Resources/Styles.xml": "probe/paragraph-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B:BS"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T1|T1|ParagraphStyle/T1|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T2|T2|ParagraphStyle/T2|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A|$ID/A||",
+    "2|ParagraphStyle|ParagraphStyle/A%3aA1|A:A1|ParagraphStyle/A%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB1|B copy:B1|ParagraphStyle/B copy%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB2|B copy:B2|ParagraphStyle/T1|ParagraphStyle/B copy%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy%3aBS%3aBS1|B copy:BS:BS1|ParagraphStyle/B copy%3aBS%3aBS1|ParagraphStyle/B copy%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB1|B copy 2:B1|ParagraphStyle/B copy 2%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB2|B copy 2:B2|ParagraphStyle/T1|ParagraphStyle/B copy 2%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1|ParagraphStyle/B copy 2%3aBS%3aBS1|ParagraphStyle/B copy 2%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B|$ID/B||",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB1|B:B1|ParagraphStyle/B%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB2|B:B2|ParagraphStyle/T1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS%3aBS1|B:BS:BS1|ParagraphStyle/B%3aBS%3aBS1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS copy%3aBS1|B:BS copy:BS1|ParagraphStyle/B%3aBS copy%3aBS1|ParagraphStyle/B%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/C|$ID/C||",
+    "2|ParagraphStyle|ParagraphStyle/C%3aC1|C:C1|ParagraphStyle/C%3aC1|ParagraphStyle/B%3aB2",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-paragraph-4-dupA",
+   "before": {
+    "Resources/Styles.xml": "probe/paragraph-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "A"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T1|T1|ParagraphStyle/T1|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T2|T2|ParagraphStyle/T2|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|ParagraphStyle|ParagraphStyle/A copy%3aA1|A copy:A1|ParagraphStyle/A copy%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A|$ID/A||",
+    "2|ParagraphStyle|ParagraphStyle/A%3aA1|A:A1|ParagraphStyle/A%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB1|B copy:B1|ParagraphStyle/B copy%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB2|B copy:B2|ParagraphStyle/T1|ParagraphStyle/B copy%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy%3aBS%3aBS1|B copy:BS:BS1|ParagraphStyle/B copy%3aBS%3aBS1|ParagraphStyle/B copy%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB1|B copy 2:B1|ParagraphStyle/B copy 2%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB2|B copy 2:B2|ParagraphStyle/T1|ParagraphStyle/B copy 2%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1|ParagraphStyle/B copy 2%3aBS%3aBS1|ParagraphStyle/B copy 2%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B|$ID/B||",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB1|B:B1|ParagraphStyle/B%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB2|B:B2|ParagraphStyle/T1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS%3aBS1|B:BS:BS1|ParagraphStyle/B%3aBS%3aBS1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS copy%3aBS1|B:BS copy:BS1|ParagraphStyle/B%3aBS copy%3aBS1|ParagraphStyle/B%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/C|$ID/C||",
+    "2|ParagraphStyle|ParagraphStyle/C%3aC1|C:C1|ParagraphStyle/C%3aC1|ParagraphStyle/B%3aB2",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-paragraph-5-dupC",
+   "before": {
+    "Resources/Styles.xml": "probe/paragraph-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "A"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "C"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T1|T1|ParagraphStyle/T1|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/T2|T2|ParagraphStyle/T2|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|ParagraphStyle|ParagraphStyle/A copy%3aA1|A copy:A1|ParagraphStyle/A copy%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/A|$ID/A||",
+    "2|ParagraphStyle|ParagraphStyle/A%3aA1|A:A1|ParagraphStyle/A%3aA1|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB1|B copy:B1|ParagraphStyle/B copy%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy%3aB2|B copy:B2|ParagraphStyle/T1|ParagraphStyle/B copy%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy%3aBS%3aBS1|B copy:BS:BS1|ParagraphStyle/B copy%3aBS%3aBS1|ParagraphStyle/B copy%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB1|B copy 2:B1|ParagraphStyle/B copy 2%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B copy 2%3aB2|B copy 2:B2|ParagraphStyle/T1|ParagraphStyle/B copy 2%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1|ParagraphStyle/B copy 2%3aBS%3aBS1|ParagraphStyle/B copy 2%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B|$ID/B||",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB1|B:B1|ParagraphStyle/B%3aB2|ParagraphStyle/T1",
+    "2|ParagraphStyle|ParagraphStyle/B%3aB2|B:B2|ParagraphStyle/T1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS%3aBS1|B:BS:BS1|ParagraphStyle/B%3aBS%3aBS1|ParagraphStyle/B%3aB1",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|ParagraphStyle|ParagraphStyle/B%3aBS copy%3aBS1|B:BS copy:BS1|ParagraphStyle/B%3aBS copy%3aBS1|ParagraphStyle/B%3aB1",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/C copy|$ID/C copy||",
+    "2|ParagraphStyle|ParagraphStyle/C copy%3aC1|C copy:C1|ParagraphStyle/C copy%3aC1|ParagraphStyle/B%3aB2",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/C|$ID/C||",
+    "2|ParagraphStyle|ParagraphStyle/C%3aC1|C:C1|ParagraphStyle/C%3aC1|ParagraphStyle/B%3aB2",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-character-1-dupB",
+   "before": {
+    "Resources/Styles.xml": "probe/character-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/T1|T1||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/T2|T2||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A|$ID/A||",
+    "2|CharacterStyle|CharacterStyle/A%3aA1|A:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B|$ID/B||",
+    "2|CharacterStyle|CharacterStyle/B%3aB1|B:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B%3aB2|B:B2||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS%3aBS1|B:BS:BS1||CharacterStyle/B%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB1|B copy:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB2|B copy:B2||CharacterStyle/B copy%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CharacterStyle/B copy%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/C|$ID/C||",
+    "2|CharacterStyle|CharacterStyle/C%3aC1|C:C1||CharacterStyle/B%3aB2",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-character-2-dupB2",
+   "before": {
+    "Resources/Styles.xml": "probe/character-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/T1|T1||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/T2|T2||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A|$ID/A||",
+    "2|CharacterStyle|CharacterStyle/A%3aA1|A:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B|$ID/B||",
+    "2|CharacterStyle|CharacterStyle/B%3aB1|B:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B%3aB2|B:B2||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS%3aBS1|B:BS:BS1||CharacterStyle/B%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB1|B copy 2:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB2|B copy 2:B2||CharacterStyle/B copy 2%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CharacterStyle/B copy 2%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB1|B copy:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB2|B copy:B2||CharacterStyle/B copy%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CharacterStyle/B copy%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/C|$ID/C||",
+    "2|CharacterStyle|CharacterStyle/C%3aC1|C:C1||CharacterStyle/B%3aB2",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-character-3-dupBS",
+   "before": {
+    "Resources/Styles.xml": "probe/character-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B:BS"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/T1|T1||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/T2|T2||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A|$ID/A||",
+    "2|CharacterStyle|CharacterStyle/A%3aA1|A:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B|$ID/B||",
+    "2|CharacterStyle|CharacterStyle/B%3aB1|B:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B%3aB2|B:B2||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS%3aBS1|B:BS:BS1||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||CharacterStyle/B%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB1|B copy 2:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB2|B copy 2:B2||CharacterStyle/B copy 2%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CharacterStyle/B copy 2%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB1|B copy:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB2|B copy:B2||CharacterStyle/B copy%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CharacterStyle/B copy%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/C|$ID/C||",
+    "2|CharacterStyle|CharacterStyle/C%3aC1|C:C1||CharacterStyle/B%3aB2",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-character-4-dupA",
+   "before": {
+    "Resources/Styles.xml": "probe/character-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "A"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/T1|T1||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/T2|T2||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A|$ID/A||",
+    "2|CharacterStyle|CharacterStyle/A%3aA1|A:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|CharacterStyle|CharacterStyle/A copy%3aA1|A copy:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B|$ID/B||",
+    "2|CharacterStyle|CharacterStyle/B%3aB1|B:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B%3aB2|B:B2||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS%3aBS1|B:BS:BS1||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||CharacterStyle/B%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB1|B copy 2:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB2|B copy 2:B2||CharacterStyle/B copy 2%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CharacterStyle/B copy 2%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB1|B copy:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB2|B copy:B2||CharacterStyle/B copy%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CharacterStyle/B copy%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/C|$ID/C||",
+    "2|CharacterStyle|CharacterStyle/C%3aC1|C:C1||CharacterStyle/B%3aB2",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-character-5-dupC",
+   "before": {
+    "Resources/Styles.xml": "probe/character-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "A"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "C"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/T1|T1||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/T2|T2||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A|$ID/A||",
+    "2|CharacterStyle|CharacterStyle/A%3aA1|A:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|CharacterStyle|CharacterStyle/A copy%3aA1|A copy:A1||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B|$ID/B||",
+    "2|CharacterStyle|CharacterStyle/B%3aB1|B:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B%3aB2|B:B2||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS%3aBS1|B:BS:BS1||CharacterStyle/B%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|CharacterStyle|CharacterStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||CharacterStyle/B%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB1|B copy 2:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy 2%3aB2|B copy 2:B2||CharacterStyle/B copy 2%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CharacterStyle/B copy 2%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB1|B copy:B1||CharacterStyle/T1",
+    "2|CharacterStyle|CharacterStyle/B copy%3aB2|B copy:B2||CharacterStyle/B copy%3aB1",
+    "2|CharacterStyleGroup|CharacterStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CharacterStyle|CharacterStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CharacterStyle/B copy%3aB1",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/C|$ID/C||",
+    "2|CharacterStyle|CharacterStyle/C%3aC1|C:C1||CharacterStyle/B%3aB2",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/C copy|$ID/C copy||",
+    "2|CharacterStyle|CharacterStyle/C copy%3aC1|C copy:C1||CharacterStyle/B%3aB2",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-object-1-dupB",
+   "before": {
+    "Resources/Styles.xml": "probe/object-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A|$ID/A||",
+    "2|ObjectStyle|ObjectStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B|$ID/B||",
+    "2|ObjectStyle|ObjectStyle/B%3aB1|B:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B%3aB2|B:B2||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS%3aBS1|B:BS:BS1||ObjectStyle/B%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB1|B copy:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB2|B copy:B2||ObjectStyle/B copy%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||ObjectStyle/B copy%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/C|$ID/C||",
+    "2|ObjectStyle|ObjectStyle/C%3aC1|C:C1||ObjectStyle/B%3aB2",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T1|T1||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T2|T2||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-object-2-dupB2",
+   "before": {
+    "Resources/Styles.xml": "probe/object-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A|$ID/A||",
+    "2|ObjectStyle|ObjectStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B|$ID/B||",
+    "2|ObjectStyle|ObjectStyle/B%3aB1|B:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B%3aB2|B:B2||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS%3aBS1|B:BS:BS1||ObjectStyle/B%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB1|B copy 2:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB2|B copy 2:B2||ObjectStyle/B copy 2%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||ObjectStyle/B copy 2%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB1|B copy:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB2|B copy:B2||ObjectStyle/B copy%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||ObjectStyle/B copy%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/C|$ID/C||",
+    "2|ObjectStyle|ObjectStyle/C%3aC1|C:C1||ObjectStyle/B%3aB2",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T1|T1||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T2|T2||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-object-3-dupBS",
+   "before": {
+    "Resources/Styles.xml": "probe/object-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B:BS"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A|$ID/A||",
+    "2|ObjectStyle|ObjectStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B|$ID/B||",
+    "2|ObjectStyle|ObjectStyle/B%3aB1|B:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B%3aB2|B:B2||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS%3aBS1|B:BS:BS1||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||ObjectStyle/B%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB1|B copy 2:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB2|B copy 2:B2||ObjectStyle/B copy 2%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||ObjectStyle/B copy 2%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB1|B copy:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB2|B copy:B2||ObjectStyle/B copy%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||ObjectStyle/B copy%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/C|$ID/C||",
+    "2|ObjectStyle|ObjectStyle/C%3aC1|C:C1||ObjectStyle/B%3aB2",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T1|T1||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T2|T2||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-object-4-dupA",
+   "before": {
+    "Resources/Styles.xml": "probe/object-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "A"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A|$ID/A||",
+    "2|ObjectStyle|ObjectStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|ObjectStyle|ObjectStyle/A copy%3aA1|A copy:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B|$ID/B||",
+    "2|ObjectStyle|ObjectStyle/B%3aB1|B:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B%3aB2|B:B2||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS%3aBS1|B:BS:BS1||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||ObjectStyle/B%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB1|B copy 2:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB2|B copy 2:B2||ObjectStyle/B copy 2%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||ObjectStyle/B copy 2%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB1|B copy:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB2|B copy:B2||ObjectStyle/B copy%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||ObjectStyle/B copy%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/C|$ID/C||",
+    "2|ObjectStyle|ObjectStyle/C%3aC1|C:C1||ObjectStyle/B%3aB2",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T1|T1||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T2|T2||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-object-5-dupC",
+   "before": {
+    "Resources/Styles.xml": "probe/object-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "A"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "C"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A|$ID/A||",
+    "2|ObjectStyle|ObjectStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|ObjectStyle|ObjectStyle/A copy%3aA1|A copy:A1||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B|$ID/B||",
+    "2|ObjectStyle|ObjectStyle/B%3aB1|B:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B%3aB2|B:B2||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS%3aBS1|B:BS:BS1||ObjectStyle/B%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|ObjectStyle|ObjectStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||ObjectStyle/B%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB1|B copy 2:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy 2%3aB2|B copy 2:B2||ObjectStyle/B copy 2%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||ObjectStyle/B copy 2%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB1|B copy:B1||ObjectStyle/T1",
+    "2|ObjectStyle|ObjectStyle/B copy%3aB2|B copy:B2||ObjectStyle/B copy%3aB1",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|ObjectStyle|ObjectStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||ObjectStyle/B copy%3aB1",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/C|$ID/C||",
+    "2|ObjectStyle|ObjectStyle/C%3aC1|C:C1||ObjectStyle/B%3aB2",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/C copy|$ID/C copy||",
+    "2|ObjectStyle|ObjectStyle/C copy%3aC1|C copy:C1||ObjectStyle/B%3aB2",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T1|T1||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/T2|T2||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-table-1-dupB",
+   "before": {
+    "Resources/Styles.xml": "probe/table-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T1|T1||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T2|T2||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A|$ID/A||",
+    "2|TableStyle|TableStyle/A%3aA1|A:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|TableStyle|TableStyle/B copy%3aB1|B copy:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy%3aB2|B copy:B2||TableStyle/B copy%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|TableStyle|TableStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||TableStyle/B copy%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B|$ID/B||",
+    "2|TableStyle|TableStyle/B%3aB1|B:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B%3aB2|B:B2||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|TableStyle|TableStyle/B%3aBS%3aBS1|B:BS:BS1||TableStyle/B%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/C|$ID/C||",
+    "2|TableStyle|TableStyle/C%3aC1|C:C1||TableStyle/B%3aB2",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-table-2-dupB2",
+   "before": {
+    "Resources/Styles.xml": "probe/table-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T1|T1||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T2|T2||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A|$ID/A||",
+    "2|TableStyle|TableStyle/A%3aA1|A:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|TableStyle|TableStyle/B copy%3aB1|B copy:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy%3aB2|B copy:B2||TableStyle/B copy%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|TableStyle|TableStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||TableStyle/B copy%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|TableStyle|TableStyle/B copy 2%3aB1|B copy 2:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy 2%3aB2|B copy 2:B2||TableStyle/B copy 2%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|TableStyle|TableStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||TableStyle/B copy 2%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B|$ID/B||",
+    "2|TableStyle|TableStyle/B%3aB1|B:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B%3aB2|B:B2||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|TableStyle|TableStyle/B%3aBS%3aBS1|B:BS:BS1||TableStyle/B%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/C|$ID/C||",
+    "2|TableStyle|TableStyle/C%3aC1|C:C1||TableStyle/B%3aB2",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-table-3-dupBS",
+   "before": {
+    "Resources/Styles.xml": "probe/table-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B:BS"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T1|T1||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T2|T2||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A|$ID/A||",
+    "2|TableStyle|TableStyle/A%3aA1|A:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|TableStyle|TableStyle/B copy%3aB1|B copy:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy%3aB2|B copy:B2||TableStyle/B copy%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|TableStyle|TableStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||TableStyle/B copy%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|TableStyle|TableStyle/B copy 2%3aB1|B copy 2:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy 2%3aB2|B copy 2:B2||TableStyle/B copy 2%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|TableStyle|TableStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||TableStyle/B copy 2%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B|$ID/B||",
+    "2|TableStyle|TableStyle/B%3aB1|B:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B%3aB2|B:B2||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|TableStyle|TableStyle/B%3aBS%3aBS1|B:BS:BS1||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|TableStyle|TableStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||TableStyle/B%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/C|$ID/C||",
+    "2|TableStyle|TableStyle/C%3aC1|C:C1||TableStyle/B%3aB2",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-table-4-dupA",
+   "before": {
+    "Resources/Styles.xml": "probe/table-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "A"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T1|T1||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T2|T2||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|TableStyle|TableStyle/A copy%3aA1|A copy:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A|$ID/A||",
+    "2|TableStyle|TableStyle/A%3aA1|A:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|TableStyle|TableStyle/B copy%3aB1|B copy:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy%3aB2|B copy:B2||TableStyle/B copy%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|TableStyle|TableStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||TableStyle/B copy%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|TableStyle|TableStyle/B copy 2%3aB1|B copy 2:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy 2%3aB2|B copy 2:B2||TableStyle/B copy 2%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|TableStyle|TableStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||TableStyle/B copy 2%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B|$ID/B||",
+    "2|TableStyle|TableStyle/B%3aB1|B:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B%3aB2|B:B2||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|TableStyle|TableStyle/B%3aBS%3aBS1|B:BS:BS1||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|TableStyle|TableStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||TableStyle/B%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/C|$ID/C||",
+    "2|TableStyle|TableStyle/C%3aC1|C:C1||TableStyle/B%3aB2",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-table-5-dupC",
+   "before": {
+    "Resources/Styles.xml": "probe/table-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "A"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "C"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T1|T1||$ID/[No table style]",
+    "1|TableStyle|TableStyle/T2|T2||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|TableStyle|TableStyle/A copy%3aA1|A copy:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/A|$ID/A||",
+    "2|TableStyle|TableStyle/A%3aA1|A:A1||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|TableStyle|TableStyle/B copy%3aB1|B copy:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy%3aB2|B copy:B2||TableStyle/B copy%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|TableStyle|TableStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||TableStyle/B copy%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|TableStyle|TableStyle/B copy 2%3aB1|B copy 2:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B copy 2%3aB2|B copy 2:B2||TableStyle/B copy 2%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|TableStyle|TableStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||TableStyle/B copy 2%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/B|$ID/B||",
+    "2|TableStyle|TableStyle/B%3aB1|B:B1||TableStyle/T1",
+    "2|TableStyle|TableStyle/B%3aB2|B:B2||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|TableStyle|TableStyle/B%3aBS%3aBS1|B:BS:BS1||TableStyle/B%3aB1",
+    "2|TableStyleGroup|TableStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|TableStyle|TableStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||TableStyle/B%3aB1",
+    "1|TableStyleGroup|TableStyleGroup/$ID/C copy|$ID/C copy||",
+    "2|TableStyle|TableStyle/C copy%3aC1|C copy:C1||TableStyle/B%3aB2",
+    "1|TableStyleGroup|TableStyleGroup/$ID/C|$ID/C||",
+    "2|TableStyle|TableStyle/C%3aC1|C:C1||TableStyle/B%3aB2",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-cell-1-dupB",
+   "before": {
+    "Resources/Styles.xml": "probe/cell-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/T1|T1||$ID/[None]",
+    "1|CellStyle|CellStyle/T2|T2||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A|$ID/A||",
+    "2|CellStyle|CellStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B|$ID/B||",
+    "2|CellStyle|CellStyle/B%3aB1|B:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B%3aB2|B:B2||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CellStyle|CellStyle/B%3aBS%3aBS1|B:BS:BS1||CellStyle/B%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CellStyle|CellStyle/B copy%3aB1|B copy:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy%3aB2|B copy:B2||CellStyle/B copy%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CellStyle|CellStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CellStyle/B copy%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/C|$ID/C||",
+    "2|CellStyle|CellStyle/C%3aC1|C:C1||CellStyle/B%3aB2",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-cell-2-dupB2",
+   "before": {
+    "Resources/Styles.xml": "probe/cell-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/T1|T1||$ID/[None]",
+    "1|CellStyle|CellStyle/T2|T2||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A|$ID/A||",
+    "2|CellStyle|CellStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B|$ID/B||",
+    "2|CellStyle|CellStyle/B%3aB1|B:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B%3aB2|B:B2||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CellStyle|CellStyle/B%3aBS%3aBS1|B:BS:BS1||CellStyle/B%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CellStyle|CellStyle/B copy 2%3aB1|B copy 2:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy 2%3aB2|B copy 2:B2||CellStyle/B copy 2%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CellStyle|CellStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CellStyle/B copy 2%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CellStyle|CellStyle/B copy%3aB1|B copy:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy%3aB2|B copy:B2||CellStyle/B copy%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CellStyle|CellStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CellStyle/B copy%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/C|$ID/C||",
+    "2|CellStyle|CellStyle/C%3aC1|C:C1||CellStyle/B%3aB2",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-cell-3-dupBS",
+   "before": {
+    "Resources/Styles.xml": "probe/cell-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B:BS"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/T1|T1||$ID/[None]",
+    "1|CellStyle|CellStyle/T2|T2||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A|$ID/A||",
+    "2|CellStyle|CellStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B|$ID/B||",
+    "2|CellStyle|CellStyle/B%3aB1|B:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B%3aB2|B:B2||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CellStyle|CellStyle/B%3aBS%3aBS1|B:BS:BS1||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|CellStyle|CellStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||CellStyle/B%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CellStyle|CellStyle/B copy 2%3aB1|B copy 2:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy 2%3aB2|B copy 2:B2||CellStyle/B copy 2%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CellStyle|CellStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CellStyle/B copy 2%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CellStyle|CellStyle/B copy%3aB1|B copy:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy%3aB2|B copy:B2||CellStyle/B copy%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CellStyle|CellStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CellStyle/B copy%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/C|$ID/C||",
+    "2|CellStyle|CellStyle/C%3aC1|C:C1||CellStyle/B%3aB2",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-cell-4-dupA",
+   "before": {
+    "Resources/Styles.xml": "probe/cell-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "A"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/T1|T1||$ID/[None]",
+    "1|CellStyle|CellStyle/T2|T2||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A|$ID/A||",
+    "2|CellStyle|CellStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|CellStyle|CellStyle/A copy%3aA1|A copy:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B|$ID/B||",
+    "2|CellStyle|CellStyle/B%3aB1|B:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B%3aB2|B:B2||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CellStyle|CellStyle/B%3aBS%3aBS1|B:BS:BS1||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|CellStyle|CellStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||CellStyle/B%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CellStyle|CellStyle/B copy 2%3aB1|B copy 2:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy 2%3aB2|B copy 2:B2||CellStyle/B copy 2%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CellStyle|CellStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CellStyle/B copy 2%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CellStyle|CellStyle/B copy%3aB1|B copy:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy%3aB2|B copy:B2||CellStyle/B copy%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CellStyle|CellStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CellStyle/B copy%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/C|$ID/C||",
+    "2|CellStyle|CellStyle/C%3aC1|C:C1||CellStyle/B%3aB2",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "probe-cell-5-dupC",
+   "before": {
+    "Resources/Styles.xml": "probe/cell-before.Styles.xml"
+   },
+   "commands": [
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "B:BS"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "A"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "C"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/T1|T1||$ID/[None]",
+    "1|CellStyle|CellStyle/T2|T2||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A|$ID/A||",
+    "2|CellStyle|CellStyle/A%3aA1|A:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/A copy|$ID/A copy||",
+    "2|CellStyle|CellStyle/A copy%3aA1|A copy:A1||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B|$ID/B||",
+    "2|CellStyle|CellStyle/B%3aB1|B:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B%3aB2|B:B2||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS|$ID/B:BS||",
+    "3|CellStyle|CellStyle/B%3aBS%3aBS1|B:BS:BS1||CellStyle/B%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B%3aBS copy|$ID/B:BS copy||",
+    "3|CellStyle|CellStyle/B%3aBS copy%3aBS1|B:BS copy:BS1||CellStyle/B%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy 2|$ID/B copy 2||",
+    "2|CellStyle|CellStyle/B copy 2%3aB1|B copy 2:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy 2%3aB2|B copy 2:B2||CellStyle/B copy 2%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy 2%3aBS|$ID/B copy 2:BS||",
+    "3|CellStyle|CellStyle/B copy 2%3aBS%3aBS1|B copy 2:BS:BS1||CellStyle/B copy 2%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/B copy|$ID/B copy||",
+    "2|CellStyle|CellStyle/B copy%3aB1|B copy:B1||CellStyle/T1",
+    "2|CellStyle|CellStyle/B copy%3aB2|B copy:B2||CellStyle/B copy%3aB1",
+    "2|CellStyleGroup|CellStyleGroup/$ID/B copy%3aBS|$ID/B copy:BS||",
+    "3|CellStyle|CellStyle/B copy%3aBS%3aBS1|B copy:BS:BS1||CellStyle/B copy%3aB1",
+    "1|CellStyleGroup|CellStyleGroup/$ID/C|$ID/C||",
+    "2|CellStyle|CellStyle/C%3aC1|C:C1||CellStyle/B%3aB2",
+    "1|CellStyleGroup|CellStyleGroup/$ID/C copy|$ID/C copy||",
+    "2|CellStyle|CellStyle/C copy%3aC1|C copy:C1||CellStyle/B%3aB2",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-basic",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.7995c9488a"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy|$ID/Heads copy||",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy%3aFormat Heading|Heads copy:Format Heading|ParagraphStyle/Heads copy%3aFormat Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "2|ParagraphStyle|ParagraphStyle/Heads%3aFormat Heading|Heads:Format Heading|ParagraphStyle/Heads%3aFormat Heading|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-refs",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.2cd75b69a7"
+   },
+   "commands": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "props": {
+      "basedOn": "Format Body",
+      "nextStyle": "Format Body"
+     }
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "props": {
+      "nextStyle": "Format Other"
+     }
+    },
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "group": "Heads"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Heads%3aFormat Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy|$ID/Heads copy||",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy%3aFormat Body|Heads copy:Format Body|ParagraphStyle/Format Other|$ID/[No paragraph style]",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy%3aFormat Heading|Heads copy:Format Heading|ParagraphStyle/Heads copy%3aFormat Body|ParagraphStyle/Heads copy%3aFormat Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "2|ParagraphStyle|ParagraphStyle/Heads%3aFormat Body|Heads:Format Body|ParagraphStyle/Format Other|$ID/[No paragraph style]",
+    "2|ParagraphStyle|ParagraphStyle/Heads%3aFormat Heading|Heads:Format Heading|ParagraphStyle/Heads%3aFormat Body|ParagraphStyle/Heads%3aFormat Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-nested",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.63a5e8eaec"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "Heads"
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads:Sub"
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Body",
+     "group": "Heads"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Heads%3aFormat Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy|$ID/Heads copy||",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy%3aFormat Body|Heads copy:Format Body|ParagraphStyle/Heads copy%3aFormat Body|$ID/[No paragraph style]",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy%3aSub|$ID/Heads copy:Sub||",
+    "3|ParagraphStyle|ParagraphStyle/Heads copy%3aSub%3aFormat Heading|Heads copy:Sub:Format Heading|ParagraphStyle/Heads copy%3aSub%3aFormat Heading|ParagraphStyle/Heads copy%3aFormat Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "2|ParagraphStyle|ParagraphStyle/Heads%3aFormat Body|Heads:Format Body|ParagraphStyle/Heads%3aFormat Body|$ID/[No paragraph style]",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads%3aSub|$ID/Heads:Sub||",
+    "3|ParagraphStyle|ParagraphStyle/Heads%3aSub%3aFormat Heading|Heads:Sub:Format Heading|ParagraphStyle/Heads%3aSub%3aFormat Heading|ParagraphStyle/Heads%3aFormat Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-twice",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.7e3b8b17fb"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy|$ID/Heads copy||",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy%3aFormat Heading|Heads copy:Format Heading|ParagraphStyle/Heads copy%3aFormat Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy 2|$ID/Heads copy 2||",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy 2%3aFormat Heading|Heads copy 2:Format Heading|ParagraphStyle/Heads copy 2%3aFormat Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "2|ParagraphStyle|ParagraphStyle/Heads%3aFormat Heading|Heads:Format Heading|ParagraphStyle/Heads%3aFormat Heading|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-sub",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.823cf0ce65"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Sub",
+     "parent": "Heads"
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads:Sub"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads:Sub"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads%3aSub|$ID/Heads:Sub||",
+    "3|ParagraphStyle|ParagraphStyle/Heads%3aSub%3aFormat Heading|Heads:Sub:Format Heading|ParagraphStyle/Heads%3aSub%3aFormat Heading|ParagraphStyle/Format Body",
+    "2|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads%3aSub copy|$ID/Heads:Sub copy||",
+    "3|ParagraphStyle|ParagraphStyle/Heads%3aSub copy%3aFormat Heading|Heads:Sub copy:Format Heading|ParagraphStyle/Heads%3aSub copy%3aFormat Heading|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-second",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.057d462069"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Notes",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Heading",
+     "group": "Heads"
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "paragraph",
+     "style": "Format Other",
+     "group": "Notes"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy|$ID/Heads copy||",
+    "2|ParagraphStyle|ParagraphStyle/Heads copy%3aFormat Heading|Heads copy:Format Heading|ParagraphStyle/Heads copy%3aFormat Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "2|ParagraphStyle|ParagraphStyle/Heads%3aFormat Heading|Heads:Format Heading|ParagraphStyle/Heads%3aFormat Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Notes|$ID/Notes||",
+    "2|ParagraphStyle|ParagraphStyle/Notes%3aFormat Other|Notes:Format Other|ParagraphStyle/Notes%3aFormat Other|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-para-empty",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.1f87e8728a"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "paragraph",
+     "name": "Heads",
+     "parent": ""
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "paragraph",
+     "group": "Heads"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Bold|Format Bold||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Format Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Heading|Format Heading|ParagraphStyle/Format Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads copy|$ID/Heads copy||",
+    "1|ParagraphStyleGroup|ParagraphStyleGroup/$ID/Heads|$ID/Heads||",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-char-basic",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.ed87d160ab"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "character",
+     "name": "Marks",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "Marks"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Marks%3aFormat Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks|$ID/Marks||",
+    "2|CharacterStyle|CharacterStyle/Marks%3aFormat Bold|Marks:Format Bold||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks copy|$ID/Marks copy||",
+    "2|CharacterStyle|CharacterStyle/Marks copy%3aFormat Bold|Marks copy:Format Bold||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Heading|Format Heading|ParagraphStyle/Format Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-char-second",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.55d7780848"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "character",
+     "name": "Marks",
+     "parent": ""
+    },
+    {
+     "op": "createTextStyleGroup",
+     "kind": "character",
+     "name": "Sizes",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "character",
+     "style": "Format Large",
+     "group": "Sizes"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "Marks"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks|$ID/Marks||",
+    "2|CharacterStyle|CharacterStyle/Marks%3aFormat Bold|Marks:Format Bold||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks copy|$ID/Marks copy||",
+    "2|CharacterStyle|CharacterStyle/Marks copy%3aFormat Bold|Marks copy:Format Bold||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Sizes|$ID/Sizes||",
+    "2|CharacterStyle|CharacterStyle/Sizes%3aFormat Large|Sizes:Format Large||CharacterStyle/Marks%3aFormat Bold",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Heading|Format Heading|ParagraphStyle/Format Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-char-twice",
+   "before": {
+    "Resources/Styles.xml": "scenario/text-format/Resources_Styles.xml.e94ebd6049"
+   },
+   "commands": [
+    {
+     "op": "createTextStyleGroup",
+     "kind": "character",
+     "name": "Marks",
+     "parent": ""
+    },
+    {
+     "op": "moveTextStyle",
+     "kind": "character",
+     "style": "Format Bold",
+     "group": "Marks"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "Marks"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "character",
+     "group": "Marks"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "1|CharacterStyle|CharacterStyle/Format Italic|Format Italic||$ID/[No character style]",
+    "1|CharacterStyle|CharacterStyle/Format Large|Format Large||CharacterStyle/Marks%3aFormat Bold",
+    "1|CharacterStyle|CharacterStyle/Format Serif|Format Serif||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks|$ID/Marks||",
+    "2|CharacterStyle|CharacterStyle/Marks%3aFormat Bold|Marks:Format Bold||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks copy 2|$ID/Marks copy 2||",
+    "2|CharacterStyle|CharacterStyle/Marks copy 2%3aFormat Bold|Marks copy 2:Format Bold||$ID/[No character style]",
+    "1|CharacterStyleGroup|CharacterStyleGroup/$ID/Marks copy|$ID/Marks copy||",
+    "2|CharacterStyle|CharacterStyle/Marks copy%3aFormat Bold|Marks copy:Format Bold||$ID/[No character style]",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Body|Format Body|ParagraphStyle/Format Body|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Format Heading|Format Heading|ParagraphStyle/Format Heading|ParagraphStyle/Format Body",
+    "1|ParagraphStyle|ParagraphStyle/Format Other|Format Other|ParagraphStyle/Format Other|ParagraphStyle/Format Body",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-cell-basic",
+   "before": {
+    "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.ae3f296200"
+   },
+   "commands": [
+    {
+     "op": "createTableStyleGroup",
+     "kind": "cell",
+     "name": "Grp",
+     "parent": null
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "cell",
+     "style": "CellStyle/Oracle Cell Orange",
+     "group": "CellStyleGroup/$ID/Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "Grp"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Oracle Cell Text|Oracle Cell Text|ParagraphStyle/Oracle Cell Text|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/Oracle Cell Blue|Oracle Cell Blue||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Child|Oracle Cell Child||CellStyle/Grp%3aOracle Cell Orange",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp|$ID/Grp||",
+    "2|CellStyle|CellStyle/Grp%3aOracle Cell Orange|Grp:Oracle Cell Orange||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp copy|$ID/Grp copy||",
+    "2|CellStyle|CellStyle/Grp copy%3aOracle Cell Orange|Grp copy:Oracle Cell Orange||$ID/[None]",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Zebra|Oracle Zebra||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Frame|Oracle Frame||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-cell-twice",
+   "before": {
+    "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.a57098cd34"
+   },
+   "commands": [
+    {
+     "op": "createTableStyleGroup",
+     "kind": "cell",
+     "name": "Grp",
+     "parent": null
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "cell",
+     "style": "CellStyle/Oracle Cell Orange",
+     "group": "CellStyleGroup/$ID/Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "Grp"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Oracle Cell Text|Oracle Cell Text|ParagraphStyle/Oracle Cell Text|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/Oracle Cell Blue|Oracle Cell Blue||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Child|Oracle Cell Child||CellStyle/Grp%3aOracle Cell Orange",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp|$ID/Grp||",
+    "2|CellStyle|CellStyle/Grp%3aOracle Cell Orange|Grp:Oracle Cell Orange||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp copy 2|$ID/Grp copy 2||",
+    "2|CellStyle|CellStyle/Grp copy 2%3aOracle Cell Orange|Grp copy 2:Oracle Cell Orange||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp copy|$ID/Grp copy||",
+    "2|CellStyle|CellStyle/Grp copy%3aOracle Cell Orange|Grp copy:Oracle Cell Orange||$ID/[None]",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Zebra|Oracle Zebra||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Frame|Oracle Frame||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-cell-nested",
+   "before": {
+    "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.9727013fa1"
+   },
+   "commands": [
+    {
+     "op": "createTableStyleGroup",
+     "kind": "cell",
+     "name": "Grp",
+     "parent": null
+    },
+    {
+     "op": "createTableStyleGroup",
+     "kind": "cell",
+     "name": "Sub",
+     "parent": "CellStyleGroup/$ID/Grp"
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "cell",
+     "style": "CellStyle/Oracle Cell Orange",
+     "group": "CellStyleGroup/$ID/Grp%3aSub"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "cell",
+     "group": "Grp:Sub"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Oracle Cell Text|Oracle Cell Text|ParagraphStyle/Oracle Cell Text|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/Oracle Cell Blue|Oracle Cell Blue||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Child|Oracle Cell Child||CellStyle/Grp%3aSub%3aOracle Cell Orange",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp|$ID/Grp||",
+    "2|CellStyleGroup|CellStyleGroup/$ID/Grp%3aSub|$ID/Grp:Sub||",
+    "3|CellStyle|CellStyle/Grp%3aSub%3aOracle Cell Orange|Grp:Sub:Oracle Cell Orange||$ID/[None]",
+    "2|CellStyleGroup|CellStyleGroup/$ID/Grp%3aSub copy|$ID/Grp:Sub copy||",
+    "3|CellStyle|CellStyle/Grp%3aSub copy%3aOracle Cell Orange|Grp:Sub copy:Oracle Cell Orange||$ID/[None]",
+    "1|CellStyleGroup|CellStyleGroup/$ID/Grp copy|$ID/Grp copy||",
+    "2|CellStyleGroup|CellStyleGroup/$ID/Grp copy%3aSub|$ID/Grp copy:Sub||",
+    "3|CellStyle|CellStyle/Grp copy%3aSub%3aOracle Cell Orange|Grp copy:Sub:Oracle Cell Orange||$ID/[None]",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Zebra|Oracle Zebra||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Frame|Oracle Frame||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-table-basic",
+   "before": {
+    "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.873d940d2c"
+   },
+   "commands": [
+    {
+     "op": "createTableStyleGroup",
+     "kind": "table",
+     "name": "Grp",
+     "parent": null
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "table",
+     "style": "TableStyle/Oracle Zebra",
+     "group": "TableStyleGroup/$ID/Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "Grp"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Oracle Cell Text|Oracle Cell Text|ParagraphStyle/Oracle Cell Text|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/Oracle Cell Orange|Oracle Cell Orange||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Blue|Oracle Cell Blue||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Child|Oracle Cell Child||CellStyle/Oracle Cell Orange",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Frame|Oracle Frame||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp copy|$ID/Grp copy||",
+    "2|TableStyle|TableStyle/Grp copy%3aOracle Zebra|Grp copy:Oracle Zebra||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp|$ID/Grp||",
+    "2|TableStyle|TableStyle/Grp%3aOracle Zebra|Grp:Oracle Zebra||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-table-second",
+   "before": {
+    "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.ac8bbe3b30"
+   },
+   "commands": [
+    {
+     "op": "createTableStyleGroup",
+     "kind": "table",
+     "name": "Grp",
+     "parent": null
+    },
+    {
+     "op": "createTableStyleGroup",
+     "kind": "table",
+     "name": "Other",
+     "parent": null
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "table",
+     "style": "TableStyle/Oracle Zebra",
+     "group": "TableStyleGroup/$ID/Grp"
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "table",
+     "style": "TableStyle/Oracle Frame",
+     "group": "TableStyleGroup/$ID/Other"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "Grp"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Oracle Cell Text|Oracle Cell Text|ParagraphStyle/Oracle Cell Text|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/Oracle Cell Orange|Oracle Cell Orange||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Blue|Oracle Cell Blue||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Child|Oracle Cell Child||CellStyle/Oracle Cell Orange",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp copy|$ID/Grp copy||",
+    "2|TableStyle|TableStyle/Grp copy%3aOracle Zebra|Grp copy:Oracle Zebra||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp|$ID/Grp||",
+    "2|TableStyle|TableStyle/Grp%3aOracle Zebra|Grp:Oracle Zebra||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Other|$ID/Other||",
+    "2|TableStyle|TableStyle/Other%3aOracle Frame|Other:Oracle Frame||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-table-twice",
+   "before": {
+    "Resources/Styles.xml": "scenario/tablestyles/Resources_Styles.xml.03141352ec"
+   },
+   "commands": [
+    {
+     "op": "createTableStyleGroup",
+     "kind": "table",
+     "name": "Grp",
+     "parent": null
+    },
+    {
+     "op": "moveTableStyle",
+     "kind": "table",
+     "style": "TableStyle/Oracle Zebra",
+     "group": "TableStyleGroup/$ID/Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "Grp"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "table",
+     "group": "Grp"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "1|ParagraphStyle|ParagraphStyle/Oracle Cell Text|Oracle Cell Text|ParagraphStyle/Oracle Cell Text|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "1|CellStyle|CellStyle/Oracle Cell Orange|Oracle Cell Orange||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Blue|Oracle Cell Blue||$ID/[None]",
+    "1|CellStyle|CellStyle/Oracle Cell Child|Oracle Cell Child||CellStyle/Oracle Cell Orange",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "1|TableStyle|TableStyle/Oracle Frame|Oracle Frame||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp copy|$ID/Grp copy||",
+    "2|TableStyle|TableStyle/Grp copy%3aOracle Zebra|Grp copy:Oracle Zebra||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp copy 2|$ID/Grp copy 2||",
+    "2|TableStyle|TableStyle/Grp copy 2%3aOracle Zebra|Grp copy 2:Oracle Zebra||$ID/[No table style]",
+    "1|TableStyleGroup|TableStyleGroup/$ID/Grp|$ID/Grp||",
+    "2|TableStyle|TableStyle/Grp%3aOracle Zebra|Grp:Oracle Zebra||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "sgd-object-basic",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.77fe1fb34c",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "OS Group"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group|$ID/OS Group||",
+    "2|ObjectStyle|ObjectStyle/OS Group%3aOracle Box|OS Group:Oracle Box||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group copy|$ID/OS Group copy||",
+    "2|ObjectStyle|ObjectStyle/OS Group copy%3aOracle Box|OS Group copy:Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Group%3aOracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Group%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "sgd-object-twice",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.65485e25ea",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "OS Group"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "OS Group"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group|$ID/OS Group||",
+    "2|ObjectStyle|ObjectStyle/OS Group%3aOracle Box|OS Group:Oracle Box||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group copy 2|$ID/OS Group copy 2||",
+    "2|ObjectStyle|ObjectStyle/OS Group copy 2%3aOracle Box|OS Group copy 2:Oracle Box||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group copy|$ID/OS Group copy||",
+    "2|ObjectStyle|ObjectStyle/OS Group copy%3aOracle Box|OS Group copy:Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Group%3aOracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Group%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "sgd-object-nested",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.7cc815e08d",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Sub",
+     "parent": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group:OS Sub"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "OS Group"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "OS Group:OS Sub"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group|$ID/OS Group||",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group%3aOS Sub|$ID/OS Group:OS Sub||",
+    "3|ObjectStyle|ObjectStyle/OS Group%3aOS Sub%3aOracle Box|OS Group:OS Sub:Oracle Box||$ID/[None]",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group%3aOS Sub copy|$ID/OS Group:OS Sub copy||",
+    "3|ObjectStyle|ObjectStyle/OS Group%3aOS Sub copy%3aOracle Box|OS Group:OS Sub copy:Oracle Box||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group copy|$ID/OS Group copy||",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group copy%3aOS Sub|$ID/OS Group copy:OS Sub||",
+    "3|ObjectStyle|ObjectStyle/OS Group copy%3aOS Sub%3aOracle Box|OS Group copy:OS Sub:Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Group%3aOS Sub%3aOracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Group%3aOS Sub%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "sgd-object-second",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.dac070de09",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Other"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "group": "OS Other"
+    },
+    {
+     "op": "duplicateStyleGroup",
+     "kind": "object",
+     "group": "OS Group"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group|$ID/OS Group||",
+    "2|ObjectStyle|ObjectStyle/OS Group%3aOracle Box|OS Group:Oracle Box||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group copy|$ID/OS Group copy||",
+    "2|ObjectStyle|ObjectStyle/OS Group copy%3aOracle Box|OS Group copy:Oracle Box||$ID/[None]",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Other|$ID/OS Other||",
+    "2|ObjectStyle|ObjectStyle/OS Other%3aOracle Text|OS Other:Oracle Text||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Group%3aOracle Box"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Group%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "osg-rename-empty",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.66dc5dd848"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "renameObjectStyleGroup",
+     "group": "OS Group",
+     "name": "OS Renamed"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Renamed|$ID/OS Renamed||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box|Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/Oracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "osg-rename-style",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.36b0ce0c04",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group"
+    },
+    {
+     "op": "renameObjectStyleGroup",
+     "group": "OS Group",
+     "name": "OS Renamed"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Renamed|$ID/OS Renamed||",
+    "2|ObjectStyle|ObjectStyle/OS Renamed%3aOracle Box|OS Renamed:Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Renamed%3aOracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Renamed%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "osg-rename-nested",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.740db7f700",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Sub",
+     "parent": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group:OS Sub"
+    },
+    {
+     "op": "renameObjectStyleGroup",
+     "group": "OS Group",
+     "name": "OS Renamed"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Renamed|$ID/OS Renamed||",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Renamed%3aOS Sub|$ID/OS Renamed:OS Sub||",
+    "3|ObjectStyle|ObjectStyle/OS Renamed%3aOS Sub%3aOracle Box|OS Renamed:OS Sub:Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Renamed%3aOS Sub%3aOracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Renamed%3aOS Sub%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "osg-rename-sub",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.5ae9c7c901",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Sub",
+     "parent": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group:OS Sub"
+    },
+    {
+     "op": "renameObjectStyleGroup",
+     "group": "OS Group:OS Sub",
+     "name": "OS Inner"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group|$ID/OS Group||",
+    "2|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group%3aOS Inner|$ID/OS Group:OS Inner||",
+    "3|ObjectStyle|ObjectStyle/OS Group%3aOS Inner%3aOracle Box|OS Group:OS Inner:Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/OS Group%3aOS Inner%3aOracle Box",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/OS Group%3aOS Inner%3aOracle Box",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "osg-delete-unused",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.bb2e73a297"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "group": "OS Group"
+    },
+    {
+     "op": "deleteObjectStyleGroup",
+     "group": "OS Group"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box|Oracle Box||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||ObjectStyle/Oracle Box"
+   ],
+   "applied": {}
+  },
+  {
+   "name": "osg-delete-applied",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.78fc677ef8",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group"
+    },
+    {
+     "op": "deleteObjectStyleGroup",
+     "group": "OS Group"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "osg-delete-nested",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.1df48cdf42",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Sub",
+     "parent": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group:OS Sub"
+    },
+    {
+     "op": "deleteObjectStyleGroup",
+     "group": "OS Group"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  },
+  {
+   "name": "osg-delete-sub",
+   "before": {
+    "Resources/Styles.xml": "scenario/objectstyles/Resources_Styles.xml.4adfb4cc59",
+    "Spreads/Spread_ufe.xml": "scenario/objectstyles/Spreads_Spread_ufe.xml.6403899349"
+   },
+   "commands": [
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Group"
+    },
+    {
+     "op": "createObjectStyleGroup",
+     "name": "OS Sub",
+     "parent": "OS Group"
+    },
+    {
+     "op": "moveObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "group": "OS Group:OS Sub"
+    },
+    {
+     "op": "deleteObjectStyleGroup",
+     "group": "OS Group:OS Sub"
+    }
+   ],
+   "outline": [
+    "0|RootCharacterStyleGroup||||",
+    "1|CharacterStyle|CharacterStyle/$ID/[No character style]|$ID/[No character style]||",
+    "0|RootParagraphStyleGroup||||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/[No paragraph style]|$ID/[No paragraph style]||",
+    "1|ParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/NormalParagraphStyle|ParagraphStyle/$ID/NormalParagraphStyle|$ID/[No paragraph style]",
+    "0|RootCellStyleGroup||||",
+    "1|CellStyle|CellStyle/$ID/[None]|$ID/[None]||",
+    "0|RootTableStyleGroup||||",
+    "1|TableStyle|TableStyle/$ID/[No table style]|$ID/[No table style]||",
+    "1|TableStyle|TableStyle/$ID/[Basic Table]|$ID/[Basic Table]||$ID/[No table style]",
+    "0|RootObjectStyleGroup||||",
+    "1|ObjectStyleGroup|ObjectStyleGroup/$ID/OS Group|$ID/OS Group||",
+    "1|ObjectStyle|ObjectStyle/$ID/[None]|$ID/[None]||",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Graphics Frame]|$ID/[Normal Graphics Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Text Frame]|$ID/[Normal Text Frame]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/$ID/[Normal Grid]|$ID/[Normal Grid]||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Box Blue|Oracle Box Blue||$ID/[None]",
+    "1|ObjectStyle|ObjectStyle/Oracle Text|Oracle Text||$ID/[None]"
+   ],
+   "applied": {
+    "Spreads/Spread_ufe.xml": [
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[None]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]",
+     "ObjectStyle/$ID/[Normal Graphics Frame]"
+    ]
+   }
+  }
+ ]
+}

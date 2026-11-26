@@ -1,0 +1,8 @@
+{
+  "fixture":"datamerge", "extension":"datamerge-fields",
+  "scenarios":[
+    {"name":"noop","text":true,"steps":[]},
+    {"name":"datamerge-text-field","text":true,"steps":[{"op":"insertDataMergeTextField","target":"merge-text","at":6,"field":"Name"}]},
+    {"name":"datamerge-text-repeat","text":true,"steps":[{"op":"insertDataMergeTextField","target":"merge-text","at":0,"field":"Name"},{"op":"insertDataMergeTextField","target":"merge-text","at":14,"field":"Name"}]}
+  ]
+}

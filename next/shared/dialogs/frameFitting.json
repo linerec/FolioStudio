@@ -1,0 +1,135 @@
+{
+  "title": "프레임 맞춤 옵션",
+  "target": "selection",
+  "defaults": "frameFitting",
+  "description": "Object > Fitting > Frame Fitting Options: ids are the frames (the selection when none are given); the values start from the first frame's options and every frame gets them all.",
+  "fields": [
+    {
+      "name": "autoFit",
+      "label": "자동 맞춤",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "fittingOnEmptyFrame",
+      "label": "맞춤 방식",
+      "type": "enum",
+      "default": "None",
+      "options": [
+        {
+          "value": "None",
+          "label": "없음"
+        },
+        {
+          "value": "Proportionally",
+          "label": "비율에 맞게 내용 맞추기"
+        },
+        {
+          "value": "FillProportionally",
+          "label": "비율에 맞게 프레임 채우기"
+        },
+        {
+          "value": "ContentToFrame",
+          "label": "프레임에 내용 맞추기"
+        }
+      ]
+    },
+    {
+      "name": "fittingAlignment",
+      "label": "정렬 기준점",
+      "type": "enum",
+      "default": "CenterAnchor",
+      "options": [
+        {
+          "value": "TopLeftAnchor",
+          "label": "왼쪽 위"
+        },
+        {
+          "value": "TopCenterAnchor",
+          "label": "가운데 위"
+        },
+        {
+          "value": "TopRightAnchor",
+          "label": "오른쪽 위"
+        },
+        {
+          "value": "LeftCenterAnchor",
+          "label": "왼쪽 가운데"
+        },
+        {
+          "value": "CenterAnchor",
+          "label": "가운데"
+        },
+        {
+          "value": "RightCenterAnchor",
+          "label": "오른쪽 가운데"
+        },
+        {
+          "value": "BottomLeftAnchor",
+          "label": "왼쪽 아래"
+        },
+        {
+          "value": "BottomCenterAnchor",
+          "label": "가운데 아래"
+        },
+        {
+          "value": "BottomRightAnchor",
+          "label": "오른쪽 아래"
+        }
+      ]
+    },
+    {
+      "name": "topCrop",
+      "label": "위",
+      "type": "number",
+      "default": 0,
+      "min": -100000,
+      "max": 100000,
+      "group": "크기에 맞게 자르기 (pt)"
+    },
+    {
+      "name": "bottomCrop",
+      "label": "아래",
+      "type": "number",
+      "default": 0,
+      "min": -100000,
+      "max": 100000,
+      "group": "크기에 맞게 자르기 (pt)"
+    },
+    {
+      "name": "leftCrop",
+      "label": "왼쪽",
+      "type": "number",
+      "default": 0,
+      "min": -100000,
+      "max": 100000,
+      "group": "크기에 맞게 자르기 (pt)"
+    },
+    {
+      "name": "rightCrop",
+      "label": "오른쪽",
+      "type": "number",
+      "default": 0,
+      "min": -100000,
+      "max": 100000,
+      "group": "크기에 맞게 자르기 (pt)"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setFrameFitting",
+        "ids": "$ids",
+        "props": {
+          "autoFit": "$autoFit",
+          "topCrop": "$topCrop",
+          "bottomCrop": "$bottomCrop",
+          "leftCrop": "$leftCrop",
+          "rightCrop": "$rightCrop",
+          "fittingAlignment": "$fittingAlignment",
+          "fittingOnEmptyFrame": "$fittingOnEmptyFrame"
+        }
+      }
+    ]
+  }
+}

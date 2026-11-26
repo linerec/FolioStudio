@@ -1,0 +1,79 @@
+{
+  "title": "안내선 만들기",
+  "target": "explicit",
+  "maxIds": 1,
+  "fields": [
+    {
+      "name": "rows",
+      "label": "개수",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 40,
+      "integer": true,
+      "group": "행"
+    },
+    {
+      "name": "rowGutter",
+      "label": "label.gutter",
+      "type": "number",
+      "default": 12,
+      "min": 0,
+      "max": 1000000000,
+      "group": "행"
+    },
+    {
+      "name": "columns",
+      "label": "개수",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 40,
+      "integer": true,
+      "group": "열"
+    },
+    {
+      "name": "columnGutter",
+      "label": "label.gutter",
+      "type": "number",
+      "default": 12,
+      "min": 0,
+      "max": 1000000000,
+      "group": "열"
+    },
+    {
+      "name": "fitMargins",
+      "label": "안내선 맞춤",
+      "type": "boolean",
+      "default": true,
+      "group": "안내선 맞춤",
+      "radio": [
+        "여백",
+        "페이지"
+      ]
+    },
+    {
+      "name": "removeExisting",
+      "label": "기존 눈금자 안내선 제거",
+      "type": "boolean",
+      "default": false,
+      "group": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "createGuides",
+        "page": "$ids0",
+        "rows": "$rows",
+        "columns": "$columns",
+        "rowGutter": "$rowGutter",
+        "columnGutter": "$columnGutter",
+        "fitMargins": "$fitMargins",
+        "removeExisting": "$removeExisting"
+      }
+    ]
+  },
+  "note": "펼침면의 모든 페이지에 만듭니다.",
+  "description": "ids is the page id whose spread gets the guides; gutters are points."
+}

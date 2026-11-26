@@ -1,0 +1,34 @@
+{
+  "title": "하이퍼링크",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "editHyperlink",
+  "description": "Hyperlink Options: ids is the link; name and web address start from it.",
+  "fields": [
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "url",
+      "label": "URL",
+      "type": "text",
+      "default": "https://",
+      "required": true,
+      "maxLength": 2048
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setHyperlink",
+        "id": "$ids0",
+        "name": "$name",
+        "url": "$url"
+      }
+    ]
+  }
+}

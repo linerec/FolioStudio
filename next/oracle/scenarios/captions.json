@@ -1,0 +1,29 @@
+{
+  "fixture": "variables",
+  "extension": "captions",
+  "about": "Caption setup label round-trip and native caption menu actions.",
+  "scenarios": [
+    {
+      "name": "caption-setup",
+      "steps": [
+        {
+          "op": "setCaptionSetup",
+          "props": {
+            "rows": [
+              {
+                "before": "Photo: ",
+                "metadata": "Name",
+                "after": "!"
+              }
+            ],
+            "position": "above",
+            "offset": 5,
+            "paragraphStyle": "",
+            "layer": "",
+            "group": false
+          }
+        }
+      ]
+    }
+  ]
+}

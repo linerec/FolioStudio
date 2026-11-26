@@ -1,0 +1,26 @@
+[package]
+build = "../../test-inputs.rs"
+name = "folio-edit"
+description = "Editing a document by targeted edits of its IDML parts, with undo"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+quick-xml = { version = "=0.42.0", default-features = false }
+folio-links.workspace = true
+folio-color.workspace = true
+folio-model.workspace = true
+folio-math.workspace = true
+folio-idml.workspace = true
+folio-preflight.workspace = true
+folio-spell.workspace = true
+folio-textimport.workspace = true
+# Index sort order: ICU4X root collation (Unicode-3.0, pure Rust, compiled-in data, no OS APIs: builds for Windows, macOS, Linux, iOS, Android).
+icu_collator = "=2.4.0"
+
+[dev-dependencies]
+folio-text.workspace = true
+zip = { version = "=9.0.5", default-features = false, features = ["deflate-flate2-zlib-rs"] }

@@ -1,0 +1,1017 @@
+{
+  "version": 1,
+  "doc": "artifacts/finish-20261113/LIMITS.ko.md",
+  "areas": [
+    {
+      "id": "text",
+      "ko": "글자",
+      "en": "Characters"
+    },
+    {
+      "id": "paragraph",
+      "ko": "단락·조판",
+      "en": "Paragraphs and composition"
+    },
+    {
+      "id": "textpath",
+      "ko": "패스 위 글자",
+      "en": "Type on a path"
+    },
+    {
+      "id": "object",
+      "ko": "개체·그림",
+      "en": "Objects and graphics"
+    },
+    {
+      "id": "color",
+      "ko": "색",
+      "en": "Color"
+    },
+    {
+      "id": "math",
+      "ko": "수식",
+      "en": "Equations"
+    },
+    {
+      "id": "document",
+      "ko": "문서 구조",
+      "en": "Document structure"
+    },
+    {
+      "id": "output",
+      "ko": "출력",
+      "en": "Output"
+    },
+    {
+      "id": "import",
+      "ko": "가져오기",
+      "en": "Import and Place"
+    },
+    {
+      "id": "exchange",
+      "ko": "InDesign 교환",
+      "en": "InDesign exchange"
+    },
+    {
+      "id": "screen",
+      "ko": "화면 도구",
+      "en": "Tools and panels"
+    },
+    {
+      "id": "excluded",
+      "ko": "제외한 기능",
+      "en": "Removed features"
+    }
+  ],
+  "differences": [
+    {
+      "id": "saved-lines",
+      "kind": "approx",
+      "area": "exchange",
+      "top": 1,
+      "ko": "IDML 에는 InDesign 이 저장한 줄(조판 결과)이 없습니다. InDesign 은 IDML 을 열 때 모든 기사를 다시 조판하므로 줄바꿈과 넘침이 INDD 와 달라질 수 있습니다.",
+      "en": "IDML has no saved composition from InDesign. InDesign recomposes every story when it opens IDML, so line breaks and overset text can differ from the INDD.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "hangul-lines",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": 2,
+      "ko": "한글 줄 나눔은 기본 대조 문서 517줄 중 495줄이 InDesign과 같습니다. 별도 긴 어절 문서에서는 32줄 중 29줄이 같으며, 일부 긴 어절의 줄 나눔과 넘침이 다릅니다.",
+      "en": "Korean line breaks match InDesign on 495 of 517 lines in the main test document. In the separate long-word test, 29 of 32 lines match, with some differences in line breaks and overset text.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "hyphen-dictionary",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": 3,
+      "ko": "하이픈 사전은 영어·독일어·프랑스어·스페인어만 있습니다. 측정한 낱말의 미국 영어 76.0%, 영국 영어 75.2%, 독일어·프랑스어·스페인어 80.8~94.4%가 InDesign과 같은 자리에서 끊기고, 다른 언어는 하이픈을 넣지 않습니다. 균형 가중치는 5(기본)만 InDesign 과 같고, 하이픈 영역과 단 경계에서 하이픈 허용은 한 줄 컴포저에 적용하지 않습니다.",
+      "en": "The hyphenation dictionaries cover English, German, French and Spanish only. Among measured words, 76.0% in US English, 75.2% in UK English and 80.8-94.4% in German, French and Spanish break at the same places as in InDesign; other languages are not hyphenated. Only the default balance weight 5 matches InDesign, and the hyphenation zone and hyphenating across columns are not applied by the single-line composer.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "optical-kerning",
+      "kind": "approx",
+      "area": "text",
+      "top": 5,
+      "ko": "광학 커닝 설정은 문서에 보존하며, 조판에는 글꼴의 쌍 커닝(메트릭)을 씁니다. Arial·Times New Roman·맑은 고딕으로 측정한 99줄에서 InDesign의 메트릭과 광학 커닝은 줄 폭이 평균 2.49pt, 최대 11.71pt 차이 났습니다.",
+      "en": "Folio preserves the Optical setting and composes text with the font's pair kerning (Metrics). Across 99 test lines in Arial, Times New Roman and Malgun Gothic, the absolute line-width difference between InDesign Metrics and Optical averaged 2.49 pt and reached 11.71 pt.",
+      "detect": [
+        "KerningMethod=\"$ID/Optical\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "vertical-text",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": 4,
+      "ko": "오른쪽에서 왼쪽으로 쓰는 글(글 방향)은 왼쪽에서 오른쪽으로 조판합니다(가져올 때 경고). 세로 글에서 45°처럼 비스듬히 돌린 글자의 자리는 조금 다를 수 있고, 글 감싸기를 한쪽 면(왼쪽·오른쪽)으로 정하면 줄의 위·아래 쪽으로 다룹니다.",
+      "en": "Right-to-left stories (story direction) are composed left to right (a warning appears on import). In vertical stories, characters rotated at an angle such as 45° can sit slightly differently, and a text wrap set to one side (left or right) is taken as the top or bottom of the lines.",
+      "detect": [
+        "StoryOrientation=\"Vertical\"",
+        "StoryDirection=\"RightToLeftDirection\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "world-ready-composer",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": null,
+      "ko": "왼쪽에서 오른쪽으로 쓰는 문단에서 World-Ready는 라틴 글과 섞인 아랍어·히브리어의 방향을 반영합니다. 오른쪽에서 왼쪽으로 쓰는 문서 전체의 호환성은 확인 범위 밖입니다.",
+      "en": "In left-to-right paragraphs, World-Ready respects the direction of Arabic and Hebrew mixed with Latin text. Compatibility for entire right-to-left documents is outside the verified scope.",
+      "detect": [
+        "Optyca"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "span-columns",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": null,
+      "ko": "단 걸치기·단 나누기는 일부 단만 걸친 틀의 세로 정렬이 최대 1.2pt, 감싸기 뒤 본문 위치가 최대 0.8pt 다를 수 있습니다.",
+      "en": "Span and split columns can differ by up to 1.2 pt in vertical alignment of partly spanned frames and up to 0.8 pt in text position after a wrap.",
+      "detect": [
+        "SpanColumnType=\"SpanColumns\"",
+        "SpanColumnType=\"SplitColumns\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "optical-margin",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": null,
+      "ko": "광학 여백 맞춤은 줄의 첫·끝 글자를 글꼴 윤곽에 따라 여백 밖으로 내밀지만, 줄바꿈 위치는 돌출을 넣지 않고 고르므로 좁은 줄에서는 줄바꿈이 달라질 수 있습니다. 오른쪽에서 왼쪽 쓰기와 세로쓰기 줄은 내밀지 않습니다.",
+      "en": "Optical margin alignment hangs the first and last glyph of a line past the margin by their outlines, but line breaks are chosen without the hang, so a narrow column can break differently. Right-to-left and vertical lines do not hang.",
+      "detect": [
+        "OpticalMarginAlignment=\"true\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "drop-cap",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": null,
+      "ko": "드롭 캡은 Arial, 맑은 고딕, Georgia 및 Times New Roman 굵은 장식 문자에서 InDesign 과 대조했습니다. Calibri 보통·기울임과 장식 문자 직후의 일반 공백은 배치가 다를 수 있습니다.",
+      "en": "Drop caps were compared with InDesign using Arial, Malgun Gothic, Georgia, and a bold Times New Roman drop-cap style. Placement can differ with regular or italic Calibri and with ordinary spaces immediately after a drop cap.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "text-on-path",
+      "kind": "approx",
+      "area": "textpath",
+      "top": null,
+      "ko": "패스 위 글자는 곧은 수평선에서는 InDesign 과 같고, 곡선에서는 0.05~0.15pt(긴 열린 곡선을 거꾸로 그리면 최대 0.9pt) 어긋납니다. 닫힌 사각형·타원·다각형에서 뒤집기와 시작·끝 위치에 따른 배치를 대조했습니다.",
+      "en": "Type on a path matches InDesign on straight horizontal paths; on curves it is off by 0.05-0.15 pt (up to 0.9 pt on long reversed open curves). Flipped placement was also compared at different start and end positions on closed rectangles, ovals, and polygons.",
+      "detect": [
+        "<TextPath "
+      ],
+      "subtract": []
+    },
+    {
+      "id": "char-gradient",
+      "kind": "approx",
+      "area": "text",
+      "top": null,
+      "ko": "글자 그레이디언트는 표 칸·각주 글·패스 위 글자에서 단색으로 근사합니다.",
+      "en": "Character gradients are approximated by a flat colour inside table cells, footnotes and on type on a path.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "pattern-border-gap",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": null,
+      "ko": "무늬 선(파선·점선·일본식 점·물결선) 단락 테두리의 간격 색은 InDesign PDF 와 대조했습니다(평균 차이 0.027%). 경계선(Rule)의 간격 색과 중복 인쇄는 대조하지 않았습니다.",
+      "en": "Gap colours of patterned paragraph borders were compared with InDesign's PDF (0.027% mean difference). Gap colour and overprint of paragraph rules were not compared.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "psd-layers",
+      "kind": "approx",
+      "area": "object",
+      "top": null,
+      "ko": "PSD 레이어 합성은 픽셀·마스크·한 모양의 벡터 마스크까지만 합성합니다. 효과·텍스트·스마트 개체 층과 밝기/대비·레벨·곡선 조정 층, 16비트·CMYK PSD 는 저장된 합성 그림을 쓰며 경고합니다.",
+      "en": "PSD layer composition covers pixels, masks and single-shape vector masks. Effect, text and smart-object layers, brightness/contrast, levels and curves adjustment layers and 16-bit or CMYK PSDs use the saved composite and warn.",
+      "detect": [
+        "<GraphicLayerOption"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "clipping-path",
+      "kind": "approx",
+      "area": "object",
+      "top": null,
+      "ko": "가장자리 감지와 알파 채널로 만든 클리핑 패스는 허용치가 0 이 아니면 윤곽을 곡선으로 맞춥니다. InDesign 에서 이 그림의 클리핑 옵션을 다시 적용하면 곡선의 점 수와 모양이 조금 바뀔 수 있습니다. 허용치 0 의 윤곽과 Photoshop 패스는 같습니다.",
+      "en": "Clipping paths made by Detect Edges or Alpha Channel fit the outline with curves when the tolerance is not 0. Applying the clipping options of the picture again in InDesign can change the number of points and the shape of the curves a little. The outline at tolerance 0 and Photoshop paths are the same.",
+      "detect": [
+        "ClippingType=\"PhotoshopPath\"",
+        "ClippingType=\"AlphaChannel\"",
+        "ClippingType=\"DetectEdges\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "anchored-objects",
+      "kind": "approx",
+      "area": "object",
+      "top": null,
+      "ko": "고정 개체는 맞쪽의 열·여백·쪽 기준과 위·가운데·아래 정렬을 대조했습니다. 가로와 세로의 참조 영역이 서로 다른 조합과 회전·중첩 글틀의 배치는 대조 범위 밖입니다.",
+      "en": "Anchored objects were compared on facing pages with column, margin and page references and top, centre and bottom alignment. Mixed horizontal and vertical references and placement in rotated or nested frames remain outside the comparison.",
+      "detect": [
+        "AnchoredPosition=\"Anchored\"",
+        "AnchoredPosition=\"AboveLine\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "local-display",
+      "kind": "approx",
+      "area": "object",
+      "top": null,
+      "ko": "개체별 표시 성능은 InDesign 이 기본 설정에서는 저장 때 버리는 값을 Folio 는 항상 문서에 남깁니다.",
+      "en": "Per-object display performance is always kept in the document, while InDesign drops it on save by default.",
+      "detect": [
+        "LocalDisplaySetting=\"HighQuality\"",
+        "LocalDisplaySetting=\"Typical\"",
+        "LocalDisplaySetting=\"Optimized\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "qr-code",
+      "kind": "approx",
+      "area": "object",
+      "top": null,
+      "ko": "QR 코드는 텍스트·URL·숫자·한글을 InDesign 의 EPS 와 대조했습니다. 편집 가능한 벡터 그룹으로 들어가며 QR 내용 정보는 남기지 않습니다. 다른 형식과 높은 버전은 대조하지 못했습니다.",
+      "en": "QR codes (text, URL, numbers, Hangul) were compared with InDesign's EPS. They become editable vector groups without QR metadata. Other formats and high versions were not compared.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "math-shape",
+      "kind": "approx",
+      "area": "math",
+      "top": 10,
+      "ko": "MathML 수식은 InDesign 의 TeX 글꼴(MathJax) 대신 설치된 수학 글꼴로 조판해 폭·높이가 7% 안쪽으로 다르고 글자 모양이 다릅니다. 표의 선·병합, 부분 색, 줄 바꿈은 조판하지 못합니다. 분판 미리 보기에는 그려지지 않습니다.",
+      "en": "MathML equations are laid out with an installed maths font instead of InDesign's TeX fonts, so width and height differ by up to 7% and glyph shapes differ. Table rules/spans, partial colours and line breaks are not laid out. Separation preview does not draw them.",
+      "detect": [
+        "<MathObject"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "hyperlinks",
+      "kind": "approx",
+      "area": "document",
+      "top": null,
+      "ko": "하이퍼링크는 URL·텍스트 앵커·쪽·상호 참조를 읽고 그대로 내보냅니다. 상호 참조는 같은 문서 안의 대상으로 만들고 고치며, 형식 블록(쪽 번호·장 번호·파일 이름·단락 텍스트·단락 번호·전체 단락·텍스트 앵커 이름)과 블록마다의 문자 스타일을 계산합니다. 다른 문서의 대상으로 가는 하이퍼링크·상호 참조는 읽고 내보내기만 하며 만들거나 다시 계산하지 않습니다. 두 글자 이상의 구분 문자는 지원하지 않습니다.",
+      "en": "Hyperlinks (URL, text anchor, page, cross-reference) are read and written back unchanged. Cross-references to destinations in the same document are made and edited, with every building block (page number, chapter number, file name, paragraph text, paragraph number, full paragraph, text anchor name) and a character style per block computed. Hyperlinks and cross-references to destinations in other documents are only read and written back, not made or computed again. Delimiters of more than one character are not supported.",
+      "detect": [
+        "<HyperlinkPageDestination",
+        "<HyperlinkExternalPageDestination"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "toc-index",
+      "kind": "approx",
+      "area": "document",
+      "top": null,
+      "ko": "목차의 단계별 정렬과 각주·표 안 색인 표식의 쪽 번호를 InDesign 과 대조했습니다. 목차 생성 대화상자의 번호·책갈피 옵션은 아직 확인하지 못했습니다. 옛 한자 약 2% 는 정렬 순서가 다를 수 있고, 각주·표 안에 색인 표식을 만드는 명령은 없습니다.",
+      "en": "Multilevel TOC sorting and index page numbers for markers in footnotes and tables were compared with InDesign. Number and bookmark options in the TOC dialog remain unverified. About 2% of rare Han characters can sort differently, and there is no command to create an index marker inside a footnote or table.",
+      "detect": [
+        "AppliedTOCStyle=\"TOCStyle/",
+        "<Topic "
+      ],
+      "subtract": []
+    },
+    {
+      "id": "endnotes",
+      "kind": "approx",
+      "area": "document",
+      "top": null,
+      "ko": "미주 범위가 문서이면 미주는 문서 끝 새 페이지의 미주 이야기 하나에 모이고, 스토리이면 스토리마다 그 스토리가 끝나는 페이지 바로 뒤 새 페이지의 미주 이야기에 모여 스토리마다 1부터 번호가 붙습니다. 미주 틀 만들기를 '위치 커서에 불러오기'로 골라도 새 페이지에 틀을 만듭니다(고른 값은 문서에 남습니다). 범위가 스토리일 때 각주를 미주로 바꾸기와 Word 미주 가져오기는 하지 않습니다. 아랍·히브리 번호 서식은 아라비아 숫자로 찍힙니다.",
+      "en": "With the endnote scope Document the endnotes gather in one endnote story on a new page at the end of the document; with Story each story's endnotes gather in an endnote story on a new page right after the page where that story ends, numbered from 1 in each story. Choosing Load in Place Cursor for the endnote frame still makes the frame on a new page (the choice is kept in the document). With the scope Story, converting footnotes to endnotes and Word endnotes are not done. Arabic and Hebrew numbering styles print Arabic digits.",
+      "detect": [
+        "IsEndnoteStory=\"true\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "conditions",
+      "kind": "approx",
+      "area": "document",
+      "top": null,
+      "ko": "조건부 텍스트는 정의 읽기, 보이기/숨기기, 만들기·삭제·옵션 편집을 합니다. 새 조건의 색은 첫 안 쓴 인터페이스 색으로 정합니다.",
+      "en": "Conditional text reads definitions, shows/hides conditions and creates, deletes and edits them. A new condition takes the first unused interface colour.",
+      "detect": [
+        "<Condition "
+      ],
+      "subtract": []
+    },
+    {
+      "id": "traps-settings",
+      "kind": "approx",
+      "area": "output",
+      "top": 9,
+      "ko": "트랩 설정과 쪽 할당은 저장하고 InDesign 으로 되돌려 보냅니다. 분판 출력에 트랩을 그리지 않으며(InDesign 정답을 이 PC 에서 낼 수 없었음) 비교 검증도 못 했습니다. 인쇄소에 트랩이 필요하면 InDesign 에서 처리하세요.",
+      "en": "Trap presets and page assignments are saved and sent back to InDesign. Folio does not draw traps in separations, and this could not be verified against InDesign. If your printer needs trapping, do it in InDesign.",
+      "detect": [
+        "AppliedTrapPreset=\"TrapPreset/"
+      ],
+      "subtract": [
+        "AppliedTrapPreset=\"TrapPreset/$ID/"
+      ]
+    },
+    {
+      "id": "print-marks-info",
+      "kind": "approx",
+      "area": "output",
+      "top": null,
+      "ko": "인쇄 표시(재단선·도련선·등록 표시)의 시트 크기는 InDesign 과 같습니다. 페이지 정보 줄의 글자 위치와 내용은 다릅니다(칸 크기만 같음).",
+      "en": "Sheet sizes for printer's marks (crop, bleed, registration) match InDesign. The text position and content of the page information line differ; only the box size matches.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "layout-adjustment",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "레이아웃 조정의 글꼴 크기 조정은 줄 끝이 들쭉날쭉한 글에서 InDesign 보다 0.2~2.5pt 크게 나옵니다(대조 7건 중 2건이 같음). 모두 틀 안에 들어갑니다.",
+      "en": "Font size adjustment in Adjust Layout comes out 0.2-2.5 pt larger than InDesign on ragged text (2 of 7 compared cases matched). All results still fit inside the frame.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "create-outlines",
+      "kind": "approx",
+      "area": "text",
+      "top": null,
+      "ko": "윤곽선 만들기는 OpenType CFF·가변 글꼴에서 모양은 같지만 점 순서와 시작점이 InDesign 과 다를 수 있습니다. 표·각주·패스 위 글 안의 범위, 고정 개체·표가 든 글, 돌린 줄, 그레이디언트 글은 거절합니다.",
+      "en": "Create Outlines gives the same shapes for OpenType CFF and variable fonts, but point order and start points can differ. Ranges inside tables, footnotes or type on a path, text with anchored objects or tables, rotated lines and gradient text are refused.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "conveyor-group",
+      "kind": "approx",
+      "area": "document",
+      "top": null,
+      "ko": "컨베이어(다른 문서와의 링크)에서 글 상자가 든 그룹을 업데이트하면 안 글 상자의 이야기는 사본의 것을 둡니다(InDesign 도 같음). 링크를 만들 때 InDesign 이 하는 이야기별 링크는 Folio 가 만들지 않습니다.",
+      "en": "When a group containing text frames is updated through the Conveyor, the stories inside keep the copy's text (as in InDesign). The per-story links InDesign creates are not created by Folio.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "color-policy",
+      "kind": "approx",
+      "area": "color",
+      "top": null,
+      "ko": "색 변환은 상대 색도계 의도로 합니다. 가시 범위·채도·절대 색도계 의도는 인쇄에 연결되지 않았습니다. 별색의 중성 농도(NeutralDensity)는 근사값을 씁니다.",
+      "en": "Colour conversion uses the relative colorimetric intent. Perceptual, saturation and absolute intents are not wired to print output. The neutral density of spot inks is approximated.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "place-click-frame",
+      "kind": "approx",
+      "area": "import",
+      "top": null,
+      "ko": "글 파일을 올린 채 빈 곳을 눌러 만드는 글 상자의 크기는 스크립트에 '클릭'이 없어 InDesign 의 틀을 재지 못했습니다. 쪽 여백까지 아래로, 누른 곳의 단 너비로 만듭니다.",
+      "en": "The size of the frame made by clicking an empty spot with loaded text could not be measured (scripts have no click). It runs from the click to the bottom margin at the column width.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "merged-cell-borders",
+      "kind": "approx",
+      "area": "import",
+      "top": null,
+      "ko": "Word·RTF 에서 병합한 표 칸의 테두리는 모양·굵기·색은 파일대로 들어오지만 겹치는 두 선 중 이기는 선의 우선순위가 InDesign 과 다를 수 있습니다.",
+      "en": "Borders of merged table cells from Word or RTF keep their style, weight and colour, but which of two overlapping lines wins can differ from InDesign.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "document-window",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "대지(펼침면 사이)에 놓은 개체의 소속은 가운데가 가까운 펼침면 규칙으로 정합니다. 안내선 스냅 간격·스마트 안내선의 일부 경우, 연필 도구의 구불구불한 긴 끌기는 InDesign 과 조금 다릅니다.",
+      "en": "An object dropped on the pasteboard between spreads belongs to the spread whose centre is nearer. A few guide snapping and Smart Guide cases and long wiggly Pencil strokes differ slightly from InDesign.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "justify-spacing",
+      "kind": "approx",
+      "area": "paragraph",
+      "top": null,
+      "ko": "균등 배치에서 글자 간격이 있는 영문 줄은 PDF 글자 간격이 한 단위 다를 수 있고, 한 줄 컴포저의 영문 줄은 조금 다를 수 있습니다. 대조한 설정은 InDesign 과 인쇄 결과가 같습니다.",
+      "en": "In justified text, English lines with letter spacing can differ by one unit of PDF glyph spacing, and English lines of the single-line composer can differ slightly. The settings that were compared print the same as InDesign.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "merge-preview",
+      "kind": "approx",
+      "area": "output",
+      "top": null,
+      "ko": "병합 미리 보기 패널은 스프레드 재정의가 있는 펼침면을 대조하지 못했고, 래스터화된 복잡한 영역과 래스터 칠 텍스트·획은 아무것도 칠하지 않으며, 회전·그룹 개체의 강조 모양과 투명한 그림이 영향받는 그래픽인지는 대조하지 못했습니다.",
+      "en": "The Flattener Preview panel was not compared on spreads with spread overrides; rasterized complex regions and raster-filled text and strokes are not painted; the highlight shape of rotated or grouped objects and whether a transparent picture counts as an affected graphic were not compared.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "proof-colors",
+      "kind": "approx",
+      "area": "output",
+      "top": null,
+      "ko": "교정 설정: 잉크 한계 보기에서는 교정 색을 쓰지 않고, 칸의 회색이 잉크 합계에 비례하지 않고 밝기를 씁니다.",
+      "en": "Proof setup: the ink limit view does not use the proof colours, and the grey of a cell follows brightness, not the ink total.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "glyph-panel",
+      "kind": "approx",
+      "area": "text",
+      "top": null,
+      "ko": "글리프 패널은 Localized Forms·인도계 기능의 이름과 유무, 몇몇 글꼴에서 Small Capitals 등이 나오는 규칙, CJK 괄호 없이도 열고 닫는 부호·대시·따옴표 항목이 나오는 글꼴이 InDesign 과 다를 수 있습니다. Folio 의 유니코드 표가 더 새것이라 새 문자는 Folio 범위 보기에만 나올 수 있습니다.",
+      "en": "The Glyphs panel can differ from InDesign in the names and presence of Localized Forms and Indic features, in when some fonts offer Small Capitals and similar features, and in fonts that list open/close punctuation, dashes and quotes without CJK brackets. Folio's Unicode table is newer, so new characters may appear only in Folio's range view.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "color-picker",
+      "kind": "approx",
+      "area": "color",
+      "top": null,
+      "ko": "색상 선택기는 sRGB 밖 색의 Lab 영역·슬라이더와 Lab/CMYK 변환 정확도가 InDesign 과 다를 수 있습니다. 선택이 없을 때 InDesign 은 D 단추로 문서 기본 칠·획을 바꾸지 않으므로 Folio 도 그 단추를 비활성으로 둡니다.",
+      "en": "The colour picker can differ from InDesign in the Lab area and sliders for colours outside sRGB and in the accuracy of Lab/CMYK conversion. With nothing selected InDesign's D button does not change the document default fill and stroke, so Folio keeps that button disabled.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "gap-tool",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "간격 도구는 레이어를 잠그거나 숨긴 개체 옆 간격을 잠긴 개체로 취급하고, 기울인(전단) 개체와 선 이웃은 거절하며, 쪽 맞춤이 아닌 문서에서 포인터가 띠 안인 경우는 대조하지 못했습니다.",
+      "en": "The Gap tool treats a gap next to an object on a locked or hidden layer as a locked object, refuses sheared objects and line neighbours, and was not compared when the pointer is inside the band of a document that is not page-fitted.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "control-bar-limits",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "컨트롤 막대의 X·Y 비율은 표·각주·인라인 개체가 든 글과 그러데이션 틀을 거절하고 아무것도 바꾸지 않습니다. 페이지 도구의 개체 함께 이동은 맞쪽·여러 쪽 펼침면에서 쪽을 끌며 개체를 함께 옮기는 경우를 거절합니다.",
+      "en": "The control bar's X and Y scale refuses text with tables, footnotes or inline objects and gradient frames and changes nothing. Move Objects with Page in the Page tool refuses dragging a page of a facing or multi-page spread with its objects.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "story-editor-tables",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "스토리 편집기에서 표는 글 가운데 제자리가 아니라 글 아래에 모아 보이고, 병합한 칸·머리글·꼬리글이 있는 표의 칸 순서는 3×3 표로만 대조했습니다.",
+      "en": "In the Story Editor tables are shown together below the text, not in place, and the cell order of tables with merged cells, header rows or footer rows was compared only for a 3x3 table.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "guides-smart",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "안내선: Shift 로 눈금에 물리는 간격은 가운데 56% 아래 배율에서 3pt 로 정해져 있고, 스마트 안내선의 뒤집거나 기울인 개체·돌린 그룹의 크기 맞추기와 여러 쪽에 걸친 선택은 InDesign 과 다를 수 있습니다.",
+      "en": "Guides: the Shift snap step to the ruler is fixed at 3 pt below 56% zoom, and the Smart Guide size matching of flipped or sheared objects and rotated groups, and selections spanning several pages, can differ from InDesign.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "pen-pencil-details",
+      "kind": "approx",
+      "area": "screen",
+      "top": null,
+      "ko": "펜 이어 그리기는 선택하지 않은 패스의 끝점에서는 하지 않고, 끝점을 누른 채 끌어 방향선을 만드는 것도 안 됩니다. 매끄럽게 도구는 패스에서 12pt 넘게 떨어진 곳에서 시작하면 거절합니다. 연필 도구로 50% 확대에서 구불구불한 긴 끌기를 이어 그리면 앵커 수가 다를 수 있습니다.",
+      "en": "Pen continue does not work from an endpoint of an unselected path and cannot drag a direction line from an endpoint. The Smooth tool refuses a stroke that starts more than 12 pt from the path. Continuing with the Pencil in a long wiggly stroke at 50% zoom can give a different number of anchors.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "book-index-toc",
+      "kind": "unsupported",
+      "area": "document",
+      "top": 6,
+      "ko": "책 문서를 포함해 만든 목차와 색인에서 다른 문서로 이동하는 하이퍼링크는 생성되지 않습니다.",
+      "en": "Book-wide tables of contents and indexes do not generate hyperlinks to other documents in the book.",
+      "detect": [
+        "IncludeBookDocuments=\"true\""
+      ],
+      "subtract": []
+    },
+    {
+      "id": "place-formats",
+      "kind": "unsupported",
+      "area": "import",
+      "top": 7,
+      "ko": "벡터 PostScript EPS 는 해석하지 않고 파일에 든 미리 보기 그림(없으면 회색 상자)으로 화면과 PDF 에 나옵니다(사전 검사가 알립니다). 인쇄용은 PDF 로 바꿔 놓거나 IDML 로 넘기세요. Photoshop EPS 는 파일 안의 원래 그림으로 나옵니다. EMF·WMF 의 클리핑·무늬 브러시와 복사가 아닌 래스터 연산은 그리지 않습니다. SVG 안의 그림이 바깥 파일을 가리키면 그리지 않습니다(SVG 안에 담긴 그림은 그립니다). 스크립트와 애니메이션은 실행하지 않고 처음 모습을 그립니다. PDF 로 내보낼 때 SVG 의 필터·마스크·그레이디언트·무늬·불투명도·비트맵은 300 ppi 픽셀로 들어갑니다.",
+      "en": "A vector PostScript EPS is not interpreted: it appears on screen and in the PDF as the preview picture it carries (a grey box when it has none), and preflight says so. For print, place it as PDF or hand over IDML. A Photoshop EPS appears as the picture it holds. Clipping, pattern brushes and raster operations other than a copy in EMF and WMF are not drawn. A picture inside an SVG that names an outside file is not drawn (a picture held inside the SVG is). Scripts and animation are not run; the first appearance is drawn. In PDF export, SVG filters, masks, gradients, patterns, opacity and bitmaps are written as 300 ppi pixels.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "indd-write",
+      "kind": "unsupported",
+      "area": "exchange",
+      "top": null,
+      "ko": "Folio 는 INDD 를 직접 쓰지 않습니다. InDesign 에 넘기려면 IDML 로 내보내고, INDD 가 필요하면 InDesign 에서 그 IDML 을 열어 저장하세요.",
+      "en": "Folio does not write INDD files. Export IDML for InDesign; if you need an INDD, open that IDML in InDesign and save it.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "cloud-library",
+      "kind": "unsupported",
+      "area": "object",
+      "top": null,
+      "ko": "InDesign 라이브러리(INDB·INDL)와 클라우드 라이브러리는 열지 않습니다. Folio 라이브러리(.foliolibrary)는 프로젝트 안에 저장합니다. 돌리거나 뒤집은 개체를 글 안에 놓기, 구조·페이지 항목은 지원하지 않습니다.",
+      "en": "InDesign libraries (INDB, INDL) and cloud libraries are not opened. Folio libraries (.foliolibrary) are stored in the project. Placing rotated or flipped objects inside text, and structure or page items, are not supported.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "duplicate-refusals",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "연결된 틀 가운데 몇 개만 복제하거나 복사할 때, 그 글에 메모·색인 표시자·하이퍼링크·XML 요소·변경 추적 같은 다른 글 안 요소가 있으면 거절하고 문서를 바꾸지 않습니다. 표·각주·변수·고정 개체는 그 글자가 든 틀과 함께 복제·복사됩니다.",
+      "en": "Duplicating or copying only some frames of a threaded chain is refused (the document is left unchanged) when its text holds other inline elements such as notes, index markers, hyperlinks, XML elements or tracked changes. Tables, footnotes, variables and anchored objects go with the frame that holds their character.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "pencil-smoothness",
+      "kind": "unverified",
+      "area": "screen",
+      "top": null,
+      "ko": "연필 도구의 부드러움이 0%일 때는 실제 드래그 결과가 InDesign과 일치했습니다. 1~100%는 같은 방법으로 확인하지 못했습니다.",
+      "en": "Pencil paths matched InDesign in drag tests at 0% Smoothness. Values from 1 to 100% have not been verified with drag tests.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "pen-modifiers",
+      "kind": "unverified",
+      "area": "screen",
+      "top": null,
+      "ko": "펜의 Alt 로 방향선 끊기·Space 로 점 옮기기·Shift 45°·자동 점 추가와 삭제, 직접 선택의 선분 끌기는 InDesign·Illustrator 의 알려진 동작을 따랐고 실제 마우스로 InDesign 과 대조하지 못했습니다. 선분을 끌 때 방향선이 바뀌는 양은 InDesign 과 다를 수 있습니다.",
+      "en": "The Pen's Alt to break direction lines, Space to move a point, Shift for 45 degrees, automatic add and delete, and dragging a segment with Direct Selection follow the documented InDesign and Illustrator behaviour but were not compared with InDesign using a real mouse. How much the direction lines change when a segment is dragged can differ from InDesign.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "page-tool-liquid",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "페이지 도구의 '액체 페이지 규칙'과 '기준 페이지 오버레이 표시', 같은 문서의 보기 창을 별도 앱 창으로 떼는 것은 지원하지 않습니다.",
+      "en": "Liquid page rules and the master page overlay in the Page tool, and detaching a second view of the same document into a separate app window, are not supported.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "conveyor-open-source",
+      "kind": "unsupported",
+      "area": "document",
+      "top": null,
+      "ko": "컨베이어에서 원본 문서가 열려 있으면 업데이트하지 않고 '저장하고 닫은 뒤 다시 하세요'라고 안내합니다.",
+      "en": "If the source document of a Conveyor link is open, Folio does not update and asks you to save and close it first.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "print-send",
+      "kind": "unsupported",
+      "area": "output",
+      "top": null,
+      "ko": "PostScript 파일은 쓰지 않고 PDF 로 저장합니다. 책 전체를 프린터로 바로 보내기, 분판·그래픽·색상 관리·고급 설정의 출력 반영, 색 막대·슬러그·J 마크, 짝/홀수 쪽 순서, 인쇄 안 함 개체 인쇄, 마스터 페이지 인쇄는 출력에 쓰지 않습니다.",
+      "en": "Folio writes PDF, not PostScript files. Sending a whole book straight to a printer, and applying separations, graphics, colour management and advanced settings, colour bars, slug, J marks, even/odd page order, printing non-printing objects and printing master pages, are not applied to output.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "draw-tools-rotated",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "90도 배수가 아닌 각도로 돌린 펼침면에서는 선·문자 틀 도구를, 돌린 펼침면 위의 돌아간 쪽(IDML 안에서 쪽 자체가 돈 것)에서는 사각형·타원·다각형·선·프레임·문자 틀 도구를 지원하지 않습니다. 똑바른 펼침면의 돌아간 쪽에서는 이 도구들과 한 번 눌러 치수 입력이 됩니다(쪽의 테두리 상자 왼쪽 위 기준, 개체는 펼침면에 똑바로).",
+      "en": "On a spread turned by an angle that is not a multiple of 90 degrees the Line and Type tools, and on a turned page (a page turned inside the IDML) of a turned spread the Rectangle, Ellipse, Polygon, Line, frame and Type tools, are not supported. On a turned page of an upright spread these tools and entering dimensions with a click work (measured from the top-left of the page's bounding box, the object upright on the spread).",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "printer-direct",
+      "kind": "unverified",
+      "area": "output",
+      "top": 8,
+      "ko": "프린터로 직접 보내기는 실제 프린터에서 확인하지 못했습니다(가짜 장치 시험과 가상 PDF 프린터 1회). 인쇄소에 넘기기 전에는 PDF 를 내보내 확인하세요.",
+      "en": "Sending directly to a printer was not verified on a real printer (fake-device tests and one virtual PDF printer only). Export and check a PDF before sending files to a printer.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "trap-separation",
+      "kind": "unverified",
+      "area": "output",
+      "top": null,
+      "ko": "트랩 분판은 InDesign 이 이 PC 에서 정답을 내지 못해 비교하지 못했습니다.",
+      "en": "Trap separations could not be compared because InDesign cannot produce the reference output on the development PC.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "math-edit-in-indesign",
+      "kind": "unverified",
+      "area": "math",
+      "top": null,
+      "ko": "Folio 가 만든 수식을 InDesign 에서 고치면 InDesign 이 자기 글꼴로 다시 그린다고 가정했을 뿐 그 동작은 확인하지 못했습니다. 열기·원문·크기·색은 InDesign 2025 로 확인했습니다.",
+      "en": "That InDesign redraws a Folio-made equation in its own font when you edit it was assumed, not measured. Opening it and its source, size and colour were verified with InDesign 2025.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "pasteboard-rules",
+      "kind": "unverified",
+      "area": "screen",
+      "top": null,
+      "ko": "InDesign 에서 개체를 대지 어디에 놓으면 어느 펼침면 것이 되는지, Alt 끌어 복제 위치, 펜 이어 그리기·합치기의 끝점 방향선 처리는 실제 마우스로 재지 못했습니다.",
+      "en": "Which spread an object belongs to when dropped on the pasteboard, where an Alt-drag duplicate lands, and how Pen continue/join treats endpoint direction lines were not measured with a real mouse.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "bmp-1bit-print",
+      "kind": "unverified",
+      "area": "import",
+      "top": null,
+      "ko": "1비트 BMP 는 IDML 은 같지만 PDF 인쇄 비교의 오차가 기준(0.35)보다 큽니다(0.446). InDesign 이 1비트 그림을 마스크처럼 그리는 방식과 다릅니다.",
+      "en": "For 1-bit BMPs the IDML matches, but the PDF comparison error (0.446) is above the 0.35 limit. InDesign draws 1-bit images like a mask.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "adobe-fonts",
+      "kind": "unverified",
+      "area": "text",
+      "top": null,
+      "ko": "Adobe 구독이 끝나 Adobe 글꼴(Brandon Grotesque, Minion Pro 등)로는 새 측정을 하지 못했습니다. 새로 비교한 사례는 시스템 글꼴(Arial, Times New Roman, 맑은 고딕)과 사용자 글꼴만 씁니다. 문서에 쓴 Adobe 글꼴이 이 컴퓨터에 없으면 대체됩니다.",
+      "en": "Since the Adobe subscription ended, no new measurements could use Adobe fonts (Brandon Grotesque, Minion Pro…). New comparisons use system fonts (Arial, Times New Roman, Malgun Gothic) and user fonts only. A document font missing on this computer is substituted.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "print-comparison-gaps",
+      "kind": "unverified",
+      "area": "output",
+      "top": null,
+      "ko": "InDesign 과 인쇄 그림을 비교해 남은 차이(목차 번호 제목, 합자 위치, 한글 줄 나눔, 그래픽 셀 변환 등)가 `known-gaps.json` 에 이유와 함께 적혀 있습니다.",
+      "en": "The remaining differences found when comparing print output with InDesign (numbered TOC titles, ligature placement, Korean line breaking, graphic cell conversion, and others) are listed with reasons in known-gaps.json.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "xref-spacing",
+      "kind": "unverified",
+      "area": "document",
+      "top": null,
+      "ko": "상호 참조를 갱신하기 전의 문단에서 InDesign 은 단어 간격(Tw)으로 공백 폭을 줄여 커닝을 대신하는데, 그 규칙을 알아내지 못해 한 줄의 글자 위치가 다를 수 있습니다.",
+      "en": "Before a cross-reference is updated, InDesign narrows the space with word spacing (Tw) in place of kerning; the rule for that was not found, so one line can place glyphs differently.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "excluded-autostyle",
+      "kind": "excluded",
+      "area": "excluded",
+      "top": null,
+      "ko": "온라인으로 문단을 분류하는 자동 스타일과 스타일 팩은 지원하지 않습니다. 이 기능이 문서에 남긴 값은 그대로 열고 다시 내보냅니다.",
+      "en": "Auto Style and Style Packs, which use an online service to classify paragraphs, are unsupported. Values this feature left in a document are still opened and exported unchanged.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "excluded-content-aware-fit",
+      "kind": "excluded",
+      "area": "excluded",
+      "top": null,
+      "ko": "내용 인식 맞춤(그림 내용에 따라 배율과 자르는 자리를 정하는 기능)은 뺐습니다. 이미 맞춘 결과는 그림의 변환 행렬로 문서에 남아 그대로 열립니다.",
+      "en": "Content-Aware Fit (scale and crop chosen from picture content) was removed. A result already applied stays in the document as the picture's transform and opens unchanged.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "excluded-overlays",
+      "kind": "excluded",
+      "area": "excluded",
+      "top": null,
+      "ko": "디지털 출판용 오버레이 패널은 지원하지 않습니다. 개체에 저장된 상호작용 레이블은 그대로 읽고 내보냅니다.",
+      "en": "The digital publishing Overlays panel is unsupported. Interaction labels attached to objects are preserved on import and export.",
+      "detect": [
+        "kAdobeDPSInteractivity"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "panel-hyperlink-destinations",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "하이퍼링크 패널 메뉴의 '하이퍼링크 업데이트', '웹 주소 상태 자동 확인'과 상호 참조 형식 불러오기는 만들지 않습니다. 다른 문서의 대상으로 가는 하이퍼링크를 만들지 않아 문서 밖에서 바뀔 대상이 없습니다. 웹 주소는 자동으로 확인하지 않고 패널의 '웹 주소 상태 확인' 단추를 누를 때만 확인합니다. 하이퍼링크 대상(텍스트 앵커·페이지·URL) 만들기·옵션·안 쓰는 대상 삭제와 하이퍼링크 재설정은 있습니다.",
+      "en": "The Hyperlinks panel menu items Update Hyperlink and Auto Update URL Status, and Load Cross-Reference Formats, are not built. Folio makes no hyperlinks to destinations in other documents, so no destination changes outside the document. Web addresses are not checked automatically: the panel's Check URL Status button checks them when pressed. New Hyperlink Destination (text anchor, page, URL), Destination Options, Delete Unused Destinations and Reset Hyperlink are built.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "panel-index-rest",
+      "kind": "approx",
+      "area": "document",
+      "top": null,
+      "ko": "색인 정렬 옵션에서 로마자 묶음은 머리글 종류(언어)와 상관없이 A~Z 머리글을 만들고, 한자 묶음은 머리글 종류(병음·획수)와 상관없이 Chinese 머리글 하나 아래에 정렬 순서대로 둡니다. 숫자·그리스·아랍·히브리 묶음의 머리글은 묶음 이름(Numbers, Greek, Arabic, Hebrew)입니다.",
+      "en": "In the index Sort Options the Roman group makes A to Z headings whatever its header type (language), and the Chinese group puts its topics in sort order under one Chinese heading whatever its header type (pinyin, stroke count). The Numbers, Greek, Arabic and Hebrew groups are headed by the group name (Numbers, Greek, Arabic, Hebrew).",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "panel-conditions-rest",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "조건부 텍스트 패널 메뉴의 옵션 표시는 없습니다. 패널이 조건 세트와 표시자 같은 옵션을 늘 보여 줍니다. 세트 상자의 [이름 없음]을 고르는 것만으로는 쓰는 세트를 비우지 않습니다(세트를 지우면 비워집니다).",
+      "en": "The Conditional Text panel menu has no Show Options: the panel always shows the options such as condition sets and indicators. Choosing [Unnamed] in the set box alone does not clear the set in use (deleting the set does).",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "panel-datamerge-rest",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "데이터 필드 내용 업데이트는 Folio 에서 만든 병합 문서의 글 필드와 QR 코드 필드를 바꿉니다. 그림 필드는 바꾸지 않으니 그림이 바뀌면 병합 문서를 다시 만듭니다. 미리 보기는 글 필드와 QR 코드 필드를 바꿔 보여 주고 그림 필드는 그대로 둡니다.",
+      "en": "Update Content in Data Fields changes the text and QR code fields of a merged document made in Folio; picture fields are not changed (create the merged document again when a picture changes). Preview shows the text and QR code fields with a record's values and leaves picture fields as they are.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "panel-control-rest",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "제어 막대 사용자 지정은 개체·문자·단락·페이지 제어 막대마다 보일 항목 묶음을 따로 고릅니다. 견본 패널의 색상 그룹만 보기는 없습니다(그룹은 목록 안에 묶여 보입니다). 이 팝업 메뉴들(정렬 기준, 견본 표시)은 그리지 않고 같은 일을 하는 선택 상자가 있습니다(정렬 기준에는 재단 여유도 있습니다).",
+      "en": "Customize picks the groups shown in each control bar (object, character, paragraph, page) separately. Show Color Groups in the Swatches filter is not built (groups are shown together in the list). Those popup menus (Align to, Show Swatch Kinds) are not drawn; the same choices are select boxes in the panels (Align to includes Bleed).",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "menuaudit-b-book-library-menu",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "책 패널 메뉴의 EPUB 내보내기, 옛 InDesign 버전 문서 자동 변환, 라이브러리 패널 메뉴의 섬네일 보기와 Creative Cloud 라이브러리로 옮기기는 지원하지 않습니다. 라이브러리는 목록으로 봅니다. 책을 다른 이름으로 저장은 프로젝트 안 .foliobook 으로 되고, 내보낼 때 같은 이름 레이어 병합은 책 PDF 의 Acrobat 레이어를 이름마다 하나로 합칩니다.",
+      "en": "The Book panel menu's Export Book to EPUB and Automatic Document Conversion, and the Library panel menu's Thumbnail Views and Migrate to CC Libraries are not supported; a library is shown as a list. Save Book As writes a .foliobook in the project, and Merge Identically Named Layers on Export joins the book PDF's Acrobat layers into one per name.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "menuaudit-b-ruler-custom",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "눈금자 오른쪽 클릭 메뉴의 사용자 지정 단위(Custom…)는 지원하지 않습니다. 눈금자 단위는 포인트·파이카·인치·소수 인치·밀리미터·센티미터·시세로·애게이트·픽셀 아홉 가지입니다.",
+      "en": "The ruler menu's Custom… unit is not supported. Ruler units are the nine of Points, Picas, Inches, Inches Decimal, Millimeters, Centimeters, Ciceros, Agates and Pixels.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-xml-structure-keys",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "XML 구조 창의 이동·펼치기·검증 오류 이동 키 16개(위/아래 이동, 선택 확장, 처음/끝 노드, 한 화면 스크롤, 요소 펼치기·접기, 검증 오류 보기)는 지원하지 않습니다. XML 구조 창 자체가 제외한 XML 계열이라 그 안의 키도 없습니다.",
+      "en": "The 16 keys of the XML Structure pane (move and extend the selection, first and last node, scroll one screen, expand and collapse elements, view validation errors) are not supported. The XML family, including the Structure pane, is left out.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-recompose-keys",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "\"모든 글 다시 조판\"(Ctrl+Alt+/)과 \"모든 글 즉시 다시 조판\", \"글꼴 목록 새로 고침\"은 만들지 않습니다. Folio 는 바뀐 글을 그때그때 자동으로 다시 조판하고 글꼴 목록은 열 때마다 설치된 글꼴을 읽어서 키가 할 일이 없습니다.",
+      "en": "Recompose All Stories (Ctrl+Alt+/), Recompose All Stories Immediately and Update Missing Font List are not built. Folio recomposes changed text at once and reads the installed fonts each time a font list opens, so the keys have nothing to do.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-unnamed-actions",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "InDesign 단축키 편집기에서 이름이 비어 있는 글·표 영역 동작 179개와 글꼴 굵기 이름(Light·Regular·Medium·SemiBold·Bold·Heavy) 6개는 지원하지 않습니다. 메뉴 항목도 기본 단축키도 없고 이름도 없는 글꼴·스타일 목록의 내부 항목이라 사용자가 하는 일로 보이지 않습니다. 글꼴 스타일은 문자 패널에서 고릅니다.",
+      "en": "The 179 text and table actions with an empty name in the InDesign shortcut editor and the six font weight names (Light, Regular, Medium, SemiBold, Bold, Heavy) are not supported. They have no menu item, no default key and no name; they look like internal entries of the font and style lists, not user actions. Choose a font style in the Character panel.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-view-keys",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "확대 비율·쪽 번호 상자 초점 키와 보기 최적화 무시는 만들지 않습니다. 입력칸은 Tab 으로 옮깁니다.",
+      "en": "The zoom and page-number box focus keys and Suppress Overrides are not built; fields are reached with Tab.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-workspace-keys",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "기본 작업 영역 9개의 단축키와 시작 화면 재설정은 지원하지 않습니다. Folio에서는 \"필수 클래식\"과 직접 저장한 작업 영역을 쓸 수 있습니다.",
+      "en": "Shortcuts for the nine preset workspaces and Reset Start are unsupported. Folio provides Essentials Classic and any workspaces you save.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-adobe-service-keys",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "Bridge 로 찾아보기, 버전, XML, 확장 관리, InCopy 할당 지우기, FPO 를 원본으로 바꾸기·원본 내려받기, 색 테마 도구(Shift+I), 교정 설정의 Macintosh·Windows·Monitor RGB 는 지원하지 않습니다. 온라인 서비스, InCopy·XML 기능, 모니터와 운영체제 색상을 흉내 내는 프로파일은 포함하지 않습니다.",
+      "en": "Browse in Bridge, Versions, XML, Manage Extensions, Delete Assignment, Replace All FPOs With Originals, Download All Originals, the Color Theme tool (Shift+I) and the Proof Setup Macintosh, Windows and Monitor RGB entries are not supported. Online services, InCopy and XML features, and profiles for simulating monitor or operating system colors are unavailable.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "keyaudit-c1-live-edit",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "Live Edit 모드(4 키), Magnetic Guide, Zone Guide 는 지원하지 않습니다. 대응하는 Folio 기능이 없습니다.",
+      "en": "Live Edit mode (the 4 key), Magnetic Guide and Zone Guide are not supported. Folio has nothing that corresponds.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "dbmerge-snapshot",
+      "kind": "approx",
+      "area": "exchange",
+      "top": null,
+      "ko": "데이터베이스에서 가져온 데이터 병합 원본은 InDesign 으로 가져온 시점의 스냅숏 CSV 로 갑니다. InDesign 에서는 새로 고침·질의 매개변수·연결이 없습니다.",
+      "en": "A data merge source fetched from a database goes to InDesign as a snapshot CSV of the rows at the time they were fetched. InDesign has no refresh, query parameters or connection for it.",
+      "detect": [
+        "&quot;fetchedAt&quot;"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "dbmerge-write-back",
+      "kind": "unsupported",
+      "area": "document",
+      "top": null,
+      "ko": "데이터 병합은 데이터베이스를 읽기만 합니다. 데이터베이스에 쓰기(되쓰기)와 저장 프로시저 실행은 지원하지 않습니다.",
+      "en": "Data Merge only reads a database. Writing back to it and running stored procedures are not supported.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "dbmerge-schedule",
+      "kind": "unsupported",
+      "area": "document",
+      "top": null,
+      "ko": "데이터베이스 원본을 정해진 때에 저절로 다시 가져오는 예약 실행은 지원하지 않습니다. 대신 '이번 달' 같은 매개변수와 문서를 열 때 새로 고침을 씁니다.",
+      "en": "Fetching a database source again on a schedule is not supported. Use parameters such as 'this month' and refresh when the document opens instead.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "dbmerge-sqlserver-winauth",
+      "kind": "unsupported",
+      "area": "document",
+      "top": null,
+      "ko": "SQL Server·Azure SQL 은 SQL 로그인(사용자 이름과 비밀번호)으로만 연결합니다. Windows 통합 인증과 Microsoft Entra(Azure AD) 로그인은 지원하지 않습니다.",
+      "en": "SQL Server and Azure SQL connect with a SQL login (user name and password) only. Windows integrated authentication and Microsoft Entra (Azure AD) sign-in are not supported.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "dbmerge-mobile",
+      "kind": "unverified",
+      "area": "document",
+      "top": null,
+      "ko": "iOS·Android 의 데이터베이스 연결은 컴파일만 확인했고 기기에서 실행해 보지는 못했습니다. 비밀번호는 iOS 에서는 키체인에 저장하고, Android 에서는 저장하지 않고 이 프로그램을 켜 둔 동안만 기억합니다. iOS 에서는 서버 인증서를 운영체제의 신뢰 목록으로 확인하지 못해, 인증서 지문 고정(이 인증서 신뢰)이나 암호화만(require)으로 연결합니다. 스냅숏으로 병합·인쇄는 그대로 됩니다.",
+      "en": "Database connections on iOS and Android are compile-checked only, not yet run on a device. Passwords are kept in the keychain on iOS; on Android they are not saved but remembered while the program runs. On iOS a server certificate cannot be checked against the system's trusted roots, so it is trusted by its pinned fingerprint or the connection only encrypts (require). Merging and printing from the snapshot work as before.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "datamerge-computed",
+      "kind": "approx",
+      "area": "exchange",
+      "top": null,
+      "ko": "데이터 병합의 계산 열은 InDesign 에 없습니다. IDML 로 내보내면 계산한 값을 열로 더한 CSV 가 데이터 원본이 되어, InDesign 에서는 그 시점의 값으로 굳은 열이 됩니다(원본이 바뀌어도 다시 계산하지 않음). 그림 필드의 상대 경로는 이 컴퓨터의 전체 경로로 바뀌고, 값 안의 줄바꿈은 공백이 됩니다.",
+      "en": "Data Merge computed fields do not exist in InDesign. An IDML export makes a CSV with the computed values as extra columns and points the data source at it, so in InDesign they are columns frozen at that moment (not computed again when the source changes). Relative picture paths of image fields become full paths of this computer, and line breaks inside a value become spaces.",
+      "detect": [
+        "&quot;computed&quot;:[{"
+      ],
+      "subtract": []
+    },
+    {
+      "id": "dbmerge-mac-keychain",
+      "kind": "unverified",
+      "area": "document",
+      "top": null,
+      "ko": "맥의 비밀번호 저장(키체인)은 실제 맥에서 아직 확인하지 못했습니다. 도움말 ▸ 진단 ▸ 비밀번호 저장소 시험으로 그 맥에서 바로 확인할 수 있습니다(결과 대기). 리눅스의 Secret Service 는 gnome-keyring 으로 실제 시험했습니다.",
+      "en": "Saving passwords in the macOS keychain has not been tried on a real Mac yet. Help > Diagnostics > Password Store Test checks it on that Mac (result pending). The Linux Secret Service was tested for real with gnome-keyring.",
+      "detect": [],
+      "subtract": []
+    },
+    {
+      "id": "pdfx13-solid-vector",
+      "kind": "unsupported",
+      "area": "output",
+      "top": null,
+      "ko": "PDF/X-1a·X-3에서 투명하게 겹치는 단색을 평탄화할 때 해당 부분을 벡터 조각으로 보존하는 기능은 지원하지 않습니다.",
+      "en": "Keeping overlapping solid colors as vector pieces when flattening transparency for PDF/X-1a or PDF/X-3 is not supported.",
+      "detect": [],
+      "subtract": []
+    }
+  ],
+  "table": {
+    "exact": 984,
+    "approximate": 347,
+    "folioOnly": 365,
+    "unclassified": 0,
+    "byArea": {
+      "document": {
+        "approximate": 72,
+        "folio-only": 78
+      },
+      "exchange": {
+        "approximate": 1,
+        "folio-only": 5
+      },
+      "import": {
+        "approximate": 4,
+        "folio-only": 4
+      },
+      "math": {
+        "approximate": 3,
+        "folio-only": 0
+      },
+      "object": {
+        "approximate": 87,
+        "folio-only": 102
+      },
+      "other": {
+        "approximate": 15,
+        "folio-only": 17
+      },
+      "output": {
+        "approximate": 24,
+        "folio-only": 23
+      },
+      "paragraph": {
+        "approximate": 64,
+        "folio-only": 3
+      },
+      "text": {
+        "approximate": 34,
+        "folio-only": 128
+      },
+      "textpath": {
+        "approximate": 43,
+        "folio-only": 5
+      }
+    }
+  }
+}

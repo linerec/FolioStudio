@@ -1,0 +1,190 @@
+{
+ "fixture": "basic",
+ "about": "Edit > Preferences > Units & Increments and Guides & Pasteboard: ruler units and origin, stroke units, keyboard increments, snap to zone, ruler guide view threshold and colour, preview background / bleed / slug colours are document settings in IDML ViewPreference, TextPreference, GuidePreference and PasteboardPreference. Lengths in points (the fixture uses points).",
+ "scenarios": [
+  {
+   "name": "units-horizontal-millimeters",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "horizontalUnits",
+     "value": "Millimeters"
+    }
+   ]
+  },
+  {
+   "name": "units-vertical-inches",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "verticalUnits",
+     "value": "Inches"
+    }
+   ]
+  },
+  {
+   "name": "units-both-picas",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "horizontalUnits",
+     "value": "Picas"
+    },
+    {
+     "op": "viewPref",
+     "name": "verticalUnits",
+     "value": "Picas"
+    }
+   ]
+  },
+  {
+   "name": "units-pixels-agates",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "horizontalUnits",
+     "value": "Pixels"
+    },
+    {
+     "op": "viewPref",
+     "name": "verticalUnits",
+     "value": "Agates"
+    }
+   ]
+  },
+  {
+   "name": "units-stroke-millimeters",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "strokeUnits",
+     "value": "Millimeters"
+    }
+   ]
+  },
+  {
+   "name": "units-ruler-origin-page",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "rulerOrigin",
+     "value": "PageOrigin"
+    }
+   ]
+  },
+  {
+   "name": "units-ruler-origin-spine",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "rulerOrigin",
+     "value": "SpineOrigin"
+    }
+   ]
+  },
+  {
+   "name": "increments-cursor-key",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "cursorKeyIncrement",
+     "value": 0.25
+    }
+   ]
+  },
+  {
+   "name": "increments-text",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "leadingKeyIncrement",
+     "value": 1
+    },
+    {
+     "op": "viewPref",
+     "name": "baselineShiftKeyIncrement",
+     "value": 0.5
+    },
+    {
+     "op": "viewPref",
+     "name": "kerningKeyIncrement",
+     "value": 50
+    }
+   ]
+  },
+  {
+   "name": "guides-snap-zone",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "snapZone",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "name": "guides-ruler-threshold",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "rulerGuidesThreshold",
+     "value": 50
+    }
+   ]
+  },
+  {
+   "name": "guides-ruler-color",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "rulerGuidesColor",
+     "value": "Magenta"
+    }
+   ]
+  },
+  {
+   "name": "guides-ruler-color-custom",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "rulerGuidesColor",
+     "value": [
+      10,
+      200,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-colors",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "previewBackgroundColor",
+     "value": "Charcoal"
+    },
+    {
+     "op": "viewPref",
+     "name": "bleedGuideColor",
+     "value": "Red"
+    },
+    {
+     "op": "viewPref",
+     "name": "slugGuideColor",
+     "value": "Gold"
+    }
+   ]
+  },
+  {
+   "name": "pasteboard-match-theme",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "matchPreviewBackground",
+     "value": true
+    }
+   ]
+  }
+ ]
+}

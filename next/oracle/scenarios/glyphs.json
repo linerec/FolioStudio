@@ -1,0 +1,22 @@
+{
+  "fixture": "text-format",
+  "about": "System font Unicode insertion; insertText and textFormat reuse identical mappings in oracle.rs and print-check.py. Every scenario also checks undo/redo.",
+  "scenarios": [
+    {"name":"glyphs-latin", "rules":["glyphs.unicode-font"], "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"A"},
+      {"op":"textFormat","target":"format","start":0,"end":1,"props":{"appliedFont":"Arial","fontStyle":"Regular"}}
+    ]},
+    {"name":"glyphs-hangul", "rules":["glyphs.unicode-font"], "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"한"},
+      {"op":"textFormat","target":"format","start":0,"end":1,"props":{"appliedFont":"Malgun Gothic","fontStyle":"Regular"}}
+    ]},
+    {"name":"glyphs-combining", "rules":["glyphs.unicode-font"], "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"é"},
+      {"op":"textFormat","target":"format","start":0,"end":2,"props":{"appliedFont":"Arial","fontStyle":"Regular"}}
+    ]},
+    {"name":"glyphs-supplementary", "rules":["glyphs.unicode-font","glyphs.new-font-resource"], "steps":[
+      {"op":"insertText","target":"format","at":0,"text":"😀"},
+      {"op":"textFormat","target":"format","start":0,"end":1,"props":{"appliedFont":"Segoe UI Symbol","fontStyle":"Regular"}}
+    ]}
+  ]
+}

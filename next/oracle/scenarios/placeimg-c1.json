@@ -1,0 +1,215 @@
+{
+ "fixture": "basic",
+ "about": "placeimg-c1: File > Place raster variants: mirrored EXIF orientations, 16-bit PNG/TIFF, Lab TIFF, indexed PNG/GIF/TIFF.",
+ "scenarios": [
+  {
+   "name": "place-jpeg-exif2",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-exif2.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-exif3",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-exif3.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-exif4",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-exif4.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-exif5",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-exif5.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-exif7",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-exif7.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-exif8",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-exif8.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-png-16bit",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-16bit.png",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-tiff-16bit",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-16bit.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-tiff-16bit-gray",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-16bit-gray.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-tiff-lab",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-lab.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-png-indexed",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-indexed.png",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-gif-indexed",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-indexed.gif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-tiff-indexed",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-indexed.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-cmyk-icc",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-cmyk-icc.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-tiff-cmyk-icc",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-cmyk-icc.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-jpeg-gray-icc",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-gray-icc.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-tiff-gray-icc",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-gray-icc.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-psd-16bit",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-16bit.psd",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-psd-16bit-gray",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-16bit-gray.psd",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  }
+ ]
+}

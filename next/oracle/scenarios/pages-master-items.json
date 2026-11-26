@@ -1,0 +1,68 @@
+{
+ "fixture": "pages",
+ "about": "Editing the items of a master spread (opened like a document in the editor): the same edits as on a page, on the objects of the master; the pages that use the master change with it.",
+ "scenarios": [
+  {
+   "name": "master-item-move",
+   "steps": [
+    {
+     "op": "move",
+     "target": "master-0-0",
+     "by": [
+      12,
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "name": "master-item-resize",
+   "steps": [
+    {
+     "op": "resize",
+     "target": "master-0-0",
+     "size": [
+      90,
+      12
+     ],
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "master-item-delete",
+   "steps": [
+    {
+     "op": "delete",
+     "target": "master-0-1"
+    }
+   ]
+  },
+  {
+   "name": "master-item-points",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "master-0-0",
+     "indices": [
+      2
+     ],
+     "by": [
+      15,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "name": "master-item-rotate",
+   "steps": [
+    {
+     "op": "rotate",
+     "target": "master-0-0",
+     "by": 15
+    }
+   ]
+  }
+ ]
+}

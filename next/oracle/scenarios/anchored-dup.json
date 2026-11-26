@@ -1,0 +1,24 @@
+{
+  "fixture": "anchored-dup",
+  "about": "anchored.idml exported again by InDesign (fixtures/build-reexport.jsx): duplicating a frame whose story holds anchored objects (build-b).",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "anchored-duplicate",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "text",
+          "by": [
+            20,
+            15
+          ],
+          "label": "copy"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.user-dictionary-lists { display: flex; gap: 8px; }
+.user-dictionary-lists label { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.user-dictionary-actions { display: flex; gap: 6px; margin: 6px 0; }
+.user-dictionary-note { opacity: .7; font-size: 12px; margin: 4px 0 0; }
+.spell-dialog .spell-word { font-weight: 600; opacity: .85; }
+.spell-dialog .spell-suggest-field { display: flex; flex-direction: column; gap: 2px; }
+.spell-dialog .spell-suggestions { width: 100%; height: 8.5em; overflow-y: auto; border: 1px solid var(--border, #888); box-sizing: border-box; }
+.spell-dialog .spell-suggestions [role="option"] { padding: 1px 6px; cursor: default; }
+.spell-dialog .spell-suggestions [role="option"][aria-selected="true"] { background: var(--accent, #2f6fd6); color: #fff; }
+.spell-dialog .spell-columns { display: grid; grid-template-columns: minmax(240px, 1fr) 150px; gap: 14px; }
+.spell-dialog .spell-fields { display: flex; flex-direction: column; gap: 6px; }
+.spell-dialog .spell-fields label, .spell-dialog .spell-fields p { display: flex; flex-direction: column; gap: 2px; margin: 0; }
+.spell-dialog .spell-fields .spell-inline { flex-direction: row; align-items: center; gap: 8px; }
+.spell-dialog .spell-fields .spell-inline select { flex: 1; }
+.spell-dialog .spell-actions { display: flex; flex-direction: column; gap: 6px; }
+.spell-dialog .spell-actions button.primary { font-weight: 600; }
+.spell-dialog .spell-status { min-height: 1.4em; opacity: .8; }
+.spell-dialog .spell-direction { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.spell-dialog .spell-direction legend { padding: 0; opacity: .8; }
+.spell-float { position: fixed; inset: 0; z-index: 2000; display: grid; place-items: start end; padding: 72px 24px; pointer-events: none; }
+.spell-float .spell-dialog { pointer-events: auto; }

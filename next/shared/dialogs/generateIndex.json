@@ -1,0 +1,127 @@
+{
+  "title": "색인 만들기",
+  "target": "explicit",
+  "maxIds": 1,
+  "preference": "folio.generateIndex",
+  "defaults": "generateIndex",
+  "description": "Index panel > Generate Index: ids is the page the index is made on. Replace updates the existing generated index in its frame. The paragraph styles of the title, the section headings and the four levels are the document's own; none chosen keeps the measured Index styles. The font name is needed. includeBookDocuments makes the book-wide index: the topics of every document of the project's book that holds this document, merged by name, pages in the book's order (the server reads the other documents).",
+  "fields": [
+    {
+      "name": "title",
+      "label": "색인 제목",
+      "type": "text",
+      "default": "Index"
+    },
+    {
+      "name": "font",
+      "label": "색인 글꼴",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "headings",
+      "label": "묶음 머리글 포함",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "replace",
+      "label": "기존 색인 교체",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "includeBookDocuments",
+      "label": "책 문서 포함",
+      "type": "boolean",
+      "remember": false,
+      "default": false
+    },
+    {
+      "name": "titleStyle",
+      "label": "제목 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    },
+    {
+      "name": "sectionHeadingStyle",
+      "label": "묶음 머리글 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    },
+    {
+      "name": "level1Style",
+      "label": "1단계 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    },
+    {
+      "name": "level2Style",
+      "label": "2단계 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    },
+    {
+      "name": "level3Style",
+      "label": "3단계 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    },
+    {
+      "name": "level4Style",
+      "label": "4단계 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    }
+  ],
+  "note": "현재 쪽에 색인을 만듭니다. 모든 참조 범위, 상호 참조, 4단계 주제까지 지원합니다. 책 문서 포함을 켜면 이 문서가 든 책의 모든 문서 주제를 합칩니다.",
+  "actions": {
+    "ok": [
+      {
+        "$if": [
+          "titleStyle",
+          "sectionHeadingStyle",
+          "level1Style",
+          "level2Style",
+          "level3Style",
+          "level4Style"
+        ],
+        "then": {
+          "op": "setIndexGenerationStyles",
+          "title": "$titleStyle",
+          "section_heading": "$sectionHeadingStyle",
+          "levels": [
+            "$level1Style",
+            "$level2Style",
+            "$level3Style",
+            "$level4Style"
+          ]
+        }
+      },
+      {
+        "op": "generateIndex",
+        "page": "$ids0",
+        "frame": "",
+        "replace": "$replace",
+        "title": "$title",
+        "headings": "$headings",
+        "font": "$font",
+        "locations": [],
+        "include_book_documents": "$includeBookDocuments"
+      }
+    ]
+  }
+}

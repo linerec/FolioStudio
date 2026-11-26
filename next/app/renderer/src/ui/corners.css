@@ -1,0 +1,4 @@
+/* The corner size boxes of Object > Corner Options are the shared number field (controls/numberfield.tsx): the dialog's rule that gives a
+   plain input 70px must not squeeze the box inside it. */
+.card.dialog.style-options.corner-options .corner-grid .nf { flex: 0 0 auto; }
+.card.dialog.style-options.corner-options .corner-grid .nf-box .nf-input { width: 100%; flex: 1 1 auto; }

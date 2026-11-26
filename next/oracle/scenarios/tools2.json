@@ -1,0 +1,355 @@
+{
+  "fixture": "basic-create",
+  "about": "Gap baseline, Shift, Alt and Ctrl (InDesign 2025 gave the plain result for both with real keys, gaptool-c1) against explicit InDesign reframe operations. Native Gap mouse behaviour is measured in measured/gap-tool-2025.json, not here.",
+  "scenarios": [
+    {
+      "name": "tools2-gap-move",
+      "extension": "tools2",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            200,
+            502,
+            280
+          ],
+          "label": "left"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            518,
+            200,
+            558,
+            280
+          ],
+          "label": "right"
+        },
+        {
+          "op": "adjustGap",
+          "page": 0,
+          "from": [
+            510,
+            240
+          ],
+          "to": [
+            516,
+            240
+          ],
+          "nearest": false,
+          "resize": false,
+          "move_items": false,
+          "expected": [
+            {
+              "target": "left",
+              "rect": [
+                462,
+                200,
+                508,
+                280
+              ]
+            },
+            {
+              "target": "right",
+              "rect": [
+                524,
+                200,
+                558,
+                280
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tools2-gap-shift",
+      "extension": "tools2",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            200,
+            502,
+            280
+          ],
+          "label": "left"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            518,
+            200,
+            558,
+            280
+          ],
+          "label": "right"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            300,
+            502,
+            380
+          ],
+          "label": "left2"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            518,
+            300,
+            558,
+            380
+          ],
+          "label": "right2"
+        },
+        {
+          "op": "adjustGap",
+          "page": 0,
+          "from": [
+            510,
+            240
+          ],
+          "to": [
+            506,
+            240
+          ],
+          "nearest": true,
+          "resize": false,
+          "move_items": false,
+          "expected": [
+            {
+              "target": "left",
+              "rect": [
+                462,
+                200,
+                498,
+                280
+              ]
+            },
+            {
+              "target": "right",
+              "rect": [
+                514,
+                200,
+                558,
+                280
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tools2-gap-alt",
+      "extension": "tools2",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            200,
+            502,
+            280
+          ],
+          "label": "left"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            518,
+            200,
+            558,
+            280
+          ],
+          "label": "right"
+        },
+        {
+          "op": "adjustGap",
+          "page": 0,
+          "from": [
+            510,
+            240
+          ],
+          "to": [
+            516,
+            240
+          ],
+          "nearest": false,
+          "resize": false,
+          "move_items": true,
+          "expected": [
+            {
+              "target": "left",
+              "rect": [
+                462,
+                200,
+                508,
+                280
+              ]
+            },
+            {
+              "target": "right",
+              "rect": [
+                524,
+                200,
+                558,
+                280
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tools2-gap-vertical",
+      "extension": "tools2",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            200,
+            502,
+            280
+          ],
+          "label": "top"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            320,
+            502,
+            400
+          ],
+          "label": "bottom"
+        },
+        {
+          "op": "adjustGap",
+          "page": 0,
+          "from": [
+            478,
+            300
+          ],
+          "to": [
+            478,
+            310
+          ],
+          "nearest": false,
+          "resize": false,
+          "move_items": false,
+          "expected": [
+            {
+              "target": "top",
+              "rect": [
+                462,
+                200,
+                502,
+                290
+              ]
+            },
+            {
+              "target": "bottom",
+              "rect": [
+                462,
+                330,
+                502,
+                400
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tools2-gap-ctrl",
+      "extension": "tools2",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            462,
+            200,
+            502,
+            280
+          ],
+          "label": "left"
+        },
+        {
+          "op": "createItem",
+          "kind": "rectangle",
+          "page": 0,
+          "rect": [
+            518,
+            200,
+            558,
+            280
+          ],
+          "label": "right"
+        },
+        {
+          "op": "adjustGap",
+          "page": 0,
+          "from": [
+            510,
+            240
+          ],
+          "to": [
+            516,
+            240
+          ],
+          "nearest": false,
+          "resize": true,
+          "move_items": false,
+          "expected": [
+            {
+              "target": "left",
+              "rect": [
+                462,
+                200,
+                508,
+                280
+              ]
+            },
+            {
+              "target": "right",
+              "rect": [
+                524,
+                200,
+                558,
+                280
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

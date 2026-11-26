@@ -1,0 +1,9 @@
+{
+  "fixture":"textpath-formatted",
+  "about":"Horizontal baseline path alignment and brackets. Rejection and undo are checked in edit/tests/textpath.rs; both oracle runners use the registered command adapter.",
+  "scenarios":[
+    {"name":"textpath-top","rules":["textpath.options.horizontal"],"extension":"textpath","steps":[{"op":"setTextPathOptions","target":"path","props":{"PathAlignment":"TopPathAlignment"}}]},
+    {"name":"textpath-bottom","rules":["textpath.options.horizontal"],"extension":"textpath","steps":[{"op":"setTextPathOptions","target":"path","props":{"PathAlignment":"BottomPathAlignment"}}]},
+    {"name":"textpath-brackets","rules":["textpath.options.horizontal"],"extension":"textpath","steps":[{"op":"setTextPathOptions","target":"path","props":{"StartBracket":"20","EndBracket":"200"}}]}
+  ]
+}

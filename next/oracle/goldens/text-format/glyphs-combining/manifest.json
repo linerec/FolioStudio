@@ -1,0 +1,45 @@
+{
+  "fixture": "text-format",
+  "scenario": "glyphs-combining",
+  "indesign": "20.5.5.119",
+  "measured": "2026-10-26",
+  "os": "Windows",
+  "fixtureSha256": "734a31b444eef4fef24a6da7f78e1bf595db8a883a0de4831a1fea8a42dbefa6",
+  "runnerSha256": "577d465de52f7fa40d46eca9ad5589ea557c59033916f1d1aaca3f9670f58d96",
+  "repeatRunnerSha256": "6254013de4d141d33ca307875bada93c38ce46f68cba08241c47d5afd4bda863",
+  "captureSha256": "3bca9a5fdd71c26387577519c988f94e82361be03ad8332dd5eead62aae1dc50",
+  "repeatIdentical": true,
+  "repeatEquivalent": true,
+  "normalization": "none",
+  "pdfPreset": "[PDF/X-4:2008]",
+  "hiddenDocument": true,
+  "closedWithoutSaving": true,
+  "preferences": {
+    "dimensionsIncludeStrokeWeight": true,
+    "transformPrefsBefore": {
+      "adjustStrokeWeightWhenScaling": "true",
+      "adjustEffectsWhenScaling": "true",
+      "dimensionsIncludeStrokeWeight": "true",
+      "transformsAreTotals": "ERR Object does not support the property or method 'transformsAreTotals'",
+      "whenScaling": "APPLY_TO_CONTENT"
+    }
+  },
+  "raw": {
+    "first": {
+      "after.idml": "3d14ac177d73c30e2e5b6bf22d556d3d5e77b033af7721eef69499190344f65d",
+      "after.pdf": "403025954a1222bad2d15d0f8afd8fd4bddc99a665732ab95dbdf0665ee3b66c",
+      "before.idml": "688b6912197da1c4b40aa1b69df5806156bfa2a384c63b2d0e086b385f66f6eb",
+      "indesign.json": "aa73e569681215f1a244a5e787e2478cda217f55cffbe233f6426d74f7969e06"
+    },
+    "repeat": {
+      "after.idml": "958908fa3f8484f738761cc9d593b5c9b7b06cf2bd8b0ba2a78b9c15b2c664d5",
+      "after.pdf": "1b714579c33ca63932c8641893d0b8a52307222e7f9b6d410f5a56061335d932",
+      "before.idml": "4c2b4164f745de3caf98e497d05d857d3c4c867b0d20adca0cd955ec5e741d15",
+      "indesign.json": "aa73e569681215f1a244a5e787e2478cda217f55cffbe233f6426d74f7969e06"
+    }
+  },
+  "rawArchive": "artifacts/glyphs-20261023/raw/<sha256>.<extension>",
+  "history": [
+    "Initial new-case capture; second capture in separate staging, accepted goldens unchanged."
+  ]
+}

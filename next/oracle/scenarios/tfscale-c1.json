@@ -1,0 +1,145 @@
+{
+ "fixture": "basic",
+ "about": "Control bar (object) scale of text frames (tfscale-c1): the frame's path, stroke, insets and column gutter, and the text the frame shows (character and paragraph attributes by sx, sy, sx/sy or sqrt(sx*sy); text overset or in another frame of the thread stays). Several objects are one selection: a plural specifier's transform(), as the other scaleByMany cases.",
+ "scenarios": [
+  {
+   "name": "tf-scale-plain",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-uniform",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 2,
+     "sy": 2,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-chain-first",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf-1"
+     ],
+     "sx": 2,
+     "sy": 1.5,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-chain-second",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf-2"
+     ],
+     "sx": 0.5,
+     "sy": 0.75,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-two-frames",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf",
+      "tf-1"
+     ],
+     "sx": 1.2,
+     "sy": 0.7,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-nostroke",
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "adjustStrokeWeightWhenScaling",
+     "value": false
+    },
+    {
+     "op": "viewPref",
+     "name": "adjustEffectsWhenScaling",
+     "value": false
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-stroked",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 4,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-stroked-tall",
+   "steps": [
+    {
+     "op": "set",
+     "target": "tf",
+     "props": {
+      "strokeWeight": 6,
+      "strokeColor": "Black"
+     }
+    },
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "tf"
+     ],
+     "sx": 1,
+     "sy": 2,
+     "anchor": "center"
+    }
+   ]
+  }
+ ]
+}

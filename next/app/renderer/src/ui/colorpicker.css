@@ -1,0 +1,40 @@
+/* The Color Picker: 710 x 467 px, every box where InDesign 2025 puts it (next/oracle/rules/colorpicker-c2.ko.md); positions are px from the dialog's top left. */
+.cp-modal { position: fixed; inset: 0; z-index: 1300; background: var(--scrim); display: grid; place-items: center; overflow: auto; }
+.cp-dialog { position: relative; width: 710px; height: 467px; flex: none; box-sizing: border-box; background: var(--panel); color: var(--text); box-shadow: 0 0 0 1px var(--line-dark), var(--shadow-dialog); border-radius: var(--r-lg); overflow: hidden; font-size: 14px; line-height: 1; margin-top: -24px; }
+.cp-title { position: absolute; left: 0; top: 0; right: 0; height: 38px; display: flex; align-items: center; padding: 0 12px; background: var(--chrome); color: var(--text); border-bottom: 1px solid var(--line-dark); font-size: 14px; font-weight: var(--fw-semibold); }
+.cp-view { position: absolute; left: 29px; top: 63px; font-size: 14px; white-space: nowrap; }
+.cp-area { position: absolute; left: 31px; top: 93px; width: 307px; height: 331px; cursor: crosshair; touch-action: none; box-sizing: border-box; }
+.cp-area canvas { display: block; width: 100%; height: 100%; }
+.cp-ring { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; border: 1px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px #000, inset 0 0 0 1px #000; pointer-events: none; }
+.cp-slider { position: absolute; left: 359px; top: 94px; width: 21px; height: 327px; cursor: ns-resize; touch-action: none; box-sizing: border-box; }
+.cp-slider canvas { display: block; width: 100%; height: 100%; }
+.cp-arrow { position: absolute; width: 0; height: 0; margin-top: -5px; pointer-events: none; border: 5px solid transparent; }
+.cp-arrow.l { left: -9px; border-left: 8px solid #fff; border-right: 0; }
+.cp-arrow.r { right: -9px; border-right: 8px solid #fff; border-left: 0; }
+.cp-preview { position: absolute; left: 398px; top: 57px; width: 82px; height: 106px; box-sizing: border-box; border: 1px solid var(--line-dark); display: flex; flex-direction: column; }
+.cp-preview > div { flex: 1; }
+.cp-preview > div.none { background: linear-gradient(to top right, #fff 45%, #e0302a 45%, #e0302a 55%, #fff 55%); }
+.cpk-btn { position: absolute; width: 153px; height: 32px; box-sizing: border-box; border: 1px solid var(--field-line); border-radius: 16px; background: transparent; color: var(--text); font-size: 14px; cursor: pointer; padding: 0 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cpk-btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: var(--fw-medium); }
+.cpk-btn:hover:not(:disabled) { background: var(--hover); }
+.cpk-btn.primary:hover:not(:disabled) { background: var(--accent-hover); border-color: var(--accent-hover); }
+.cpk-btn:disabled { opacity: .45; cursor: default; }
+.cpk-btn:focus-visible, .cp-eye:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.cp-radio { position: absolute; height: 26px; display: flex; align-items: center; gap: 6px; cursor: default; }
+.cp-radio input { margin: 0 0 0 2px; width: 16px; height: 16px; accent-color: var(--accent); }
+.cp-box { position: absolute; width: 44px; height: 20px; }
+.cp-box .nf, .cp-box .nf-box { width: 100%; height: 100%; }
+.cp-box .nf-input { width: 100%; height: 100%; min-width: 0; box-sizing: border-box; padding: 0 4px; background: var(--field); color: var(--text); border: 1px solid var(--field-line); border-radius: var(--r-sm); font-size: 14px; font-variant-numeric: tabular-nums; }
+.cp-box .nf-input:focus { border-color: var(--accent); outline: none; }
+.cp-unit { position: absolute; height: 26px; display: flex; align-items: center; color: var(--muted); }
+.cp-k { position: absolute; height: 26px; display: flex; align-items: center; width: 43px; }
+.cp-hexlabel { position: absolute; height: 26px; display: flex; align-items: center; }
+.cp-hex { position: absolute; width: 67px; height: 20px; box-sizing: border-box; padding: 0 4px; background: var(--field); color: var(--text); border: 1px solid var(--field-line); border-radius: var(--r-sm); font-size: 14px; font-family: var(--font-mono); }
+.cp-hex:focus { border-color: var(--accent); outline: none; }
+.cp-eye { position: absolute; width: 27px; height: 23px; box-sizing: border-box; padding: 0; display: grid; place-items: center; background: transparent; border: 0; border-radius: var(--r-sm); color: var(--text); cursor: pointer; }
+.cp-eye:hover { background: var(--hover); }
+.cp-note { position: absolute; left: 29px; top: 437px; right: 30px; min-height: 16px; font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cp-alertbg { position: absolute; inset: 0; background: var(--scrim); display: grid; place-items: center; z-index: 5; }
+.cp-alert { position: relative; width: 340px; padding: 18px 20px 14px; background: var(--panel); border: 1px solid var(--line-dark); border-radius: var(--r-md); box-shadow: var(--shadow-pop); }
+.cp-alert p { margin: 0 0 16px; line-height: 1.4; }
+.cp-alert .cpk-btn { position: static; display: block; margin-left: auto; width: 96px; }

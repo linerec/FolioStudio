@@ -1,0 +1,88 @@
+{
+ "fixture": "basic",
+ "about": "Control panel (object): shear of a placed graphic's content (the Image's own shearAngle, through setGraphic; top-left reference point) and shear / scale percentages with several objects selected (DOM transform on the plural specifier about the reference point of the selection). Text-frame scale percentages were captured too and are NOT built (see rules/ctlbar2.ko.md). docwin-c1.",
+ "scenarios": [
+  {
+   "name": "ctl2-shear-content-20",
+   "steps": [
+    {
+     "op": "setGraphic",
+     "target": "img",
+     "props": {
+      "shearAngle": 20
+     }
+    }
+   ]
+  },
+  {
+   "name": "ctl2-shear-content-neg15",
+   "steps": [
+    {
+     "op": "setGraphic",
+     "target": "img",
+     "props": {
+      "shearAngle": -15
+     }
+    }
+   ]
+  },
+  {
+   "name": "ctl2-shear-many-center",
+   "steps": [
+    {
+     "op": "shearByMany",
+     "targets": [
+      "r-plain",
+      "r-fill"
+     ],
+     "by": 20,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "ctl2-shear-many-topleft",
+   "steps": [
+    {
+     "op": "shearByMany",
+     "targets": [
+      "r-plain",
+      "r-fill"
+     ],
+     "by": -15,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "ctl2-scale-many-center",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill"
+     ],
+     "sx": 0.5,
+     "sy": 1.5,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "ctl2-scale-many-topleft",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "r-plain",
+      "r-fill"
+     ],
+     "sx": 2,
+     "sy": 2,
+     "anchor": "topLeft"
+    }
+   ]
+  }
+ ]
+}

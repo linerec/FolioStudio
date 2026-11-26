@@ -1,0 +1,56 @@
+{
+  "fixture": "drawtools-text-width-right",
+  "about": "New text frames with document auto sizing or fixed column defaults. Hidden DOM capture.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "drawtools-text-width-right-empty",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    },
+    {
+      "name": "drawtools-text-width-right-fill",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "label": "created"
+        },
+        {
+          "op": "insertText",
+          "target": "created",
+          "at": 0,
+          "text": "Drawing tool\rSecond line"
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    }
+  ]
+}

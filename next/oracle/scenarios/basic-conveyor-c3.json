@@ -1,0 +1,37 @@
+{
+ "fixture": "basic",
+ "about": "conveyor-c3: content link cases that conveyor-c2 left open (update of a rectangle link; the copy edited).",
+ "scenarios": [
+  {
+   "name": "cc-update-rect",
+   "steps": [
+    {
+     "op": "contentPlace",
+     "targets": [
+      "r-fill"
+     ],
+     "page": 0,
+     "at": [
+      500,
+      300
+     ],
+     "link": true,
+     "labels": [
+      "placed"
+     ]
+    },
+    {
+     "op": "set",
+     "target": "r-fill",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "contentUpdate",
+     "target": "placed"
+    }
+   ]
+  }
+ ]
+}

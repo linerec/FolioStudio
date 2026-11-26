@@ -1,0 +1,53 @@
+{
+  "fixture": "objectstyles",
+  "scenarios": [
+    {
+      "name": "c2-category-shape-effect-only",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-p3",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "opacity": 60,
+                "effectColor": "Oracle Blue"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "c2-category-shape-clear-only",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "c2-category-new-stroke-five",
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "strokeWeight": 5
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    }
+  ]
+}

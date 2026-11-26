@@ -1,0 +1,9 @@
+{
+  "fixture": "layoutadj-facing",
+  "extension": "layoutadjust",
+  "scenarios": [
+    {"name":"layoutadj-facing-bigger","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":450,"height":500}]},
+    {"name":"layoutadj-facing-smaller","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":250,"height":300}]},
+    {"name":"layoutadj-facing-width","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":360}]}
+  ]
+}

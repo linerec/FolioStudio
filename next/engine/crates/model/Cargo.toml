@@ -1,0 +1,17 @@
+[package]
+build = "../../test-inputs.rs"
+name = "folio-model"
+description = "Folio Studio document model: what an InDesign document holds, in points"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+# QR code Reed–Solomon coding and module placement (MIT, Project Nayuki); see qr.rs.
+qrcodegen = "=1.8.0"
+
+[dev-dependencies]
+# Parse public model declarations for interop coverage; never part of the product binary.
+syn = { version = "=2.0.119", features = ["full"] }

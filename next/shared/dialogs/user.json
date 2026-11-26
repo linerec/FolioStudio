@@ -1,0 +1,190 @@
+{
+  "title": "사용자",
+  "scope": "app",
+  "target": "none",
+  "defaults": "userPreferences",
+  "className": "user-settings-dialog",
+  "description": "File > User (an app dialog): the name and colour notes and tracked changes are marked with. It starts from the app settings (preferences app.userName, app.userColor); applying saves them (userSettings values, the name without the spaces around it).",
+  "fields": [
+    {
+      "name": "app.userName",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true,
+      "trim": true,
+      "maxLength": 256,
+      "group": ""
+    },
+    {
+      "name": "app.userColor",
+      "label": "색상",
+      "type": "enum",
+      "default": "GOLD",
+      "options": [
+        {
+          "value": "LIGHT_BLUE",
+          "label": "연한 파랑"
+        },
+        {
+          "value": "RED",
+          "label": "빨강"
+        },
+        {
+          "value": "GREEN",
+          "label": "초록"
+        },
+        {
+          "value": "BLUE",
+          "label": "파랑"
+        },
+        {
+          "value": "YELLOW",
+          "label": "노랑"
+        },
+        {
+          "value": "MAGENTA",
+          "label": "자홍"
+        },
+        {
+          "value": "CYAN",
+          "label": "청록"
+        },
+        {
+          "value": "GRAY",
+          "label": "회색"
+        },
+        {
+          "value": "BLACK",
+          "label": "검정"
+        },
+        {
+          "value": "ORANGE",
+          "label": "주황"
+        },
+        {
+          "value": "DARK_GREEN",
+          "label": "진한 초록"
+        },
+        {
+          "value": "TEAL",
+          "label": "청록 회색"
+        },
+        {
+          "value": "TAN",
+          "label": "황갈"
+        },
+        {
+          "value": "BROWN",
+          "label": "갈색"
+        },
+        {
+          "value": "VIOLET",
+          "label": "보라"
+        },
+        {
+          "value": "GOLD",
+          "label": "금색"
+        },
+        {
+          "value": "DARK_BLUE",
+          "label": "진한 파랑"
+        },
+        {
+          "value": "PINK",
+          "label": "분홍"
+        },
+        {
+          "value": "LAVENDER",
+          "label": "연보라"
+        },
+        {
+          "value": "BRICK_RED",
+          "label": "벽돌색"
+        },
+        {
+          "value": "OLIVE_GREEN",
+          "label": "올리브 초록"
+        },
+        {
+          "value": "PEACH",
+          "label": "복숭아색"
+        },
+        {
+          "value": "BURGUNDY",
+          "label": "버건디"
+        },
+        {
+          "value": "GRASS_GREEN",
+          "label": "풀색"
+        },
+        {
+          "value": "OCHRE",
+          "label": "황토"
+        },
+        {
+          "value": "PURPLE",
+          "label": "자주"
+        },
+        {
+          "value": "LIGHT_GRAY",
+          "label": "연한 회색"
+        },
+        {
+          "value": "CHARCOAL",
+          "label": "숯색"
+        },
+        {
+          "value": "GRID_BLUE",
+          "label": "격자 파랑"
+        },
+        {
+          "value": "GRID_ORANGE",
+          "label": "격자 주황"
+        },
+        {
+          "value": "FIESTA",
+          "label": "피에스타"
+        },
+        {
+          "value": "LIGHT_OLIVE",
+          "label": "연한 올리브"
+        },
+        {
+          "value": "LIPSTICK",
+          "label": "립스틱"
+        },
+        {
+          "value": "CUTE_TEAL",
+          "label": "큐트 틸"
+        },
+        {
+          "value": "SULPHUR",
+          "label": "유황색"
+        },
+        {
+          "value": "GRID_GREEN",
+          "label": "격자 초록"
+        },
+        {
+          "value": "WHITE",
+          "label": "흰색"
+        }
+      ],
+      "group": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "cmd": "userSettings",
+        "values": {
+          "app.userName": {
+            "$trim": "app.userName"
+          },
+          "app.userColor": "$app.userColor"
+        }
+      }
+    ]
+  }
+}

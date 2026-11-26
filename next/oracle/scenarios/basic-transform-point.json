@@ -1,0 +1,34 @@
+{
+  "fixture": "basic",
+  "about": "PENDING (needs InDesign with no document open): move this file to ../scenarios/, then python -I next/oracle/capture.py capture rotate-point-centre rotate-point-far, then the oracle test and print-check. The Rotate tool's rotation about a point of the spread (Command RotateAbout). The first must equal the control panel's rotation about the centre (basic-transform); the second shows the point's coordinate space (DOM CoordinateSpaces.PASTEBOARD_COORDINATES vs IDML spread coordinates: r-plain's centre is 140, -310.945 there).",
+  "scenarios": [
+    {
+      "name": "rotate-point-centre",
+      "steps": [
+        {
+          "op": "rotatePoint",
+          "target": "r-plain",
+          "by": 30,
+          "point": [
+            140,
+            -310.945
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rotate-point-far",
+      "steps": [
+        {
+          "op": "rotatePoint",
+          "target": "r-plain",
+          "by": 30,
+          "point": [
+            240,
+            -210.945
+          ]
+        }
+      ]
+    }
+  ]
+}

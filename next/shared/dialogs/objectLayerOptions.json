@@ -1,0 +1,49 @@
+{
+  "title": "개체 레이어 옵션…",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "graphicLayers",
+  "link": "graphicLayerComp",
+  "description": "Object > Object Layer Options: the layers of one placed PSD, PDF or InDesign page (one fixed row each: shown or hidden), the layer comp (a position in the file's comps, -1 Last Document State, -2 [Custom]) and what happens when the link is updated. Choosing a comp shows its layers; switching a layer by hand makes the comp [Custom]. OK sends what the screen sent: the comp when another one is chosen, each layer that differs from what the comp gives, and the link policy when it changed (nothing changed, nothing sent).",
+  "fields": [
+    {
+      "name": "layers",
+      "label": "레이어 가시성",
+      "type": "array",
+      "fixedRows": true,
+      "minRows": 0,
+      "maxRows": 10000,
+      "default": [],
+      "fields": [
+        { "name": "id", "type": "number", "integer": true, "default": 0, "min": 0, "max": 4294967295, "hidden": true },
+        { "name": "name", "type": "text", "default": "", "hidden": true, "maxLength": 10000 },
+        { "name": "original", "type": "boolean", "default": true, "hidden": true },
+        { "name": "visible", "type": "boolean", "default": true, "labelFrom": "name" }
+      ]
+    },
+    { "name": "hasComps", "type": "boolean", "default": false, "hidden": true },
+    { "name": "compsShown", "type": "json", "default": [], "hidden": true },
+    {
+      "name": "comp",
+      "label": "레이어 컴프",
+      "type": "choice",
+      "source": "layerComps",
+      "default": "-1",
+      "disabledWhen": { "hasComps": false }
+    },
+    {
+      "name": "policy",
+      "label": "링크 갱신 시",
+      "group": "링크 갱신 옵션",
+      "type": "enum",
+      "default": "KeepOverrides",
+      "options": [
+        { "value": "ApplicationSettings", "label": "Photoshop의 레이어 가시성 사용" },
+        { "value": "KeepOverrides", "label": "레이어 가시성 재정의 유지" }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [{ "$graphicLayerEdits": true }]
+  }
+}

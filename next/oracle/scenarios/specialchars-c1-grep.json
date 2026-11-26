@@ -1,0 +1,73 @@
+{
+ "fixture": "specialchars-c1",
+ "extension": "grep-styles",
+ "scenarios": [
+  {
+   "name": "sc-grep-markers",
+   "rules": [
+    "styles.specialchars.markers"
+   ],
+   "steps": [
+    {
+     "op": "setGrepStyles",
+     "style": "ParagraphStyle/SC 5",
+     "rules": [
+      {
+       "style": "CharacterStyle/Red",
+       "expression": "~#"
+      },
+      {
+       "style": "CharacterStyle/Bold",
+       "expression": "of"
+      }
+     ]
+    },
+    {
+     "op": "setGrepStyles",
+     "style": "ParagraphStyle/SC 6",
+     "rules": [
+      {
+       "style": "CharacterStyle/Red",
+       "expression": "~x"
+      },
+      {
+       "style": "CharacterStyle/Blue",
+       "expression": "ab"
+      }
+     ]
+    },
+    {
+     "op": "setGrepStyles",
+     "style": "ParagraphStyle/SC 7",
+     "rules": [
+      {
+       "style": "CharacterStyle/Red",
+       "expression": "\\w+"
+      }
+     ]
+    },
+    {
+     "op": "setGrepStyles",
+     "style": "ParagraphStyle/SC 8",
+     "rules": [
+      {
+       "style": "CharacterStyle/Red",
+       "expression": "b.c"
+      }
+     ]
+    },
+    {
+     "op": "setGrepStyles",
+     "style": "ParagraphStyle/SC 9",
+     "rules": [
+      {
+       "style": "CharacterStyle/Red",
+       "expression": "b.c"
+      }
+     ]
+    }
+   ],
+   "maxLocalError": 0.15
+  }
+ ]
+}

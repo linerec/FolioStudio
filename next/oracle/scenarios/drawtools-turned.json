@@ -1,0 +1,379 @@
+{
+ "fixture": "pages-turned",
+ "about": "Drawing on spreads turned the way View > Rotate Spread View writes them (pages.idml with its spreads turned 90 CW, 90 CCW and 180): the rect is in the displayed (turned) page frame, as in the DOM; the new shape is stored in the spread's own, unturned space.",
+ "scenarios": [
+  {
+   "name": "turn-cw-rect",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-rect",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 1,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-rect-right",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 2,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-180-rect",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 3,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-cw-oval",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "ellipse",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-cw-line",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "line",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-cw-text",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-cw-poly5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 0,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-cw-star5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 0,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 50,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-oval",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "ellipse",
+     "page": 1,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-line",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "line",
+     "page": 1,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-text",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "page": 1,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-poly5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 1,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 0,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-ccw-star5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 1,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 50,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-180-oval",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "ellipse",
+     "page": 3,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-180-line",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "line",
+     "page": 3,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-180-text",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "textFrame",
+     "page": 3,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-180-poly5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 3,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 0,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  },
+  {
+   "name": "turn-180-star5",
+   "steps": [
+    {
+     "op": "createPolygon",
+     "kind": "polygon",
+     "page": 3,
+     "rect": [
+      40,
+      60,
+      190,
+      150
+     ],
+     "sides": 5,
+     "inset": 50,
+     "layer": null,
+     "label": "created",
+     "view": true
+    }
+   ]
+  }
+ ]
+}

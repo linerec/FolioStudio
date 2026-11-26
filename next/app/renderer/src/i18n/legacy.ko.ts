@@ -1,0 +1,25 @@
+// Temporary aliases for the protected document window. Do not add new keys; A/B can migrate these after merging.
+export default {
+  "ui.a6399943a3": "미완성 — 이 도구는 아직 동작하지 않습니다. 지금은 선택(옮기기·크기)·직접 선택·페이지·손·확대/축소·측정 도구가 됩니다.",
+  "ui.fa17f69476": "다른 펼침면으로 옮길 개체는 한 펼침면에서 골라 주세요.",
+  "ui.0367167c0e": "펼침면 사이 이동은 대상 페이지 위에 놓아 주세요. 대지 경계·Alt 복제는 아직 미완성입니다.",
+  "ui.58ad690294": "다른 펼침면으로 이동",
+  "ui.ec3a6b612c": "복제",
+  "ui.c686d05434": "이동",
+  "ui.bc6deb4a64": "내용 이동",
+  "ui.3ae13dba87": "크기 조정",
+  "ui.052739ec7b": " [읽기 전용]",
+  "ui.92b9c29050": "닫기 (Ctrl+W)",
+  "ui.77b3a3a20e": "배율 목록",
+  "ui.33b69abf44": "첫 페이지",
+  "ui.b5f6e8aed4": "이전 페이지",
+  "ui.5123763a37": "페이지",
+  "ui.b2aa104e6e": "다음 페이지",
+  "ui.37d4490a14": "마지막 페이지",
+  "ui.3cb799e570": "사전 검사 패널 열기 (Ctrl+Alt+Shift+F)",
+  "ui.72ea7814e5": "검사 중…",
+  "ui.4814fa3d59": "사전 검사",
+  "ui.aacb8741e2": "오류 {0}개",
+  "ui.b1701fa204": "오류 없음",
+  "ui.60be59a141": "눈금자 단위: {0}"
+} as const;

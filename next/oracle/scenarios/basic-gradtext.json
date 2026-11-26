@@ -1,0 +1,41 @@
+{
+  "fixture": "basic",
+  "about": "Gradients on text (gradtext-c1): where InDesign puts the gradient of a character range's fill or stroke (GradientFillStart/Length/Angle, GradientStroke…): automatic (every line of a column gets the whole gradient across the column; radial: centred in the column), or explicit (measured from the top left of the frame's text area).",
+  "scenarios": [
+    {
+      "name": "gradtext-c1-auto",
+      "steps": [
+        { "op": "newGradient", "name": "Text Ramp", "kind": "Linear", "stops": [ { "color": "Color/Oracle Blue", "location": 0, "midpoint": 50 }, { "color": "Color/Oracle Orange", "location": 100, "midpoint": 50 } ] },
+        { "op": "textFormat", "target": "tf", "start": 0, "end": 60, "props": { "fillColor": "Gradient/Text Ramp" } }
+      ]
+    },
+    {
+      "name": "gradtext-c1-explicit",
+      "steps": [
+        { "op": "newGradient", "name": "Text Ramp", "kind": "Linear", "stops": [ { "color": "Color/Oracle Blue", "location": 0, "midpoint": 50 }, { "color": "Color/Oracle Orange", "location": 100, "midpoint": 50 } ] },
+        { "op": "textFormat", "target": "tf", "start": 0, "end": 60, "props": { "fillColor": "Gradient/Text Ramp", "gradientFillStart": [10, 5], "gradientFillLength": 150, "gradientFillAngle": 20 } }
+      ]
+    },
+    {
+      "name": "gradtext-c1-radial",
+      "steps": [
+        { "op": "newGradient", "name": "Text Round", "kind": "Radial", "stops": [ { "color": "Color/Oracle Orange", "location": 0, "midpoint": 50 }, { "color": "Color/Oracle Blue", "location": 100, "midpoint": 50 } ] },
+        { "op": "textFormat", "target": "tf", "start": 0, "end": 60, "props": { "fillColor": "Gradient/Text Round" } }
+      ]
+    },
+    {
+      "name": "gradtext-c1-threaded",
+      "steps": [
+        { "op": "newGradient", "name": "Text Ramp", "kind": "Linear", "stops": [ { "color": "Color/Oracle Blue", "location": 0, "midpoint": 50 }, { "color": "Color/Oracle Orange", "location": 100, "midpoint": 50 } ] },
+        { "op": "textFormat", "target": "tf-1", "start": 10, "end": 800, "props": { "fillColor": "Gradient/Text Ramp", "gradientFillStart": [30, 4], "gradientFillLength": 180, "gradientFillAngle": -15 } }
+      ]
+    },
+    {
+      "name": "gradtext-c1-stroke",
+      "steps": [
+        { "op": "newGradient", "name": "Text Ramp", "kind": "Linear", "stops": [ { "color": "Color/Oracle Blue", "location": 0, "midpoint": 50 }, { "color": "Color/Oracle Orange", "location": 100, "midpoint": 50 } ] },
+        { "op": "textFormat", "target": "tf", "start": 0, "end": 60, "props": { "strokeColor": "Gradient/Text Ramp", "strokeWeight": 1, "gradientStrokeStart": [20, 10], "gradientStrokeLength": 120, "gradientStrokeAngle": 0 } }
+      ]
+    }
+  ]
+}

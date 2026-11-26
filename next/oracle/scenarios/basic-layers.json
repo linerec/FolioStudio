@@ -1,0 +1,232 @@
+{
+  "fixture": "basic",
+  "about": "The Layers panel: new layer (above the active one, which it becomes), layer options, order, delete, active layer, moving objects to a layer.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "layer-new",
+      "steps": [
+        {
+          "op": "layerNew"
+        }
+      ]
+    },
+    {
+      "name": "layer-new-twice",
+      "steps": [
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        }
+      ]
+    },
+    {
+      "name": "layer-new-named",
+      "steps": [
+        {
+          "op": "layerNew",
+          "name": "Text",
+          "color": "GREEN"
+        }
+      ]
+    },
+    {
+      "name": "layer-new-above-top",
+      "steps": [
+        {
+          "op": "layerActive",
+          "name": "Locked layer"
+        },
+        {
+          "op": "layerNew"
+        }
+      ]
+    },
+    {
+      "name": "layer-rename-color",
+      "steps": [
+        {
+          "op": "layer",
+          "name": "Top",
+          "props": {
+            "name": "Headlines",
+            "layerColor": "GOLD"
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer-guides",
+      "steps": [
+        {
+          "op": "layer",
+          "name": "Base",
+          "props": {
+            "showGuides": false,
+            "lockGuides": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer-move-below",
+      "steps": [
+        {
+          "op": "layerMove",
+          "name": "Top",
+          "below": "Base"
+        }
+      ]
+    },
+    {
+      "name": "layer-move-above",
+      "steps": [
+        {
+          "op": "layerMove",
+          "name": "Base",
+          "above": "Locked layer"
+        }
+      ]
+    },
+    {
+      "name": "layer-delete",
+      "steps": [
+        {
+          "op": "layerDelete",
+          "name": "Top"
+        }
+      ]
+    },
+    {
+      "name": "layer-delete-active",
+      "steps": [
+        {
+          "op": "layerDelete",
+          "name": "Base"
+        }
+      ]
+    },
+    {
+      "name": "layer-active",
+      "steps": [
+        {
+          "op": "layerActive",
+          "name": "Top"
+        }
+      ]
+    },
+    {
+      "name": "to-layer",
+      "steps": [
+        {
+          "op": "toLayer",
+          "target": "r-plain",
+          "layer": "Top"
+        }
+      ]
+    },
+    {
+      "name": "to-layer-two",
+      "steps": [
+        {
+          "op": "toLayer",
+          "targets": [
+            "r-plain",
+            "oval"
+          ],
+          "layer": "Top"
+        }
+      ]
+    },
+    {
+      "name": "to-layer-group",
+      "steps": [
+        {
+          "op": "toLayer",
+          "target": "grp",
+          "layer": "Top"
+        }
+      ]
+    },
+    {
+      "name": "to-layer-text",
+      "steps": [
+        {
+          "op": "toLayer",
+          "target": "tf",
+          "layer": "Top"
+        }
+      ]
+    },
+    {
+      "name": "layer-new-many",
+      "steps": [
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        },
+        {
+          "op": "layerNew"
+        }
+      ]
+    }
+  ]
+}

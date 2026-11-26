@@ -1,0 +1,20 @@
+{
+  "fixture": "basic",
+  "about": "Swatches panel > apply to text (swatchx-c1): the characters' FillColor/FillTint/StrokeColor/StrokeTint as InDesign writes them when a swatch is applied to a text range or a caret, and what a later swatch does to a tint. Target: the story of text frame 'tf'.",
+  "scenarios": [
+    {"name": "text-fill-range", "steps": [{"op": "textFormat", "target": "tf", "start": 8, "end": 20, "props": {"fillColor": "Color/Oracle Blue"}}]},
+    {"name": "text-fill-tint", "steps": [{"op": "textFormat", "target": "tf", "start": 8, "end": 20, "props": {"fillColor": "Color/Oracle Blue", "fillTint": 50}}]},
+    {"name": "text-fill-tint-kept", "steps": [
+      {"op": "textFormat", "target": "tf", "start": 8, "end": 20, "props": {"fillColor": "Color/Oracle Blue", "fillTint": 50}},
+      {"op": "textFormat", "target": "tf", "start": 8, "end": 20, "props": {"fillColor": "Color/Oracle Orange"}}]},
+    {"name": "text-fill-paper", "steps": [{"op": "textFormat", "target": "tf", "start": 8, "end": 20, "props": {"fillColor": "Color/Paper"}}]},
+    {"name": "text-fill-spot-tint", "steps": [{"op": "textFormat", "target": "tf", "start": 8, "end": 20, "props": {"fillColor": "Color/Oracle Spot", "fillTint": 30}}]},
+    {"name": "text-fill-mixed", "steps": [
+      {"op": "textFormat", "target": "tf", "start": 4, "end": 12, "props": {"fillColor": "Color/Oracle Orange", "fillTint": 40}},
+      {"op": "textFormat", "target": "tf", "start": 8, "end": 24, "props": {"fillColor": "Color/Oracle Blue"}}]},
+    {"name": "text-fill-caret", "steps": [
+      {"op": "textFormat", "target": "tf", "start": 8, "end": 8, "props": {"fillColor": "Color/Oracle Blue"}},
+      {"op": "insertText", "target": "tf", "at": 8, "text": "X"}]},
+    {"name": "text-fill-story", "steps": [{"op": "textFormat", "target": "tf", "start": 0, "end": 50, "props": {"fillColor": "Color/Oracle Spot"}}]}
+  ]
+}

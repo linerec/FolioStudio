@@ -1,0 +1,23 @@
+{
+  "fixture": "typepath-c5-multi",
+  "extension": "textpath",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "typepath-c5-multi-flip",
+      "maxLocalError": 2.0,
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "FlipPathEffect": "Flipped"
+          }
+        }
+      ]
+    }
+  ]
+}

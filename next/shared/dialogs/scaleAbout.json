@@ -1,0 +1,125 @@
+{
+  "title": "비율 조정",
+  "style": "transform",
+  "target": "selection",
+  "link": "uniformScale",
+  "fields": [
+    {
+      "name": "sx",
+      "label": "비율",
+      "labelWhen": {
+        "uniform": false,
+        "label": "가로 비율"
+      },
+      "type": "number",
+      "unit": "percent",
+      "default": 100,
+      "min": 0.0001,
+      "max": 1000000,
+      "group": "비율",
+      "rangeMessage": "비율은 0보다 커야 합니다."
+    },
+    {
+      "name": "sy",
+      "label": "세로 비율",
+      "type": "number",
+      "unit": "percent",
+      "default": 100,
+      "min": 0.0001,
+      "max": 1000000,
+      "group": "비율",
+      "when": {
+        "uniform": false
+      }
+    },
+    {
+      "name": "uniform",
+      "label": "비례 유지",
+      "type": "boolean",
+      "default": true,
+      "group": "비율"
+    },
+    {
+      "name": "adjustStroke",
+      "type": "boolean",
+      "default": true,
+      "hidden": true,
+      "from": {
+        "preference": "folio.transformPanel",
+        "key": "adjustStroke"
+      }
+    },
+    {
+      "name": "adjustEffects",
+      "type": "boolean",
+      "default": true,
+      "hidden": true,
+      "from": {
+        "preference": "folio.transformPanel",
+        "key": "adjustEffects"
+      }
+    },
+    {
+      "name": "point",
+      "type": "json",
+      "hidden": true,
+      "default": [
+        0,
+        0
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "scaleAbout",
+        "ids": "$ids",
+        "sx": {
+          "$": "sx",
+          "div": 100
+        },
+        "sy": {
+          "$": "sy",
+          "div": 100
+        },
+        "point": "$point",
+        "stroke": "$adjustStroke",
+        "effects": "$adjustEffects"
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          0,
+          0
+        ]
+      },
+      {
+        "op": "scaleAbout",
+        "ids": [
+          "@copies"
+        ],
+        "sx": {
+          "$": "sx",
+          "div": 100
+        },
+        "sy": {
+          "$": "sy",
+          "div": 100
+        },
+        "point": "$point",
+        "stroke": "$adjustStroke",
+        "effects": "$adjustEffects"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ]
+}

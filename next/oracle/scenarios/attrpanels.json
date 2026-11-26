@@ -1,0 +1,28 @@
+{
+  "fixture": "basic",
+  "about": "Window > Output > Attributes (Overprint Fill / Stroke / Gap, Nonprinting) and Window > Utilities > Script Label (the label): IDML OverprintFill, OverprintStroke, OverprintGap, Nonprinting and the label pair Key=Label (STATUS: measured). A setting is written where it differs from the object style and goes away when turned off; on a group it also goes on everything inside where it applies. What does not apply (no fill, no stroke, no gap colour) is refused by a script, so those cases (also a group of shapes without strokes asked for OverprintStroke) are unit tests of the engine, not scenarios.",
+  "scenarios": [
+    {"name": "ap-fill", "steps": [{"op": "setObjectAttributes", "target": "r-fill", "props": {"overprintFill": true}}]},
+    {"name": "ap-stroke", "steps": [{"op": "setObjectAttributes", "target": "r-plain", "props": {"overprintStroke": true}}]},
+    {"name": "ap-fill-stroke-nonprint", "steps": [{"op": "setObjectAttributes", "target": "r-rot", "props": {"overprintFill": true, "overprintStroke": true, "nonprinting": true}}]},
+    {"name": "ap-off-again", "steps": [
+      {"op": "setObjectAttributes", "target": "r-rot", "props": {"overprintFill": true, "overprintStroke": true, "nonprinting": true}},
+      {"op": "setObjectAttributes", "target": "r-rot", "props": {"overprintFill": false, "overprintStroke": false, "nonprinting": false}}]},
+    {"name": "ap-nonprint", "steps": [{"op": "setObjectAttributes", "target": "r-fill", "props": {"nonprinting": true}}]},
+    {"name": "ap-nonprint-oval", "steps": [{"op": "setObjectAttributes", "target": "oval", "props": {"nonprinting": true}}]},
+    {"name": "ap-nonprint-textframe", "steps": [{"op": "setObjectAttributes", "target": "tf", "props": {"nonprinting": true}}]},
+    {"name": "ap-gap", "steps": [
+      {"op": "set", "target": "r-plain", "props": {"strokeType": "Dashed", "strokeWeight": 3, "gapColor": "Oracle Blue"}},
+      {"op": "setObjectAttributes", "target": "r-plain", "props": {"overprintGap": true}}]},
+    {"name": "ap-group", "steps": [{"op": "setObjectAttributes", "target": "grp", "props": {"nonprinting": true, "overprintFill": true}}]},
+    {"name": "ap-line", "steps": [{"op": "setObjectAttributes", "target": "line", "props": {"overprintStroke": true}}]},
+    {"name": "ap-label", "steps": [{"op": "setObjectAttributes", "target": "r-fill", "props": {"label": "Hero image"}}]},
+    {"name": "ap-label-return", "steps": [{"op": "setObjectAttributes", "target": "r-plain", "props": {"label": "first\rsecond & <third>"}}]},
+    {"name": "ap-label-replace", "steps": [
+      {"op": "setObjectAttributes", "target": "oval", "props": {"label": "one"}},
+      {"op": "setObjectAttributes", "target": "oval", "props": {"label": "two"}}]},
+    {"name": "ap-label-clear", "steps": [
+      {"op": "setObjectAttributes", "target": "oval", "props": {"label": "one"}},
+      {"op": "setObjectAttributes", "target": "oval", "props": {"label": ""}}]}
+  ]
+}

@@ -1,0 +1,297 @@
+{
+ "fixture": "panels-conditions",
+ "extension": "panels-conditions",
+ "about": "Hiding and showing conditional text across paragraph breaks on the Print(visible)/Web(hidden) fixture (story: Alpha-bold-LARGE tail.<Br>Second paragraph here.<Br>Third line AV To office.; index 22 and 45 are the Br). condx-hide-para-* were measured by condx-c2, the rest by condx-c3.",
+ "scenarios": [
+  {
+   "name": "condx-hide-para-mid",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 30,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-whole",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 23,
+     "end": 45,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-whole-br",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 23,
+     "end": 46,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-start",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 11,
+     "end": 30,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-mid-br",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 46,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-head",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 0,
+     "end": 30,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-three",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 50,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-hide-para-br-bold",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 20,
+     "end": 23,
+     "props": {
+      "pointSize": 20
+     }
+    },
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 23,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    }
+   ]
+  },
+  {
+   "name": "condx-show-para-mid",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 30,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "condx-show-para-whole-br",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 23,
+     "end": 46,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "condx-show-para-three",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 50,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "condx-show-para-head",
+   "steps": [
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 0,
+     "end": 30,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "condx-show-para-br-bold",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 20,
+     "end": 23,
+     "props": {
+      "pointSize": 20
+     }
+    },
+    {
+     "op": "applyConditions",
+     "target": "format",
+     "start": 18,
+     "end": 23,
+     "conditions": [
+      "Print"
+     ]
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": false
+    },
+    {
+     "op": "setConditionVisible",
+     "name": "Print",
+     "visible": true
+    }
+   ]
+  }
+ ]
+}

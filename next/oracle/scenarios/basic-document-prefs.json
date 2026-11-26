@@ -1,0 +1,11 @@
+{
+  "fixture": "basic",
+  "about": "Document text/composition/dictionary preferences and transparency blending space; IDML round trip and undo.",
+  "scenarios": [
+    {"name":"prefs-advanced-type", "steps":[{"op":"setDocPrefs","props":{"TextPreference.SuperscriptSize":65,"TextPreference.SuperscriptPosition":40,"TextPreference.SubscriptSize":60,"TextPreference.SubscriptPosition":-20,"TextPreference.SmallCap":80}}]},
+    {"name":"prefs-composition", "steps":[{"op":"setDocPrefs","props":{"TextPreference.HighlightHjViolations":true,"TextPreference.HighlightKeeps":true,"TextPreference.HighlightSubstitutedGlyphs":true,"TextPreference.HighlightCustomSpacing":true,"TextPreference.HighlightSubstitutedFonts":false,"TextPreference.HighlightKinsoku":true,"TextPreference.JustifyTextWraps":true,"TextPreference.AbutTextToTextWrap":false,"TextPreference.ZOrderTextWrap":true}}]},
+    {"name":"prefs-type", "steps":[{"op":"setDocPrefs","props":{"TextPreference.TypographersQuotes":false,"TextPreference.UseParagraphLeading":true,"TextPreference.UseOpticalSize":false,"TextPreference.QuoteCharactersRotatedInVertical":false,"TextPreference.SmartTextReflow":false,"TextPreference.AddPages":"EndOfDocument","TextPreference.LimitToMasterTextFrames":false,"TextPreference.PreserveFacingPageSpreads":true,"TextPreference.DeleteEmptyPages":true}}]},
+    {"name":"prefs-dictionary", "steps":[{"op":"setDocPrefs","props":{"DictionaryPreference.Composition":"UseDocument","DictionaryPreference.MergeUserDictionary":true,"DictionaryPreference.RecomposeWhenChanged":false}}]},
+    {"name":"prefs-blend-rgb", "steps":[{"op":"setDocPrefs","props":{"TransparencyPreference.BlendingSpace":"RGB"}}]}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+ "fixture": "basic",
+ "about": "placeimg-c1 (pending): a raster file that carries its own XMP packet. InDesign parses it again and writes it in its own layout (3-space indentation, one xmlns per line, x:xmptk of its toolkit, xpacket end r, no tiff: merge from the EXIF); Folio does not rewrite packets yet, so these have goldens but are not run.",
+ "scenarios": [
+  {
+   "name": "place-xmp-jpg",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-xmp.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-xmp-plain-jpg",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-xmp-plain.jpg",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-xmp-png",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-xmp.png",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  },
+  {
+   "name": "place-xmp-tif",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-xmp.tif",
+     "target": "r-plain",
+     "contentAware": false
+    }
+   ]
+  }
+ ]
+}

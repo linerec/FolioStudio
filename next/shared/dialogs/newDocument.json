@@ -1,0 +1,89 @@
+{
+  "title": "새 문서",
+  "scope": "app",
+  "target": "none",
+  "style": "wide",
+  "columns": 2,
+  "defaults": "newDocument",
+  "link": "newDocument",
+  "unitFields": "unit",
+  "okLabel": "만들기",
+  "description": "An app dialog: a new document in the open project (project is its folder, given whole). Lengths are points; the screen shows them in unit, which the document starts with. docpreset is the document preset the values come from (\"\" is [Default]; setting it loads the preset, any other change makes it __custom); preset is the page size (setting it sizes the page, the orientation kept); the bleed, slug and margin sides follow one another while their *Link is on. family and style are an installed font (the lists come with the dialog). Applying sends documentNew with untitled, so the document is named \"제목 없음-1\" (the pattern with {0}), or the next number the project does not have yet; the result is the imported document (result.path), which the screen opens. The savePreset button keeps the settings as the document preset presetName (documentPresets save) and leaves the dialog open on it.",
+  "note": "이 컴퓨터에 설치된 글꼴만 고를 수 있습니다.",
+  "buttons": [{ "action": "savePreset", "label": "사전 설정 저장…", "field": "savePreset" }],
+  "staysOpen": ["savePreset"],
+  "needs": { "savePreset": ["presetName"] },
+  "then": { "savePreset": { "docpreset": { "$trim": "presetName" }, "loaded": { "$trim": "presetName" }, "presetName": "" } },
+  "fields": [
+    { "name": "project", "label": "프로젝트", "type": "text", "path": "folder", "hidden": true, "required": true, "default": "", "maxLength": 1024, "group": "" },
+    { "name": "untitled", "label": "이름", "type": "text", "hidden": true, "default": "제목 없음-{0}", "maxLength": 200, "group": "" },
+    { "name": "layer", "label": "레이어", "type": "text", "hidden": true, "default": "레이어 1", "maxLength": 200, "group": "" },
+    { "name": "loaded", "label": "문서 사전 설정", "type": "text", "hidden": true, "default": "", "maxLength": 200, "group": "" },
+    { "name": "docpreset", "label": "문서 사전 설정", "type": "choice", "source": "documentPresets", "none": "[기본값]", "custom": "[사용자 지정]", "default": "", "group": "문서 사전 설정" },
+    { "name": "presetName", "label": "사전 설정 이름", "type": "text", "default": "", "maxLength": 200, "group": "문서 사전 설정" },
+    { "name": "pages", "label": "쪽 수", "type": "number", "integer": true, "default": 1, "min": 1, "max": 9999, "group": "쪽" },
+    { "name": "start", "label": "시작 쪽 번호", "type": "number", "integer": true, "default": 1, "min": 1, "max": 9999, "group": "쪽" },
+    { "name": "facing", "label": "마주보는 면", "type": "boolean", "default": true, "group": "쪽" },
+    { "name": "preset", "label": "크기", "type": "enum", "default": "letter", "group": "쪽 크기", "options": [
+      { "value": "letter", "label": "Letter", "native": true },
+      { "value": "legal", "label": "Legal", "native": true },
+      { "value": "tabloid", "label": "Tabloid", "native": true },
+      { "value": "letter-half", "label": "Letter - 절반" },
+      { "value": "legal-half", "label": "Legal - 절반" },
+      { "value": "compact-disc", "label": "컴팩트 디스크" },
+      { "value": "a3", "label": "A3", "native": true },
+      { "value": "a4", "label": "A4", "native": true },
+      { "value": "a5", "label": "A5", "native": true },
+      { "value": "b5", "label": "B5", "native": true },
+      { "value": "ipad", "label": "iPad", "native": true },
+      { "value": "custom", "label": "사용자 지정" }
+    ] },
+    { "name": "width", "label": "폭", "type": "number", "unit": "length-h", "default": 612, "min": 0.013888889, "max": 15552, "group": "쪽 크기" },
+    { "name": "height", "label": "높이", "type": "number", "unit": "length-v", "default": 792, "min": 0.013888889, "max": 15552, "group": "쪽 크기" },
+    { "name": "orientation", "label": "방향", "type": "enum", "default": "portrait", "group": "쪽 크기", "options": [
+      { "value": "portrait", "label": "세로" },
+      { "value": "landscape", "label": "가로" }
+    ] },
+    { "name": "unit", "label": "단위", "type": "enum", "default": "Inches", "group": "쪽 크기", "options": [
+      { "value": "Points", "label": "포인트" },
+      { "value": "Picas", "label": "파이카" },
+      { "value": "Inches", "label": "인치" },
+      { "value": "Millimeters", "label": "밀리미터" },
+      { "value": "Centimeters", "label": "센티미터" }
+    ] },
+    { "name": "family", "label": "글꼴", "type": "choice", "source": "fonts", "default": "", "group": "글꼴" },
+    { "name": "style", "label": "스타일", "type": "choice", "source": "fontStyles", "default": "", "group": "글꼴" },
+    { "name": "top", "label": "위", "type": "number", "unit": "length-v", "default": 36, "min": 0, "max": 15552, "group": "여백" },
+    { "name": "bottom", "label": "아래", "type": "number", "unit": "length-v", "default": 36, "min": 0, "max": 15552, "group": "여백" },
+    { "name": "inside", "label": "안쪽", "labelWhen": { "label": "왼쪽", "facing": false }, "type": "number", "unit": "length-h", "default": 36, "min": 0, "max": 15552, "group": "여백" },
+    { "name": "outside", "label": "바깥쪽", "labelWhen": { "label": "오른쪽", "facing": false }, "type": "number", "unit": "length-h", "default": 36, "min": 0, "max": 15552, "group": "여백" },
+    { "name": "marginLink", "label": "모두 같은 값", "type": "boolean", "default": true, "group": "여백" },
+    { "name": "columns", "label": "개수", "type": "number", "integer": true, "default": 1, "min": 1, "max": 40, "group": "단" },
+    { "name": "gutter", "label": "label.gutter", "type": "number", "unit": "length-h", "default": 12, "min": 0, "max": 15552, "group": "단" },
+    { "name": "bleedTop", "label": "위", "type": "number", "unit": "length-v", "default": 0, "min": 0, "max": 432, "group": "도련" },
+    { "name": "bleedBottom", "label": "아래", "type": "number", "unit": "length-v", "default": 0, "min": 0, "max": 432, "group": "도련" },
+    { "name": "bleedInside", "label": "안쪽", "labelWhen": { "label": "왼쪽", "facing": false }, "type": "number", "unit": "length-h", "default": 0, "min": 0, "max": 432, "group": "도련" },
+    { "name": "bleedOutside", "label": "바깥쪽", "labelWhen": { "label": "오른쪽", "facing": false }, "type": "number", "unit": "length-h", "default": 0, "min": 0, "max": 432, "group": "도련" },
+    { "name": "bleedLink", "label": "모두 같은 값", "type": "boolean", "default": true, "group": "도련" },
+    { "name": "slugTop", "label": "위", "type": "number", "unit": "length-v", "default": 0, "min": 0, "max": 432, "group": "슬러그" },
+    { "name": "slugBottom", "label": "아래", "type": "number", "unit": "length-v", "default": 0, "min": 0, "max": 432, "group": "슬러그" },
+    { "name": "slugInside", "label": "안쪽", "labelWhen": { "label": "왼쪽", "facing": false }, "type": "number", "unit": "length-h", "default": 0, "min": 0, "max": 432, "group": "슬러그" },
+    { "name": "slugOutside", "label": "바깥쪽", "labelWhen": { "label": "오른쪽", "facing": false }, "type": "number", "unit": "length-h", "default": 0, "min": 0, "max": 432, "group": "슬러그" },
+    { "name": "slugLink", "label": "모두 같은 값", "type": "boolean", "default": true, "group": "슬러그" }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "documentNew", "project": "$project", "untitled": "$untitled", "settings": {
+        "width": "$width", "height": "$height", "pages": "$pages", "start": "$start", "facing": "$facing",
+        "top": "$top", "bottom": "$bottom", "inside": "$inside", "outside": "$outside", "columns": "$columns", "gutter": "$gutter",
+        "bleed": ["$bleedTop", "$bleedBottom", "$bleedInside", "$bleedOutside"], "slug": ["$slugTop", "$slugBottom", "$slugInside", "$slugOutside"],
+        "layer": "$layer", "units": { "horizontal": "$unit", "vertical": "$unit" }, "font": { "family": "$family", "style": "$style" } } }
+    ],
+    "savePreset": [
+      { "cmd": "documentPresets", "action": "save", "preset": {
+        "name": { "$trim": "presetName" }, "unit": "$unit", "width": "$width", "height": "$height", "pages": "$pages", "start": "$start", "facing": "$facing",
+        "top": "$top", "bottom": "$bottom", "inside": "$inside", "outside": "$outside", "columns": "$columns", "gutter": "$gutter",
+        "bleed": ["$bleedTop", "$bleedBottom", "$bleedInside", "$bleedOutside"], "slug": ["$slugTop", "$slugBottom", "$slugInside", "$slugOutside"] } }
+    ]
+  }
+}

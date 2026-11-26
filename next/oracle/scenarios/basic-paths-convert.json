@@ -1,0 +1,452 @@
+{
+ "fixture": "basic",
+ "about": "Object > Convert Point on the points of a path (Plain, Corner, Smooth), measured with the DOM's pointType: IDML stores no point type, so Corner changes no geometry; Smooth keeps a point that is smooth already, else gives the automatic handles (bisector of the way in and out, a quarter of the distance to each neighbour, neighbours wrap round even on an open path). Symmetrical cannot be measured by script (a path point cannot be selected for the menu action).",
+ "scenarios": [
+  {
+   "name": "path-convert-smooth-plain",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-smooth-all",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-smooth-open",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      0,
+      1,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-smooth-corner",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        190,
+        80
+       ],
+       "right": [
+        230,
+        110
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-smooth-already",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        170,
+        100
+       ],
+       "right": [
+        240,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-smooth-one-handle",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "right": [
+        260,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-corner-smooth",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        170,
+        100
+       ],
+       "right": [
+        240,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "corner",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-corner-plain",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "corner",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-plain-corner",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        190,
+        80
+       ],
+       "right": [
+        230,
+        110
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "plain",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-convert-smooth-curved-neighbours",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        200
+       ],
+       "left": [
+        80,
+        230
+       ],
+       "right": [
+        130,
+        230
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        400,
+        250
+       ],
+       "left": [
+        380,
+        210
+       ],
+       "right": [
+        420,
+        290
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "convertPoint",
+     "target": "created",
+     "kind": "smooth",
+     "indices": [
+      1
+     ]
+    }
+   ]
+  }
+ ]
+}

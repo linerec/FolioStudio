@@ -1,0 +1,114 @@
+{
+  "fixture": "objectstyles",
+  "about": "Windowed Object Styles menu captures measured 2026-10-28. Independent set properties expanded in the original assignment order; original receipts in artifacts/objstyles-c2-20261023.",
+  "scenarios": [
+    {
+      "name": "c2-create-text-local",
+      "window": true,
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "fillColor": "Oracle Orange"
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "strokeWeight": 2
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 65
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3,
+              "textColumnGutter": 9,
+              "insetSpacing": [
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          }
+        },
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Text",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        }
+      ]
+    },
+    {
+      "name": "c2-create-text-menu",
+      "window": true,
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "Captured Text",
+          "from": "tf",
+          "menu": true,
+          "props": {}
+        }
+      ]
+    },
+    {
+      "name": "c2-redefine-text-menu",
+      "window": true,
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Oracle Text",
+          "clear": true
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "fillColor": "Oracle Orange"
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3,
+              "textColumnGutter": 9,
+              "insetSpacing": [
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          }
+        },
+        {
+          "op": "redefineObjectStyle",
+          "style": "ObjectStyle/Oracle Text",
+          "from": "tf",
+          "menu": true
+        }
+      ]
+    }
+  ]
+}

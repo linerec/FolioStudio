@@ -1,0 +1,1382 @@
+{
+  "fixture": "basic",
+  "about": "Alignment and distribution: bounds, stroke, rotation, groups and facing pages.",
+  "scenarios": [
+    {
+      "name": "align-selection-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-selection-hCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-selection-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-selection-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-selection-vCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-selection-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-page-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-page-hCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-page-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-page-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-page-vCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-page-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-hCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-vCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-spread-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "align-spread-hCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "align-spread-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "align-spread-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "align-spread-vCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "align-spread-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "align-key-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "key",
+          "key": "r-rot"
+        }
+      ]
+    },
+    {
+      "name": "align-key-hCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "key",
+          "key": "r-rot"
+        }
+      ]
+    },
+    {
+      "name": "align-key-right",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "key",
+          "key": "r-rot"
+        }
+      ]
+    },
+    {
+      "name": "align-key-top",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "key",
+          "key": "r-rot"
+        }
+      ]
+    },
+    {
+      "name": "align-key-vCenter",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "key",
+          "key": "r-rot"
+        }
+      ]
+    },
+    {
+      "name": "align-key-bottom",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "key",
+          "key": "r-rot"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-left",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-hCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-right",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-top",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-vCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-bottom",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-hSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-selection-vSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vSpace",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-left",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-hCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-right",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-top",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-vCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-bottom",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-hSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-vSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vSpace",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-left",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-hCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-right",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-top",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-vCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-bottom",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-hSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-margin-vSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vSpace",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-left",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-hCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-right",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-top",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-vCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-bottom",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-hSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-spread-vSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vSpace",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-left",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "left",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-hCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hCenter",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-right",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "right",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-top",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "top",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-vCenter",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vCenter",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-bottom",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "bottom",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-hSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-vSpace",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vSpace",
+          "bounds": "key",
+          "key": "r-rot",
+          "gap": 18
+        }
+      ]
+    },
+    {
+      "name": "align-rotated-group",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": 30,
+          "anchor": "center"
+        },
+        {
+          "op": "align",
+          "targets": [
+            "grp",
+            "r-plain"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-wide-stroke",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "strokeWeight": 18
+          }
+        },
+        {
+          "op": "align",
+          "targets": [
+            "r-plain",
+            "r-rot"
+          ],
+          "how": "left",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-oval-line",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "oval",
+            "line",
+            "poly"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-facing-page",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img",
+            "tf"
+          ],
+          "how": "hCenter",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-facing-margin",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img",
+            "tf"
+          ],
+          "how": "hCenter",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-facing-spread",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img",
+            "tf"
+          ],
+          "how": "hCenter",
+          "bounds": "spread"
+        }
+      ]
+    },
+    {
+      "name": "distribute-fixed-spacing",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "selection",
+          "gap": 12
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-last",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "hSpace",
+          "bounds": "key",
+          "key": "r-shear",
+          "gap": 12
+        }
+      ]
+    },
+    {
+      "name": "distribute-key-first",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "how": "vSpace",
+          "bounds": "key",
+          "key": "r-plain",
+          "gap": 12
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-bottom-shapes",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "r-plain",
+            "r-fill",
+            "oval"
+          ],
+          "how": "bottom",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "distribute-page-bottom-facing",
+      "steps": [
+        {
+          "op": "distribute",
+          "targets": [
+            "img",
+            "tf-2",
+            "r-p3"
+          ],
+          "how": "bottom",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-facing-reversed",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "tf",
+            "img"
+          ],
+          "how": "hCenter",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-page-right-single",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img"
+          ],
+          "how": "right",
+          "bounds": "page"
+        }
+      ]
+    },
+    {
+      "name": "align-margin-right-single",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "img"
+          ],
+          "how": "left",
+          "bounds": "margin"
+        }
+      ]
+    },
+    {
+      "name": "align-curved-stroke",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "strokeColor": "Black",
+            "strokeWeight": 4
+          }
+        },
+        {
+          "op": "rotate",
+          "target": "oval",
+          "by": 30,
+          "anchor": "center"
+        },
+        {
+          "op": "align",
+          "targets": [
+            "oval",
+            "poly"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-group-stroke",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp-a",
+          "props": {
+            "strokeColor": "Black",
+            "strokeWeight": 12
+          }
+        },
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": 30,
+          "anchor": "center"
+        },
+        {
+          "op": "align",
+          "targets": [
+            "grp",
+            "r-plain"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-locked",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-locked",
+            "r-plain",
+            "r-rot"
+          ],
+          "how": "right",
+          "bounds": "selection"
+        }
+      ]
+    },
+    {
+      "name": "align-locked-left",
+      "steps": [
+        {
+          "op": "align",
+          "targets": [
+            "r-locked",
+            "r-plain",
+            "r-rot"
+          ],
+          "how": "left",
+          "bounds": "selection"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "title": "목차 스타일",
+  "target": "none",
+  "defaults": "tocStyle",
+  "style": "wide",
+  "link": "tocEntries",
+  "okLabel": "저장",
+  "keepOpen": [
+    "delete",
+    "import"
+  ],
+  "unchecked": [
+    "delete",
+    "import"
+  ],
+  "description": "Layout > Table of Contents Styles: the TOC style picked (none = a new one; picking another starts every box from it) with its name, title and title style, the entries (one row each: the paragraph style taken in, the entry's own style, level, page number place and style, what goes between entry and number and its style, alphabetical sorting; a row added takes the first paragraph style not listed) and the options. OK saves it (saveTOCStyle); Delete removes the picked one (off while a TOC uses it); Load adds the TOC styles of an IDML file of the project (`importPath`, relative to the project root). The dialog opens again after Delete and Load. `namePrefix` and `titleDefault` are the words a new style is named and titled with.",
+  "note": [
+    "탭은 ^t로 입력합니다. 탭 리더는 항목 문단 스타일의 탭 설정을 따릅니다.",
+    "현재 목차에는 번호와 문단이 함께 들어갑니다. 번호만·문단만 설정은 저장되지만 생성에는 아직 적용되지 않습니다."
+  ],
+  "fields": [
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "New Table of Contents Style",
+      "hidden": true,
+      "keep": true
+    },
+    {
+      "name": "titleDefault",
+      "type": "text",
+      "default": "Contents",
+      "hidden": true,
+      "keep": true
+    },
+    {
+      "name": "inUse",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "style",
+      "label": "목차 스타일",
+      "type": "choice",
+      "source": "tocStyles",
+      "none": "새 목차",
+      "default": "",
+      "reload": "tocStyle"
+    },
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true,
+      "trim": true
+    },
+    {
+      "name": "title",
+      "label": "목차 제목",
+      "type": "text",
+      "default": "Contents"
+    },
+    {
+      "name": "titleStyle",
+      "label": "제목 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본 스타일",
+      "default": ""
+    },
+    {
+      "name": "entries",
+      "label": "포함된 스타일",
+      "type": "array",
+      "minRows": 0,
+      "maxRows": 100,
+      "addLabel": "항목 추가",
+      "removeLabel": "항목 삭제",
+      "default": [],
+      "fields": [
+        {
+          "name": "name",
+          "label": "문단 스타일",
+          "type": "choice",
+          "source": "paragraphStyles",
+          "none": "없음",
+          "default": "",
+          "required": true
+        },
+        {
+          "name": "formatStyle",
+          "label": "항목 스타일",
+          "type": "choice",
+          "source": "paragraphStyles",
+          "none": "기본 스타일",
+          "default": ""
+        },
+        {
+          "name": "level",
+          "label": "단계",
+          "type": "number",
+          "integer": true,
+          "min": 1,
+          "max": 10,
+          "default": 1
+        },
+        {
+          "name": "pageNumberPosition",
+          "label": "쪽 번호 위치",
+          "type": "enum",
+          "default": "AfterEntry",
+          "options": [
+            {
+              "value": "AfterEntry",
+              "label": "항목 뒤"
+            },
+            {
+              "value": "BeforeEntry",
+              "label": "항목 앞"
+            },
+            {
+              "value": "None",
+              "label": "없음"
+            }
+          ]
+        },
+        {
+          "name": "pageNumberStyle",
+          "label": "쪽 번호 스타일",
+          "type": "choice",
+          "source": "characterStyles",
+          "none": "기본 스타일",
+          "default": ""
+        },
+        {
+          "name": "separator",
+          "label": "항목과 번호 사이",
+          "type": "text",
+          "default": "^t"
+        },
+        {
+          "name": "separatorStyle",
+          "label": "구분 기호 스타일",
+          "type": "choice",
+          "source": "characterStyles",
+          "none": "기본 스타일",
+          "default": ""
+        },
+        {
+          "name": "sortAlphabet",
+          "label": "가나다순 정렬",
+          "type": "boolean",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "includeHidden",
+      "label": "숨은 레이어의 텍스트 포함",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "removeForcedLineBreak",
+      "label": "강제 줄바꿈 제거",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "numberedParagraphs",
+      "label": "번호 매긴 문단",
+      "type": "enum",
+      "default": "IncludeFullParagraph",
+      "options": [
+        {
+          "value": "IncludeFullParagraph",
+          "label": "번호와 문단 포함"
+        },
+        {
+          "value": "ExcludeNumbers",
+          "label": "문단만 포함"
+        },
+        {
+          "value": "IncludeNumbersOnly",
+          "label": "번호만 포함"
+        }
+      ]
+    },
+    {
+      "name": "includeBookDocuments",
+      "label": "책 문서 포함",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "createBookmarks",
+      "type": "boolean",
+      "default": true,
+      "hidden": true
+    },
+    {
+      "name": "makeAnchor",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "runIn",
+      "label": "이어 쓰기",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "importPath",
+      "label": "불러올 IDML 파일 (프로젝트 기준 경로)",
+      "type": "text",
+      "default": "",
+      "placeholder": "styles/toc.idml",
+      "local": true,
+      "maxLength": 1000
+    }
+  ],
+  "buttons": [
+    {
+      "label": "새로 만들기",
+      "field": "new",
+      "set": {
+        "field": "style",
+        "value": ""
+      }
+    },
+    {
+      "label": "삭제",
+      "field": "delete",
+      "action": "delete",
+      "disabledWhen": [
+        {
+          "style": ""
+        },
+        {
+          "inUse": true
+        }
+      ]
+    },
+    {
+      "label": "불러오기…",
+      "field": "import",
+      "action": "import",
+      "disabledWhen": {
+        "importPath": ""
+      }
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "saveTOCStyle",
+        "style": {
+          "id": "$style",
+          "name": "$name",
+          "title": "$title",
+          "titleStyle": "$titleStyle",
+          "entries": "$entries",
+          "includeHidden": "$includeHidden",
+          "includeBookDocuments": "$includeBookDocuments",
+          "createBookmarks": "$createBookmarks",
+          "makeAnchor": "$makeAnchor",
+          "runIn": "$runIn",
+          "removeForcedLineBreak": "$removeForcedLineBreak",
+          "numberedParagraphs": "$numberedParagraphs"
+        }
+      }
+    ],
+    "delete": [
+      {
+        "op": "deleteTOCStyle",
+        "id": "$style"
+      }
+    ],
+    "import": [
+      {
+        "$each": {
+          "query": "tocStylesFile",
+          "args": {
+            "path": "$importPath"
+          },
+          "as": {
+            "op": "importTOCStyles",
+            "parts": {
+              "$item": "parts"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

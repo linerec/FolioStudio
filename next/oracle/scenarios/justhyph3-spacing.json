@@ -1,0 +1,190 @@
+{
+ "fixture": "parjust",
+ "scenarios": [
+  {
+   "name": "justhyph3-letter-glyph",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "maximumGlyphScaling": 104,
+      "maximumLetterSpacing": 6,
+      "maximumWordSpacing": 100,
+      "desiredGlyphScaling": 100,
+      "desiredLetterSpacing": 0,
+      "desiredWordSpacing": 100,
+      "minimumGlyphScaling": 96,
+      "minimumLetterSpacing": -4,
+      "minimumWordSpacing": 100,
+      "justification": "LEFT_JUSTIFIED"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-word-wide",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "maximumWordSpacing": 250,
+      "desiredWordSpacing": 100,
+      "minimumWordSpacing": 50,
+      "justification": "LEFT_JUSTIFIED"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-korean-tracking",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 25,
+     "props": {
+      "maximumGlyphScaling": 102,
+      "maximumLetterSpacing": 4,
+      "maximumWordSpacing": 160,
+      "desiredGlyphScaling": 100,
+      "desiredLetterSpacing": 1,
+      "desiredWordSpacing": 110,
+      "minimumGlyphScaling": 98,
+      "minimumLetterSpacing": -2,
+      "minimumWordSpacing": 70,
+      "justification": "LEFT_JUSTIFIED",
+      "tracking": -30
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-glyph-desired",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "maximumGlyphScaling": 106,
+      "maximumLetterSpacing": 0,
+      "maximumWordSpacing": 130,
+      "desiredGlyphScaling": 103,
+      "desiredLetterSpacing": 0,
+      "desiredWordSpacing": 100,
+      "minimumGlyphScaling": 100,
+      "minimumLetterSpacing": 0,
+      "minimumWordSpacing": 80,
+      "justification": "LEFT_JUSTIFIED"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-korean-fully",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 25,
+     "props": {
+      "maximumGlyphScaling": 110,
+      "maximumLetterSpacing": 8,
+      "desiredGlyphScaling": 100,
+      "desiredLetterSpacing": 0,
+      "minimumGlyphScaling": 90,
+      "minimumLetterSpacing": 0,
+      "justification": "FULLY_JUSTIFIED"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-korean-letter-only",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 25,
+     "props": {
+      "maximumGlyphScaling": 100,
+      "maximumLetterSpacing": 10,
+      "maximumWordSpacing": 100,
+      "desiredGlyphScaling": 100,
+      "desiredLetterSpacing": 0,
+      "desiredWordSpacing": 100,
+      "minimumGlyphScaling": 100,
+      "minimumLetterSpacing": -10,
+      "minimumWordSpacing": 100,
+      "justification": "LEFT_JUSTIFIED"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-latin-fully-narrow",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 20,
+     "props": {
+      "maximumGlyphScaling": 101,
+      "maximumLetterSpacing": 2,
+      "maximumWordSpacing": 110,
+      "desiredGlyphScaling": 100,
+      "desiredLetterSpacing": 0,
+      "desiredWordSpacing": 100,
+      "minimumGlyphScaling": 99,
+      "minimumLetterSpacing": -1,
+      "minimumWordSpacing": 90,
+      "justification": "FULLY_JUSTIFIED"
+     }
+    }
+   ],
+   "text": true
+  },
+  {
+   "name": "justhyph3-single-korean",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean-format",
+     "start": 0,
+     "end": 25,
+     "props": {
+      "maximumGlyphScaling": 102,
+      "maximumLetterSpacing": 4,
+      "maximumWordSpacing": 160,
+      "desiredGlyphScaling": 100,
+      "desiredLetterSpacing": 1,
+      "desiredWordSpacing": 110,
+      "minimumGlyphScaling": 98,
+      "minimumLetterSpacing": -2,
+      "minimumWordSpacing": 70,
+      "justification": "LEFT_JUSTIFIED",
+      "composer": "$ID/HL Single"
+     }
+    }
+   ],
+   "text": true
+  }
+ ]
+}

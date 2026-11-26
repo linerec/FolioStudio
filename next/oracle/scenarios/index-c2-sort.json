@@ -1,0 +1,239 @@
+{
+  "fixture": "panels-index",
+  "extension": "index-c2",
+  "comparison": "index",
+  "scenarios": [
+    {
+      "name": "index-c2-sort",
+      "steps": [
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Zebra",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicnZebra",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Éclair",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicnÉclair",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "banana",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicnbanana",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "Apple",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicnApple",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "apple",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicnapple",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "다",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn다",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "나",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn나",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "가방",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn가방",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "가",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn가",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "ㄱ글",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicnㄱ글",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "_under",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn_under",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "10 ten",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn10 ten",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "addIndexTopic",
+          "target": "format",
+          "parent": "",
+          "name": "2 two",
+          "sort_order": ""
+        },
+        {
+          "op": "addIndexReference",
+          "target": "format",
+          "at": 0,
+          "topic": "u13eTopicn2 two",
+          "kind": "CurrentPage",
+          "limit": 0
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "name": "index-c2-sort-key",
+      "steps": [
+        {
+          "op": "setIndexTopic",
+          "target": "format",
+          "id": "u13eTopicn출판",
+          "name": "출판",
+          "sort_order": "Z"
+        },
+        {
+          "op": "generateIndex",
+          "page": "",
+          "frame": "",
+          "replace": true,
+          "title": "Index",
+          "headings": true,
+          "font": "Malgun Gothic",
+          "locations": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "fixture": "pages",
+  "extension": "panels-capabilities",
+  "about": "Hidden-document read of panel capabilities and flattener preferences; no document edits or UI activation.",
+  "scenarios": [
+    { "name": "panels-flattener-read", "steps": [] }
+  ]
+}

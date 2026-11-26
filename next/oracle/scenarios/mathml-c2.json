@@ -1,0 +1,63 @@
+{
+ "fixture": "mathml-c2",
+ "about": "Equations (MathML objects) that InDesign saved: their drawing is shown, and moving one moves it. The equations' own SVG outlines are what print compares.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "about": "nothing changed: the print baseline of the fixture"
+  },
+  {
+   "name": "move-eq-row",
+   "steps": [
+    {
+     "op": "move",
+     "target": "eq-row",
+     "by": [
+      40,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "name": "move-eq-frac",
+   "steps": [
+    {
+     "op": "move",
+     "target": "eq-frac",
+     "by": [
+      -20,
+      45
+     ]
+    }
+   ]
+  },
+  {
+   "name": "move-eq-script",
+   "steps": [
+    {
+     "op": "move",
+     "target": "eq-script",
+     "by": [
+      15,
+      -25
+     ]
+    }
+   ]
+  },
+  {
+   "name": "move-eq-sqrt",
+   "steps": [
+    {
+     "op": "move",
+     "target": "eq-sqrt",
+     "by": [
+      -60,
+      10
+     ]
+    }
+   ]
+  }
+ ]
+}

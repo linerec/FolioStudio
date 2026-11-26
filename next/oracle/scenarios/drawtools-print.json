@@ -1,0 +1,330 @@
+{
+  "fixture": "basic-create",
+  "about": "Visible polygon and star printing with an existing fixture swatch.",
+  "scenarios": [
+    {
+      "name": "drawtools-painted-3-0",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 3,
+          "inset": 0,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-3-25",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 3,
+          "inset": 25,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-3-50",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 3,
+          "inset": 50,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-5-0",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 5,
+          "inset": 0,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-5-25",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 5,
+          "inset": 25,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-5-50",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 5,
+          "inset": 50,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-8-0",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 8,
+          "inset": 0,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-8-25",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 8,
+          "inset": 25,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-8-50",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 8,
+          "inset": 50,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-12-0",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 12,
+          "inset": 0,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-12-25",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 12,
+          "inset": 25,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "drawtools-painted-12-50",
+      "steps": [
+        {
+          "op": "createPolygon",
+          "kind": "polygon",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            240,
+            300
+          ],
+          "sides": 12,
+          "inset": 50,
+          "layer": null,
+          "label": "created"
+        },
+        {
+          "op": "set",
+          "target": "created",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    }
+  ]
+}

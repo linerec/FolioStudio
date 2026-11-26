@@ -1,0 +1,1224 @@
+{
+ "fixture": "basic",
+ "about": "The Pen tool and point editing: a path made from a point list is what a script's entirePath makes (Polygon when closed, GraphicLine when open, page coordinates, handles optional); moving anchors takes their handles along; moving one handle of a smooth point turns the other to stay in line at its own length (a corner point's handles move on their own, Alt = independent); the frame's crop and a text frame's column follow the new shape as in a resize. Moves are by a distance, in the item's own space (items without rotation or scale).",
+ "scenarios": [
+  {
+   "name": "path-closed-corners",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        300
+       ]
+      },
+      {
+       "anchor": [
+        220,
+        300
+       ]
+      },
+      {
+       "anchor": [
+        160,
+        400
+       ]
+      }
+     ],
+     "label": "created"
+    }
+   ]
+  },
+  {
+   "name": "path-closed-curved",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        80
+       ],
+       "left": [
+        160,
+        60
+       ],
+       "right": [
+        240,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        180,
+        260
+       ],
+       "left": [
+        220,
+        280
+       ],
+       "right": [
+        140,
+        240
+       ]
+      }
+     ],
+     "label": "created"
+    }
+   ]
+  },
+  {
+   "name": "path-open-line",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        60,
+        60
+       ]
+      },
+      {
+       "anchor": [
+        260,
+        160
+       ]
+      }
+     ],
+     "label": "created"
+    }
+   ]
+  },
+  {
+   "name": "path-open-curved",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        100,
+        500
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        450
+       ],
+       "left": [
+        170,
+        450
+       ],
+       "right": [
+        230,
+        450
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        500
+       ]
+      }
+     ],
+     "label": "created"
+    }
+   ]
+  },
+  {
+   "name": "path-closed-page2",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 1,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        300
+       ]
+      },
+      {
+       "anchor": [
+        220,
+        300
+       ]
+      },
+      {
+       "anchor": [
+        160,
+        400
+       ]
+      }
+     ],
+     "label": "created"
+    }
+   ]
+  },
+  {
+   "name": "path-move-anchor",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        80
+       ],
+       "left": [
+        160,
+        60
+       ],
+       "right": [
+        240,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "movePoints",
+     "target": "created",
+     "indices": [
+      1
+     ],
+     "by": [
+      10,
+      25
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-move-anchors",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        80
+       ],
+       "left": [
+        160,
+        60
+       ],
+       "right": [
+        240,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        120,
+        240
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "movePoints",
+     "target": "created",
+     "indices": [
+      0,
+      2
+     ],
+     "by": [
+      -15,
+      12.5
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-move-handle-smooth",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        170,
+        100
+       ],
+       "right": [
+        230,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "moveHandle",
+     "target": "created",
+     "index": 1,
+     "side": "right",
+     "by": [
+      30,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-move-handle-smooth-left",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        170,
+        100
+       ],
+       "right": [
+        240,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "moveHandle",
+     "target": "created",
+     "index": 1,
+     "side": "left",
+     "by": [
+      -10,
+      -25
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-move-handle-corner",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        190,
+        80
+       ],
+       "right": [
+        230,
+        110
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "moveHandle",
+     "target": "created",
+     "index": 1,
+     "side": "right",
+     "by": [
+      15,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-move-handle-one-sided",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "right": [
+        230,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "moveHandle",
+     "target": "created",
+     "index": 1,
+     "side": "left",
+     "by": [
+      -20,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-move-handle-independent",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "left": [
+        170,
+        100
+       ],
+       "right": [
+        230,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "moveHandle",
+     "target": "created",
+     "index": 1,
+     "side": "right",
+     "by": [
+      30,
+      20
+     ],
+     "independent": true
+    }
+   ]
+  },
+  {
+   "name": "path-edit-rectangle",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "r-plain",
+     "indices": [
+      2
+     ],
+     "by": [
+      30,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-oval",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "oval",
+     "indices": [
+      0
+     ],
+     "by": [
+      0,
+      -20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-polygon",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "poly",
+     "indices": [
+      1
+     ],
+     "by": [
+      12,
+      -8
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-line",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "line",
+     "indices": [
+      1
+     ],
+     "by": [
+      40,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-image-frame",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "img",
+     "indices": [
+      2
+     ],
+     "by": [
+      20,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-text-frame",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "tf",
+     "indices": [
+      2
+     ],
+     "by": [
+      30,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-image-frame-still-rect",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "img",
+     "indices": [
+      2,
+      3
+     ],
+     "by": [
+      20,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-rect-with-image",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-plain.png",
+     "target": "r-plain",
+     "contentAware": false
+    },
+    {
+     "op": "movePoints",
+     "target": "r-plain",
+     "indices": [
+      2
+     ],
+     "by": [
+      30,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-oval-with-image",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-plain.png",
+     "target": "oval",
+     "contentAware": false
+    },
+    {
+     "op": "movePoints",
+     "target": "oval",
+     "indices": [
+      0
+     ],
+     "by": [
+      0,
+      -20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-text-frame-still-rect",
+   "steps": [
+    {
+     "op": "movePoints",
+     "target": "tf",
+     "indices": [
+      2,
+      3
+     ],
+     "by": [
+      30,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-polygon-with-image",
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "place-plain.png",
+     "target": "poly",
+     "contentAware": false
+    },
+    {
+     "op": "movePoints",
+     "target": "poly",
+     "indices": [
+      1
+     ],
+     "by": [
+      12,
+      -8
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-empty-frame",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangleFrame",
+     "page": 0,
+     "rect": [
+      80,
+      200,
+      240,
+      300
+     ],
+     "label": "created"
+    },
+    {
+     "op": "movePoints",
+     "target": "created",
+     "indices": [
+      2
+     ],
+     "by": [
+      30,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-edit-ellipse-frame",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "ellipseFrame",
+     "page": 0,
+     "rect": [
+      80,
+      200,
+      240,
+      300
+     ],
+     "label": "created"
+    },
+    {
+     "op": "movePoints",
+     "target": "created",
+     "indices": [
+      0
+     ],
+     "by": [
+      0,
+      -20
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-delete-curve-point",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "deletePoint",
+     "target": "created",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-delete-corner-point",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "deletePoint",
+     "target": "created",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "name": "path-delete-first-point",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "deletePoint",
+     "target": "created",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "name": "path-delete-open-end",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "deletePoint",
+     "target": "created",
+     "index": 3
+    }
+   ]
+  },
+  {
+   "name": "path-delete-open-middle",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "deletePoint",
+     "target": "created",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-plain-smooth-point",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "plainPoint",
+     "target": "created",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-plain-corner-point",
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ],
+       "right": [
+        160,
+        40
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        240,
+        40
+       ],
+       "right": [
+        360,
+        160
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "created"
+    },
+    {
+     "op": "plainPoint",
+     "target": "created",
+     "index": 2
+    }
+   ]
+  },
+  {
+   "name": "path-delete-polygon-point",
+   "steps": [
+    {
+     "op": "deletePoint",
+     "target": "poly",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-delete-rectangle-point",
+   "steps": [
+    {
+     "op": "deletePoint",
+     "target": "r-plain",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-delete-oval-point",
+   "steps": [
+    {
+     "op": "deletePoint",
+     "target": "oval",
+     "index": 0
+    }
+   ]
+  },
+  {
+   "name": "path-delete-image-frame-point",
+   "steps": [
+    {
+     "op": "deletePoint",
+     "target": "img",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-delete-text-frame-point",
+   "steps": [
+    {
+     "op": "deletePoint",
+     "target": "tf",
+     "index": 1
+    }
+   ]
+  },
+  {
+   "name": "path-plain-oval-point",
+   "steps": [
+    {
+     "op": "plainPoint",
+     "target": "oval",
+     "index": 0
+    }
+   ]
+  }
+ ]
+}

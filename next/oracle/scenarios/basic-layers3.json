@@ -1,0 +1,163 @@
+{
+ "fixture": "basic",
+ "about": "Layers panel menu, second half: Unlock All (menu action 11396) against Unlock All on Spread (11395); Ungroup Remembers Layers (application preference generalPreferences.ungroupRemembersLayers, default on) on and off; Paste Remembers Layers (clipboardPreferences.pasteRemembersLayers, default off) on and off. Select Item(s) / Select and Fit Item (18461, 18462) are disabled with an object selected (they need a row picked in the panel, not scriptable): see README.",
+ "scenarios": [
+  {
+   "name": "unlock-all-items",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "locked": true
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "locked": true
+     }
+    },
+    {
+     "op": "menu",
+     "id": 11396,
+     "action": "Unlock All",
+     "panel": "$ID/Layers"
+    }
+   ]
+  },
+  {
+   "name": "unlock-all-on-spread",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "locked": true
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "locked": true
+     }
+    },
+    {
+     "op": "menu",
+     "id": 11395,
+     "action": "Unlock All on Spread"
+    }
+   ]
+  },
+  {
+   "name": "ungroup-mixed-remembers",
+   "steps": [
+    {
+     "op": "group",
+     "targets": [
+      "r-plain",
+      "r-top"
+     ],
+     "label": "mix"
+    },
+    {
+     "op": "ungroup",
+     "target": "mix"
+    }
+   ]
+  },
+  {
+   "name": "ungroup-mixed-forgets",
+   "steps": [
+    {
+     "op": "appSet",
+     "props": {
+      "generalPreferences": {
+       "ungroupRemembersLayers": false
+      }
+     }
+    },
+    {
+     "op": "group",
+     "targets": [
+      "r-plain",
+      "r-top"
+     ],
+     "label": "mix"
+    },
+    {
+     "op": "ungroup",
+     "target": "mix"
+    }
+   ]
+  },
+  {
+   "name": "paste-to-active-layer",
+   "window": true,
+   "steps": [
+    {
+     "op": "select",
+     "target": "r-top"
+    },
+    {
+     "op": "clipboard",
+     "how": "copy"
+    },
+    {
+     "op": "activeLayer",
+     "name": "Base"
+    },
+    {
+     "op": "select"
+    },
+    {
+     "op": "clipboard",
+     "how": "paste",
+     "labels": [
+      "pasted"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "paste-remembers-layer",
+   "window": true,
+   "steps": [
+    {
+     "op": "appSet",
+     "props": {
+      "clipboardPreferences": {
+       "pasteRemembersLayers": true
+      }
+     }
+    },
+    {
+     "op": "select",
+     "target": "r-top"
+    },
+    {
+     "op": "clipboard",
+     "how": "copy"
+    },
+    {
+     "op": "activeLayer",
+     "name": "Base"
+    },
+    {
+     "op": "select"
+    },
+    {
+     "op": "clipboard",
+     "how": "paste",
+     "labels": [
+      "pasted"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "fixture": "pdfplace",
+ "about": "placeimg-c1: PDF pages with /Rotate 90/180/270 (CropPDF, CropTrim, content crop, into a frame).",
+ "scenarios": [
+  {
+   "name": "pdf-rot90-click",
+   "rules": [
+    "graphics.pdf-place"
+   ],
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "pdfplace-rot90.pdf",
+     "contentAware": false,
+     "pdf": {
+      "pageNumber": 1,
+      "crop": "CropPDF",
+      "transparentBackground": true
+     },
+     "page": 0,
+     "point": [
+      60,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdf-rot180-click",
+   "rules": [
+    "graphics.pdf-place"
+   ],
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "pdfplace-rot180.pdf",
+     "contentAware": false,
+     "pdf": {
+      "pageNumber": 1,
+      "crop": "CropPDF",
+      "transparentBackground": true
+     },
+     "page": 0,
+     "point": [
+      60,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdf-rot270-click",
+   "rules": [
+    "graphics.pdf-place"
+   ],
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "pdfplace-rot270.pdf",
+     "contentAware": false,
+     "pdf": {
+      "pageNumber": 1,
+      "crop": "CropPDF",
+      "transparentBackground": true
+     },
+     "page": 0,
+     "point": [
+      60,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdf-rot90-trim-click",
+   "rules": [
+    "graphics.pdf-place"
+   ],
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "pdfplace-rot90.pdf",
+     "contentAware": false,
+     "pdf": {
+      "pageNumber": 1,
+      "crop": "CropTrim",
+      "transparentBackground": true
+     },
+     "page": 0,
+     "point": [
+      60,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdf-rot90-frame",
+   "rules": [
+    "graphics.pdf-place"
+   ],
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "pdfplace-rot90.pdf",
+     "contentAware": false,
+     "pdf": {
+      "pageNumber": 1,
+      "crop": "CropPDF",
+      "transparentBackground": true
+     },
+     "target": "frame"
+    }
+   ]
+  },
+  {
+   "name": "pdf-rot90-content-click",
+   "rules": [
+    "graphics.pdf-place"
+   ],
+   "steps": [
+    {
+     "op": "placeGraphic",
+     "file": "pdfplace-rot90.pdf",
+     "contentAware": false,
+     "pdf": {
+      "pageNumber": 1,
+      "crop": "CropContentAllLayers",
+      "transparentBackground": true
+     },
+     "page": 0,
+     "point": [
+      60,
+      60
+     ]
+    }
+   ]
+  }
+ ]
+}

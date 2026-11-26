@@ -1,0 +1,103 @@
+{
+  "fixture": "objectstyles",
+  "about": "Windowed object style application to group children, custom-style children and nested groups; captured 2026-10-27.",
+  "scenarios": [
+    {
+      "name": "sp-object-child",
+      "window": true,
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "grp-a",
+          "style": "Oracle Box Blue"
+        }
+      ]
+    },
+    {
+      "name": "sp-object-group-custom",
+      "window": true,
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "grp-a",
+          "style": "Oracle Box Blue",
+          "clear": true
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "grp",
+          "style": "Oracle Box"
+        }
+      ]
+    },
+    {
+      "name": "sp-object-group-custom-clear",
+      "window": true,
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "grp-a",
+          "style": "Oracle Box Blue",
+          "clear": true
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "grp",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "sp-object-group-nested",
+      "window": true,
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "grp",
+            "r-plain"
+          ],
+          "label": "outer"
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "outer",
+          "style": "Oracle Box"
+        }
+      ]
+    },
+    {
+      "name": "sp-object-group-nested-clear",
+      "window": true,
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "grp",
+            "r-plain"
+          ],
+          "label": "outer"
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "outer",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "sp-object-child-clear",
+      "window": true,
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "grp-a",
+          "style": "Oracle Box Blue",
+          "clear": true
+        }
+      ]
+    }
+  ]
+}

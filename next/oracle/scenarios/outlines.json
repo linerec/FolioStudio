@@ -1,0 +1,15 @@
+{
+  "fixture": "outlines",
+  "about": "Type > Create Outlines (menu action 61405, measured in InDesign 2025, window documents) on a whole text frame: the frame and its story are replaced by one Polygon (a single line of one fill), by a Group of Polygons (a Polygon per line and per run of one fill), or by a Rectangle (a lone rectangular glyph). The glyph points follow the font's own contour points (rules: outlines.glyph-paths). The host fills the `shapes` field, so the step carries it empty.",
+  "extension": "outlines",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "outlines-line", "window": true, "rules": ["outlines.frame.polygon", "outlines.glyph-paths"], "steps": [{"op": "createOutlines", "target": "line", "shapes": ""}]},
+    {"name": "outlines-lines", "window": true, "rules": ["outlines.frame.polygon"], "steps": [{"op": "createOutlines", "target": "two", "shapes": ""}]},
+    {"name": "outlines-paint", "window": true, "rules": ["outlines.frame.polygon"], "steps": [{"op": "createOutlines", "target": "paint", "shapes": ""}]},
+    {"name": "outlines-kern", "window": true, "rules": ["outlines.frame.polygon"], "steps": [{"op": "createOutlines", "target": "kern", "shapes": ""}]},
+    {"name": "outlines-shift", "window": true, "rules": ["outlines.frame.polygon"], "steps": [{"op": "createOutlines", "target": "shift", "shapes": ""}]},
+    {"name": "outlines-mixed", "window": true, "rules": ["outlines.frame.polygon"], "steps": [{"op": "createOutlines", "target": "mixed", "shapes": ""}]},
+    {"name": "outlines-rect", "window": true, "rules": ["outlines.frame.polygon"], "steps": [{"op": "createOutlines", "target": "rect", "shapes": ""}]}
+  ]
+}

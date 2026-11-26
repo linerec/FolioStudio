@@ -1,0 +1,325 @@
+{
+  "fixture": "basic",
+  "about": "Edit menu clipboard on a selection in a document window: copy, cut, paste, paste in place, paste into.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "clip-copy-in-place",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-cut-in-place",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "cut"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-cut",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "cut"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-text-in-place",
+      "steps": [
+        {
+          "op": "select",
+          "target": "tf"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-group-in-place",
+      "steps": [
+        {
+          "op": "select",
+          "target": "grp"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-two-in-place",
+      "steps": [
+        {
+          "op": "select",
+          "targets": [
+            "r-fill",
+            "oval"
+          ]
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted-a",
+            "pasted-b"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-image-in-place",
+      "steps": [
+        {
+          "op": "select",
+          "target": "img"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-other-spread",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "view",
+          "page": 1
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-active-layer",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "activeLayer",
+          "name": "Top"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInPlace",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-paste-fit-page",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "view",
+          "page": 0,
+          "zoom": "FIT_PAGE"
+        },
+        {
+          "op": "clipboard",
+          "how": "paste",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-paste-actual",
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "view",
+          "page": 0,
+          "zoom": "ACTUAL_SIZE"
+        },
+        {
+          "op": "clipboard",
+          "how": "paste",
+          "labels": [
+            "pasted"
+          ]
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-paste-into",
+      "steps": [
+        {
+          "op": "select",
+          "target": "oval"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInto",
+          "contentLabel": "pasted"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-paste-into-full",
+      "steps": [
+        {
+          "op": "select",
+          "target": "oval"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "select",
+          "target": "img"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInto",
+          "contentLabel": "pasted"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "clip-paste-into-text",
+      "steps": [
+        {
+          "op": "select",
+          "target": "tf"
+        },
+        {
+          "op": "clipboard",
+          "how": "copy"
+        },
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "clipboard",
+          "how": "pasteInto",
+          "contentLabel": "pasted"
+        }
+      ],
+      "window": true
+    }
+  ]
+}

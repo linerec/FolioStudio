@@ -1,0 +1,141 @@
+{
+  "fixture": "objectstyles",
+  "scenarios": [
+    {
+      "name": "c2-category-outer-glow-off",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-p3",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "opacity": 60,
+                "effectColor": "Oracle Blue"
+              }
+            }
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "objectEffectsEnablingSettings": {
+              "enableOuterGlow": false
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "c2-category-outer-glow-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-p3",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "opacity": 60,
+                "effectColor": "Oracle Blue"
+              }
+            }
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "objectEffectsEnablingSettings": {
+              "enableOuterGlow": true
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "c2-category-inner-shadow-off",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-p3",
+          "props": {
+            "transparencySettings": {
+              "innerShadowSettings": {
+                "applied": true,
+                "size": 12,
+                "opacity": 60,
+                "effectColor": "Oracle Blue"
+              }
+            }
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "objectEffectsEnablingSettings": {
+              "enableInnerShadow": false
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "c2-category-inner-shadow-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-p3",
+          "props": {
+            "transparencySettings": {
+              "innerShadowSettings": {
+                "applied": true,
+                "size": 12,
+                "opacity": 60,
+                "effectColor": "Oracle Blue"
+              }
+            }
+          }
+        },
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "objectEffectsEnablingSettings": {
+              "enableInnerShadow": true
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-p3",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    }
+  ]
+}

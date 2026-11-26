@@ -1,0 +1,27 @@
+{
+  "title": "언어",
+  "scope": "app",
+  "target": "none",
+  "defaults": "userSettings",
+  "description": "An app dialog (no document needed). language is the language of menus and dialogs: system (follow the computer), ko or en. It starts from the app setting; applying saves it (userSettings patch language), the result is the settings.",
+  "note": "메뉴와 대화상자에 바로 반영됩니다. 문서의 글과 글꼴은 바뀌지 않습니다.",
+  "fields": [
+    {
+      "name": "language",
+      "label": "언어",
+      "type": "enum",
+      "default": "system",
+      "options": [
+        { "value": "system", "label": "시스템 언어를 따름" },
+        { "value": "ko", "label": "한국어", "native": true },
+        { "value": "en", "label": "English", "native": true }
+      ],
+      "group": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "userSettings", "patch": { "language": "$language" } }
+    ]
+  }
+}

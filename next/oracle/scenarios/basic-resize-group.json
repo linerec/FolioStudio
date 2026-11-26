@@ -1,0 +1,278 @@
+{
+  "fixture": "basic",
+  "about": "Group W/H and child geometry, strokes and text.",
+  "scenarios": [
+    {
+      "name": "resize-group-top-left",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "grp",
+          "size": [
+            240,
+            180
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-center",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "grp",
+          "size": [
+            70,
+            45
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-bottom-right",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "grp",
+          "size": [
+            240,
+            180
+          ],
+          "anchor": "bottomRight"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-rotated",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": 25
+        },
+        {
+          "op": "resize",
+          "target": "grp",
+          "size": [
+            240,
+            180
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-stroke",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp-a",
+          "props": {
+            "strokeColor": "Black",
+            "strokeWeight": 12
+          }
+        },
+        {
+          "op": "resize",
+          "target": "grp",
+          "size": [
+            240,
+            180
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-text",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "tf",
+            "tf-1"
+          ],
+          "label": "text-group"
+        },
+        {
+          "op": "resize",
+          "target": "text-group",
+          "size": [
+            340,
+            450
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-image",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "img",
+            "r-p3"
+          ],
+          "label": "image-group"
+        },
+        {
+          "op": "resize",
+          "target": "image-group",
+          "size": [
+            250,
+            400
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-mixed-axes",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "r-plain",
+            "r-rot",
+            "r-shear"
+          ],
+          "label": "mixed"
+        },
+        {
+          "op": "resize",
+          "target": "mixed",
+          "size": [
+            380,
+            200
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-many-top-left",
+      "steps": [
+        {
+          "op": "resizeMany",
+          "targets": [
+            "r-plain",
+            "r-fill"
+          ],
+          "size": [
+            400,
+            200
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-many-center",
+      "steps": [
+        {
+          "op": "resizeMany",
+          "targets": [
+            "r-plain",
+            "r-fill"
+          ],
+          "size": [
+            240,
+            80
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-many-mixed-axes",
+      "steps": [
+        {
+          "op": "resizeMany",
+          "targets": [
+            "r-rot",
+            "r-shear"
+          ],
+          "size": [
+            350,
+            220
+          ],
+          "anchor": "bottomRight"
+        }
+      ]
+    },
+    {
+      "name": "resize-group-handles",
+      "steps": [
+        {
+          "op": "resizeBox",
+          "target": "grp",
+          "rect": [
+            40,
+            100,
+            320,
+            280
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize-group-rotated-handles",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": 25
+        },
+        {
+          "op": "resizeBox",
+          "target": "grp",
+          "rect": [
+            40,
+            100,
+            320,
+            280
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize-many-handles",
+      "steps": [
+        {
+          "op": "resizeMany",
+          "targets": [
+            "r-plain",
+            "r-fill"
+          ],
+          "size": [
+            400,
+            200
+          ],
+          "anchor": "topLeft",
+          "includeStroke": false
+        }
+      ]
+    },
+    {
+      "name": "resize-many-rotated-handles",
+      "steps": [
+        {
+          "op": "resizeMany",
+          "targets": [
+            "r-rot",
+            "r-shear"
+          ],
+          "size": [
+            350,
+            220
+          ],
+          "anchor": "bottomRight",
+          "includeStroke": false
+        }
+      ]
+    }
+  ]
+}

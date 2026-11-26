@@ -1,0 +1,68 @@
+{
+  "fixture": "grepspell3",
+  "extension": "grep-styles",
+  "scenarios": [
+    {
+      "name": "noop",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": []
+    },
+    {
+      "name": "grepspell3-markers",
+      "rules": [
+        "styles.grep.basic"
+      ],
+      "steps": [
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/GS 0",
+          "rules": [
+            { "style": "CharacterStyle/Red", "expression": "c.d" },
+            { "style": "CharacterStyle/Blue", "expression": "(?<=c)d" }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/GS 1",
+          "rules": [
+            { "style": "CharacterStyle/Red", "expression": "b.c" },
+            { "style": "CharacterStyle/Blue", "expression": "\\w\\w\\w" }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/GS 2",
+          "rules": [
+            { "style": "CharacterStyle/Red", "expression": "b.c" },
+            { "style": "CharacterStyle/Blue", "expression": "bc" }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/GS 3",
+          "rules": [
+            { "style": "CharacterStyle/Red", "expression": "c~Id" }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/GS 4",
+          "rules": [
+            { "style": "CharacterStyle/Red", "expression": "b\\sc" },
+            { "style": "CharacterStyle/Blue", "expression": "\\h" }
+          ]
+        },
+        {
+          "op": "setGrepStyles",
+          "style": "ParagraphStyle/GS 5",
+          "rules": [
+            { "style": "CharacterStyle/Red", "expression": "b~Ic" }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    }
+  ]
+}

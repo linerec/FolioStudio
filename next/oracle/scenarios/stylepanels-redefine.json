@@ -1,0 +1,18 @@
+{
+  "fixture": "tablestyles",
+  "about": "Windowed Table Styles Redefine Style moves table overrides into its applied style.",
+  "scenarios": [
+    {"name":"sp-table-redefine","window":true,"steps":[
+      {"op":"table","target":"tbl","do":"applyTableStyle","style":"Oracle Zebra"},
+      {"op":"table","target":"tbl","do":"tableProps","props":{"spaceBefore":9,"topBorderStrokeWeight":4}},
+      {"op":"tableStyleRedefine","target":"tbl"}
+    ]},
+    {"name":"sp-table-redefine-based","window":true,"steps":[
+      {"op":"tableStyleDef","kind":"table","do":"create","name":"Based table","props":{"basedOn":"Oracle Zebra","spaceAfter":8}},
+      {"op":"table","target":"tbl","do":"applyTableStyle","style":"Based table"},
+      {"op":"table","target":"tbl","do":"tableProps","props":{"spaceBefore":12,"bottomBorderStrokeWeight":2}},
+      {"op":"table","target":"tbl","do":"cellProps","cells":[[1,1]],"props":{"fillColor":"Black","topInset":7}},
+      {"op":"tableStyleRedefine","target":"tbl"}
+    ]}
+  ]
+}

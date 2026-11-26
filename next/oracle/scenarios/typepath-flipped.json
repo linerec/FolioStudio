@@ -1,0 +1,25 @@
+{
+  "fixture": "typepath-flipped",
+  "extension": "textpath",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {
+      "name": "typepath-closed-flipped",
+      "rules": ["typepath-c6.closed-direction"],
+      "steps": [
+        {"op": "setTextPathOptions", "target": "rectangle", "props": {"FlipPathEffect": "Flipped"}},
+        {"op": "setTextPathOptions", "target": "oval", "props": {"FlipPathEffect": "Flipped"}},
+        {"op": "setTextPathOptions", "target": "clockwise", "props": {"FlipPathEffect": "Flipped"}},
+        {"op": "setTextPathOptions", "target": "counterclockwise", "props": {"FlipPathEffect": "Flipped"}}
+      ]
+    },
+    {
+      "name": "typepath-closed-flipped-brackets",
+      "rules": ["typepath-c6.closed-direction"],
+      "steps": [
+        {"op": "setTextPathOptions", "target": "clockwise", "props": {"StartBracket": "380", "EndBracket": "5", "FlipPathEffect": "Flipped"}},
+        {"op": "setTextPathOptions", "target": "counterclockwise", "props": {"StartBracket": "5", "EndBracket": "380", "FlipPathEffect": "Flipped"}}
+      ]
+    }
+  ]
+}

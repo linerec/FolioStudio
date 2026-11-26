@@ -1,0 +1,63 @@
+{
+  "title": "QR 코드 생성",
+  "target": "explicit",
+  "maxIds": 1,
+  "description": "Object > Generate QR Code: ids is the page the code is made on; the code is placed 36 pt from the page's top left corner, size points square, and the new group is selected.",
+  "fields": [
+    {
+      "name": "kind",
+      "label": "형식",
+      "type": "enum",
+      "default": "text",
+      "options": [
+        {
+          "value": "text",
+          "label": "일반 텍스트"
+        },
+        {
+          "value": "url",
+          "label": "웹 주소"
+        }
+      ]
+    },
+    {
+      "name": "content",
+      "label": "내용",
+      "type": "text",
+      "default": "",
+      "required": true,
+      "maxLength": 500,
+      "multiline": true
+    },
+    {
+      "name": "size",
+      "label": "크기 (pt)",
+      "type": "number",
+      "default": 85.0393700787,
+      "min": 12,
+      "max": 2000
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "createQrVector",
+        "page": "$ids0",
+        "kind": "$kind",
+        "content": "$content",
+        "rect": [
+          36,
+          36,
+          {
+            "$": "size",
+            "add": 36
+          },
+          {
+            "$": "size",
+            "add": 36
+          }
+        ]
+      }
+    ]
+  }
+}

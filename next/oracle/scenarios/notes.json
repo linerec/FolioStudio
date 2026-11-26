@@ -1,0 +1,140 @@
+{
+  "fixture": "footnotes",
+  "extension": "notes",
+  "scenarios": [
+    {
+      "name": "notes-new",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 5,
+          "text": "Memo",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        }
+      ]
+    },
+    {
+      "name": "notes-collapse",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 5,
+          "text": "Memo",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        },
+        {
+          "op": "collapseNote",
+          "target": "body-0",
+          "index": 0,
+          "collapsed": true
+        }
+      ]
+    },
+    {
+      "name": "notes-delete",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 5,
+          "text": "Memo",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        },
+        {
+          "op": "deleteNote",
+          "target": "body-0",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "name": "notes-convert",
+      "text": true,
+      "steps": [
+        {
+          "op": "convertToNote",
+          "target": "body-0",
+          "start": 6,
+          "end": 15,
+          "user": "Unknown User Name",
+          "date": "@capture"
+        }
+      ]
+    },
+    {
+      "name": "notes-to-text",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 5,
+          "text": "Memo",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        },
+        {
+          "op": "noteToText",
+          "target": "body-0",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "name": "notes-update",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 5,
+          "text": "Memo",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        },
+        {
+          "op": "updateNote",
+          "target": "body-0",
+          "index": 0,
+          "text": "Changed\rSecond",
+          "date": "@capture"
+        }
+      ]
+    },
+    {
+      "name": "notes-remove-all",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 5,
+          "text": "Memo",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        },
+        {
+          "op": "insertNote",
+          "target": "body-0",
+          "at": 15,
+          "text": "Second",
+          "user": "Unknown User Name",
+          "date": "@capture"
+        },
+        {
+          "op": "removeNotes",
+          "target": "body-0",
+          "document": true
+        }
+      ]
+    }
+  ]
+}

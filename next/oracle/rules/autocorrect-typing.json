@@ -1,0 +1,12295 @@
+{
+ "source": "InDesign 2025 20.5.5.119, measured with real key presses (virtual keys; Unicode key events do not trigger autocorrect), 2026-11-02; tools and raw results in artifacts/inputtype-c1-20261023",
+ "cases": [
+  {
+   "id": "e1/end-space",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh ",
+   "expected": "the "
+  },
+  {
+   "id": "e1/end-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh.",
+   "expected": "the."
+  },
+  {
+   "id": "e1/end-comma",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh,",
+   "expected": "the,"
+  },
+  {
+   "id": "e1/end-semicolon",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh;",
+   "expected": "zqteh;"
+  },
+  {
+   "id": "e1/end-colon",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh:",
+   "expected": "zqteh:"
+  },
+  {
+   "id": "e1/end-bang",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh!",
+   "expected": "zqteh!"
+  },
+  {
+   "id": "e1/end-question",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh?",
+   "expected": "the?"
+  },
+  {
+   "id": "e1/end-rparen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh)",
+   "expected": "zqteh)"
+  },
+  {
+   "id": "e1/end-rbracket",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh]",
+   "expected": "zqteh]"
+  },
+  {
+   "id": "e1/end-rbrace",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh}",
+   "expected": "zqteh}"
+  },
+  {
+   "id": "e1/end-hyphen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh-",
+   "expected": "zqteh-"
+  },
+  {
+   "id": "e1/end-slash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh/",
+   "expected": "the/"
+  },
+  {
+   "id": "e1/end-dquote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh\"",
+   "expected": "zqteh”"
+  },
+  {
+   "id": "e1/end-squote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh'",
+   "expected": "zqteh’"
+  },
+  {
+   "id": "e1/end-lparen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh(",
+   "expected": "zqteh("
+  },
+  {
+   "id": "e1/end-star",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh*",
+   "expected": "zqteh*"
+  },
+  {
+   "id": "e1/end-at",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh@",
+   "expected": "zqteh@"
+  },
+  {
+   "id": "e1/end-hash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh#",
+   "expected": "zqteh#"
+  },
+  {
+   "id": "e1/end-amp",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh&",
+   "expected": "zqteh&"
+  },
+  {
+   "id": "e1/end-percent",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh%",
+   "expected": "zqteh%"
+  },
+  {
+   "id": "e1/end-plus",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh+",
+   "expected": "zqteh+"
+  },
+  {
+   "id": "e1/end-equals",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh=",
+   "expected": "zqteh="
+  },
+  {
+   "id": "e1/end-underscore",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh_",
+   "expected": "zqteh_"
+  },
+  {
+   "id": "e1/end-lt",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh<",
+   "expected": "the<"
+  },
+  {
+   "id": "e1/end-gt",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh>",
+   "expected": "the>"
+  },
+  {
+   "id": "e1/end-backslash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh\\",
+   "expected": "zqteh\\"
+  },
+  {
+   "id": "e1/end-pipe",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh|",
+   "expected": "zqteh|"
+  },
+  {
+   "id": "e1/end-tilde",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh~",
+   "expected": "zqteh~"
+  },
+  {
+   "id": "e1/end-backtick",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh`",
+   "expected": "zqteh`"
+  },
+  {
+   "id": "e1/end-dollar",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh$",
+   "expected": "zqteh$"
+  },
+  {
+   "id": "e1/end-caret",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh^",
+   "expected": "zqteh^"
+  },
+  {
+   "id": "e1/end-digit",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh1",
+   "expected": "zqteh1"
+  },
+  {
+   "id": "e1/end-letter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteha",
+   "expected": "zqteha"
+  },
+  {
+   "id": "e1/end-enter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh\r",
+   "expected": "the\r"
+  },
+  {
+   "id": "e1/end-tab",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh\t",
+   "expected": "the\t"
+  },
+  {
+   "id": "e1/end-shiftenter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh ",
+   "expected": "the "
+  },
+  {
+   "id": "e1/end-nothing",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh",
+   "expected": "zqteh"
+  },
+  {
+   "id": "e1/end-two-spaces",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh  ",
+   "expected": "the  "
+  },
+  {
+   "id": "e2/case-lower",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh ",
+   "expected": "the "
+  },
+  {
+   "id": "e2/case-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqteh ",
+   "expected": "The "
+  },
+  {
+   "id": "e2/case-upper",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "ZQTEH ",
+   "expected": "The "
+  },
+  {
+   "id": "e2/case-mixed",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqTeh ",
+   "expected": "the "
+  },
+  {
+   "id": "e2/pairtitle-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqcap ",
+   "expected": "Capital "
+  },
+  {
+   "id": "e2/pairtitle-lower",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqcap ",
+   "expected": "zqcap "
+  },
+  {
+   "id": "e2/pairtitle-upper",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "ZQCAP ",
+   "expected": "ZQCAP "
+  },
+  {
+   "id": "e2/pairupper-upper",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "ZQUP ",
+   "expected": "UP "
+  },
+  {
+   "id": "e2/pairupper-lower",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqup ",
+   "expected": "zqup "
+  },
+  {
+   "id": "e2/pairupper-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqup ",
+   "expected": "Zqup "
+  },
+  {
+   "id": "e2/twice",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh zqteh ",
+   "expected": "the the "
+  },
+  {
+   "id": "e2/after-word",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "a zqteh ",
+   "expected": "a the "
+  },
+  {
+   "id": "e2/leading-space",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": " zqteh ",
+   "expected": " the "
+  },
+  {
+   "id": "e2/comma-run",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh,zqteh ",
+   "expected": "the,zqteh "
+  },
+  {
+   "id": "e2/prefix-letter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "xzqteh ",
+   "expected": "xzqteh "
+  },
+  {
+   "id": "e2/suffix-letter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqtehx ",
+   "expected": "zqtehx "
+  },
+  {
+   "id": "e2/digit-after",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh1 ",
+   "expected": "zqteh1 "
+  },
+  {
+   "id": "e2/digit-before",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "1zqteh ",
+   "expected": "1zqteh "
+  },
+  {
+   "id": "e2/hyphen-before",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "a-zqteh ",
+   "expected": "a-zqteh "
+  },
+  {
+   "id": "e2/hyphen-after",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh-a ",
+   "expected": "zqteh-a "
+  },
+  {
+   "id": "e2/apostrophe-after",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh's ",
+   "expected": "zqteh’s "
+  },
+  {
+   "id": "e2/apostrophe-before",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "'zqteh ",
+   "expected": "‘the "
+  },
+  {
+   "id": "e2/underscore-before",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "_zqteh ",
+   "expected": "_zqteh "
+  },
+  {
+   "id": "e2/in-parens",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "(zqteh) ",
+   "expected": "(zqteh) "
+  },
+  {
+   "id": "e2/in-quotes",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "\"zqteh\" ",
+   "expected": "“zqteh” "
+  },
+  {
+   "id": "e2/slash-before",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "a/zqteh ",
+   "expected": "a/the "
+  },
+  {
+   "id": "e2/two-pairs",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh zqadn ",
+   "expected": "the and "
+  },
+  {
+   "id": "e2/multiword",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqbtw ",
+   "expected": "by the way "
+  },
+  {
+   "id": "e2/symbol",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqcopy ",
+   "expected": "© "
+  },
+  {
+   "id": "e2/apostrophe-result",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqdont ",
+   "expected": "don’t "
+  },
+  {
+   "id": "e2/multiword-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqbtw.",
+   "expected": "by the way."
+  },
+  {
+   "id": "e2/other-lang-text",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "hello zqteh world ",
+   "expected": "hello the world "
+  },
+  {
+   "id": "e2/two-spaces-between",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "a zqteh  ",
+   "expected": "a the  "
+  },
+  {
+   "id": "e3/cap-first-space",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hello ",
+   "expected": "Hello "
+  },
+  {
+   "id": "e3/cap-first-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hello.",
+   "expected": "Hello."
+  },
+  {
+   "id": "e3/cap-first-nospace",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hello",
+   "expected": "hello"
+  },
+  {
+   "id": "e3/cap-after-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. world ",
+   "expected": "Hi. World "
+  },
+  {
+   "id": "e3/cap-after-dot-lower",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi. world ",
+   "expected": "Hi. World "
+  },
+  {
+   "id": "e3/cap-after-question",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi? world ",
+   "expected": "Hi? World "
+  },
+  {
+   "id": "e3/cap-after-bang",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi! world ",
+   "expected": "hi! World "
+  },
+  {
+   "id": "e3/cap-two-sentences",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi. there. now ",
+   "expected": "Hi. There. Now "
+  },
+  {
+   "id": "e3/cap-dot-nospace",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi.world ",
+   "expected": "Hi.world "
+  },
+  {
+   "id": "e3/cap-two-spaces",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi.  world ",
+   "expected": "Hi.  World "
+  },
+  {
+   "id": "e3/cap-ellipsis",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi... world ",
+   "expected": "Hi... World "
+  },
+  {
+   "id": "e3/cap-comma",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi, world ",
+   "expected": "Hi, world "
+  },
+  {
+   "id": "e3/cap-colon",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi: world ",
+   "expected": "hi: world "
+  },
+  {
+   "id": "e3/cap-semicolon",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi; world ",
+   "expected": "hi; world "
+  },
+  {
+   "id": "e3/cap-abbrev",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "mr. smith ",
+   "expected": "mr. Smith "
+  },
+  {
+   "id": "e3/cap-i",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "i ",
+   "expected": "I "
+  },
+  {
+   "id": "e3/cap-single-letter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "a ",
+   "expected": "A "
+  },
+  {
+   "id": "e3/cap-digit-first",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "1 hello ",
+   "expected": "1 hello "
+  },
+  {
+   "id": "e3/cap-digit-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "1. hello ",
+   "expected": "1. Hello "
+  },
+  {
+   "id": "e3/cap-already",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hello ",
+   "expected": "Hello "
+  },
+  {
+   "id": "e3/cap-upper",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "HELLO ",
+   "expected": "HELLO "
+  },
+  {
+   "id": "e3/cap-after-paren",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "(hello ",
+   "expected": "(hello "
+  },
+  {
+   "id": "e3/cap-after-quote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "\"hello ",
+   "expected": "“hello "
+  },
+  {
+   "id": "e3/cap-after-dot-quote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi. \"world ",
+   "expected": "Hi. “world "
+  },
+  {
+   "id": "e3/cap-after-dot-paren",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi. (world ",
+   "expected": "Hi. (world "
+  },
+  {
+   "id": "e3/cap-word-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi world. ",
+   "expected": "Hi world. "
+  },
+  {
+   "id": "e3/cap-word-dot-word",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi world. now ",
+   "expected": "Hi world. Now "
+  },
+  {
+   "id": "e3/cap-pair-start",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "zqteh ",
+   "expected": "The "
+  },
+  {
+   "id": "e3/cap-pair-mid",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi zqteh ",
+   "expected": "Hi the "
+  },
+  {
+   "id": "e3/cap-pair-after-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi. zqteh ",
+   "expected": "Hi. The "
+  },
+  {
+   "id": "e3/cap-pair-upper-start",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "ZQUP ",
+   "expected": "UP "
+  },
+  {
+   "id": "e3/cap-no-pair-mid",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi there ",
+   "expected": "Hi there "
+  },
+  {
+   "id": "e3/cap-end-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi there.",
+   "expected": "Hi there."
+  },
+  {
+   "id": "e3/cap-after-enter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi\rthere ",
+   "expected": "Hi\rThere "
+  },
+  {
+   "id": "e3/cap-after-shiftenter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi there ",
+   "expected": "Hi there "
+  },
+  {
+   "id": "e3/cap-after-tab",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi\tthere ",
+   "expected": "Hi\tthere "
+  },
+  {
+   "id": "e3/cap-enter-enter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi\r\rthere ",
+   "expected": "Hi\r\rThere "
+  },
+  {
+   "id": "e3b/capw-zqfoo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "zqfoo ",
+   "expected": "zqfoo "
+  },
+  {
+   "id": "e3b/capw-qwxzv",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "qwxzv ",
+   "expected": "qwxzv "
+  },
+  {
+   "id": "e3b/capw-hello",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hello ",
+   "expected": "hello ",
+   "skip": "InDesign did not capitalize `hello ` here (twice, out/e3b-first.json and out/e3b.json: the third case of the session, after two unknown words) but did in e3/cap-first-space and e3b/capw-after-hello; unexplained, so not copied"
+  },
+  {
+   "id": "e3b/capw-mr",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "mr ",
+   "expected": "mr "
+  },
+  {
+   "id": "e3b/capw-dr",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "dr ",
+   "expected": "dr "
+  },
+  {
+   "id": "e3b/capw-ok",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "ok ",
+   "expected": "ok "
+  },
+  {
+   "id": "e3b/capw-john",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "john ",
+   "expected": "John "
+  },
+  {
+   "id": "e3b/capw-monday",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "monday ",
+   "expected": "monday "
+  },
+  {
+   "id": "e3b/capw-london",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "london ",
+   "expected": "london "
+  },
+  {
+   "id": "e3b/capw-teh",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "teh ",
+   "expected": "teh "
+  },
+  {
+   "id": "e3b/capw-recieve",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "recieve ",
+   "expected": "recieve "
+  },
+  {
+   "id": "e3b/capw-cant",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "cant ",
+   "expected": "Cant "
+  },
+  {
+   "id": "e3b/capw-dont",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "dont ",
+   "expected": "Dont ",
+   "skip": "InDesign's English dictionary knows `dont`, Folio's Hunspell en_US does not (dictionary content, not a rule)"
+  },
+  {
+   "id": "e3b/capw-iqm",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "i'm ",
+   "expected": "i’m "
+  },
+  {
+   "id": "e3b/capw-iphone",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "iphone ",
+   "expected": "iphone "
+  },
+  {
+   "id": "e3b/capw-html",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "html ",
+   "expected": "html "
+  },
+  {
+   "id": "e3b/capw-ab",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "ab ",
+   "expected": "Ab "
+  },
+  {
+   "id": "e3b/capw-is",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "is ",
+   "expected": "Is "
+  },
+  {
+   "id": "e3b/capw-the",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "the ",
+   "expected": "The "
+  },
+  {
+   "id": "e3b/capw-etc",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "etc ",
+   "expected": "Etc "
+  },
+  {
+   "id": "e3b/capw-abc1",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "abc1 ",
+   "expected": "abc1 "
+  },
+  {
+   "id": "e3b/capw-well-known",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "well-known ",
+   "expected": "Well-known "
+  },
+  {
+   "id": "e3b/capw-x",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "x ",
+   "expected": "X "
+  },
+  {
+   "id": "e3b/capw-zq",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "zq ",
+   "expected": "zq "
+  },
+  {
+   "id": "e3b/capw-hi_there",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "hi_there ",
+   "expected": "hi_there "
+  },
+  {
+   "id": "e3b/capw-dontD",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "dont. ",
+   "expected": "dont. "
+  },
+  {
+   "id": "e3b/capw-tuesday",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "tuesday ",
+   "expected": "tuesday "
+  },
+  {
+   "id": "e3b/capw-american",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "american ",
+   "expected": "american "
+  },
+  {
+   "id": "e3b/capw-after-zqfoo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. zqfoo ",
+   "expected": "Hi. zqfoo "
+  },
+  {
+   "id": "e3b/capw-after-mr",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. mr ",
+   "expected": "Hi. mr "
+  },
+  {
+   "id": "e3b/capw-after-ok",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. ok ",
+   "expected": "Hi. ok "
+  },
+  {
+   "id": "e3b/capw-after-john",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. john ",
+   "expected": "Hi. John "
+  },
+  {
+   "id": "e3b/capw-after-hello",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. hello ",
+   "expected": "Hi. Hello "
+  },
+  {
+   "id": "e3b/cap-eg",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "e.g. it ",
+   "expected": "E.g. it "
+  },
+  {
+   "id": "e3b/cap-us",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "u.s. it ",
+   "expected": "U.s. It "
+  },
+  {
+   "id": "e3b/cap-abbr2",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "dr. smith ",
+   "expected": "dr. smith "
+  },
+  {
+   "id": "e3b/cap-numdot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "v1.2 it ",
+   "expected": "v1.2 it "
+  },
+  {
+   "id": "e3b/cap-twoletters-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "zq. it ",
+   "expected": "zq. It "
+  },
+  {
+   "id": "e3b/cap-sentence-zq",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "Hi. zqfoo. it ",
+   "expected": "Hi. zqfoo. It "
+  },
+  {
+   "id": "e4a/pre-comma",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": ",zqteh ",
+   "expected": ",zqteh "
+  },
+  {
+   "id": "e4a/pre-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": ".zqteh ",
+   "expected": ".zqteh "
+  },
+  {
+   "id": "e4a/pre-semicolon",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": ";zqteh ",
+   "expected": ";zqteh "
+  },
+  {
+   "id": "e4a/pre-colon",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": ":zqteh ",
+   "expected": ":zqteh "
+  },
+  {
+   "id": "e4a/pre-bang",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "!zqteh ",
+   "expected": "!zqteh "
+  },
+  {
+   "id": "e4a/pre-question",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "?zqteh ",
+   "expected": "?zqteh "
+  },
+  {
+   "id": "e4a/pre-lparen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "(zqteh ",
+   "expected": "(zqteh "
+  },
+  {
+   "id": "e4a/pre-lbracket",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "[zqteh ",
+   "expected": "[zqteh "
+  },
+  {
+   "id": "e4a/pre-lbrace",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "{zqteh ",
+   "expected": "{zqteh "
+  },
+  {
+   "id": "e4a/pre-lt",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "<zqteh ",
+   "expected": "<the "
+  },
+  {
+   "id": "e4a/pre-gt",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": ">zqteh ",
+   "expected": ">the "
+  },
+  {
+   "id": "e4a/pre-hyphen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "-zqteh ",
+   "expected": "-zqteh "
+  },
+  {
+   "id": "e4a/pre-slash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "/zqteh ",
+   "expected": "/the "
+  },
+  {
+   "id": "e4a/pre-backslash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "\\zqteh ",
+   "expected": "\\the "
+  },
+  {
+   "id": "e4a/pre-dquote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "\"zqteh ",
+   "expected": "“zqteh "
+  },
+  {
+   "id": "e4a/pre-squote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "'zqteh ",
+   "expected": "‘the "
+  },
+  {
+   "id": "e4a/pre-at",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "@zqteh ",
+   "expected": "@zqteh "
+  },
+  {
+   "id": "e4a/pre-hash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "#zqteh ",
+   "expected": "#zqteh "
+  },
+  {
+   "id": "e4a/pre-amp",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "&zqteh ",
+   "expected": "&zqteh "
+  },
+  {
+   "id": "e4a/pre-star",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "*zqteh ",
+   "expected": "*zqteh "
+  },
+  {
+   "id": "e4a/pre-plus",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "+zqteh ",
+   "expected": "+the "
+  },
+  {
+   "id": "e4a/pre-equals",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "=zqteh ",
+   "expected": "=the "
+  },
+  {
+   "id": "e4a/pre-pipe",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "|zqteh ",
+   "expected": "|the "
+  },
+  {
+   "id": "e4a/pre-tilde",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "~zqteh ",
+   "expected": "~the "
+  },
+  {
+   "id": "e4a/pre-dollar",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "$zqteh ",
+   "expected": "$zqteh "
+  },
+  {
+   "id": "e4a/pre-percent",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "%zqteh ",
+   "expected": "%zqteh "
+  },
+  {
+   "id": "e4a/pre-caret",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "^zqteh ",
+   "expected": "^the "
+  },
+  {
+   "id": "e4a/pre-underscore",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "_zqteh ",
+   "expected": "_zqteh "
+  },
+  {
+   "id": "e4a/pre-backtick",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "`zqteh ",
+   "expected": "`the "
+  },
+  {
+   "id": "e4a/pre-digit",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "1zqteh ",
+   "expected": "1zqteh "
+  },
+  {
+   "id": "e4a/pre-letter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "xzqteh ",
+   "expected": "xzqteh "
+  },
+  {
+   "id": "e4a/pre-space",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": " zqteh ",
+   "expected": " the "
+  },
+  {
+   "id": "e4a/pre-enter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "\rzqteh ",
+   "expected": "\rthe "
+  },
+  {
+   "id": "e4a/pre-tab",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "\tzqteh ",
+   "expected": "\tthe "
+  },
+  {
+   "id": "e4a/pre-shiftenter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": " zqteh ",
+   "expected": " the "
+  },
+  {
+   "id": "e4a/carry-btw-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqbtw ",
+   "expected": "By the way "
+  },
+  {
+   "id": "e4a/carry-btw-upper",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "ZQBTW ",
+   "expected": "By the way "
+  },
+  {
+   "id": "e4a/carry-btw-mixed1",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqBtw ",
+   "expected": "by the way "
+  },
+  {
+   "id": "e4a/carry-btw-mixed2",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "ZqBTW ",
+   "expected": "By the way "
+  },
+  {
+   "id": "e4a/carry-btw-mixed3",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zQBTW ",
+   "expected": "by the way "
+  },
+  {
+   "id": "e4a/carry-adn-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqadn ",
+   "expected": "And "
+  },
+  {
+   "id": "e4a/carry-copy-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqcopy ",
+   "expected": "© "
+  },
+  {
+   "id": "e4a/carry-dont-title",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqdont ",
+   "expected": "Don’t "
+  },
+  {
+   "id": "e4a/carry-teh-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "Zqteh.",
+   "expected": "The."
+  },
+  {
+   "id": "e4a/carry-upper-dot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "ZQTEH.",
+   "expected": "The."
+  },
+  {
+   "id": "e4c/typed-mid-letter",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "see zqte now",
+   "typed": "h ",
+   "typedRun": false,
+   "at": 8,
+   "expected": "see the  now"
+  },
+  {
+   "id": "e4c/upre-ldquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "“zqt",
+   "typed": "eh ",
+   "expected": "“zqteh "
+  },
+  {
+   "id": "e4c/upre-rdquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "”zqt",
+   "typed": "eh ",
+   "expected": "”zqteh "
+  },
+  {
+   "id": "e4c/upre-lsquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "‘zqt",
+   "typed": "eh ",
+   "expected": "‘the "
+  },
+  {
+   "id": "e4c/upre-rsquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "’zqt",
+   "typed": "eh ",
+   "expected": "’the "
+  },
+  {
+   "id": "e4c/upre-laquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "«zqt",
+   "typed": "eh ",
+   "expected": "«zqteh "
+  },
+  {
+   "id": "e4c/upre-raquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "»zqt",
+   "typed": "eh ",
+   "expected": "»zqteh "
+  },
+  {
+   "id": "e4c/upre-lsaquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "‹zqt",
+   "typed": "eh ",
+   "expected": "‹the "
+  },
+  {
+   "id": "e4c/upre-rsaquo",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "›zqt",
+   "typed": "eh ",
+   "expected": "›the "
+  },
+  {
+   "id": "e4c/upre-endash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "–zqt",
+   "typed": "eh ",
+   "expected": "–the "
+  },
+  {
+   "id": "e4c/upre-emdash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "—zqt",
+   "typed": "eh ",
+   "expected": "—the "
+  },
+  {
+   "id": "e4c/upre-ellipsis",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "…zqt",
+   "typed": "eh ",
+   "expected": "…zqteh "
+  },
+  {
+   "id": "e4c/upre-bullet",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "•zqt",
+   "typed": "eh ",
+   "expected": "•zqteh "
+  },
+  {
+   "id": "e4c/upre-middot",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "·zqt",
+   "typed": "eh ",
+   "expected": "·zqteh "
+  },
+  {
+   "id": "e4c/upre-degree",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "°zqt",
+   "typed": "eh ",
+   "expected": "°zqteh "
+  },
+  {
+   "id": "e4c/upre-iquest",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "¿zqt",
+   "typed": "eh ",
+   "expected": "¿zqteh "
+  },
+  {
+   "id": "e4c/upre-iexcl",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "¡zqt",
+   "typed": "eh ",
+   "expected": "¡zqteh "
+  },
+  {
+   "id": "e4c/upre-section",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "§zqt",
+   "typed": "eh ",
+   "expected": "§zqteh "
+  },
+  {
+   "id": "e4c/upre-pilcrow",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "¶zqt",
+   "typed": "eh ",
+   "expected": "¶zqteh "
+  },
+  {
+   "id": "e4c/upre-copy",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "©zqt",
+   "typed": "eh ",
+   "expected": "©the "
+  },
+  {
+   "id": "e4c/upre-euro",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "€zqt",
+   "typed": "eh ",
+   "expected": "€zqteh "
+  },
+  {
+   "id": "e4c/upre-times",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "×zqt",
+   "typed": "eh ",
+   "expected": "×zqteh "
+  },
+  {
+   "id": "e4c/upre-plusminus",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "±zqt",
+   "typed": "eh ",
+   "expected": "±zqteh "
+  },
+  {
+   "id": "e4c/upre-not",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "¬zqt",
+   "typed": "eh ",
+   "expected": "¬zqteh "
+  },
+  {
+   "id": "e4c/upre-nbsp",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": " zqt",
+   "typed": "eh ",
+   "expected": " the "
+  },
+  {
+   "id": "e4c/upre-thinsp",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": " zqt",
+   "typed": "eh ",
+   "expected": " the "
+  },
+  {
+   "id": "e4c/upre-zwsp",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "​zqt",
+   "typed": "eh ",
+   "expected": "​zqteh "
+  },
+  {
+   "id": "e4c/upre-ideospace",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "　zqt",
+   "typed": "eh ",
+   "expected": "　the "
+  },
+  {
+   "id": "e4c/upre-linebreak",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": " zqt",
+   "typed": "eh ",
+   "expected": " the "
+  },
+  {
+   "id": "e4c/upre-parasep",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": " zqt",
+   "typed": "eh ",
+   "expected": " the "
+  },
+  {
+   "id": "e4c/upre-hangul",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "가zqt",
+   "typed": "eh ",
+   "expected": "가the "
+  },
+  {
+   "id": "e4c/upre-ideocomma",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "、zqt",
+   "typed": "eh ",
+   "expected": "、the "
+  },
+  {
+   "id": "e4c/upre-cjkquote",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "「zqt",
+   "typed": "eh ",
+   "expected": "「the "
+  },
+  {
+   "id": "e4c/upre-fullwidthA",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "Ａzqt",
+   "typed": "eh ",
+   "expected": "Ａthe "
+  },
+  {
+   "id": "e4c/upre-eacute",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "ézqt",
+   "typed": "eh ",
+   "expected": "ézqteh "
+  },
+  {
+   "id": "e4c/upre-hyphen2010",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "‐zqt",
+   "typed": "eh ",
+   "expected": "‐zqteh "
+  },
+  {
+   "id": "e4c/upre-nbhyphen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "‑zqt",
+   "typed": "eh ",
+   "expected": "‑zqteh "
+  },
+  {
+   "id": "e4c/upre-softhyphen",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "­zqt",
+   "typed": "eh ",
+   "expected": "­zqteh "
+  },
+  {
+   "id": "e4c/upre-minus",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "−zqt",
+   "typed": "eh ",
+   "expected": "−zqteh "
+  },
+  {
+   "id": "e4c/upre-divide",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "÷zqt",
+   "typed": "eh ",
+   "expected": "÷zqteh "
+  },
+  {
+   "id": "e4c/upre-acute",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "´zqt",
+   "typed": "eh ",
+   "expected": "´zqteh "
+  },
+  {
+   "id": "e4c/upre-diaeresis",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "¨zqt",
+   "typed": "eh ",
+   "expected": "¨zqteh "
+  },
+  {
+   "id": "e4c/upre-ascii-bang",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "!zqt",
+   "typed": "eh ",
+   "expected": "!zqteh "
+  },
+  {
+   "id": "e4c/upre-ascii-slash",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": "/zqt",
+   "typed": "eh ",
+   "expected": "/the "
+  },
+  {
+   "id": "e4c/upre-ascii-comma",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "pre": ",zqt",
+   "typed": "eh ",
+   "expected": ",zqteh "
+  },
+  {
+   "id": "e5/sw-off",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ],
+    [
+     "zqboth",
+     "english-fix"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "typed": "zqteh hello. world ",
+   "expected": "zqteh hello. world "
+  },
+  {
+   "id": "e5/sw-off-caps-on",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ],
+    [
+     "zqboth",
+     "english-fix"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": false,
+   "typed": "zqteh hello. world ",
+   "expected": "zqteh hello. world "
+  },
+  {
+   "id": "e5/sw-on-caps-off",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ],
+    [
+     "zqboth",
+     "english-fix"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqteh hello. world ",
+   "expected": "the hello. world "
+  },
+  {
+   "id": "e5/sw-on-caps-on",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ],
+    [
+     "zqboth",
+     "english-fix"
+    ]
+   ],
+   "caps": true,
+   "autoCorrect": true,
+   "typed": "zqteh hello. world ",
+   "expected": "The hello. World "
+  },
+  {
+   "id": "e5/lang-en-german-pair",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ],
+    [
+     "zqboth",
+     "english-fix"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqger ",
+   "expected": "zqger "
+  },
+  {
+   "id": "e5/lang-en-both-pair",
+   "language": "German: 1996 Reform",
+   "pairs": [
+    [
+     "zqger",
+     "gut-de"
+    ],
+    [
+     "zqteh",
+     "die-de"
+    ],
+    [
+     "zqboth",
+     "both-de"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "typed": "zqboth ",
+   "expected": "both-de "
+  },
+  {
+   "id": "e6a/q-0",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"a\"",
+   "expected": "“a”"
+  },
+  {
+   "id": "e6a/q-1",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "'a'",
+   "expected": "‘a’"
+  },
+  {
+   "id": "e6a/q-2",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a\"b",
+   "expected": "a”b"
+  },
+  {
+   "id": "e6a/q-3",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a'b",
+   "expected": "a’b"
+  },
+  {
+   "id": "e6a/q-4",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "(\"a\")",
+   "expected": "(“a”)"
+  },
+  {
+   "id": "e6a/q-5",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"'a'\"",
+   "expected": "“‘a’”"
+  },
+  {
+   "id": "e6a/q-6",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "don't",
+   "expected": "don’t"
+  },
+  {
+   "id": "e6a/q-7",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "'tis",
+   "expected": "‘tis"
+  },
+  {
+   "id": "e6a/q-8",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "5'10\"",
+   "expected": "5’10”"
+  },
+  {
+   "id": "e6a/q-9",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"hi.\" she said",
+   "expected": "“hi.” she said"
+  },
+  {
+   "id": "e6a/q-10",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a \"b\" c",
+   "expected": "a “b” c"
+  },
+  {
+   "id": "e6a/q-11",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": " \"a",
+   "expected": " “a"
+  },
+  {
+   "id": "e6a/q-12",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": " 'a",
+   "expected": " ‘a"
+  },
+  {
+   "id": "e6a/q-13",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a.\" b",
+   "expected": "a.” b"
+  },
+  {
+   "id": "e6a/q-14",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a?' b",
+   "expected": "a?’ b"
+  },
+  {
+   "id": "e6a/q-15",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"a\" \"b\"",
+   "expected": "“a” “b”"
+  },
+  {
+   "id": "e6a/q-16",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"a",
+   "expected": "“a"
+  },
+  {
+   "id": "e6a/q-17",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a\" ",
+   "expected": "a” "
+  },
+  {
+   "id": "e6a/q-18",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "it's 'a' b",
+   "expected": "it’s ‘a’ b"
+  },
+  {
+   "id": "e6a/q-19",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"\"",
+   "expected": "““"
+  },
+  {
+   "id": "e6a/q-20",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "''",
+   "expected": "‘‘"
+  },
+  {
+   "id": "e6a/q-21",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "\"-\"",
+   "expected": "“-”"
+  },
+  {
+   "id": "e6a/q-22",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "a'",
+   "expected": "a’"
+  },
+  {
+   "id": "e6b/q-0",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"a\"",
+   "expected": "\"a\""
+  },
+  {
+   "id": "e6b/q-1",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "'a'",
+   "expected": "'a'"
+  },
+  {
+   "id": "e6b/q-2",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a\"b",
+   "expected": "a\"b"
+  },
+  {
+   "id": "e6b/q-3",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a'b",
+   "expected": "a'b"
+  },
+  {
+   "id": "e6b/q-4",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "(\"a\")",
+   "expected": "(\"a\")"
+  },
+  {
+   "id": "e6b/q-5",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"'a'\"",
+   "expected": "\"'a'\""
+  },
+  {
+   "id": "e6b/q-6",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "don't",
+   "expected": "don't"
+  },
+  {
+   "id": "e6b/q-7",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "'tis",
+   "expected": "'tis"
+  },
+  {
+   "id": "e6b/q-8",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "5'10\"",
+   "expected": "5'10\""
+  },
+  {
+   "id": "e6b/q-9",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"hi.\" she said",
+   "expected": "\"hi.\" she said"
+  },
+  {
+   "id": "e6b/q-10",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a \"b\" c",
+   "expected": "a \"b\" c"
+  },
+  {
+   "id": "e6b/q-11",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": " \"a",
+   "expected": " \"a"
+  },
+  {
+   "id": "e6b/q-12",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": " 'a",
+   "expected": " 'a"
+  },
+  {
+   "id": "e6b/q-13",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a.\" b",
+   "expected": "a.\" b"
+  },
+  {
+   "id": "e6b/q-14",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a?' b",
+   "expected": "a?' b"
+  },
+  {
+   "id": "e6b/q-15",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"a\" \"b\"",
+   "expected": "\"a\" \"b\""
+  },
+  {
+   "id": "e6b/q-16",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"a",
+   "expected": "\"a"
+  },
+  {
+   "id": "e6b/q-17",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a\" ",
+   "expected": "a\" "
+  },
+  {
+   "id": "e6b/q-18",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "it's 'a' b",
+   "expected": "it's 'a' b"
+  },
+  {
+   "id": "e6b/q-19",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"\"",
+   "expected": "\"\""
+  },
+  {
+   "id": "e6b/q-20",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "''",
+   "expected": "''"
+  },
+  {
+   "id": "e6b/q-21",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "\"-\"",
+   "expected": "\"-\""
+  },
+  {
+   "id": "e6b/q-22",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "a'",
+   "expected": "a'"
+  },
+  {
+   "id": "e6c/q-0",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"a\"",
+   "expected": "“a”"
+  },
+  {
+   "id": "e6c/q-1",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "'a'",
+   "expected": "‘a’"
+  },
+  {
+   "id": "e6c/q-2",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a\"b",
+   "expected": "a”b"
+  },
+  {
+   "id": "e6c/q-3",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a'b",
+   "expected": "a’b"
+  },
+  {
+   "id": "e6c/q-4",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "(\"a\")",
+   "expected": "(“a”)"
+  },
+  {
+   "id": "e6c/q-5",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"'a'\"",
+   "expected": "“‘a’”"
+  },
+  {
+   "id": "e6c/q-6",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "don't",
+   "expected": "don’t"
+  },
+  {
+   "id": "e6c/q-7",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "'tis",
+   "expected": "‘tis"
+  },
+  {
+   "id": "e6c/q-8",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "5'10\"",
+   "expected": "5’10”"
+  },
+  {
+   "id": "e6c/q-9",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"hi.\" she said",
+   "expected": "“hi.” she said"
+  },
+  {
+   "id": "e6c/q-10",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a \"b\" c",
+   "expected": "a “b” c"
+  },
+  {
+   "id": "e6c/q-11",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": " \"a",
+   "expected": " “a"
+  },
+  {
+   "id": "e6c/q-12",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": " 'a",
+   "expected": " ‘a"
+  },
+  {
+   "id": "e6c/q-13",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a.\" b",
+   "expected": "a.” b"
+  },
+  {
+   "id": "e6c/q-14",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a?' b",
+   "expected": "a?’ b"
+  },
+  {
+   "id": "e6c/q-15",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"a\" \"b\"",
+   "expected": "“a” “b”"
+  },
+  {
+   "id": "e6c/q-16",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"a",
+   "expected": "“a"
+  },
+  {
+   "id": "e6c/q-17",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a\" ",
+   "expected": "a” "
+  },
+  {
+   "id": "e6c/q-18",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "it's 'a' b",
+   "expected": "it’s ‘a’ b"
+  },
+  {
+   "id": "e6c/q-19",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"\"",
+   "expected": "““"
+  },
+  {
+   "id": "e6c/q-20",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "''",
+   "expected": "‘‘"
+  },
+  {
+   "id": "e6c/q-21",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "\"-\"",
+   "expected": "“-”"
+  },
+  {
+   "id": "e6c/q-22",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": false,
+   "quotes": true,
+   "typed": "a'",
+   "expected": "a’"
+  },
+  {
+   "id": "e7a/slash-chain",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "zqteh/zqadn ",
+   "expected": "the/and "
+  },
+  {
+   "id": "e7a/lt-chain",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "zqteh<zqadn ",
+   "expected": "the<and "
+  },
+  {
+   "id": "e7a/dont-straight",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "zqdont ",
+   "expected": "don’t "
+  },
+  {
+   "id": "e7a/upper-pair-fix-caps",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": true,
+   "typed": "ZQBTW.",
+   "expected": "By the way."
+  },
+  {
+   "id": "e7b/slash-chain",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "zqteh/zqadn ",
+   "expected": "the/and "
+  },
+  {
+   "id": "e7b/lt-chain",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "zqteh<zqadn ",
+   "expected": "the<and "
+  },
+  {
+   "id": "e7b/dont-straight",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "zqdont ",
+   "expected": "don't "
+  },
+  {
+   "id": "e7b/upper-pair-fix-caps",
+   "language": "English: USA",
+   "pairs": [
+    [
+     "zqteh",
+     "the"
+    ],
+    [
+     "zqadn",
+     "and"
+    ],
+    [
+     "Zqcap",
+     "Capital"
+    ],
+    [
+     "zqbtw",
+     "by the way"
+    ],
+    [
+     "zqcopy",
+     "©"
+    ],
+    [
+     "ZQUP",
+     "UP"
+    ],
+    [
+     "zqdont",
+     "don't"
+    ]
+   ],
+   "caps": false,
+   "autoCorrect": true,
+   "quotes": false,
+   "typed": "ZQBTW.",
+   "expected": "By the way."
+  }
+ ]
+}

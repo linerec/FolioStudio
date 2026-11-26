@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u1a0" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenateLadderLimit="0" LeftIndent="36" FirstLineIndent="-18" Hyphenation="false" HyphenationZone="0" BulletsAndNumberingListType="NumberedList" NumberingStartAt="3" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>three</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenateLadderLimit="0" Hyphenation="false" HyphenationZone="0">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>plain</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenateLadderLimit="0" LeftIndent="36" FirstLineIndent="-18" Hyphenation="false" HyphenationZone="0" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>four</Content>
+				<Br />
+				<Content>five</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenateLadderLimit="0" Hyphenation="false" HyphenationZone="0">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>after</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

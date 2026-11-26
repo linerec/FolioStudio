@@ -1,0 +1,58 @@
+{
+ "fixture": "spancols-wrap",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "spancols-wrap-span",
+   "text": true,
+   "rules": [
+    "paragraph.columns.text-wrap"
+   ],
+   "steps": [
+    {
+     "op": "textWrap",
+     "target": "wrapspan",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "span",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPAN_COLUMNS",
+      "spanSplitColumnCount": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "spancols-wrap-split",
+   "text": true,
+   "rules": [
+    "paragraph.columns.text-wrap"
+   ],
+   "steps": [
+    {
+     "op": "textWrap",
+     "target": "wrapsplit",
+     "mode": "BOUNDING_BOX_TEXT_WRAP"
+    },
+    {
+     "op": "textFormat",
+     "target": "split",
+     "start": 42,
+     "end": 43,
+     "props": {
+      "spanColumnType": "SPLIT_COLUMNS",
+      "spanSplitColumnCount": 3
+     }
+    }
+   ]
+  }
+ ]
+}

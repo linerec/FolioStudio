@@ -1,0 +1,137 @@
+{
+ "fixture": "variables",
+ "about": "Text variables that read the file and the clock: the Creation, Modification and Output Date and the File Name of a new document (InDesign's session clock and window name: compared by shape), the Image Name of the graphic under the text frame (measured: probe-c: none, one, two).",
+ "scenarios": [
+  {
+   "name": "tv-insert-creation",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Creation Date"
+    }
+   ]
+  },
+  {
+   "name": "tv-insert-modification",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Modification Date"
+    }
+   ]
+  },
+  {
+   "name": "tv-insert-output",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Output Date"
+    }
+   ]
+  },
+  {
+   "name": "tv-insert-file",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "File Name"
+    }
+   ]
+  },
+  {
+   "name": "tv-insert-image-none",
+   "steps": [
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Image Name"
+    }
+   ]
+  },
+  {
+   "name": "tv-insert-image-one",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 0,
+     "rect": [
+      100,
+      100,
+      300,
+      200
+     ],
+     "label": "pic1"
+    },
+    {
+     "op": "placeGraphic",
+     "target": "pic1",
+     "file": "place-plain.png",
+     "contentAware": false
+    },
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Image Name"
+    }
+   ]
+  },
+  {
+   "name": "tv-insert-image-two",
+   "steps": [
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 0,
+     "rect": [
+      100,
+      100,
+      300,
+      200
+     ],
+     "label": "pic1"
+    },
+    {
+     "op": "placeGraphic",
+     "target": "pic1",
+     "file": "place-plain.png",
+     "contentAware": false
+    },
+    {
+     "op": "createItem",
+     "kind": "rectangle",
+     "page": 0,
+     "rect": [
+      350,
+      100,
+      500,
+      200
+     ],
+     "label": "pic2"
+    },
+    {
+     "op": "placeGraphic",
+     "target": "pic2",
+     "file": "place-gray.jpg",
+     "contentAware": false
+    },
+    {
+     "op": "insertVariable",
+     "target": "body-0",
+     "at": 0,
+     "variable": "Image Name"
+    }
+   ]
+  }
+ ]
+}

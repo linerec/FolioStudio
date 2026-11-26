@@ -1,0 +1,875 @@
+{
+ "fixture": "objectstyles",
+ "scenarios": [
+  {
+   "name": "m1-category-drop-shadow-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "opacity": 60,
+        "distance": 5,
+        "size": 3
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableDropShadow": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-drop-shadow-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "dropShadowSettings": {
+        "mode": "ShadowMode.DROP",
+        "opacity": 60,
+        "distance": 5,
+        "size": 3
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableDropShadow": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-inner-glow-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "innerGlowSettings": {
+        "applied": true,
+        "size": 12,
+        "source": "InnerGlowSource.CENTER_SOURCED",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY"
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableInnerGlow": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-inner-glow-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "innerGlowSettings": {
+        "applied": true,
+        "size": 12,
+        "source": "InnerGlowSource.CENTER_SOURCED",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY"
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableInnerGlow": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-bevel-emboss-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "bevelAndEmbossSettings": {
+        "applied": true,
+        "style": "BevelAndEmbossStyle.EMBOSS",
+        "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+        "size": 12,
+        "depth": 300,
+        "direction": "BevelAndEmbossDirection.DOWN"
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableBevelEmboss": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-bevel-emboss-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "bevelAndEmbossSettings": {
+        "applied": true,
+        "style": "BevelAndEmbossStyle.EMBOSS",
+        "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+        "size": 12,
+        "depth": 300,
+        "direction": "BevelAndEmbossDirection.DOWN"
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableBevelEmboss": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-satin-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "satinSettings": {
+        "applied": true,
+        "distance": 20,
+        "size": 15,
+        "angle": 45,
+        "invertEffect": true
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableSatin": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-satin-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "satinSettings": {
+        "applied": true,
+        "distance": 20,
+        "size": 15,
+        "angle": 45,
+        "invertEffect": true
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableSatin": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-basic-feather-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "featherSettings": {
+        "mode": "FeatherMode.STANDARD",
+        "width": 18,
+        "chokeAmount": 30,
+        "cornerType": "FeatherCornerType.ROUNDED"
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableFeather": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-basic-feather-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "featherSettings": {
+        "mode": "FeatherMode.STANDARD",
+        "width": 18,
+        "chokeAmount": 30,
+        "cornerType": "FeatherCornerType.ROUNDED"
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableFeather": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-directional-feather-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "directionalFeatherSettings": {
+        "applied": true,
+        "leftWidth": 20,
+        "topWidth": 10,
+        "angle": 30
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableDirectionalFeather": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-directional-feather-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "directionalFeatherSettings": {
+        "applied": true,
+        "leftWidth": 20,
+        "topWidth": 10,
+        "angle": 30
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableDirectionalFeather": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-gradient-feather-off",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "gradientFeatherSettings": {
+        "applied": true,
+        "type": "GradientType.RADIAL",
+        "angle": 30
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableGradientFeather": false
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-category-gradient-feather-on",
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-p3",
+     "props": {
+      "transparencySettings": {
+       "gradientFeatherSettings": {
+        "applied": true,
+        "type": "GradientType.RADIAL",
+        "angle": 30
+       }
+      }
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "objectEffectsEnablingSettings": {
+       "enableGradientFeather": true
+      }
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-p3",
+     "style": "Oracle Box",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "m1-shape-rect-effects-capture",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "transparencySettings": {
+       "outerGlowSettings": {
+        "applied": true,
+        "size": 14,
+        "spread": 20,
+        "technique": "GlowTechnique.PRECISE",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY",
+        "opacity": 60
+       },
+       "innerShadowSettings": {
+        "applied": true,
+        "distance": 12,
+        "angle": 45,
+        "size": 10,
+        "chokeAmount": 20
+       },
+       "innerGlowSettings": {
+        "applied": true,
+        "size": 12,
+        "source": "InnerGlowSource.CENTER_SOURCED",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY"
+       },
+       "bevelAndEmbossSettings": {
+        "applied": true,
+        "style": "BevelAndEmbossStyle.EMBOSS",
+        "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+        "size": 12,
+        "depth": 300,
+        "direction": "BevelAndEmbossDirection.DOWN"
+       },
+       "satinSettings": {
+        "applied": true,
+        "distance": 20,
+        "size": 15,
+        "angle": 45,
+        "invertEffect": true
+       },
+       "featherSettings": {
+        "mode": "FeatherMode.STANDARD",
+        "width": 18,
+        "chokeAmount": 30,
+        "cornerType": "FeatherCornerType.ROUNDED"
+       },
+       "directionalFeatherSettings": {
+        "applied": true,
+        "leftWidth": 20,
+        "topWidth": 10,
+        "angle": 30
+       },
+       "gradientFeatherSettings": {
+        "applied": true,
+        "type": "GradientType.RADIAL",
+        "angle": 30
+       },
+       "blendingSettings": {
+        "opacity": 65,
+        "blendMode": "BlendMode.MULTIPLY"
+       }
+      }
+     }
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Captured Effects",
+     "from": "r-plain",
+     "menu": true,
+     "props": {}
+    }
+   ]
+  },
+  {
+   "name": "m1-shape-oval-effects-capture",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "oval",
+     "props": {
+      "transparencySettings": {
+       "outerGlowSettings": {
+        "applied": true,
+        "size": 14,
+        "spread": 20,
+        "technique": "GlowTechnique.PRECISE",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY",
+        "opacity": 60
+       },
+       "innerShadowSettings": {
+        "applied": true,
+        "distance": 12,
+        "angle": 45,
+        "size": 10,
+        "chokeAmount": 20
+       },
+       "innerGlowSettings": {
+        "applied": true,
+        "size": 12,
+        "source": "InnerGlowSource.CENTER_SOURCED",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY"
+       },
+       "bevelAndEmbossSettings": {
+        "applied": true,
+        "style": "BevelAndEmbossStyle.EMBOSS",
+        "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+        "size": 12,
+        "depth": 300,
+        "direction": "BevelAndEmbossDirection.DOWN"
+       },
+       "satinSettings": {
+        "applied": true,
+        "distance": 20,
+        "size": 15,
+        "angle": 45,
+        "invertEffect": true
+       },
+       "featherSettings": {
+        "mode": "FeatherMode.STANDARD",
+        "width": 18,
+        "chokeAmount": 30,
+        "cornerType": "FeatherCornerType.ROUNDED"
+       },
+       "directionalFeatherSettings": {
+        "applied": true,
+        "leftWidth": 20,
+        "topWidth": 10,
+        "angle": 30
+       },
+       "gradientFeatherSettings": {
+        "applied": true,
+        "type": "GradientType.RADIAL",
+        "angle": 30
+       },
+       "blendingSettings": {
+        "opacity": 65,
+        "blendMode": "BlendMode.MULTIPLY"
+       }
+      }
+     }
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Captured Effects",
+     "from": "oval",
+     "menu": true,
+     "props": {}
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "m1-shape-rect-effects-based",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "transparencySettings": {
+       "blendingSettings": {
+        "opacity": 65,
+        "blendMode": "BlendMode.MULTIPLY"
+       }
+      }
+     }
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Base Effects",
+     "from": "r-plain",
+     "menu": true,
+     "props": {}
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Base Effects",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "transparencySettings": {
+       "outerGlowSettings": {
+        "applied": true,
+        "size": 14,
+        "spread": 20,
+        "technique": "GlowTechnique.PRECISE",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY",
+        "opacity": 60
+       },
+       "innerShadowSettings": {
+        "applied": true,
+        "distance": 12,
+        "angle": 45,
+        "size": 10,
+        "chokeAmount": 20
+       },
+       "innerGlowSettings": {
+        "applied": true,
+        "size": 12,
+        "source": "InnerGlowSource.CENTER_SOURCED",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY"
+       },
+       "bevelAndEmbossSettings": {
+        "applied": true,
+        "style": "BevelAndEmbossStyle.EMBOSS",
+        "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+        "size": 12,
+        "depth": 300,
+        "direction": "BevelAndEmbossDirection.DOWN"
+       },
+       "satinSettings": {
+        "applied": true,
+        "distance": 20,
+        "size": 15,
+        "angle": 45,
+        "invertEffect": true
+       },
+       "featherSettings": {
+        "mode": "FeatherMode.STANDARD",
+        "width": 18,
+        "chokeAmount": 30,
+        "cornerType": "FeatherCornerType.ROUNDED"
+       },
+       "directionalFeatherSettings": {
+        "applied": true,
+        "leftWidth": 20,
+        "topWidth": 10,
+        "angle": 30
+       },
+       "gradientFeatherSettings": {
+        "applied": true,
+        "type": "GradientType.RADIAL",
+        "angle": 30
+       }
+      }
+     }
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Captured Effects",
+     "from": "r-plain",
+     "menu": true,
+     "props": {}
+    }
+   ]
+  },
+  {
+   "name": "m1-shape-oval-effects-based",
+   "window": true,
+   "steps": [
+    {
+     "op": "set",
+     "target": "oval",
+     "props": {
+      "transparencySettings": {
+       "blendingSettings": {
+        "opacity": 65,
+        "blendMode": "BlendMode.MULTIPLY"
+       }
+      }
+     }
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Base Effects",
+     "from": "oval",
+     "menu": true,
+     "props": {}
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "oval",
+     "style": "Base Effects",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "oval",
+     "props": {
+      "transparencySettings": {
+       "outerGlowSettings": {
+        "applied": true,
+        "size": 14,
+        "spread": 20,
+        "technique": "GlowTechnique.PRECISE",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY",
+        "opacity": 60
+       },
+       "innerShadowSettings": {
+        "applied": true,
+        "distance": 12,
+        "angle": 45,
+        "size": 10,
+        "chokeAmount": 20
+       },
+       "innerGlowSettings": {
+        "applied": true,
+        "size": 12,
+        "source": "InnerGlowSource.CENTER_SOURCED",
+        "effectColor": "Oracle Blue",
+        "blendMode": "BlendMode.MULTIPLY"
+       },
+       "bevelAndEmbossSettings": {
+        "applied": true,
+        "style": "BevelAndEmbossStyle.EMBOSS",
+        "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+        "size": 12,
+        "depth": 300,
+        "direction": "BevelAndEmbossDirection.DOWN"
+       },
+       "satinSettings": {
+        "applied": true,
+        "distance": 20,
+        "size": 15,
+        "angle": 45,
+        "invertEffect": true
+       },
+       "featherSettings": {
+        "mode": "FeatherMode.STANDARD",
+        "width": 18,
+        "chokeAmount": 30,
+        "cornerType": "FeatherCornerType.ROUNDED"
+       },
+       "directionalFeatherSettings": {
+        "applied": true,
+        "leftWidth": 20,
+        "topWidth": 10,
+        "angle": 30
+       },
+       "gradientFeatherSettings": {
+        "applied": true,
+        "type": "GradientType.RADIAL",
+        "angle": 30
+       }
+      }
+     }
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Captured Effects",
+     "from": "oval",
+     "menu": true,
+     "props": {}
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "m1-shape-fill-capture",
+   "window": true,
+   "steps": [
+    {
+     "op": "createObjectStyle",
+     "name": "Captured Fill",
+     "from": "r-fill",
+     "menu": true,
+     "props": {}
+    }
+   ]
+  },
+  {
+   "name": "m1-shape-apply-window",
+   "window": true,
+   "steps": [
+    {
+     "op": "applyObjectStyle",
+     "target": "r-fill",
+     "style": "Oracle Box"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+  "title": "여백 및 단",
+  "target": "explicit",
+  "defaults": "pageMargins",
+  "fields": [
+    {
+      "name": "top",
+      "label": "위",
+      "type": "number",
+      "default": 36,
+      "min": 0,
+      "max": 1000000000,
+      "group": "여백"
+    },
+    {
+      "name": "bottom",
+      "label": "아래",
+      "type": "number",
+      "default": 36,
+      "min": 0,
+      "max": 1000000000,
+      "group": "여백"
+    },
+    {
+      "name": "left",
+      "label": "왼쪽",
+      "labelFacing": "안쪽",
+      "type": "number",
+      "default": 36,
+      "min": 0,
+      "max": 1000000000,
+      "group": "여백"
+    },
+    {
+      "name": "right",
+      "label": "오른쪽",
+      "labelFacing": "바깥쪽",
+      "type": "number",
+      "default": 36,
+      "min": 0,
+      "max": 1000000000,
+      "group": "여백"
+    },
+    {
+      "name": "columns",
+      "label": "개수",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "max": 216,
+      "integer": true,
+      "group": "단"
+    },
+    {
+      "name": "gutter",
+      "label": "label.gutter",
+      "type": "number",
+      "default": 12,
+      "min": 0,
+      "max": 1000000000,
+      "group": "단"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setMargins",
+        "pages": "$ids",
+        "top": "$top",
+        "bottom": "$bottom",
+        "left": "$left",
+        "right": "$right",
+        "columns": "$columns",
+        "gutter": "$gutter"
+      }
+    ]
+  },
+  "pagesNote": "선택한 {0}쪽에 적용합니다.",
+  "description": "ids are the page ids the margins and columns apply to; the values are points (defaults: the first page's)."
+}

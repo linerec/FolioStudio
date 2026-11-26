@@ -1,0 +1,38 @@
+{
+  "note": "Exact legacy occurrences only. Do not regenerate to silence new violations. Remove entries as A/B translate them.",
+  "entries": [
+    {
+      "file": "package.tsx",
+      "kind": "StringLiteral",
+      "text": " 폴더",
+      "count": 1,
+      "reason": "Engine-suggested folder suffix contract"
+    }
+  ],
+  "legacy": {
+    "ui/docview.tsx": [
+      "ui.a6399943a3",
+      "ui.fa17f69476",
+      "ui.0367167c0e",
+      "ui.58ad690294",
+      "ui.ec3a6b612c",
+      "ui.c686d05434",
+      "ui.bc6deb4a64",
+      "ui.3ae13dba87",
+      "ui.052739ec7b",
+      "ui.92b9c29050",
+      "ui.77b3a3a20e",
+      "ui.33b69abf44",
+      "ui.b5f6e8aed4",
+      "ui.5123763a37",
+      "ui.b2aa104e6e",
+      "ui.37d4490a14",
+      "ui.3cb799e570",
+      "ui.72ea7814e5",
+      "ui.4814fa3d59",
+      "ui.aacb8741e2",
+      "ui.b1701fa204",
+      "ui.60be59a141"
+    ]
+  }
+}

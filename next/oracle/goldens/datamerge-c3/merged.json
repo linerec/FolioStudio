@@ -1,0 +1,3334 @@
+{
+ "version": "20.5.5.119",
+ "cases": [
+  {
+   "name": "single",
+   "spec": {
+    "name": "single",
+    "file": "people.csv"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice|Seoul"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob|Busan"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol|﻿﻿"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "multi9",
+   "spec": {
+    "name": "multi9",
+    "file": "many.csv",
+    "multiple": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        156,
+        156,
+        216,
+        216
+       ],
+       "contents": "R9"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        156,
+        96,
+        216,
+        156
+       ],
+       "contents": "R8"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        156,
+        36,
+        216,
+        96
+       ],
+       "contents": "R7"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        96,
+        156,
+        156,
+        216
+       ],
+       "contents": "R6"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        96,
+        96,
+        156,
+        156
+       ],
+       "contents": "R5"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        96,
+        36,
+        156,
+        96
+       ],
+       "contents": "R4"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        156,
+        96,
+        216
+       ],
+       "contents": "R3"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        96,
+        96,
+        156
+       ],
+       "contents": "R2"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        36,
+        96,
+        96
+       ],
+       "contents": "R1"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        96,
+        96,
+        156
+       ],
+       "contents": "R11"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        36,
+        96,
+        96
+       ],
+       "contents": "R10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "multicols",
+   "spec": {
+    "name": "multicols",
+    "file": "many.csv",
+    "multiple": true,
+    "arrange": "COLUMNS_FIRST",
+    "rowSpacing": 10,
+    "columnSpacing": 5
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        186,
+        121,
+        226,
+        201
+       ],
+       "contents": "R8"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        136,
+        121,
+        176,
+        201
+       ],
+       "contents": "R7"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        86,
+        121,
+        126,
+        201
+       ],
+       "contents": "R6"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        121,
+        76,
+        201
+       ],
+       "contents": "R5"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        186,
+        36,
+        226,
+        116
+       ],
+       "contents": "R4"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        136,
+        36,
+        176,
+        116
+       ],
+       "contents": "R3"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        86,
+        36,
+        126,
+        116
+       ],
+       "contents": "R2"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        36,
+        76,
+        116
+       ],
+       "contents": "R1"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        136,
+        36,
+        176,
+        116
+       ],
+       "contents": "R11"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        86,
+        36,
+        126,
+        116
+       ],
+       "contents": "R10"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        36,
+        76,
+        116
+       ],
+       "contents": "R9"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "twopage",
+   "spec": {
+    "name": "twopage",
+    "file": "two.csv",
+    "pages": 2
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        40,
+        40,
+        100,
+        260
+       ],
+       "contents": "Seoul"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        40,
+        40,
+        100,
+        260
+       ],
+       "contents": "Busan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "image2",
+   "spec": {
+    "name": "image2",
+    "file": "img.csv"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         200,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         200,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "imagefill",
+   "spec": {
+    "name": "imagefill",
+    "file": "img.csv",
+    "fill": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         75,
+         20,
+         175,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        75,
+        20,
+        175,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         75,
+         20,
+         175,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        75,
+        20,
+        175,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "multiimage",
+   "spec": {
+    "name": "multiimage",
+    "file": "img.csv",
+    "multiple": true,
+    "margins": [
+     10,
+     10,
+     10,
+     10
+    ]
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      10,
+      10,
+      10,
+      10
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        130,
+        10,
+        180,
+        140
+       ],
+       "graphic": {
+        "bounds": [
+         130,
+         37.5,
+         180,
+         112.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        130,
+        37.5,
+        180,
+        112.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        95,
+        10,
+        125,
+        140
+       ],
+       "contents": "Carol"
+      },
+      {
+       "type": "Rectangle",
+       "bounds": [
+        45,
+        140,
+        95,
+        270
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        10,
+        140,
+        40,
+        270
+       ],
+       "contents": "Bob"
+      },
+      {
+       "type": "Rectangle",
+       "bounds": [
+        45,
+        10,
+        95,
+        140
+       ],
+       "graphic": {
+        "bounds": [
+         45,
+         37.5,
+         95,
+         112.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        45,
+        37.5,
+        95,
+        112.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        10,
+        10,
+        40,
+        140
+       ],
+       "contents": "Alice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "rangemulti",
+   "spec": {
+    "name": "rangemulti",
+    "file": "many.csv",
+    "multiple": true,
+    "range": "2-4",
+    "margins": [
+     10,
+     10,
+     10,
+     10
+    ]
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      10,
+      10,
+      10,
+      10
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        10,
+        130,
+        70,
+        190
+       ],
+       "contents": "R4"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        10,
+        70,
+        70,
+        130
+       ],
+       "contents": "R3"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        10,
+        10,
+        70,
+        70
+       ],
+       "contents": "R2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "multitwopage",
+   "spec": {
+    "name": "multitwopage",
+    "file": "many.csv",
+    "pages": 2,
+    "multiple": true
+   },
+   "error": "Error: Multiple records per page not allowed for a multi-page document. @91",
+   "pages": []
+  },
+  {
+   "name": "blanks",
+   "spec": {
+    "name": "blanks",
+    "file": "blank.csv",
+    "removeBlankLines": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        180,
+        20,
+        260,
+        280
+       ],
+       "contents": "Alice﻿﻿\rAlice"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        120,
+        20,
+        170,
+        280
+       ],
+       "contents": "﻿﻿﻿﻿"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        70,
+        20,
+        110,
+        280
+       ],
+       "contents": "Alice﻿﻿"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        60,
+        280
+       ],
+       "contents": "﻿﻿Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        180,
+        20,
+        260,
+        280
+       ],
+       "contents": "Bob\rx\rBob"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        120,
+        20,
+        170,
+        280
+       ],
+       "contents": "x\rx"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        70,
+        20,
+        110,
+        280
+       ],
+       "contents": "Bob\rx"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        60,
+        280
+       ],
+       "contents": "x\rBob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "special",
+   "spec": {
+    "name": "special",
+    "file": "special.csv"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "a<b&c"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "tab\there"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "line1"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "line2\""
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "say \"x\""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "exactfit",
+   "spec": {
+    "name": "exactfit",
+    "file": "ten.csv",
+    "multiple": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        188,
+        188,
+        264,
+        264
+       ],
+       "contents": "S9"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        188,
+        112,
+        264,
+        188
+       ],
+       "contents": "S8"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        188,
+        36,
+        264,
+        112
+       ],
+       "contents": "S7"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        112,
+        188,
+        188,
+        264
+       ],
+       "contents": "S6"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        112,
+        112,
+        188,
+        188
+       ],
+       "contents": "S5"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        112,
+        36,
+        188,
+        112
+       ],
+       "contents": "S4"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        188,
+        112,
+        264
+       ],
+       "contents": "S3"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        112,
+        112,
+        188
+       ],
+       "contents": "S2"
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        36,
+        112,
+        112
+       ],
+       "contents": "S1"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "TextFrame",
+       "bounds": [
+        36,
+        36,
+        112,
+        112
+       ],
+       "contents": "S10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitfillnc",
+   "spec": {
+    "name": "fitfillnc",
+    "file": "img.csv",
+    "fit": "FILL_PROPORTIONAL",
+    "center": false
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         75,
+         20,
+         175,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        75,
+        20,
+        175,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         75,
+         20,
+         175,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        75,
+        20,
+        175,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitpropc",
+   "spec": {
+    "name": "fitpropc",
+    "file": "img.csv",
+    "fit": "PROPORTIONAL",
+    "center": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitpropnc",
+   "spec": {
+    "name": "fitpropnc",
+    "file": "img.csv",
+    "fit": "PROPORTIONAL",
+    "center": false
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "nolink",
+   "spec": {
+    "name": "nolink",
+    "file": "img.csv",
+    "link": false
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "LINK_EMBEDDED"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "LINK_EMBEDDED"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitc2f",
+   "spec": {
+    "file": "img.csv",
+    "name": "fitc2f",
+    "fit": "FIT_CONTENT_TO_FRAME"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         150,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         150,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitf2c",
+   "spec": {
+    "file": "img.csv",
+    "name": "fitf2c",
+    "fit": "FIT_FRAME_TO_CONTENT"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        259.979996533298,
+        259.969994799946
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         259.979996533297,
+         259.969994799946
+        ],
+        "link": "checker.png",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        259.979996533297,
+        259.969994799946
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        259.979996533297,
+        259.969994799946
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         259.979996533297,
+         259.969994799946
+        ],
+        "link": "checker.png",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        259.979996533297,
+        259.969994799946
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitkeepc",
+   "spec": {
+    "file": "img.csv",
+    "name": "fitkeepc",
+    "fit": "PRESERVE_SIZES",
+    "center": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         45.0100017333513,
+         -24.9849973999731,
+         204.989998266649,
+         214.984997399973
+        ],
+        "link": "checker.png",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        45.0100017333513,
+        -24.9849973999731,
+        204.989998266649,
+        214.984997399973
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         45.0100017333513,
+         -24.9849973999731,
+         204.989998266649,
+         214.984997399973
+        ],
+        "link": "checker.png",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        45.0100017333513,
+        -24.9849973999731,
+        204.989998266649,
+        214.984997399973
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fitkeepnc",
+   "spec": {
+    "file": "img.csv",
+    "name": "fitkeepnc",
+    "fit": "PRESERVE_SIZES",
+    "center": false
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         259.979996533297,
+         259.969994799946
+        ],
+        "link": "checker.png",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        259.979996533297,
+        259.969994799946
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         259.979996533297,
+         259.969994799946
+        ],
+        "link": "checker.png",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        259.979996533297,
+        259.969994799946
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "imgoval",
+   "spec": {
+    "file": "img.csv",
+    "name": "imgoval"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Polygon",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Polygon",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Polygon",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         57.5,
+         150,
+         132.5
+        ],
+        "link": "checker.png",
+        "scale": [
+         31.2539074156019,
+         31.2539074156019
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        57.5,
+        150,
+        132.5
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "imgpoly",
+   "spec": {
+    "file": "img.csv",
+    "name": "imgpoly",
+    "fill": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Polygon",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         200,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Polygon",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Polygon",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         20,
+         200,
+         170
+        ],
+        "link": "checker.png",
+        "scale": [
+         62.5078148312039,
+         62.5078148312039
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "Image",
+       "bounds": [
+        100,
+        20,
+        200,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Carol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdfprop",
+   "spec": {
+    "name": "pdfprop",
+    "file": "pdf.csv"
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         71.5625,
+         150,
+         118.4375
+        ],
+        "link": "pdfplace-single.pdf",
+        "scale": [
+         31.25,
+         31.25
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "PDF",
+       "bounds": [
+        100,
+        71.5625,
+        150,
+        118.4375
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         100,
+         71.5625,
+         150,
+         118.4375
+        ],
+        "link": "pdfplace-multi.pdf",
+        "scale": [
+         31.25,
+         31.25
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "PDF",
+       "bounds": [
+        100,
+        71.5625,
+        150,
+        118.4375
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdfkeep",
+   "spec": {
+    "name": "pdfkeep",
+    "file": "pdf.csv",
+    "fit": "PRESERVE_SIZES",
+    "center": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         45,
+         20,
+         205,
+         170
+        ],
+        "link": "pdfplace-single.pdf",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "PDF",
+       "bounds": [
+        45,
+        20,
+        205,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         45,
+         20,
+         205,
+         170
+        ],
+        "link": "pdfplace-multi.pdf",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "PDF",
+       "bounds": [
+        45,
+        20,
+        205,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "pdffill",
+   "spec": {
+    "name": "pdffill",
+    "file": "pdf.csv",
+    "fill": true
+   },
+   "error": null,
+   "pages": [
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         45,
+         20,
+         205,
+         170
+        ],
+        "link": "pdfplace-single.pdf",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "PDF",
+       "bounds": [
+        45,
+        20,
+        205,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Alice"
+      }
+     ]
+    },
+    {
+     "margins": [
+      36,
+      36,
+      36,
+      36
+     ],
+     "size": [
+      300,
+      300
+     ],
+     "items": [
+      {
+       "type": "Rectangle",
+       "bounds": [
+        100,
+        20,
+        150,
+        170
+       ],
+       "graphic": {
+        "bounds": [
+         45,
+         20,
+         205,
+         170
+        ],
+        "link": "pdfplace-multi.pdf",
+        "scale": [
+         100,
+         100
+        ],
+        "status": "NORMAL"
+       }
+      },
+      {
+       "type": "PDF",
+       "bounds": [
+        45,
+        20,
+        205,
+        170
+       ]
+      },
+      {
+       "type": "TextFrame",
+       "bounds": [
+        20,
+        20,
+        80,
+        280
+       ],
+       "contents": "Bob"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

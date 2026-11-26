@@ -1,0 +1,11 @@
+[package]
+name = "folio-math"
+description = "MathML layout (TeX rules with OpenType MATH constants) into font-independent vector outlines"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+# Glyph outlines and the OpenType MATH table of an installed font; no font is bundled.
+ttf-parser = "=0.25.1"
+serde_json.workspace = true

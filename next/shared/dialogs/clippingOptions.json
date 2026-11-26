@@ -1,0 +1,59 @@
+{
+  "title": "클리핑 패스 옵션",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "clipping",
+  "link": "clippingOptions",
+  "description": "Object > Clipping Path > Options: ids is the frame whose graphic gets the clipping path. kind None takes the path away; DetectEdges, AlphaChannel and PhotoshopPath make it from the linked image with the threshold, tolerance, inset and the other settings (alphaName or photoshopPath picks the channel or path).",
+  "fields": [
+    {
+      "name": "kind",
+      "label": "클리핑 유형",
+      "type": "enum",
+      "default": "None",
+      "options": [
+        { "value": "None", "label": "없음" },
+        { "value": "DetectEdges", "label": "가장자리 감지" },
+        { "value": "AlphaChannel", "label": "알파 채널" },
+        { "value": "PhotoshopPath", "label": "Photoshop 패스" }
+      ]
+    },
+    { "name": "alphaName", "label": "알파", "type": "choice", "source": "clippingAlphaChannels", "none": "없음", "noneWhenEmpty": true, "default": "",
+      "disabledWhen": { "kind": ["None", "DetectEdges", "PhotoshopPath"] } },
+    { "name": "photoshopPath", "label": "패스", "type": "choice", "source": "clippingPhotoshopPaths", "none": "없음", "noneWhenEmpty": true, "default": "",
+      "disabledWhen": { "kind": ["None", "DetectEdges", "AlphaChannel"] } },
+    { "name": "pathName", "type": "text", "hidden": true, "maxLength": 1024, "default": "" },
+    { "name": "threshold", "label": "임계값", "type": "number", "integer": true, "min": 0, "max": 255, "default": 25,
+      "disabledWhen": { "kind": ["None", "PhotoshopPath"] } },
+    { "name": "tolerance", "label": "허용치", "type": "number", "min": 0, "max": 10, "default": 2,
+      "disabledWhen": { "kind": ["None", "PhotoshopPath"] } },
+    { "name": "inset", "label": "패스 인세트 (pt)", "type": "number", "min": -1000, "max": 1000, "default": 0,
+      "disabledWhen": { "kind": "None" } },
+    { "name": "invert", "label": "클리핑 반전", "type": "boolean", "default": false, "disabledWhen": { "kind": "None" } },
+    { "name": "insideEdges", "label": "내부 가장자리 포함", "type": "boolean", "default": false,
+      "disabledWhen": { "kind": ["None", "PhotoshopPath"] } },
+    { "name": "restrictToFrame", "label": "프레임으로 제한", "type": "boolean", "default": false,
+      "disabledWhen": { "kind": ["None", "PhotoshopPath"] } },
+    { "name": "highResolution", "label": "고해상도 이미지 사용", "type": "boolean", "default": true,
+      "disabledWhen": { "kind": ["None", "PhotoshopPath"] } }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setClipping",
+        "ids": "$ids",
+        "kind": "$kind",
+        "settings": {
+          "threshold": "$threshold",
+          "tolerance": "$tolerance",
+          "inset": "$inset",
+          "invert": "$invert",
+          "insideEdges": "$insideEdges",
+          "restrictToFrame": "$restrictToFrame",
+          "highResolution": "$highResolution",
+          "pathName": "$pathName"
+        }
+      }
+    ]
+  }
+}

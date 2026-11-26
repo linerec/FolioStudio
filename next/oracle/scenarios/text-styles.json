@@ -1,0 +1,578 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {
+      "name": "style-create-paragraph",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "name": "New Body",
+          "props": {
+            "basedOn": "Format Body",
+            "pointSize": 19,
+            "leading": 25,
+            "leftIndent": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-create-character",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "character",
+          "name": "New Emphasis",
+          "props": {
+            "basedOn": "Format Bold",
+            "pointSize": 18,
+            "tracking": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-selection-paragraph",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "target": "format",
+          "start": 11,
+          "end": 16,
+          "name": "From Paragraph"
+        }
+      ]
+    },
+    {
+      "name": "style-selection-character",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "character",
+          "target": "format",
+          "start": 11,
+          "end": 16,
+          "name": "From Character"
+        }
+      ]
+    },
+    {
+      "name": "style-selection-mixed",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "character",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "name": "Mixed First"
+        }
+      ]
+    },
+    {
+      "name": "style-selection-caret",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "paragraph",
+          "target": "format",
+          "start": 25,
+          "end": 25,
+          "name": "From Caret"
+        }
+      ]
+    },
+    {
+      "name": "style-selection-no-apply",
+      "steps": [
+        {
+          "op": "styleCreate",
+          "kind": "character",
+          "target": "format",
+          "start": 11,
+          "end": 16,
+          "name": "Stored Only",
+          "apply": false
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-size",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "pointSize": 16
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-leading",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "leading": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-auto-leading",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "leading": "auto"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-font",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "appliedFont": "Times New Roman",
+            "fontStyle": "Bold"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-tracking",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "tracking": 35
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-align",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "justification": "CENTER_ALIGN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-indents",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "leftIndent": 8,
+            "rightIndent": 10,
+            "firstLineIndent": -4
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-spacing",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "spaceBefore": 8,
+            "spaceAfter": 9
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-character-size",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "Format Bold",
+          "props": {
+            "pointSize": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-character-font",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "Format Italic",
+          "props": {
+            "fontStyle": "Bold"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-character-based",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "character",
+          "style": "Format Large",
+          "props": {
+            "basedOn": "Format Italic"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-paragraph-based",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Heading",
+          "props": {
+            "basedOn": "Format Other"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-next",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "nextStyle": "Format Heading"
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-redefine-paragraph",
+      "steps": [
+        {
+          "op": "styleRedefine",
+          "kind": "paragraph",
+          "target": "format",
+          "start": 11,
+          "end": 16,
+          "style": "Format Body"
+        }
+      ]
+    },
+    {
+      "name": "style-redefine-character",
+      "steps": [
+        {
+          "op": "styleRedefine",
+          "kind": "character",
+          "target": "format",
+          "start": 7,
+          "end": 9,
+          "style": "Format Bold"
+        }
+      ]
+    },
+    {
+      "name": "style-delete-paragraph",
+      "steps": [
+        {
+          "op": "styleDelete",
+          "kind": "paragraph",
+          "style": "Format Other",
+          "replacement": "Format Body"
+        }
+      ]
+    },
+    {
+      "name": "style-delete-parent",
+      "steps": [
+        {
+          "op": "styleDelete",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "replacement": "Format Other"
+        }
+      ]
+    },
+    {
+      "name": "style-delete-character",
+      "steps": [
+        {
+          "op": "styleDelete",
+          "kind": "character",
+          "style": "Format Bold",
+          "replacement": "Format Italic"
+        }
+      ]
+    },
+    {
+      "name": "style-delete-next",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "nextStyle": "Format Heading"
+          }
+        },
+        {
+          "op": "styleDelete",
+          "kind": "paragraph",
+          "style": "Format Heading",
+          "replacement": "Format Other"
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-0",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 0,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-10",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 10,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-20",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 20,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-21",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 21,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-22",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 22,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-23",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 23,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-24",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 24,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-25",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 25,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-30",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 30,
+            "pointSize": 18
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-12pt-22",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 22,
+            "pointSize": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-12pt-23",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 23,
+            "pointSize": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-12pt-33",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 33,
+            "pointSize": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-12pt-34",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 34,
+            "pointSize": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-24pt-16",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 16,
+            "pointSize": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "style-ligatures-24pt-17",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 46,
+          "end": 70,
+          "props": {
+            "tracking": 17,
+            "pointSize": 24
+          }
+        }
+      ]
+    }
+  ]
+}

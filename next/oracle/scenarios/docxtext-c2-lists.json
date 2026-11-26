@@ -1,0 +1,60 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file with bulleted and numbered lists (docxtext-c2): list levels, number formats, bullet characters, suffixes, restarts, continued lists, a list carried by a paragraph style.",
+ "scenarios": [
+  {
+   "name": "docxtext-c2-lists",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-lists.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-lists2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-lists2.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-lists3",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-lists3.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

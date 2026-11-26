@@ -1,0 +1,151 @@
+{
+  "version": "20.5.5.119",
+  "steps": [
+    {
+      "name": "00-base",
+      "length": 5,
+      "text": "ABCDE",
+      "notes": [],
+      "changes": []
+    },
+    {
+      "name": "01-note",
+      "length": 6,
+      "text": "AB﻿CDE",
+      "notes": [
+        {
+          "at": 2,
+          "text": "Memo",
+          "collapsed": false,
+          "user": "Unknown User Name",
+          "created": "Thu Oct 22 2026 20:43:13 GMT-0400",
+          "modified": "Thu Oct 22 2026 20:43:13 GMT-0400"
+        }
+      ],
+      "changes": []
+    },
+    {
+      "name": "02-collapsed",
+      "length": 6,
+      "text": "AB﻿CDE",
+      "notes": [
+        {
+          "at": 2,
+          "text": "Memo",
+          "collapsed": true,
+          "user": "Unknown User Name",
+          "created": "Thu Oct 22 2026 20:43:13 GMT-0400",
+          "modified": "Thu Oct 22 2026 20:43:13 GMT-0400"
+        }
+      ],
+      "changes": []
+    },
+    {
+      "name": "03-note-to-text",
+      "length": 11,
+      "text": "AB Memo CDE",
+      "notes": [],
+      "changes": []
+    },
+    {
+      "name": "04-insert",
+      "length": 7,
+      "text": "ABxyCDE",
+      "notes": [],
+      "changes": [
+        {
+          "type": "INSERTED_TEXT",
+          "text": "xy",
+          "user": "Unknown User Name",
+          "date": "Thu Oct 22 2026 20:43:13 GMT-0400",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "name": "05-delete",
+      "length": 5,
+      "text": "ABxyE",
+      "notes": [],
+      "changes": [
+        {
+          "type": "INSERTED_TEXT",
+          "text": "xy",
+          "user": "Unknown User Name",
+          "date": "Thu Oct 22 2026 20:43:13 GMT-0400",
+          "index": 0
+        },
+        {
+          "type": "DELETED_TEXT",
+          "text": "CD",
+          "user": "Unknown User Name",
+          "date": "Thu Oct 22 2026 20:43:13 GMT-0400",
+          "index": 1
+        }
+      ]
+    }
+  ],
+  "composed": "ABxyE",
+  "lines": [
+    "ABxyE"
+  ],
+  "conversions": [
+    {
+      "input": [
+        "ABCDE",
+        0,
+        "Memo"
+      ],
+      "output": "Memo ABCDE"
+    },
+    {
+      "input": [
+        "ABCDE",
+        5,
+        "Memo"
+      ],
+      "output": "ABCDE Memo"
+    },
+    {
+      "input": [
+        "AB CDE",
+        3,
+        "Memo"
+      ],
+      "output": "AB Memo CDE"
+    },
+    {
+      "input": [
+        "AB CDE",
+        2,
+        "Memo"
+      ],
+      "output": "AB Memo CDE"
+    },
+    {
+      "input": [
+        "ABCDE",
+        2,
+        ""
+      ],
+      "output": "ABCDE"
+    },
+    {
+      "input": [
+        "ABCDE",
+        2,
+        " X "
+      ],
+      "output": "AB X CDE"
+    },
+    {
+      "input": [
+        "ABCDE",
+        2,
+        "X\rY"
+      ],
+      "output": "AB X\rY CDE"
+    }
+  ],
+  "ok": true
+}

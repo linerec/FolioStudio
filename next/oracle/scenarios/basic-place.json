@@ -1,0 +1,255 @@
+{
+  "fixture": "basic",
+  "about": "Native graphic placement, fit, links and profiles.",
+  "scenarios": [
+    {
+      "name": "place-png",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-dpi",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-96.png",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-icc",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-icc.jpg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-r-rot",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "r-rot",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-r-shear",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "r-shear",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-oval",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "oval",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-poly",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "poly",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-grp-a",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "grp-a",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-img",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "target": "img",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-point",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "page": 0,
+          "point": [
+            80,
+            200
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-point-dpi",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-96.png",
+          "page": 1,
+          "point": [
+            80,
+            200
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-point-icc",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-icc.jpg",
+          "page": 2,
+          "point": [
+            80,
+            200
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-drag",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            260,
+            320
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-drag-tall",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-plain.png",
+          "page": 0,
+          "rect": [
+            80,
+            200,
+            180,
+            360
+          ],
+          "label": "placed",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-alpha",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "place-alpha.png",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-placeholder",
+      "steps": [
+        {
+          "op": "createItem",
+          "kind": "ellipseFrame",
+          "page": 0,
+          "rect": [
+            300,
+            200,
+            480,
+            320
+          ],
+          "label": "placeholder"
+        },
+        {
+          "op": "placeGraphic",
+          "target": "placeholder",
+          "file": "place-icc.jpg",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-after-fill",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "fill"
+        },
+        {
+          "op": "placeGraphic",
+          "target": "img",
+          "file": "place-icc.jpg",
+          "contentAware": false
+        }
+      ]
+    },
+    {
+      "name": "place-after-stretch",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "contentToFrame"
+        },
+        {
+          "op": "placeGraphic",
+          "target": "img",
+          "file": "place-icc.jpg",
+          "contentAware": false
+        }
+      ]
+    }
+  ]
+}

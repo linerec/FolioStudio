@@ -1,0 +1,718 @@
+{
+  "fixture": "objectstyles",
+  "about": "개체 스타일 관리 동작 측정",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "os-create-empty",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {}
+        }
+      ]
+    },
+    {
+      "name": "os-create-fill",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "enableFill": true,
+            "fillColor": "Oracle Blue",
+            "fillTint": 65
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-create-stroke",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "enableStroke": true,
+            "strokeColor": "Black",
+            "strokeWeight": 3,
+            "strokeTint": 80
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-create-corner",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "enableStrokeAndCornerOptions": true,
+            "topLeftCornerOption": "CornerOptions.ROUNDED_CORNER",
+            "topLeftCornerRadius": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-create-effect",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "objectEffectsEnablingSettings": {
+              "enableTransparency": true
+            },
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 45
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-create-text-frame",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "enableTextFrameGeneralOptions": true,
+            "textFramePreferences": {
+              "textColumnCount": 2,
+              "textColumnGutter": 9,
+              "insetSpacing": [
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-create-wrap",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "enableTextWrapAndOthers": true,
+            "textWrapPreferences": {
+              "textWrapMode": "TextWrapModes.BOUNDING_BOX_TEXT_WRAP",
+              "textWrapOffset": [
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-create-based",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "enableFill": true,
+            "fillColor": "Oracle Blue"
+          },
+          "basedOn": "ObjectStyle/Oracle Box"
+        }
+      ]
+    },
+    {
+      "name": "os-edit",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "fillColor": "Oracle Blue",
+            "strokeWeight": 6
+          }
+        }
+      ]
+    },
+    {
+      "name": "os-rename",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "rename": "OS Renamed",
+          "props": {}
+        }
+      ]
+    },
+    {
+      "name": "os-duplicate",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "duplicateObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "name": "OS Copy"
+        }
+      ]
+    },
+    {
+      "name": "os-duplicate-based",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "duplicateObjectStyle",
+          "style": "ObjectStyle/Oracle Box Blue",
+          "name": "OS Copy"
+        }
+      ]
+    },
+    {
+      "name": "os-delete",
+      "rules": [
+        "styles.object.delete"
+      ],
+      "steps": [
+        {
+          "op": "deleteObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "replacement": "ObjectStyle/Oracle Box Blue"
+        }
+      ]
+    },
+    {
+      "name": "os-delete-none",
+      "rules": [
+        "styles.object.delete"
+      ],
+      "steps": [
+        {
+          "op": "deleteObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "replacement": "ObjectStyle/$ID/[None]"
+        }
+      ]
+    },
+    {
+      "name": "os-clear-overrides",
+      "rules": [
+        "styles.object.clear"
+      ],
+      "steps": [
+        {
+          "op": "clearObjectStyleOverrides",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "os-delete-leaf",
+      "rules": [
+        "styles.object.delete"
+      ],
+      "steps": [
+        {
+          "op": "deleteObjectStyle",
+          "style": "ObjectStyle/Oracle Box Blue",
+          "replacement": "ObjectStyle/Oracle Box"
+        }
+      ]
+    },
+    {
+      "name": "os-delete-unrelated",
+      "rules": [
+        "styles.object.delete"
+      ],
+      "steps": [
+        {
+          "op": "deleteObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "replacement": "ObjectStyle/Oracle Text"
+        }
+      ]
+    },
+    {
+      "name": "os-create-from",
+      "rules": [
+        "styles.object.capture"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "from": "r-fill",
+          "props": {},
+          "menu": true
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "os-create-from-plain",
+      "rules": [
+        "styles.object.capture"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "from": "r-plain",
+          "props": {},
+          "menu": true
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "os-redefine-plain",
+      "rules": [
+        "styles.object.capture"
+      ],
+      "steps": [
+        {
+          "op": "redefineObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "from": "r-plain"
+        }
+      ]
+    },
+    {
+      "name": "os-clear-not-in-style",
+      "rules": [
+        "styles.object.clear"
+      ],
+      "steps": [
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "os-clear-not-in-style-plain",
+      "rules": [
+        "styles.object.clear"
+      ],
+      "steps": [
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-plain"
+        }
+      ]
+    },
+    {
+      "name": "os-clear-not-in-style-fill",
+      "rules": [
+        "styles.object.clear"
+      ],
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "enableFill": false
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        },
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "os-clear-not-in-style-stroke",
+      "rules": [
+        "styles.object.clear"
+      ],
+      "steps": [
+        {
+          "op": "editObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "props": {
+            "enableStroke": false
+          }
+        },
+        {
+          "op": "clearOverridesNotInStyle",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "os-create-apply-fill",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "fillColor": "Oracle Blue",
+            "fillTint": 65
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "OS New",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "os-create-apply-stroke",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "strokeWeight": 3
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "OS New",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "os-create-apply-effect",
+      "rules": [
+        "styles.object.definitions"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "OS New",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 45
+              }
+            }
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "OS New",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "os-group-new",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group"
+        }
+      ]
+    },
+    {
+      "name": "os-group-nested",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group"
+        },
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Sub",
+          "parent": "OS Group"
+        }
+      ]
+    },
+    {
+      "name": "os-group-move",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group"
+        },
+        {
+          "op": "moveObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "group": "OS Group"
+        }
+      ]
+    },
+    {
+      "name": "os-group-move-out",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group"
+        },
+        {
+          "op": "moveObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "group": "OS Group"
+        },
+        {
+          "op": "moveObjectStyle",
+          "style": "ObjectStyle/OS Group%3aOracle Box",
+          "group": ""
+        }
+      ]
+    },
+    {
+      "name": "os-group-copy",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group"
+        },
+        {
+          "op": "copyObjectStyleToGroup",
+          "style": "ObjectStyle/Oracle Box",
+          "group": "OS Group"
+        }
+      ]
+    },
+    {
+      "name": "os-group-sort",
+      "window": true,
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyle",
+          "name": "AA Late",
+          "props": {}
+        },
+        {
+          "op": "menu",
+          "id": 113168,
+          "action": "Sort by Name",
+          "panel": "Object Styles"
+        }
+      ]
+    },
+    {
+      "name": "os-group-two",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group A"
+        },
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group B"
+        }
+      ]
+    },
+    {
+      "name": "os-group-mixed",
+      "rules": [
+        "styles.object.groups"
+      ],
+      "steps": [
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Group"
+        },
+        {
+          "op": "createObjectStyleGroup",
+          "name": "OS Sub",
+          "parent": "OS Group"
+        },
+        {
+          "op": "moveObjectStyle",
+          "style": "ObjectStyle/Oracle Box",
+          "group": "OS Group"
+        },
+        {
+          "op": "moveObjectStyle",
+          "style": "ObjectStyle/Oracle Text",
+          "group": "OS Group:OS Sub"
+        }
+      ]
+    },
+    {
+      "name": "os-default-a-none",
+      "window": true,
+      "rules": [
+        "styles.object.defaults"
+      ],
+      "steps": [
+        {
+          "op": "menu",
+          "id": 113202,
+          "action": "[None]",
+          "panel": "Object Styles"
+        }
+      ]
+    },
+    {
+      "name": "os-default-a-text",
+      "window": true,
+      "rules": [
+        "styles.object.defaults"
+      ],
+      "steps": [
+        {
+          "op": "menu",
+          "id": 113204,
+          "action": "[Basic Text Frame]",
+          "panel": "Object Styles"
+        }
+      ]
+    },
+    {
+      "name": "os-default-b-text",
+      "window": true,
+      "rules": [
+        "styles.object.defaults"
+      ],
+      "steps": [
+        {
+          "op": "menu",
+          "id": 113280,
+          "action": "[Basic Text Frame]",
+          "panel": "Object Styles"
+        }
+      ]
+    },
+    {
+      "name": "os-default-b-gfx",
+      "window": true,
+      "rules": [
+        "styles.object.defaults"
+      ],
+      "steps": [
+        {
+          "op": "menu",
+          "id": 113279,
+          "action": "[Basic Graphics Frame]",
+          "panel": "Object Styles"
+        }
+      ]
+    },
+    {
+      "name": "os-break-link",
+      "window": true,
+      "rules": [
+        "styles.object.break-link"
+      ],
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 113166,
+          "action": "Break Link to Style",
+          "panel": "Object Styles"
+        }
+      ]
+    },
+    {
+      "name": "os-break-link-override",
+      "window": true,
+      "rules": [
+        "styles.object.break-link"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 9
+          }
+        },
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 113166,
+          "action": "Break Link to Style",
+          "panel": "Object Styles"
+        }
+      ]
+    }
+  ]
+}

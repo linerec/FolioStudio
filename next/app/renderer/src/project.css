@@ -1,0 +1,115 @@
+/* Folio projects: start screen, import dialog, explorer, read-only banner */
+/* The start sheet (uix-b3, DESIGN.md "시작 화면·대화상자"): a page on the pasteboard — square corners, the page shadow, trim marks outside its corners —
+   with the brand line on top, the actions in a column and the recent lists beside them. The project home is the same sheet, smaller. */
+.start, .project-home {
+  --trim: var(--muted);
+  position: relative; flex: none; margin: auto; width: min(880px, 100%); padding: var(--sp-8) 40px 0;
+  background: var(--panel); border: 1px solid var(--line-dark); box-shadow: 0 1px 3px var(--page-shadow); color: var(--muted);
+}
+.project-home { width: min(640px, 100%); }
+.start::before, .project-home::before {
+  content: ''; position: absolute; inset: -21px; pointer-events: none; opacity: 0.6;
+  background:
+    linear-gradient(var(--trim), var(--trim)) left 0 top 20px / 12px 1px no-repeat, linear-gradient(var(--trim), var(--trim)) left 20px top 0 / 1px 12px no-repeat,
+    linear-gradient(var(--trim), var(--trim)) right 0 top 20px / 12px 1px no-repeat, linear-gradient(var(--trim), var(--trim)) right 20px top 0 / 1px 12px no-repeat,
+    linear-gradient(var(--trim), var(--trim)) left 0 bottom 20px / 12px 1px no-repeat, linear-gradient(var(--trim), var(--trim)) left 20px bottom 0 / 1px 12px no-repeat,
+    linear-gradient(var(--trim), var(--trim)) right 0 bottom 20px / 12px 1px no-repeat, linear-gradient(var(--trim), var(--trim)) right 20px bottom 0 / 1px 12px no-repeat;
+}
+.start-head { display: flex; align-items: center; gap: var(--sp-4); padding-bottom: var(--sp-6); margin-bottom: var(--sp-6); border-bottom: 1px solid var(--line); }
+.start-head > div { min-width: 0; }
+.start-mark { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border-radius: var(--r-md); background: var(--accent); color: var(--accent-text); font: 700 16px/1 var(--font-ui); letter-spacing: -0.4px; }
+.start-mark.project { background: var(--bar); color: var(--accent-fg); border: 1px solid var(--field-line); }
+.start h1, .project-home h1 { margin: 0; color: var(--text); font-size: var(--fs-3xl); font-weight: var(--fw-semibold); line-height: var(--lh-tight); letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.start-lede { margin: var(--sp-1) 0 0; max-width: 60ch; font-size: var(--fs-lg); line-height: var(--lh-text); word-break: keep-all; }
+.start-body { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: var(--sp-8); align-items: start; }
+.start-actions { display: flex; flex-direction: column; gap: var(--sp-0_5); }
+.start-actions button { display: flex; align-items: center; gap: 10px; height: 32px; padding: 0 var(--sp-2); border: 1px solid transparent; border-radius: var(--r-sm); background: transparent; color: var(--text); font-size: var(--fs-lg); line-height: 1; text-align: left; white-space: nowrap; }
+.start-actions button .icon { flex: none; color: var(--muted); }
+.start-actions button:hover { background: var(--hover); }
+.start-actions button:hover .icon { color: var(--text); }
+.start-actions button.primary { margin-bottom: var(--sp-2); padding: 0 var(--sp-3); background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: var(--fw-medium); }
+.start-actions button.primary .icon, .start-actions button.primary:hover .icon { color: currentColor; }
+.start-actions button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); filter: none; }
+.start-actions button.sample { position: relative; margin-top: var(--sp-4); color: var(--muted); }
+.start-actions button.sample::before { content: ''; position: absolute; left: var(--sp-2); right: var(--sp-2); top: calc(-1 * var(--sp-2) - 1px); border-top: 1px solid var(--line); }
+.start-actions button.sample:hover { color: var(--text); }
+.start-lists { display: flex; flex-direction: column; gap: var(--sp-6); min-width: 0; }
+.start-lists section { min-width: 0; }
+.start-lists h2 { display: flex; align-items: baseline; gap: var(--sp-1_5); margin: 0 0 var(--sp-2); padding: 0 var(--sp-2); color: var(--text); font-size: var(--fs-md); font-weight: var(--fw-semibold); line-height: var(--lh-ui); }
+.start-lists h2 .muted { font-weight: var(--fw-regular); }
+.start-count { min-width: 18px; padding: 0 5px; border-radius: 9px; background: var(--bar); color: var(--muted); font-size: var(--fs-xs); font-weight: var(--fw-medium); line-height: 16px; text-align: center; font-variant-numeric: tabular-nums; }
+.start-item { display: grid; grid-template-columns: 16px minmax(0, 1fr); align-items: center; gap: 10px; width: 100%; margin: 0; padding: 6px var(--sp-2); border: 1px solid transparent; border-radius: var(--r-sm); background: transparent; text-align: left; }
+.start-item .icon { color: var(--muted); }
+.start-item:hover { background: var(--hover); }
+.start-item:hover .icon { color: var(--accent-fg); }
+.start-item-text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.start-item b { overflow: hidden; color: var(--text); font-size: var(--fs-lg); font-weight: var(--fw-medium); line-height: var(--lh-ui); text-overflow: ellipsis; white-space: nowrap; }
+.start-item-text > span { overflow: hidden; color: var(--muted); font-size: var(--fs-xs); line-height: var(--lh-ui); text-overflow: ellipsis; white-space: nowrap; direction: rtl; text-align: left; }
+/* first run: no recent project yet — what will be here, and the three steps of a project folder */
+.start-empty { padding: 0 var(--sp-2); }
+.start-empty > p { margin: 0 0 var(--sp-3); font-size: var(--fs-md); line-height: var(--lh-text); word-break: keep-all; }
+.start-steps { margin: 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: var(--sp-3); }
+.start-steps li { display: grid; grid-template-columns: 20px minmax(0, 1fr); column-gap: var(--sp-3); counter-increment: step; }
+.start-steps li::before { content: counter(step); grid-row: span 2; width: 20px; height: 20px; border: 1px solid var(--field-line); border-radius: var(--r-sm); color: var(--muted); font-size: var(--fs-xs); font-weight: var(--fw-semibold); line-height: 18px; text-align: center; font-variant-numeric: tabular-nums; }
+.start-steps b { color: var(--text); font-size: var(--fs-lg); font-weight: var(--fw-medium); line-height: 20px; }
+.start-steps span { font-size: var(--fs-md); line-height: var(--lh-text); word-break: keep-all; }
+/* the slug under the sheet: how to drop a file, how to open a document */
+.start-hint { display: flex; align-items: flex-start; gap: var(--sp-2); margin: var(--sp-8) -40px 0; padding: var(--sp-3) 40px; border-top: 1px solid var(--line); background: var(--bar); font-size: var(--fs-md); line-height: var(--lh-text); word-break: keep-all; }
+.start-hint .icon { flex: none; margin-top: 1px; color: var(--muted); }
+.project-home .start-hint { margin-top: var(--sp-6); }
+.project-home-path { margin: var(--sp-1) 0 0; overflow: hidden; font-size: var(--fs-md); text-overflow: ellipsis; white-space: nowrap; direction: rtl; text-align: left; }
+.project-home-actions { flex-direction: row; flex-wrap: wrap; gap: var(--sp-2); }
+.project-home-actions button { border-color: var(--field-line); background: var(--bar); padding: 0 var(--sp-3); }
+.project-home-actions button.primary { margin-bottom: 0; }
+.project-home-actions button.sample { margin-top: 0; }
+.project-home-actions button.sample::before { display: none; }
+@container doc-home (max-width: 760px) {
+  .start-body { grid-template-columns: minmax(0, 1fr); gap: var(--sp-6); }
+}
+
+.card.dialog.import { width: min(720px, 94vw); max-height: 92vh; overflow-y: auto; }
+.import-new { margin: var(--sp-1) 0 0 24px; }
+.path-line { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; direction: rtl; text-align: left; }
+.import label .muted.small { word-break: keep-all; }
+.import-plan h3 span { font-weight: 400; }
+/* the plan as a spec sheet: names on the left, what will happen on the right, numbers aligned */
+.plan-grid { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: var(--sp-1_5) var(--sp-4); padding: var(--sp-3) var(--sp-4); background: var(--bar); border: 1px solid var(--line); border-radius: var(--r-md); font-size: var(--fs-md); line-height: var(--lh-text); font-variant-numeric: tabular-nums; }
+.plan-grid > span { min-width: 0; overflow-wrap: anywhere; }
+.plan-grid > span:nth-child(odd) { color: var(--muted); }
+.plan-grid b { font-weight: 600; }
+.plan-grid b.warn, .warn { color: var(--warn); }
+.import-plan details { margin-top: var(--sp-2); }
+.import-plan summary { cursor: pointer; color: var(--muted); }
+.import-plan summary:hover { color: var(--text); }
+
+.body.with-explorer { grid-template-columns: 240px 172px 1fr; }
+.body.with-explorer.with-panel { grid-template-columns: 240px 172px 1fr 340px; }
+.body.with-explorer.no-doc { grid-template-columns: 240px 1fr; }
+.explorer { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+.ex-head { display: flex; align-items: center; gap: 4px; padding: 8px 8px 8px 12px; border-bottom: 1px solid var(--line); }
+.ex-head b { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ex-icon { border: none; background: none; padding: 2px 6px; color: var(--muted); }
+.ex-icon:hover { color: var(--text); }
+.ex-alert { margin: 0; padding: 4px 12px; font-size: 12px; border-bottom: 1px solid var(--line); }
+.ex-tree { overflow-y: auto; flex: 1; padding: 4px 0; }
+.ex-row { display: flex; align-items: center; gap: 6px; width: 100%; border: none; background: none; border-radius: 0; text-align: left; padding: 3px 8px; font-size: 12px; color: var(--text); }
+.ex-row:hover { background: var(--hover); }
+.ex-row.on { background: var(--list-sel); color: var(--text); }
+.ex-row.document .ex-name { color: var(--text); }
+.ex-row.document .twisty { color: var(--accent); font-size: 9px; }
+.ex-row.conflict .ex-name { color: var(--bad); }
+.ex-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ex-badge { font-size: var(--fs-xs); font-variant-numeric: tabular-nums; border-radius: var(--r-sm); padding: 0 5px; border: 1px solid currentColor; flex: none; }
+.ex-badge.ok { color: var(--ok); }
+.ex-badge.warn { color: var(--warn); }
+.ex-badge.bad { color: var(--bad); }
+.ex-foot { margin: 0; padding: 6px 12px; border-top: 1px solid var(--line); }
+
+/* a notice over the document (read-only, locked by someone else): the warning colour as a tint and an edge, the panel's text, a floating shadow */
+.lock-banner { position: absolute; left: 50%; top: 54px; transform: translateX(-50%); z-index: 5; display: flex; align-items: center; gap: var(--sp-3); padding: var(--sp-1_5) var(--sp-2) var(--sp-1_5) var(--sp-3); background: color-mix(in srgb, var(--warn) 12%, var(--panel)); border: 1px solid color-mix(in srgb, var(--warn) 55%, transparent); border-radius: var(--r-md); color: var(--text); font-size: var(--fs-md); line-height: var(--lh-ui); box-shadow: var(--shadow-pop); max-width: 80vw; }
+.lock-banner button { flex: none; height: var(--h-control); padding: 0 var(--sp-3); white-space: nowrap; }
+.lock-banner b { flex: none; color: var(--warn); font-weight: var(--fw-semibold); }
+.save-note { color: var(--ok); }
+
+.toolbar button { white-space: nowrap; }
+.toolbar .file { flex: 0 1 auto; min-width: 60px; }

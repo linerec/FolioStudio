@@ -1,0 +1,311 @@
+{
+  "title": "문서 각주 옵션",
+  "target": "none",
+  "defaults": "footnoteOptions",
+  "skipEmpty": true,
+  "description": "Type > Document Footnote Options: the document's footnote settings on two tabs (numbering and formatting, layout); the values start from the document and only those that differ are sent.",
+  "tabs": [
+    {
+      "id": "numbering",
+      "label": "번호 매기기 및 서식"
+    },
+    {
+      "id": "layout",
+      "label": "레이아웃"
+    }
+  ],
+  "fields": [
+    {
+      "name": "FootnoteNumberingStyle",
+      "label": "번호 매기기 스타일",
+      "type": "enum",
+      "default": "Arabic",
+      "options": [
+        {
+          "value": "Arabic",
+          "label": "1, 2, 3…"
+        },
+        {
+          "value": "LowerRoman",
+          "label": "i, ii, iii…"
+        },
+        {
+          "value": "UpperRoman",
+          "label": "I, II, III…"
+        },
+        {
+          "value": "LowerLetters",
+          "label": "a, b, c…"
+        },
+        {
+          "value": "UpperLetters",
+          "label": "A, B, C…"
+        },
+        {
+          "value": "Asterisks",
+          "label": "*, **, ***…"
+        },
+        {
+          "value": "Symbols",
+          "label": "*, †, ‡, §, ¶…"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "StartAt",
+      "label": "시작 번호",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "max": 1000000,
+      "tab": "numbering",
+      "integer": true
+    },
+    {
+      "name": "RestartNumbering",
+      "label": "번호 다시 시작",
+      "type": "enum",
+      "default": "DontRestart",
+      "options": [
+        {
+          "value": "DontRestart",
+          "label": "다시 시작 안 함"
+        },
+        {
+          "value": "PageRestart",
+          "label": "페이지마다"
+        },
+        {
+          "value": "SpreadRestart",
+          "label": "펼침면마다"
+        },
+        {
+          "value": "SectionRestart",
+          "label": "구역마다"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "ShowPrefixSuffix",
+      "label": "접두·접미 표시",
+      "type": "enum",
+      "default": "NoPrefixSuffix",
+      "options": [
+        {
+          "value": "NoPrefixSuffix",
+          "label": "없음"
+        },
+        {
+          "value": "PrefixSuffixReference",
+          "label": "본문 참조"
+        },
+        {
+          "value": "PrefixSuffixMarker",
+          "label": "각주 번호"
+        },
+        {
+          "value": "PrefixSuffixBoth",
+          "label": "본문 참조와 각주 번호"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "Prefix",
+      "label": "접두어",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "numbering"
+    },
+    {
+      "name": "Suffix",
+      "label": "접미어",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "numbering"
+    },
+    {
+      "name": "MarkerPositioning",
+      "label": "참조 번호 위치",
+      "type": "enum",
+      "default": "SuperscriptMarker",
+      "options": [
+        {
+          "value": "SuperscriptMarker",
+          "label": "위 첨자"
+        },
+        {
+          "value": "NormalMarker",
+          "label": "일반"
+        },
+        {
+          "value": "SubscriptMarker",
+          "label": "아래 첨자"
+        }
+      ],
+      "tab": "numbering"
+    },
+    {
+      "name": "FootnoteMarkerStyle",
+      "label": "참조 문자 스타일",
+      "type": "choice",
+      "source": "characterStyles",
+      "default": "",
+      "tab": "numbering"
+    },
+    {
+      "name": "FootnoteTextStyle",
+      "label": "각주 단락 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "default": "",
+      "tab": "numbering"
+    },
+    {
+      "name": "SeparatorText",
+      "label": "번호 뒤 분리자",
+      "type": "text",
+      "default": "",
+      "maxLength": 1000,
+      "tab": "numbering"
+    },
+    {
+      "name": "Spacer",
+      "label": "첫 각주 앞 최소 간격 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    },
+    {
+      "name": "SpaceBetween",
+      "label": "각주 사이 간격 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    },
+    {
+      "name": "FootnoteFirstBaselineOffset",
+      "label": "첫 기준선 위치",
+      "type": "enum",
+      "default": "AscentOffset",
+      "options": [
+        {
+          "value": "AscentOffset",
+          "label": "어센트"
+        },
+        {
+          "value": "CapHeight",
+          "label": "대문자 높이"
+        },
+        {
+          "value": "LeadingOffset",
+          "label": "행간"
+        },
+        {
+          "value": "EmboxHeight",
+          "label": "전각 상자 높이"
+        },
+        {
+          "value": "XHeight",
+          "label": "x 높이"
+        },
+        {
+          "value": "FixedHeight",
+          "label": "고정"
+        }
+      ],
+      "tab": "layout"
+    },
+    {
+      "name": "FootnoteMinimumFirstBaselineOffset",
+      "label": "첫 기준선 최소 높이 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    },
+    {
+      "name": "EnableStraddling",
+      "label": "각주가 여러 단에 걸치도록 허용",
+      "type": "boolean",
+      "default": false,
+      "tab": "layout"
+    },
+    {
+      "name": "EosPlacement",
+      "label": "마지막 각주를 이야기 끝에 배치",
+      "type": "boolean",
+      "default": false,
+      "tab": "layout"
+    },
+    {
+      "name": "NoSplitting",
+      "label": "각주를 다음 단으로 나누지 않음",
+      "type": "boolean",
+      "default": false,
+      "tab": "layout"
+    },
+    {
+      "name": "RuleOn",
+      "label": "각주 구분선 표시",
+      "type": "boolean",
+      "default": false,
+      "tab": "layout"
+    },
+    {
+      "name": "RuleLineWeight",
+      "label": "구분선 두께 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    },
+    {
+      "name": "RuleWidth",
+      "label": "구분선 길이 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    },
+    {
+      "name": "RuleLeftIndent",
+      "label": "구분선 왼쪽 들여쓰기 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    },
+    {
+      "name": "RuleOffset",
+      "label": "구분선 간격 (pt)",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000,
+      "tab": "layout"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setFootnoteOptions",
+        "props": {
+          "$changed": true
+        }
+      }
+    ]
+  }
+}

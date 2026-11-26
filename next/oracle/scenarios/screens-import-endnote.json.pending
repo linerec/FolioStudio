@@ -1,0 +1,24 @@
+{
+ "fixture": "docxtext2",
+ "about": "screens-import: a Word file whose endnote has character formatting (bold inside the endnote).",
+ "scenarios": [
+  {
+   "name": "screens-endnote-bold",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-q04.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

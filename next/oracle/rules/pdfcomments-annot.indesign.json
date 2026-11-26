@@ -1,0 +1,134 @@
+[
+ {
+  "type": "sticky",
+  "reviewer": "Reviewer 1",
+  "content": "Note comment page 1",
+  "date": "2026-11-07T08:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": [
+   {
+    "reviewer": "Reviewer 2",
+    "content": "Reply to note",
+    "date": "2026-11-07T20:45:00"
+   }
+  ]
+ },
+ {
+  "type": "highlight",
+  "reviewer": "Reviewer 1",
+  "content": "Highlight comment page 1",
+  "date": "2026-11-07T09:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "underline",
+  "reviewer": "Reviewer 1",
+  "content": "Underline comment page 1",
+  "date": "2026-11-07T10:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "strike",
+  "reviewer": "Reviewer 1",
+  "content": "Strike comment page 1",
+  "date": "2026-11-07T11:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "strike",
+  "reviewer": "Reviewer 1",
+  "content": "REPLACED",
+  "date": "2026-11-07T12:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "textbox",
+  "reviewer": "Reviewer 1",
+  "content": "Text box comment 1",
+  "date": "2026-11-07T13:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "insert",
+  "reviewer": "Reviewer 1",
+  "content": " INSERTED",
+  "date": "2026-11-07T14:45:00",
+  "resolved": false,
+  "orphan": true,
+  "replies": []
+ },
+ {
+  "type": "sticky",
+  "reviewer": "Reviewer 2",
+  "content": "Note comment page 2",
+  "date": "2026-11-07T08:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "highlight",
+  "reviewer": "Reviewer 2",
+  "content": "Highlight comment page 2",
+  "date": "2026-11-07T09:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "underline",
+  "reviewer": "Reviewer 2",
+  "content": "Underline comment page 2",
+  "date": "2026-11-07T10:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "strike",
+  "reviewer": "Reviewer 2",
+  "content": "Strike comment page 2",
+  "date": "2026-11-07T11:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "strike",
+  "reviewer": "Reviewer 2",
+  "content": "REPLACED",
+  "date": "2026-11-07T12:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "textbox",
+  "reviewer": "Reviewer 2",
+  "content": "Text box comment 2",
+  "date": "2026-11-07T13:45:00",
+  "resolved": false,
+  "orphan": false,
+  "replies": []
+ },
+ {
+  "type": "insert",
+  "reviewer": "Reviewer 2",
+  "content": " INSERTED",
+  "date": "2026-11-07T14:45:00",
+  "resolved": false,
+  "orphan": true,
+  "replies": []
+ }
+]

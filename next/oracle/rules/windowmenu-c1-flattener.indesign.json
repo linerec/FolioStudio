@@ -1,0 +1,83 @@
+{
+  "source": "InDesign 2025 20.5.5.119 (Windows), measured 2026-11-12 by windowmenu-c1: DOM + UI Automation reads + guarded real clicks (realinput.py) + screenshots of the document window. Tools: artifacts/windowmenu-c1-20261023/tools (m1, m3, m5, m10, m12).",
+  "menu": {
+    "path": ["Window", "Output", "Flattener Preview"],
+    "folioId": "id.window.output.flattenerPreview",
+    "inDesignActionId": 71946,
+    "actionArea": "Window Menu:Output",
+    "shortcut": null,
+    "enabledWithNoDocument": true,
+    "checkedWhenPanelHidden": false,
+    "outputSubmenuOrder": ["Attributes", "Flattener Preview", "Preflight", "Separations Preview", "Trap Presets"],
+    "outputSubmenuShortcuts": {"Preflight": "Ctrl+Alt+Shift+F", "Separations Preview": "Shift+F6"}
+  },
+  "panel": {
+    "name": "Flattener Preview",
+    "panelIndex": 27,
+    "tabGroup": ["Flattener Preview", "Separations Preview", "Trap Presets"],
+    "visibleDefault": false,
+    "size": [301, 196],
+    "panelMenu": ["Transparency Flattener Presets..."],
+    "panelMenuActionId": 71948,
+    "controls": [
+      {"name": "Highlight", "kind": "dropdown", "default": "None",
+       "options": ["None", "|separator|", "Rasterized Complex Regions", "Transparent Objects", "All Affected Objects", "Affected Graphics", "Outlined Strokes", "Outlined Text", "Raster-fill Text and Strokes", "All Rasterized Regions"],
+       "enabled": "always (with a document)"},
+      {"name": "Auto Refresh Highlight", "kind": "checkbox", "default": false, "enabled": "Highlight is not None"},
+      {"name": "Refresh", "kind": "button", "enabled": "Highlight is not None and Auto Refresh Highlight is off"},
+      {"name": "Preset", "kind": "dropdown", "default": "[High Resolution]", "options": ["[Low Resolution]", "[Medium Resolution]", "[High Resolution]"], "enabled": "Highlight is not None",
+       "note": "the choice stays when the panel is hidden or the document is closed (application state, not document state)"},
+      {"name": "Ignore Spread Overrides", "kind": "checkbox", "default": false, "enabled": "Highlight is not None"},
+      {"name": "Apply Settings to Print", "kind": "button", "enabled": "Highlight is not None"}
+    ]
+  },
+  "applySettingsToPrint": {
+    "writes": {"printPreferences.flattenerPresetName": "the panel's Preset name", "printPreferences.ignoreSpreadOverrides": "the Ignore Spread Overrides check box"},
+    "documentDefaultsBefore": {"flattenerPresetName": "[Medium Resolution]", "ignoreSpreadOverrides": false}
+  },
+  "spreadOverride": {
+    "setThroughDom": "flattenerOverride=CUSTOM, convertAllTextToOutlines=true, convertAllStrokesToOutlines=true, rasterVectorBalance=0, clipComplexRegions=true",
+    "ignoreOff": "Outlined Text, Outlined Strokes and All Rasterized Regions painted nothing (the preset High painted the shadow before)",
+    "ignoreOn": "Outlined Strokes: K2 only; All Rasterized Regions: shadow of D and the L3/image overlap; Outlined Text: the page shown as pastel (original colours mixed 50% with white), not grey",
+    "unresolved": "why; measure again with an override made in the UI"
+  },
+  "refresh": {
+    "choosingAModeDrawsTheHighlightAtOnce": true,
+    "editWithAutoRefreshOff": "the highlight stays as it was (stale) until Refresh is pressed",
+    "refreshButton": "redraws from the current document",
+    "editWithAutoRefreshOn": "the highlight follows the edit (checked after 3 s); the Refresh button is dimmed"
+  },
+  "highlightDrawing": {
+    "idea": "The page is shown ghosted (everything grey, half way to white); the objects the mode selects are painted on top in red.",
+    "ghost": "g = 255 * (1 - 0.5 * min(1, 0.30*C + 0.59*M + 0.11*Y + K)), C M Y K as fractions 0..1 of the composited ink at the pixel, drawn as R=G=B=g",
+    "highlightedRgb": "(0.5*g + 127.5, 0.5*g, 0.5*g)",
+    "paper": [255, 255, 255],
+    "guidesAndMarginsKeepTheirColours": true,
+    "samples": [
+      {"what": "opaque red C0 M100 Y100 K0 alone", "normalRgb": [237, 28, 36], "ghost": 166, "formula": 165.75},
+      {"what": "opaque yellow Y100", "normalRgb": [255, 242, 0], "ghost": 241, "formula": 241.0},
+      {"what": "opaque green C80 Y100", "normalRgb": [34, 178, 76], "ghost": 210, "formula": 210.4},
+      {"what": "opaque cyan C100", "normalRgb": [0, 174, 239], "ghost": 216, "formula": 216.75},
+      {"what": "black K100 stroke / text", "normalRgb": [0, 0, 0], "ghost": 127, "formula": 127.5},
+      {"what": "50% blue (C100 M80) over paper, highlighted", "normalRgb": [134, 166, 208], "highlighted": [230, 102, 102], "formula": [230.4, 102.9, 102.9]},
+      {"what": "50% blue over opaque yellow, highlighted", "normalRgb": [142, 142, 130], "highlighted": [227, 99, 99], "formula": [227.2, 99.4, 99.4]},
+      {"what": "multiply magenta over paper, highlighted", "normalRgb": [236, 0, 140], "highlighted": [218, 90, 90], "formula": [217.4, 89.9, 89.9]},
+      {"what": "multiply magenta over cyan (C100 M100), highlighted", "normalRgb": [46, 49, 146], "highlighted": [198, 70, 70], "formula": [198.2, 70.7, 70.7]},
+      {"what": "opaque yellow under the 50% blue, mode All Affected Objects", "highlighted": [248, 120, 120], "formula": [248.0, 120.5, 120.5]}
+    ]
+  },
+  "modes": {
+    "note": "Test page: A opaque, B opaque under C, C 50% opacity, D drop shadow, E multiply over F, G text above E, H stroke above C, K1 text under L, K2 stroke under L, L 50% opacity, K3 gradient under L2, K4 image under L3. Table = what is painted red. Presets Low and Medium gave the same picture on this page.",
+    "None": "no ghost, the page as it is",
+    "Transparent Objects": {"high": ["C", "E", "L", "L2", "L3", "shadow of D (soft edge, the shadow area only; D itself stays grey)"], "low": "same as high"},
+    "All Affected Objects": {"high": ["Transparent Objects", "B", "F", "K1 text (the glyphs, not the frame)", "K2 stroke"], "low": ["high", "K3 gradient", "K4 image (the whole object)"],
+                              "notAffected": ["G text above E", "H stroke above C", "A, I, J (nothing transparent touches them)"],
+                              "rule": "an object whose paint comes before (below) a transparent object that overlaps it is affected as a whole; objects above the last transparent object of the area are not"},
+    "Affected Graphics": {"high": [], "low": ["K4 image (whole object)"]},
+    "Outlined Strokes": {"high": ["K2"], "low": ["K2", "H (also the stroke above transparency)"], "note": "strokes are converted to outlines in the Low and Medium presets"},
+    "Outlined Text": {"high": [], "low": [], "note": "no preset converts text to outlines; a spread override set through the DOM (convertAllTextToOutlines=true, flattenerOverride=CUSTOM) did not change it (unexplained, see rules)"},
+    "Raster-fill Text and Strokes": {"high": [], "low": []},
+    "Rasterized Complex Regions": {"high": [], "low": [], "note": "nothing on this page in any preset (needs content that is complex enough: not found yet)"},
+    "All Rasterized Regions": {"high": ["shadow of D"], "low": ["shadow of D", "overlap of L3 and the image K4 (the intersection only, not the whole image)"], "note": "the gradient under L2 is not rasterised even in Low"}
+  }
+}

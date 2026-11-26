@@ -1,0 +1,173 @@
+{
+ "about": "Adjust Layout, adjust font size: InDesign 2025 20.5.5.119 (DOM adjustLayout with allowFontSizeAndLeadingAdjustment, imposeFontSizeRestriction off) against Folio adjustLayout{adjust_font_size} on the same IDML (artifacts/screens-text-20261023/tools/fontfit_e2e.py, 2026-11-13). Page 300x400, margins 30, frame 160x100 at 40,40, no inset, hyphenation off, auto leading. The cases fill ragged lines; Folio sizes are larger than InDesign on five of seven (see rules/layoutadj-c7.ko.md).",
+ "cases": [
+  {
+   "name": "tnr12-long-450x500",
+   "font": "Times New Roman",
+   "size": 12,
+   "newPage": [
+    450,
+    500
+   ],
+   "text": "The quick brown fox jumps over the lazy dog and keeps on running through the field until night falls.",
+   "indesign": {
+    "n0": 4,
+    "size": 15.5,
+    "gb1": [
+     42.9411764705882,
+     46.25,
+     172.352941176471,
+     306.25
+    ]
+   },
+   "folio": {
+    "size": 17.5,
+    "overset": 0
+   }
+  },
+  {
+   "name": "tnr12-long-600x400",
+   "font": "Times New Roman",
+   "size": 12,
+   "newPage": [
+    600,
+    400
+   ],
+   "text": "The quick brown fox jumps over the lazy dog and keeps on running through the field until night falls.",
+   "indesign": {
+    "n0": 4,
+    "size": 15.9,
+    "gb1": [
+     40,
+     52.5,
+     140,
+     412.5
+    ]
+   },
+   "folio": {
+    "size": 16.1,
+    "overset": 0
+   }
+  },
+  {
+   "name": "tnr12-short-600x500",
+   "font": "Times New Roman",
+   "size": 12,
+   "newPage": [
+    600,
+    500
+   ],
+   "text": "A short line of text.",
+   "indesign": {
+    "n0": 1,
+    "size": 15.5,
+    "gb1": [
+     42.9411764705882,
+     52.5,
+     172.352941176471,
+     412.5
+    ]
+   },
+   "folio": {
+    "size": 15.5,
+    "overset": 0
+   }
+  },
+  {
+   "name": "arial12-long-450x600",
+   "font": "Arial",
+   "size": 12,
+   "newPage": [
+    450,
+    600
+   ],
+   "text": "The quick brown fox jumps over the lazy dog and keeps on running through the field until night falls.",
+   "indesign": {
+    "n0": 4,
+    "size": 19,
+    "gb1": [
+     45.8823529411764,
+     46.25,
+     204.705882352941,
+     306.25
+    ]
+   },
+   "folio": {
+    "size": 19.0,
+    "overset": 0
+   }
+  },
+  {
+   "name": "arial10-para-500x500",
+   "font": "Arial",
+   "size": 10,
+   "newPage": [
+    500,
+    500
+   ],
+   "text": "Typography is the art and technique of arranging type to make written language legible, readable and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing.",
+   "indesign": {
+    "n0": 8,
+    "size": 14.7,
+    "gb1": [
+     42.9411764705882,
+     48.3333333333334,
+     172.352941176471,
+     341.666666666667
+    ]
+   },
+   "folio": {
+    "size": 15.1,
+    "overset": 0
+   }
+  },
+  {
+   "name": "tnr12-long-shrink-200x300",
+   "font": "Times New Roman",
+   "size": 12,
+   "newPage": [
+    200,
+    300
+   ],
+   "text": "The quick brown fox jumps over the lazy dog and keeps on running through the field until night falls.",
+   "indesign": {
+    "n0": 4,
+    "size": 7,
+    "gb1": [
+     37.0588235294118,
+     35.8333333333333,
+     107.647058823529,
+     129.166666666667
+    ]
+   },
+   "folio": {
+    "size": 8.3,
+    "overset": 0
+   }
+  },
+  {
+   "name": "tnr12-two-paras-450x500",
+   "font": "Times New Roman",
+   "size": 12,
+   "newPage": [
+    450,
+    500
+   ],
+   "text": "First paragraph of the text.\rSecond paragraph that is a good deal longer than the first one was.",
+   "indesign": {
+    "n0": 4,
+    "size": 15.5,
+    "gb1": [
+     42.9411764705882,
+     46.25,
+     172.352941176471,
+     306.25
+    ]
+   },
+   "folio": {
+    "size": 18.0,
+    "overset": 0
+   }
+  }
+ ]
+}

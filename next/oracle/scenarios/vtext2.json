@@ -1,0 +1,31 @@
+{
+  "fixture": "vtext2",
+  "about": "세로 틀의 나머지 기능(vtext-c2): 둥근(모양) 틀 안 세로 글, 다른 개체의 글 감싸기, 기준선 격자 맞춤, 밑줄·취소선, 자동 세로 안 가로, 문장 부호의 세로 자리와 줄 끝. 픽스처의 세로 글(StoryOrientation=Vertical, 일본어 조판기, 맑은 고딕)은 칠이 없어 안 보이고, 사례마다 틀 하나를 검정으로 보인다. 이 InDesign(영문)은 글 방향 DOM 이 없어 픽스처는 artifacts/vtext-c2-20261023/tools/make-fixture.py 가 만든다.",
+  "scenarios": [
+    { "name": "noop", "steps": [], "text": true },
+    { "name": "vt2-oval-show", "text": true, "steps": [
+      { "op": "textFormat", "target": "vt-oval", "start": 0, "end": 210, "props": { "fillColor": "Color/Black" } }
+    ] },
+    { "name": "vt2-wrap-show", "text": true, "steps": [
+      { "op": "textFormat", "target": "vt-wrap", "start": 0, "end": 224, "props": { "fillColor": "Color/Black" } }
+    ] },
+    { "name": "vt2-grid", "text": true, "steps": [
+      { "op": "textFormat", "target": "vt-grid", "start": 0, "end": 36, "props": { "fillColor": "Color/Black" } },
+      { "op": "textFormat", "target": "vt-grid", "start": 0, "end": 36, "props": { "alignToBaseline": true } }
+    ] },
+    { "name": "vt2-under", "text": true, "steps": [
+      { "op": "textFormat", "target": "vt-under", "start": 0, "end": 39, "props": { "fillColor": "Color/Black" } },
+      { "op": "textFormat", "target": "vt-under", "start": 0, "end": 15, "props": { "underline": true } },
+      { "op": "textFormat", "target": "vt-under", "start": 16, "end": 27, "props": { "strikeThru": true } },
+      { "op": "textFormat", "target": "vt-under", "start": 28, "end": 38, "props": { "underline": true, "strikeThru": true } }
+    ] },
+    { "name": "vt2-autotcy", "text": true, "steps": [
+      { "op": "textFormat", "target": "vt-autotcy", "start": 0, "end": 41, "props": { "fillColor": "Color/Black" } },
+      { "op": "textFormat", "target": "vt-autotcy", "start": 0, "end": 27, "props": { "autoTcy": 2 } },
+      { "op": "textFormat", "target": "vt-autotcy", "start": 28, "end": 41, "props": { "autoTcy": 3, "autoTcyIncludeRoman": true } }
+    ] },
+    { "name": "vt2-punct-show", "text": true, "steps": [
+      { "op": "textFormat", "target": "vt-punct", "start": 0, "end": 71, "props": { "fillColor": "Color/Black" } }
+    ] }
+  ]
+}

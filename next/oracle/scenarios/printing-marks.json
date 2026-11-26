@@ -1,0 +1,135 @@
+{
+ "fixture": "printing",
+ "extension": "printing",
+ "comparison": "printing",
+ "scenarios": [
+  {
+   "name": "printing-marks-crop",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "cropMarks": true
+    }
+   }
+  },
+  {
+   "name": "printing-marks-reg",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "registrationMarks": true
+    }
+   }
+  },
+  {
+   "name": "printing-marks-bleedmarks",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "bleedMarks": true
+    }
+   }
+  },
+  {
+   "name": "printing-marks-offset",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "cropMarks": true,
+     "registrationMarks": true,
+     "markOffset": 12,
+     "markLineWeight": "P50PT"
+    }
+   }
+  },
+  {
+   "name": "printing-marks-spread",
+   "steps": [],
+   "options": {
+    "range": "+2",
+    "marks": {
+     "cropMarks": true,
+     "registrationMarks": true
+    },
+    "spreads": true
+   }
+  },
+  {
+   "name": "printing-marks-info",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "pageInformationMarks": true
+    }
+   }
+  },
+  {
+   "name": "printing-marks-reg-offset",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "registrationMarks": true,
+     "markOffset": 12
+    }
+   }
+  },
+  {
+   "name": "printing-marks-info-offset",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "pageInformationMarks": true,
+     "markOffset": 12
+    }
+   }
+  },
+  {
+   "name": "printing-marks-crop-info",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "cropMarks": true,
+     "pageInformationMarks": true
+    }
+   }
+  },
+  {
+   "name": "printing-bleed-custom",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "useDocumentBleedToPrint": false,
+     "bleedTop": 3,
+     "bleedBottom": 5,
+     "bleedInside": 7,
+     "bleedOutside": 11
+    }
+   }
+  },
+  {
+   "name": "printing-bleed-custom-marks",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "useDocumentBleedToPrint": false,
+     "bleedTop": 3,
+     "bleedBottom": 5,
+     "bleedInside": 7,
+     "bleedOutside": 11,
+     "cropMarks": true,
+     "bleedMarks": true
+    }
+   }
+  }
+ ]
+}

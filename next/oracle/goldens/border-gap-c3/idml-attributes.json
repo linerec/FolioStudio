@@ -1,0 +1,139 @@
+[
+ {
+  "name": "B0",
+  "border": {
+   "ParagraphBorderOn": "true"
+  },
+  "props": []
+ },
+ {
+  "name": "B1",
+  "border": {
+   "ParagraphBorderOn": "true",
+   "ParagraphBorderGapTint": "60",
+   "ParagraphBorderLeftOffset": "6",
+   "ParagraphBorderRightOffset": "6",
+   "ParagraphBorderTopOffset": "6",
+   "ParagraphBorderBottomOffset": "6",
+   "ParagraphBorderTopLineWeight": "4",
+   "ParagraphBorderBottomLineWeight": "4",
+   "ParagraphBorderLeftLineWeight": "4",
+   "ParagraphBorderRightLineWeight": "4"
+  },
+  "props": [
+   [
+    "ParagraphBorderGapColor",
+    "Color/GapRed"
+   ]
+  ]
+ },
+ {
+  "name": "B2",
+  "border": {
+   "ParagraphBorderOn": "true",
+   "ParagraphBorderGapTint": "61",
+   "ParagraphBorderGapOverprint": "true",
+   "ParagraphBorderLeftOffset": "6",
+   "ParagraphBorderRightOffset": "6",
+   "ParagraphBorderTopOffset": "6",
+   "ParagraphBorderBottomOffset": "6",
+   "ParagraphBorderTopLineWeight": "4",
+   "ParagraphBorderBottomLineWeight": "4",
+   "ParagraphBorderLeftLineWeight": "4",
+   "ParagraphBorderRightLineWeight": "4"
+  },
+  "props": [
+   [
+    "ParagraphBorderGapColor",
+    "Color/GapRed"
+   ],
+   [
+    "ParagraphBorderType",
+    "StrokeStyle/$ID/Dashed"
+   ]
+  ]
+ },
+ {
+  "name": "B3",
+  "border": {
+   "ParagraphBorderOn": "true",
+   "ParagraphBorderGapTint": "62",
+   "ParagraphBorderLeftOffset": "6",
+   "ParagraphBorderRightOffset": "6",
+   "ParagraphBorderTopOffset": "6",
+   "ParagraphBorderBottomOffset": "6",
+   "ParagraphBorderTopLineWeight": "4",
+   "ParagraphBorderBottomLineWeight": "4",
+   "ParagraphBorderLeftLineWeight": "4",
+   "ParagraphBorderRightLineWeight": "4"
+  },
+  "props": [
+   [
+    "ParagraphBorderGapColor",
+    "Color/GapRed"
+   ],
+   [
+    "ParagraphBorderType",
+    "StrokeStyle/$ID/Canned Dotted"
+   ]
+  ]
+ },
+ {
+  "name": "B4",
+  "border": {
+   "ParagraphBorderOn": "true",
+   "ParagraphBorderGapTint": "63",
+   "ParagraphBorderGapOverprint": "true",
+   "ParagraphBorderLeftOffset": "6",
+   "ParagraphBorderRightOffset": "6",
+   "ParagraphBorderTopOffset": "6",
+   "ParagraphBorderBottomOffset": "6",
+   "ParagraphBorderTopLineWeight": "4",
+   "ParagraphBorderBottomLineWeight": "4",
+   "ParagraphBorderLeftLineWeight": "4",
+   "ParagraphBorderRightLineWeight": "4"
+  },
+  "props": [
+   [
+    "ParagraphBorderGapColor",
+    "Color/GapRed"
+   ],
+   [
+    "ParagraphBorderType",
+    "StrokeStyle/$ID/Japanese Dots"
+   ]
+  ]
+ },
+ {
+  "name": "B5",
+  "border": {
+   "ParagraphBorderOn": "true",
+   "ParagraphBorderGapTint": "64",
+   "ParagraphBorderLeftOffset": "6",
+   "ParagraphBorderRightOffset": "6",
+   "ParagraphBorderTopOffset": "6",
+   "ParagraphBorderBottomOffset": "6",
+   "ParagraphBorderTopLineWeight": "4",
+   "ParagraphBorderBottomLineWeight": "4",
+   "ParagraphBorderLeftLineWeight": "4",
+   "ParagraphBorderRightLineWeight": "4"
+  },
+  "props": [
+   [
+    "ParagraphBorderGapColor",
+    "Color/GapRed"
+   ],
+   [
+    "ParagraphBorderType",
+    "StrokeStyle/$ID/Wavy"
+   ]
+  ]
+ },
+ {
+  "name": "Zero",
+  "border": {
+   "ParagraphBorderOn": "true"
+  },
+  "props": []
+ }
+]

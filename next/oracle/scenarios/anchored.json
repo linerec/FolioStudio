@@ -1,0 +1,353 @@
+{
+  "fixture": "anchored",
+  "extension": "anchored",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "rules": []
+    },
+    {
+      "name": "anchor-center-point",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "anchorPoint": "CenterAnchor",
+            "anchorXoffset": 12,
+            "anchorYoffset": -9
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-page-reference",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "horizontalReferencePoint": "PageEdge",
+            "horizontalAlignment": "RightAlign",
+            "verticalReferencePoint": "TextFrame",
+            "verticalAlignment": "BottomAlign",
+            "anchorXoffset": 6,
+            "anchorYoffset": 8
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-pin-column",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "anchorYoffset": 500,
+            "pinPosition": true
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-lock-position",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "lockPosition": true,
+            "anchorYoffset": -6
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options",
+        "objects.anchored.locked-options"
+      ]
+    },
+    {
+      "name": "anchor-unlock-position",
+      "steps": [
+        {
+          "op": "set",
+          "target": "custom",
+          "props": {
+            "locked": true
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "lockPosition": false
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.locked-options"
+      ]
+    },
+    {
+      "name": "anchor-locked-options",
+      "steps": [
+        {
+          "op": "set",
+          "target": "custom",
+          "props": {
+            "locked": true
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "anchorYoffset": 8
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.locked-options"
+      ]
+    },
+    {
+      "name": "anchor-locked-release",
+      "steps": [
+        {
+          "op": "set",
+          "target": "custom",
+          "props": {
+            "locked": true
+          }
+        },
+        {
+          "op": "releaseAnchoredObject",
+          "target": "custom"
+        }
+      ],
+      "rules": [
+        "objects.anchored.release"
+      ]
+    },
+    {
+      "name": "anchor-overset-release",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "text",
+          "size": [
+            288,
+            25
+          ]
+        },
+        {
+          "op": "releaseAnchoredObject",
+          "target": "custom"
+        }
+      ],
+      "rules": [
+        "objects.anchored.release"
+      ]
+    },
+    {
+      "name": "anchor-frame-locked-options",
+      "steps": [
+        {
+          "op": "set",
+          "target": "text",
+          "props": {
+            "locked": true
+          }
+        },
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "anchorYoffset": 8
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.locked-options"
+      ]
+    },
+    {
+      "name": "anchor-to-custom",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "inline",
+          "props": {
+            "anchoredPosition": "Anchored"
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-to-inline",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "anchoredPosition": "InlinePosition"
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-insert-above",
+      "steps": [
+        {
+          "op": "insertAnchoredObject",
+          "target": "text",
+          "at": 10,
+          "width": 24,
+          "height": 18,
+          "position": "AboveLine",
+          "label": "inserted"
+        }
+      ],
+      "rules": [
+        "objects.anchored.insert"
+      ]
+    },
+    {
+      "name": "anchor-insert-custom",
+      "steps": [
+        {
+          "op": "insertAnchoredObject",
+          "target": "text",
+          "at": 10,
+          "width": 24,
+          "height": 18,
+          "position": "Anchored",
+          "label": "inserted"
+        }
+      ],
+      "rules": [
+        "objects.anchored.insert"
+      ]
+    },
+    {
+      "name": "anchor-release-inline",
+      "steps": [
+        {
+          "op": "releaseAnchoredObject",
+          "target": "inline"
+        }
+      ],
+      "rules": [
+        "objects.anchored.release"
+      ]
+    },
+    {
+      "name": "anchor-release-above",
+      "steps": [
+        {
+          "op": "releaseAnchoredObject",
+          "target": "above"
+        }
+      ],
+      "rules": [
+        "objects.anchored.release"
+      ]
+    },
+    {
+      "name": "anchor-release-custom",
+      "steps": [
+        {
+          "op": "releaseAnchoredObject",
+          "target": "custom"
+        }
+      ],
+      "rules": [
+        "objects.anchored.release"
+      ]
+    },
+    {
+      "name": "anchor-insert-inline",
+      "steps": [
+        {
+          "op": "insertAnchoredObject",
+          "target": "text",
+          "at": 10,
+          "width": 24,
+          "height": 18,
+          "position": "InlinePosition",
+          "label": "inserted"
+        }
+      ],
+      "rules": [
+        "objects.anchored.insert"
+      ]
+    },
+    {
+      "name": "anchor-inline-offset",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "inline",
+          "props": {
+            "anchorYoffset": 6
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-above-options",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "above",
+          "props": {
+            "anchorSpaceAbove": 7,
+            "anchorYoffset": 4,
+            "horizontalAlignment": "CenterAlign"
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    },
+    {
+      "name": "anchor-custom-options",
+      "steps": [
+        {
+          "op": "setAnchoredObject",
+          "target": "custom",
+          "props": {
+            "anchorXoffset": -12,
+            "anchorYoffset": 9,
+            "spineRelative": true,
+            "pinPosition": false
+          }
+        }
+      ],
+      "rules": [
+        "objects.anchored.options"
+      ]
+    }
+  ]
+}

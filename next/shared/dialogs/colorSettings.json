@@ -1,0 +1,55 @@
+{
+  "title": "색상 설정",
+  "scope": "app",
+  "target": "none",
+  "defaults": "userPreferences:colorSettings.",
+  "className": "color-settings-dialog",
+  "description": "Edit > Color Settings (an app dialog): the working spaces (colour profiles installed on this computer; Folio bundles none), the colour management policies, the engine, intent, black point compensation and Lab spots. It starts from the app settings (preferences colorSettings.*); applying saves them all (userSettings values colorSettings.<field>). The open document's colours do not change.",
+  "note": "작업 공간과 색상 관리 정책을 저장합니다. 현재 문서의 색상은 바뀌지 않습니다.",
+  "fields": [
+    { "name": "workingSpaceRGB", "label": "RGB", "type": "choice", "source": "rgbProfiles", "default": "sRGB IEC61966-2.1", "group": "작업 공간" },
+    { "name": "workingSpaceCMYK", "label": "CMYK", "type": "choice", "source": "cmykProfiles", "default": "U.S. Web Coated (SWOP) v2", "group": "작업 공간" },
+    { "name": "enableColorManagement", "label": "색상 관리 사용", "type": "boolean", "default": true, "group": "색상 관리 정책" },
+    { "name": "rgbPolicy", "label": "RGB", "type": "enum", "default": "PRESERVE_EMBEDDED_PROFILES", "group": "색상 관리 정책",
+      "options": [
+        { "value": "COLOR_POLICY_OFF", "label": "끄기" },
+        { "value": "PRESERVE_EMBEDDED_PROFILES", "label": "포함된 프로필 유지" },
+        { "value": "CONVERT_TO_WORKING_SPACE", "label": "작업 공간으로 변환" }
+      ] },
+    { "name": "cmykPolicy", "label": "CMYK", "type": "enum", "default": "COMBINATION_OF_PRESERVE_AND_SAFE_CMYK", "group": "색상 관리 정책",
+      "options": [
+        { "value": "COLOR_POLICY_OFF", "label": "끄기" },
+        { "value": "PRESERVE_EMBEDDED_PROFILES", "label": "포함된 프로필 유지" },
+        { "value": "CONVERT_TO_WORKING_SPACE", "label": "작업 공간으로 변환" },
+        { "value": "COMBINATION_OF_PRESERVE_AND_SAFE_CMYK", "label": "수치 유지 (연결된 프로필 무시)" }
+      ] },
+    { "name": "mismatchAskWhenOpening", "label": "프로필 불일치: 열 때 확인", "type": "boolean", "default": false, "group": "색상 관리 정책" },
+    { "name": "mismatchAskWhenPasting", "label": "프로필 불일치: 붙일 때 확인", "type": "boolean", "default": false, "group": "색상 관리 정책" },
+    { "name": "missingAskWhenOpening", "label": "누락된 프로필: 열 때 확인", "type": "boolean", "default": false, "group": "색상 관리 정책" },
+    { "name": "engine", "label": "엔진", "type": "enum", "default": "Adobe (ACE)", "group": "변환 옵션",
+      "options": [
+        { "value": "Adobe (ACE)", "label": "ACE", "native": true },
+        { "value": "Microsoft ICM", "label": "Microsoft ICM", "native": true }
+      ] },
+    { "name": "intent", "label": "렌더링 의도", "type": "enum", "default": "RELATIVE_COLORIMETRIC", "group": "변환 옵션",
+      "options": [
+        { "value": "PERCEPTUAL", "label": "가시 범위" },
+        { "value": "SATURATION", "label": "채도" },
+        { "value": "RELATIVE_COLORIMETRIC", "label": "상대 색도계" },
+        { "value": "ABSOLUTE_COLORIMETRIC", "label": "절대 색도계" }
+      ] },
+    { "name": "useBPC", "label": "검정 점 보정 사용", "type": "boolean", "default": true, "group": "변환 옵션" },
+    { "name": "accurateLABSpots", "label": "별색에 표준 Lab 값 사용", "type": "boolean", "default": false, "group": "변환 옵션" }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "userSettings", "values": {
+        "colorSettings.workingSpaceRGB": "$workingSpaceRGB", "colorSettings.workingSpaceCMYK": "$workingSpaceCMYK",
+        "colorSettings.enableColorManagement": "$enableColorManagement", "colorSettings.rgbPolicy": "$rgbPolicy", "colorSettings.cmykPolicy": "$cmykPolicy",
+        "colorSettings.mismatchAskWhenOpening": "$mismatchAskWhenOpening", "colorSettings.mismatchAskWhenPasting": "$mismatchAskWhenPasting",
+        "colorSettings.missingAskWhenOpening": "$missingAskWhenOpening", "colorSettings.engine": "$engine", "colorSettings.intent": "$intent",
+        "colorSettings.useBPC": "$useBPC", "colorSettings.accurateLABSpots": "$accurateLABSpots"
+      } }
+    ]
+  }
+}

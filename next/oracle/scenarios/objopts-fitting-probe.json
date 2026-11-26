@@ -1,0 +1,55 @@
+{
+  "fixture": "basic",
+  "extension": "objopts",
+  "scenarios": [
+    {
+      "name": "oo-fitting-crop",
+      "steps": [
+        {
+          "op": "setFrameFitting",
+          "target": "img",
+          "props": {
+            "leftCrop": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "oo-fitting-anchor",
+      "steps": [
+        {
+          "op": "setFrameFitting",
+          "target": "img",
+          "props": {
+            "fittingAlignment": "TopLeftAnchor",
+            "fittingOnEmptyFrame": "FillProportionally"
+          }
+        }
+      ]
+    },
+    {
+      "name": "oo-fitting-mode",
+      "steps": [
+        {
+          "op": "setFrameFitting",
+          "target": "img",
+          "props": {
+            "fittingOnEmptyFrame": "Proportionally"
+          }
+        }
+      ]
+    },
+    {
+      "name": "oo-fitting-auto",
+      "steps": [
+        {
+          "op": "setFrameFitting",
+          "target": "img",
+          "props": {
+            "autoFit": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3509 @@
+[
+{
+"id": "lit-000",
+"group": "lit",
+"pattern": "abc",
+"text": "abc ABC abcabc"
+},
+{
+"id": "lit-001",
+"group": "lit",
+"pattern": "a\\.c",
+"text": "a.c abc"
+},
+{
+"id": "lit-002",
+"group": "lit",
+"pattern": "\\(x\\)",
+"text": "(x) x"
+},
+{
+"id": "lit-003",
+"group": "lit",
+"pattern": "a\\*",
+"text": "a* aa"
+},
+{
+"id": "lit-004",
+"group": "lit",
+"pattern": "a\\\\b",
+"text": "a\\b ab"
+},
+{
+"id": "lit-005",
+"group": "lit",
+"pattern": "a\\/b",
+"text": "a/b"
+},
+{
+"id": "lit-006",
+"group": "lit",
+"pattern": "a\\-b",
+"text": "a-b"
+},
+{
+"id": "lit-007",
+"group": "lit",
+"pattern": "a\\ b",
+"text": "a b"
+},
+{
+"id": "lit-008",
+"group": "lit",
+"pattern": "a b",
+"text": "a b"
+},
+{
+"id": "lit-009",
+"group": "lit",
+"pattern": "a.c",
+"text": "a.c abc a\nc a\rc"
+},
+{
+"id": "lit-010",
+"group": "lit",
+"pattern": "\\t",
+"text": "a\tb c"
+},
+{
+"id": "lit-011",
+"group": "lit",
+"pattern": "\\n",
+"text": "a\nb"
+},
+{
+"id": "lit-012",
+"group": "lit",
+"pattern": "\\r",
+"text": "a\rb"
+},
+{
+"id": "lit-013",
+"group": "lit",
+"pattern": "\\x41",
+"text": "A a"
+},
+{
+"id": "lit-014",
+"group": "lit",
+"pattern": "\\x{41}",
+"text": "A a"
+},
+{
+"id": "lit-015",
+"group": "lit",
+"pattern": "\\x{3042}",
+"text": "\u3042\u3044\u3046"
+},
+{
+"id": "lit-016",
+"group": "lit",
+"pattern": "\\u0041",
+"text": "A a 0041"
+},
+{
+"id": "lit-017",
+"group": "lit",
+"pattern": "\\x{AC00}+",
+"text": "\uac00\ub098\ub2e4 \uac01"
+},
+{
+"id": "lit-018",
+"group": "lit",
+"pattern": "\\e",
+"text": "a\u001bb"
+},
+{
+"id": "lit-019",
+"group": "lit",
+"pattern": "\\f",
+"text": "a\fb"
+},
+{
+"id": "lit-020",
+"group": "lit",
+"pattern": "\\a",
+"text": "a\u0007b"
+},
+{
+"id": "lit-021",
+"group": "lit",
+"pattern": "a{",
+"text": "a{ a"
+},
+{
+"id": "lit-022",
+"group": "lit",
+"pattern": "}",
+"text": "a}"
+},
+{
+"id": "lit-023",
+"group": "lit",
+"pattern": "a]",
+"text": "a]"
+},
+{
+"id": "lit-024",
+"group": "lit",
+"pattern": "-",
+"text": "a-b"
+},
+{
+"id": "shorthand-025",
+"group": "shorthand",
+"pattern": ".",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-026",
+"group": "shorthand",
+"pattern": ".+",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-027",
+"group": "shorthand",
+"pattern": "\\d",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-028",
+"group": "shorthand",
+"pattern": "\\D",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-029",
+"group": "shorthand",
+"pattern": "\\w",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-030",
+"group": "shorthand",
+"pattern": "\\W",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-031",
+"group": "shorthand",
+"pattern": "\\s",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-032",
+"group": "shorthand",
+"pattern": "\\S",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-033",
+"group": "shorthand",
+"pattern": "\\l",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-034",
+"group": "shorthand",
+"pattern": "\\L",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-035",
+"group": "shorthand",
+"pattern": "\\u",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-036",
+"group": "shorthand",
+"pattern": "\\U",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-037",
+"group": "shorthand",
+"pattern": "\\h",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-038",
+"group": "shorthand",
+"pattern": "\\H",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-039",
+"group": "shorthand",
+"pattern": "\\v",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-040",
+"group": "shorthand",
+"pattern": "\\R",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-041",
+"group": "shorthand",
+"pattern": "\\N",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-042",
+"group": "shorthand",
+"pattern": "\\X",
+"text": "Ab1 _x-y \u00e9 \u00c9 \uac00 \uff13 \u00a0\u3000\t."
+},
+{
+"id": "shorthand-043",
+"group": "shorthand",
+"pattern": ".",
+"text": "a\nb\rc\u2028d"
+},
+{
+"id": "shorthand-044",
+"group": "shorthand",
+"pattern": "\\d+",
+"text": "x12 \u0663\u0664 \uff13\uff14 5"
+},
+{
+"id": "shorthand-045",
+"group": "shorthand",
+"pattern": "\\w+",
+"text": "abc_1 \uac00\ub098 \u00e9-\u00fc"
+},
+{
+"id": "shorthand-046",
+"group": "shorthand",
+"pattern": "\\s+",
+"text": "a b\tc\u00a0d\u3000e\u2009f"
+},
+{
+"id": "shorthand-047",
+"group": "shorthand",
+"pattern": "\\u+",
+"text": "ABC \u00c9a \u00c0\u00c9"
+},
+{
+"id": "shorthand-048",
+"group": "shorthand",
+"pattern": "\\l+",
+"text": "abc \u00e9a \u00e0\u00e9"
+},
+{
+"id": "class-049",
+"group": "class",
+"pattern": "[[:alpha:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-050",
+"group": "class",
+"pattern": "[[:alnum:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-051",
+"group": "class",
+"pattern": "[[:digit:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-052",
+"group": "class",
+"pattern": "[[:upper:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-053",
+"group": "class",
+"pattern": "[[:lower:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-054",
+"group": "class",
+"pattern": "[[:punct:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-055",
+"group": "class",
+"pattern": "[[:space:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-056",
+"group": "class",
+"pattern": "[[:blank:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-057",
+"group": "class",
+"pattern": "[[:xdigit:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-058",
+"group": "class",
+"pattern": "[[:word:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-059",
+"group": "class",
+"pattern": "[[:print:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-060",
+"group": "class",
+"pattern": "[[:graph:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-061",
+"group": "class",
+"pattern": "[[:cntrl:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-062",
+"group": "class",
+"pattern": "[[:^alpha:]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-063",
+"group": "class",
+"pattern": "[[:alpha:][:digit:]]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-064",
+"group": "class",
+"pattern": "[abc]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-065",
+"group": "class",
+"pattern": "[^abc]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-066",
+"group": "class",
+"pattern": "[a-c]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-067",
+"group": "class",
+"pattern": "[^a-c ]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-068",
+"group": "class",
+"pattern": "[\\d.]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-069",
+"group": "class",
+"pattern": "[\\w-]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-070",
+"group": "class",
+"pattern": "[\\l\\d]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-071",
+"group": "class",
+"pattern": "[\\u\\d]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-072",
+"group": "class",
+"pattern": "[\\s]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-073",
+"group": "class",
+"pattern": "[a-c&&[^b]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-074",
+"group": "class",
+"pattern": "[a-c&&b-d]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-075",
+"group": "class",
+"pattern": "[[a-b][x-z]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-076",
+"group": "class",
+"pattern": "[]a]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-077",
+"group": "class",
+"pattern": "[a\\]]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-078",
+"group": "class",
+"pattern": "[\\x41-\\x43]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-079",
+"group": "class",
+"pattern": "[-a]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-080",
+"group": "class",
+"pattern": "[a-]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-081",
+"group": "class",
+"pattern": "[\\p{Lu}]",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-082",
+"group": "class",
+"pattern": "[^\\p{L}]+",
+"text": "aB3 _.,! \u00e9\uac00 \rabc bcd xyz]"
+},
+{
+"id": "class-083",
+"group": "class",
+"pattern": "[[:alpha:]]+",
+"text": "\ud55c\uae00 abc \u00e9"
+},
+{
+"id": "quant-084",
+"group": "quant",
+"pattern": "a*",
+"text": "baaac"
+},
+{
+"id": "quant-085",
+"group": "quant",
+"pattern": "a+",
+"text": "baaac aa"
+},
+{
+"id": "quant-086",
+"group": "quant",
+"pattern": "a?",
+"text": "baac"
+},
+{
+"id": "quant-087",
+"group": "quant",
+"pattern": "a{2}",
+"text": "aaaaa"
+},
+{
+"id": "quant-088",
+"group": "quant",
+"pattern": "a{2,}",
+"text": "a aa aaaa"
+},
+{
+"id": "quant-089",
+"group": "quant",
+"pattern": "a{1,2}",
+"text": "aaaaa"
+},
+{
+"id": "quant-090",
+"group": "quant",
+"pattern": "a{,2}",
+"text": "aaaaa"
+},
+{
+"id": "quant-091",
+"group": "quant",
+"pattern": "a{0,1}b",
+"text": "aab b"
+},
+{
+"id": "quant-092",
+"group": "quant",
+"pattern": "a+?",
+"text": "aaa"
+},
+{
+"id": "quant-093",
+"group": "quant",
+"pattern": "a*?b",
+"text": "aaab"
+},
+{
+"id": "quant-094",
+"group": "quant",
+"pattern": "a??b",
+"text": "ab"
+},
+{
+"id": "quant-095",
+"group": "quant",
+"pattern": "a{1,2}?",
+"text": "aaaa"
+},
+{
+"id": "quant-096",
+"group": "quant",
+"pattern": "a{2}?",
+"text": "aaaa"
+},
+{
+"id": "quant-097",
+"group": "quant",
+"pattern": "a++a",
+"text": "aaaa"
+},
+{
+"id": "quant-098",
+"group": "quant",
+"pattern": "a*+a",
+"text": "aaaa"
+},
+{
+"id": "quant-099",
+"group": "quant",
+"pattern": "a?+a",
+"text": "aa"
+},
+{
+"id": "quant-100",
+"group": "quant",
+"pattern": "a++b",
+"text": "aaab"
+},
+{
+"id": "quant-101",
+"group": "quant",
+"pattern": "(ab)++",
+"text": "ababab"
+},
+{
+"id": "quant-102",
+"group": "quant",
+"pattern": "(?:ab)*",
+"text": "ababc"
+},
+{
+"id": "quant-103",
+"group": "quant",
+"pattern": ".*",
+"text": "abc def"
+},
+{
+"id": "quant-104",
+"group": "quant",
+"pattern": ".*?c",
+"text": "abcabc"
+},
+{
+"id": "quant-105",
+"group": "quant",
+"pattern": ".+?",
+"text": "ab"
+},
+{
+"id": "quant-106",
+"group": "quant",
+"pattern": "b*",
+"text": "abba"
+},
+{
+"id": "quant-107",
+"group": "quant",
+"pattern": "x*",
+"text": "yy"
+},
+{
+"id": "group-108",
+"group": "group",
+"pattern": "(ab)+",
+"text": "ababab ab"
+},
+{
+"id": "group-109",
+"group": "group",
+"pattern": "(?:ab)+",
+"text": "ababab ab"
+},
+{
+"id": "group-110",
+"group": "group",
+"pattern": "(a)(b)",
+"text": "ab"
+},
+{
+"id": "group-111",
+"group": "group",
+"pattern": "a|b",
+"text": "abc"
+},
+{
+"id": "group-112",
+"group": "group",
+"pattern": "ab|cd",
+"text": "abcd"
+},
+{
+"id": "group-113",
+"group": "group",
+"pattern": "a(b|c)d",
+"text": "abd acd aed"
+},
+{
+"id": "group-114",
+"group": "group",
+"pattern": "(?i)abc",
+"text": "ABC abc"
+},
+{
+"id": "group-115",
+"group": "group",
+"pattern": "a(?i)bc",
+"text": "aBC ABC"
+},
+{
+"id": "group-116",
+"group": "group",
+"pattern": "(?i)a(?-i)b",
+"text": "aB AB Ab ab"
+},
+{
+"id": "group-117",
+"group": "group",
+"pattern": "(?i:a)b",
+"text": "Ab AB"
+},
+{
+"id": "group-118",
+"group": "group",
+"pattern": "(?i)\\u",
+"text": "aB"
+},
+{
+"id": "group-119",
+"group": "group",
+"pattern": "(?i)[a-c]+",
+"text": "AbC"
+},
+{
+"id": "group-120",
+"group": "group",
+"pattern": "(?i)\u00e9",
+"text": "\u00c9 \u00e9"
+},
+{
+"id": "group-121",
+"group": "group",
+"pattern": "(?i)\u00df",
+"text": "SS \u00df"
+},
+{
+"id": "group-122",
+"group": "group",
+"pattern": "(?s).",
+"text": "a\nb"
+},
+{
+"id": "group-123",
+"group": "group",
+"pattern": "(?s)a.b",
+"text": "a\nb"
+},
+{
+"id": "group-124",
+"group": "group",
+"pattern": "(?m)^b",
+"text": "a\rb"
+},
+{
+"id": "group-125",
+"group": "group",
+"pattern": "(?x) a b ",
+"text": "ab a b"
+},
+{
+"id": "group-126",
+"group": "group",
+"pattern": "(?x)a # c\nb",
+"text": "ab"
+},
+{
+"id": "group-127",
+"group": "group",
+"pattern": "(?<n>a)b",
+"text": "ab"
+},
+{
+"id": "group-128",
+"group": "group",
+"pattern": "(?P<n>a)b",
+"text": "ab"
+},
+{
+"id": "group-129",
+"group": "group",
+"pattern": "(?>a+)b",
+"text": "aaab"
+},
+{
+"id": "group-130",
+"group": "group",
+"pattern": "(?>a+)a",
+"text": "aaaa"
+},
+{
+"id": "group-131",
+"group": "group",
+"pattern": "()",
+"text": "ab"
+},
+{
+"id": "group-132",
+"group": "group",
+"pattern": "(a)|b",
+"text": "ab"
+},
+{
+"id": "group-133",
+"group": "group",
+"pattern": "a||b",
+"text": "ab"
+},
+{
+"id": "group-134",
+"group": "group",
+"pattern": "(|a)b",
+"text": "ab"
+},
+{
+"id": "group-135",
+"group": "group",
+"pattern": "(?#comment)a",
+"text": "a"
+},
+{
+"id": "group-136",
+"group": "group",
+"pattern": "(?i",
+"text": "a"
+},
+{
+"id": "group-137",
+"group": "group",
+"pattern": "(a",
+"text": "a"
+},
+{
+"id": "group-138",
+"group": "group",
+"pattern": "a)",
+"text": "a"
+},
+{
+"id": "group-139",
+"group": "group",
+"pattern": "*a",
+"text": "a"
+},
+{
+"id": "group-140",
+"group": "group",
+"pattern": "a**",
+"text": "a"
+},
+{
+"id": "look-141",
+"group": "look",
+"pattern": "a(?=b)",
+"text": "ab ac a"
+},
+{
+"id": "look-142",
+"group": "look",
+"pattern": "a(?!b)",
+"text": "ab ac a"
+},
+{
+"id": "look-143",
+"group": "look",
+"pattern": "(?<=a)b",
+"text": "ab cb b"
+},
+{
+"id": "look-144",
+"group": "look",
+"pattern": "(?<!a)b",
+"text": "ab cb b"
+},
+{
+"id": "look-145",
+"group": "look",
+"pattern": "(?<=ab)c",
+"text": "abc xbc"
+},
+{
+"id": "look-146",
+"group": "look",
+"pattern": "(?<=a|bc)d",
+"text": "ad bcd xd"
+},
+{
+"id": "look-147",
+"group": "look",
+"pattern": "(?<=a+)b",
+"text": "aab"
+},
+{
+"id": "look-148",
+"group": "look",
+"pattern": "(?<=a*)b",
+"text": "aab"
+},
+{
+"id": "look-149",
+"group": "look",
+"pattern": "(?<=a{1,2})b",
+"text": "aab"
+},
+{
+"id": "look-150",
+"group": "look",
+"pattern": "(?=a)",
+"text": "a"
+},
+{
+"id": "look-151",
+"group": "look",
+"pattern": "(?=.*x)a",
+"text": "ax a"
+},
+{
+"id": "look-152",
+"group": "look",
+"pattern": "\\w+(?= x)",
+"text": "ab x cd y"
+},
+{
+"id": "look-153",
+"group": "look",
+"pattern": "(?<=^)a",
+"text": "a"
+},
+{
+"id": "look-154",
+"group": "look",
+"pattern": "(?<=\\s)\\w+",
+"text": "ab cd ef"
+},
+{
+"id": "look-155",
+"group": "look",
+"pattern": "(?<![a-z])\\d+",
+"text": "a12 12 b3 7"
+},
+{
+"id": "look-156",
+"group": "look",
+"pattern": "\\d+(?!\\d)",
+"text": "123"
+},
+{
+"id": "look-157",
+"group": "look",
+"pattern": "(?<=\\()\\d+(?=\\))",
+"text": "(12) 34"
+},
+{
+"id": "look-158",
+"group": "look",
+"pattern": "(?<=a)(?<=b)c",
+"text": "abc"
+},
+{
+"id": "look-159",
+"group": "look",
+"pattern": "(?<=(a))b",
+"text": "ab"
+},
+{
+"id": "look-160",
+"group": "look",
+"pattern": "(?<=\\b)a",
+"text": "a ba"
+},
+{
+"id": "look-161",
+"group": "look",
+"pattern": "(?=a)a(?!b)",
+"text": "aab"
+},
+{
+"id": "backref-162",
+"group": "backref",
+"pattern": "(a)\\1",
+"text": "aa ab"
+},
+{
+"id": "backref-163",
+"group": "backref",
+"pattern": "(\\w)\\1",
+"text": "aabbc"
+},
+{
+"id": "backref-164",
+"group": "backref",
+"pattern": "(a)(b)\\2\\1",
+"text": "abba ab"
+},
+{
+"id": "backref-165",
+"group": "backref",
+"pattern": "(?<x>a)\\k<x>",
+"text": "aa ab"
+},
+{
+"id": "backref-166",
+"group": "backref",
+"pattern": "(a)|\\1",
+"text": "a"
+},
+{
+"id": "backref-167",
+"group": "backref",
+"pattern": "\\1(a)",
+"text": "aa"
+},
+{
+"id": "backref-168",
+"group": "backref",
+"pattern": "(a)\\2",
+"text": "aa"
+},
+{
+"id": "backref-169",
+"group": "backref",
+"pattern": "(?i)(a)\\1",
+"text": "aA aa"
+},
+{
+"id": "backref-170",
+"group": "backref",
+"pattern": "(\\w+) \\1",
+"text": "the the cat cat dog"
+},
+{
+"id": "backref-171",
+"group": "backref",
+"pattern": "(a*)\\1",
+"text": "aaaa"
+},
+{
+"id": "backref-172",
+"group": "backref",
+"pattern": "(a)(?:b)\\1",
+"text": "aba"
+},
+{
+"id": "backref-173",
+"group": "backref",
+"pattern": "(a)\\10",
+"text": "aa0"
+},
+{
+"id": "backref-174",
+"group": "backref",
+"pattern": "(a)\\0",
+"text": "a"
+},
+{
+"id": "backref-175",
+"group": "backref",
+"pattern": "(.)\\1\\1",
+"text": "aaab"
+},
+{
+"id": "anchor-176",
+"group": "anchor",
+"pattern": "^a",
+"text": "ab\rab\rba"
+},
+{
+"id": "anchor-177",
+"group": "anchor",
+"pattern": "a$",
+"text": "ba\rab\rba"
+},
+{
+"id": "anchor-178",
+"group": "anchor",
+"pattern": "^",
+"text": "ab"
+},
+{
+"id": "anchor-179",
+"group": "anchor",
+"pattern": "$",
+"text": "ab"
+},
+{
+"id": "anchor-180",
+"group": "anchor",
+"pattern": "^$",
+"text": "\ra\r"
+},
+{
+"id": "anchor-181",
+"group": "anchor",
+"pattern": "\\ba",
+"text": "a ba b-a"
+},
+{
+"id": "anchor-182",
+"group": "anchor",
+"pattern": "a\\b",
+"text": "a ab a-b"
+},
+{
+"id": "anchor-183",
+"group": "anchor",
+"pattern": "\\Ba",
+"text": "a ba"
+},
+{
+"id": "anchor-184",
+"group": "anchor",
+"pattern": "a\\B",
+"text": "a ab a b"
+},
+{
+"id": "anchor-185",
+"group": "anchor",
+"pattern": "\\Aa",
+"text": "a\ra"
+},
+{
+"id": "anchor-186",
+"group": "anchor",
+"pattern": "a\\Z",
+"text": "a\ra"
+},
+{
+"id": "anchor-187",
+"group": "anchor",
+"pattern": "a\\z",
+"text": "a\ra"
+},
+{
+"id": "anchor-188",
+"group": "anchor",
+"pattern": "^a",
+"text": "a\nb\na"
+},
+{
+"id": "anchor-189",
+"group": "anchor",
+"pattern": "a$",
+"text": "a\nb\na"
+},
+{
+"id": "anchor-190",
+"group": "anchor",
+"pattern": "(?m)^a",
+"text": "a\nb\na"
+},
+{
+"id": "anchor-191",
+"group": "anchor",
+"pattern": "(?m)a$",
+"text": "a\nb\na"
+},
+{
+"id": "anchor-192",
+"group": "anchor",
+"pattern": "^\\w+",
+"text": "ab cd"
+},
+{
+"id": "anchor-193",
+"group": "anchor",
+"pattern": "\\w+$",
+"text": "ab cd"
+},
+{
+"id": "anchor-194",
+"group": "anchor",
+"pattern": "\\<a",
+"text": "a ba"
+},
+{
+"id": "anchor-195",
+"group": "anchor",
+"pattern": "a\\>",
+"text": "a ab"
+},
+{
+"id": "anchor-196",
+"group": "anchor",
+"pattern": "\\Ga",
+"text": "aab"
+},
+{
+"id": "anchor-197",
+"group": "anchor",
+"pattern": "\\b\u00e9",
+"text": "a\u00e9 \u00e9"
+},
+{
+"id": "anchor-198",
+"group": "anchor",
+"pattern": "\\b\uac00",
+"text": "\uac00 a\uac00"
+},
+{
+"id": "anchor-199",
+"group": "anchor",
+"pattern": "^~m",
+"text": "\u2003a"
+},
+{
+"id": "anchor-200",
+"group": "anchor",
+"pattern": "\\bx",
+"text": "\uac00x x"
+},
+{
+"id": "unicode-201",
+"group": "unicode",
+"pattern": "\\p{L}+",
+"text": "ab\uac00\u00e91"
+},
+{
+"id": "unicode-202",
+"group": "unicode",
+"pattern": "\\p{Lu}",
+"text": "aB\u00c9"
+},
+{
+"id": "unicode-203",
+"group": "unicode",
+"pattern": "\\p{Ll}",
+"text": "aB\u00e9"
+},
+{
+"id": "unicode-204",
+"group": "unicode",
+"pattern": "\\p{Nd}+",
+"text": "1\u0663\uff13a"
+},
+{
+"id": "unicode-205",
+"group": "unicode",
+"pattern": "\\p{N}",
+"text": "1\u00bda"
+},
+{
+"id": "unicode-206",
+"group": "unicode",
+"pattern": "\\p{P}",
+"text": "a,.!-"
+},
+{
+"id": "unicode-207",
+"group": "unicode",
+"pattern": "\\p{S}",
+"text": "a+$\u00a9"
+},
+{
+"id": "unicode-208",
+"group": "unicode",
+"pattern": "\\p{Z}",
+"text": "a b\u00a0"
+},
+{
+"id": "unicode-209",
+"group": "unicode",
+"pattern": "\\p{Zs}",
+"text": "a b\u00a0\t"
+},
+{
+"id": "unicode-210",
+"group": "unicode",
+"pattern": "\\p{Han}+",
+"text": "\u6f22\u5b57\u304b\u306a\ud55c\uae00"
+},
+{
+"id": "unicode-211",
+"group": "unicode",
+"pattern": "\\p{Hiragana}+",
+"text": "\u6f22\u5b57\u304b\u306a\u30ab\u30ca"
+},
+{
+"id": "unicode-212",
+"group": "unicode",
+"pattern": "\\p{Katakana}+",
+"text": "\u304b\u306a\u30ab\u30ca"
+},
+{
+"id": "unicode-213",
+"group": "unicode",
+"pattern": "\\p{Hangul}+",
+"text": "\ud55c\uae00ab"
+},
+{
+"id": "unicode-214",
+"group": "unicode",
+"pattern": "\\p{Latin}+",
+"text": "ab\uac00\u00e9"
+},
+{
+"id": "unicode-215",
+"group": "unicode",
+"pattern": "\\p{Cyrillic}+",
+"text": "ab\u0416\u0436"
+},
+{
+"id": "unicode-216",
+"group": "unicode",
+"pattern": "\\p{Greek}",
+"text": "ab\u03b1"
+},
+{
+"id": "unicode-217",
+"group": "unicode",
+"pattern": "\\P{L}+",
+"text": "ab1 2"
+},
+{
+"id": "unicode-218",
+"group": "unicode",
+"pattern": "\\p{IsGreek}",
+"text": "a\u03b1"
+},
+{
+"id": "unicode-219",
+"group": "unicode",
+"pattern": "\\p{Alphabetic}+",
+"text": "ab1\uac00"
+},
+{
+"id": "unicode-220",
+"group": "unicode",
+"pattern": "\\p{Uppercase}",
+"text": "aB"
+},
+{
+"id": "unicode-221",
+"group": "unicode",
+"pattern": "\\p{javaLowerCase}",
+"text": "aB"
+},
+{
+"id": "unicode-222",
+"group": "unicode",
+"pattern": "[\uac00-\ud7a3]+",
+"text": "\uac00\ub098 abc \ub2e4"
+},
+{
+"id": "unicode-223",
+"group": "unicode",
+"pattern": "[\u3041-\u3093]+",
+"text": "\u304b\u306a\u30ab\u30ca"
+},
+{
+"id": "unicode-224",
+"group": "unicode",
+"pattern": "[\u4e00-\u9fa5]+",
+"text": "\u6f22\u5b57\u304b\u306a"
+},
+{
+"id": "unicode-225",
+"group": "unicode",
+"pattern": "\\p{XYZ}",
+"text": "a"
+},
+{
+"id": "unicode-226",
+"group": "unicode",
+"pattern": "\\N{LATIN SMALL LETTER A}",
+"text": "a"
+},
+{
+"id": "korean-227",
+"group": "korean",
+"pattern": "\\w+",
+"text": "\uc548\ub155 \ud558\uc138\uc694, abc"
+},
+{
+"id": "korean-228",
+"group": "korean",
+"pattern": "\\b\\w+\\b",
+"text": "\uc548\ub155 \ud558\uc138\uc694"
+},
+{
+"id": "korean-229",
+"group": "korean",
+"pattern": "\\l+",
+"text": "\uc548\ub155 abc"
+},
+{
+"id": "korean-230",
+"group": "korean",
+"pattern": "\\u+",
+"text": "\uc548\ub155 ABC"
+},
+{
+"id": "korean-231",
+"group": "korean",
+"pattern": "[[:alpha:]]+",
+"text": "\uc548\ub155 abc"
+},
+{
+"id": "korean-232",
+"group": "korean",
+"pattern": ".+",
+"text": "\uc548\ub155\ud558\uc138\uc694"
+},
+{
+"id": "korean-233",
+"group": "korean",
+"pattern": "\\S+",
+"text": "\uc548\ub155 \ud558\uc138\uc694"
+},
+{
+"id": "korean-234",
+"group": "korean",
+"pattern": "[^ ]+",
+"text": "\uc548\ub155 \ud558\uc138\uc694"
+},
+{
+"id": "korean-235",
+"group": "korean",
+"pattern": "\\d+",
+"text": "\uc81c3\ud68c 2026\ub144"
+},
+{
+"id": "korean-236",
+"group": "korean",
+"pattern": "\u300c[^\u300d]*\u300d",
+"text": "\uadf8\ub294 \u300c\uc548\ub155\u300d \ud558\uace0"
+},
+{
+"id": "korean-237",
+"group": "korean",
+"pattern": "([\uac00-\ud7a3]+)(\uc740|\ub294)",
+"text": "\ub098\ub294 \ucc45\uc740"
+},
+{
+"id": "code-238",
+"group": "code",
+"pattern": "~_",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-239",
+"group": "code",
+"pattern": "~=",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-240",
+"group": "code",
+"pattern": "~-",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-241",
+"group": "code",
+"pattern": "~~",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-242",
+"group": "code",
+"pattern": "~{",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-243",
+"group": "code",
+"pattern": "~}",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-244",
+"group": "code",
+"pattern": "~[",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-245",
+"group": "code",
+"pattern": "~]",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-246",
+"group": "code",
+"pattern": "~\"",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-247",
+"group": "code",
+"pattern": "~'",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-248",
+"group": "code",
+"pattern": "~m",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-249",
+"group": "code",
+"pattern": "~n",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-250",
+"group": "code",
+"pattern": "~N",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-251",
+"group": "code",
+"pattern": "~f",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-252",
+"group": "code",
+"pattern": "~s",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-253",
+"group": "code",
+"pattern": "~t",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-254",
+"group": "code",
+"pattern": "~S",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-255",
+"group": "code",
+"pattern": "~b",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-256",
+"group": "code",
+"pattern": "~|",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-257",
+"group": "code",
+"pattern": "~<",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-258",
+"group": "code",
+"pattern": "~>",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-259",
+"group": "code",
+"pattern": "~/",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-260",
+"group": "code",
+"pattern": "~.",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-261",
+"group": "code",
+"pattern": "~3",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-262",
+"group": "code",
+"pattern": "~%",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-263",
+"group": "code",
+"pattern": "~4",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-264",
+"group": "code",
+"pattern": "~y",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-265",
+"group": "code",
+"pattern": "~i",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-266",
+"group": "code",
+"pattern": "~e",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-267",
+"group": "code",
+"pattern": "~h",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-268",
+"group": "code",
+"pattern": "~k",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-269",
+"group": "code",
+"pattern": "~M",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-270",
+"group": "code",
+"pattern": "~R",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-271",
+"group": "code",
+"pattern": "~P",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-272",
+"group": "code",
+"pattern": "~L",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-273",
+"group": "code",
+"pattern": "~E",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-274",
+"group": "code",
+"pattern": "~j",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-275",
+"group": "code",
+"pattern": "~J",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-276",
+"group": "code",
+"pattern": "~a",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-277",
+"group": "code",
+"pattern": "~F",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-278",
+"group": "code",
+"pattern": "~I",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-279",
+"group": "code",
+"pattern": "~x",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-280",
+"group": "code",
+"pattern": "~X",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-281",
+"group": "code",
+"pattern": "~V",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-282",
+"group": "code",
+"pattern": "~#",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-283",
+"group": "code",
+"pattern": "~8",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-284",
+"group": "code",
+"pattern": "~2",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-285",
+"group": "code",
+"pattern": "~6",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-286",
+"group": "code",
+"pattern": "~7",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-287",
+"group": "code",
+"pattern": "~r",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-288",
+"group": "code",
+"pattern": "~d",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-289",
+"group": "code",
+"pattern": "~g",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-290",
+"group": "code",
+"pattern": "~D",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-291",
+"group": "code",
+"pattern": "~G",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-292",
+"group": "code",
+"pattern": "~H",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-293",
+"group": "code",
+"pattern": "~0",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-294",
+"group": "code",
+"pattern": "~1",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-295",
+"group": "code",
+"pattern": "~5",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-296",
+"group": "code",
+"pattern": "~9",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-297",
+"group": "code",
+"pattern": "~A",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-298",
+"group": "code",
+"pattern": "~?",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-299",
+"group": "code",
+"pattern": "~!",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-300",
+"group": "code",
+"pattern": "~@",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-301",
+"group": "code",
+"pattern": "~$",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-302",
+"group": "code",
+"pattern": "~^",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-303",
+"group": "code",
+"pattern": "~&",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-304",
+"group": "code",
+"pattern": "~*",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-305",
+"group": "code",
+"pattern": "~(",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-306",
+"group": "code",
+"pattern": "~)",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-307",
+"group": "code",
+"pattern": "~+",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-308",
+"group": "code",
+"pattern": "~,",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-309",
+"group": "code",
+"pattern": "~:",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-310",
+"group": "code",
+"pattern": "~;",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-311",
+"group": "code",
+"pattern": "~\\",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-312",
+"group": "code",
+"pattern": "~B",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-313",
+"group": "code",
+"pattern": "~C",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-314",
+"group": "code",
+"pattern": "~K",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-315",
+"group": "code",
+"pattern": "~O",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-316",
+"group": "code",
+"pattern": "~Q",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-317",
+"group": "code",
+"pattern": "~T",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-318",
+"group": "code",
+"pattern": "~U",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-319",
+"group": "code",
+"pattern": "~W",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-320",
+"group": "code",
+"pattern": "~Y",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-321",
+"group": "code",
+"pattern": "~Z",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-322",
+"group": "code",
+"pattern": "~c",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-323",
+"group": "code",
+"pattern": "~l",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-324",
+"group": "code",
+"pattern": "~o",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-325",
+"group": "code",
+"pattern": "~p",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-326",
+"group": "code",
+"pattern": "~q",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-327",
+"group": "code",
+"pattern": "~u",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-328",
+"group": "code",
+"pattern": "~v",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-329",
+"group": "code",
+"pattern": "~w",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-330",
+"group": "code",
+"pattern": "~z",
+"text": "\u2014x\u2013x\u00adx\u2011x\u201cx\u201dx\u2018x\u2019x\"x'x\u2003x\u2002x\u2007x\u2008x\u2004x\u2005x\u2006x\u200ax\u2009x\u00a0x\u200dx\u200cx\u2026x\u00a9x\u00aex\u2122x\u00b6x\u00a7x\u2022x\tx\nx\u2028x\u000bx\fx\u001ax~x\u2060x\u202fx\u3000x\u00b0x\u2020x\u2021x\u200bx\u2012"
+},
+{
+"id": "code-331",
+"group": "code",
+"pattern": "A~SB",
+"text": "A\u00a0B"
+},
+{
+"id": "code-332",
+"group": "code",
+"pattern": "C~<D",
+"text": "C\u2009D"
+},
+{
+"id": "code-333",
+"group": "code",
+"pattern": "a~_b",
+"text": "a\u2014b"
+},
+{
+"id": "code-334",
+"group": "code",
+"pattern": "~m+",
+"text": "\u2003\u2003x"
+},
+{
+"id": "code-335",
+"group": "code",
+"pattern": "[~m~>]+",
+"text": "\u2003\u2002x"
+},
+{
+"id": "code-336",
+"group": "code",
+"pattern": "[^~m]",
+"text": "a\u2003"
+},
+{
+"id": "code-337",
+"group": "code",
+"pattern": "a~?b",
+"text": "a?b"
+},
+{
+"id": "code-338",
+"group": "code",
+"pattern": "~+",
+"text": "a+b"
+},
+{
+"id": "code-339",
+"group": "code",
+"pattern": "~\\d",
+"text": "~1"
+},
+{
+"id": "code-340",
+"group": "code",
+"pattern": "~~",
+"text": "~a~"
+},
+{
+"id": "code-341",
+"group": "code",
+"pattern": "a~",
+"text": "a~"
+},
+{
+"id": "code-342",
+"group": "code",
+"pattern": "~",
+"text": "a~"
+},
+{
+"id": "r2-343",
+"group": "r2",
+"pattern": "a?",
+"text": "aab"
+},
+{
+"id": "r2-344",
+"group": "r2",
+"pattern": "a*",
+"text": "aab b"
+},
+{
+"id": "r2-345",
+"group": "r2",
+"pattern": "a*?",
+"text": "aab"
+},
+{
+"id": "r2-346",
+"group": "r2",
+"pattern": "(a|)",
+"text": "aab"
+},
+{
+"id": "r2-347",
+"group": "r2",
+"pattern": "b?",
+"text": "bba"
+},
+{
+"id": "r2-348",
+"group": "r2",
+"pattern": "(?=b)|a",
+"text": "ab"
+},
+{
+"id": "r2-349",
+"group": "r2",
+"pattern": "a*",
+"text": "baa"
+},
+{
+"id": "r2-350",
+"group": "r2",
+"pattern": "b*",
+"text": "bba"
+},
+{
+"id": "r2-351",
+"group": "r2",
+"pattern": "\\b",
+"text": "ab cd"
+},
+{
+"id": "r2-352",
+"group": "r2",
+"pattern": "(?<=ab|cd)e",
+"text": "abe cde xe"
+},
+{
+"id": "r2-353",
+"group": "r2",
+"pattern": "(?<=a|b)c",
+"text": "ac bc xc"
+},
+{
+"id": "r2-354",
+"group": "r2",
+"pattern": "(?<=a{2})b",
+"text": "aab ab"
+},
+{
+"id": "r2-355",
+"group": "r2",
+"pattern": "(?<=\\w{2})b",
+"text": "aab ab"
+},
+{
+"id": "r2-356",
+"group": "r2",
+"pattern": "(?<=(?i)a)b",
+"text": "Ab ab"
+},
+{
+"id": "r2-357",
+"group": "r2",
+"pattern": "(?<!ab|cd)e",
+"text": "abe cde xe"
+},
+{
+"id": "r2-358",
+"group": "r2",
+"pattern": "(?<=a.)c",
+"text": "abc"
+},
+{
+"id": "r2-359",
+"group": "r2",
+"pattern": "(?<=[ab])c",
+"text": "ac bc xc"
+},
+{
+"id": "r2-360",
+"group": "r2",
+"pattern": "(?<=ab?)c",
+"text": "abc ac"
+},
+{
+"id": "r2-361",
+"group": "r2",
+"pattern": "(a)\\2",
+"text": "aa"
+},
+{
+"id": "r2-362",
+"group": "r2",
+"pattern": "(a)\\2",
+"text": "ab"
+},
+{
+"id": "r2-363",
+"group": "r2",
+"pattern": "(a)(b)\\3",
+"text": "abb"
+},
+{
+"id": "r2-364",
+"group": "r2",
+"pattern": "(a)\\k<n>",
+"text": "aa"
+},
+{
+"id": "r2-365",
+"group": "r2",
+"pattern": "(?<n>a)\\1",
+"text": "aa"
+},
+{
+"id": "r2-366",
+"group": "r2",
+"pattern": "a{2,1}",
+"text": "aaa"
+},
+{
+"id": "r2-367",
+"group": "r2",
+"pattern": "a{1,2,3}",
+"text": "aaa"
+},
+{
+"id": "r2-368",
+"group": "r2",
+"pattern": "a{x}",
+"text": "a{x}"
+},
+{
+"id": "r2-369",
+"group": "r2",
+"pattern": "a{}",
+"text": "a{}"
+},
+{
+"id": "r2-370",
+"group": "r2",
+"pattern": "a{1",
+"text": "a{1"
+},
+{
+"id": "r2-371",
+"group": "r2",
+"pattern": "a{1,}",
+"text": "aaa"
+},
+{
+"id": "r2-372",
+"group": "r2",
+"pattern": "a{0}b",
+"text": "ab b"
+},
+{
+"id": "r2-373",
+"group": "r2",
+"pattern": "\\Qa.b\\E",
+"text": "a.b axb"
+},
+{
+"id": "r2-374",
+"group": "r2",
+"pattern": "\\Qa.b",
+"text": "a.b axb"
+},
+{
+"id": "r2-375",
+"group": "r2",
+"pattern": "\\v",
+"text": "a\nb\rc"
+},
+{
+"id": "r2-376",
+"group": "r2",
+"pattern": "\\R",
+"text": "a\nb\rc"
+},
+{
+"id": "r2-377",
+"group": "r2",
+"pattern": "\\h+",
+"text": "a \t\u00a0b"
+},
+{
+"id": "r2-378",
+"group": "r2",
+"pattern": "(?i)\u00c0\u00c9",
+"text": "\u00e0\u00e9 \u00c0\u00c9"
+},
+{
+"id": "r2-379",
+"group": "r2",
+"pattern": "(?i)[\u00e0-\u00e9]+",
+"text": "\u00c0\u00c9"
+},
+{
+"id": "r2-380",
+"group": "r2",
+"pattern": "(?i)\\l+",
+"text": "aB"
+},
+{
+"id": "r2-381",
+"group": "r2",
+"pattern": "(?i)\\L",
+"text": "aB1"
+},
+{
+"id": "r2-382",
+"group": "r2",
+"pattern": "(?-i)a",
+"text": "aA"
+},
+{
+"id": "r2-383",
+"group": "r2",
+"pattern": ".",
+"text": "a\u0085b\u2029c\u000bd"
+},
+{
+"id": "r2-384",
+"group": "r2",
+"pattern": "^a",
+"text": "a\u2028a"
+},
+{
+"id": "r2-385",
+"group": "r2",
+"pattern": "a$",
+"text": "a\u2028a"
+},
+{
+"id": "r2-386",
+"group": "r2",
+"pattern": "a\u2028",
+"text": "a\u2028"
+},
+{
+"id": "prop-387",
+"group": "prop",
+"pattern": "\\p{L}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-388",
+"group": "prop",
+"pattern": "\\p{Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-389",
+"group": "prop",
+"pattern": "\\p{Ll}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-390",
+"group": "prop",
+"pattern": "\\p{Lt}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-391",
+"group": "prop",
+"pattern": "\\p{Lm}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-392",
+"group": "prop",
+"pattern": "\\p{Lo}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-393",
+"group": "prop",
+"pattern": "\\p{LC}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-394",
+"group": "prop",
+"pattern": "\\p{L&}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-395",
+"group": "prop",
+"pattern": "\\p{M}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-396",
+"group": "prop",
+"pattern": "\\p{Mn}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-397",
+"group": "prop",
+"pattern": "\\p{N}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-398",
+"group": "prop",
+"pattern": "\\p{Nd}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-399",
+"group": "prop",
+"pattern": "\\p{Nl}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-400",
+"group": "prop",
+"pattern": "\\p{No}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-401",
+"group": "prop",
+"pattern": "\\p{P}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-402",
+"group": "prop",
+"pattern": "\\p{Pc}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-403",
+"group": "prop",
+"pattern": "\\p{Pd}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-404",
+"group": "prop",
+"pattern": "\\p{Ps}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-405",
+"group": "prop",
+"pattern": "\\p{Pe}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-406",
+"group": "prop",
+"pattern": "\\p{Po}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-407",
+"group": "prop",
+"pattern": "\\p{S}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-408",
+"group": "prop",
+"pattern": "\\p{Sm}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-409",
+"group": "prop",
+"pattern": "\\p{Sc}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-410",
+"group": "prop",
+"pattern": "\\p{Sk}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-411",
+"group": "prop",
+"pattern": "\\p{So}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-412",
+"group": "prop",
+"pattern": "\\p{Z}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-413",
+"group": "prop",
+"pattern": "\\p{Zs}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-414",
+"group": "prop",
+"pattern": "\\p{Zl}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-415",
+"group": "prop",
+"pattern": "\\p{C}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-416",
+"group": "prop",
+"pattern": "\\p{Cc}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-417",
+"group": "prop",
+"pattern": "\\p{Cf}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-418",
+"group": "prop",
+"pattern": "\\p{Letter}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-419",
+"group": "prop",
+"pattern": "\\p{Uppercase_Letter}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-420",
+"group": "prop",
+"pattern": "\\p{Lowercase_Letter}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-421",
+"group": "prop",
+"pattern": "\\p{lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-422",
+"group": "prop",
+"pattern": "\\p{ASCII}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-423",
+"group": "prop",
+"pattern": "\\p{Alpha}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-424",
+"group": "prop",
+"pattern": "\\p{IsLu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-425",
+"group": "prop",
+"pattern": "\\p{gc=Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-426",
+"group": "prop",
+"pattern": "\\p{General_Category=Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-427",
+"group": "prop",
+"pattern": "\\p{^Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-428",
+"group": "prop",
+"pattern": "\\pL",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-429",
+"group": "prop",
+"pattern": "\\pLu",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-430",
+"group": "prop",
+"pattern": "\\P{Lu}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-431",
+"group": "prop",
+"pattern": "\\P{L}",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-432",
+"group": "prop",
+"pattern": "\\p{L}+",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-433",
+"group": "prop",
+"pattern": "[\\p{L}]",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-434",
+"group": "prop",
+"pattern": "[^\\p{Lu}]",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "prop-435",
+"group": "prop",
+"pattern": "[\\P{Lu}]",
+"text": "aA\u01c5\u02b0\uac00\u6f221\u00bd\u2163-()!$+\u0301\u0001 \u2028_\u00ad"
+},
+{
+"id": "marker-436",
+"group": "marker",
+"pattern": "~y",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-437",
+"group": "marker",
+"pattern": "~i",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-438",
+"group": "marker",
+"pattern": "~h",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-439",
+"group": "marker",
+"pattern": "~M",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-440",
+"group": "marker",
+"pattern": "~R",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-441",
+"group": "marker",
+"pattern": "~P",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-442",
+"group": "marker",
+"pattern": "~L",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-443",
+"group": "marker",
+"pattern": "~E",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-444",
+"group": "marker",
+"pattern": "~a",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-445",
+"group": "marker",
+"pattern": "~F",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-446",
+"group": "marker",
+"pattern": "~I",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-447",
+"group": "marker",
+"pattern": "~x",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-448",
+"group": "marker",
+"pattern": "~X",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-449",
+"group": "marker",
+"pattern": "~V",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-450",
+"group": "marker",
+"pattern": "~N",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-451",
+"group": "marker",
+"pattern": "~#",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-452",
+"group": "marker",
+"pattern": "~f",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-453",
+"group": "marker",
+"pattern": "~b",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-454",
+"group": "marker",
+"pattern": "~n",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-455",
+"group": "marker",
+"pattern": "~t",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-456",
+"group": "marker",
+"pattern": "~B",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-457",
+"group": "marker",
+"pattern": "~v",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-458",
+"group": "marker",
+"pattern": "~l",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-459",
+"group": "marker",
+"pattern": "~g",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-460",
+"group": "marker",
+"pattern": "~D",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-461",
+"group": "marker",
+"pattern": "~G",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+},
+{
+"id": "marker-462",
+"group": "marker",
+"pattern": "~H",
+"text": "",
+"ins": [
+"AUTO_PAGE_NUMBER",
+"NEXT_PAGE_NUMBER",
+"PREVIOUS_PAGE_NUMBER",
+"SECTION_MARKER",
+"END_NESTED_STYLE",
+"INDENT_HERE_TAB",
+"RIGHT_INDENT_TAB",
+"COLUMN_BREAK",
+"FRAME_BREAK",
+"PAGE_BREAK",
+"ODD_PAGE_BREAK",
+"EVEN_PAGE_BREAK",
+"DISCRETIONARY_LINE_BREAK",
+"FORCED_LINE_BREAK",
+"ZERO_WIDTH_JOINER",
+"ZERO_WIDTH_NONJOINER",
+"DISCRETIONARY_HYPHEN",
+"NONBREAKING_HYPHEN",
+"FOOTNOTE_SYMBOL",
+"FLUSH_SPACE",
+"NONBREAKING_SPACE",
+"BULLET_CHARACTER",
+"EM_DASH",
+"EN_DASH",
+"ELLIPSIS_CHARACTER"
+]
+}
+]

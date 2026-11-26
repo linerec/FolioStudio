@@ -1,0 +1,440 @@
+{
+  "source": "InDesign 2025 20.5.5.119 (Windows), measured 2026-11-12 by windowmenu-c1: DOM + UI Automation reads + guarded real clicks + IDML export diffs + a byte search of the installed plug-ins for the label keys. Tools: artifacts/windowmenu-c1-20261023/tools (m1, m7, m9, ov1, ov2, ov3, findkeys).",
+  "what": "Adobe Digital Publishing (DPS) interactive overlays. The panel writes the choice as script labels (IDML Label/KeyValuePair, keys kAdobeDPSInteractivity_*) on the selected page item. Nothing else in InDesign reads them.",
+  "menu": {
+    "path": [
+      "Window",
+      "Overlays"
+    ],
+    "folioId": "id.window.overlays",
+    "inDesignActionId": 141924,
+    "actionArea": "Window Menu",
+    "position": "top level, between Output (submenu) and Pages",
+    "shortcut": null,
+    "enabledWithNoDocument": true,
+    "checkedWhenPanelHidden": false
+  },
+  "panel": {
+    "name": "Overlays",
+    "panelIndex": 68,
+    "visibleDefault": false,
+    "panelMenu": null,
+    "typeList": [
+      "Hyperlink",
+      "Slideshow",
+      "Image Sequence",
+      "Audio",
+      "Video",
+      "Web Content",
+      "Pan & Zoom",
+      "Scrollable Frame"
+    ],
+    "footer": [
+      "Reset",
+      "Clear overlay from selected page item."
+    ],
+    "optionsAreaTitle": "Options",
+    "withNothingSelected": "the type list is shown but the options area stays empty",
+    "typesDimmedForAnEmptyRectangle": [
+      "Hyperlink",
+      "Slideshow",
+      "Scrollable Frame"
+    ],
+    "typesEnabledForAnEmptyRectangleAndAnImageFrame": [
+      "Image Sequence",
+      "Audio",
+      "Video",
+      "Web Content",
+      "Pan & Zoom"
+    ],
+    "afterAnOverlayTypeIsChosen": "the other types stop reacting to clicks until the overlay is cleared (Reset did not release it in the test)",
+    "typeIsOnlyWrittenWhenTheContentIsGiven": "choosing Web Content alone writes nothing; typing a URL and pressing Enter writes all keys at once",
+    "enabledTypesBySelection": {
+      "note": "measured as the brightness of each type name in a screenshot of the panel (dim 153, enabled 255), one selection at a time",
+      "page item that is a hyperlink source": [
+        "Hyperlink"
+      ],
+      "multi-state object": [
+        "Slideshow"
+      ],
+      "rectangle / oval / polygon / line / group / filled shape": [
+        "Image Sequence",
+        "Audio",
+        "Video",
+        "Web Content",
+        "Pan & Zoom"
+      ],
+      "rectangle frame with a placed graphic": [
+        "Image Sequence",
+        "Audio",
+        "Video",
+        "Web Content",
+        "Pan & Zoom",
+        "Scrollable Frame"
+      ],
+      "text frame (also an overflowing one)": [
+        "Audio",
+        "Video",
+        "Web Content",
+        "Pan & Zoom"
+      ],
+      "button, two objects selected, a text range or a caret, the graphic inside a frame": []
+    }
+  },
+  "options": {
+    "Image Sequence": [
+      {
+        "name": "Load Images",
+        "kind": "folder button + path box",
+        "default": ""
+      },
+      {
+        "name": "Show First Image Initially",
+        "kind": "checkbox",
+        "default": false
+      },
+      {
+        "name": "Auto Play",
+        "kind": "checkbox",
+        "default": false
+      },
+      {
+        "name": "Tap to Play/Pause",
+        "kind": "checkbox",
+        "default": false
+      },
+      {
+        "name": "Delay",
+        "kind": "stepper",
+        "unit": "second",
+        "default": 0
+      },
+      {
+        "name": "Speed",
+        "kind": "stepper",
+        "unit": "fps",
+        "default": 16
+      },
+      {
+        "name": "Play",
+        "kind": "stepper",
+        "unit": "time",
+        "default": 1
+      },
+      {
+        "name": "Loop",
+        "kind": "checkbox",
+        "default": false
+      },
+      {
+        "name": "Stop at Last Image",
+        "kind": "checkbox",
+        "default": false
+      },
+      {
+        "name": "Swipe to Change Image",
+        "kind": "checkbox",
+        "default": true
+      },
+      {
+        "name": "Stop at First and Last Image",
+        "kind": "checkbox",
+        "default": false
+      },
+      {
+        "name": "Play in Reverse",
+        "kind": "checkbox",
+        "default": false
+      }
+    ],
+    "Web Content": [
+      {
+        "name": "URL or File",
+        "kind": "text box + file button",
+        "default": "",
+        "key": "kAdobeDPSInteractivity_URL"
+      },
+      {
+        "name": "Auto Play",
+        "kind": "checkbox",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_AutoStart",
+        "note": "greyed out for a typed URL in the test"
+      },
+      {
+        "name": "Delay",
+        "kind": "stepper",
+        "unit": "second",
+        "default": 0,
+        "key": "kAdobeDPSInteractivity_AutoStartDelay",
+        "note": "greyed out for a typed URL in the test"
+      },
+      {
+        "name": "Transparent Background",
+        "kind": "checkbox",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_UseTransparentBackground"
+      },
+      {
+        "name": "Allow User Interaction",
+        "kind": "checkbox",
+        "default": true,
+        "key": "kAdobeDPSInteractivity_UserInteractionEnabled"
+      },
+      {
+        "name": "Scale Content to Fit",
+        "kind": "checkbox",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_ScaleContentToFit"
+      },
+      {
+        "name": "Allow API Access",
+        "kind": "checkbox",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_IsTrustedContent"
+      }
+    ],
+    "notMeasured": [
+      "Video",
+      "Image Sequence (keys)",
+      "Pan & Zoom"
+    ],
+    "Hyperlink": [
+      {
+        "name": "Open in App / Open in Device Browser",
+        "kind": "radio",
+        "key": "kAdobeDPSInteractivity_OpenInApp",
+        "values": {
+          "Open in App": "true",
+          "Open in Device Browser": "false"
+        }
+      },
+      {
+        "name": "Ask First",
+        "kind": "checkbox",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_AskFirst"
+      }
+    ],
+    "Scrollable Frame": [
+      {
+        "name": "Scroll Direction",
+        "kind": "dropdown",
+        "default": "Off",
+        "key": "kAdobeDPSInteractivity_ScrollDirection",
+        "values": {
+          "Off": "(no label)",
+          "Auto Detect": "0",
+          "Horizontal & Vertical": "1",
+          "Vertical": "2",
+          "Horizontal": "3"
+        }
+      },
+      {
+        "name": "Scroll Indicators: Hide",
+        "kind": "checkbox",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_ShowScrollIndicators",
+        "note": "written as true on the first change; toggling did not change it in the test"
+      },
+      {
+        "name": "Initial Content Position",
+        "kind": "radio",
+        "options": [
+          "Upper Left",
+          "Use Document Position"
+        ],
+        "key": "kAdobeDPSInteractivity_UseInitialDesignView",
+        "values": {
+          "Upper Left": "false",
+          "Use Document Position": "true"
+        }
+      },
+      {
+        "name": "Export Format in PDF Articles",
+        "kind": "dropdown",
+        "options": [
+          "Raster",
+          "Vector"
+        ],
+        "default": "Vector",
+        "key": "kAdobeDPSInteractivity_ContainerAssetFormat",
+        "note": "Vector = pdf; Raster not measured"
+      }
+    ],
+    "ScrollableFrameLabelsWrittenOnTheFirstChange": {
+      "kAdobeDPSInteractivity_Type": "WebView",
+      "kAdobeDPSInteractivity_WebViewOverlayContainer": "true",
+      "kAdobeDPSInteractivity_UseInitialDesignView": "false",
+      "kAdobeDPSInteractivity_ShowScrollIndicators": "true",
+      "kAdobeDPSInteractivity_ContainerAssetFormat": "pdf",
+      "kAdobeDPSInteractivity_ScrollDirection": "<see values>"
+    },
+    "Slideshow": [
+      {
+        "name": "Auto Play + Delay (second)",
+        "defaults": [
+          false,
+          0
+        ],
+        "keys": [
+          "kAdobeDPSInteractivity_AutoStart",
+          "kAdobeDPSInteractivity_AutoStartDelay"
+        ],
+        "measured": false
+      },
+      {
+        "name": "Tap to Play/Pause",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_TapEnabled",
+        "measured": true
+      },
+      {
+        "name": "Interval (seconds)",
+        "default": 2,
+        "key": "kAdobeDPSInteractivity_IntervalDuration",
+        "measured": false
+      },
+      {
+        "name": "Play (time) + Loop",
+        "defaults": [
+          1,
+          true
+        ],
+        "key": "kAdobeDPSInteractivity_LoopCount",
+        "note": "Loop on = -1 (forever)",
+        "measured": false
+      },
+      {
+        "name": "Stop at Last Image",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_AutoPlayStopAtLast",
+        "measured": false
+      },
+      {
+        "name": "Cross Fade + Speed (second)",
+        "defaults": [
+          true,
+          0.5
+        ],
+        "keys": [
+          "kAdobeDPSInteractivity_CrossFadeImages",
+          "kAdobeDPSInteractivity_CrossFadeImagesDelay"
+        ],
+        "measured": false
+      },
+      {
+        "name": "Swipe to Change Image",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_SwipeEnabled",
+        "measured": true
+      },
+      {
+        "name": "Stop at First and Last Image",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_SwipeStop",
+        "measured": true
+      },
+      {
+        "name": "Hide Before Playing",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_HideBeforePlaying",
+        "measured": true
+      },
+      {
+        "name": "Play in Reverse",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_ReverseImageOrder",
+        "measured": false
+      },
+      {
+        "name": "Export Format in PDF Articles",
+        "options": [
+          "Raster",
+          "Vector"
+        ],
+        "default": "Raster",
+        "key": "kAdobeDPSInteractivity_ContainerAssetFormat",
+        "note": "Vector = pdf"
+      }
+    ],
+    "Audio": [
+      {
+        "name": "Streaming media file",
+        "kind": "file button + box (window 'Browse for Audio File')"
+      },
+      {
+        "name": "Audio controller assets folder",
+        "kind": "folder button",
+        "default": "disabled until a file is chosen"
+      },
+      {
+        "name": "Show First Image Initially",
+        "default": false
+      },
+      {
+        "name": "Auto Play",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_AutoStart"
+      },
+      {
+        "name": "Play In Background",
+        "default": false,
+        "key": "kAdobeDPSInteractivity_ContinuePlayingInBackground"
+      },
+      {
+        "name": "Delay (second)",
+        "default": 0,
+        "key": "kAdobeDPSInteractivity_AutoStartDelay"
+      }
+    ]
+  },
+  "webContentLabelsWrittenForAUrl": {
+    "kAdobeDPSInteractivity_Type": "WebView",
+    "kAdobeDPSInteractivity_URL": "<the URL as typed>",
+    "kAdobeDPSInteractivity_UseTransparentBackground": "false",
+    "kAdobeDPSInteractivity_UserInteractionEnabled": "true",
+    "kAdobeDPSInteractivity_ScaleContentToFit": "false",
+    "kAdobeDPSInteractivity_AutoStart": "false",
+    "kAdobeDPSInteractivity_AutoStartDelay": "0",
+    "kAdobeDPSInteractivity_IsTrustedContent": "false"
+  },
+  "allKeysInTheInstalledPlugIn": [
+    "kAdobeDPSInteractivity_AllowPause",
+    "kAdobeDPSInteractivity_AskFirst",
+    "kAdobeDPSInteractivity_AssetList",
+    "kAdobeDPSInteractivity_AutoPlayStopAtLast",
+    "kAdobeDPSInteractivity_AutoStart",
+    "kAdobeDPSInteractivity_AutoStartDelay",
+    "kAdobeDPSInteractivity_CircularViewEnabled",
+    "kAdobeDPSInteractivity_ContainerAssetFormat",
+    "kAdobeDPSInteractivity_ContinuePlayingInBackground",
+    "kAdobeDPSInteractivity_ControlsByDefault",
+    "kAdobeDPSInteractivity_CrossFadeImages",
+    "kAdobeDPSInteractivity_CrossFadeImagesDelay",
+    "kAdobeDPSInteractivity_FramesPerSecond",
+    "kAdobeDPSInteractivity_HideBeforePlaying",
+    "kAdobeDPSInteractivity_HideWhenFinishedPlaying",
+    "kAdobeDPSInteractivity_IntervalDuration",
+    "kAdobeDPSInteractivity_IsTrustedContent",
+    "kAdobeDPSInteractivity_LoopCount",
+    "kAdobeDPSInteractivity_OpenInApp",
+    "kAdobeDPSInteractivity_PlayInline",
+    "kAdobeDPSInteractivity_ReverseImageOrder",
+    "kAdobeDPSInteractivity_ScaleContentToFit",
+    "kAdobeDPSInteractivity_ScrollDirection",
+    "kAdobeDPSInteractivity_ShowScrollIndicators",
+    "kAdobeDPSInteractivity_SwipeEnabled",
+    "kAdobeDPSInteractivity_SwipeStop",
+    "kAdobeDPSInteractivity_TapEnabled",
+    "kAdobeDPSInteractivity_Type",
+    "kAdobeDPSInteractivity_URL",
+    "kAdobeDPSInteractivity_UseInitialDesignView",
+    "kAdobeDPSInteractivity_UseTransparentBackground",
+    "kAdobeDPSInteractivity_UserInteractionEnabled",
+    "kAdobeDPSInteractivity_WebViewOverlayContainer"
+  ],
+  "keysFoundIn": "33 overlay script label keys and their shared prefix",
+  "interop": "exact: the data is ordinary script labels, which Folio already keeps and writes back (SetLabel); the keys are not renamed",
+  "labelsAreWrittenWhen": "only after content is given or a control is changed once; choosing a type alone writes nothing"
+}

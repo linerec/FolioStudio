@@ -1,0 +1,30 @@
+{
+  "fixture": "text",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"text-insert-middle","steps":[{"op":"insertText","target":"mixed","at":2,"text":"xy"}]},
+    {"name":"text-insert-start","steps":[{"op":"insertText","target":"mixed","at":0,"text":"Start "}]},
+    {"name":"text-insert-end","steps":[{"op":"insertText","target":"mixed","at":35,"text":" end"}]},
+    {"name":"text-insert-style-boundary","steps":[{"op":"insertText","target":"mixed","at":4,"text":"X"}]},
+    {"name":"text-insert-override-boundary","steps":[{"op":"insertText","target":"mixed","at":8,"text":"X"}]},
+    {"name":"text-insert-paragraph-start","steps":[{"op":"insertText","target":"mixed","at":13,"text":"X"},{"op":"insertText","target":"mixed","at":13,"text":"A\rB"}]},
+    {"name":"text-insert-korean","steps":[{"op":"insertText","target":"korean","at":3,"text":"새로운 한글 "}]},
+    {"name":"text-insert-enter","steps":[{"op":"insertText","target":"mixed","at":6,"text":"\r"}]},
+    {"name":"text-insert-enter-end","steps":[{"op":"insertText","target":"mixed","at":35,"text":"\r"},{"op":"insertText","target":"mixed","at":36,"text":"X"}]},
+    {"name":"text-insert-forced-break","steps":[{"op":"insertText","target":"mixed","at":6,"text":"\n"}]},
+    {"name":"text-insert-tab","steps":[{"op":"insertText","target":"mixed","at":2,"text":"\t"}]},
+    {"name":"text-delete-middle","steps":[{"op":"deleteText","target":"mixed","start":1,"end":3}]},
+    {"name":"text-delete-style-boundaries","steps":[{"op":"deleteText","target":"mixed","start":2,"end":10}]},
+    {"name":"text-delete-paragraph-break","steps":[{"op":"deleteText","target":"mixed","start":12,"end":13}]},
+    {"name":"text-delete-paragraph-range","steps":[{"op":"deleteText","target":"mixed","start":10,"end":18}]},
+    {"name":"text-delete-first-paragraph","steps":[{"op":"deleteText","target":"mixed","start":0,"end":13},{"op":"insertText","target":"mixed","at":0,"text":"X"}]},
+    {"name":"text-delete-all","steps":[{"op":"deleteText","target":"mixed","start":0,"end":35}]},
+    {"name":"text-thread-insert","steps":[{"op":"insertText","target":"flow-1","at":10,"text":"Extra words flow into the second frame. "}]},
+    {"name":"text-overset-create","steps":[{"op":"insertText","target":"flow-1","at":10,"text":"Extra words fill both frames and produce overset text. Extra words fill both frames and produce overset text. Extra words fill both frames and produce overset text. "}]},
+    {"name":"text-overset-remove","steps":[{"op":"deleteText","target":"overset","start":10,"end":118}]},
+    {"name":"text-special-index","steps":[{"op":"insertText","target":"special","at":2,"text":"X"},{"op":"insertText","target":"special","at":14,"text":"Y"}]},
+    {"name":"text-special-delete","steps":[{"op":"deleteText","target":"special","start":10,"end":13}]},
+    {"name":"text-table-delete","steps":[{"op":"deleteText","target":"special","start":9,"end":10}]},
+    {"name":"text-replace-multiline","steps":[{"op":"deleteText","target":"mixed","start":4,"end":18},{"op":"insertText","target":"mixed","at":4,"text":"new\rline\nend\t&<>"}]}
+  ]
+}

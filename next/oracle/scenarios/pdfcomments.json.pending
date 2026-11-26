@@ -1,0 +1,6 @@
+{
+  "fixture":"text-format",
+  "extension":"pdfcomments",
+  "about":"PDF Comments panel in a window document. Opening the panel must not edit document content. Annotation import and review/apply persistence are measured separately by pdfcomments-probe.jsx, not certified by this scenario.",
+  "scenarios":[{"name":"pdfcomments-panel","window":true,"steps":[{"op":"pdfCommentsPanel"}]}]
+}

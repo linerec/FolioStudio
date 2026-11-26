@@ -1,0 +1,430 @@
+{
+  "fixture": "parjust-keep",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "parjust-keep-column",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "startParagraph": "NEXT_COLUMN"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-keep-frame",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "startParagraph": "NEXT_FRAME"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-keep-page",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "startParagraph": "NEXT_PAGE"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-keep-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Kept",
+          "props": {
+            "startParagraph": "NEXT_FRAME"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-first-last",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": false,
+            "keepFirstLines": 3,
+            "keepLastLines": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-next",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Kept",
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-long",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "keep",
+          "at": 53,
+          "text": "\nbody5\nbody6\nbody7\nbody8\nbody9\nbody10\nbody11\nbody12"
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-widow",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "keep",
+          "at": 53,
+          "text": "\nbody5\nbody6\nbody7\nbody8"
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepFirstLines": 2,
+            "keepLastLines": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-chain",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "keep",
+          "at": 54,
+          "text": "a\rb\rc\rd\re\rf\rg\rh\ri\rj\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 54,
+          "end": 74,
+          "props": {
+            "keepWithNext": 1
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-start",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "startParagraph": "NEXT_COLUMN"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-overset",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "keep",
+          "at": 53,
+          "text": "\nbody5\nbody6\nbody7\nbody8\nbody9\nbody10\nbody11\nbody12\nbody13\nbody14\nbody15\nbody16\nbody17\nbody18\nbody19\nbody20\nbody21\nbody22\nbody23\nbody24\nbody25\nbody26\nbody27\nbody28\nbody29\nbody30\nbody31\nbody32\nbody33\nbody34\nbody35\nbody36\nbody37\nbody38\nbody39\nbody40\nbody41\nbody42\nbody43\nbody44\nbody45\nbody46\nbody47\nbody48\nbody49\nbody50\nbody51\nbody52\nbody53\nbody54\nbody55\nbody56\nbody57\nbody58\nbody59\nbody60"
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepAllLinesTogether": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-multi-chain",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "keep",
+          "at": 54,
+          "text": "a1\na2\na3\na4\rb1\nb2\nb3\nb4\rc1\nc2\nc3\nc4\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 78,
+          "props": {
+            "keepWithNext": 2
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-one",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepFirstLines": 1,
+            "keepLastLines": 1
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-maximum",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "keepLinesTogether": true,
+            "keepFirstLines": 50,
+            "keepLastLines": 50
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 5
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-zero",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 0
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-baseline-cap",
+      "steps": [
+        {
+          "op": "set",
+          "target": "keep",
+          "props": {
+            "textFramePreferences": {
+              "firstBaselineOffset": "FirstBaseline.CAP_HEIGHT"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-baseline-fixed",
+      "steps": [
+        {
+          "op": "set",
+          "target": "keep",
+          "props": {
+            "textFramePreferences": {
+              "firstBaselineOffset": "FirstBaseline.FIXED_HEIGHT",
+              "minimumFirstBaselineOffset": 24
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-baseline-leading",
+      "steps": [
+        {
+          "op": "set",
+          "target": "keep",
+          "props": {
+            "textFramePreferences": {
+              "firstBaselineOffset": "FirstBaseline.LEADING_OFFSET"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "keepopts-start-page",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepWithNext": 3
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "keep",
+          "start": 30,
+          "end": 31,
+          "props": {
+            "startParagraph": "NEXT_PAGE"
+          }
+        }
+      ],
+      "text": true
+    }
+  ]
+}

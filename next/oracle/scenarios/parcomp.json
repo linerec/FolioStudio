@@ -1,0 +1,16 @@
+{
+  "fixture": "parcomp",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"parcomp-paragraph","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Composer"}}]},
+    {"name":"parcomp-single","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Single"}}]},
+    {"name":"parcomp-world-paragraph","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Composer Optyca"}},{"op":"textFormat","target":"arabic","start":0,"end":1,"props":{"composer":"$ID/HL Composer Optyca"}}]},
+    {"name":"parcomp-world-single","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Single Optyca"}},{"op":"textFormat","target":"korean","start":0,"end":1,"props":{"composer":"$ID/HL Single Optyca"}}]},
+    {"name":"parcomp-style-parent","steps":[{"op":"styleEdit","kind":"paragraph","style":"Parcomp Base","props":{"composer":"$ID/HL Single"}}]},
+    {"name":"parcomp-style-override","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Single Optyca"}},{"op":"styleEdit","kind":"paragraph","style":"Parcomp Base","props":{"composer":"$ID/HL Composer Optyca"}}]},
+    {"name":"parcomp-clear-override","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Single"}},{"op":"clearTextOverrides","target":"latin","start":0,"end":1}]},
+    {"name":"parcomp-style-equal-override","steps":[{"op":"textFormat","target":"latin","start":0,"end":1,"props":{"composer":"$ID/HL Single"}},{"op":"styleEdit","kind":"paragraph","style":"Parcomp Base","props":{"composer":"$ID/HL Single"}}]},
+    {"name":"parcomp-balance-korean","steps":[{"op":"textFormat","target":"korean","start":0,"end":1,"props":{"balanceRaggedLines":true}}]},
+    {"name":"parcomp-balance-arabic","steps":[{"op":"textFormat","target":"arabic","start":0,"end":1,"props":{"balanceRaggedLines":true}}]}
+  ]
+}

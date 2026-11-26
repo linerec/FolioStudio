@@ -1,0 +1,408 @@
+{
+ "fixture": "basic",
+ "about": "Object > Paths > Join (menu action 99621) on the selected open paths: which ends meet, the segment between them, which object stays.",
+ "scenarios": [
+  {
+   "name": "path-join-apart",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        50,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        50
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99621,
+     "action": "Join",
+     "labels": [
+      "joined"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-join-touching",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        50,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        50
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        150,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99621,
+     "action": "Join",
+     "labels": [
+      "joined"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-join-start-start",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        50,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        50
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        60,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99621,
+     "action": "Join",
+     "labels": [
+      "joined"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-join-reverse-order",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        50,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        50
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "b",
+      "a"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99621,
+     "action": "Join",
+     "labels": [
+      "joined"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-join-single-open",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        50,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        50
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        150
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99621,
+     "action": "Join",
+     "labels": [
+      "joined"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-join-curved",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        50,
+        50
+       ],
+       "right": [
+        80,
+        20
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        50
+       ],
+       "left": [
+        120,
+        80
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": false,
+     "points": [
+      {
+       "anchor": [
+        200,
+        100
+       ],
+       "right": [
+        230,
+        70
+       ]
+      },
+      {
+       "anchor": [
+        300,
+        100
+       ],
+       "left": [
+        270,
+        130
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99621,
+     "action": "Join",
+     "labels": [
+      "joined"
+     ]
+    }
+   ]
+  }
+ ]
+}

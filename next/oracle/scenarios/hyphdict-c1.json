@@ -1,0 +1,176 @@
+{
+ "fixture": "hyphdict-c1",
+ "about": "Character panel Language picks the hyphenation dictionary: natural ragged text (Hyphenation Zone 0) in British English, German (reformed, traditional), French and Spanish. Frames uk2, de1 and de3 have no scenario (see gen_fixture.py).",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "hyphdict-c1-uk-1",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "uk1",
+     "start": 0,
+     "end": 396,
+     "props": {
+      "appliedLanguage": "English: UK"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-uk-3",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "uk3",
+     "start": 0,
+     "end": 343,
+     "props": {
+      "appliedLanguage": "English: UK"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-uk-4",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "uk4",
+     "start": 0,
+     "end": 311,
+     "props": {
+      "appliedLanguage": "English: UK"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-de-2",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "de2",
+     "start": 0,
+     "end": 328,
+     "props": {
+      "appliedLanguage": "German: Reformed"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-de-4",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "de4",
+     "start": 0,
+     "end": 281,
+     "props": {
+      "appliedLanguage": "German: Reformed"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-deold-1",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "de1",
+     "start": 0,
+     "end": 363,
+     "props": {
+      "appliedLanguage": "German: Traditional"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-deold-2",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "de2",
+     "start": 0,
+     "end": 328,
+     "props": {
+      "appliedLanguage": "German: Traditional"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-fr-1",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "fr1",
+     "start": 0,
+     "end": 382,
+     "props": {
+      "appliedLanguage": "French"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-fr-2",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "fr2",
+     "start": 0,
+     "end": 348,
+     "props": {
+      "appliedLanguage": "French"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-es-1",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "es1",
+     "start": 0,
+     "end": 388,
+     "props": {
+      "appliedLanguage": "Spanish: Castilian"
+     }
+    }
+   ]
+  },
+  {
+   "name": "hyphdict-c1-es-2",
+   "text": true,
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "es2",
+     "start": 0,
+     "end": 322,
+     "props": {
+      "appliedLanguage": "Spanish: Castilian"
+     }
+    }
+   ]
+  }
+ ]
+}

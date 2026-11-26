@@ -1,0 +1,19 @@
+{
+  "fixture": "objopts-alpha",
+  "extension": "objopts",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "oo-clip-alpha",
+      "steps": [
+        {
+          "op": "convertClippingToFrame",
+          "target": "clip"
+        }
+      ]
+    }
+  ]
+}

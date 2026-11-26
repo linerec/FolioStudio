@@ -1,0 +1,210 @@
+{
+ "name": "extra-on-V1",
+ "measured": "InDesign 2025 20.5.5.119, real mouse (Page tool) / real keyboard (control bar), 2026-11-12",
+ "fixture": null,
+ "objectsMoveWithPage": true,
+ "enableAdjustLayout": false,
+ "action": {
+  "kind": "drag",
+  "page": 0,
+  "wanted": [
+   80,
+   60
+  ],
+  "typed": null
+ },
+ "pageMovedAgainstRest": null,
+ "pagesAbsoluteShift": {
+  "1": [
+   0,
+   0
+  ],
+  "2": [
+   0,
+   0
+  ]
+ },
+ "before": {
+  "items": {
+   "PG": {
+    "tl": [
+     120,
+     20
+    ],
+    "br": [
+     170,
+     70
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "OV": {
+    "tl": [
+     40,
+     20
+    ],
+    "br": [
+     90,
+     70
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "G": {
+    "tl": [
+     40,
+     330
+    ],
+    "br": [
+     260,
+     390
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "ANC": {
+    "tl": [
+     71.788,
+     330
+    ],
+    "br": [
+     85.788,
+     344
+    ],
+    "parentPage": "1",
+    "spread": -1
+   },
+   "Z": {
+    "tl": [
+     150,
+     260
+    ],
+    "br": [
+     220,
+     300
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "K": {
+    "tl": [
+     40,
+     200
+    ],
+    "br": [
+     100,
+     240
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "1",
+    "spread": 0
+   }
+  },
+  "guides": []
+ },
+ "after": {
+  "items": {
+   "PG": {
+    "tl": [
+     120,
+     20
+    ],
+    "br": [
+     170,
+     70
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "OV": {
+    "tl": [
+     40,
+     20
+    ],
+    "br": [
+     90,
+     70
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "G": {
+    "tl": [
+     40,
+     330
+    ],
+    "br": [
+     260,
+     390
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "ANC": {
+    "tl": [
+     71.788,
+     330
+    ],
+    "br": [
+     85.788,
+     344
+    ],
+    "parentPage": "1",
+    "spread": -1
+   },
+   "Z": {
+    "tl": [
+     150,
+     260
+    ],
+    "br": [
+     220,
+     300
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "K": {
+    "tl": [
+     40,
+     200
+    ],
+    "br": [
+     100,
+     240
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "1",
+    "spread": 0
+   }
+  },
+  "guides": []
+ },
+ "referencePage": "1",
+ "pageSize": [
+  300,
+  400
+ ]
+}

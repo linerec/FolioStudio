@@ -1,0 +1,199 @@
+{
+  "fixture": "text-format",
+  "about": "Character line properties use the existing textFormat and styleEdit mappings in oracle.rs and print-check.py; every edit also checks undo.",
+  "scenarios": [
+    {
+      "name": "charlines-underline",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "underlineWeight": 2,
+            "underlineOffset": 3,
+            "underlineColor": "Color/Black",
+            "underlineTint": 50,
+            "underlineOverprint": true
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.properties"
+      ]
+    },
+    {
+      "name": "charlines-strike",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "strikeThru": true,
+            "strikeThroughWeight": 1.5,
+            "strikeThroughOffset": 4,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughTint": 60,
+            "strikeThroughOverprint": true
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.properties"
+      ]
+    },
+    {
+      "name": "charlines-inherit",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "underline": true,
+            "underlineWeight": 2,
+            "underlineOffset": 3,
+            "underlineTint": 50,
+            "strikeThru": true,
+            "strikeThroughWeight": 1.5,
+            "strikeThroughOffset": 4,
+            "strikeThroughTint": 60
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 6,
+          "props": {
+            "underlineWeight": 4,
+            "strikeThroughOffset": -2
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 7,
+          "end": 10,
+          "props": {
+            "pointSize": 24
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.properties",
+        "character.lines.text-color"
+      ]
+    },
+    {
+      "name": "charlines-auto",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "underlineWeight": 2,
+            "underlineOffset": 3,
+            "strikeThru": true,
+            "strikeThroughWeight": 1.5,
+            "strikeThroughOffset": 4
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underlineWeight": -9999,
+            "underlineOffset": -9999,
+            "underlineColor": "Text Color",
+            "underlineTint": -1,
+            "strikeThroughWeight": -9999,
+            "strikeThroughOffset": -9999,
+            "strikeThroughColor": "Text Color",
+            "strikeThroughTint": -1
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.properties",
+        "character.lines.text-color"
+      ]
+    },
+    {
+      "name": "charlines-pattern",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "underlineWeight": 3,
+            "underlineOffset": 4,
+            "underlineType": "StrokeStyle/$ID/ThinThin",
+            "underlineGapColor": "Color/Paper",
+            "underlineGapTint": 30,
+            "underlineGapOverprint": true,
+            "strikeThru": true,
+            "strikeThroughWeight": 2,
+            "strikeThroughOffset": 4,
+            "strikeThroughType": "StrokeStyle/$ID/Dashed",
+            "strikeThroughGapColor": "Color/Paper",
+            "strikeThroughGapTint": 40,
+            "strikeThroughGapOverprint": true
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.properties"
+      ]
+    },
+    {
+      "name": "charlines-spaces",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "office affine  spaces\rSmall and BIG\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 35,
+          "props": {
+            "underline": true,
+            "underlineWeight": 1,
+            "underlineOffset": 2,
+            "strikeThru": true,
+            "strikeThroughWeight": 1,
+            "strikeThroughOffset": 3
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 27,
+          "end": 30,
+          "props": {
+            "pointSize": 24
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.properties"
+      ]
+    }
+  ]
+}

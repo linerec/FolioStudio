@@ -1,0 +1,74 @@
+{
+ "fixture": "pages",
+ "about": "Layout > Pages > Hide Spread / Show Spread (DOM spread.spreadHidden): the spread keeps its pages in the document and in the IDML (SpreadHidden) but is left out of every PDF; the pages after it are numbered as before in the document and one earlier in the PDF.",
+ "scenarios": [
+  {
+   "name": "hide-spread-middle",
+   "steps": [
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      1
+     ],
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "name": "hide-spread-first",
+   "steps": [
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      0
+     ],
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "name": "hide-spread-last",
+   "steps": [
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      2
+     ],
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "name": "hide-spread-two",
+   "steps": [
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      0,
+      2
+     ],
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "name": "hide-spread-show-again",
+   "steps": [
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      1
+     ],
+     "hidden": true
+    },
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      1
+     ],
+     "hidden": false
+    }
+   ]
+  }
+ ]
+}

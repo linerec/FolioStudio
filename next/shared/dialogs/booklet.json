@@ -1,0 +1,91 @@
+{
+  "title": "소책자 인쇄",
+  "target": "none",
+  "requests": true,
+  "className": "fields-column",
+  "defaults": "booklet",
+  "okLabel": "소책자 PDF 저장",
+  "cancelLabel": "닫기",
+  "description": "File ▸ Print Booklet: the sheets a booklet of the open document is printed on (the document's pages are never reordered). bookletType, binding, range (empty: all pages; else a page range as Print takes it, like +2-+5), signatureSize (perfect bound), gap (not for saddle stitch), bleedBetweenPages (perfect bound), creep (saddle stitch), the margins while autoMargins is off, printBlankPrinterSpreads. The plan (dialogPreview: bookletPlan's sheets) follows the values; OK waits for it. OK (Save Booklet PDF) writes the sheets into the PDF file path (a whole path of a new or existing .pdf in a folder that exists; the screen fills it from the system's save window) with bookletFile and closes. The print button sends the same sheets to printer (one of listPrinters; copies, collate, fit) with printToDevice and stays open with the job it made (sent); cancelJob takes that job back (cancelPrintJob). Over an attached MCP connection the dialog is filled and read but not applied (it writes a file or prints).",
+  "note": [
+    "소책자를 프린터로 보내거나 PDF 파일로 저장합니다. 문서의 페이지 순서는 바뀌지 않습니다.",
+    { "text": "Folio 는 소책자를 PostScript 대신 PDF 로 저장합니다. 프린터로 직접 보내기는 실제 프린터에서 확인하지 못했습니다.", "differs": "booklet" }
+  ],
+  "templates": {
+    "selection": { "$if": "range", "then": { "kind": "range", "value": "$range" }, "else": { "kind": "all" } },
+    "options": {
+      "bookletType": "$bookletType", "binding": "$binding", "signatureSize": { "$": "signatureSize", "int": true },
+      "gap": "$gap", "bleedBetweenPages": "$bleedBetweenPages", "creep": "$creep",
+      "margins": ["$marginTop", "$marginBottom", "$marginLeft", "$marginRight"], "autoMargins": "$autoMargins",
+      "printBlankPrinterSpreads": "$printBlankPrinterSpreads"
+    }
+  },
+  "preview": {
+    "kind": "sheets",
+    "query": "bookletPlan",
+    "args": { "selection": { "$template": "selection" }, "options": { "$template": "options" } },
+    "blank": "빈 칸",
+    "failed": "소책자 계획을 만들지 못했습니다. 범위와 옵션을 확인하세요."
+  },
+  "buttons": [{ "action": "print", "label": "인쇄", "field": "print", "needsPreview": true, "disabledWhen": { "printer": "" } }],
+  "needs": { "ok": ["path"] },
+  "staysOpen": ["print", "cancelJob"],
+  "unchecked": ["cancelJob"],
+  "then": { "print": { "sent": "$_result", "canceled": false }, "cancelJob": { "canceled": true } },
+  "status": "printSend",
+  "labelsFrom": "printPresets",
+  "errors": {
+    "printerNotFound": "프린터를 찾을 수 없습니다. {0}",
+    "invalidRange": "인쇄할 쪽 범위를 확인하세요. {0}",
+    "invalidRequest": "인쇄 설정을 확인하세요. {0}",
+    "unsupported": "이 컴퓨터나 이 설정으로는 프린터로 보낼 수 없습니다. {0}",
+    "jobNotFound": "이미 끝났거나 없는 작업입니다. {0}",
+    "deviceFailed": "프린터가 작업을 받지 못했습니다. {0}",
+    "exportFailed": "인쇄용 PDF를 만들지 못했습니다. {0}"
+  },
+  "fields": [
+    { "name": "bookletType", "label": "소책자 종류", "type": "enum", "default": "saddle", "options": [
+      { "value": "saddle", "label": "2면 중철" },
+      { "value": "perfectBound", "label": "2면 무선철" },
+      { "value": "consecutive2", "label": "2면 연속" },
+      { "value": "consecutive3", "label": "3면 연속" },
+      { "value": "consecutive4", "label": "4면 연속" }
+    ] },
+    { "name": "binding", "label": "제본 방향", "type": "enum", "default": "document", "options": [
+      { "value": "document", "label": "문서 설정 따름" },
+      { "value": "left", "label": "왼쪽" },
+      { "value": "right", "label": "오른쪽" }
+    ] },
+    { "name": "range", "label": "인쇄 범위", "type": "text", "trim": true, "default": "", "maxLength": 1000 },
+    { "name": "signatureSize", "label": "접지 묶음 크기", "type": "enum", "default": "4", "when": { "bookletType": "perfectBound" }, "options": [
+      { "value": "4", "label": "4", "native": true },
+      { "value": "8", "label": "8", "native": true },
+      { "value": "12", "label": "12", "native": true },
+      { "value": "16", "label": "16", "native": true },
+      { "value": "32", "label": "32", "native": true }
+    ] },
+    { "name": "gap", "label": "페이지 사이 간격(pt)", "type": "number", "default": 0, "min": -1000000000, "max": 1000000000, "when": { "bookletType": ["perfectBound", "consecutive2", "consecutive3", "consecutive4"] } },
+    { "name": "bleedBetweenPages", "label": "도련 사이 간격(pt)", "type": "number", "default": 0, "min": -1000000000, "max": 1000000000, "when": { "bookletType": "perfectBound" } },
+    { "name": "creep", "label": "밀림(pt)", "type": "number", "default": 0, "min": -1000000000, "max": 1000000000, "when": { "bookletType": "saddle" } },
+    { "name": "autoMargins", "label": "여백 자동 조정", "type": "boolean", "default": true },
+    { "name": "marginTop", "label": "위쪽", "type": "number", "default": 36, "min": -1000000000, "max": 1000000000, "when": { "autoMargins": false } },
+    { "name": "marginBottom", "label": "아래쪽", "type": "number", "default": 36, "min": -1000000000, "max": 1000000000, "when": { "autoMargins": false } },
+    { "name": "marginLeft", "label": "왼쪽", "type": "number", "default": 36, "min": -1000000000, "max": 1000000000, "when": { "autoMargins": false } },
+    { "name": "marginRight", "label": "오른쪽", "type": "number", "default": 36, "min": -1000000000, "max": 1000000000, "when": { "autoMargins": false } },
+    { "name": "printBlankPrinterSpreads", "label": "빈 인쇄 면 인쇄", "type": "boolean", "default": true },
+    { "name": "printer", "label": "보낼 프린터", "type": "choice", "source": "printers", "none": "프린터 없음", "noneWhenEmpty": true, "default": "" },
+    { "name": "copies", "label": "부수", "type": "number", "integer": true, "default": 1, "min": 1, "max": 9999 },
+    { "name": "collate", "label": "한 부씩 인쇄", "type": "boolean", "default": false, "disabledWhen": { "copies": 1 } },
+    { "name": "fit", "label": "용지에 맞춰 줄이기", "type": "boolean", "default": false },
+    { "name": "path", "label": "저장 위치", "type": "text", "path": "saveFile", "extension": "pdf", "saveAs": "booklet.pdf", "hidden": true, "default": "", "maxLength": 4096 },
+    { "name": "sent", "type": "json", "hidden": true, "default": {} },
+    { "name": "canceled", "type": "boolean", "hidden": true, "default": false }
+  ],
+  "actions": {
+    "ok": [{ "cmd": "bookletFile", "selection": { "$template": "selection" }, "options": { "$template": "options" }, "path": "$path" }],
+    "print": [{ "cmd": "printToDevice", "printer": "$printer",
+      "settings": { "copies": "$copies", "collating": "$collate", "scaleMode": { "$if": "fit", "then": "scaleToFit", "else": "scaleWidthHeight" } },
+      "booklet": { "selection": { "$template": "selection" }, "options": { "$template": "options" } } }],
+    "cancelJob": [{ "cmd": "cancelPrintJob", "printer": { "$at": ["sent", "job", "printer"] }, "job": { "$at": ["sent", "job", "id"] } }]
+  }
+}

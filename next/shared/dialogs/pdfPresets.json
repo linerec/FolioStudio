@@ -1,0 +1,130 @@
+{
+  "title": "PDF 사전 설정",
+  "scope": "app",
+  "target": "none",
+  "defaults": "pdfPresets",
+  "link": "pdfPresets",
+  "build": "pdfPresets",
+  "className": "pdf-preset-dialog fields-column",
+  "okLabel": "프로젝트에 저장",
+  "cancelLabel": "닫기",
+  "description": "File ▸ PDF Presets ▸ Define (an app dialog, a manager of the project's PDF presets; project is the open project's folder). preset is the preset shown: one of the six built-in ones (x4, x1a, x3, high, press, small) or a project's (project:<name>, a JSON file in the project's presets/pdf); choosing another fills the fields from it; listAction new starts an unsaved copy named newName. The fields are the PDF settings File ▸ Export PDF takes too (pdfExport shares them). OK (Save to Project) saves the fields as the project preset name (pdfPresets save; replacing the one shown when it has that name; a built-in one's name is refused: reserved) and stays open with it shown; delete removes the project preset shown; import reads the Folio JSON preset at filePath (relative to the project) into the fields, unsaved; export writes the fields to filePath as JSON. Over an attached MCP connection this dialog is not available.",
+  "note": [
+    "프로젝트의 presets/pdf 폴더에 JSON으로 저장합니다.",
+    "불러오기·파일로 저장은 프로젝트 기준 경로의 JSON 파일을 씁니다(예: presets/pdf-share/인쇄소.json)."
+  ],
+  "tabs": [
+    { "id": "general", "label": "일반" }, { "id": "compression", "label": "압축" }, { "id": "marks", "label": "표시 및 도련" },
+    { "id": "output", "label": "출력" }, { "id": "advanced", "label": "고급" }, { "id": "summary", "label": "요약" }
+  ],
+  "tabNotes": [
+    { "tab": "output", "text": "출력 의도: {profileName}", "when": { "standard": ["X4", "X1a", "X3"], "hasProfile": true } },
+    { "tab": "output", "text": "출력 의도: 문서 CMYK 프로파일", "when": { "standard": ["X4", "X1a", "X3"], "hasProfile": false } },
+    { "tab": "output", "text": "출력 의도: 없음", "when": { "standard": ["High", "Press", "Small"] } },
+    { "tab": "output", "text": "대상: {profileName}", "when": { "hasProfile": true } },
+    { "tab": "output", "text": "대상: 문서 CMYK 프로파일", "when": { "hasProfile": false } },
+    { "tab": "output", "text": "프로파일 파일 경로는 사전 설정에 저장하지 않습니다." },
+    { "tab": "general", "text": "PDF/X-1a·PDF/X-3(PDF 1.3)에는 Acrobat 레이어를 만들 수 없습니다. 레이어 내보내기는 담을 레이어를 고릅니다.", "when": { "standard": ["X1a", "X3"] } },
+    { "tab": "general", "text": "Acrobat 레이어를 만들면 문서의 모든 레이어를 담고, 레이어 내보내기로 고른 레이어만 처음에 보입니다.", "when": { "acrobatLayers": true, "standard": ["X4", "High", "Press"] } },
+    { "tab": "advanced", "text": "글꼴 서브셋 기준: {subsetFontsBelow}%" },
+    { "tab": "advanced", "text": "투명도 병합: 고해상도 — 선·글자 1200ppi, 나머지 300ppi", "when": { "standard": ["X1a", "X3"] } },
+    { "tab": "advanced", "text": "투명도 병합: 투명도 유지", "when": { "standard": ["X4", "High", "Press", "Small"] } },
+    { "tab": "summary", "text": "표준: {standard}" },
+    { "tab": "summary", "text": "펼침면으로", "when": { "spreads": true } },
+    { "tab": "summary", "text": "낱쪽", "when": { "spreads": false } },
+    { "tab": "summary", "text": "도련: 문서 도련 사용", "when": { "useDocumentBleed": true } },
+    { "tab": "summary", "text": "도련: {bleedTop} / {bleedBottom} / {bleedInside} / {bleedOutside} pt", "when": { "useDocumentBleed": false } },
+    { "tab": "summary", "text": "표시 오프셋(pt): {markOffset} · 표시 두께(pt): {markWeight}" },
+    { "tab": "summary", "text": "이미지 다운샘플: {downsampleAbove} → {downsampleTo} ppi", "when": { "downsample": true } },
+    { "tab": "summary", "text": "이미지 다운샘플: 없음", "when": { "downsample": false } },
+    { "tab": "summary", "text": "이미지 압축: 기존 방식 (JPEG 유지·나머지 ZIP)", "when": { "imageCompression": "legacy" } },
+    { "tab": "summary", "text": "이미지 압축: ZIP", "when": { "imageCompression": "zip" } },
+    { "tab": "summary", "text": "이미지 압축: JPEG (품질 {jpegQuality})", "when": { "imageCompression": "jpeg" } },
+    { "tab": "summary", "text": "Acrobat 레이어 만들기", "when": { "acrobatLayers": true, "standard": ["X4", "High", "Press"] } },
+    { "tab": "summary", "text": "글꼴 서브셋 기준: {subsetFontsBelow}%" }
+  ],
+  "buttons": [
+    { "label": "새로 만들기", "field": "newPreset", "set": { "field": "listAction", "value": "new" } },
+    { "label": "삭제", "field": "deletePreset", "action": "delete", "disabledWhen": [{ "builtIn": true }, { "preset": "" }] },
+    { "label": "불러오기", "field": "importPreset", "action": "import" },
+    { "label": "파일로 저장", "field": "exportPreset", "action": "export" }
+  ],
+  "needs": { "import": ["filePath"], "export": ["filePath"] },
+  "staysOpen": ["ok", "delete", "import", "export"],
+  "unchecked": ["delete", "import"],
+  "then": { "ok": {}, "delete": {}, "import": { "imported": { "$at": ["_result", "result"] } }, "export": {} },
+  "errors": {
+    "a PDF preset with this name already exists": "같은 이름의 PDF 사전 설정이 이미 있습니다. 바꾸려면 목록에서 그 사전 설정을 고른 뒤 저장하세요.",
+    "only Folio JSON presets can be imported": "Folio PDF 사전 설정(JSON)만 불러올 수 있습니다.",
+    "use the .json extension": "파일 이름은 .json 으로 끝나야 합니다."
+  },
+  "fields": [
+    { "name": "preset", "label": "사전 설정", "type": "choice", "source": "pdfPresets", "default": "x4", "everyTab": true, "group": "" },
+    { "name": "name", "label": "이름", "type": "text", "default": "[PDF/X-4:2008]", "maxLength": 200, "required": true, "trim": true, "everyTab": true, "group": "",
+      "messages": { "reserved": "기본 사전 설정의 이름입니다. 다른 이름으로 저장하세요.", "required": "사전 설정 이름을 넣으세요." } },
+    { "name": "filePath", "label": "파일 (프로젝트 기준 경로)", "type": "text", "default": "", "maxLength": 1024, "placeholder": "presets/pdf-share/preset.json", "everyTab": true, "group": "",
+      "messages": { "notRelative": "프로젝트 폴더 안의 경로를 / 로 이어 쓰세요(예: presets/pdf-share/인쇄소.json).", "badExtension": "파일 이름은 .json 으로 끝나야 합니다." } },
+
+    { "name": "standard", "label": "표준", "type": "enum", "default": "X4", "tab": "general", "group": "", "options": [
+      { "value": "X4", "label": "PDF/X-4:2008", "native": true },
+      { "value": "X1a", "label": "PDF/X-1a:2001", "native": true },
+      { "value": "X3", "label": "PDF/X-3:2002", "native": true },
+      { "value": "High", "label": "일반 PDF — 고품질 인쇄" },
+      { "value": "Press", "label": "일반 PDF — 인쇄 품질" },
+      { "value": "Small", "label": "최소 파일 크기 — 내보낼 수 없음" }
+    ] },
+    { "name": "smallUnsupported", "label": "sRGB 변환·색상/회색별 해상도", "type": "boolean", "default": false, "local": true, "disabled": true, "disabledNote": "지원하지 않는 옵션입니다.", "when": { "standard": "Small" }, "tab": "general", "group": "" },
+    { "name": "spreads", "label": "펼침면으로", "type": "boolean", "default": false, "tab": "general", "group": "" },
+    { "name": "acrobatLayers", "label": "Acrobat 레이어 만들기", "type": "boolean", "default": false, "disabledWhen": { "standard": ["X1a", "X3"] }, "tab": "general", "group": "" },
+    { "name": "exportLayers", "label": "레이어 내보내기", "type": "enum", "default": "visiblePrintable", "tab": "general", "group": "", "options": [{ "value": "visiblePrintable", "label": "보이고 인쇄 가능한 레이어" }, { "value": "visible", "label": "보이는 레이어" }, { "value": "all", "label": "모든 레이어" }] },
+    { "name": "linksUnsupported", "label": "하이퍼링크·책갈피 내보내기", "type": "boolean", "default": false, "local": true, "disabled": true, "disabledNote": "지원하지 않는 옵션입니다.", "tab": "general", "group": "" },
+
+    { "name": "downsample", "label": "이미지 다운샘플", "type": "boolean", "default": true, "tab": "compression", "group": "" },
+    { "name": "downsampleAbove", "label": "초과 해상도(ppi)", "type": "number", "default": 450, "min": 9, "max": 10000, "when": { "downsample": true }, "tab": "compression", "group": "" },
+    { "name": "downsampleTo", "label": "대상 해상도(ppi)", "type": "number", "default": 300, "min": 9, "max": 2400, "when": { "downsample": true }, "tab": "compression", "group": "" },
+    { "name": "compression", "label": "ZIP 압축 수준", "type": "number", "integer": true, "default": 6, "min": 0, "max": 9, "tab": "compression", "group": "" },
+    { "name": "imageCompression", "label": "이미지 압축", "type": "enum", "default": "legacy", "tab": "compression", "group": "", "options": [
+      { "value": "legacy", "label": "기존 방식 (JPEG 유지·나머지 ZIP)" },
+      { "value": "zip", "label": "ZIP", "native": true },
+      { "value": "jpeg", "label": "JPEG", "native": true }
+    ] },
+    { "name": "jpegQuality", "label": "JPEG 품질 (1–100)", "type": "number", "integer": true, "default": 95, "min": 1, "max": 100, "when": { "imageCompression": "jpeg" }, "tab": "compression", "group": "" },
+    { "name": "compressionUnsupported", "label": "자동 압축·쌍입방 다운샘플·흑백 이미지 개별 설정", "type": "boolean", "default": false, "local": true, "disabled": true, "disabledNote": "지원하지 않는 옵션입니다.", "tab": "compression", "group": "" },
+
+    { "name": "crop", "label": "재단선", "type": "boolean", "default": false, "tab": "marks", "group": "" },
+    { "name": "bleedMarks", "label": "도련 표시", "type": "boolean", "default": false, "tab": "marks", "group": "" },
+    { "name": "registration", "label": "맞춰찍기 표시", "type": "boolean", "default": false, "tab": "marks", "group": "" },
+    { "name": "pageInfo", "label": "페이지 정보", "type": "boolean", "default": false, "tab": "marks", "group": "" },
+    { "name": "markOffset", "label": "표시 오프셋(pt)", "type": "number", "default": 6, "min": 0, "max": 72, "tab": "marks", "group": "" },
+    { "name": "markWeight", "label": "표시 두께(pt)", "type": "enum", "default": "0.25", "tab": "marks", "group": "", "options": [
+      { "value": "0.125", "label": "0.125", "native": true }, { "value": "0.25", "label": "0.25", "native": true }, { "value": "0.5", "label": "0.5", "native": true }
+    ] },
+    { "name": "useDocumentBleed", "label": "문서 도련 사용", "type": "boolean", "default": false, "tab": "marks", "group": "" },
+    { "name": "bleedTop", "label": "위 도련(pt)", "type": "number", "default": 0, "min": 0, "max": 432, "when": { "useDocumentBleed": false }, "tab": "marks", "group": "" },
+    { "name": "bleedBottom", "label": "아래 도련(pt)", "type": "number", "default": 0, "min": 0, "max": 432, "when": { "useDocumentBleed": false }, "tab": "marks", "group": "" },
+    { "name": "bleedInside", "label": "안쪽 도련(pt)", "type": "number", "default": 0, "min": 0, "max": 432, "when": { "useDocumentBleed": false }, "tab": "marks", "group": "" },
+    { "name": "bleedOutside", "label": "바깥쪽 도련(pt)", "type": "number", "default": 0, "min": 0, "max": 432, "when": { "useDocumentBleed": false }, "tab": "marks", "group": "" },
+    { "name": "marksUnsupported", "label": "색상 막대·슬러그 포함", "type": "boolean", "default": false, "local": true, "disabled": true, "disabledNote": "지원하지 않는 옵션입니다.", "tab": "marks", "group": "" },
+
+    { "name": "colorConversion", "label": "색상 변환", "type": "enum", "default": "preset", "tab": "output", "group": "",
+      "messages": { "notAllowed": "PDF/X-1a 는 CMYK 로 변환해야 합니다." }, "options": [
+      { "value": "preset", "label": "사전 설정 기본값" },
+      { "value": "none", "label": "색상을 변환하지 않습니다." },
+      { "value": "documentCmyk", "label": "CMYK로 변환하며 CMYK 숫자를 유지합니다." }
+    ] },
+    { "name": "outputUnsupported", "label": "대상 프로파일 선택·RGB 변환", "type": "boolean", "default": false, "local": true, "disabled": true, "disabledNote": "지원하지 않는 옵션입니다.", "tab": "output", "group": "" },
+    { "name": "advancedUnsupported", "label": "글꼴 서브셋 비율 변경·사용자 투명도 병합", "type": "boolean", "default": false, "local": true, "disabled": true, "disabledNote": "지원하지 않는 옵션입니다.", "tab": "advanced", "group": "" },
+
+    { "name": "version", "type": "number", "integer": true, "default": 1, "min": 1, "max": 1, "hidden": true },
+    { "name": "subsetFontsBelow", "type": "number", "integer": true, "default": 100, "min": 100, "max": 100, "hidden": true },
+    { "name": "flattenLineArtPpi", "type": "number", "default": 1200, "min": 1200, "max": 1200, "hidden": true },
+    { "name": "flattenSmoothPpi", "type": "number", "default": 300, "min": 300, "max": 300, "hidden": true },
+    { "name": "project", "label": "프로젝트", "type": "text", "path": "folder", "hidden": true, "required": true, "default": "", "maxLength": 1024 },
+    { "name": "builtIn", "type": "boolean", "default": true, "hidden": true, "local": true },
+    { "name": "listAction", "type": "enum", "default": "", "hidden": true, "local": true, "options": ["", "new"] },
+    { "name": "newName", "type": "text", "default": "새 PDF 사전 설정", "hidden": true, "local": true, "maxLength": 200 },
+    { "name": "imported", "type": "json", "default": {}, "hidden": true, "local": true },
+    { "name": "profileName", "type": "text", "default": "", "hidden": true, "local": true, "maxLength": 1024 },
+    { "name": "hasProfile", "type": "boolean", "default": false, "hidden": true, "local": true }
+  ]
+}

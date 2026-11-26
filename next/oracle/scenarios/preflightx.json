@@ -1,0 +1,353 @@
+{
+  "fixture": "basic",
+  "about": "Hidden-document mixed ink groups: Cartesian steps, clamping, three inks and printing a generated swatch.",
+  "scenarios": [
+    {
+      "name": "preflightx-mixed-grid",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "Grid",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            2
+          ],
+          "increment": [
+            15,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "name": "preflightx-mixed-cap",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "Cap",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            90,
+            0
+          ],
+          "repeat": [
+            2,
+            0
+          ],
+          "increment": [
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "preflightx-mixed-three",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "Three",
+          "inks": [
+            "Oracle Spot",
+            "Process Black",
+            "Process Yellow"
+          ],
+          "initial": [
+            25,
+            5,
+            10
+          ],
+          "repeat": [
+            1,
+            1,
+            1
+          ],
+          "increment": [
+            25,
+            10,
+            20
+          ]
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "fillColor": "MixedInk/Three Swatch 8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "preflightx-profiles",
+      "steps": [
+        {
+          "op": "preflightProfiles",
+          "state": {
+            "active": "Press",
+            "profiles": [
+              {
+                "name": "Press",
+                "disabled_rules": [
+                  "OVERSET_TEXT"
+                ],
+                "parameters": {
+                  "hairline_pt": 0.5
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "preflightx-options",
+      "steps": [
+        {
+          "op": "preflightSettings",
+          "state": {
+            "page_range": "2-3",
+            "layers": "all",
+            "include_pasteboard": true,
+            "include_nonprinting": true,
+            "off": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "preflightx-stroke-dash",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Press dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              12,
+              6
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 12,
+            "strokeColor": "Black"
+          }
+        },
+        {
+          "op": "customStroke",
+          "target": "r-fill",
+          "id": "DashedStrokeStyle/Press dash"
+        }
+      ]
+    },
+    {
+      "name": "preflightx-stroke-dot",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Press dot",
+            "kind": "DottedStrokeStyle",
+            "values": [
+              10
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 12,
+            "strokeColor": "Black"
+          }
+        },
+        {
+          "op": "customStroke",
+          "target": "r-fill",
+          "id": "DottedStrokeStyle/Press dot"
+        }
+      ]
+    },
+    {
+      "name": "preflightx-stroke-stripe",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Press stripe",
+            "kind": "StripedStrokeStyle",
+            "values": [
+              0,
+              20,
+              50,
+              100
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 12,
+            "strokeColor": "Black"
+          }
+        },
+        {
+          "op": "customStroke",
+          "target": "r-fill",
+          "id": "StripedStrokeStyle/Press stripe"
+        }
+      ]
+    },
+    {
+      "name": "preflightx-stroke-dot-fit",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Press dot",
+            "kind": "DottedStrokeStyle",
+            "values": [
+              18
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 12,
+            "strokeColor": "Black"
+          }
+        },
+        {
+          "op": "customStroke",
+          "target": "r-fill",
+          "id": "DottedStrokeStyle/Press dot"
+        }
+      ]
+    },
+    {
+      "name": "preflightx-stroke-edit",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Press dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              12,
+              6
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 12,
+            "strokeColor": "Black"
+          }
+        },
+        {
+          "op": "customStroke",
+          "target": "r-fill",
+          "id": "DashedStrokeStyle/Press dash"
+        },
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "DashedStrokeStyle/Press dash",
+            "name": "Renamed dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "RoundEndCap"
+          }
+        }
+      ]
+    },
+    {
+      "name": "preflightx-stroke-delete",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Press dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              12,
+              6
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeWeight": 12,
+            "strokeColor": "Black"
+          }
+        },
+        {
+          "op": "customStroke",
+          "target": "r-fill",
+          "id": "DashedStrokeStyle/Press dash"
+        },
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "DashedStrokeStyle/Press dash",
+            "name": "Renamed dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "RoundEndCap"
+          }
+        },
+        {
+          "op": "strokeStyleDelete",
+          "id": "DashedStrokeStyle/Renamed dash"
+        }
+      ]
+    }
+  ]
+}

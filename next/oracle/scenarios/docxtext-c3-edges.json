@@ -1,0 +1,438 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file whose table cells have their own borders (w:tcBorders): the edge strokes and priorities InDesign 2025 makes (docxtext-c3).",
+ "scenarios": [
+  {
+   "name": "docxtext-c3-edge1",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-e04.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-e55.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge3",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-j14.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge4",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-h24.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge5",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-j17.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge6",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-j10.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge7",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-e44.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge8",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-e50.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge9",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-m17.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge10",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-m01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge11",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-e51.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge12",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-i18.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge13",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-j04.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge14",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-h09.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge15",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-k06.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-edge16",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-e41.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb1",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s02.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb3",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s03.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb4",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s09.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb5",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s11.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb6",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s12.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb7",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s13.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-tb8",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-s05.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

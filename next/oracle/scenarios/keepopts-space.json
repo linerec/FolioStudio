@@ -1,0 +1,95 @@
+{
+ "fixture": "keepopts-space",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "keepspc-head-next",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "space",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspc-body-all",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "space",
+     "start": 17,
+     "end": 18,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspc-body-first-last",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "space",
+     "start": 17,
+     "end": 18,
+     "props": {
+      "keepLinesTogether": true,
+      "keepAllLinesTogether": false,
+      "keepFirstLines": 2,
+      "keepLastLines": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "keepspc-prev-next",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "space",
+     "start": 0,
+     "end": 1,
+     "props": {
+      "keepWithNext": 3
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "space",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 2
+     }
+    }
+   ]
+  }
+ ]
+}

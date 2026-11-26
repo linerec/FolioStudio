@@ -1,0 +1,99 @@
+{
+  "title": "기울이기",
+  "style": "transform",
+  "target": "selection",
+  "fields": [
+    {
+      "name": "angle",
+      "label": "기울이기 각도",
+      "type": "number",
+      "unit": "angle",
+      "default": 0,
+      "min": -89.9999,
+      "max": 89.9999,
+      "group": "기울이기",
+      "rangeMessage": "기울이기 각도는 −90°와 90° 사이여야 합니다."
+    },
+    {
+      "name": "anchor",
+      "type": "enum",
+      "default": "topLeft",
+      "hidden": true,
+      "options": [
+        "topLeft",
+        "top",
+        "topRight",
+        "left",
+        "center",
+        "right",
+        "bottomLeft",
+        "bottom",
+        "bottomRight"
+      ]
+    },
+    {
+      "name": "adjustStroke",
+      "type": "boolean",
+      "default": true,
+      "hidden": true,
+      "from": {
+        "preference": "folio.transformPanel",
+        "key": "adjustStroke"
+      }
+    },
+    {
+      "name": "adjustEffects",
+      "type": "boolean",
+      "default": true,
+      "hidden": true,
+      "from": {
+        "preference": "folio.transformPanel",
+        "key": "adjustEffects"
+      }
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "shear",
+        "ids": "$ids",
+        "by": "$angle",
+        "anchor": "$anchor",
+        "adjust": {
+          "stroke": "$adjustStroke",
+          "effects": "$adjustEffects"
+        }
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          0,
+          0
+        ]
+      },
+      {
+        "op": "shear",
+        "ids": [
+          "@copies"
+        ],
+        "by": "$angle",
+        "anchor": "$anchor",
+        "adjust": {
+          "stroke": "$adjustStroke",
+          "effects": "$adjustEffects"
+        }
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ],
+  "note": "가로 축을 기준으로 기울입니다."
+}

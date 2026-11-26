@@ -1,0 +1,143 @@
+{
+  "fixture": "basic-styles",
+  "about": "Object Styles panel: applying a style (keeping or clearing overrides), a based-on style, clearing overrides, [None], text frame options from a style.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "ostyle-apply",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "ostyle-apply-clear",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "ostyle-apply-over-local",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 5
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "ostyle-apply-over-local-clear",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 5
+          }
+        },
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "ostyle-based-on",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-plain",
+          "style": "Oracle Box Blue",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "ostyle-change-styled",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-fill",
+          "style": "Oracle Box Blue",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "ostyle-clear-overrides",
+      "steps": [
+        {
+          "op": "clearObjectStyleOverrides",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "ostyle-none",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-fill",
+          "style": "[None]",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "ostyle-text-frame",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Oracle Text",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "ostyle-text-frame-clear",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "tf",
+          "style": "Oracle Text",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "ostyle-basic-graphics",
+      "steps": [
+        {
+          "op": "applyObjectStyle",
+          "target": "r-fill",
+          "style": "$ID/[Normal Graphics Frame]",
+          "clear": false
+        }
+      ]
+    }
+  ]
+}

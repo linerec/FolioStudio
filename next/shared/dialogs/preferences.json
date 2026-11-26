@@ -1,0 +1,2544 @@
+{
+ "title": "환경 설정",
+ "scope": "either",
+ "style": "preferences",
+ "target": "none",
+ "defaults": "preferences",
+ "build": "preferences",
+ "unitFields": {
+  "horizontal": "horizontalUnits",
+  "vertical": "verticalUnits"
+ },
+ "description": "Edit > Preferences, every category as a tab (open one with tab). With a document open for editing it opens in its scope: OK changes the document as one step (setViewPref for units, grids, guides and pasteboard, setLanguageQuotes for the dictionary quotation marks, setDocPrefs for the document preferences, only what changed) and then saves the app settings (userSettings patch preferences and autoCorrectTables). Without one (scope app) the document fields are greyed and only the app settings are saved. Lengths are in points. autoCorrect rows are language, word, correction.",
+ "lists": {
+  "appColors": [
+   {
+    "value": "LIGHT_BLUE",
+    "label": "연한 파랑"
+   },
+   {
+    "value": "RED",
+    "label": "빨강"
+   },
+   {
+    "value": "GREEN",
+    "label": "초록"
+   },
+   {
+    "value": "BLUE",
+    "label": "파랑"
+   },
+   {
+    "value": "YELLOW",
+    "label": "노랑"
+   },
+   {
+    "value": "MAGENTA",
+    "label": "자홍"
+   },
+   {
+    "value": "CYAN",
+    "label": "청록"
+   },
+   {
+    "value": "GRAY",
+    "label": "회색"
+   },
+   {
+    "value": "BLACK",
+    "label": "검정"
+   },
+   {
+    "value": "ORANGE",
+    "label": "주황"
+   },
+   {
+    "value": "DARK_GREEN",
+    "label": "진한 초록"
+   },
+   {
+    "value": "TEAL",
+    "label": "청록 회색"
+   },
+   {
+    "value": "TAN",
+    "label": "황갈"
+   },
+   {
+    "value": "BROWN",
+    "label": "갈색"
+   },
+   {
+    "value": "VIOLET",
+    "label": "보라"
+   },
+   {
+    "value": "GOLD",
+    "label": "금색"
+   },
+   {
+    "value": "DARK_BLUE",
+    "label": "진한 파랑"
+   },
+   {
+    "value": "PINK",
+    "label": "분홍"
+   },
+   {
+    "value": "LAVENDER",
+    "label": "연보라"
+   },
+   {
+    "value": "BRICK_RED",
+    "label": "벽돌색"
+   },
+   {
+    "value": "OLIVE_GREEN",
+    "label": "올리브 초록"
+   },
+   {
+    "value": "PEACH",
+    "label": "복숭아색"
+   },
+   {
+    "value": "BURGUNDY",
+    "label": "버건디"
+   },
+   {
+    "value": "GRASS_GREEN",
+    "label": "풀색"
+   },
+   {
+    "value": "OCHRE",
+    "label": "황토"
+   },
+   {
+    "value": "PURPLE",
+    "label": "자주"
+   },
+   {
+    "value": "LIGHT_GRAY",
+    "label": "연한 회색"
+   },
+   {
+    "value": "CHARCOAL",
+    "label": "숯색"
+   },
+   {
+    "value": "GRID_BLUE",
+    "label": "격자 파랑"
+   },
+   {
+    "value": "GRID_ORANGE",
+    "label": "격자 주황"
+   },
+   {
+    "value": "FIESTA",
+    "label": "피에스타"
+   },
+   {
+    "value": "LIGHT_OLIVE",
+    "label": "연한 올리브"
+   },
+   {
+    "value": "LIPSTICK",
+    "label": "립스틱"
+   },
+   {
+    "value": "CUTE_TEAL",
+    "label": "큐트 틸"
+   },
+   {
+    "value": "SULPHUR",
+    "label": "유황색"
+   },
+   {
+    "value": "GRID_GREEN",
+    "label": "격자 초록"
+   },
+   {
+    "value": "WHITE",
+    "label": "흰색"
+   }
+  ],
+  "viewColors": [
+   {
+    "value": "*custom",
+    "label": "사용자 지정",
+    "current": true
+   },
+   {
+    "value": "LightBlue",
+    "label": "연한 파랑"
+   },
+   {
+    "value": "Red",
+    "label": "빨강"
+   },
+   {
+    "value": "Green",
+    "label": "초록"
+   },
+   {
+    "value": "Blue",
+    "label": "파랑"
+   },
+   {
+    "value": "Yellow",
+    "label": "노랑"
+   },
+   {
+    "value": "Magenta",
+    "label": "자홍"
+   },
+   {
+    "value": "Cyan",
+    "label": "청록"
+   },
+   {
+    "value": "Gray",
+    "label": "회색"
+   },
+   {
+    "value": "Black",
+    "label": "검정"
+   },
+   {
+    "value": "Orange",
+    "label": "주황"
+   },
+   {
+    "value": "DarkGreen",
+    "label": "진한 초록"
+   },
+   {
+    "value": "Teal",
+    "label": "청록 회색"
+   },
+   {
+    "value": "Tan",
+    "label": "황갈"
+   },
+   {
+    "value": "Brown",
+    "label": "갈색"
+   },
+   {
+    "value": "Violet",
+    "label": "보라"
+   },
+   {
+    "value": "Gold",
+    "label": "금색"
+   },
+   {
+    "value": "DarkBlue",
+    "label": "진한 파랑"
+   },
+   {
+    "value": "Pink",
+    "label": "분홍"
+   },
+   {
+    "value": "Lavender",
+    "label": "연보라"
+   },
+   {
+    "value": "BrickRed",
+    "label": "벽돌색"
+   },
+   {
+    "value": "OliveGreen",
+    "label": "올리브 초록"
+   },
+   {
+    "value": "Peach",
+    "label": "복숭아색"
+   },
+   {
+    "value": "Burgundy",
+    "label": "버건디"
+   },
+   {
+    "value": "GrassGreen",
+    "label": "풀색"
+   },
+   {
+    "value": "Ochre",
+    "label": "황토"
+   },
+   {
+    "value": "Purple",
+    "label": "자주"
+   },
+   {
+    "value": "LightGray",
+    "label": "연한 회색"
+   },
+   {
+    "value": "Charcoal",
+    "label": "숯색"
+   },
+   {
+    "value": "GridBlue",
+    "label": "격자 파랑"
+   },
+   {
+    "value": "GridOrange",
+    "label": "격자 주황"
+   },
+   {
+    "value": "Fiesta",
+    "label": "피에스타"
+   },
+   {
+    "value": "LightOlive",
+    "label": "연한 올리브"
+   },
+   {
+    "value": "Lipstick",
+    "label": "립스틱"
+   },
+   {
+    "value": "CuteTeal",
+    "label": "큐트 틸"
+   },
+   {
+    "value": "Sulphur",
+    "label": "유황색"
+   },
+   {
+    "value": "GridGreen",
+    "label": "격자 초록"
+   },
+   {
+    "value": "White",
+    "label": "흰색"
+   }
+  ]
+ },
+ "tabs": [
+  {
+   "id": "general",
+   "label": "일반",
+   "command": "edit.preferences"
+  },
+  {
+   "id": "interface",
+   "label": "인터페이스",
+   "command": "id.edit.preferences.interface"
+  },
+  {
+   "id": "userInterfaceScaling",
+   "label": "사용자 인터페이스 크기 조정",
+   "command": "id.edit.preferences.userInterfaceScaling"
+  },
+  {
+   "id": "type",
+   "label": "문자",
+   "command": "id.edit.preferences.type"
+  },
+  {
+   "id": "advancedType",
+   "label": "고급 문자",
+   "command": "id.edit.preferences.advancedType",
+   "document": true
+  },
+  {
+   "id": "composition",
+   "label": "컴포지션",
+   "command": "id.edit.preferences.composition",
+   "document": true
+  },
+  {
+   "id": "dictionary",
+   "label": "사전",
+   "command": "id.edit.preferences.dictionary",
+   "document": true
+  },
+  {
+   "id": "unitsAndIncrements",
+   "label": "단위 및 증감",
+   "command": "id.edit.preferences.unitsAndIncrements",
+   "document": true,
+   "className": "units-prefs-dialog"
+  },
+  {
+   "id": "grids",
+   "label": "격자",
+   "command": "id.edit.preferences.grids",
+   "document": true,
+   "className": "grid-prefs-dialog"
+  },
+  {
+   "id": "guidesAndPasteboard",
+   "label": "안내선 및 대지",
+   "command": "id.edit.preferences.guidesAndPasteboard",
+   "className": "guides-prefs-dialog",
+   "note": "안내선을 Shift 를 누른 채 끌면 눈금에 붙습니다.",
+   "differs": "guides"
+  },
+  {
+   "id": "spelling",
+   "label": "맞춤법",
+   "command": "id.edit.preferences.spelling"
+  },
+  {
+   "id": "autocorrect",
+   "label": "자동 고침",
+   "command": "id.edit.preferences.autocorrect"
+  },
+  {
+   "id": "notes",
+   "label": "메모",
+   "command": "id.edit.preferences.notes"
+  },
+  {
+   "id": "trackChanges",
+   "label": "변경 내용 추적",
+   "command": "id.edit.preferences.trackChanges"
+  },
+  {
+   "id": "storyEditorDisplay",
+   "label": "스토리 편집기 표시",
+   "command": "id.edit.preferences.storyEditorDisplay"
+  },
+  {
+   "id": "displayPerformance",
+   "label": "표시 성능",
+   "command": "id.edit.preferences.displayPerformance"
+  },
+  {
+   "id": "appearanceOfBlack",
+   "label": "검정 모양",
+   "command": "id.edit.preferences.appearanceOfBlack"
+  },
+  {
+   "id": "fileHandling",
+   "label": "파일 처리",
+   "command": "id.edit.preferences.fileHandling"
+  },
+  {
+   "id": "clipboardHandling",
+   "label": "클립보드 처리",
+   "command": "id.edit.preferences.clipboardHandling"
+  }
+ ],
+ "fields": [
+  {
+   "name": "generalPreferences.pageNumbering",
+   "label": "페이지 번호 표시",
+   "type": "enum",
+   "default": "SECTION",
+   "options": [
+    {
+     "value": "SECTION",
+     "label": "섹션 번호 매기기"
+    },
+    {
+     "value": "ABSOLUTE",
+     "label": "절대 번호 매기기"
+    }
+   ],
+   "tab": "general"
+  },
+  {
+   "name": "generalPreferences.showStartWorkspace",
+   "label": "문서를 열지 않았을 때 시작 작업 영역 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "general"
+  },
+  {
+   "name": "generalPreferences.showWhatsNewOnStartup",
+   "label": "시작할 때 새로운 기능 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "general"
+  },
+  {
+   "name": "generalPreferences.showLegacyNewDocumentDialog",
+   "label": "기존 새 문서 대화상자 사용",
+   "type": "boolean",
+   "default": false,
+   "tab": "general"
+  },
+  {
+   "name": "generalPreferences.preventSelectingLockedItems",
+   "label": "잠긴 개체 선택 방지",
+   "type": "boolean",
+   "default": true,
+   "tab": "general"
+  },
+  {
+   "name": "folio.mcp.allowConnection",
+   "label": "LLM 연결(MCP) 허용",
+   "type": "boolean",
+   "default": false,
+   "tab": "general"
+  },
+  {
+   "name": "folio.mcp.allowDatabaseRefresh",
+   "label": "LLM 이 데이터베이스 원본을 새로 고칠 수 있음",
+   "type": "boolean",
+   "default": false,
+   "tab": "general"
+  },
+  {
+   "name": "folio.mcp.allowFileWrites",
+   "label": "LLM 이 파일을 쓸 수 있음",
+   "type": "boolean",
+   "default": false,
+   "tab": "general"
+  },
+  {
+   "name": "folio.mcp.newProjectFolder",
+   "label": "LLM 이 새 프로젝트를 만들 수 있는 폴더",
+   "type": "text",
+   "path": "folder",
+   "choose": "위치…",
+   "chooseTitle": "LLM 이 새 프로젝트를 만들 수 있는 폴더",
+   "default": "",
+   "maxLength": 1024,
+   "tab": "general"
+  },
+  {
+   "name": "folio.theme",
+   "label": "색상 테마",
+   "type": "enum",
+   "default": "dark",
+   "options": [
+    {
+     "value": "dark",
+     "label": "어둡게"
+    },
+    {
+     "value": "mediumDark",
+     "label": "중간 어둡게"
+    },
+    {
+     "value": "mediumLight",
+     "label": "중간 밝게"
+    },
+    {
+     "value": "light",
+     "label": "밝게"
+    }
+   ],
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.toolTips",
+   "label": "도구 설명",
+   "type": "enum",
+   "default": "FAST",
+   "options": [
+    {
+     "value": "NORMAL",
+     "label": "보통"
+    },
+    {
+     "value": "NONE",
+     "label": "없음"
+    },
+    {
+     "value": "FAST",
+     "label": "빠르게"
+    }
+   ],
+   "tab": "interface"
+  },
+  {
+   "name": "folio.instantToolHelp",
+   "label": "도구 설명 즉시 보기",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.toolsPanel",
+   "label": "도구 패널 모양",
+   "type": "enum",
+   "default": "DOUBLE_COLUMN",
+   "options": [
+    {
+     "value": "SINGLE_COLUMN",
+     "label": "한 열"
+    },
+    {
+     "value": "DOUBLE_COLUMN",
+     "label": "두 열"
+    },
+    {
+     "value": "SINGLE_ROW",
+     "label": "한 행"
+    }
+   ],
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.autoCollapseIconPanels",
+   "label": "아이콘 패널 자동 축소",
+   "type": "boolean",
+   "default": false,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.autoShowHiddenPanels",
+   "label": "숨겨진 패널 자동 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.openDocumentsAsTabs",
+   "label": "문서를 탭으로 열기",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.enableFloatingWindowDocking",
+   "label": "부동 문서 창 도킹 사용",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.showTransformationValues",
+   "label": "변형 값 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.showContentGrabber",
+   "label": "내용 선택 도구 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.showLiveCorners",
+   "label": "라이브 모퉁이 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.showAnchorObjectAdornment",
+   "label": "고정된 개체 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "generalPreferences.highlightObjectUnderSelectionTool",
+   "label": "선택 도구 아래 개체 강조",
+   "type": "boolean",
+   "default": true,
+   "tab": "interface"
+  },
+  {
+   "name": "folio.uiScale",
+   "label": "사용자 인터페이스 크기 (%)",
+   "type": "enum",
+   "default": "100",
+   "options": [
+    {
+     "value": "100",
+     "label": "100%",
+     "native": true
+    },
+    {
+     "value": "125",
+     "label": "125%",
+     "native": true
+    },
+    {
+     "value": "150",
+     "label": "150%",
+     "native": true
+    },
+    {
+     "value": "175",
+     "label": "175%",
+     "native": true
+    },
+    {
+     "value": "200",
+     "label": "200%",
+     "native": true
+    }
+   ],
+   "tab": "userInterfaceScaling"
+  },
+  {
+   "name": "textEditingPreferences.dragAndDropTextInLayout",
+   "label": "레이아웃 보기에서 텍스트 끌어 놓기",
+   "type": "boolean",
+   "default": false,
+   "tab": "type"
+  },
+  {
+   "name": "textEditingPreferences.allowDragAndDropTextInStory",
+   "label": "스토리 편집기에서 텍스트 끌어 놓기",
+   "type": "boolean",
+   "default": true,
+   "tab": "type"
+  },
+  {
+   "name": "textEditingPreferences.tripleClickSelectsLine",
+   "label": "세 번 클릭하여 줄 선택",
+   "type": "boolean",
+   "default": true,
+   "tab": "type"
+  },
+  {
+   "name": "textEditingPreferences.smartCutAndPaste",
+   "label": "잘라내기 및 붙이기에서 공백 자동 조정",
+   "type": "boolean",
+   "default": true,
+   "tab": "type"
+  },
+  {
+   "name": "textEditingPreferences.singleClickConvertsFramesToTextFrames",
+   "label": "문자 도구로 클릭하여 프레임을 텍스트 프레임으로 변환",
+   "type": "boolean",
+   "default": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.TypographersQuotes",
+   "label": "인용 부호 자동 사용",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.UseOpticalSize",
+   "label": "광학 크기 자동 사용",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.UseParagraphLeading",
+   "label": "전체 단락에 행간 적용",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.QuoteCharactersRotatedInVertical",
+   "label": "세로쓰기에서 인용 부호 회전",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.SmartTextReflow",
+   "label": "스마트 텍스트 리플로우",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.AddPages",
+   "label": "페이지 추가 위치",
+   "docPref": true,
+   "document": true,
+   "tab": "type",
+   "options": [
+    {
+     "value": "EndOfStory",
+     "label": "스토리 끝"
+    },
+    {
+     "value": "EndOfSection",
+     "label": "섹션 끝"
+    },
+    {
+     "value": "EndOfDocument",
+     "label": "문서 끝"
+    }
+   ]
+  },
+  {
+   "name": "TextPreference.LimitToMasterTextFrames",
+   "label": "기본 텍스트 프레임으로 제한",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.PreserveFacingPageSpreads",
+   "label": "마주보는 페이지 스프레드 유지",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.DeleteEmptyPages",
+   "label": "빈 페이지 삭제",
+   "docPref": true,
+   "document": true,
+   "tab": "type"
+  },
+  {
+   "name": "TextPreference.SuperscriptSize",
+   "label": "위 첨자 크기 (%)",
+   "docPref": true,
+   "document": true,
+   "tab": "advancedType"
+  },
+  {
+   "name": "TextPreference.SuperscriptPosition",
+   "label": "위 첨자 위치 (%)",
+   "docPref": true,
+   "document": true,
+   "tab": "advancedType"
+  },
+  {
+   "name": "TextPreference.SubscriptSize",
+   "label": "아래 첨자 크기 (%)",
+   "docPref": true,
+   "document": true,
+   "tab": "advancedType"
+  },
+  {
+   "name": "TextPreference.SubscriptPosition",
+   "label": "아래 첨자 위치 (%)",
+   "docPref": true,
+   "document": true,
+   "tab": "advancedType"
+  },
+  {
+   "name": "TextPreference.SmallCap",
+   "label": "작은 대문자 크기 (%)",
+   "docPref": true,
+   "document": true,
+   "tab": "advancedType"
+  },
+  {
+   "name": "TextPreference.HighlightHjViolations",
+   "label": "하이픈 넣기 및 균등 배치 위반 강조",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.HighlightKeeps",
+   "label": "유지 옵션 위반 강조",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.HighlightSubstitutedGlyphs",
+   "label": "대체 글리프 강조",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.HighlightCustomSpacing",
+   "label": "사용자 정의 자간/커닝 강조",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.HighlightSubstitutedFonts",
+   "label": "대체 글꼴 강조",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.HighlightKinsoku",
+   "label": "금칙 위반 강조",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.JustifyTextWraps",
+   "label": "개체 옆의 텍스트 균등 배치",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.AbutTextToTextWrap",
+   "label": "행간 단위로 건너뛰기",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "TextPreference.ZOrderTextWrap",
+   "label": "텍스트 감싸기가 아래의 텍스트에만 영향",
+   "docPref": true,
+   "document": true,
+   "tab": "composition"
+  },
+  {
+   "name": "languageQuotes",
+   "label": "사전 언어",
+   "type": "array",
+   "default": [],
+   "document": true,
+   "fixedRows": true,
+   "maxRows": 1000,
+   "fields": [
+    {
+     "name": "id",
+     "type": "text",
+     "default": "",
+     "hidden": true
+    },
+    {
+     "name": "name",
+     "label": "언어",
+     "type": "text",
+     "default": "",
+     "disabled": true
+    },
+    {
+     "name": "singleQuotes",
+     "label": "작은따옴표 쌍",
+     "type": "text",
+     "default": "",
+     "maxLength": 8,
+     "messages": {
+      "quotePair": "여는 부호와 닫는 부호를 하나씩 입력하세요."
+     }
+    },
+    {
+     "name": "doubleQuotes",
+     "label": "큰따옴표 쌍",
+     "type": "text",
+     "default": "",
+     "maxLength": 8,
+     "messages": {
+      "quotePair": "여는 부호와 닫는 부호를 하나씩 입력하세요."
+     }
+    }
+   ],
+   "tab": "dictionary"
+  },
+  {
+   "name": "DictionaryPreference.Composition",
+   "label": "다음을 사용하여 작성",
+   "docPref": true,
+   "document": true,
+   "tab": "dictionary",
+   "options": [
+    {
+     "value": "UseUserDictionary",
+     "label": "사용자 사전"
+    },
+    {
+     "value": "UseDocument",
+     "label": "문서"
+    },
+    {
+     "value": "Both",
+     "label": "사용자 사전 및 문서"
+    }
+   ]
+  },
+  {
+   "name": "DictionaryPreference.MergeUserDictionary",
+   "label": "사용자 사전을 문서에 병합",
+   "docPref": true,
+   "document": true,
+   "tab": "dictionary"
+  },
+  {
+   "name": "DictionaryPreference.RecomposeWhenChanged",
+   "label": "사전이 바뀌면 모든 스토리 다시 작성",
+   "docPref": true,
+   "document": true,
+   "tab": "dictionary"
+  },
+  {
+   "name": "rulerOrigin",
+   "label": "원점",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "SpreadOrigin",
+   "options": [
+    {
+     "value": "SpreadOrigin",
+     "label": "펼침면"
+    },
+    {
+     "value": "PageOrigin",
+     "label": "페이지"
+    },
+    {
+     "value": "SpineOrigin",
+     "label": "책등"
+    }
+   ],
+   "tab": "unitsAndIncrements",
+   "group": "눈금자 단위"
+  },
+  {
+   "name": "horizontalUnits",
+   "label": "가로",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "Points",
+   "options": [
+    {
+     "value": "Points",
+     "label": "포인트"
+    },
+    {
+     "value": "Picas",
+     "label": "파이카"
+    },
+    {
+     "value": "Inches",
+     "label": "인치"
+    },
+    {
+     "value": "InchesDecimal",
+     "label": "인치(소수)"
+    },
+    {
+     "value": "Millimeters",
+     "label": "밀리미터"
+    },
+    {
+     "value": "Centimeters",
+     "label": "센티미터"
+    },
+    {
+     "value": "Ciceros",
+     "label": "시세로"
+    },
+    {
+     "value": "Agates",
+     "label": "에이전트"
+    },
+    {
+     "value": "Pixels",
+     "label": "픽셀"
+    }
+   ],
+   "tab": "unitsAndIncrements",
+   "group": "눈금자 단위"
+  },
+  {
+   "name": "verticalUnits",
+   "label": "세로",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "Points",
+   "options": [
+    {
+     "value": "Points",
+     "label": "포인트"
+    },
+    {
+     "value": "Picas",
+     "label": "파이카"
+    },
+    {
+     "value": "Inches",
+     "label": "인치"
+    },
+    {
+     "value": "InchesDecimal",
+     "label": "인치(소수)"
+    },
+    {
+     "value": "Millimeters",
+     "label": "밀리미터"
+    },
+    {
+     "value": "Centimeters",
+     "label": "센티미터"
+    },
+    {
+     "value": "Ciceros",
+     "label": "시세로"
+    },
+    {
+     "value": "Agates",
+     "label": "에이전트"
+    },
+    {
+     "value": "Pixels",
+     "label": "픽셀"
+    }
+   ],
+   "tab": "unitsAndIncrements",
+   "group": "눈금자 단위"
+  },
+  {
+   "name": "strokeUnits",
+   "label": "획",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "Points",
+   "options": [
+    {
+     "value": "Points",
+     "label": "포인트"
+    },
+    {
+     "value": "Millimeters",
+     "label": "밀리미터"
+    }
+   ],
+   "tab": "unitsAndIncrements",
+   "group": "다른 단위"
+  },
+  {
+   "name": "cursorKeyIncrement",
+   "label": "커서 키",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0.001,
+   "max": 100,
+   "default": 1,
+   "unit": "length-h",
+   "tab": "unitsAndIncrements",
+   "group": "키보드 증감"
+  },
+  {
+   "name": "leadingKeyIncrement",
+   "label": "크기/행간",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0.001,
+   "max": 200,
+   "default": 2,
+   "unit": "length-pt",
+   "tab": "unitsAndIncrements",
+   "group": "키보드 증감"
+  },
+  {
+   "name": "baselineShiftKeyIncrement",
+   "label": "기준선 이동",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0.001,
+   "max": 200,
+   "default": 2,
+   "unit": "length-pt",
+   "tab": "unitsAndIncrements",
+   "group": "키보드 증감"
+  },
+  {
+   "name": "kerningKeyIncrement",
+   "label": "커닝/자간",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 1,
+   "max": 100,
+   "default": 20,
+   "suffix": "/1000 em",
+   "tab": "unitsAndIncrements",
+   "group": "키보드 증감"
+  },
+  {
+   "name": "baselineColor",
+   "label": "색상",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "*custom",
+   "options": "viewColors",
+   "tab": "grids",
+   "group": "기준선 격자"
+  },
+  {
+   "name": "baselineStart",
+   "label": "시작 위치",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0,
+   "max": 1000,
+   "default": 36,
+   "unit": "length-v",
+   "tab": "grids",
+   "group": "기준선 격자"
+  },
+  {
+   "name": "baselineRelativeTo",
+   "label": "상대 위치",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "page",
+   "options": [
+    {
+     "value": "page",
+     "label": "페이지 위쪽"
+    },
+    {
+     "value": "margin",
+     "label": "여백 위쪽"
+    }
+   ],
+   "tab": "grids",
+   "group": "기준선 격자"
+  },
+  {
+   "name": "baselineDivision",
+   "label": "간격",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 1,
+   "max": 8640,
+   "default": 12,
+   "unit": "length-v",
+   "tab": "grids",
+   "group": "기준선 격자"
+  },
+  {
+   "name": "baselineThreshold",
+   "label": "보기 한계값",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 5,
+   "max": 4000,
+   "default": 75,
+   "unit": "percent",
+   "tab": "grids",
+   "group": "기준선 격자"
+  },
+  {
+   "name": "gridColor",
+   "label": "색상",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "*custom",
+   "options": "viewColors",
+   "tab": "grids",
+   "group": "문서 격자"
+  },
+  {
+   "name": "horizontalDivision",
+   "label": "가로 격자선 간격",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0.01,
+   "max": 1000,
+   "default": 72,
+   "unit": "length-v",
+   "tab": "grids",
+   "group": "문서 격자"
+  },
+  {
+   "name": "horizontalSubdivision",
+   "label": "가로 세분",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 1,
+   "max": 1000,
+   "default": 8,
+   "integer": true,
+   "tab": "grids",
+   "group": "문서 격자"
+  },
+  {
+   "name": "verticalDivision",
+   "label": "세로 격자선 간격",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0.01,
+   "max": 1000,
+   "default": 72,
+   "unit": "length-h",
+   "tab": "grids",
+   "group": "문서 격자"
+  },
+  {
+   "name": "verticalSubdivision",
+   "label": "세로 세분",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 1,
+   "max": 1000,
+   "default": 8,
+   "integer": true,
+   "tab": "grids",
+   "group": "문서 격자"
+  },
+  {
+   "name": "gridsInBack",
+   "label": "격자를 뒤로",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "boolean",
+   "default": true,
+   "tab": "grids"
+  },
+  {
+   "name": "rulerGuidesColor",
+   "label": "눈금자 안내선",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "*custom",
+   "options": "viewColors",
+   "tab": "guidesAndPasteboard",
+   "group": "색상"
+  },
+  {
+   "name": "previewBackgroundColor",
+   "label": "미리 보기 배경",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "*custom",
+   "options": "viewColors",
+   "tab": "guidesAndPasteboard",
+   "group": "색상"
+  },
+  {
+   "name": "bleedGuideColor",
+   "label": "도련",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "*custom",
+   "options": "viewColors",
+   "tab": "guidesAndPasteboard",
+   "group": "색상"
+  },
+  {
+   "name": "slugGuideColor",
+   "label": "슬러그",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "enum",
+   "default": "*custom",
+   "options": "viewColors",
+   "tab": "guidesAndPasteboard",
+   "group": "색상"
+  },
+  {
+   "name": "smartGuidePreferences.guideColor",
+   "label": "고급 안내선",
+   "type": "enum",
+   "default": "GRID_GREEN",
+   "options": "appColors",
+   "tab": "guidesAndPasteboard",
+   "group": "색상"
+  },
+  {
+   "name": "snapZone",
+   "label": "물리기 영역",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 1,
+   "max": 36,
+   "default": 4,
+   "integer": true,
+   "suffix": "px",
+   "tab": "guidesAndPasteboard",
+   "group": "안내선 옵션"
+  },
+  {
+   "name": "rulerGuidesThreshold",
+   "label": "눈금자 안내선 보기 한계값",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 5,
+   "max": 4000,
+   "default": 5,
+   "unit": "percent",
+   "tab": "guidesAndPasteboard",
+   "group": "안내선 옵션"
+  },
+  {
+   "name": "guidesInBack",
+   "label": "안내선을 뒤로",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "boolean",
+   "default": false,
+   "tab": "guidesAndPasteboard",
+   "group": "안내선 옵션"
+  },
+  {
+   "name": "pasteboardHorizontal",
+   "label": "가로 최소 간격",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": -100000,
+   "max": 100000,
+   "default": 0,
+   "unit": "length-h",
+   "disabledWhen": {
+    "matchPreviewBackground": true
+   },
+   "tab": "guidesAndPasteboard",
+   "group": "대지 옵션"
+  },
+  {
+   "name": "pasteboardVertical",
+   "label": "세로 최소 간격",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "number",
+   "min": 0,
+   "max": 100000,
+   "default": 72,
+   "unit": "length-v",
+   "disabledWhen": {
+    "matchPreviewBackground": true
+   },
+   "tab": "guidesAndPasteboard",
+   "group": "대지 옵션"
+  },
+  {
+   "name": "matchPreviewBackground",
+   "label": "미리 보기 배경을 테마 색상과 일치",
+   "view": true,
+   "document": true,
+   "hideWithoutDocument": true,
+   "type": "boolean",
+   "default": false,
+   "tab": "guidesAndPasteboard",
+   "group": "대지 옵션"
+  },
+  {
+   "name": "smartGuidePreferences.alignToObjectCenter",
+   "label": "개체 가운데에 정렬",
+   "type": "boolean",
+   "default": true,
+   "tab": "guidesAndPasteboard",
+   "group": "고급 안내선 옵션"
+  },
+  {
+   "name": "smartGuidePreferences.alignToObjectEdges",
+   "label": "개체 가장자리에 정렬",
+   "type": "boolean",
+   "default": true,
+   "tab": "guidesAndPasteboard",
+   "group": "고급 안내선 옵션"
+  },
+  {
+   "name": "smartGuidePreferences.smartDimensions",
+   "label": "고급 크기",
+   "type": "boolean",
+   "default": true,
+   "tab": "guidesAndPasteboard",
+   "group": "고급 안내선 옵션"
+  },
+  {
+   "name": "smartGuidePreferences.smartSpacing",
+   "label": "고급 간격",
+   "type": "boolean",
+   "default": true,
+   "tab": "guidesAndPasteboard",
+   "group": "고급 안내선 옵션"
+  },
+  {
+   "name": "spellPreferences.checkMisspelledWords",
+   "label": "맞춤법이 틀린 단어",
+   "type": "boolean",
+   "default": true,
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.checkRepeatedWords",
+   "label": "반복된 단어",
+   "type": "boolean",
+   "default": true,
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.checkCapitalizedWords",
+   "label": "대문자로 시작하지 않은 단어",
+   "type": "boolean",
+   "default": true,
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.checkCapitalizedSentences",
+   "label": "대문자로 시작하지 않은 문장",
+   "type": "boolean",
+   "default": true,
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.dynamicSpellCheck",
+   "label": "동적 맞춤법 검사 사용",
+   "type": "boolean",
+   "default": false,
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.misspelledWordColor",
+   "label": "맞춤법 오류 색상",
+   "type": "enum",
+   "default": "RED",
+   "options": "appColors",
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.repeatedWordColor",
+   "label": "반복된 단어 색상",
+   "type": "enum",
+   "default": "GREEN",
+   "options": "appColors",
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.uncapitalizedWordColor",
+   "label": "단어 대문자 오류 색상",
+   "type": "enum",
+   "default": "GREEN",
+   "options": "appColors",
+   "tab": "spelling"
+  },
+  {
+   "name": "spellPreferences.uncapitalizedSentenceColor",
+   "label": "문장 대문자 오류 색상",
+   "type": "enum",
+   "default": "GREEN",
+   "options": "appColors",
+   "tab": "spelling"
+  },
+  {
+   "name": "autoCorrectPreferences.autoCorrect",
+   "label": "자동 고침 사용",
+   "type": "boolean",
+   "default": false,
+   "tab": "autocorrect"
+  },
+  {
+   "name": "autoCorrectPreferences.autoCorrectCapitalizationErrors",
+   "label": "대문자 오류 자동 고침",
+   "type": "boolean",
+   "default": false,
+   "tab": "autocorrect"
+  },
+  {
+   "name": "autoCorrect",
+   "label": "자동 고침 단어 목록",
+   "type": "array",
+   "default": [],
+   "maxRows": 10000,
+   "unique": [
+    "language",
+    "word"
+   ],
+   "addLabel": "새 항목",
+   "removeLabel": "삭제",
+   "newRow": {
+    "language": "English: USA"
+   },
+   "messages": {
+    "duplicate": "이 단어는 목록에 이미 있습니다."
+   },
+   "fields": [
+    {
+     "name": "language",
+     "label": "언어",
+     "type": "enum",
+     "default": "English: USA",
+     "options": [
+      {
+       "value": "Arabic",
+       "label": "Arabic",
+       "native": true
+      },
+      {
+       "value": "Bulgarian",
+       "label": "Bulgarian",
+       "native": true
+      },
+      {
+       "value": "Catalan",
+       "label": "Catalan",
+       "native": true
+      },
+      {
+       "value": "Croatian",
+       "label": "Croatian",
+       "native": true
+      },
+      {
+       "value": "Czech",
+       "label": "Czech",
+       "native": true
+      },
+      {
+       "value": "Danish",
+       "label": "Danish",
+       "native": true
+      },
+      {
+       "value": "Dutch: Old Rules",
+       "label": "Dutch: Old Rules",
+       "native": true
+      },
+      {
+       "value": "English: Canadian",
+       "label": "English: Canadian",
+       "native": true
+      },
+      {
+       "value": "English: UK",
+       "label": "English: UK",
+       "native": true
+      },
+      {
+       "value": "English: USA",
+       "label": "English: USA",
+       "native": true
+      },
+      {
+       "value": "Estonian",
+       "label": "Estonian",
+       "native": true
+      },
+      {
+       "value": "Finnish",
+       "label": "Finnish",
+       "native": true
+      },
+      {
+       "value": "French",
+       "label": "French",
+       "native": true
+      },
+      {
+       "value": "French: Canadian",
+       "label": "French: Canadian",
+       "native": true
+      },
+      {
+       "value": "German: 1996 Reform",
+       "label": "German: 1996 Reform",
+       "native": true
+      },
+      {
+       "value": "German: Austria 2006 Reform",
+       "label": "German: Austria 2006 Reform",
+       "native": true
+      },
+      {
+       "value": "German: Swiss",
+       "label": "German: Swiss",
+       "native": true
+      },
+      {
+       "value": "Greek",
+       "label": "Greek",
+       "native": true
+      },
+      {
+       "value": "Hebrew",
+       "label": "Hebrew",
+       "native": true
+      },
+      {
+       "value": "Hungarian",
+       "label": "Hungarian",
+       "native": true
+      },
+      {
+       "value": "Italian",
+       "label": "Italian",
+       "native": true
+      },
+      {
+       "value": "Latvian",
+       "label": "Latvian",
+       "native": true
+      },
+      {
+       "value": "Lithuanian",
+       "label": "Lithuanian",
+       "native": true
+      },
+      {
+       "value": "Norwegian: Bokmål",
+       "label": "Norwegian: Bokmål",
+       "native": true
+      },
+      {
+       "value": "Norwegian: Nynorsk",
+       "label": "Norwegian: Nynorsk",
+       "native": true
+      },
+      {
+       "value": "Polish",
+       "label": "Polish",
+       "native": true
+      },
+      {
+       "value": "Portuguese",
+       "label": "Portuguese",
+       "native": true
+      },
+      {
+       "value": "Portuguese: Brazilian",
+       "label": "Portuguese: Brazilian",
+       "native": true
+      },
+      {
+       "value": "Romanian",
+       "label": "Romanian",
+       "native": true
+      },
+      {
+       "value": "Russian",
+       "label": "Russian",
+       "native": true
+      },
+      {
+       "value": "Slovak",
+       "label": "Slovak",
+       "native": true
+      },
+      {
+       "value": "Slovenian",
+       "label": "Slovenian",
+       "native": true
+      },
+      {
+       "value": "Spanish",
+       "label": "Spanish",
+       "native": true
+      },
+      {
+       "value": "Swedish",
+       "label": "Swedish",
+       "native": true
+      },
+      {
+       "value": "Thai",
+       "label": "Thai",
+       "native": true
+      },
+      {
+       "value": "Turkish",
+       "label": "Turkish",
+       "native": true
+      },
+      {
+       "value": "Ukrainian",
+       "label": "Ukrainian",
+       "native": true
+      },
+      {
+       "value": "Vietnamese",
+       "label": "Vietnamese",
+       "native": true
+      }
+     ]
+    },
+    {
+     "name": "word",
+     "label": "잘못 입력한 단어",
+     "type": "text",
+     "default": "",
+     "maxLength": 256
+    },
+    {
+     "name": "correction",
+     "label": "고친 단어",
+     "type": "text",
+     "default": "",
+     "maxLength": 256
+    }
+   ],
+   "tab": "autocorrect"
+  },
+  {
+   "name": "notePreferences.noteColorChoices",
+   "label": "메모 색상 기준",
+   "type": "enum",
+   "default": "USE_USER_COLOR",
+   "options": [
+    {
+     "value": "USE_USER_COLOR",
+     "label": "사용자 색상"
+    },
+    {
+     "value": "USE_NOTE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "notes"
+  },
+  {
+   "name": "notePreferences.noteColor",
+   "label": "메모 색상",
+   "type": "enum",
+   "default": "GREEN",
+   "options": "appColors",
+   "tab": "notes"
+  },
+  {
+   "name": "notePreferences.noteBackgroundColor",
+   "label": "메모 배경",
+   "type": "enum",
+   "default": "GALLEY_BACKGROUND_COLOR",
+   "options": [
+    {
+     "value": "GALLEY_BACKGROUND_COLOR",
+     "label": "스토리 편집기 배경"
+    },
+    {
+     "value": "USE_NOTE_COLOR",
+     "label": "메모 색상"
+    }
+   ],
+   "tab": "notes"
+  },
+  {
+   "name": "notePreferences.showNoteTips",
+   "label": "메모 도구 설명 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "notes"
+  },
+  {
+   "name": "notePreferences.findAndReplaceNoteContents",
+   "label": "찾기/바꾸기에 메모 내용 포함",
+   "type": "boolean",
+   "default": true,
+   "tab": "notes"
+  },
+  {
+   "name": "notePreferences.spellCheckNotes",
+   "label": "맞춤법 검사에 메모 포함",
+   "type": "boolean",
+   "default": true,
+   "tab": "notes"
+  },
+  {
+   "name": "trackChangesPreferences.addedTextColorChoice",
+   "label": "{name}: 글자 색상 기준",
+   "type": "enum",
+   "default": "CHANGE_USES_GALLEY_TEXT_COLOR",
+   "options": [
+    {
+     "value": "CHANGE_USES_GALLEY_TEXT_COLOR",
+     "label": "스토리 편집기 글자 색상"
+    },
+    {
+     "value": "CHANGE_USES_CHANGE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "추가된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.textColorForAddedText",
+   "label": "{name}: 글자 색상",
+   "type": "enum",
+   "default": "BLACK",
+   "options": "appColors",
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "추가된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.addedBackgroundColorChoice",
+   "label": "{name}: 배경 색상 기준",
+   "type": "enum",
+   "default": "CHANGE_BACKGROUND_USES_USER_COLOR",
+   "options": [
+    {
+     "value": "CHANGE_BACKGROUND_USES_GALLEY_BACKGROUND_COLOR",
+     "label": "스토리 편집기 배경"
+    },
+    {
+     "value": "CHANGE_BACKGROUND_USES_USER_COLOR",
+     "label": "사용자 색상"
+    },
+    {
+     "value": "CHANGE_BACKGROUND_USES_CHANGE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "추가된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.backgroundColorForAddedText",
+   "label": "{name}: 배경 색상",
+   "type": "enum",
+   "default": "YELLOW",
+   "options": "appColors",
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "추가된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.markingForAddedText",
+   "label": "{name}: 표시",
+   "type": "enum",
+   "default": "NONE",
+   "options": [
+    {
+     "value": "NONE",
+     "label": "없음"
+    },
+    {
+     "value": "STRIKETHROUGH",
+     "label": "취소선"
+    },
+    {
+     "value": "UNDERLINE_SINGLE",
+     "label": "밑줄"
+    },
+    {
+     "value": "OUTLINE",
+     "label": "윤곽선"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "추가된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.deletedTextColorChoice",
+   "label": "{name}: 글자 색상 기준",
+   "type": "enum",
+   "default": "CHANGE_USES_GALLEY_TEXT_COLOR",
+   "options": [
+    {
+     "value": "CHANGE_USES_GALLEY_TEXT_COLOR",
+     "label": "스토리 편집기 글자 색상"
+    },
+    {
+     "value": "CHANGE_USES_CHANGE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "삭제된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.textColorForDeletedText",
+   "label": "{name}: 글자 색상",
+   "type": "enum",
+   "default": "BLACK",
+   "options": "appColors",
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "삭제된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.deletedBackgroundColorChoice",
+   "label": "{name}: 배경 색상 기준",
+   "type": "enum",
+   "default": "CHANGE_BACKGROUND_USES_USER_COLOR",
+   "options": [
+    {
+     "value": "CHANGE_BACKGROUND_USES_GALLEY_BACKGROUND_COLOR",
+     "label": "스토리 편집기 배경"
+    },
+    {
+     "value": "CHANGE_BACKGROUND_USES_USER_COLOR",
+     "label": "사용자 색상"
+    },
+    {
+     "value": "CHANGE_BACKGROUND_USES_CHANGE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "삭제된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.backgroundColorForDeletedText",
+   "label": "{name}: 배경 색상",
+   "type": "enum",
+   "default": "YELLOW",
+   "options": "appColors",
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "삭제된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.markingForDeletedText",
+   "label": "{name}: 표시",
+   "type": "enum",
+   "default": "STRIKETHROUGH",
+   "options": [
+    {
+     "value": "NONE",
+     "label": "없음"
+    },
+    {
+     "value": "STRIKETHROUGH",
+     "label": "취소선"
+    },
+    {
+     "value": "UNDERLINE_SINGLE",
+     "label": "밑줄"
+    },
+    {
+     "value": "OUTLINE",
+     "label": "윤곽선"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "삭제된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.movedTextColorChoice",
+   "label": "{name}: 글자 색상 기준",
+   "type": "enum",
+   "default": "CHANGE_USES_GALLEY_TEXT_COLOR",
+   "options": [
+    {
+     "value": "CHANGE_USES_GALLEY_TEXT_COLOR",
+     "label": "스토리 편집기 글자 색상"
+    },
+    {
+     "value": "CHANGE_USES_CHANGE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "이동된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.textColorForMovedText",
+   "label": "{name}: 글자 색상",
+   "type": "enum",
+   "default": "BLACK",
+   "options": "appColors",
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "이동된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.movedBackgroundColorChoice",
+   "label": "{name}: 배경 색상 기준",
+   "type": "enum",
+   "default": "CHANGE_BACKGROUND_USES_USER_COLOR",
+   "options": [
+    {
+     "value": "CHANGE_BACKGROUND_USES_GALLEY_BACKGROUND_COLOR",
+     "label": "스토리 편집기 배경"
+    },
+    {
+     "value": "CHANGE_BACKGROUND_USES_USER_COLOR",
+     "label": "사용자 색상"
+    },
+    {
+     "value": "CHANGE_BACKGROUND_USES_CHANGE_PREF_COLOR",
+     "label": "사용자 지정 색상"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "이동된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.backgroundColorForMovedText",
+   "label": "{name}: 배경 색상",
+   "type": "enum",
+   "default": "YELLOW",
+   "options": "appColors",
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "이동된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.markingForMovedText",
+   "label": "{name}: 표시",
+   "type": "enum",
+   "default": "OUTLINE",
+   "options": [
+    {
+     "value": "NONE",
+     "label": "없음"
+    },
+    {
+     "value": "STRIKETHROUGH",
+     "label": "취소선"
+    },
+    {
+     "value": "UNDERLINE_SINGLE",
+     "label": "밑줄"
+    },
+    {
+     "value": "OUTLINE",
+     "label": "윤곽선"
+    }
+   ],
+   "tab": "trackChanges",
+   "labelArgs": {
+    "name": "이동된 텍스트"
+   }
+  },
+  {
+   "name": "trackChangesPreferences.showAddedText",
+   "label": "추가된 텍스트 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.showDeletedText",
+   "label": "삭제된 텍스트 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.showMovedText",
+   "label": "이동된 텍스트 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.showChangeBars",
+   "label": "변경 막대 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.changeBarColor",
+   "label": "변경 막대 색상",
+   "type": "enum",
+   "default": "CYAN",
+   "options": "appColors",
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.locationForChangeBar",
+   "label": "변경 막대 위치",
+   "type": "enum",
+   "default": "LEFT_ALIGN",
+   "options": [
+    {
+     "value": "LEFT_ALIGN",
+     "label": "왼쪽"
+    },
+    {
+     "value": "RIGHT_ALIGN",
+     "label": "오른쪽"
+    }
+   ],
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.spellCheckDeletedText",
+   "label": "맞춤법 검사에 삭제된 텍스트 포함",
+   "type": "boolean",
+   "default": true,
+   "tab": "trackChanges"
+  },
+  {
+   "name": "trackChangesPreferences.preventDuplicateColor",
+   "label": "사용자 색상 중복 방지",
+   "type": "boolean",
+   "default": false,
+   "tab": "trackChanges"
+  },
+  {
+   "name": "galleyPreferences.backgroundColor",
+   "label": "배경 색상",
+   "type": "enum",
+   "default": "WHITE",
+   "options": "appColors",
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.textColor",
+   "label": "텍스트 색상",
+   "type": "enum",
+   "default": "BLACK",
+   "options": "appColors",
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.cursorType",
+   "label": "커서 모양",
+   "type": "enum",
+   "default": "STANDARD_CURSOR",
+   "options": [
+    {
+     "value": "STANDARD_CURSOR",
+     "label": "표준"
+    },
+    {
+     "value": "THICK_CURSOR",
+     "label": "굵게"
+    },
+    {
+     "value": "BARBELL_CURSOR",
+     "label": "바벨"
+    },
+    {
+     "value": "BLOCK_CURSOR",
+     "label": "블록"
+    }
+   ],
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.blinkCursor",
+   "label": "커서 깜박임",
+   "type": "boolean",
+   "default": true,
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.lineSpacingValue",
+   "label": "줄 간격",
+   "type": "enum",
+   "default": "SINGLE_SPACE",
+   "options": [
+    {
+     "value": "SINGLE_SPACE",
+     "label": "한 줄"
+    },
+    {
+     "value": "ONE_AND_HALF_SPACE",
+     "label": "1.5줄"
+    },
+    {
+     "value": "DOUBLE_SPACE",
+     "label": "두 줄"
+    },
+    {
+     "value": "TRIPLE_SPACE",
+     "label": "세 줄"
+    }
+   ],
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.smoothText",
+   "label": "텍스트 매끄럽게",
+   "type": "boolean",
+   "default": true,
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.antiAliasType",
+   "label": "텍스트 매끄럽게 방식",
+   "type": "enum",
+   "default": "GRAY_ANTIALIASING",
+   "options": [
+    {
+     "value": "GRAY_ANTIALIASING",
+     "label": "회색조"
+    },
+    {
+     "value": "COLOR_ANTIALIASING",
+     "label": "색상"
+    },
+    {
+     "value": "THICKER_ANTIALIASING",
+     "label": "더 굵게"
+    }
+   ],
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.showDepthRuler",
+   "label": "깊이 눈금자 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.showParagraphStyleNames",
+   "label": "단락 스타일 이름 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.showInfoColumn",
+   "label": "정보 열 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "galleyPreferences.showParagraphBreakMarks",
+   "label": "단락 나누기 기호 표시",
+   "type": "boolean",
+   "default": false,
+   "tab": "storyEditorDisplay"
+  },
+  {
+   "name": "displayPerformancePreferences.defaultDisplaySettings",
+   "label": "기본 보기",
+   "type": "enum",
+   "default": "HIGH_QUALITY",
+   "options": [
+    {
+     "value": "OPTIMIZED",
+     "label": "빠른 표시"
+    },
+    {
+     "value": "TYPICAL",
+     "label": "일반 표시"
+    },
+    {
+     "value": "HIGH_QUALITY",
+     "label": "고품질 표시"
+    }
+   ],
+   "tab": "displayPerformance"
+  },
+  {
+   "name": "displayPerformancePreferences.ignoreLocalSettings",
+   "label": "개체별 표시 설정 무시",
+   "type": "boolean",
+   "default": false,
+   "tab": "displayPerformance"
+  },
+  {
+   "name": "displayPerformancePreferences.persistLocalSettings",
+   "label": "개체별 표시 설정 유지",
+   "type": "boolean",
+   "default": false,
+   "tab": "displayPerformance"
+  },
+  {
+   "name": "grabberPreferences.grabberPanning",
+   "label": "손 도구 사용 중 표시",
+   "type": "enum",
+   "default": "NO_GREEKING",
+   "options": [
+    {
+     "value": "NO_GREEKING",
+     "label": "이미지와 텍스트 표시"
+    },
+    {
+     "value": "GREEK_IMAGES",
+     "label": "이미지 숨기기"
+    },
+    {
+     "value": "GREEK_IMAGES_AND_TEXT",
+     "label": "이미지와 텍스트 숨기기"
+    }
+   ],
+   "tab": "displayPerformance"
+  },
+  {
+   "name": "colorSettings.idealizedBlackToScreen",
+   "label": "화면에서 모든 검정을 진한 검정으로 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "appearanceOfBlack"
+  },
+  {
+   "name": "colorSettings.idealizedBlackToExport",
+   "label": "인쇄 및 내보내기에서 모든 검정을 진한 검정으로 출력",
+   "type": "boolean",
+   "default": true,
+   "tab": "appearanceOfBlack"
+  },
+  {
+   "name": "generalPreferences.includePreview",
+   "label": "문서와 함께 미리 보기 저장",
+   "type": "boolean",
+   "default": true,
+   "tab": "fileHandling"
+  },
+  {
+   "name": "generalPreferences.previewPages",
+   "label": "미리 보기 페이지",
+   "type": "enum",
+   "default": "FIRST_2_PAGES",
+   "options": [
+    {
+     "value": "FIRST_PAGE",
+     "label": "첫 페이지"
+    },
+    {
+     "value": "FIRST_2_PAGES",
+     "label": "처음 2페이지"
+    },
+    {
+     "value": "FIRST_5_PAGES",
+     "label": "처음 5페이지"
+    },
+    {
+     "value": "FIRST_10_PAGES",
+     "label": "처음 10페이지"
+    },
+    {
+     "value": "ALL_PAGES",
+     "label": "모든 페이지"
+    }
+   ],
+   "tab": "fileHandling"
+  },
+  {
+   "name": "generalPreferences.previewSize",
+   "label": "미리 보기 크기",
+   "type": "enum",
+   "default": "LARGE",
+   "options": [
+    {
+     "value": "SMALL",
+     "label": "작게"
+    },
+    {
+     "value": "MEDIUM",
+     "label": "중간"
+    },
+    {
+     "value": "LARGE",
+     "label": "크게"
+    },
+    {
+     "value": "EXTRA_LARGE",
+     "label": "아주 크게"
+    }
+   ],
+   "tab": "fileHandling"
+  },
+  {
+   "name": "linkingPreferences.checkLinksAtOpen",
+   "label": "문서를 열 때 연결 확인",
+   "type": "boolean",
+   "default": true,
+   "tab": "fileHandling"
+  },
+  {
+   "name": "linkingPreferences.findMissingLinksAtOpen",
+   "label": "문서를 열 때 누락된 연결 찾기",
+   "type": "boolean",
+   "default": true,
+   "tab": "fileHandling"
+  },
+  {
+   "name": "TextPreference.LinkTextFilesWhenImporting",
+   "label": "텍스트 및 스프레드시트 파일 가져올 때 연결 만들기",
+   "docPref": true,
+   "document": true,
+   "tab": "fileHandling"
+  },
+  {
+   "name": "clipboardPreferences.preferStyledTextWhenPasting",
+   "label": "붙일 때 모든 정보 유지",
+   "type": "boolean",
+   "default": false,
+   "tab": "clipboardHandling"
+  },
+  {
+   "name": "clipboardPreferences.preferPDFWhenPasting",
+   "label": "붙일 때 PDF 우선 사용",
+   "type": "boolean",
+   "default": false,
+   "tab": "clipboardHandling"
+  },
+  {
+   "name": "clipboardPreferences.copyPDFToClipboard",
+   "label": "PDF를 클립보드에 복사",
+   "type": "boolean",
+   "default": true,
+   "tab": "clipboardHandling"
+  },
+  {
+   "name": "clipboardPreferences.pasteRemembersLayers",
+   "label": "붙일 때 레이어 기억",
+   "type": "boolean",
+   "default": false,
+   "tab": "clipboardHandling"
+  },
+  {
+   "name": "clipboardPreferences.preservePdfClipboardAtQuit",
+   "label": "종료 후 PDF 클립보드 유지",
+   "type": "boolean",
+   "default": false,
+   "tab": "clipboardHandling"
+  },
+  {
+   "name": "clipboardPreferences.showPasteOptions",
+   "label": "붙이기 옵션 표시",
+   "type": "boolean",
+   "default": true,
+   "tab": "clipboardHandling"
+  }
+ ]
+}

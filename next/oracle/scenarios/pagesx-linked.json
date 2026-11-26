@@ -1,0 +1,10 @@
+{
+  "fixture": "pagesx-linked",
+  "about": "Linked parent import and document-page text override measured through the InDesign DOM.",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {"name":"pagesx-import-linked","steps":[{"op":"importParents","from":"pagesx-linked"},{"op":"applyMaster","pages":[0],"master":1,"current":true}]},
+    {"name":"pagesx-import-linked-twice","steps":[{"op":"importParents","from":"pagesx-linked"},{"op":"importParents","from":"pagesx-linked"},{"op":"applyMaster","pages":[0],"master":2,"current":true}]},
+    {"name":"pagesx-override-text","steps":[{"op":"overrideParent","target":"parent-text","page":0,"label":"text-copy"},{"op":"insertText","target":"text-copy","at":0,"text":"Edited "}]}
+  ]
+}

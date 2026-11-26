@@ -1,0 +1,12 @@
+{
+  "fixture": "layoutadj",
+  "extension": "layoutadjust",
+  "scenarios": [
+    {"name":"layoutadj-bigger","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":600,"height":800}]},
+    {"name":"layoutadj-smaller","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":200,"height":250}]},
+    {"name":"layoutadj-landscape","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":400,"height":300}]},
+    {"name":"layoutadj-width","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":450}]},
+    {"name":"layoutadj-height","window":false,"geometry":true,"steps":[{"op":"adjustLayout","height":500}]},
+    {"name":"layoutadj-twice","window":false,"geometry":true,"steps":[{"op":"adjustLayout","width":600,"height":800},{"op":"adjustLayout","width":330,"height":420}]}
+  ]
+}

@@ -1,0 +1,64 @@
+{
+ "fixture": "printing-bleed",
+ "extension": "printing",
+ "comparison": "printing",
+ "scenarios": [
+  {
+   "name": "printing-bleed-only",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "useDocumentBleedToPrint": true
+    }
+   }
+  },
+  {
+   "name": "printing-bleed-crop",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "cropMarks": true,
+     "useDocumentBleedToPrint": true
+    }
+   }
+  },
+  {
+   "name": "printing-bleed-all",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "cropMarks": true,
+     "bleedMarks": true,
+     "registrationMarks": true,
+     "useDocumentBleedToPrint": true
+    }
+   }
+  },
+  {
+   "name": "printing-bleed-info",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "pageInformationMarks": true,
+     "useDocumentBleedToPrint": true
+    }
+   }
+  },
+  {
+   "name": "printing-bleed-crop-info",
+   "steps": [],
+   "options": {
+    "range": "+1",
+    "marks": {
+     "cropMarks": true,
+     "pageInformationMarks": true,
+     "useDocumentBleedToPrint": true
+    }
+   }
+  }
+ ]
+}

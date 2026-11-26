@@ -1,0 +1,44 @@
+{
+  "fixture": "tables",
+  "scenarios": [
+    {
+      "name": "bullets-cell-options",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellFormat",
+          "cell": [
+            1,
+            1
+          ],
+          "start": 0,
+          "end": 2,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "(^#)^t",
+            "leftIndent": 18,
+            "firstLineIndent": -18
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellFormat",
+          "cell": [
+            2,
+            1
+          ],
+          "start": 0,
+          "end": 2,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "(^#)^t",
+            "leftIndent": 18,
+            "firstLineIndent": -18
+          }
+        }
+      ]
+    }
+  ]
+}

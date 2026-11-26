@@ -1,0 +1,63 @@
+{
+ "fixture": "layoutadj7",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj7-auto-size",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 500,
+     "auto_adjust_margins": true
+    }
+   ]
+  },
+  {
+   "name": "layoutadj7-auto-width",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "auto_adjust_margins": true
+    }
+   ]
+  },
+  {
+   "name": "layoutadj7-auto-shrink",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 150,
+     "height": 200,
+     "auto_adjust_margins": true
+    }
+   ]
+  },
+  {
+   "name": "layoutadj7-auto-twice",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 450,
+     "height": 500,
+     "auto_adjust_margins": true
+    },
+    {
+     "op": "adjustLayout",
+     "width": 300,
+     "height": 600,
+     "auto_adjust_margins": true
+    }
+   ]
+  }
+ ]
+}

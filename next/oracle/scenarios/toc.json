@@ -1,0 +1,284 @@
+{
+  "fixture": "toc",
+  "about": "목차 스타일과 생성·업데이트의 IDML 측정",
+  "scenarios": [
+    {"name": "noop", "rules": ["toc.story"], "steps": []},
+    {
+      "name": "toc-create",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC"
+        }
+      ]
+    },
+    {
+      "name": "toc-levels",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "entries": [
+            {
+              "name": "H1",
+              "formatStyle": "TOC1",
+              "level": 1
+            },
+            {
+              "name": "H2",
+              "formatStyle": "TOC2",
+              "level": 2
+            },
+            {
+              "name": "H3",
+              "formatStyle": "TOC3",
+              "level": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toc-pagenum-before",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "entries": [
+            {
+              "name": "H1",
+              "formatStyle": "TOC1",
+              "pageNumberPosition": "PageNumberPosition.BEFORE_ENTRY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toc-no-page",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "entries": [
+            {
+              "name": "H1",
+              "formatStyle": "TOC1",
+              "pageNumberPosition": "PageNumberPosition.NONE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toc-leader",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "entries": [
+            {
+              "name": "H1",
+              "formatStyle": "TOC1",
+              "separator": "^t",
+              "pageNumberStyle": "Page Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toc-title",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "props": {
+            "title": "A guide",
+            "titleStyle": "TOC Title"
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-hidden",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "props": {
+            "includeHidden": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-update-after-edit",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC"
+        },
+        {
+          "op": "tocEditHeading",
+          "target": "head-1",
+          "text": "Edited chapter"
+        },
+        {
+          "op": "updateTOC",
+          "target": "toc"
+        }
+      ]
+    },
+    {
+      "name": "toc-include-numbered",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "tocNumberHeading",
+          "target": "head-1"
+        },
+        {
+          "op": "createTOC",
+          "props": {
+            "numberedParagraphs": "NumberedParagraphsOptions.INCLUDE_FULL_PARAGRAPH"
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-no-bookmarks",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "props": {
+            "createBookmarks": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-anchor",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "createTOC",
+          "props": {
+            "makeAnchor": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-numbers-only",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "tocNumberHeading",
+          "target": "head-1"
+        },
+        {
+          "op": "createTOC",
+          "props": {
+            "numberedParagraphs": "NumberedParagraphsOptions.INCLUDE_NUMBERS_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-exclude-numbered",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "tocNumberHeading",
+          "target": "head-1"
+        },
+        {
+          "op": "createTOC",
+          "props": {
+            "numberedParagraphs": "NumberedParagraphsOptions.EXCLUDE_NUMBERS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "toc-sort",
+      "rules": [
+        "toc.story"
+      ],
+      "steps": [
+        {
+          "op": "tocEditHeading",
+          "target": "head-1",
+          "text": "Zebra"
+        },
+        {
+          "op": "tocEditHeading",
+          "target": "head-2",
+          "text": "Alpha"
+        },
+        {
+          "op": "createTOC",
+          "entries": [
+            {
+              "name": "H1",
+              "formatStyle": "TOC1",
+              "sortAlphabet": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "toc-options-default",
+      "rules": [
+        "toc.options"
+      ],
+      "steps": [
+        {
+          "op": "tocNumberHeading",
+          "target": "head-1"
+        },
+        {
+          "op": "createTOC",
+          "props": {
+            "createBookmarks": false,
+            "numberedParagraphs": "NumberedParagraphsOptions.INCLUDE_NUMBERS_ONLY"
+          },
+          "defaultProps": {
+            "createBookmarks": false,
+            "numberedParagraphs": "NumberedParagraphsOptions.INCLUDE_NUMBERS_ONLY"
+          }
+        }
+      ]
+    }
+  ],
+  "comparison": "toc"
+}

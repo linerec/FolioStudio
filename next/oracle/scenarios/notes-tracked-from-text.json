@@ -1,0 +1,71 @@
+{
+  "fixture": "editorial",
+  "extension": "editorial-combined",
+  "scenarios": [
+    {
+      "name": "notes-tracked-from-plain",
+      "text": true,
+      "steps": [
+        {
+          "op": "convertToNote",
+          "target": "body-0",
+          "start": 0,
+          "end": 2,
+          "user": "Reviewer B",
+          "date": "2026-10-22T22:00:00"
+        }
+      ]
+    },
+    {
+      "name": "notes-tracked-from-other",
+      "text": true,
+      "steps": [
+        {
+          "op": "convertToNote",
+          "target": "body-0",
+          "start": 2,
+          "end": 4,
+          "user": "Reviewer B",
+          "date": "2026-10-22T22:00:00"
+        }
+      ]
+    },
+    {
+      "name": "notes-tracked-from-mixed",
+      "text": true,
+      "steps": [
+        {
+          "op": "convertToNote",
+          "target": "body-0",
+          "start": 1,
+          "end": 5,
+          "user": "Reviewer B",
+          "date": "2026-10-22T22:00:00"
+        }
+      ]
+    },
+    {
+      "name": "notes-tracked-from-own",
+      "text": true,
+      "steps": [
+        {
+          "op": "insertTextAs",
+          "target": "body-0",
+          "at": 1,
+          "text": "jk",
+          "user": "Reviewer B",
+          "date": "2026-10-22T22:00:00"
+        },
+        {
+          "op": "convertToNote",
+          "target": "body-0",
+          "start": 1,
+          "end": 3,
+          "user": "Reviewer B",
+          "date": "2026-10-22T22:00:00",
+          "waitMs": 2100
+        }
+      ]
+    }
+  ]
+}

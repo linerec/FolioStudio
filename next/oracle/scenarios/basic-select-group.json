@@ -1,0 +1,10 @@
+{
+  "fixture": "basic",
+  "about": "Object > Select > Previous Object / Next Object in a group (menu actions 11355, 11356 in a window): which member is selected after (indesign.json `selection`, by label). Nothing in the document changes.",
+  "scenarios": [
+    {"name": "sel-next-in-group", "window": true, "steps": [{"op": "select", "target": "grp-a"}, {"op": "menu", "id": 11356, "action": "Next Object"}]},
+    {"name": "sel-previous-in-group", "window": true, "steps": [{"op": "select", "target": "grp-b"}, {"op": "menu", "id": 11355, "action": "Previous Object"}]},
+    {"name": "sel-next-in-group-last", "window": true, "steps": [{"op": "select", "target": "grp-b"}, {"op": "menu", "id": 11356, "action": "Next Object"}]},
+    {"name": "sel-previous-in-group-first", "window": true, "steps": [{"op": "select", "target": "grp-a"}, {"op": "menu", "id": 11355, "action": "Previous Object"}]}
+  ]
+}

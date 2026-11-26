@@ -1,0 +1,5 @@
+{
+  "fixture":"textpath-threaded",
+  "about":"Deleting a text path preserves the threaded story and reconnects the remaining frame.",
+  "scenarios":[{"name":"noop","rules":["textpath.remove.threaded"],"steps":[]},{"name":"textpath-delete-threaded","rules":["textpath.remove.threaded"],"extension":"tools2","steps":[{"op":"removeTextFromPath","target":"path"}]}]
+}

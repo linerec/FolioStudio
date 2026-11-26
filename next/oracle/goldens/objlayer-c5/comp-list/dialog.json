@@ -1,0 +1,20 @@
+{
+ "name": "comp-list",
+ "fixture": "objlayer-c5.idml",
+ "psd": "objlayer-c5.psd",
+ "tool": "InDesign 2025 20.5.5.119, Object Layer Options dialog, Layer Comp popup (picture: artifacts/objlayer-c5-20261023/dialog-comp-popup.png)",
+ "action": {
+  "kind": "popup"
+ },
+ "expect": {
+  "popup": [
+   "[Custom]",
+   "Last Document State",
+   "All",
+   "A only",
+   "B and C"
+  ],
+  "initial": "Last Document State",
+  "disabledWithoutComps": true
+ }
+}

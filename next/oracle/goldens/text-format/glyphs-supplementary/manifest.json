@@ -1,0 +1,45 @@
+{
+  "fixture": "text-format",
+  "scenario": "glyphs-supplementary",
+  "indesign": "20.5.5.119",
+  "measured": "2026-10-26",
+  "os": "Windows",
+  "fixtureSha256": "734a31b444eef4fef24a6da7f78e1bf595db8a883a0de4831a1fea8a42dbefa6",
+  "runnerSha256": "577d465de52f7fa40d46eca9ad5589ea557c59033916f1d1aaca3f9670f58d96",
+  "repeatRunnerSha256": "6254013de4d141d33ca307875bada93c38ce46f68cba08241c47d5afd4bda863",
+  "captureSha256": "3bca9a5fdd71c26387577519c988f94e82361be03ad8332dd5eead62aae1dc50",
+  "repeatIdentical": false,
+  "repeatEquivalent": true,
+  "normalization": "FontFamily/Font Self identity by Name only",
+  "pdfPreset": "[PDF/X-4:2008]",
+  "hiddenDocument": true,
+  "closedWithoutSaving": true,
+  "preferences": {
+    "dimensionsIncludeStrokeWeight": true,
+    "transformPrefsBefore": {
+      "adjustStrokeWeightWhenScaling": "true",
+      "adjustEffectsWhenScaling": "true",
+      "dimensionsIncludeStrokeWeight": "true",
+      "transformsAreTotals": "ERR Object does not support the property or method 'transformsAreTotals'",
+      "whenScaling": "APPLY_TO_CONTENT"
+    }
+  },
+  "raw": {
+    "first": {
+      "after.idml": "0341d0e2bf895683f5cb0624aa16d4d52d00407016e66326df84de623c5a1552",
+      "after.pdf": "fa121df60636f8c3a69e613f4ca10979ba34414b5e144f0688ecd262839c6c2f",
+      "before.idml": "f5982135669b6944738e6bd28fd0215bf1d01fb01d59644632eb95ad791de4ec",
+      "indesign.json": "8a178a29da35e2798e463d6da02f9168e5a43f3712730b798c732602fd4733e8"
+    },
+    "repeat": {
+      "after.idml": "8760662e81576005f30fab2b6844bd967d03278f36ee297ce575f2ff2eb92c12",
+      "after.pdf": "21172000ecf3197f2003e7b1de4139e3c2305913f5b605089f7c92484153f99c",
+      "before.idml": "51d7c942fb3211c968aa7699617cfda9a6d12fead396e72d098f375a530bfda2",
+      "indesign.json": "8a178a29da35e2798e463d6da02f9168e5a43f3712730b798c732602fd4733e8"
+    }
+  },
+  "rawArchive": "artifacts/glyphs-20261023/raw/<sha256>.<extension>",
+  "history": [
+    "Initial new-case capture; second capture in separate staging, accepted goldens unchanged."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+ "fixture": "keepopts-rowstart",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "rowstart-frame",
+   "rules": [
+    "table.row.start"
+   ],
+   "steps": [
+    {
+     "op": "table",
+     "target": "rs",
+     "do": "rowProps",
+     "at": 2,
+     "props": {
+      "startRow": "StartParagraph.NEXT_FRAME"
+     }
+    }
+   ]
+  },
+  {
+   "name": "rowstart-page",
+   "rules": [
+    "table.row.start"
+   ],
+   "steps": [
+    {
+     "op": "table",
+     "target": "rs",
+     "do": "rowProps",
+     "at": 2,
+     "props": {
+      "startRow": "StartParagraph.NEXT_PAGE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "rowstart-odd",
+   "rules": [
+    "table.row.start"
+   ],
+   "steps": [
+    {
+     "op": "table",
+     "target": "rs",
+     "do": "rowProps",
+     "at": 2,
+     "props": {
+      "startRow": "StartParagraph.NEXT_ODD_PAGE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "rowstart-even",
+   "rules": [
+    "table.row.start"
+   ],
+   "steps": [
+    {
+     "op": "table",
+     "target": "rs",
+     "do": "rowProps",
+     "at": 2,
+     "props": {
+      "startRow": "StartParagraph.NEXT_EVEN_PAGE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "rowstart-page-even",
+   "rules": [
+    "table.row.start"
+   ],
+   "steps": [
+    {
+     "op": "table",
+     "target": "rs",
+     "do": "rowProps",
+     "at": 2,
+     "props": {
+      "startRow": "StartParagraph.NEXT_PAGE"
+     }
+    },
+    {
+     "op": "table",
+     "target": "rs",
+     "do": "rowProps",
+     "at": 4,
+     "props": {
+      "startRow": "StartParagraph.NEXT_EVEN_PAGE"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "fixture": "outlines-frames",
+ "about": "Type > Create Outlines (menu action 61405, window documents) on whole text frames, the cases beyond outlines.json: underline, strike-through and a paragraph rule vanish without a shape, different strokes split the polygons, a threaded frame converts the whole story. The host fills `shapes`.",
+ "extension": "outlines",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "frame-under",
+   "window": true,
+   "rules": [
+    "outlines.frame.polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlines",
+     "target": "under",
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "frame-strike",
+   "window": true,
+   "rules": [
+    "outlines.frame.polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlines",
+     "target": "strike",
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "frame-rule",
+   "window": true,
+   "rules": [
+    "outlines.frame.polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlines",
+     "target": "rule",
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "frame-strokes",
+   "window": true,
+   "rules": [
+    "outlines.frame.polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlines",
+     "target": "strokes",
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "frame-strokes2",
+   "window": true,
+   "rules": [
+    "outlines.frame.polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlines",
+     "target": "strokes2",
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "frame-thread",
+   "window": true,
+   "rules": [
+    "outlines.frame.polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlines",
+     "target": "threadA",
+     "shapes": ""
+    }
+   ]
+  }
+ ]
+}

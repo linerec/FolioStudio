@@ -1,0 +1,70 @@
+{
+  "fixture": "svgplace",
+  "about": "Self-authored static SVG placement measurements.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "place-svg-shapes",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "svgplace-shapes.svg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ],
+      "maxLocalError": 2.0
+    },
+    {
+      "name": "place-svg-path",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "svgplace-path.svg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ],
+      "maxLocalError": 2.0
+    },
+    {
+      "name": "place-svg-transform",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "svgplace-transform.svg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ],
+      "maxLocalError": 2.0
+    },
+    {
+      "name": "place-svg-stroke",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "svgplace-stroke.svg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ],
+      "maxLocalError": 2.0
+    },
+    {
+      "name": "place-svg-viewbox",
+      "steps": [
+        {
+          "op": "placeGraphic",
+          "file": "svgplace-viewbox.svg",
+          "target": "r-plain",
+          "contentAware": false
+        }
+      ],
+      "maxLocalError": 2.0
+    }
+  ]
+}

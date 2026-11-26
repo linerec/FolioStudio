@@ -1,0 +1,20 @@
+{
+  "fixture": "bullets2-duplicate",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "bullets2-duplicate-convert",
+      "steps": [
+        {
+          "op": "convertStyleListsToText",
+          "style": "ParagraphStyle/Shared paragraphs",
+          "labels": {}
+        }
+      ]
+    }
+  ]
+}

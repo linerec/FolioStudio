@@ -1,0 +1,172 @@
+{
+ "fixture": "keepspan3-tbl",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": [],
+   "text": true
+  },
+  {
+   "name": "keeptbl3-lead-next1",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "t1",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t2",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t4",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 1
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t5",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 1
+     }
+    }
+   ]
+  },
+  {
+   "name": "keeptbl3-lead-next3",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "t1",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 3
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t2",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 3
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t3",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 3
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t4",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 3
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t5",
+     "start": 12,
+     "end": 13,
+     "props": {
+      "keepWithNext": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "keeptbl3-table-next2",
+   "text": true,
+   "rules": [
+    "paragraph.keep.compound"
+   ],
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "t1",
+     "start": 18,
+     "end": 19,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t2",
+     "start": 18,
+     "end": 19,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t3",
+     "start": 18,
+     "end": 19,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t4",
+     "start": 18,
+     "end": 19,
+     "props": {
+      "keepWithNext": 2
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "t5",
+     "start": 18,
+     "end": 19,
+     "props": {
+      "keepWithNext": 2
+     }
+    }
+   ]
+  }
+ ]
+}

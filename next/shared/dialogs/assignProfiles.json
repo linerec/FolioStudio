@@ -1,0 +1,56 @@
+{
+  "title": "프로필 지정",
+  "target": "none",
+  "defaults": "colorPrefs",
+  "skipEmpty": true,
+  "className": "color-settings-dialog assign-profiles-dialog",
+  "description": "Edit > Assign Profiles: the document's RGB and CMYK profiles (one of the colour profiles installed on this computer; Folio bundles none), their policies, the three rendering intents and Lab spots, starting from the document's settings (IDML values: ConvertToWorkingSpace, RelativeColorimetric, ...). Only what differs is sent (setColorPrefs props), as one undo step; nothing changed closes without an edit. The colour numbers stay; only their look may change.",
+  "note": "프로필을 지정하면 색상 수치는 유지되고 화면의 색상 모양이 바뀔 수 있습니다.",
+  "fields": [
+    { "name": "RGBProfile", "label": "RGB", "type": "choice", "source": "documentRgbProfiles", "default": "", "group": "문서 프로필" },
+    { "name": "RGBPolicy", "label": "{0} 정책", "labelArgs": { "0": "RGB" }, "type": "enum", "default": "ColorPolicyOff", "group": "문서 프로필",
+      "options": [
+        { "value": "ColorPolicyOff", "label": "끄기" },
+        { "value": "PreserveEmbeddedProfiles", "label": "포함된 프로필 유지" },
+        { "value": "ConvertToWorkingSpace", "label": "작업 공간으로 변환" }
+      ] },
+    { "name": "CMYKProfile", "label": "CMYK", "type": "choice", "source": "documentCmykProfiles", "default": "", "group": "문서 프로필" },
+    { "name": "CMYKPolicy", "label": "{0} 정책", "labelArgs": { "0": "CMYK" }, "type": "enum", "default": "ColorPolicyOff", "group": "문서 프로필",
+      "options": [
+        { "value": "ColorPolicyOff", "label": "끄기" },
+        { "value": "PreserveEmbeddedProfiles", "label": "포함된 프로필 유지" },
+        { "value": "ConvertToWorkingSpace", "label": "작업 공간으로 변환" },
+        { "value": "CombinationOfPreserveAndSafeCmyk", "label": "수치 유지 (연결된 프로필 무시)" }
+      ] },
+    { "name": "SolidColorIntent", "label": "단색", "type": "enum", "default": "UseColorSettings", "group": "렌더링 의도",
+      "options": [
+        { "value": "UseColorSettings", "label": "색상 설정 사용" },
+        { "value": "Perceptual", "label": "가시 범위" },
+        { "value": "Saturation", "label": "채도" },
+        { "value": "RelativeColorimetric", "label": "상대 색도계" },
+        { "value": "AbsoluteColorimetric", "label": "절대 색도계" }
+      ] },
+    { "name": "DefaultImageIntent", "label": "기본 이미지", "type": "enum", "default": "UseColorSettings", "group": "렌더링 의도",
+      "options": [
+        { "value": "UseColorSettings", "label": "색상 설정 사용" },
+        { "value": "Perceptual", "label": "가시 범위" },
+        { "value": "Saturation", "label": "채도" },
+        { "value": "RelativeColorimetric", "label": "상대 색도계" },
+        { "value": "AbsoluteColorimetric", "label": "절대 색도계" }
+      ] },
+    { "name": "AfterBlendingIntent", "label": "혼합 후", "type": "enum", "default": "UseColorSettings", "group": "렌더링 의도",
+      "options": [
+        { "value": "UseColorSettings", "label": "색상 설정 사용" },
+        { "value": "Perceptual", "label": "가시 범위" },
+        { "value": "Saturation", "label": "채도" },
+        { "value": "RelativeColorimetric", "label": "상대 색도계" },
+        { "value": "AbsoluteColorimetric", "label": "절대 색도계" }
+      ] },
+    { "name": "AccurateLABSpots", "label": "별색에 표준 Lab 값 사용", "type": "boolean", "default": false, "group": "렌더링 의도" }
+  ],
+  "actions": {
+    "ok": [
+      { "op": "setColorPrefs", "props": { "$changed": true } }
+    ]
+  }
+}

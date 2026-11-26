@@ -1,0 +1,46 @@
+{
+  "title": "PDF로 내보내기",
+  "target": "none",
+  "requests": true,
+  "extends": "pdfPresets",
+  "omit": ["preset", "name", "filePath", "project", "listAction", "newName", "imported"],
+  "defaults": "pdfExport",
+  "link": "pdfPresets",
+  "build": "pdfPresets",
+  "className": "pdf-preset-dialog fields-column",
+  "okLabel": "내보내기…",
+  "cancelLabel": "닫기",
+  "description": "File ▸ Export PDF (and File ▸ PDF Presets ▸ <preset>: opened with values {preset}): the open document as a PDF file. The fields are a PDF preset's (pdfPresets shares them): preset picks one of the built-in ones or the project's (project, the project's folder; without it only the built-in ones are listed) and fills the fields from it; without preset it opens with the settings exported last. range is empty (every page) or page names and numbers like 1-4, 7, A (names first, then positions). OK (Export) writes the PDF to path (a whole .pdf path in a folder that exists; the screen fills it from the system's save window) with the export request on its own thread (progress events of job export), remembers the settings (userSettings export, exportFolder) and stays open with what it made (exported). OK is off while the document's CMYK profile is not on this computer (profileOk), the range is not one (rangeOk) or the preset is Smallest File Size (not supported). Over an attached MCP connection the dialog is filled and read but not applied (it writes a file).",
+  "note": [
+    "범위를 비우면 모든 쪽({pages}쪽)을 내보냅니다. 예: 1-4, 7",
+    { "text": "쪽 이름이나 번호를 확인하세요.", "when": { "rangeOk": false } },
+    { "text": "문서 CMYK 프로파일({profileName})이 이 컴퓨터에 없어 PDF를 만들 수 없습니다.", "when": { "profileOk": false } },
+    { "text": "최소 파일 크기로는 내보낼 수 없습니다(sRGB 변환·색상/회색별 해상도를 지원하지 않습니다).", "when": { "standard": "Small" } },
+    { "text": "사전 검사 오류 {preflightErrors}개가 있습니다.", "when": { "hasPreflightErrors": true } }
+  ],
+  "buttons": [
+    { "label": "사전 검사 보기", "field": "showPreflight", "screen": "showPreflight", "disabledWhen": { "hasPreflightErrors": false } }
+  ],
+  "okDisabledWhen": { "canExport": false },
+  "needs": { "ok": ["path"] },
+  "staysOpen": ["ok"],
+  "then": { "ok": { "exported": { "$at": ["_result", "0", "result"] } } },
+  "status": "pdfExport",
+  "errors": {
+    "failed": "내보내지 못했습니다: {0}"
+  },
+  "fields": [
+    { "name": "preset", "label": "사전 설정", "type": "choice", "source": "pdfPresets", "default": "x4", "everyTab": true, "group": "" },
+    { "name": "range", "label": "범위", "type": "text", "trim": true, "default": "", "maxLength": 1000, "everyTab": true, "group": "",
+      "messages": { "notPageRange": "쪽 이름이나 번호를 확인하세요." } },
+    { "name": "name", "type": "text", "default": "[PDF/X-4:2008]", "hidden": true, "maxLength": 200 },
+    { "name": "project", "type": "text", "path": "folder", "hidden": true, "default": "", "maxLength": 1024 },
+    { "name": "path", "label": "저장 위치", "type": "text", "path": "saveFile", "extension": "pdf", "saveAs": "{fileName}.pdf", "hidden": true, "default": "", "maxLength": 4096 },
+    { "name": "exported", "type": "json", "default": {}, "hidden": true, "local": true },
+    { "name": "profileOk", "type": "boolean", "default": true, "hidden": true, "local": true },
+    { "name": "rangeOk", "type": "boolean", "default": true, "hidden": true, "local": true },
+    { "name": "canExport", "type": "boolean", "default": true, "hidden": true, "local": true },
+    { "name": "preflightErrors", "type": "number", "integer": true, "default": 0, "min": 0, "max": 1000000000, "hidden": true, "local": true },
+    { "name": "hasPreflightErrors", "type": "boolean", "default": false, "hidden": true, "local": true }
+  ]
+}

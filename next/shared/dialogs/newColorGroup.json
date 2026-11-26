@@ -1,0 +1,27 @@
+{
+  "title": "새 색상 그룹",
+  "target": "explicit",
+  "description": "Swatches panel > New Color Group: ids are the swatches that go into the group (the ones picked in the panel); the name must not be another group's.",
+  "fields": [
+    {
+      "name": "name",
+      "label": "색상 그룹 이름",
+      "type": "text",
+      "required": true,
+      "trim": true,
+      "unique": "colorGroups",
+      "uniqueMessage": "같은 이름의 색상 그룹이 이미 있습니다.",
+      "maxLength": 256,
+      "default": "새 색상 그룹"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "newColorGroup",
+        "name": "$name",
+        "swatches": "$ids"
+      }
+    ]
+  }
+}

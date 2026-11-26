@@ -1,0 +1,106 @@
+{
+  "fixture": "parjust-single",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "parjust-single-left",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "single",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "LEFT_ALIGN"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "single-korean",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "LEFT_ALIGN"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-single-center",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "single",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "CENTER_ALIGN"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "single-korean",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "CENTER_ALIGN"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-single-right",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "single",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "RIGHT_ALIGN"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "single-korean",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "RIGHT_ALIGN"
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-single-fully",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "single",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "FULLY_JUSTIFIED"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "single-korean",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "singleWordJustification": "FULLY_JUSTIFIED"
+          }
+        }
+      ],
+      "text": true
+    }
+  ]
+}

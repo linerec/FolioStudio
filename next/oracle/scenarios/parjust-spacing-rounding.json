@@ -1,0 +1,101 @@
+{
+  "fixture": "parjust",
+  "scenarios": [
+    {
+      "name": "parjust-spacing-round-108",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean-format",
+          "start": 0,
+          "end": 25,
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 1.08,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_ALIGN",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-round-096",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean-format",
+          "start": 0,
+          "end": 25,
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 0.96,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_ALIGN",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-round-200",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean-format",
+          "start": 0,
+          "end": 25,
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 2,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_JUSTIFIED",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-spacing-round-104",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean-format",
+          "start": 0,
+          "end": 25,
+          "props": {
+            "maximumGlyphScaling": 102,
+            "maximumLetterSpacing": 4,
+            "maximumWordSpacing": 160,
+            "desiredGlyphScaling": 100,
+            "desiredLetterSpacing": 1.04,
+            "desiredWordSpacing": 110,
+            "justification": "LEFT_ALIGN",
+            "minimumGlyphScaling": 98,
+            "minimumLetterSpacing": -2,
+            "minimumWordSpacing": 70
+          }
+        }
+      ],
+      "text": true
+    }
+  ]
+}

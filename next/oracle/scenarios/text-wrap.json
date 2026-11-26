@@ -1,0 +1,21 @@
+{
+  "fixture":"text-wrap",
+  "scenarios":[
+    {"name":"noop","steps":[]},
+    {"name":"wrap-box","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP"}]},
+    {"name":"wrap-offsets","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","offsets":[6,8,10,12]}]},
+    {"name":"wrap-none","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","offsets":[6,6,6,6]},{"op":"textWrap","target":"box","mode":"NONE"}]},
+    {"name":"wrap-jump","steps":[{"op":"textWrap","target":"box","mode":"JUMP_OBJECT_TEXT_WRAP","offsets":[8,8,8,8]}]},
+    {"name":"wrap-column","steps":[{"op":"textWrap","target":"box","mode":"NEXT_COLUMN_TEXT_WRAP"}]},
+    {"name":"wrap-shape-box","steps":[{"op":"textWrap","target":"box","mode":"CONTOUR"}]},
+    {"name":"wrap-shape-oval","steps":[{"op":"textWrap","target":"oval","mode":"CONTOUR"}]},
+    {"name":"wrap-shape-offset","steps":[{"op":"textWrap","target":"oval","mode":"CONTOUR","offsets":[6,6,6,6]}]},
+    {"name":"wrap-inverse-box","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","inverse":true}]},
+    {"name":"wrap-inverse-shape","steps":[{"op":"textWrap","target":"oval","mode":"CONTOUR","inverse":true}]},
+    {"name":"wrap-master-only","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","masterOnly":true}]},
+    {"name":"wrap-side-left","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","side":"LEFT_SIDE"}]},
+    {"name":"wrap-side-right","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","side":"RIGHT_SIDE"}]},
+    {"name":"wrap-side-largest","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","side":"LARGEST_AREA"}]},
+    {"name":"wrap-side-spine","steps":[{"op":"textWrap","target":"box","mode":"BOUNDING_BOX_TEXT_WRAP","side":"SIDE_TOWARDS_SPINE"}]}
+  ]
+}

@@ -1,0 +1,36 @@
+.preferences-dialog { width: min(860px, 94vw) !important; max-width: 94vw !important; }
+.preferences-body { display: flex; gap: 20px; height: min(580px, 70vh); }
+.preferences-body nav { width: 190px; flex-shrink: 0; overflow-y: auto; border-right: 1px solid var(--line); padding-right: 10px; }
+.preferences-body nav button { display: block; width: 100%; min-height: var(--h-row); text-align: left; padding: 4px var(--sp-2); border: 0; border-radius: var(--r-sm); background: transparent; line-height: var(--lh-ui); }
+.preferences-body nav button:hover { background: var(--hover); }
+/* the chosen page is a selection (the list colour), not an action: the accent stays for the OK button */
+.preferences-body nav button[aria-current] { background: var(--list-sel); color: var(--text); font-weight: var(--fw-semibold); }
+.preferences-panels { flex: 1; min-width: 0; overflow-y: auto; padding-right: 8px; }
+.preferences-panels section[hidden] { display: none; }
+.preferences-panels h3 { margin-top: 0; }
+.preferences-panels .preference-field { border: 0; margin: 0; padding: 0; min-width: 0; }
+.preferences-panels label { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 8px 0; }
+.preferences-panels label.page-check { justify-content: flex-start; gap: 7px; }
+.preferences-panels .td-field { display: flex; align-items: center; gap: 5px; flex: 0 0 190px; }
+.preferences-panels .td-field input, .preferences-panels .td-field select { width: 100%; min-width: 0; padding: 4px 6px; }
+/* a button beside a field (Choose…) keeps its words on one line */
+.preferences-panels .td-field button { flex: none; white-space: nowrap; }
+.shortcut-settings-dialog { width: min(700px, calc(100vw - 40px)); }
+.shortcut-settings-dialog select[data-field="shortcutCommand"] { width: 100%; margin-top: 12px; }
+.shortcut-settings-dialog .shortcut-buttons { display: flex; gap: 8px; }
+.file-info-dialog { width: min(600px, calc(100vw - 40px)); }
+.file-info-dialog label { display: flex; justify-content: space-between; gap: 16px; margin: 9px 0; }
+.file-info-dialog textarea { width: 380px; max-width: 65vw; resize: vertical; }
+.color-settings-dialog { width: min(640px, calc(100vw - 40px)); max-height: 90vh; overflow-y: auto; }
+.color-settings-dialog fieldset { border: 1px solid var(--line); margin: 10px 0; }
+.color-settings-dialog label { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 8px 0; }
+.color-settings-dialog label.page-check { justify-content: flex-start; }
+.color-settings-dialog select { max-width: 360px; }
+/* Convert to Profile: the preview check is not built yet and carries the unfinished mark (Help > unfinished marks) */
+.convert-profile-dialog label.check { justify-content: flex-start; gap: 8px; }
+.autocorrect-fields { border: 1px solid var(--line); margin-top: 18px; }
+.autocorrect-fields select[data-field="autoCorrectWords"] { width: 65%; min-height: 130px; }
+.autocorrect-actions { display: flex; gap: 8px; justify-content: flex-end; }
+/* the shared number field in a preferences panel fills the field's width like the plain box did */
+.preferences-panels .td-field .nf { flex: 1 1 auto; min-width: 0; }
+.preferences-panels .td-field .nf-box { width: 100% !important; }

@@ -1,0 +1,29 @@
+{
+  "title": "새 라이브러리",
+  "scope": "app",
+  "target": "none",
+  "okLabel": "저장",
+  "description": "An app dialog (File ▸ New ▸ Library…): the Save window of a new library file in the open project (project, given whole). folder is a folder of the project (\"\" the project folder itself; the list comes with the dialog), fileName the file's name (.foliolibrary is added when it lacks it). Applying sends library action new; when the file exists the dialog stays open asking to replace it (dialogState.confirm), and applyDialog action replace replaces it. The result is the library (path, library, view), which the screen opens. library is the project-relative path of the library open in the window (it is not saved over); sort is the order the window lists assets in.",
+  "buttons": [{ "field": "openExisting", "label": "기존 라이브러리 열기…", "screen": "openExisting" }],
+  "confirm": { "code": "exists", "action": "replace", "title": "저장 확인", "message": "{0}이(가) 이미 있습니다. 바꾸시겠습니까?", "yes": "예", "no": "아니요" },
+  "errors": {
+    "name_required": "파일 이름을 넣으세요.",
+    "bad_name": "파일 이름으로 쓸 수 없습니다: {0}",
+    "folder_missing": "폴더가 없습니다: {0}",
+    "outside_project": "프로젝트 폴더 밖에는 만들 수 없습니다.",
+    "name_collision": "대소문자나 글자 모양만 다른 같은 이름이 이미 있습니다: {0}",
+    "open": "\"{0}\"은(는) 라이브러리로 이미 열려 있어 저장할 수 없습니다."
+  },
+  "fields": [
+    { "name": "project", "label": "프로젝트", "type": "text", "path": "folder", "hidden": true, "required": true, "default": "", "maxLength": 1024, "group": "" },
+    { "name": "library", "label": "라이브러리", "type": "text", "hidden": true, "default": "", "maxLength": 1024, "group": "" },
+    { "name": "sort", "label": "정렬", "type": "text", "hidden": true, "default": "newest", "maxLength": 32, "group": "" },
+    { "name": "folder", "label": "저장 위치", "type": "choice", "source": "projectFolders", "none": "프로젝트 폴더", "default": "", "group": "" },
+    { "name": "fileName", "label": "파일 이름", "type": "text", "required": true, "trim": true, "default": "라이브러리.foliolibrary", "maxLength": 255, "group": "" },
+    { "name": "fileType", "label": "파일 형식", "type": "enum", "disabled": true, "default": "library", "options": [{ "value": "library", "label": "라이브러리 (*.foliolibrary)" }], "group": "" }
+  ],
+  "actions": {
+    "ok": [{ "cmd": "library", "root": "$project", "action": "new", "folder": "$folder", "fileName": "$fileName", "replace": false, "open": ["$library"], "search": "", "sort": "$sort" }],
+    "replace": [{ "cmd": "library", "root": "$project", "action": "new", "folder": "$folder", "fileName": "$fileName", "replace": true, "open": ["$library"], "search": "", "sort": "$sort" }]
+  }
+}

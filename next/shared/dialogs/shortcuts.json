@@ -1,0 +1,38 @@
+{
+  "title": "단축키",
+  "scope": "app",
+  "target": "none",
+  "defaults": "shortcuts",
+  "link": "shortcuts",
+  "className": "shortcut-settings-dialog",
+  "description": "Edit > Keyboard Shortcuts (an app dialog): the user's shortcuts (app settings shortcuts: a command id and its keys, an empty list for none) over the commands' default keys. commands is the command list the screen hands in when it opens the dialog ([{id, label, keys (the defaults), fallThrough (a contextual key that gives way), listed (offered in the list)}]). shortcutSearch narrows the list (shortcutCommands, name or id), shortcutCommand is the command chosen (choosing another clears the key), shortcutKey the key pressed: Ctrl or Alt with a key, or a function key, normalized (Ctrl+Shift+D; else notShortcut). hasConflict and conflictWith say whether another command has that key (a contextual default the user's key takes over does not count). listAction assign gives the command the key (refused while it conflicts: conflict), remove leaves it no key, reset gives it its defaults again. OK saves the shortcuts (userSettings patch shortcuts).",
+  "note": [
+    { "text": "{shortcutCommandLabel}: {currentKeys}", "when": { "hasKeys": true } },
+    { "text": "{shortcutCommandLabel}: (없음)", "when": { "hasKeys": false } },
+    "Ctrl 또는 Alt 조합, 또는 기능 키를 누르세요.",
+    { "text": "이미 사용 중: {conflictWith}", "when": { "hasConflict": true } }
+  ],
+  "fields": [
+    { "name": "shortcutSearch", "label": "명령 찾기", "type": "text", "default": "", "maxLength": 256, "local": true, "group": "" },
+    { "name": "shortcutCommand", "label": "명령", "type": "choice", "source": "shortcutCommands", "default": "edit.preferences", "size": 12, "group": "" },
+    { "name": "shortcutKey", "label": "새 단축키", "type": "key", "default": "", "local": true, "group": "" },
+    { "name": "commands", "type": "json", "default": [], "hidden": true, "local": true },
+    { "name": "shortcuts", "type": "json", "default": {}, "hidden": true },
+    { "name": "currentKeys", "type": "text", "default": "", "maxLength": 4096, "hidden": true, "local": true },
+    { "name": "shortcutCommandLabel", "type": "text", "default": "", "maxLength": 4096, "hidden": true, "local": true },
+    { "name": "conflictWith", "type": "text", "default": "", "maxLength": 4096, "hidden": true, "local": true },
+    { "name": "hasKeys", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "hasConflict", "type": "boolean", "default": false, "hidden": true, "local": true },
+    { "name": "listAction", "type": "enum", "default": "", "hidden": true, "local": true, "options": ["", "assign", "remove", "reset"] }
+  ],
+  "buttons": [
+    { "label": "지정", "field": "shortcutAssign", "set": { "field": "listAction", "value": "assign" }, "disabledWhen": [{ "shortcutKey": "" }, { "hasConflict": true }] },
+    { "label": "단축키 제거", "field": "shortcutRemove", "set": { "field": "listAction", "value": "remove" } },
+    { "label": "명령 기본값 복원", "field": "shortcutReset", "set": { "field": "listAction", "value": "reset" } }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "userSettings", "patch": { "shortcuts": "$shortcuts" } }
+    ]
+  }
+}

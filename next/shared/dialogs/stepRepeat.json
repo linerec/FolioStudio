@@ -1,0 +1,73 @@
+{
+  "title": "단계 및 반복",
+  "preference": "folio.stepRepeat",
+  "command": "stepRepeat",
+  "selection": true,
+  "fields": [
+    {
+      "name": "grid",
+      "label": "격자로 만들기",
+      "type": "boolean",
+      "default": false,
+      "group": "반복"
+    },
+    {
+      "name": "count",
+      "label": "개수",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "max": 1000,
+      "integer": true,
+      "group": "반복",
+      "when": {
+        "grid": false
+      }
+    },
+    {
+      "name": "rows",
+      "label": "행",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "max": 100,
+      "integer": true,
+      "group": "반복",
+      "when": {
+        "grid": true
+      }
+    },
+    {
+      "name": "columns",
+      "label": "열",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "max": 100,
+      "integer": true,
+      "group": "반복",
+      "when": {
+        "grid": true
+      }
+    },
+    {
+      "name": "v",
+      "label": "label.vertical",
+      "type": "number",
+      "default": 12,
+      "min": -1000000000,
+      "max": 1000000000,
+      "group": "간격"
+    },
+    {
+      "name": "h",
+      "label": "label.horizontal",
+      "type": "number",
+      "default": 12,
+      "min": -1000000000,
+      "max": 1000000000,
+      "group": "간격"
+    }
+  ],
+  "note": "값의 단위는 포인트입니다."
+}

@@ -1,0 +1,953 @@
+{
+  "fixture": "spancols-counts",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "spancols-span-3",
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-span-4",
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-split-3",
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3,
+            "splitColumnInsideGutter": 8,
+            "splitColumnOutsideGutter": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-split-4",
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ],
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 4,
+            "splitColumnInsideGutter": 8,
+            "splitColumnOutsideGutter": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "spancols-grid-span",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 0,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-grid-split",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-keep-span",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "keepAllLinesTogether": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.keep-all-soft-lines"
+      ]
+    },
+    {
+      "name": "spancols-keep-split",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "keepAllLinesTogether": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.keep-all-soft-lines"
+      ]
+    },
+    {
+      "name": "spancols-firstgrid-span",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 0,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true,
+            "gridAlignFirstLineOnly": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-firstgrid-split",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true,
+            "gridAlignFirstLineOnly": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-firstgrid-split-2",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true,
+            "gridAlignFirstLineOnly": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-firstgrid-split-4",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true,
+            "gridAlignFirstLineOnly": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 4
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-split-mixfirst",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 48,
+          "props": {
+            "pointSize": 24,
+            "leading": 28
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.mixed-height"
+      ]
+    },
+    {
+      "name": "spancols-span-5",
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 5
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 5
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ]
+    },
+    {
+      "name": "spancols-span-5-first",
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 5
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 0,
+          "end": 97,
+          "props": {
+            "alignToBaseline": true,
+            "gridAlignFirstLineOnly": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 5
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.baseline-grid"
+      ]
+    },
+    {
+      "name": "spancols-split-5",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 5
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ]
+    },
+    {
+      "name": "spancols-split-6",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 6
+          }
+        }
+      ],
+      "text": true,
+      "rules": [
+        "paragraph.columns.specified-counts"
+      ]
+    },
+    {
+      "name": "composer-c2-span-4-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-4-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-3of3-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-3of3-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-2of2-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-2of2-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-3-last-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 84,
+          "end": 85,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-span-3-last-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 84,
+          "end": 85,
+          "props": {
+            "spanColumnType": "SPAN_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-2-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "split",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-2-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "split",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-3-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "split",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-3-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "split",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-3-first-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "split",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-3-first-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "split",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "split",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-2-3col-center",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "composer-c2-split-2-3col-bottom",
+      "text": true,
+      "rules": [
+        "paragraph.columns.vertical-justify"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "verticalJustification": "VerticalJustification.BOTTOM_ALIGN"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "span",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 3
+            }
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "span",
+          "start": 42,
+          "end": 43,
+          "props": {
+            "spanColumnType": "SPLIT_COLUMNS",
+            "spanSplitColumnCount": 2
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "korean-fields": {
+  "fields": [
+   {
+    "name": "번호",
+    "type": "TEXT_FIELD"
+   },
+   {
+    "name": "제목",
+    "type": "TEXT_FIELD"
+   }
+  ],
+  "records": [
+   [
+    "한글 표 이름Start End"
+   ]
+  ],
+  "version": "20.5.5.119"
+ },
+ "korean-values": {
+  "fields": [
+   {
+    "name": "id",
+    "type": "TEXT_FIELD"
+   },
+   {
+    "name": "title",
+    "type": "TEXT_FIELD"
+   },
+   {
+    "name": "status",
+    "type": "TEXT_FIELD"
+   }
+  ],
+  "records": [
+   [
+    "가을 특집, \"단풍\"Start End"
+   ],
+   [
+    "겨울 코트Start End"
+   ],
+   [
+    "새해 달력Start End"
+   ]
+  ],
+  "version": "20.5.5.119"
+ },
+ "line-break": {
+  "fields": [
+   {
+    "name": "id",
+    "type": "TEXT_FIELD"
+   },
+   {
+    "name": "title",
+    "type": "TEXT_FIELD"
+   }
+  ],
+  "records": [
+   [
+    "첫 줄 둘째 줄Start End"
+   ]
+  ],
+  "version": "20.5.5.119"
+ }
+}

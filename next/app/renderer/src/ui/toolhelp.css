@@ -1,0 +1,35 @@
+/* Tool help (uix-e1, DESIGN.md § 17): the section under the tools and the instant card. Tokens only; no motion (it follows the pointer and the
+   tool keys, a surface used hundreds of times a day: § 6). */
+
+/* the card: beside the surface, above every panel and flyout; the pointer passes through it */
+.tool-card {
+  position: fixed; z-index: 950; left: 0; top: 0; box-sizing: border-box; max-width: 288px; min-width: 160px;
+  padding: var(--sp-1_5) var(--sp-2) var(--sp-2); background: var(--panel); color: var(--text);
+  border: 1px solid var(--line-dark); border-radius: var(--r-md); box-shadow: var(--shadow-pop);
+  font-family: var(--font-ui); pointer-events: none; user-select: none;
+}
+.tool-card .tc-head { display: flex; align-items: baseline; gap: var(--sp-2); }
+.tool-card .tc-name { flex: 1; min-width: 0; font-size: var(--fs-md); font-weight: 600; line-height: var(--lh-tight); overflow-wrap: anywhere; }
+.tool-card .tc-keys, .tool-help .th-keys { flex: none; display: inline-flex; gap: var(--sp-1); }
+.tool-card kbd, .tool-help kbd {
+  font: 500 var(--fs-xs) / 16px var(--font-ui); font-variant-numeric: tabular-nums; min-width: 16px; padding: 0 var(--sp-1); box-sizing: border-box;
+  text-align: center; color: var(--muted); background: var(--bar); border: 1px solid var(--line); border-radius: var(--r-xs); white-space: nowrap;
+}
+.tool-card .tc-summary { margin: var(--sp-1) 0 0; font-size: var(--fs-sm); line-height: var(--lh-text); color: var(--muted); word-break: keep-all; overflow-wrap: anywhere; }
+.tool-card .tc-note { margin: var(--sp-1_5) 0 0; padding-top: var(--sp-1_5); border-top: 1px solid var(--line); font-size: var(--fs-xs); line-height: var(--lh-text); color: var(--muted); word-break: keep-all; white-space: pre-line; }
+
+/* the section under the tools (the Folio tools view): a head that names the chosen tool and folds the words below it */
+.sb-tools .tool-help { flex: none; display: flex; flex-direction: column; min-height: 0; max-height: 46%; border-top: 1px solid var(--line); background: var(--panel); }
+.tool-help .th-head {
+  flex: none; display: flex; align-items: center; gap: var(--sp-1_5); height: var(--h-row); min-width: 0; margin: var(--sp-1) var(--sp-1) 0; padding: 0 var(--sp-1_5) 0 var(--sp-1);
+  border: none; border-radius: var(--r-sm); background: none; color: var(--text); font: inherit; font-size: var(--fs-sm); text-align: left; cursor: default;
+}
+@media (hover: hover) { .tool-help .th-head:hover { background: var(--hover); } }
+.tool-help .th-chev { flex: none; color: var(--muted); }
+.tool-help .th-icon { flex: none; color: var(--accent-fg); }
+.tool-help .th-name { flex: 1; min-width: 0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tool-help .th-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: var(--sp-1) var(--sp-3) var(--sp-3) calc(var(--sp-1) + var(--sp-1_5) + 12px + var(--sp-1_5)); }
+.tool-help .th-body p { margin: 0; word-break: keep-all; overflow-wrap: anywhere; }
+.tool-help .th-body .th-summary { font-size: var(--fs-md); font-weight: 500; line-height: var(--lh-ui); color: var(--text); }
+.tool-help .th-body .th-detail { margin-top: var(--sp-1_5); font-size: var(--fs-sm); line-height: var(--lh-text); color: var(--muted); }
+.tool-help .th-body .th-note { margin-top: var(--sp-2); padding-top: var(--sp-2); border-top: 1px solid var(--line); font-size: var(--fs-xs); line-height: var(--lh-text); color: var(--muted); white-space: pre-line; }

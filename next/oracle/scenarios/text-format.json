@@ -1,0 +1,1121 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "format-paragraph-keep",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "style": "Format Heading",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-caret-keep",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "style": "Format Heading",
+          "clear": false
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-clear",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "style": "Format Heading",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-caret-clear",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "style": "Format Heading",
+          "clear": true
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "format-character-keep",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "style": "Format Large",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-character-caret-keep",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "style": "Format Large",
+          "clear": false
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "format-character-clear",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "style": "Format Large",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-character-caret-clear",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "style": "Format Large",
+          "clear": true
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-multiple",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 2,
+          "end": 30,
+          "style": "Format Heading",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-end-exclusive",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 2,
+          "end": 22,
+          "style": "Format Heading",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-second-caret",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 24,
+          "end": 24,
+          "style": "Format Heading",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-character-none",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 5,
+          "end": 18,
+          "style": "[None]",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-character-none-clear",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 5,
+          "end": 18,
+          "style": "[None]",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-character-italic",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 5,
+          "end": 18,
+          "style": "Format Italic",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-font",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "appliedFont": "Times New Roman",
+            "fontStyle": "Bold"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-bold",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "fontStyle": "Bold"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-italic",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "fontStyle": "Italic"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-size",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "pointSize": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-leading",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "leading": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-auto-leading",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "leading": "auto"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-tracking",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "tracking": 80
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-metrics",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "kerningMethod": "Metrics"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-manual-kern",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "kerningValue": -80
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-baseline",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "baselineShift": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-underline",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "underline": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-strike",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "strikeThru": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-caps",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "capitalization": "ALL_CAPS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-smallcaps",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "capitalization": "SMALL_CAPS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-normalcase",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "capitalization": "NORMAL"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-align-center",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "justification": "CENTER_ALIGN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-align-right",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "justification": "RIGHT_ALIGN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-align-justify",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "justification": "LEFT_JUSTIFIED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-align-all",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "justification": "FULLY_JUSTIFIED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-indents",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "leftIndent": 25,
+            "rightIndent": 18,
+            "firstLineIndent": -6
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-spacing",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 18,
+          "props": {
+            "spaceBefore": 10,
+            "spaceAfter": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-caret-direct",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "props": {
+            "pointSize": 21,
+            "underline": true
+          }
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "XYZ"
+        }
+      ]
+    },
+    {
+      "name": "format-direct-multiple",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 2,
+          "end": 35,
+          "props": {
+            "leftIndent": 20,
+            "pointSize": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-direct-reset",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 4,
+          "props": {
+            "pointSize": 20,
+            "underline": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 4,
+          "props": {
+            "pointSize": 12,
+            "underline": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-reset",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 4,
+          "props": {
+            "leftIndent": 0,
+            "spaceBefore": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-korean",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean-format",
+          "start": 1,
+          "end": 9,
+          "props": {
+            "pointSize": 18,
+            "tracking": 25
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-clear-partial",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 7,
+          "end": 8,
+          "style": "Format Heading",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-character-same",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 6,
+          "end": 10,
+          "style": "Format Bold",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-character-same-clear",
+      "steps": [
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 6,
+          "end": 10,
+          "style": "Format Bold",
+          "clear": true
+        }
+      ]
+    },
+    {
+      "name": "format-character-same-defined",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 6,
+          "end": 10,
+          "props": {
+            "fontStyle": "Italic"
+          }
+        },
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 6,
+          "end": 10,
+          "style": "Format Bold",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-paragraph-same",
+      "steps": [
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 1,
+          "end": 4,
+          "style": "Format Body",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-kern-caret",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "props": {
+            "kerningValue": -100
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-kern-caret-insert",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 8,
+          "end": 8,
+          "props": {
+            "kerningValue": -100
+          }
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 8,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "format-kern-av",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 57,
+          "end": 58,
+          "props": {
+            "kerningValue": -100
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-kern-zero",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 57,
+          "end": 58,
+          "props": {
+            "kerningValue": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-kern-reset",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 57,
+          "end": 58,
+          "props": {
+            "kerningValue": -100
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 58,
+          "end": 58,
+          "props": {
+            "kerningMethod": "Metrics"
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-empty-character",
+      "steps": [
+        {
+          "op": "deleteText",
+          "target": "format",
+          "start": 0,
+          "end": 70
+        },
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "style": "Format Large",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-empty-paragraph",
+      "steps": [
+        {
+          "op": "deleteText",
+          "target": "format",
+          "start": 0,
+          "end": 70
+        },
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "style": "Format Heading",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-empty-direct",
+      "steps": [
+        {
+          "op": "deleteText",
+          "target": "format",
+          "start": 0,
+          "end": 70
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "pointSize": 24,
+            "underline": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-empty-retained-format",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "pointSize": 22,
+            "fontStyle": "Italic"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 69,
+          "end": 70,
+          "props": {
+            "pointSize": 17,
+            "fontStyle": "Bold"
+          }
+        },
+        {
+          "op": "deleteText",
+          "target": "format",
+          "start": 0,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "name": "format-trailing-paragraph",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 70,
+          "text": "\r"
+        },
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 71,
+          "end": 71,
+          "style": "Format Heading",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-trailing-character",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 70,
+          "text": "\r"
+        },
+        {
+          "op": "characterStyle",
+          "target": "format",
+          "start": 71,
+          "end": 71,
+          "style": "Format Large",
+          "clear": false
+        }
+      ]
+    },
+    {
+      "name": "format-trailing-direct",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 70,
+          "text": "\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 71,
+          "end": 71,
+          "props": {
+            "pointSize": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-trailing-paragraph-type",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 70,
+          "text": "\r"
+        },
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 71,
+          "end": 71,
+          "style": "Format Heading",
+          "clear": false
+        },
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 71,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "format-trailing-paragraph-direct",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 70,
+          "text": "\r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 71,
+          "end": 71,
+          "props": {
+            "leftIndent": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-trailing-delete-all",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 70,
+          "text": "\r"
+        },
+        {
+          "op": "paragraphStyle",
+          "target": "format",
+          "start": 71,
+          "end": 71,
+          "style": "Format Heading",
+          "clear": false
+        },
+        {
+          "op": "deleteText",
+          "target": "format",
+          "start": 0,
+          "end": 71
+        }
+      ]
+    },
+    {
+      "name": "format-kern-boundary",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 60,
+          "end": 61,
+          "props": {
+            "underline": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-font-leading",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 1,
+          "end": 8,
+          "props": {
+            "appliedFont": "Times New Roman",
+            "fontStyle": "Bold",
+            "leading": 22
+          }
+        }
+      ]
+    },
+    {
+      "name": "format-copy-inline",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 2,
+          "end": 18,
+          "destination": "destination",
+          "at": 4
+        }
+      ]
+    },
+    {
+      "name": "format-copy-first-paragraph",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 0,
+          "end": 23,
+          "destination": "destination",
+          "at": 4
+        }
+      ]
+    },
+    {
+      "name": "format-copy-multiline",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 2,
+          "end": 30,
+          "destination": "destination",
+          "at": 4
+        }
+      ]
+    },
+    {
+      "name": "format-copy-paragraph-start",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 2,
+          "end": 30,
+          "destination": "destination",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "name": "format-copy-paragraph-end",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 2,
+          "end": 30,
+          "destination": "destination",
+          "at": 35
+        }
+      ]
+    },
+    {
+      "name": "format-copy-three-paragraphs",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 2,
+          "end": 50,
+          "destination": "destination",
+          "at": 4
+        }
+      ]
+    },
+    {
+      "name": "format-copy-empty",
+      "steps": [
+        {
+          "op": "deleteText",
+          "target": "destination",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 2,
+          "end": 30,
+          "destination": "destination",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "name": "format-copy-same-story",
+      "steps": [
+        {
+          "op": "copyText",
+          "target": "format",
+          "start": 6,
+          "end": 16,
+          "destination": "format",
+          "at": 3
+        }
+      ]
+    }
+  ]
+}

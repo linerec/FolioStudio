@@ -1,0 +1,282 @@
+{
+  "fixture": "text-format",
+  "scenarios": [
+    {
+      "name": "find-story",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "paragraph",
+            "scope": "story"
+          },
+          "text": "section"
+        }
+      ]
+    },
+    {
+      "name": "find-document",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "paragraph",
+            "scope": "document"
+          },
+          "text": "section"
+        }
+      ]
+    },
+    {
+      "name": "find-selection",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "a",
+            "scope": "selection",
+            "start": 0,
+            "end": 10
+          },
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "find-case-sensitive",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "alpha",
+            "scope": "story",
+            "caseSensitive": true
+          },
+          "text": "A"
+        }
+      ]
+    },
+    {
+      "name": "find-case-insensitive",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "alpha",
+            "scope": "story"
+          },
+          "text": "A"
+        }
+      ]
+    },
+    {
+      "name": "find-whole-word",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "graph",
+            "scope": "story",
+            "wholeWord": true
+          },
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "find-substring",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "graph",
+            "scope": "story"
+          },
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "name": "find-whole-present",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "paragraph",
+            "scope": "story",
+            "wholeWord": true
+          },
+          "text": "line"
+        }
+      ]
+    },
+    {
+      "name": "find-delete",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "bold",
+            "scope": "story"
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "find-mixed",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "bold LARGE",
+            "scope": "story"
+          },
+          "text": "replacement"
+        }
+      ]
+    },
+    {
+      "name": "find-paragraph-break",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "tail.\rSecond",
+            "scope": "story"
+          },
+          "text": "merged"
+        }
+      ]
+    },
+    {
+      "name": "find-insert-return",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "bold",
+            "scope": "story"
+          },
+          "text": "first\rsecond"
+        }
+      ]
+    },
+    {
+      "name": "find-korean",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "korean-format",
+          "query": {
+            "text": "문단",
+            "scope": "story"
+          },
+          "text": "기사"
+        }
+      ]
+    },
+    {
+      "name": "find-format-text",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "bold",
+            "scope": "story",
+            "props": {
+              "characterStyle": "Format Bold"
+            }
+          },
+          "props": {
+            "pointSize": 18,
+            "underline": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "find-format-only",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "",
+            "scope": "story",
+            "props": {
+              "pointSize": 15
+            }
+          },
+          "props": {
+            "tracking": 50,
+            "pointSize": 17
+          }
+        }
+      ]
+    },
+    {
+      "name": "find-character-style",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "bold",
+            "scope": "story"
+          },
+          "props": {
+            "characterStyle": "Format Italic"
+          }
+        }
+      ]
+    },
+    {
+      "name": "find-paragraph-style",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "paragraph",
+            "scope": "story"
+          },
+          "props": {
+            "paragraphStyle": "Format Heading"
+          }
+        }
+      ]
+    },
+    {
+      "name": "find-replacement-format",
+      "steps": [
+        {
+          "op": "findReplace",
+          "target": "format",
+          "query": {
+            "text": "bold",
+            "scope": "story"
+          },
+          "text": "NEW",
+          "props": {
+            "fontStyle": "Italic",
+            "pointSize": 16
+          }
+        }
+      ]
+    }
+  ]
+}

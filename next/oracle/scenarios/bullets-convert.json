@@ -1,0 +1,74 @@
+{
+  "fixture": "text",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "bullets-convert-numbers",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "mixed",
+          "start": 0,
+          "end": 28,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "Item ^#.^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "mixed",
+          "start": 0,
+          "end": 28,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-partial",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean",
+          "start": 0,
+          "end": 14,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "제 ^# 항^t"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "korean",
+          "start": 1,
+          "end": 2,
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "name": "bullets-convert-marker",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "mixed",
+          "start": 0,
+          "end": 28,
+          "props": {
+            "bulletsAndNumberingListType": "BULLET_LIST",
+            "bulletChar": "+",
+            "bulletsTextAfter": "^t",
+            "bulletsCharacterStyle": "CharacterStyle/Text Emphasis"
+          }
+        },
+        {
+          "op": "convertListsToText",
+          "target": "mixed",
+          "start": 0,
+          "end": 28,
+          "labels": {}
+        }
+      ]
+    }
+  ]
+}

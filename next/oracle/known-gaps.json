@@ -1,0 +1,220 @@
+{
+  "oracle": {
+    "opentype-forms/zero-cascadia": {
+      "only": [
+        "Stories/Story_u145.xml u145: Story/ParagraphStyleRange[2]/CharacterStyleRange[0] FontStyle"
+      ]
+    },
+    "text/special-page-next": {
+      "only": "new warnings"
+    },
+    "text/special-page-previous": {
+      "only": "new warnings"
+    },
+    "basic/swatch-new-spot": {
+      "only": "NeutralDensity"
+    },
+    "basic/swatch-sort-name2": {
+      "only": "NeutralDensity"
+    },
+    "basic/swatch-sort-value2": {
+      "only": "NeutralDensity"
+    },
+    "basic/swatch-to-spot": {
+      "only": "NeutralDensity"
+    },
+    "basic/ink-convert": {
+      "only": "NeutralDensity"
+    },
+    "basic/ink-all-spots": {
+      "only": "NeutralDensity"
+    },
+    "basic/ink-alias": {
+      "only": "NeutralDensity"
+    },
+    "basic/corner-rotated": {
+      "only": "bounds moved"
+    },
+    "basic/corner-polygon": {
+      "only": "bounds moved"
+    },
+    "tables/cell-to-graphic": {
+      "only": [
+        "uedi137Column1",
+        "uedi137Row2",
+        "ItemTransform",
+        "story contents or styles differ",
+        "text/paragraphs/character formatting differ"
+      ]
+    },
+    "tables/cell-to-text": {
+      "only": [
+        "uedi137Column1",
+        "uedi137Row2",
+        "ItemTransform",
+        "story contents or styles differ",
+        "text/paragraphs/character formatting differ"
+      ]
+    },
+    "tables/cell-graphic-insets": {
+      "only": [
+        "uedi137Column1",
+        "uedi137Row2",
+        "ItemTransform",
+        "story contents or styles differ",
+        "text/paragraphs/character formatting differ"
+      ]
+    },
+    "basic/path-pf-add-overlap": {
+      "only": [
+        "GeometryPathType[0]/PathPointArray[0]/PathPointType",
+        "GeometryPathType[1]/PathPointArray[0]/PathPointType",
+        "model item ~0"
+      ]
+    },
+    "basic/path-pf-subtract-overlap": {
+      "only": [
+        "GeometryPathType[0]/PathPointArray[0]/PathPointType",
+        "GeometryPathType[1]/PathPointArray[0]/PathPointType",
+        "model item ~0"
+      ]
+    },
+    "basic/path-pf-exclude-overlap": {
+      "only": [
+        "GeometryPathType[0]/PathPointArray[0]/PathPointType",
+        "GeometryPathType[1]/PathPointArray[0]/PathPointType",
+        "model item ~0"
+      ]
+    },
+    "basic/path-pf-minusback-overlap": {
+      "only": [
+        "GeometryPathType[0]/PathPointArray[0]/PathPointType",
+        "GeometryPathType[1]/PathPointArray[0]/PathPointType",
+        "model item ~0"
+      ]
+    },
+    "cr02-optical/cr02-optical-times-quotes": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di162FontnTimes New Roman Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnTimes New Roman Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnTimes New Roman Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-times-dash": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di160FontnTimes New Roman Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di160FontnTimes New Roman Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di160FontnTimes New Roman Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-times-brackets": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di160FontnTimes New Roman Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di160FontnTimes New Roman Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di160FontnTimes New Roman Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-georgia-quotes": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di160FontnGeorgia Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di160FontnGeorgia Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di160FontnGeorgia Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-georgia-dash": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di161FontnGeorgia Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnGeorgia Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnGeorgia Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-georgia-brackets": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di15fFontnGeorgia Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di15fFontnGeorgia Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di15fFontnGeorgia Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-verdana-quotes": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di162FontnVerdana Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnVerdana Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnVerdana Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-verdana-dash": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di162FontnVerdana Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnVerdana Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnVerdana Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-verdana-brackets": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di161FontnVerdana Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnVerdana Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnVerdana Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-consolas-quotes": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di162FontnConsolas Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnConsolas Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di162FontnConsolas Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-consolas-dash": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di161FontnConsolas Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnConsolas Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnConsolas Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-optical/cr02-optical-consolas-brackets": {
+      "only": [
+        "Resources/Fonts.xml: new elements Folio [\"FontFamily\", \"Font\"] / InDesign [\"FontFamily\", \"Font\", \"Font\", \"Font\", \"Font\"]",
+        "Resources/Fonts.xml di161FontnConsolas Bold: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnConsolas Bold Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml di161FontnConsolas Italic: InDesign changed it, Folio did not",
+        "Resources/Fonts.xml ~0: FontFamily: 1 vs 4 children"
+      ]
+    },
+    "cr02-shapes/cr02-corner-rounded-overlap": {
+      "only": "r-rot: bounds moved [8.259840213871286, 8.259840213871314, -8.259840213871286, -8.259840213871257], InDesign [0.0, 0.0, 0.0, 0.0]"
+    },
+    "cr02-shapes/cr02-corner-inverse-rounded-overlap": {
+      "only": "r-rot: bounds moved [9.92982871094327, 17.092328109000732, -9.92982871094327, -14.976135105029186], InDesign [0.0, 0.0, 0.0, 0.0]"
+    },
+    "cr02-shapes/cr02-corner-bevel-overlap": {
+      "only": "r-rot: bounds moved [9.92982871094327, 17.092328109000732, -9.92982871094327, -14.976135105029186], InDesign [0.0, 0.0, 0.0, 0.0]"
+    },
+    "cr02-shapes/cr02-corner-fancy-overlap": {
+      "only": "r-rot: bounds moved [9.92982871094327, 15.310214888259964, -9.92982871094327, -14.604817220269467], InDesign [0.0, 0.0, 0.0, 0.0]"
+    },
+    "cr02-shapes/cr02-corner-inset-overlap": {
+      "only": "r-rot: bounds moved [9.92982871094327, 17.092328109000732, -9.92982871094327, -14.976135105029186], InDesign [0.0, 0.0, 0.0, 0.0]"
+    }
+  }
+}

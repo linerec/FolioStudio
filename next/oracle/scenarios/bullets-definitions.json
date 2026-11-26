@@ -1,0 +1,60 @@
+{
+  "fixture": "text",
+  "extension": "bullets-definitions",
+  "scenarios": [
+    {
+      "name": "bullets-list-create",
+      "steps": [
+        {
+          "op": "setNumberingList",
+          "id": "",
+          "name": "Shared",
+          "props": {
+            "acrossStories": false,
+            "acrossDocuments": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-list-rename",
+      "steps": [
+        {
+          "op": "setNumberingList",
+          "id": "",
+          "name": "Shared",
+          "props": {
+            "acrossStories": false,
+            "acrossDocuments": false
+          }
+        },
+        {
+          "op": "setNumberingList",
+          "id": "NumberingList/Shared",
+          "name": "한글 목록",
+          "props": {
+            "acrossStories": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-list-delete",
+      "steps": [
+        {
+          "op": "setNumberingList",
+          "id": "",
+          "name": "Shared",
+          "props": {
+            "acrossStories": false,
+            "acrossDocuments": false
+          }
+        },
+        {
+          "op": "deleteNumberingList",
+          "id": "NumberingList/Shared"
+        }
+      ]
+    }
+  ]
+}

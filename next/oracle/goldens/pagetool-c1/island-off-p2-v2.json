@@ -1,0 +1,183 @@
+{
+ "name": "island-off-p2-v2",
+ "measured": "InDesign 2025 20.5.5.119, real mouse (Page tool) / real keyboard (control bar), 2026-11-12",
+ "fixture": null,
+ "objectsMoveWithPage": false,
+ "enableAdjustLayout": false,
+ "action": {
+  "kind": "drag",
+  "page": 1,
+  "wanted": [
+   -250,
+   0
+  ],
+  "typed": null
+ },
+ "pageMovedAgainstRest": [
+  0,
+  0
+ ],
+ "pagesAbsoluteShift": {
+  "1": [
+   124,
+   0
+  ],
+  "2": [
+   -124,
+   0
+  ]
+ },
+ "before": {
+  "items": {
+   "D2": {
+    "tl": [
+     340,
+     260
+    ],
+    "br": [
+     420,
+     300
+    ],
+    "parentPage": "2",
+    "spread": 0
+   },
+   "PLo": {
+    "tl": [
+     -150,
+     150
+    ],
+    "br": [
+     -80,
+     220
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "SP": {
+    "tl": [
+     250,
+     200
+    ],
+    "br": [
+     350,
+     260
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A2": {
+    "tl": [
+     400,
+     60
+    ],
+    "br": [
+     500,
+     120
+    ],
+    "parentPage": "2",
+    "spread": 0
+   },
+   "A1": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "1",
+    "spread": 0
+   }
+  },
+  "guides": [
+   {
+    "label": "guideS",
+    "orientation": "H",
+    "fitToPage": false,
+    "location": 300,
+    "parentPage": "1",
+    "spread": 0
+   }
+  ]
+ },
+ "after": {
+  "items": {
+   "D2": {
+    "tl": [
+     340,
+     260
+    ],
+    "br": [
+     420,
+     300
+    ],
+    "parentPage": "2",
+    "spread": 0
+   },
+   "PLo": {
+    "tl": [
+     -150,
+     150
+    ],
+    "br": [
+     -80,
+     220
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "SP": {
+    "tl": [
+     250,
+     200
+    ],
+    "br": [
+     350,
+     260
+    ],
+    "parentPage": "2",
+    "spread": 0
+   },
+   "A2": {
+    "tl": [
+     400,
+     60
+    ],
+    "br": [
+     500,
+     120
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "A1": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "1",
+    "spread": 0
+   }
+  },
+  "guides": [
+   {
+    "label": "guideS",
+    "orientation": "H",
+    "fitToPage": false,
+    "location": 300,
+    "parentPage": "1",
+    "spread": 0
+   }
+  ]
+ },
+ "referencePage": "1",
+ "pageSize": [
+  300,
+  400
+ ]
+}

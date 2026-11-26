@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u19d" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Intro</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">A, B, C, D...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 1 of num 1</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">A, B, C, D...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 1</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style1</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 1</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="(^1)^t">
+			<Properties>
+				<NumberingFormat type="string">a, b, c, d...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 2</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style2</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 2 of num 2</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="(^1)^t">
+			<Properties>
+				<NumberingFormat type="string">a, b, c, d...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 2</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style2</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 2</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">01,02,03...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 3</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style3</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 3 of num 3</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">01,02,03...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 3</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style3</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 3</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 4</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style4</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 4 of num 4</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 4</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style4</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 4</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 5</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style5</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 5 of num 5</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 5</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style5</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 5</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="Chapter ^1:^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 6</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style6</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 6 of num 6</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="Chapter ^1:^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 6</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style6</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 6</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1^t">
+			<Properties>
+				<NumberingFormat type="string">i, ii, iii, iv...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 7</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style7</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 7 of num 7</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1^t">
+			<Properties>
+				<NumberingFormat type="string">i, ii, iii, iv...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 7</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style7</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 7</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="[^1]^t">
+			<Properties>
+				<NumberingFormat type="string">I, II, III, IV...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 8</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style8</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 8 of num 8</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="[^1]^t">
+			<Properties>
+				<NumberingFormat type="string">I, II, III, IV...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 8</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style8</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 8</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 9</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style9</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 9 of num 9</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 9</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style9</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 9</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">$ID/(kanji) 1,2,3,4...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 10</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style10</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 10 of num 10</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">$ID/(kanji) 1,2,3,4...</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 10</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style10</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 10</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 11</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style11</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 11 of num 11</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 11</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style11</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 11</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">$ID/Korean Numbering 2 (Ganada)</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 12</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style12</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 12 of num 12</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<NumberingFormat type="string">$ID/Korean Numbering 2 (Ganada)</NumberingFormat>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 12</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style12</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 12</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletChar BulletCharacterType="UnicodeOnly" BulletCharacterValue="8211" />
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style13</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 13 of num 13</Content>
+				<Br />
+				<Content>Second of num 13</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletChar BulletCharacterType="UnicodeOnly" BulletCharacterValue="9642" />
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style14</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 14 of num 14</Content>
+				<Br />
+				<Content>Second of num 14</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletChar BulletCharacterType="UnicodeOnly" BulletCharacterValue="183" />
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style15</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 15 of num 15</Content>
+				<Br />
+				<Content>Second of num 15</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletChar BulletCharacterType="UnicodeOnly" BulletCharacterValue="167" />
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style15</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 16 of num 16</Content>
+				<Br />
+				<Content>Second of num 16</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="BulletList">
+			<Properties>
+				<BulletChar BulletCharacterType="UnicodeOnly" BulletCharacterValue="45" />
+				<BulletsCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style16</BulletsCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 17 of num 17</Content>
+				<Br />
+				<Content>Second of num 17</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1. ">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 13</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style17</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 18 of num 18</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1. ">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 13</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style17</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 18</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 14</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style18</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Item 19 of num 19</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 14</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style18</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second of num 19</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingContinue="false" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 15</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style19</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Same abstract again A</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" LeftIndent="36" FirstLineIndent="-18" BulletsAndNumberingListType="NumberedList" NumberingApplyRestartPolicy="false" NumberingExpression="^1.^t">
+			<Properties>
+				<AppliedNumberingList type="object">NumberingList/Word Imported List 15</AppliedNumberingList>
+				<NumberingCharacterStyle type="object">CharacterStyle/Styles for Word/RTF Imported Lists%3aWord Imported List Style19</NumberingCharacterStyle>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Same abstract again B</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>After</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

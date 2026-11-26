@@ -1,0 +1,30 @@
+{
+ "fixture": "grep-styles",
+ "extension": "grep-styles",
+ "scenarios": [
+  {
+   "name": "bs-grep",
+   "steps": [
+    {
+     "op": "paragraphStyle",
+     "target": "grep-0",
+     "start": 0,
+     "end": 1,
+     "style": "[Basic Paragraph]",
+     "clear": true
+    },
+    {
+     "op": "setGrepStyles",
+     "style": "[Basic Paragraph]",
+     "rules": [
+      {
+       "style": "CharacterStyle/Red",
+       "expression": "word"
+      }
+     ]
+    }
+   ],
+   "maxLocalError": 0.15
+  }
+ ]
+}

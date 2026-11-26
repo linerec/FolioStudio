@@ -1,0 +1,16 @@
+{
+  "fixture": "linkgoto", "extension": "linkgoto",
+  "scenarios": [
+    {"name":"noop","text":true,"steps":[]},
+    {"name":"linkgoto-text","text":true,"rules":["linkgoto.text.insertion"],"steps":[{"op":"resolveHyperlinkTarget","link":"Internal","targetLabel":"target","at":7,"kind":"text"}]},
+    {"name":"linkgoto-unavailable","text":true,"rules":["linkgoto.destination.kinds"],"steps":[
+      {"op":"resolveHyperlinkTarget","link":"Absent","kind":"missingLink"},
+      {"op":"resolveHyperlinkTarget","link":"Broken","kind":"missingDestination"}
+    ]},
+    {"name":"linkgoto-page-url","text":true,"rules":["linkgoto.destination.page","linkgoto.destination.url"],"steps":[
+      {"op":"resolveHyperlinkTarget","link":"External URL","kind":"url","url":"https://example.invalid/linkgoto"},
+      {"op":"resolveHyperlinkTarget","link":"Page","kind":"page","pageIndex":1,"view":{"setting":"fixed","percent":100.0}}
+    ]},
+    {"name":"linkgoto-totals-dom","text":true,"rules":["linkgoto.totals.dom-invariant"],"steps":[{"op":"observeTransformTotals","target":"nested-child"}]}
+  ]
+}

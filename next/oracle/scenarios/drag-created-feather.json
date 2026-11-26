@@ -1,0 +1,13 @@
+{
+  "fixture": "basic-create",
+  "about": "A newly drawn rectangle keeps gradient feather inside its own transparency settings.",
+  "scenarios": [
+    {
+      "name": "drag-created-feather",
+      "steps": [
+        { "op": "createItem", "kind": "rectangle", "page": 0, "rect": [80, 200, 240, 300], "label": "created" },
+        { "op": "set", "target": "created", "props": { "transparencySettings": { "gradientFeatherSettings": { "applied": true, "angle": 30 } } } }
+      ]
+    }
+  ]
+}

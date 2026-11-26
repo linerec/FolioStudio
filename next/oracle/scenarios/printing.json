@@ -1,0 +1,16 @@
+{
+  "fixture": "printing",
+  "extension": "printing",
+  "comparison": "printing",
+  "scenarios": [
+    {"name":"printing-default","steps":[]},
+    {"name":"printing-absolute-range","steps":[]},
+    {"name":"printing-spreads","steps":[]},
+    {"name":"printing-invalid-retry","steps":[]},
+    {"name":"printing-blank-pages","steps":[]},
+    {"name":"printing-named-range","steps":[]},
+    {"name":"printing-partial-spread","steps":[]},
+    {"name":"printing-disjoint-range","steps":[]},
+    {"name":"printing-hidden-spread","steps":[{"op":"setSpreadHidden","spreads":[0],"hidden":true}]}
+  ]
+}

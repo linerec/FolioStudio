@@ -1,0 +1,683 @@
+{
+  "fixture": "basic",
+  "about": "Moving, sizing, deleting, locking and hiding objects, layers and stacking order: the edits used most in InDesign.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "about": "nothing changed: the print baseline of the fixture"
+    },
+    {
+      "name": "move-plain",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-plain",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-fill-fraction",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-fill",
+          "by": [
+            -7.25,
+            12.5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-rotated",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-rot",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-sheared",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-shear",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-oval",
+      "steps": [
+        {
+          "op": "move",
+          "target": "oval",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-polygon",
+      "steps": [
+        {
+          "op": "move",
+          "target": "poly",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-line",
+      "steps": [
+        {
+          "op": "move",
+          "target": "line",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-group",
+      "steps": [
+        {
+          "op": "move",
+          "target": "grp",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-group-child",
+      "steps": [
+        {
+          "op": "move",
+          "target": "grp-a",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-image-frame",
+      "steps": [
+        {
+          "op": "move",
+          "target": "img",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-text-frame",
+      "steps": [
+        {
+          "op": "move",
+          "target": "tf",
+          "by": [
+            10,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-threaded-frame",
+      "steps": [
+        {
+          "op": "move",
+          "target": "tf-1",
+          "by": [
+            0,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-twice",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-plain",
+          "by": [
+            10,
+            5
+          ]
+        },
+        {
+          "op": "move",
+          "target": "r-plain",
+          "by": [
+            -3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-to-left-page",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-p3",
+          "by": [
+            -400,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move-two",
+      "steps": [
+        {
+          "op": "move",
+          "target": "r-plain",
+          "by": [
+            0,
+            30
+          ]
+        },
+        {
+          "op": "move",
+          "target": "oval",
+          "by": [
+            0,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "name": "resize-plain-topleft",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "r-plain",
+          "size": [
+            200,
+            120
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-plain-center",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "r-plain",
+          "size": [
+            200,
+            120
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-plain-bottomright",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "r-plain",
+          "size": [
+            120,
+            80
+          ],
+          "anchor": "bottomRight"
+        }
+      ]
+    },
+    {
+      "name": "resize-rotated-center",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "r-rot",
+          "size": [
+            180,
+            90
+          ],
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "resize-oval",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "oval",
+          "size": [
+            100,
+            100
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-image-frame",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "img",
+          "size": [
+            150,
+            100
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "resize-text-frame",
+      "steps": [
+        {
+          "op": "resize",
+          "target": "tf",
+          "size": [
+            160,
+            140
+          ],
+          "anchor": "topLeft"
+        }
+      ]
+    },
+    {
+      "name": "delete-fill",
+      "steps": [
+        {
+          "op": "delete",
+          "target": "r-fill"
+        }
+      ]
+    },
+    {
+      "name": "delete-group",
+      "steps": [
+        {
+          "op": "delete",
+          "target": "grp"
+        }
+      ]
+    },
+    {
+      "name": "delete-group-child",
+      "steps": [
+        {
+          "op": "delete",
+          "target": "grp-a"
+        }
+      ]
+    },
+    {
+      "name": "delete-image-frame",
+      "steps": [
+        {
+          "op": "delete",
+          "target": "img"
+        }
+      ]
+    },
+    {
+      "name": "delete-text-frame",
+      "steps": [
+        {
+          "op": "delete",
+          "target": "tf"
+        }
+      ]
+    },
+    {
+      "name": "delete-threaded-first",
+      "steps": [
+        {
+          "op": "delete",
+          "target": "tf-1"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "locked": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-locked",
+          "props": {
+            "locked": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "visible": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-hidden",
+          "props": {
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer-hide",
+      "steps": [
+        {
+          "op": "layer",
+          "name": "Top",
+          "props": {
+            "visible": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer-lock",
+      "steps": [
+        {
+          "op": "layer",
+          "name": "Base",
+          "props": {
+            "locked": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer-unlock",
+      "steps": [
+        {
+          "op": "layer",
+          "name": "Locked layer",
+          "props": {
+            "locked": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer-noprint",
+      "steps": [
+        {
+          "op": "layer",
+          "name": "Top",
+          "props": {
+            "printable": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "arrange-front",
+      "steps": [
+        {
+          "op": "arrange",
+          "target": "r-plain",
+          "how": "front"
+        }
+      ]
+    },
+    {
+      "name": "arrange-back",
+      "steps": [
+        {
+          "op": "arrange",
+          "target": "r-fill",
+          "how": "back"
+        }
+      ]
+    },
+    {
+      "name": "arrange-forward",
+      "steps": [
+        {
+          "op": "arrange",
+          "target": "r-plain",
+          "how": "forward"
+        }
+      ]
+    },
+    {
+      "name": "arrange-backward",
+      "steps": [
+        {
+          "op": "arrange",
+          "target": "oval",
+          "how": "backward"
+        }
+      ]
+    },
+    {
+      "name": "cs-rect-oval",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_OVAL"
+        }
+      ]
+    },
+    {
+      "name": "cs-oval-rect",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "oval",
+          "to": "CONVERT_TO_RECTANGLE"
+        }
+      ]
+    },
+    {
+      "name": "cs-rounded",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_ROUNDED_RECTANGLE"
+        }
+      ]
+    },
+    {
+      "name": "cs-beveled",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_BEVELED_RECTANGLE"
+        }
+      ]
+    },
+    {
+      "name": "cs-inverse-rounded",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_INVERSE_ROUNDED_RECTANGLE"
+        }
+      ]
+    },
+    {
+      "name": "cs-triangle",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_TRIANGLE"
+        }
+      ]
+    },
+    {
+      "name": "cs-polygon",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_POLYGON"
+        }
+      ]
+    },
+    {
+      "name": "cs-line",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_LINE"
+        }
+      ]
+    },
+    {
+      "name": "cs-orthogonal",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_STRAIGHT_LINE"
+        }
+      ]
+    },
+    {
+      "name": "cs-rot-oval",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-rot",
+          "to": "CONVERT_TO_OVAL"
+        }
+      ]
+    },
+    {
+      "name": "cs-text-oval",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "tf",
+          "to": "CONVERT_TO_OVAL"
+        }
+      ]
+    },
+    {
+      "name": "cs-poly-rect",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "poly",
+          "to": "CONVERT_TO_RECTANGLE"
+        }
+      ]
+    },
+    {
+      "name": "cs-line-rect",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "line",
+          "to": "CONVERT_TO_RECTANGLE"
+        }
+      ]
+    },
+    {
+      "name": "path-open",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_OPEN_PATH"
+        }
+      ]
+    },
+    {
+      "name": "path-close",
+      "steps": [
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_OPEN_PATH"
+        },
+        {
+          "op": "convertShape",
+          "target": "r-plain",
+          "to": "CONVERT_TO_CLOSED_PATH"
+        }
+      ]
+    },
+    {
+      "name": "path-reverse",
+      "steps": [
+        {
+          "op": "reversePath",
+          "target": "poly"
+        }
+      ]
+    },
+    {
+      "name": "path-reverse-rect",
+      "steps": [
+        {
+          "op": "reversePath",
+          "target": "r-plain"
+        }
+      ]
+    }
+  ]
+}

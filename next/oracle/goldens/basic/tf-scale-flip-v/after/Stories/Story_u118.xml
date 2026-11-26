@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u118" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" HyphenationZone="54" RuleAboveLineWeight="0.5" RuleBelowLineWeight="0.5" SplitColumnInsideGutter="9" ParagraphBorderTopLeftCornerRadius="10.392304845413264" ParagraphBorderTopRightCornerRadius="10.392304845413264" ParagraphBorderBottomLeftCornerRadius="10.392304845413264" ParagraphBorderBottomRightCornerRadius="10.392304845413264" ParagraphShadingTopLeftCornerRadius="10.392304845413264" ParagraphShadingTopRightCornerRadius="10.392304845413264" ParagraphShadingBottomLeftCornerRadius="10.392304845413264" ParagraphShadingBottomRightCornerRadius="10.392304845413264" ParagraphBorderTopLineWeight="0.8660254037844386" ParagraphBorderBottomLineWeight="0.8660254037844386" ParagraphBorderLeftLineWeight="0.8660254037844386" ParagraphBorderRightLineWeight="0.8660254037844386">
+			<Properties>
+				<SameParaStyleSpacing type="unit">-0.5</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="5.5" HorizontalScale="300" StrokeWeight="0.8660254037844386" MiterLimit="3.4641016151377544" RubyFontSize="-0.5" RubyXScale="300" KentenFontSize="-0.5" KentenXScale="300">
+				<Properties>
+					<AppliedFont type="string">Malgun Gothic</AppliedFont>
+				</Properties>
+				<Content>Oracle text frame. The quick brown fox jumps over the lazy dog. 다람쥐 헌 쳇바퀴에 타고파.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

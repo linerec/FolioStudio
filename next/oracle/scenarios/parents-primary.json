@@ -1,0 +1,14 @@
+{
+  "fixture": "parents-primary",
+  "about": "Object > Primary Text Frame (menu action 6167, measured in InDesign 2025): an empty text frame of a parent becomes the parent's primary text frame (MasterSpread@PrimaryTextFrame holds the first frame of its thread, the earlier one stops being primary), or the parent has none again (\"n\"). Window scenarios: the menu action needs the frame selected.",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "primary-set", "window": true, "steps": [{"op": "primaryTextFrame", "target": "master-0-0", "primary": true}]},
+    {"name": "primary-switch", "window": true, "steps": [{"op": "primaryTextFrame", "target": "master-0-0", "primary": true}, {"op": "primaryTextFrame", "target": "master-0-1", "primary": true}]},
+    {"name": "primary-clear", "window": true, "steps": [{"op": "primaryTextFrame", "target": "master-0-0", "primary": true}, {"op": "primaryTextFrame", "target": "master-0-0", "primary": false}]},
+    {"name": "primary-two-parents", "window": true, "steps": [{"op": "primaryTextFrame", "target": "master-0-0", "primary": true}, {"op": "primaryTextFrame", "target": "master-1-0", "primary": true}]},
+    {"name": "primary-thread-second", "window": true, "steps": [{"op": "primaryTextFrame", "target": "thread-b", "primary": true}]},
+    {"name": "primary-thread-clear", "window": true, "steps": [{"op": "primaryTextFrame", "target": "thread-b", "primary": true}, {"op": "primaryTextFrame", "target": "thread-a", "primary": false}]},
+    {"name": "primary-clear-other", "window": true, "steps": [{"op": "primaryTextFrame", "target": "master-0-0", "primary": true}, {"op": "primaryTextFrame", "target": "thread-a", "primary": false}]}
+  ]
+}

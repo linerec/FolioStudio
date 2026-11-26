@@ -1,0 +1,20 @@
+{
+ "what": "InDesign 2025 20.5.5.119, 2026-11-11: order.pdf (annotations in /Annots order A..F with dates that disagree with it) imported into base.indd with Document.importPdfComments; the PDF Comments panel read with UI Automation (no input sent). tools/p1_order.py in artifacts/pdfcomments-c4-20261023.",
+ "pdf": "pdfcomments-order.pdf",
+ "dom": [
+  "0|1635021678|A-note|Sat Nov 07 2026 12:00:00 GMT-0500|orph=false|app=-|rev=Reviewer 1|rep=0",
+  "1|1635018860|B-highlight|Sat Nov 07 2026 09:00:00 GMT-0500|orph=false|app=-|rev=Reviewer 1|rep=0",
+  "2|1635022188|C-underline|Sat Nov 07 2026 11:00:00 GMT-0500|orph=false|app=-|rev=Reviewer 1|rep=0",
+  "3|1635021682|D-strike|Sat Nov 07 2026 09:00:00 GMT-0500|orph=false|app=false|rev=Reviewer 1|rep=0",
+  "4|1635021922|E-textbox|Sat Nov 07 2026 10:00:00 GMT-0500|orph=false|app=-|rev=Reviewer 1|rep=0",
+  "5|1635018860|F-early|Fri Nov 06 2026 23:30:00 GMT-0500|orph=false|app=-|rev=Reviewer 1|rep=0"
+ ],
+ "panel": [
+  "F-early",
+  "B-highlight",
+  "D-strike",
+  "E-textbox",
+  "C-underline",
+  "A-note"
+ ]
+}

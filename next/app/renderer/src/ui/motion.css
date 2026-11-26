@@ -1,0 +1,93 @@
+/* Folio states and motion (uix-b4, 2026-11-20; contract: next/app/DESIGN.md §6 and §10).
+   One layer for how the interface answers the hand: press, keyboard focus, where a drag lands, and the few motions it keeps.
+   Loaded last (main.tsx), so it only lines the states up; the surfaces' shapes and colours stay in their own files.
+   Rule of thumb (Emil Kowalski): what is hit tens of times a minute or by a key never moves; a state changes at once;
+   motion is kept for a one-time signal ("look here", a new message) and stays under 200 ms, ease-out, never on the way out. */
+
+/* 1. Press. A borderless control shows --pressed while the button is down, the same everywhere, and at once. Plain <button>s
+   already do, and the chrome's own buttons (tools, control bar icon buttons, page arrows, tab close) have it with their shrink in
+   workspace.css (uix-b1); these are the rest: the panels and the dock, whose own rules hid it, or that are not buttons. */
+:where(.dock-icon, .dpanel-tab, .dpanel-x, .dpanel-menu, .dpanel-max, .dpanel-fold, .p-foot-btn, .menu-title, .ws-switch,
+  .toolbox .mini, .sw-group, .st-menu button, .lp-eye.click, .lp-lock.click, .seg button, .tool-help .th-head):active:not(:disabled):not([aria-disabled='true']) {
+  background: var(--pressed);
+}
+/* A button with words (a dialog's button row, the default button, the start sheet's actions) gives a little under the finger, at once and
+   with no transition, as the chrome's buttons do (scale 0.94 there; a wide button needs less). */
+:where(.actions button, button.primary, .start-actions button):active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* 2. Keyboard focus: one colour. The colour picker's fields had their own light blue. */
+.cp-box .nf-input:focus, .cp-hex:focus { border-color: var(--accent); }
+
+/* 3. Where a drag lands. Two kinds, the same in every place:
+   between - a 2 px accent line where the thing would go (document tabs, panel tabs, dock icons, the gap between dock groups, layer order);
+   into    - the target gets a 2 px accent ring inside and an accent wash (a dock group or tab strip, a style group, a layer that takes
+             objects). The dock's own targets are marked by ui/dock.tsx (data-hot), the layer rows by ui/dropmark.ts (data-drop). */
+/* a tab or a dock icon is a place in an order (the panel goes in before it): a line, not a frame (merged with uix-b2's frame, 2026-11-20) */
+.dpanel-tab[data-hot='true'], .dock-icon[data-hot='true'] { box-shadow: none; outline: none; }
+.dpanel-tab { position: relative; }
+.dpanel-tab[data-hot='true']::before, .dock-icon[data-hot='true']::before, .lp-row[data-drop='before']::before, .lp-row[data-drop='after']::after,
+.dock-slot[data-hot='true']::after {
+  content: ''; position: absolute; z-index: 3; pointer-events: none; border-radius: 1px; background: var(--accent);
+}
+.dpanel-tab[data-hot='true']::before { left: 0; top: 3px; bottom: 3px; width: 2px; }
+.dock-icon[data-hot='true']::before { left: var(--sp-1); right: var(--sp-1); top: -1px; height: 2px; }
+/* the gap between dock groups takes no room while a drag is on (before, the groups jumped 14 px under the pointer when the drag began):
+   it lies over the seam, 8 px tall, and shows its line only when the drag is over it */
+.dock-slot { position: relative; z-index: 2; height: 8px; margin: -4px 0; border: 0; border-radius: 0; background: none; }
+/* the last one stays inside its column (half of it below would make the column scroll and the dock jump sideways) */
+.dock-slot:last-child { margin: -8px 0 0; }
+.dock-slot:last-child[data-hot='true']::after { top: 5px; }
+.dock-slot[data-hot='true'] { background: none; }
+.dock-slot[data-hot='true']::after { left: var(--sp-1); right: var(--sp-1); top: 3px; height: 2px; }
+.dock-group[data-hot='true'], .dpanel-tabs[data-hot='true'], .dock-strip[data-hot='true'], .dock-column[data-hot='true'],
+.st-group[data-drop], .st-list[data-drop-top], .lp-row[data-drop='into'],
+.dpanel .st-group[data-drop], .dpanel .st-list[data-drop-top], .dpanel .lp-row[data-drop='into'] {
+  outline: 2px solid var(--accent); outline-offset: -2px;
+  background-image: linear-gradient(color-mix(in srgb, var(--accent) 14%, transparent), color-mix(in srgb, var(--accent) 14%, transparent));
+}
+.lp-row { position: relative; }
+.lp-row[data-drop='before']::before { left: 0; right: 0; top: -1px; height: 2px; }
+.lp-row[data-drop='after']::after { left: 0; right: 0; bottom: -1px; height: 2px; }
+/* what follows the pointer: a small tab of the panel's name, lifted like a menu */
+.dock-ghost {
+  height: var(--h-row); line-height: calc(var(--h-row) - 2px); padding: 0 var(--sp-2); border-radius: var(--r-sm);
+  font-size: var(--fs-sm); box-shadow: var(--shadow-pop); opacity: 0.96;
+  /* a whole group's names, or a panel window's small page: one line, cut at the end (uix-d3 break-ui) */
+  max-width: min(320px, calc(100vw - 24px)); overflow: hidden; text-overflow: ellipsis;
+}
+
+/* 4. The motions that stay. */
+/* A new message in the status line: rises 3 px into place while it fades in (each message is a new element: AppLayout keys it). */
+.doc-status .note { transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out); }
+@starting-style { .doc-status .note { opacity: 0; transform: translateY(3px); } }
+/* Preflight at work (on opening, relinking, a new check): the dot breathes, but only after 300 ms, so a quick check does not flicker. */
+.pf-state.busy i { animation: pf-busy 900ms ease-in-out 300ms infinite alternate; }
+@keyframes pf-busy { from { opacity: 1; } to { opacity: 0.35; } }
+
+/* 5. Reduce motion: fewer and gentler, not none. Nothing moves; what a fade explains stays a fade. */
+@media (prefers-reduced-motion: reduce) {
+  .page .mark { animation-name: fade-in !important; animation-duration: var(--dur-base) !important; }
+  .doc-status .note { transition-property: opacity !important; transition-duration: var(--dur-base) !important; }
+  .pf-state.busy i { animation: none !important; opacity: 0.55; }
+}
+@keyframes fade-in { from { opacity: 0; } }
+
+/* 6. The Pages panel (ui/pages.tsx): pages dragged over a page go before it, so the line stands at that page's leading edge;
+   a parent dragged onto a page keeps the ring around the page (outside, not to cover the picture). A drag that leaves or ends clears it. */
+.pages-panel[data-drop-kind='before'] .pp-drop { outline: none; }
+.pages-panel[data-drop-kind='before'] .pp-drop::before {
+  content: ''; position: absolute; z-index: 3; pointer-events: none; left: -6px; top: -4px; bottom: -4px; width: 2px; border-radius: 1px; background: var(--accent);
+}
+
+/* uix-d1 (2026-11-20; DESIGN.md § 14): where a dragged panel would go, shown as the part of the screen it would take (the third mark, for
+   the dock only): a split shows the half of the group, a new column or row the band of the area, joining the tabs the whole group
+   (the same 2 px accent ring and accent wash as "into"). It changes only when the place changes, without motion (the hand leads). */
+.dock-preview { position: fixed; z-index: 96; pointer-events: none; box-sizing: border-box; border-radius: var(--r-sm);
+  box-shadow: inset 0 0 0 2px var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.dock-band[data-hot='true'] { border-style: solid; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--text); }
+.dock-sash:hover, .dock-sash.dragging { background: color-mix(in srgb, var(--accent) 55%, transparent); }
+.dock-column > .dock-sash:hover, .dock-area > .dock-sash:hover, .dock-column > .dock-sash.dragging, .dock-area > .dock-sash.dragging { background: color-mix(in srgb, var(--accent) 55%, transparent); }
+.dock-column > .dock-sash, .dock-area > .dock-sash { width: 4px; }
+.dock-area.bottom > .dock-sash { width: auto; height: 4px; }

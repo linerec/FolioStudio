@@ -1,0 +1,135 @@
+{
+  "fixture": "basic",
+  "about": "Edit ▸ Duplicate (menu action 275 in a window): the copies' offset, place in the stacking order and layer, for one object, several, a group and a text frame.",
+  "scenarios": [
+    {
+      "name": "edit-duplicate-one",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "edit-duplicate-two",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "targets": [
+            "r-plain",
+            "oval"
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy",
+            "copy2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "edit-duplicate-group",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "grp"
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "edit-duplicate-text",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "tf"
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "edit-duplicate-again",
+      "window": true,
+      "steps": [
+        {
+          "op": "select",
+          "target": "r-fill"
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy"
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "edit-duplicate-after-copy",
+      "window": true,
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "r-fill",
+          "by": [
+            20,
+            15
+          ],
+          "label": "c1"
+        },
+        {
+          "op": "select",
+          "target": "r-plain"
+        },
+        {
+          "op": "menu",
+          "id": 275,
+          "action": "Duplicate",
+          "labels": [
+            "copy"
+          ]
+        }
+      ]
+    }
+  ]
+}

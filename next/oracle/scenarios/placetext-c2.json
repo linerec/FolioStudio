@@ -1,0 +1,314 @@
+{
+ "fixture": "text",
+ "about": "Place a Word file (.docx) or an RTF file into a text frame or a new frame: styles and swatches come in, local formatting, breaks, options (placetext-c2).",
+ "scenarios": [
+  {
+   "name": "placetext-docx-plain",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-plain.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-docx-format",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-format.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-docx-styles",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-styles.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-para",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-para.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-breaks",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-breaks.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-breaks-none",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-breaks.docx",
+     "target": "korean",
+     "word": {
+      "convertPageBreaks": "ConvertPageBreaks.NONE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-breaks-column",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-breaks.docx",
+     "target": "korean",
+     "word": {
+      "convertPageBreaks": "ConvertPageBreaks.COLUMN_BREAK"
+     }
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-colors",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-colors.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-overlap",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-overlap.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-docx-quotes",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-wquotes.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-quotes-off",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-wquotes.docx",
+     "target": "korean",
+     "word": {
+      "useTypographersQuotes": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-styles2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-styles2.docx",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-docx-wordstart",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-wordstart.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-empty",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-empty.docx",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-remove-formatting",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-styles.docx",
+     "target": "korean",
+     "word": {
+      "removeFormatting": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "placetext-docx-newframe",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-format.docx",
+     "page": 0,
+     "rect": [
+      100,
+      100,
+      300,
+      200
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-rtf-plain",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-plain.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-format",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-format.rtf",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-rtf-unicode",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-unicode.rtf",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-rtf-para",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-para.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-breaks",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-breaks.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-empty",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-empty.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-colors",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-rtfcolors.rtf",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-rtf-colors2",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-rtfcolors2.rtf",
+     "target": "korean"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "placetext-rtf-trail",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-rtftrail.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-nopar",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-rtfnopar.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-misc",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-rtfmisc.rtf",
+     "target": "korean"
+    }
+   ]
+  },
+  {
+   "name": "placetext-rtf-quotes",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "placetext-rtfquotes.rtf",
+     "target": "korean"
+    }
+   ]
+  }
+ ]
+}

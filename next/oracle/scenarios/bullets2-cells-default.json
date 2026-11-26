@@ -1,0 +1,20 @@
+{
+  "fixture": "bullets2-cells-default",
+  "extension": "bullets-convert",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "bullets2-cells-default-convert",
+      "steps": [
+        {
+          "op": "convertStyleListsToText",
+          "style": "ParagraphStyle/Cell numbers",
+          "labels": {}
+        }
+      ]
+    }
+  ]
+}

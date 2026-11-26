@@ -1,0 +1,41 @@
+[package]
+build = "../../test-inputs.rs"
+name = "folio-render"
+description = "Page rasteriser"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[features]
+vector-tools = []
+
+[[example]]
+name = "a7-observe"
+required-features = ["vector-tools"]
+path = "../../../../cleanroom/vectors/A7/observe.rs"
+
+[dependencies]
+folio-model.workspace = true
+folio-color.workspace = true
+# MathmlSvgData is a JSON string (mathsvg.rs); the workspace's own version.
+serde_json.workspace = true
+tiny-skia = "=0.12.0"
+image = { version = "=0.25.10", default-features = false, features = ["jpeg", "png", "tiff", "bmp"] }
+tiff = "=0.11.3"
+weezl = "=0.1.12"
+# Raw CMYK / YCCK samples of CMYK JPEG previews (already used by `image`).
+zune-jpeg = "=0.5.15"
+# SVG beyond the static subset (text, filters, masks, gradients, clip paths, opacity, CSS, embedded bitmaps), svg/rich.rs.
+# Apache-2.0 OR MIT (linebender); draws with the same tiny-skia. Text uses the installed fonts (fontdb, MIT).
+resvg = { version = "=0.50.0", default-features = false, features = ["text", "system-fonts", "memmap-fonts", "raster-images"] }
+# 8-bit metafile text in its font's code page (metafile/content.rs); the version folio-textimport uses.
+encoding_rs = "=0.8.42"
+# SVG text's fallback faces: the system's faces per writing system (folio_text::glyphfill, their owner) and a face's cmap.
+folio-text.workspace = true
+ttf-parser = "=0.25.1"
+
+[dev-dependencies]
+folio-color.workspace = true
+folio-math.workspace = true
+folio-idml.workspace = true
+image = { version = "=0.25.10", default-features = false, features = ["png"] }

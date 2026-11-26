@@ -1,0 +1,204 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file with table borders (w:tblBorders: outer sides and the lines between rows and columns; single and none) and cell shading (w:shd) (docxtext-c2). Cell borders (w:tcBorders) are not covered: their stroke priorities are not understood yet. A Word table style (Table Grid) gives no borders in InDesign: only the direct w:tblBorders count (b14, b15).",
+ "scenarios": [
+  {
+   "name": "docxtext-c2-shade1",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b1.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-shade-row",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b2.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-shade-kinds",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b13.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-tb",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b3.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-all",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b4.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-none",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b6.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-outer",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b7.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-inside",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b8.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-c1",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext-table-border.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-style",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b14.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c2-border-style-direct",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-b15.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

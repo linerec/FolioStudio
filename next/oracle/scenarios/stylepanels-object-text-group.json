@@ -1,0 +1,22 @@
+{
+  "fixture": "objectstyles",
+  "about": "Windowed object style application to a group containing a threaded text frame and a rectangle.",
+  "scenarios": [
+    {"name":"c2-text-group-box","window":true,"steps":[
+      {"op":"group","targets":["tf-2","r-p3"],"label":"text-group"},
+      {"op":"applyObjectStyle","target":"text-group","style":"Oracle Box"}
+    ]},
+    {"name":"c2-text-group-box-clear","window":true,"steps":[
+      {"op":"group","targets":["tf-2","r-p3"],"label":"text-group"},
+      {"op":"applyObjectStyle","target":"text-group","style":"Oracle Box","clear":true}
+    ]},
+    {"name":"c2-text-group-text","window":true,"steps":[
+      {"op":"group","targets":["tf-2","r-p3"],"label":"text-group"},
+      {"op":"applyObjectStyle","target":"text-group","style":"Oracle Text"}
+    ]},
+    {"name":"c2-text-group-text-clear","window":true,"steps":[
+      {"op":"group","targets":["tf-2","r-p3"],"label":"text-group"},
+      {"op":"applyObjectStyle","target":"text-group","style":"Oracle Text","clear":true}
+    ]}
+  ]
+}

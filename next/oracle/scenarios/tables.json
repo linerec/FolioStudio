@@ -1,0 +1,859 @@
+{
+  "fixture": "tables",
+  "about": "Table menu: insert, convert, rows and columns (insert, delete, height, width), merge, unmerge, split, cell fill, insets, strokes, vertical alignment, header rows, delete table.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "tbl-insert",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl-new",
+          "do": "insert",
+          "rows": 3,
+          "columns": 2
+        }
+      ]
+    },
+    {
+      "name": "tbl-insert-header",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl-new",
+          "do": "insert",
+          "rows": 2,
+          "columns": 3,
+          "header": 1,
+          "footer": 1
+        }
+      ]
+    },
+    {
+      "name": "tbl-convert",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl-conv",
+          "do": "convert"
+        }
+      ]
+    },
+    {
+      "name": "tbl-row-after",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "addRows",
+          "at": 1
+        }
+      ]
+    },
+    {
+      "name": "tbl-row-before",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "addRows",
+          "at": 1,
+          "where": "before"
+        }
+      ]
+    },
+    {
+      "name": "tbl-rows-two",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "addRows",
+          "at": 3,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "tbl-column-after",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "addColumns",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "name": "tbl-column-before",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "addColumns",
+          "at": 2,
+          "where": "before"
+        }
+      ]
+    },
+    {
+      "name": "tbl-delete-row",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "deleteRows",
+          "at": 2
+        }
+      ]
+    },
+    {
+      "name": "tbl-delete-column",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "deleteColumns",
+          "at": 1
+        }
+      ]
+    },
+    {
+      "name": "tbl-merge-row",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "merge",
+          "from": [
+            1,
+            0
+          ],
+          "to": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tbl-merge-block",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "merge",
+          "from": [
+            1,
+            0
+          ],
+          "to": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tbl-unmerge",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "merge",
+          "from": [
+            1,
+            0
+          ],
+          "to": [
+            1,
+            1
+          ]
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "unmerge",
+          "cell": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tbl-split-h",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "split",
+          "cell": [
+            2,
+            1
+          ],
+          "direction": "horizontal"
+        }
+      ]
+    },
+    {
+      "name": "tbl-split-v",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "split",
+          "cell": [
+            2,
+            1
+          ],
+          "direction": "vertical"
+        }
+      ]
+    },
+    {
+      "name": "tbl-row-height",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-row-exact",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 2,
+          "props": {
+            "autoGrow": false,
+            "height": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-column-width",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "columnProps",
+          "at": 0,
+          "props": {
+            "width": 120
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-cell-fill",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            1
+          ],
+          "props": {
+            "fillColor": "Oracle Blue",
+            "fillTint": 50
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-cell-insets",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            2,
+            2
+          ],
+          "props": {
+            "topInset": 8,
+            "leftInset": 10,
+            "bottomInset": 6,
+            "rightInset": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-cell-stroke",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            1,
+            0
+          ],
+          "props": {
+            "topEdgeStrokeWeight": 3,
+            "topEdgeStrokeColor": "Oracle Orange"
+          }
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    },
+    {
+      "name": "tbl-cell-stroke-body",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            2,
+            0
+          ],
+          "props": {
+            "topEdgeStrokeWeight": 3,
+            "topEdgeStrokeColor": "Oracle Orange"
+          }
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    },
+    {
+      "name": "tbl-cell-stroke-header",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            0,
+            1
+          ],
+          "props": {
+            "bottomEdgeStrokeWeight": 3,
+            "bottomEdgeStrokeColor": "Oracle Orange"
+          }
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    },
+    {
+      "name": "tbl-cell-valign",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellProps",
+          "cell": [
+            3,
+            1
+          ],
+          "props": {
+            "verticalJustification": "VerticalJustification.CENTER_ALIGN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-header-rows",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "tableProps",
+          "props": {
+            "headerRowCount": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-delete-table",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "deleteTable"
+        }
+      ]
+    },
+    {
+      "name": "cell-type",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            1,
+            1
+          ],
+          "at": 2,
+          "text": "x"
+        }
+      ]
+    },
+    {
+      "name": "cell-type-start",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            2,
+            0
+          ],
+          "at": 0,
+          "text": "new "
+        }
+      ]
+    },
+    {
+      "name": "cell-type-empty",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "addRows",
+          "at": 1
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            2,
+            1
+          ],
+          "at": 0,
+          "text": "fresh"
+        }
+      ]
+    },
+    {
+      "name": "cell-return",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellText",
+          "cell": [
+            1,
+            0
+          ],
+          "at": 2,
+          "text": "\rsecond"
+        }
+      ]
+    },
+    {
+      "name": "cell-delete",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellDelete",
+          "cell": [
+            2,
+            1
+          ],
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "name": "cell-delete-all",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellDelete",
+          "cell": [
+            3,
+            2
+          ],
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "name": "cell-format",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "cellFormat",
+          "cell": [
+            0,
+            0
+          ],
+          "start": 0,
+          "end": 2,
+          "props": {
+            "pointSize": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-to-text",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "toText"
+        }
+      ]
+    },
+    {
+      "name": "tbl-row-to-header",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowType",
+          "at": 1,
+          "type": "HEADER_ROW"
+        }
+      ]
+    },
+    {
+      "name": "tbl-row-to-footer",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowType",
+          "at": 3,
+          "type": "FOOTER_ROW"
+        }
+      ]
+    },
+    {
+      "name": "tbl-header-to-body",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowType",
+          "at": 0,
+          "type": "BODY_ROW"
+        }
+      ]
+    },
+    {
+      "name": "tbl-header-fewer",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "tableProps",
+          "props": {
+            "headerRowCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-footer-rows",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "tableProps",
+          "props": {
+            "footerRowCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-header-two-to-one",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowType",
+          "at": 1,
+          "type": "HEADER_ROW"
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "tableProps",
+          "props": {
+            "headerRowCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-footer-fewer",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowType",
+          "at": 3,
+          "type": "FOOTER_ROW"
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowType",
+          "at": 2,
+          "type": "FOOTER_ROW"
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "tableProps",
+          "props": {
+            "footerRowCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "tbl-distribute-rows",
+      "window": true,
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 1,
+          "props": {
+            "height": 40
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "select",
+          "from": [
+            1,
+            0
+          ],
+          "to": [
+            3,
+            2
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 66841
+        }
+      ]
+    },
+    {
+      "name": "tbl-distribute-rows-exact",
+      "window": true,
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "rowProps",
+          "at": 2,
+          "props": {
+            "autoGrow": false,
+            "height": 30
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "select",
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            3,
+            0
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 66841
+        }
+      ]
+    },
+    {
+      "name": "tbl-distribute-columns",
+      "window": true,
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "columnProps",
+          "at": 0,
+          "props": {
+            "width": 150
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "select",
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            0,
+            2
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 66842
+        }
+      ]
+    },
+    {
+      "name": "tbl-distribute-columns-two",
+      "window": true,
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "columnProps",
+          "at": 1,
+          "props": {
+            "width": 60
+          }
+        },
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "select",
+          "from": [
+            1,
+            1
+          ],
+          "to": [
+            2,
+            2
+          ]
+        },
+        {
+          "op": "menu",
+          "id": 66842
+        }
+      ]
+    },
+    {
+      "name": "tbl-paste-row-before",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "pasteRows",
+          "from": 1,
+          "to": 1,
+          "at": 3,
+          "where": "before"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "tbl-paste-row-after",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "pasteRows",
+          "from": 1,
+          "to": 1,
+          "at": 3
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "tbl-paste-rows-two",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "pasteRows",
+          "from": 1,
+          "to": 2,
+          "at": 3
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "tbl-paste-row-in-header",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "pasteRows",
+          "from": 2,
+          "to": 2,
+          "at": 0,
+          "where": "before"
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "tbl-paste-column-after",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "pasteColumns",
+          "from": 0,
+          "to": 0,
+          "at": 1
+        }
+      ],
+      "window": true
+    },
+    {
+      "name": "tbl-paste-column-before",
+      "steps": [
+        {
+          "op": "table",
+          "target": "tbl",
+          "do": "pasteColumns",
+          "from": 1,
+          "to": 2,
+          "at": 0,
+          "where": "before"
+        }
+      ],
+      "window": true
+    }
+  ]
+}

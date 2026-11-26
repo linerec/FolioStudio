@@ -1,0 +1,1558 @@
+{
+  "fixture": "footnotes",
+  "about": "각주 생성·본문 편집·번호와 문서 옵션. 삽입 위치는 InDesign 문자 색인.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "fn-insert-end",
+      "rules": [
+        "footnotes.inline"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 93
+        }
+      ]
+    },
+    {
+      "name": "fn-insert-mid",
+      "rules": [
+        "footnotes.inline"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 15
+        }
+      ]
+    },
+    {
+      "name": "fn-one",
+      "rules": [
+        "footnotes.inline",
+        "footnotes.layout"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        }
+      ]
+    },
+    {
+      "name": "fn-two",
+      "rules": [
+        "footnotes.inline",
+        "footnotes.layout"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-delete-first",
+      "rules": [
+        "footnotes.inline"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        },
+        {
+          "op": "deleteText",
+          "target": "body-0",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "name": "fn-edit-text",
+      "rules": [
+        "footnotes.inline"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "deleteFootnoteText",
+          "target": "body-0",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "Edited"
+        }
+      ]
+    },
+    {
+      "name": "fn-text-paragraph",
+      "rules": [
+        "footnotes.inline"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 13,
+          "text": "\rSecond paragraph."
+        }
+      ]
+    },
+    {
+      "name": "fn-start-seven",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "startAt": 7
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-style-lower-roman",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.LOWER_ROMAN"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-style-upper-roman",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.UPPER_ROMAN"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-style-lower-letters",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.LOWER_LETTERS"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-style-upper-letters",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.UPPER_LETTERS"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-style-asterisks",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.ASTERISKS"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-style-symbols",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.SYMBOLS"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-prefix-reference",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "prefix": "[",
+            "suffix": "]",
+            "showPrefixSuffix": "FootnotePrefixSuffix.PREFIX_SUFFIX_REFERENCE"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-prefix-marker",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "prefix": "[",
+            "suffix": "]",
+            "showPrefixSuffix": "FootnotePrefixSuffix.PREFIX_SUFFIX_MARKER"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-prefix-both",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "prefix": "[",
+            "suffix": "]",
+            "showPrefixSuffix": "FootnotePrefixSuffix.PREFIX_SUFFIX_BOTH"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-marker-normal",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "markerPositioning": "FootnoteMarkerPositioning.NORMAL_MARKER"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        }
+      ]
+    },
+    {
+      "name": "fn-marker-subscript",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "markerPositioning": "FootnoteMarkerPositioning.SUBSCRIPT_MARKER"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        }
+      ]
+    },
+    {
+      "name": "fn-spacing",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "spaceBetween": 6,
+            "spacer": 12,
+            "ruleLineWeight": 0.5,
+            "ruleWidth": 96,
+            "ruleOffset": 4,
+            "ruleLeftIndent": 8
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-separator",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "separatorText": ". "
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        }
+      ]
+    },
+    {
+      "name": "fn-text-style",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteTextStyle": "Body"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        }
+      ]
+    },
+    {
+      "name": "fn-rule-off",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "ruleOn": false
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-end-story",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "eosPlacement": true
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-no-split",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "noSplitting": true
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-page-continue",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertSpecial",
+          "target": "body-0",
+          "at": 32,
+          "special": "PAGE_BREAK"
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 67
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Next page note."
+        }
+      ]
+    },
+    {
+      "name": "fn-restart-page",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "restartNumbering": "FootnoteRestarting.PAGE_RESTART"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertSpecial",
+          "target": "body-0",
+          "at": 32,
+          "special": "PAGE_BREAK"
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 67
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Next page note."
+        }
+      ]
+    },
+    {
+      "name": "fn-restart-spread",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "restartNumbering": "FootnoteRestarting.SPREAD_RESTART"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertSpecial",
+          "target": "body-0",
+          "at": 32,
+          "special": "PAGE_BREAK"
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 67
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Next page note."
+        }
+      ]
+    },
+    {
+      "name": "fn-restart-section",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "restartNumbering": "FootnoteRestarting.SECTION_RESTART"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertSpecial",
+          "target": "body-0",
+          "at": 32,
+          "special": "PAGE_BREAK"
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 67
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Next page note."
+        }
+      ]
+    },
+    {
+      "name": "fn-options-after",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        },
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "markerPositioning": "FootnoteMarkerPositioning.NORMAL_MARKER",
+            "separatorText": ": ",
+            "footnoteTextStyle": "Body"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fn-number-after",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        },
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "startAt": 8,
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.LOWER_ROMAN",
+            "prefix": "(",
+            "suffix": ")",
+            "showPrefixSuffix": "FootnotePrefixSuffix.PREFIX_SUFFIX_BOTH"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fn-two-columns",
+      "rules": [
+        "footnotes.layout"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "body-0",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2,
+              "textColumnGutter": 18
+            }
+          }
+        },
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "enableStraddling": false
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 13,
+          "text": " More text to wrap across several lines at the column width."
+        }
+      ]
+    },
+    {
+      "name": "fn-span-columns",
+      "rules": [
+        "footnotes.layout"
+      ],
+      "steps": [
+        {
+          "op": "set",
+          "target": "body-0",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2,
+              "textColumnGutter": 18
+            }
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-body-push",
+      "rules": [
+        "footnotes.layout"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 13,
+          "text": " This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body. This long note needs several lines below the body."
+        },
+        {
+          "op": "insertText",
+          "target": "body-0",
+          "at": 94,
+          "text": "\rBody line 1.\rBody line 2.\rBody line 3.\rBody line 4.\rBody line 5.\rBody line 6.\rBody line 7.\rBody line 8.\rBody line 9.\rBody line 10.\rBody line 11.\rBody line 12.\rBody line 13.\rBody line 14.\rBody line 15.\rBody line 16.\rBody line 17.\rBody line 18.\rBody line 19.\rBody line 20.\rBody line 21.\rBody line 22.\rBody line 23.\rBody line 24.\rBody line 25.\rBody line 26.\rBody line 27.\rBody line 28."
+        }
+      ]
+    },
+    {
+      "name": "fn-new-story",
+      "rules": [
+        "footnotes.layout"
+      ],
+      "steps": [
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        },
+        {
+          "op": "createItem",
+          "kind": "textFrame",
+          "page": 2,
+          "rect": [
+            36,
+            36,
+            324,
+            220
+          ],
+          "label": "extra"
+        },
+        {
+          "op": "insertText",
+          "target": "extra",
+          "at": 0,
+          "text": "Another story."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "extra",
+          "at": 14
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "extra",
+          "at": 2,
+          "text": "Independent note."
+        }
+      ]
+    },
+    {
+      "name": "fn-symbol-cycle",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteNumberingStyle": "FootnoteNumberingStyle.SYMBOLS"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 0,
+          "at": 2,
+          "text": "Note 1."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 31
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Note 2."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 32
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 2,
+          "at": 2,
+          "text": "Note 3."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 33
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 3,
+          "at": 2,
+          "text": "Note 4."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 34
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 4,
+          "at": 2,
+          "text": "Note 5."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 35
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 5,
+          "at": 2,
+          "text": "Note 6."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 36
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 6,
+          "at": 2,
+          "text": "Note 7."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 37
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 7,
+          "at": 2,
+          "text": "Note 8."
+        }
+      ]
+    },
+    {
+      "name": "fn-section-boundary",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setSection",
+          "page": 1,
+          "start": 1,
+          "style": "ARABIC"
+        },
+        {
+          "op": "setSection",
+          "page": 2,
+          "start": 1,
+          "style": "ARABIC"
+        },
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "restartNumbering": "FootnoteRestarting.SECTION_RESTART"
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertSpecial",
+          "target": "body-0",
+          "at": 32,
+          "special": "PAGE_BREAK"
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 67
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Next page note."
+        }
+      ]
+    },
+    {
+      "name": "fn-baseline-ascent",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteFirstBaselineOffset": "FootnoteFirstBaseline.ASCENT_OFFSET",
+            "footnoteMinimumFirstBaselineOffset": 20
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-baseline-cap",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteFirstBaselineOffset": "FootnoteFirstBaseline.CAP_HEIGHT",
+            "footnoteMinimumFirstBaselineOffset": 20
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-baseline-xheight",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteFirstBaselineOffset": "FootnoteFirstBaseline.X_HEIGHT",
+            "footnoteMinimumFirstBaselineOffset": 20
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    },
+    {
+      "name": "fn-baseline-fixed",
+      "rules": [
+        "footnotes.options"
+      ],
+      "steps": [
+        {
+          "op": "setFootnoteOptions",
+          "props": {
+            "footnoteFirstBaselineOffset": "FootnoteFirstBaseline.FIXED_HEIGHT",
+            "footnoteMinimumFirstBaselineOffset": 20
+          }
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 30
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "at": 2,
+          "text": "First note."
+        },
+        {
+          "op": "insertFootnote",
+          "target": "body-0",
+          "at": 65
+        },
+        {
+          "op": "insertFootnoteText",
+          "target": "body-0",
+          "index": 1,
+          "at": 2,
+          "text": "Second note."
+        }
+      ]
+    }
+  ]
+}

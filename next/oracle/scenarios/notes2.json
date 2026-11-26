@@ -1,0 +1,14 @@
+{
+  "fixture":"notes2",
+  "extension":"changes",
+  "about":"변경 추적 중 삽입된 미주 3개. 마지막 미주는 혼합 글자 서식과 두 단락. 분할·삽입 명령·변환은 측정/구현 미완료로 별도 STATUS에 기록.",
+  "scenarios":[
+    {"name":"noop","steps":[]},
+    {"name":"notes2-accept","text":true,"rules":["notes2.endnote-revision"],"steps":[{"op":"resolveChanges","target":"text","document":false,"index":-1,"user":"","accept":true}]},
+    {"name":"notes2-reject-first","text":true,"rules":["notes2.endnote-revision"],"steps":[{"op":"resolveChanges","target":"text","document":false,"index":0,"user":"","accept":false}]},
+    {"name":"notes2-reject-middle","text":true,"rules":["notes2.endnote-revision"],"steps":[{"op":"resolveChanges","target":"text","document":false,"index":1,"user":"","accept":false}]},
+    {"name":"notes2-reject-last","text":true,"rules":["notes2.endnote-revision"],"steps":[{"op":"resolveChanges","target":"text","document":false,"index":2,"user":"","accept":false}]},
+    {"name":"notes2-reject-all","text":true,"rules":["notes2.endnote-revision"],"steps":[{"op":"resolveChanges","target":"text","document":true,"index":-1,"user":"","accept":false}]},
+    {"name":"notes2-off-reject","text":true,"rules":["notes2.endnote-revision"],"steps":[{"op":"setTrackChanges","target":"text","document":false,"enabled":false},{"op":"resolveChanges","target":"text","document":false,"index":-1,"user":"","accept":false}]}
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "회전",
+  "style": "transform",
+  "target": "selection",
+  "fields": [
+    {
+      "name": "angle",
+      "label": "각도",
+      "type": "number",
+      "unit": "angle",
+      "default": 0,
+      "min": -3600000,
+      "max": 3600000,
+      "group": "회전"
+    },
+    {
+      "name": "point",
+      "type": "json",
+      "hidden": true,
+      "default": [
+        0,
+        0
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "rotateAbout",
+        "ids": "$ids",
+        "by": "$angle",
+        "point": "$point"
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          0,
+          0
+        ]
+      },
+      {
+        "op": "rotateAbout",
+        "ids": [
+          "@copies"
+        ],
+        "by": "$angle",
+        "point": "$point"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ]
+}

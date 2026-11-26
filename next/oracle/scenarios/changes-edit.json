@@ -1,0 +1,16 @@
+{
+  "fixture":"editorial", "extension":"changes", "scenarios":[
+    {"name":"changes-type-fresh","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"insertTextAs","target":"body-0","at":2,"text":"hello","user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-fresh","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"deleteTextAs","target":"body-0","start":1,"end":3,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-type-twice","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"insertTextAs","target":"body-0","at":2,"text":"hi","user":"Reviewer B","date":"2026-10-22T21:45:00"},{"op":"insertTextAs","target":"body-0","at":3,"text":"X","user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-other-insert","text":true,"steps":[{"op":"deleteTextAs","target":"body-0","start":2,"end":3,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-type-after-deleted","text":true,"steps":[{"op":"insertTextAs","target":"body-0","at":4,"text":"X","user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-own-insert","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"insertTextAs","target":"body-0","at":2,"text":"hello","user":"Reviewer B","date":"2026-10-22T21:45:00"},{"op":"deleteTextAs","target":"body-0","start":3,"end":5,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-mixed","text":true,"steps":[{"op":"deleteTextAs","target":"body-0","start":1,"end":4,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-across-deleted","text":true,"steps":[{"op":"deleteTextAs","target":"body-0","start":3,"end":5,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-all","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"deleteTextAs","target":"body-0","start":0,"end":5,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-end","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"deleteTextAs","target":"body-0","start":3,"end":5,"user":"Reviewer B","date":"2026-10-22T21:45:00"}]},
+    {"name":"changes-delete-end-reject","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"deleteTextAs","target":"body-0","start":3,"end":5,"user":"Reviewer B","date":"2026-10-22T21:45:00"},{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":false}]},
+    {"name":"changes-delete-all-accept","text":true,"steps":[{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true},{"op":"deleteTextAs","target":"body-0","start":0,"end":5,"user":"Reviewer B","date":"2026-10-22T21:45:00"},{"op":"resolveChanges","target":"body-0","document":false,"index":-1,"user":"","accept":true}]}
+  ]
+}

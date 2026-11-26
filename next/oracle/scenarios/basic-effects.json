@@ -1,0 +1,1023 @@
+{
+  "fixture": "basic",
+  "about": "Effects dialog: drop shadow (every setting, every level) and the other object effects on with their defaults and with changes.",
+  "scenarios": [
+    {
+      "name": "fx-shadow-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-off",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.NONE"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-distance",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "distance": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-angle",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "angle": 45
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-offsets",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "xOffset": 14,
+                "yOffset": -6
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-size",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "size": 12,
+                "spread": 30
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-noise",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "noise": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-opacity",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "opacity": 40,
+                "blendMode": "BlendMode.NORMAL"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-color",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "effectColor": "Oracle Blue"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-options",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "knockedOut": false,
+                "honorOtherEffects": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-global-light",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "useGlobalLight": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-fill-level",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "fillTransparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-stroke-level",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 6
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeTransparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-text-frame",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-text-level",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "contentTransparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-group",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-oval",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "distance": 12
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-rotated",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-graphic",
+      "steps": [
+        {
+          "op": "setGraphic",
+          "target": "img",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-with-opacity",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-outer-glow-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-outer-glow-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "size": 14,
+                "spread": 20,
+                "technique": "GlowTechnique.PRECISE",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY",
+                "opacity": 60
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-shadow-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerShadowSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-shadow-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerShadowSettings": {
+                "applied": true,
+                "distance": 12,
+                "angle": 45,
+                "size": 10,
+                "chokeAmount": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-glow-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerGlowSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-glow-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerGlowSettings": {
+                "applied": true,
+                "size": 12,
+                "source": "InnerGlowSource.CENTER_SOURCED",
+                "effectColor": "Oracle Blue",
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-bevel-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "bevelAndEmbossSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-bevel-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "bevelAndEmbossSettings": {
+                "applied": true,
+                "style": "BevelAndEmbossStyle.EMBOSS",
+                "technique": "BevelAndEmbossTechnique.CHISEL_HARD",
+                "size": 12,
+                "depth": 300,
+                "direction": "BevelAndEmbossDirection.DOWN"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-satin-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "satinSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-satin-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "satinSettings": {
+                "applied": true,
+                "distance": 20,
+                "size": 15,
+                "angle": 45,
+                "invertEffect": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-feather-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-feather-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD",
+                "width": 18,
+                "chokeAmount": 30,
+                "cornerType": "FeatherCornerType.ROUNDED"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-dir-feather-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "directionalFeatherSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-dir-feather-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "directionalFeatherSettings": {
+                "applied": true,
+                "leftWidth": 20,
+                "topWidth": 10,
+                "angle": 30
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-grad-feather-on",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "gradientFeatherSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-grad-feather-values",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "gradientFeatherSettings": {
+                "applied": true,
+                "type": "GradientType.RADIAL",
+                "angle": 30
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-two-effects",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP"
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-off-keeps",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "size": 12
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.NONE"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-shadow-black",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "effectColor": "Black"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-text-opacity",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "contentTransparencySettings": {
+              "blendingSettings": {
+                "opacity": 60
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-dir-feather-shape",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "directionalFeatherSettings": {
+                "applied": true,
+                "rightWidth": 15,
+                "followShapeMode": "FollowShapeModeOptions.ALL_EDGES",
+                "noise": 10
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-feather-sharp",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "featherSettings": {
+                "mode": "FeatherMode.STANDARD",
+                "cornerType": "FeatherCornerType.SHARP",
+                "noise": 10
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-outer-glow-black",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "effectColor": "Black"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-glow-black",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerGlowSettings": {
+                "applied": true,
+                "effectColor": "Black"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-glow-paper",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerGlowSettings": {
+                "applied": true,
+                "effectColor": "Paper"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-inner-shadow-black",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "innerShadowSettings": {
+                "applied": true,
+                "effectColor": "Black"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-satin-black",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "satinSettings": {
+                "applied": true,
+                "effectColor": "Black"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-bevel-colors",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "bevelAndEmbossSettings": {
+                "applied": true,
+                "highlightColor": "Paper",
+                "shadowColor": "Black"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-outer-glow-paper",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "outerGlowSettings": {
+                "applied": true,
+                "effectColor": "Paper"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-global-light-set",
+      "steps": [
+        {
+          "op": "docSet",
+          "props": {
+            "transparencyPreferences": {
+              "globalLightAngle": 90,
+              "globalLightAltitude": 45
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-global-light-shadow",
+      "steps": [
+        {
+          "op": "docSet",
+          "props": {
+            "transparencyPreferences": {
+              "globalLightAngle": 90,
+              "globalLightAltitude": 45
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "dropShadowSettings": {
+                "mode": "ShadowMode.DROP",
+                "useGlobalLight": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-isolate",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp-b",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "isolateBlending": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-knockout",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp-a",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "grp-b",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "knockoutGroup": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "fx-isolate-knockout",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "isolateBlending": true,
+                "knockoutGroup": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

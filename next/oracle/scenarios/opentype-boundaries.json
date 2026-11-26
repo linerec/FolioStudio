@@ -1,0 +1,122 @@
+{
+ "fixture": "opentype",
+ "about": "Where InDesign starts a new text operator inside a line (capitalization and position changes) and sets the pen again: numerator/denominator runs write Tc, other OpenType features and tracking do not split. Measured with print-check; see artifacts/pdf-text-ops-20261025/FINDINGS.ko.md.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "run-numr-cambria",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "cambria",
+     "start": 10,
+     "end": 18,
+     "props": {
+      "position": "OT_NUMERATOR"
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-tracking-mid",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 10,
+     "end": 18,
+     "props": {
+      "tracking": -8
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-numr-two",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 10,
+     "end": 12,
+     "props": {
+      "position": "OT_NUMERATOR"
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-lower-mid",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 37,
+     "end": 40,
+     "props": {
+      "capitalization": "LOWER_CASE"
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-allcaps-end",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 41,
+     "end": 44,
+     "props": {
+      "capitalization": "ALL_CAPS"
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-sup-mid",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 10,
+     "end": 13,
+     "props": {
+      "position": "OT_SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-smallcaps-mid",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 37,
+     "end": 40,
+     "props": {
+      "capitalization": "SMALL_CAPS"
+     }
+    }
+   ]
+  },
+  {
+   "name": "run-lower-start",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "calibri",
+     "start": 0,
+     "end": 10,
+     "props": {
+      "capitalization": "LOWER_CASE"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "pardeco2-rule-multipara",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "First line.\rSecond line.\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAbove": true,
+      "ruleBelow": true,
+      "ruleAboveWidth": "TEXT_WIDTH",
+      "ruleBelowWidth": "TEXT_WIDTH",
+      "ruleAboveOffset": 8,
+      "ruleBelowOffset": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-rule-empty",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 0,
+     "text": "\r"
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 0,
+     "end": 0,
+     "props": {
+      "ruleAbove": true,
+      "ruleBelow": true,
+      "ruleAboveOffset": 8,
+      "ruleBelowOffset": 2
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-rule-text-color",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAbove": true,
+      "ruleAboveColor": "Color/Black"
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAboveColor": "Text Color",
+      "ruleAboveTint": 50
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-rule-negative-indents",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAbove": true,
+      "ruleBelow": true,
+      "ruleAboveLeftIndent": -9,
+      "ruleAboveRightIndent": -8,
+      "ruleBelowLeftIndent": -6,
+      "ruleBelowRightIndent": -7,
+      "ruleAboveOverprint": true,
+      "ruleBelowOverprint": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-rule-type",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAbove": true,
+      "ruleAboveLineWeight": 2,
+      "ruleAboveColor": "Color/Black",
+      "ruleAboveType": "StrokeStyle/$ID/Dashed",
+      "ruleAboveOffset": 4,
+      "ruleBelow": true,
+      "ruleBelowLineWeight": 3,
+      "ruleBelowColor": "Color/Black",
+      "ruleBelowType": "StrokeStyle/$ID/Canned Dotted",
+      "ruleBelowOffset": 3
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-rule-first-offset",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAbove": true,
+      "ruleAboveLineWeight": 2,
+      "ruleAboveColor": "Color/Black",
+      "ruleAboveOffset": 40
+     }
+    }
+   ]
+  },
+  {
+   "name": "pardeco2-rule-first-keep",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 2,
+     "end": 18,
+     "props": {
+      "ruleAbove": true,
+      "ruleAboveLineWeight": 2,
+      "ruleAboveColor": "Color/Black",
+      "ruleAboveOffset": 40,
+      "keepRuleAboveInFrame": true
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+  "fixture": "parjust-hyphen",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": [],
+      "text": true
+    },
+    {
+      "name": "parjust-hyphen-on",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "hyphen",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "hyphenation": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "hyphen-uk",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "hyphenation": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "hyphen-korean",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "hyphenation": true
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-hyphen-off",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "hyphenation": true
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "hyphen",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "hyphenation": false
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-hyphen-limits",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "hyphen",
+          "start": 0,
+          "end": 1,
+          "props": {
+            "hyphenation": true,
+            "hyphenateWordsLongerThan": 8,
+            "hyphenateAfterFirst": 3,
+            "hyphenateBeforeLast": 4,
+            "hyphenateCapitalizedWords": false,
+            "hyphenateLastWord": false,
+            "hyphenateLadderLimit": 1
+          }
+        }
+      ],
+      "text": true
+    },
+    {
+      "name": "parjust-hyphen-style",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Format Body",
+          "props": {
+            "hyphenation": true,
+            "hyphenateWordsLongerThan": 6,
+            "hyphenateAfterFirst": 3,
+            "hyphenateBeforeLast": 3,
+            "hyphenateCapitalizedWords": false,
+            "hyphenateLastWord": false,
+            "hyphenateLadderLimit": 0
+          }
+        }
+      ],
+      "text": true
+    }
+  ]
+}

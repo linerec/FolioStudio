@@ -1,0 +1,391 @@
+{
+  "fixture": "basic",
+  "about": "Rotating, flipping, grouping, duplicating, colours and stroke, placed content and fitting: the next most used edits.",
+  "scenarios": [
+    {
+      "name": "rotate-cw-plain",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "r-plain",
+          "by": -90,
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "rotate-ccw-rotated",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "r-rot",
+          "by": 90,
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "rotate-15-oval",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "oval",
+          "by": 15,
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "rotate-group",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": -90,
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "rotate-image-frame",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "img",
+          "by": 90,
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "rotate-text-frame",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "tf",
+          "by": -90,
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "flip-h-plain",
+      "steps": [
+        {
+          "op": "flip",
+          "target": "r-plain",
+          "how": "horizontal",
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "flip-v-rotated",
+      "steps": [
+        {
+          "op": "flip",
+          "target": "r-rot",
+          "how": "vertical",
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "flip-h-image-frame",
+      "steps": [
+        {
+          "op": "flip",
+          "target": "img",
+          "how": "horizontal",
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "flip-v-plain",
+      "steps": [
+        {
+          "op": "flip",
+          "target": "r-plain",
+          "how": "vertical",
+          "anchor": "center"
+        }
+      ]
+    },
+    {
+      "name": "group-two",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "r-plain",
+            "r-fill"
+          ],
+          "label": "new-grp"
+        }
+      ]
+    },
+    {
+      "name": "group-same-fill",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "fillColor": "Oracle Orange"
+          }
+        },
+        {
+          "op": "group",
+          "targets": [
+            "r-plain",
+            "r-fill"
+          ],
+          "label": "new-grp"
+        }
+      ]
+    },
+    {
+      "name": "group-apart",
+      "steps": [
+        {
+          "op": "group",
+          "targets": [
+            "r-plain",
+            "oval"
+          ],
+          "label": "new-grp"
+        }
+      ],
+      "about": "members far apart in stacking order: where the group goes"
+    },
+    {
+      "name": "ungroup",
+      "steps": [
+        {
+          "op": "ungroup",
+          "target": "grp"
+        }
+      ]
+    },
+    {
+      "name": "ungroup-rotated",
+      "steps": [
+        {
+          "op": "rotate",
+          "target": "grp",
+          "by": 30,
+          "anchor": "center"
+        },
+        {
+          "op": "ungroup",
+          "target": "grp"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-plain",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "r-plain",
+          "by": [
+            20,
+            20
+          ],
+          "label": "dup"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-rotated",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "r-rot",
+          "by": [
+            0,
+            0
+          ],
+          "label": "dup"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-group",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "grp",
+          "by": [
+            30,
+            0
+          ],
+          "label": "dup"
+        }
+      ]
+    },
+    {
+      "name": "duplicate-image-frame",
+      "steps": [
+        {
+          "op": "duplicate",
+          "target": "img",
+          "by": [
+            0,
+            160
+          ],
+          "label": "dup"
+        }
+      ]
+    },
+    {
+      "name": "fill-swatch",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "fillColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fill-none",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "fillColor": "None"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fill-spot-tint",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "fillColor": "Oracle Spot",
+            "fillTint": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-color",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "strokeColor": "Oracle Blue"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-weight-styled",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeWeight": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-weight-explicit",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "strokeWeight": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "stroke-none",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeColor": "None"
+          }
+        }
+      ]
+    },
+    {
+      "name": "content-move",
+      "steps": [
+        {
+          "op": "content",
+          "target": "img",
+          "by": [
+            5,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fit-proportionally",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "proportionally"
+        }
+      ]
+    },
+    {
+      "name": "fit-fill",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "fill"
+        }
+      ]
+    },
+    {
+      "name": "fit-content-to-frame",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "contentToFrame"
+        }
+      ]
+    },
+    {
+      "name": "fit-frame-to-content",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "frameToContent"
+        }
+      ]
+    },
+    {
+      "name": "fit-center",
+      "steps": [
+        {
+          "op": "fit",
+          "target": "img",
+          "how": "center"
+        }
+      ]
+    }
+  ]
+}

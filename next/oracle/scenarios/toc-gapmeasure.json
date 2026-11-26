@@ -1,0 +1,43 @@
+{
+  "fixture": "toc-gapmeasure",
+  "extension": "toc",
+  "comparison": "toc",
+  "scenarios": [
+    { "name": "noop", "steps": [] },
+    {
+      "name": "toc-gapmeasure-number-only",
+      "rules": ["toc.options"],
+      "steps": [
+        { "op": "tocNumberHeading", "target": "head-1" },
+        { "op": "createTOC",
+          "props": { "numberedParagraphs": "NumberedParagraphsOptions.INCLUDE_NUMBERS_ONLY", "createBookmarks": false },
+          "defaultProps": { "numberedParagraphs": "NumberedParagraphsOptions.INCLUDE_NUMBERS_ONLY", "createBookmarks": false },
+          "entries": [{ "name": "H1", "formatStyle": "TOC1" }]
+        }
+      ]
+    },
+    {
+      "name": "toc-gapmeasure-exclude-numbers",
+      "rules": ["toc.options"],
+      "steps": [
+        { "op": "tocNumberHeading", "target": "head-1" },
+        { "op": "createTOC",
+          "props": { "numberedParagraphs": "NumberedParagraphsOptions.EXCLUDE_NUMBERS", "createBookmarks": true },
+          "defaultProps": { "numberedParagraphs": "NumberedParagraphsOptions.EXCLUDE_NUMBERS", "createBookmarks": true },
+          "entries": [{ "name": "H1", "formatStyle": "TOC1" }]
+        }
+      ]
+    },
+    {
+      "name": "toc-gapmeasure-sort-levels",
+      "rules": ["toc.level-sort"],
+      "steps": [
+        { "op": "createTOC", "entries": [
+          { "name": "H1", "formatStyle": "TOC1", "level": 1, "sortAlphabet": true },
+          { "name": "H2", "formatStyle": "TOC2", "level": 2, "sortAlphabet": true },
+          { "name": "H3", "formatStyle": "TOC3", "level": 3 }
+        ]}
+      ]
+    }
+  ]
+}

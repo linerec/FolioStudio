@@ -1,0 +1,16 @@
+{
+  "fixture": "basic-create-type",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "create-type-defaults", "steps": [
+      {"op": "createItem", "kind": "textFrame", "page": 0, "rect": [60, 160, 420, 400], "label": "created"}
+    ]},
+    {"name": "create-type-defaults-input", "steps": [
+      {"op": "createItem", "kind": "textFrame", "page": 0, "rect": [60, 160, 420, 400], "label": "created"},
+      {"op": "insertText", "target": "created", "at": 0, "text": "새 프레임 한글입니다. 문서 기본 서식을 받습니다.\rSecond paragraph."}
+    ]},
+    {"name": "create-type-defaults-page2", "steps": [
+      {"op": "createItem", "kind": "textFrame", "page": 2, "rect": [60, 160, 420, 400], "label": "created"}
+    ]}
+  ]
+}

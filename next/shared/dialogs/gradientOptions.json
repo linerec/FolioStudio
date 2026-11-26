@@ -1,0 +1,100 @@
+{
+  "title": "그레이디언트 견본 옵션",
+  "target": "explicit",
+  "maxIds": 1,
+  "defaults": "gradientSwatch",
+  "description": "Swatches panel > Swatch Options for a gradient swatch: ids is the swatch id; the values start from it and all are sent.",
+  "link": "gradientStops",
+  "fields": [
+    {
+      "name": "name",
+      "label": "견본 이름",
+      "type": "text",
+      "required": true,
+      "trim": true,
+      "unique": "swatches",
+      "uniqueMessage": "같은 이름의 견본이 있습니다.",
+      "maxLength": 256,
+      "default": "새 그레이디언트 견본"
+    },
+    {
+      "name": "kind",
+      "label": "그레이디언트 유형",
+      "type": "enum",
+      "default": "Linear",
+      "options": [
+        {
+          "value": "Linear",
+          "label": "선형"
+        },
+        {
+          "value": "Radial",
+          "label": "방사형"
+        }
+      ]
+    },
+    {
+      "name": "stops",
+      "label": "그레이디언트 정지점",
+      "type": "array",
+      "editor": "gradientStops",
+      "minRows": 2,
+      "maxRows": 100,
+      "default": [
+        {
+          "color": "Color/Paper",
+          "location": 0,
+          "midpoint": 50
+        },
+        {
+          "color": "Color/Black",
+          "location": 100,
+          "midpoint": 50
+        }
+      ],
+      "newRow": {
+        "color": "Color/Black",
+        "location": 50,
+        "midpoint": 50
+      },
+      "fields": [
+        {
+          "name": "color",
+          "label": "정지점 색상",
+          "type": "choice",
+          "source": "stopColors",
+          "default": "Color/Black"
+        },
+        {
+          "name": "location",
+          "label": "정지점 위치",
+          "type": "number",
+          "unit": "percent",
+          "min": 0,
+          "max": 100,
+          "default": 50
+        },
+        {
+          "name": "midpoint",
+          "label": "중간점",
+          "type": "number",
+          "unit": "percent",
+          "min": 13,
+          "max": 87,
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "editGradient",
+        "id": "$ids0",
+        "rename": "$name",
+        "kind": "$kind",
+        "stops": "$stops"
+      }
+    ]
+  }
+}

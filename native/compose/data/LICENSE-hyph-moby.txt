@@ -1,0 +1,25 @@
+Moby (tm) Hyphenator II / Moby Hyphenation List
+Author: Grady Ward. Project Gutenberg eBook #3204.
+Retrieved: 2026-11-19 from the Project Gutenberg official mirror.
+Documentation: https://gutenberg.pglaf.org/3/2/0/3204/3204-0.txt
+Archive: https://gutenberg.pglaf.org/3/2/0/3204/files.zip
+
+Verbatim excerpt from 3204-0.txt:
+
+Moby (tm) Hyphenator II Documentation Notes
+
+This documentation, the software and/or database are:
+
+Public Domain material by grant from the author, January, 2001.
+
+Additional format notes from the same document:
+
+The hyphenation marks are indicated with ASCII 165
+character, which is significant in alphabetization.
+
+Note that words that ought *not* to be hyphenated are included for
+completeness.
+
+Folio's hyph-moby.bin is a generated, filtered, lowercase, front-coded version
+of mhyph.txt, not the original distribution. The generator and exclusions are
+documented in next/tools/gen-hyph-moby.py. See THIRD_PARTY_NOTICES.txt for hashes.

@@ -1,0 +1,92 @@
+{
+  "fixture": "text",
+  "scenarios": [
+    {
+      "name": "bullets-numbers-options",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "mixed",
+          "start": 0,
+          "end": 28,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingFormat": "A, B, C, D...",
+            "numberingExpression": "Item ^#)^t",
+            "numberingStartAt": 3,
+            "numberingContinue": false,
+            "leftIndent": 30,
+            "firstLineIndent": -18
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-glyph-options",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "mixed",
+          "start": 0,
+          "end": 28,
+          "props": {
+            "bulletsAndNumberingListType": "BULLET_LIST",
+            "bulletChar": "+",
+            "bulletsTextAfter": "^t",
+            "leftIndent": 24,
+            "firstLineIndent": -12,
+            "bulletsCharacterStyle": "CharacterStyle/Text Emphasis"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-korean-options",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "korean",
+          "start": 0,
+          "end": 14,
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "제 ^# 항^t",
+            "numberingStartAt": 0,
+            "numberingContinue": false,
+            "leftIndent": 40,
+            "firstLineIndent": -40,
+            "numberingAlignment": "LEFT_ALIGN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bullets-style-options",
+      "steps": [
+        {
+          "op": "styleEdit",
+          "kind": "paragraph",
+          "style": "Text Body",
+          "props": {
+            "bulletsAndNumberingListType": "NUMBERED_LIST",
+            "numberingExpression": "(^#)^t",
+            "numberingCharacterStyle": "CharacterStyle/Text Emphasis",
+            "leftIndent": 24,
+            "firstLineIndent": -12
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "mixed",
+          "start": 13,
+          "end": 13,
+          "props": {
+            "numberingExpression": "Part ^#.^t",
+            "numberingContinue": false,
+            "numberingStartAt": 7
+          }
+        }
+      ]
+    }
+  ]
+}

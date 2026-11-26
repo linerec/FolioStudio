@@ -1,0 +1,466 @@
+{
+ "fixture": "basic",
+ "about": "Object > Pathfinder (Add, Subtract, Intersect, Exclude Overlap, Minus Back; menu actions 99600, 99601, 99599, 99603, 99602) on two overlapping squares.",
+ "scenarios": [
+  {
+   "name": "path-pf-add-overlap",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        150,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        250
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        250
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99600,
+     "action": "Add",
+     "labels": [
+      "result"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-pf-subtract-overlap",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        150,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        250
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        250
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99601,
+     "action": "Subtract",
+     "labels": [
+      "result"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-pf-intersect-overlap",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        150,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        250
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        250
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99599,
+     "action": "Intersect",
+     "labels": [
+      "result"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-pf-exclude-overlap",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        150,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        250
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        250
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99603,
+     "action": "Exclude Overlap",
+     "labels": [
+      "result"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "path-pf-minusback-overlap",
+   "window": true,
+   "steps": [
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        100,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        100
+       ]
+      },
+      {
+       "anchor": [
+        200,
+        200
+       ]
+      },
+      {
+       "anchor": [
+        100,
+        200
+       ]
+      }
+     ],
+     "label": "a"
+    },
+    {
+     "op": "createPath",
+     "page": 0,
+     "closed": true,
+     "points": [
+      {
+       "anchor": [
+        150,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        150
+       ]
+      },
+      {
+       "anchor": [
+        250,
+        250
+       ]
+      },
+      {
+       "anchor": [
+        150,
+        250
+       ]
+      }
+     ],
+     "label": "b"
+    },
+    {
+     "op": "set",
+     "target": "b",
+     "props": {
+      "strokeWeight": 4
+     }
+    },
+    {
+     "op": "select",
+     "targets": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "op": "menu",
+     "id": 99602,
+     "action": "Minus Back",
+     "labels": [
+      "result"
+     ]
+    }
+   ]
+  }
+ ]
+}

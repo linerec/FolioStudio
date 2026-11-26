@@ -1,0 +1,10 @@
+{
+  "fixture": "typepath-c5-fine",
+  "about": "3 pt narrow glyphs along the typepath-c3 S curve: the glyph angles step with InDesign's flattening of the (offset) curve.",
+  "extension": "textpath",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "typepath-c5-fine-s12", "steps": [{"op": "setTextPathOptions", "target": "path", "props": {"PathSpacing": "12"}}]},
+    {"name": "typepath-c5-fine-s-6", "steps": [{"op": "setTextPathOptions", "target": "path", "props": {"PathSpacing": "-6"}}]}
+  ]
+}

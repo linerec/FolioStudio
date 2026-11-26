@@ -1,0 +1,59 @@
+{
+  "fixture": "basic",
+  "about": "Text frame threads: merge, insert, detach, overflow and cross-spread flow.",
+  "scenarios": [
+    {"name":"thread-join-ligatures","steps":[
+      {"op":"deleteText","target":"tf","start":0,"end":79},
+      {"op":"insertText","target":"tf","at":0,"text":"fi fl ff ffi ffl office affine waffle. "},
+      {"op":"threadText","target":"tf","next":"tf-1"}
+    ]},
+    {"name":"thread-target-middle","steps":[{"op":"threadText","target":"tf","next":"tf-2"}]},
+    {"name":"thread-create","steps":[
+      {"op":"createThreadFrame","target":"tf-2","page":2,"rect":[320,240,550,700],"label":"created"}
+    ]},
+    {"name":"thread-create-middle","steps":[
+      {"op":"createThreadFrame","target":"tf-1","page":0,"rect":[320,520,550,700],"label":"created"}
+    ]},
+    {"name":"thread-join-paragraph","steps":[
+      {"op":"textFormat","target":"tf-1","start":0,"end":100,"props":{"leftIndent":20}},
+      {"op":"threadText","target":"tf","next":"tf-1"}
+    ]},
+    {"name":"thread-join-break","steps":[
+      {"op":"insertText","target":"tf","at":79,"text":"\r"},
+      {"op":"threadText","target":"tf","next":"tf-1"}
+    ]},
+    {"name":"thread-append-empty","steps":[
+      {"op":"createItem","kind":"textFrame","page":2,"rect":[320,240,550,500],"label":"created"},
+      {"op":"threadText","target":"tf-2","next":"created"}
+    ]},
+    {"name":"thread-prepend-empty","steps":[
+      {"op":"createItem","kind":"textFrame","page":1,"rect":[320,60,550,200],"label":"created"},
+      {"op":"threadText","target":"created","next":"tf"}
+    ]},
+    {"name":"thread-join-text","steps":[{"op":"threadText","target":"tf","next":"tf-1"}]},
+    {"name":"thread-join-reverse","steps":[{"op":"threadText","target":"tf-2","next":"tf"}]},
+    {"name":"thread-insert-empty","steps":[
+      {"op":"createItem","kind":"textFrame","page":1,"rect":[320,240,550,400],"label":"created"},
+      {"op":"threadText","target":"tf-1","next":"created"}
+    ]},
+    {"name":"thread-insert-text","steps":[{"op":"threadText","target":"tf-1","next":"tf"}]},
+    {"name":"thread-unlink","steps":[{"op":"threadText","target":"tf-1","next":null}]},
+    {"name":"thread-relink","steps":[
+      {"op":"threadText","target":"tf-1","next":null},
+      {"op":"threadText","target":"tf-1","next":"tf-2"}
+    ]},
+    {"name":"thread-new-spread","steps":[
+      {"op":"createItem","kind":"textFrame","page":0,"rect":[320,520,550,700],"label":"created"},
+      {"op":"threadText","target":"tf-2","next":"created"}
+    ]},
+    {"name":"thread-empty-empty","steps":[
+      {"op":"createItem","kind":"textFrame","page":1,"rect":[320,520,550,640],"label":"created"},
+      {"op":"createItem","kind":"textFrame","page":2,"rect":[320,520,550,640],"label":"created-2"},
+      {"op":"threadText","target":"created","next":"created-2"}
+    ]},
+    {"name":"thread-unlink-three","steps":[
+      {"op":"threadText","target":"tf","next":"tf-1"},
+      {"op":"threadText","target":"tf","next":null}
+    ]}
+  ]
+}

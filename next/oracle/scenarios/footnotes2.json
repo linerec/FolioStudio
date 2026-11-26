@@ -1,0 +1,19 @@
+{
+  "fixture": "footnotes",
+  "about": "각주 번호 복원과 두 각주의 독립 주소. 번호 복원은 숨긴 문서에서 표시자 복제로 측정한다.",
+  "scenarios": [
+    {"name":"fn2-marker-restore","rules":["footnotes2.marker"],"steps":[
+      {"op":"insertFootnote","target":"body-0","at":30},
+      {"op":"insertFootnoteText","target":"body-0","index":0,"at":2,"text":"Restored number."},
+      {"op":"deleteFootnoteText","target":"body-0","index":0,"start":0,"end":1},
+      {"op":"insertFootnoteMarker","target":"body-0","index":0,"at":0}
+    ]},
+    {"name":"fn2-marker-second","rules":["footnotes2.marker"],"steps":[
+      {"op":"insertFootnote","target":"body-0","at":30},
+      {"op":"insertFootnote","target":"body-0","at":60},
+      {"op":"insertFootnoteText","target":"body-0","index":1,"at":2,"text":"Second note."},
+      {"op":"deleteFootnoteText","target":"body-0","index":1,"start":0,"end":1},
+      {"op":"insertFootnoteMarker","target":"body-0","index":1,"at":0}
+    ]}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fixture": "text",
+  "extension": "bullets2-menu",
+  "scenarios": [
+    {"name":"bullets2-menu-text","window":true,"steps":[
+      {"op":"textFormat","target":"mixed","start":0,"end":28,"props":{"bulletsAndNumberingListType":"NUMBERED_LIST","numberingExpression":"Item ^#.^t"}},
+      {"op":"convertListsToText","target":"mixed","start":0,"end":0,"labels":{},"selection":"text"}
+    ]},
+    {"name":"bullets2-menu-object","window":true,"steps":[
+      {"op":"textFormat","target":"mixed","start":0,"end":28,"props":{"bulletsAndNumberingListType":"NUMBERED_LIST","numberingExpression":"Item ^#.^t"}},
+      {"op":"convertListsToText","target":"mixed","start":0,"end":28,"labels":{},"selection":"object"}
+    ]}
+  ]
+}

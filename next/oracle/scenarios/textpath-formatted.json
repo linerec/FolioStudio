@@ -1,0 +1,5 @@
+{
+  "fixture":"textpath-formatted",
+  "about":"Deleting formatted path text preserves its parent stroke and geometry.",
+  "scenarios":[{"name":"noop","rules":["textpath.remove.formatted"],"steps":[]},{"name":"textpath-delete-formatted","rules":["textpath.remove.formatted"],"extension":"tools2","steps":[{"op":"removeTextFromPath","target":"path"}]}]
+}

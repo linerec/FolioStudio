@@ -1,0 +1,21 @@
+{
+  "fixture": "text-format",
+  "about": "Edit ▸ Paste without Formatting (menu action 296 in a window): copied text pasted as plain text, taking the formatting where it lands.",
+  "scenarios": [
+    {"name": "paste-plain-inline", "window": true, "steps": [
+      {"op": "pastePlain", "target": "format", "start": 2, "end": 18, "destination": "destination", "at": 4}
+    ]},
+    {"name": "paste-plain-multiline", "window": true, "steps": [
+      {"op": "pastePlain", "target": "format", "start": 2, "end": 30, "destination": "destination", "at": 4}
+    ]},
+    {"name": "paste-plain-paragraph-start", "window": true, "steps": [
+      {"op": "pastePlain", "target": "format", "start": 2, "end": 30, "destination": "destination", "at": 0}
+    ]},
+    {"name": "paste-plain-three-paragraphs", "window": true, "steps": [
+      {"op": "pastePlain", "target": "format", "start": 2, "end": 50, "destination": "destination", "at": 4}
+    ]},
+    {"name": "paste-plain-same-story", "window": true, "steps": [
+      {"op": "pastePlain", "target": "format", "start": 6, "end": 16, "destination": "format", "at": 3}
+    ]}
+  ]
+}

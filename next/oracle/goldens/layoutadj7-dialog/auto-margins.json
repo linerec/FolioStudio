@@ -1,0 +1,16 @@
+{
+ "about": "Adjust Layout dialog of InDesign 2025 (20.5.5.119), Auto-adjust margins ticked, measured 2026-11-13 with real input (artifacts/layoutadj-c7-20261023/tools/s1_fields.py, s2_apply.py): docMargins = the boxes before (the document default margins), boxes = the four margin boxes after the page size was typed (top, bottom, left, right; three decimals shown), appliedDocMargins = doc.marginPreferences after OK (exact). A page size typed after another does not compound.",
+ "cases": [
+  {"name": "e1", "facing": false, "oldSize": [300, 400], "newSize": [450.0, 600.0], "docMargins": [20.0, 40.0, 30.0, 50.0], "boxes": [30.0, 60.0, 45.0, 75.0], "appliedDocMargins": [30, 60, 45, 75]},
+  {"name": "x1", "facing": false, "oldSize": [612, 792], "newSize": [595.276, 841.89], "docMargins": [36.0, 36.0, 36.0, 36.0], "boxes": [38.268, 38.268, 35.016, 35.016], "appliedDocMargins": [38.26773, 38.26773, 35.01624, 35.01624]},
+  {"name": "x2", "facing": true, "oldSize": [300, 400], "newSize": [450.0, 500.0], "docMargins": [20.0, 40.0, 30.0, 50.0], "boxes": [25.0, 50.0, 45.0, 75.0], "appliedDocMargins": [25, 50, 45, 75]},
+  {"name": "x3", "facing": false, "oldSize": [300, 400], "newSize": [450.0, 600.0], "docMargins": [10.0, 10.0, 10.0, 10.0], "boxes": [15.0, 15.0, 15.0, 15.0], "appliedDocMargins": [15, 15, 15, 15]},
+  {"name": "x4", "facing": false, "oldSize": [300, 400], "newSize": [450.0, 600.0], "docMargins": [20.0, 40.0, 30.0, 50.0], "boxes": [30.0, 60.0, 45.0, 75.0], "appliedDocMargins": [30, 60, 45, 75]},
+  {"name": "r1", "facing": false, "oldSize": [300, 400], "newSize": [450.0, 600.0], "docMargins": [10.0, 10.0, 10.0, 10.0], "boxes": [15.0, 15.0, 15.0, 15.0], "appliedDocMargins": [15, 15, 15, 15]},
+  {"name": "r2", "facing": false, "oldSize": [300, 400], "newSize": [450.0, 600.0], "docMargins": [10.0, 10.0, 10.0, 10.0], "boxes": [15.0, 15.0, 15.0, 15.0], "appliedDocMargins": [15, 15, 15, 15]},
+  {"name": "s1-600x800", "facing": false, "oldSize": [300, 400], "newSize": [600, 800], "docMargins": [20, 40, 30, 50], "boxes": [40.0, 80.0, 60.0, 100.0]},
+  {"name": "s1-450x400", "facing": false, "oldSize": [300, 400], "newSize": [450, 400], "docMargins": [20, 40, 30, 50], "boxes": [20.0, 40.0, 45.0, 75.0]},
+  {"name": "s1-300x800", "facing": false, "oldSize": [300, 400], "newSize": [300, 800], "docMargins": [20, 40, 30, 50], "boxes": [40.0, 80.0, 30.0, 50.0]},
+  {"name": "s1-150x200", "facing": false, "oldSize": [300, 400], "newSize": [150, 200], "docMargins": [20, 40, 30, 50], "boxes": [10.0, 20.0, 15.0, 25.0]}
+ ]
+}

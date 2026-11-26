@@ -1,0 +1,19 @@
+{
+  "fixture": "objopts-photoshop",
+  "extension": "objopts",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "oo-clip-photoshop",
+      "steps": [
+        {
+          "op": "convertClippingToFrame",
+          "target": "clip"
+        }
+      ]
+    }
+  ]
+}

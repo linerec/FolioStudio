@@ -1,0 +1,115 @@
+{
+  "fixture": "panels-conditions",
+  "extension": "panels-conditions",
+  "about": "Highlight (UseHighlight) condition indicators: the opaque rectangle InDesign paints behind a conditioned range. Height = per line, above the baseline the largest (size x head.yMax of the face of each run) and below the largest (size x -head.yMin); see next/oracle/rules/condx-c4.ko.md. condx-hl-arial-12 and -times-12 were first measured by condx-c3 (artifacts/condx-c3-20261023/research); story: Alpha-bold-LARGE tail.<Br>Second paragraph here.<Br>Third line AV To office. The fonts new to the document (Georgia, Consolas, Verdana, Malgun Gothic) are measurement records in artifacts/condx-c4-20261023/research (appliedFont on a font the document lacks makes InDesign add Fonts.xml records and FontStyle=Regular overrides that Folio does not write yet). condx-hl-arial-24 and condx-hl-wrap are records too: the rectangles equal InDesign to 0.001 pt, but print-check shows a text-raster difference of 11.8 / 6.4 (limit 2.0) at 24 / 56 pt on the coloured rectangle.",
+  "scenarios": [
+    {
+      "name": "condx-hl-arial-12",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 70,
+          "props": {
+            "appliedFont": "Arial",
+            "pointSize": 12
+          }
+        },
+        {
+          "op": "setConditionOptions",
+          "name": "Print",
+          "props": {
+            "method": "USE_HIGHLIGHT"
+          }
+        },
+        {
+          "op": "setConditionIndicators",
+          "mode": "SHOW_AND_PRINT_INDICATORS"
+        }
+      ]
+    },
+    {
+      "name": "condx-hl-times-12",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 70,
+          "props": {
+            "appliedFont": "Times New Roman",
+            "pointSize": 12
+          }
+        },
+        {
+          "op": "setConditionOptions",
+          "name": "Print",
+          "props": {
+            "method": "USE_HIGHLIGHT"
+          }
+        },
+        {
+          "op": "setConditionIndicators",
+          "mode": "SHOW_AND_PRINT_INDICATORS"
+        }
+      ]
+    },
+    {
+      "name": "condx-hl-color",
+      "steps": [
+        {
+          "op": "setConditionOptions",
+          "name": "Print",
+          "props": {
+            "method": "USE_HIGHLIGHT",
+            "color": "10,200,30"
+          }
+        },
+        {
+          "op": "setConditionIndicators",
+          "mode": "SHOW_AND_PRINT_INDICATORS"
+        }
+      ]
+    },
+    {
+      "name": "condx-hl-both",
+      "steps": [
+        {
+          "op": "setConditionOptions",
+          "name": "Print",
+          "props": {
+            "method": "USE_HIGHLIGHT"
+          }
+        },
+        {
+          "op": "setConditionOptions",
+          "name": "Web",
+          "props": {
+            "method": "USE_HIGHLIGHT"
+          }
+        },
+        {
+          "op": "setConditionIndicators",
+          "mode": "SHOW_AND_PRINT_INDICATORS"
+        }
+      ]
+    },
+    {
+      "name": "condx-hl-show-only",
+      "steps": [
+        {
+          "op": "setConditionOptions",
+          "name": "Print",
+          "props": {
+            "method": "USE_HIGHLIGHT"
+          }
+        },
+        {
+          "op": "setConditionIndicators",
+          "mode": "SHOW_INDICATORS"
+        }
+      ]
+    }
+  ]
+}

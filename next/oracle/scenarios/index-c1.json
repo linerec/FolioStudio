@@ -1,0 +1,666 @@
+{
+ "fixture": "panels-index",
+ "extension": "index-c1",
+ "about": "Index panel: reference add/move/delete, text edits around markers, sorting, generation (index-c1). The fixture story 'format' already holds a ToEndOfStory marker (U+FEFF) at 11.",
+ "scenarios": [
+  {
+   "name": "index-ref-add",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 3,
+     "topic": "u13eTopicnAlpha",
+     "kind": "CurrentPage",
+     "limit": 0
+    }
+   ]
+  },
+  {
+   "name": "index-ref-add-boundary",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 6,
+     "topic": "u13eTopicnAlpha",
+     "kind": "CurrentPage",
+     "limit": 0
+    }
+   ]
+  },
+  {
+   "name": "index-ref-types",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 46,
+     "topic": "u13eTopicnAlpha",
+     "kind": "ToEndOfDocument",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 40,
+     "topic": "u13eTopicnAlpha",
+     "kind": "ToEndOfSection",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 35,
+     "topic": "u13eTopicnAlpha",
+     "kind": "SuppressPageNumbers",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 30,
+     "topic": "u13eTopicnAlpha",
+     "kind": "ForNextNParagraphs",
+     "limit": 2
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 24,
+     "topic": "u13eTopicnAlpha",
+     "kind": "ForNextNPages",
+     "limit": 2
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 17,
+     "topic": "u13eTopicnAlpha",
+     "kind": "ToNextStyleChange",
+     "limit": 0
+    }
+   ]
+  },
+  {
+   "name": "index-ref-positions",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T55",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T47",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T46",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T45",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T41",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T40",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T35",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T17",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T14",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T12",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T10",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "T6",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 55,
+     "topic": "u13eTopicnT55",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 47,
+     "topic": "u13eTopicnT47",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 46,
+     "topic": "u13eTopicnT46",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 45,
+     "topic": "u13eTopicnT45",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 41,
+     "topic": "u13eTopicnT41",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 40,
+     "topic": "u13eTopicnT40",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 35,
+     "topic": "u13eTopicnT35",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 17,
+     "topic": "u13eTopicnT17",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 14,
+     "topic": "u13eTopicnT14",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 12,
+     "topic": "u13eTopicnT12",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 10,
+     "topic": "u13eTopicnT10",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 6,
+     "topic": "u13eTopicnT6",
+     "kind": "CurrentPage",
+     "limit": 0
+    }
+   ]
+  },
+  {
+   "name": "index-ref-korean",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "K18",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "K10",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "K5",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "K1",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "korean-format",
+     "at": 18,
+     "topic": "u13eTopicnK18",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "korean-format",
+     "at": 10,
+     "topic": "u13eTopicnK10",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "korean-format",
+     "at": 5,
+     "topic": "u13eTopicnK5",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "addIndexReference",
+     "target": "korean-format",
+     "at": 1,
+     "topic": "u13eTopicnK1",
+     "kind": "CurrentPage",
+     "limit": 0
+    }
+   ]
+  },
+  {
+   "name": "index-topic-child",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicn출판",
+     "name": "Beta",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicn출판Topicn글꼴",
+     "name": "Gamma",
+     "sort_order": "가"
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": "",
+     "tolerate": true
+    }
+   ]
+  },
+  {
+   "name": "index-topic-rename",
+   "steps": [
+    {
+     "op": "setIndexTopic",
+     "target": "format",
+     "id": "u13eTopicn출판Topicn글꼴",
+     "name": "Font",
+     "sort_order": ""
+    },
+    {
+     "op": "setIndexTopic",
+     "target": "format",
+     "id": "u13eTopicn출판",
+     "name": "Publishing",
+     "sort_order": ""
+    }
+   ]
+  },
+  {
+   "name": "index-topic-remove-parent",
+   "steps": [
+    {
+     "op": "deleteIndexTopic",
+     "target": "format",
+     "id": "u13eTopicn출판"
+    }
+   ]
+  },
+  {
+   "name": "index-topic-remove-plain",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicnAlpha",
+     "name": "Beta",
+     "sort_order": ""
+    },
+    {
+     "op": "deleteIndexTopic",
+     "target": "format",
+     "id": "u13eTopicnAlpha"
+    }
+   ]
+  },
+  {
+   "name": "index-topic-remove-top-ref",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexReference",
+     "target": "format",
+     "at": 6,
+     "topic": "u13eTopicnAlpha",
+     "kind": "CurrentPage",
+     "limit": 0
+    },
+    {
+     "op": "deleteIndexTopic",
+     "target": "format",
+     "id": "u13eTopicnAlpha"
+    }
+   ]
+  },
+  {
+   "name": "index-topic-order",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Zed",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "가나",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Beta",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "12",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicn출판",
+     "name": "Zed",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicn출판",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicn출판",
+     "name": "가나",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "u13eTopicn출판",
+     "name": "Beta",
+     "sort_order": ""
+    }
+   ]
+  },
+  {
+   "name": "index-ref-remove",
+   "steps": [
+    {
+     "op": "deleteIndexReference",
+     "target": "format",
+     "id": "u15a",
+     "topic": "출판/글꼴",
+     "n": 0
+    }
+   ]
+  },
+  {
+   "name": "index-edit-insert-before",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 3,
+     "text": "XY"
+    }
+   ]
+  },
+  {
+   "name": "index-edit-insert-at-marker",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 11,
+     "text": "XY"
+    }
+   ]
+  },
+  {
+   "name": "index-edit-insert-after-marker",
+   "steps": [
+    {
+     "op": "insertText",
+     "target": "format",
+     "at": 12,
+     "text": "XY"
+    }
+   ]
+  },
+  {
+   "name": "index-edit-delete-cover",
+   "steps": [
+    {
+     "op": "deleteText",
+     "target": "format",
+     "start": 8,
+     "end": 14
+    }
+   ]
+  },
+  {
+   "name": "index-edit-delete-before",
+   "steps": [
+    {
+     "op": "deleteText",
+     "target": "format",
+     "start": 8,
+     "end": 11
+    }
+   ]
+  },
+  {
+   "name": "index-edit-delete-after",
+   "steps": [
+    {
+     "op": "deleteText",
+     "target": "format",
+     "start": 12,
+     "end": 15
+    }
+   ]
+  },
+  {
+   "name": "index-edit-delete-marker",
+   "steps": [
+    {
+     "op": "deleteText",
+     "target": "format",
+     "start": 11,
+     "end": 12
+    }
+   ]
+  },
+  {
+   "name": "index-topic-sortorder",
+   "steps": [
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Beta",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Zed",
+     "sort_order": ""
+    },
+    {
+     "op": "addIndexTopic",
+     "target": "format",
+     "parent": "",
+     "name": "Alpha",
+     "sort_order": ""
+    },
+    {
+     "op": "setIndexTopic",
+     "target": "format",
+     "id": "u13eTopicnZed",
+     "name": "Zed",
+     "sort_order": "A"
+    },
+    {
+     "op": "setIndexTopic",
+     "target": "format",
+     "id": "u13eTopicnBeta",
+     "name": "Beta",
+     "sort_order": "가"
+    }
+   ]
+  }
+ ]
+}

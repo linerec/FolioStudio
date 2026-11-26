@@ -1,0 +1,63 @@
+.pp-master { width: 100%; border: 0; background: transparent; color: inherit; text-align: left; }
+.pp-master:hover { background: var(--hover); }
+.pp-master.on { background: var(--list-sel); }
+.pp-drop { outline: 2px solid var(--accent); outline-offset: 3px; }
+.pp-drop-end { margin: 12px; padding: 8px; border: 1px dashed var(--border); text-align: center; font-size: 11px; color: var(--muted); }
+.pp-drop-end.on { background: var(--hover); border-color: var(--accent); }
+/* the shared dialog frame (ui/dialog-frame.tsx, about 48 dialogs): one scrim, one surface, one title, rows of label + field, a button row */
+.page-dialog-scrim { position: fixed; inset: 0; z-index: 2000; display: grid; place-items: center; background: var(--scrim); }
+.page-dialog { width: 390px; max-width: calc(100vw - 32px); max-height: 90vh; overflow: auto; padding: var(--sp-5) var(--sp-6) var(--sp-4); background: var(--panel); border: 1px solid var(--line-dark); border-radius: var(--r-lg); box-shadow: var(--shadow-dialog); font-size: var(--fs-md); }
+.page-dialog h2 { margin: 0 0 var(--sp-4); font-size: var(--fs-xl); font-weight: var(--fw-semibold); line-height: var(--lh-tight); overflow-wrap: anywhere; }
+.page-dialog form > label { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); margin: var(--sp-3) 0; }
+/* the fields a dialog does not group: a row each, the label on the left (zero specificity: a dialog's own layout wins) */
+:where(.page-dialog form > div) > label { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); margin: var(--sp-2) 0; min-height: var(--h-control); overflow-wrap: anywhere; }
+:where(.page-dialog form > div) > label.page-check { justify-content: flex-start; gap: var(--sp-2); }
+.page-dialog input:not([type=checkbox]), .page-dialog select { width: 180px; }
+.page-dialog .page-check { justify-content: flex-start; gap: 8px; }
+.page-dialog fieldset { margin: 0 0 var(--sp-3); padding: var(--sp-2) var(--sp-3) var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-md); }
+.page-dialog fieldset legend { padding: 0 var(--sp-1); color: var(--muted); font-weight: var(--fw-medium); }
+.page-dialog fieldset label { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 9px 0; }
+/* a row with a number field is three columns — the name, the field, the unit (a bare text node, a grid item too) — so the fields of a
+   group start and end at the same place (uix-b3: they sat wherever space-between put them, the unit pulling each one off the line) */
+.page-dialog fieldset > label:has(> .nf), .page-dialog form > div > label:has(> .nf) { display: grid; grid-template-columns: minmax(0, 1fr) auto 18px; justify-content: stretch; column-gap: var(--sp-2); }
+.page-dialog p { font-size: var(--fs-md); line-height: var(--lh-text); color: var(--muted); word-break: keep-all; overflow-wrap: anywhere; }
+.page-dialog .actions { display: flex; justify-content: flex-end; gap: var(--sp-2); margin: var(--sp-5) calc(-1 * var(--sp-6)) 0; padding: var(--sp-3) var(--sp-6) 0; border-top: 1px solid var(--line); }
+.page-dialog .actions button { min-width: 72px; height: var(--h-control); }
+/* a shared dialog whose fields have no groups, one under the other (`"className": "fields-column"`: Print Booklet) */
+.page-dialog.fields-column form > div > label { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 9px 0; }
+.page-dialog.fields-column form > div > label.page-check { justify-content: flex-start; gap: 8px; }
+
+/* File > New > Document */
+.newdoc-dialog { width: 760px; }
+.newdoc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.newdoc-dialog fieldset { margin: 0 0 14px; padding: 8px 12px 12px; border: 1px solid var(--line); border-radius: var(--r-md); }
+.newdoc-dialog fieldset label { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 9px 0; }
+.newdoc-dialog fieldset .page-check { justify-content: flex-start; }
+.newdoc-dialog input:not([type=checkbox]):not([type=radio]), .newdoc-dialog select { width: 170px; }
+.newdoc-dialog details { margin: 0 0 14px; }
+.newdoc-dialog details summary { cursor: pointer; margin-bottom: 8px; }
+.newdoc-dialog fieldset label { white-space: nowrap; }
+.newdoc-dialog .newdoc-cols > div:last-child input:not([type=checkbox]) { width: 120px; }
+.newdoc-orient { display: flex; gap: 22px; margin: 9px 0; }
+.newdoc-orient label { margin: 0; }
+.newdoc-dialog input[type=radio] { width: auto; }
+.newdoc-top { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; }
+.newdoc-top label { display: flex; align-items: center; gap: 12px; margin: 0; }
+.newdoc-top > label:only-child { width: 100%; justify-content: space-between; }
+.newdoc-save { display: flex; gap: 6px; align-items: center; }
+.newdoc-save input { width: 140px; }
+.docpresets { list-style: none; margin: 0 0 8px; padding: var(--sp-1); background: var(--field); border: 1px solid var(--field-line); border-radius: var(--r-sm); min-height: 120px; max-height: 260px; overflow: auto; }
+.docpresets li.muted { padding: 6px 10px; }
+.docpresets button { display: block; width: 100%; min-height: var(--h-row); text-align: left; padding: 4px var(--sp-2); border: 0; border-radius: var(--r-sm); background: transparent; color: inherit; }
+.docpresets button.on { background: var(--list-sel); color: var(--text); }
+.transform-dialog { width: 400px; }
+.transform-dialog fieldset { margin: 0 0 14px; padding: 8px 12px 12px; border: 1px solid var(--line); border-radius: var(--r-md); }
+.transform-dialog fieldset label { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 9px 0; }
+.transform-dialog .td-field { display: inline-flex; align-items: center; gap: 6px; }
+.transform-dialog .td-field input { width: 110px; }
+.transform-dialog .td-field em { font-style: normal; width: 22px; color: var(--muted); }
+.transform-dialog input[type=checkbox] { width: auto; }
+.pp-num.hidden { opacity: .45; text-decoration: line-through; }
+.grid-prefs-dialog { width: 440px; }
+.grid-prefs-dialog .td-field select { width: 150px; }
+.pp-master.open { outline: 1px solid var(--accent); }

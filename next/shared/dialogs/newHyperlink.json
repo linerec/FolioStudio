@@ -1,0 +1,66 @@
+{
+  "title": "하이퍼링크",
+  "target": "none",
+  "defaults": "newHyperlink",
+  "description": "Type > Hyperlinks & Cross-References > New Hyperlink: a link to a web address from the text range story/start/end (values given when opening); the name continues the numbering of the document's links (namePrefix is the word it counts with).",
+  "fields": [
+    {
+      "name": "story",
+      "type": "text",
+      "default": "",
+      "hidden": true,
+      "required": true
+    },
+    {
+      "name": "start",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000000,
+      "integer": true,
+      "hidden": true
+    },
+    {
+      "name": "end",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 1000000000,
+      "integer": true,
+      "hidden": true
+    },
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "Hyperlink",
+      "hidden": true
+    },
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "url",
+      "label": "URL",
+      "type": "text",
+      "default": "https://",
+      "required": true,
+      "maxLength": 2048
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "insertHyperlink",
+        "story": "$story",
+        "start": "$start",
+        "end": "$end",
+        "name": "$name",
+        "url": "$url"
+      }
+    ]
+  }
+}

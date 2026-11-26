@@ -1,0 +1,20 @@
+{
+ "fixture":"xref-fmt", "extension":"xref",
+ "about":"Cross-reference formats that need the composed document: page numbers (a TV XRefPageNumber instance, section prefix included), paragraph numbers (label without tab and trailing punctuation; one space for no number or a bullet), full paragraphs (label with the tab as a space), delimiters. Rules: next/oracle/rules/xref.ko.md.",
+ "scenarios":[
+  {"name":"noop","text":true,"steps":[]},
+  {"name":"xrefmt-page","text":true,"rules":["xref.page.variable"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":0,"destination":"","format":"Page Number","name":"Page ref"}]},
+  {"name":"xrefmt-page-section","text":true,"rules":["xref.page.variable"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"third","target_at":0,"destination":"","format":"Page Number","name":"Section ref"}]},
+  {"name":"xrefmt-text-page","text":true,"rules":["xref.page.variable"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":0,"destination":"","format":"Paragraph Text & Page Number","name":"Text page"}]},
+  {"name":"xrefmt-number","text":true,"rules":["xref.number"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":15,"destination":"","format":"Paragraph Number","name":"Number ref"}]},
+  {"name":"xrefmt-number-page","text":true,"rules":["xref.number","xref.page.variable"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":15,"destination":"","format":"Paragraph Number & Page Number","name":"Number page"}]},
+  {"name":"xrefmt-full-page","text":true,"rules":["xref.full"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":15,"destination":"","format":"Full Paragraph & Page Number","name":"Full page"}]},
+  {"name":"xrefmt-number-none","text":true,"rules":["xref.number"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":0,"destination":"","format":"Paragraph Number","name":"No number"}]},
+  {"name":"xrefmt-full-bullet","text":true,"rules":["xref.full"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":57,"destination":"","format":"Full Paragraph","name":"Bullet ref"}]},
+  {"name":"xrefmt-delimiter","text":true,"rules":["xref.delimiter"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":28,"destination":"","format":"Folio delimiter","name":"Delimiter ref"}]},
+  {"name":"xrefmt-delimiter-included","text":true,"rules":["xref.delimiter"],"steps":[{"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":28,"destination":"","format":"Folio delimiter included","name":"Delimiter included"}]},
+  {"name":"xrefmt-set-multi","text":true,"rules":["xref.page.variable"],"steps":[
+    {"op":"insertCrossReference","target":"source","at":11,"targetLabel":"target","target_at":0,"destination":"","format":"Text Anchor Name & Page Number","name":"Switch ref"},
+    {"op":"setCrossReference","link":"Switch ref","name":"Switch ref","destinationName":"Switch ref","format":"Paragraph Text & Page Number"}]}
+ ]
+}

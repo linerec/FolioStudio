@@ -1,0 +1,66 @@
+{
+ "fixture": "layoutadj4",
+ "extension": "layoutadjust",
+ "scenarios": [
+  {
+   "name": "layoutadj4-600x500",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 500
+    }
+   ]
+  },
+  {
+   "name": "layoutadj4-400x800",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 400,
+     "height": 800
+    }
+   ]
+  },
+  {
+   "name": "layoutadj4-200x250",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 200,
+     "height": 250
+    }
+   ]
+  },
+  {
+   "name": "layoutadj4-300x800",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 300,
+     "height": 800
+    }
+   ]
+  },
+  {
+   "name": "layoutadj4-600x400",
+   "window": false,
+   "geometry": true,
+   "steps": [
+    {
+     "op": "adjustLayout",
+     "width": 600,
+     "height": 400
+    }
+   ]
+  }
+ ]
+}

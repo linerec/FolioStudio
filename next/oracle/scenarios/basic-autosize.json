@@ -1,0 +1,335 @@
+{
+  "fixture": "basic",
+  "about": "Text Frame Options > Auto-Size: the frame takes the size of its text (height, width, both, proportionally), about its reference point, with minimums and no line breaks; and again as text changes.",
+  "scenarios": [
+    {
+      "name": "as-height",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-height-bottom",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingReferencePoint": "AutoSizingReferenceEnum.BOTTOM_CENTER_POINT"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-height-top",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingReferencePoint": "AutoSizingReferenceEnum.TOP_CENTER_POINT"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-width",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.WIDTH_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-width-right",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingReferencePoint": "AutoSizingReferenceEnum.RIGHT_CENTER_POINT"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.WIDTH_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-height-width",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_AND_WIDTH"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-height-width-corner",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingReferencePoint": "AutoSizingReferenceEnum.TOP_LEFT_POINT"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_AND_WIDTH"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-proportional",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_AND_WIDTH_PROPORTIONALLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-min-height",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY",
+              "useMinimumHeightForAutoSizing": true,
+              "minimumHeightForAutoSizing": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-min-width",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.WIDTH_ONLY",
+              "useMinimumWidthForAutoSizing": true,
+              "minimumWidthForAutoSizing": 200
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-no-line-breaks",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_AND_WIDTH",
+              "useNoLineBreaksForAutoSizing": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-off-again",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.OFF"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-then-type",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        },
+        {
+          "op": "insertText",
+          "target": "tf",
+          "at": 0,
+          "text": "First line added.\rSecond line added.\r"
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    },
+    {
+      "name": "as-then-delete",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        },
+        {
+          "op": "deleteText",
+          "target": "tf",
+          "start": 0,
+          "end": 40
+        },
+        {
+          "op": "recompose"
+        }
+      ]
+    },
+    {
+      "name": "as-overset-grow",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf-1",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-columns",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "textColumnCount": 2
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "as-insets",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "insetSpacing": [
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "textFramePreferences": {
+              "autoSizingType": "AutoSizingTypeEnum.HEIGHT_ONLY"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

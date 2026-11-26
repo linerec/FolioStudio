@@ -1,0 +1,232 @@
+{
+ "fixture": "pages",
+ "about": "View > Rotate Spread / Pages panel menu > Page Attributes > Rotate Spread View (the menu actions 6186-6188 '90 CW', '90 CCW', '180' and 6183 'Clear Rotation', on the spread the window shows; no DOM property): the turn is added to the spread's turn (two 90 CW make 180) and saved as the spread's ItemTransform; the spreads below make room for the turned one; page items keep their transforms; the printed pages do not turn. (The unlisted actions 6180-6182 'To 90 CW' ... set the turn instead of adding.)",
+ "scenarios": [
+  {
+   "name": "rot-first",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 0,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-last",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 2,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-two",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 0,
+     "how": "by-cw"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-ccw"
+    }
+   ]
+  },
+  {
+   "name": "rot-clear",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "clear"
+    }
+   ]
+  },
+  {
+   "name": "rot-size",
+   "window": true,
+   "steps": [
+    {
+     "op": "documentSetup",
+     "width": 500,
+     "height": 700
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-by-cw",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-by-cw-twice",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-by-ccw",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-ccw"
+    }
+   ]
+  },
+  {
+   "name": "rot-by-180",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-180"
+    }
+   ]
+  },
+  {
+   "name": "rot-by-cw-thrice",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-pasteboard",
+   "window": true,
+   "steps": [
+    {
+     "op": "viewPref",
+     "name": "pasteboardMargins",
+     "value": [
+      100,
+      50
+     ]
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-hide",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    },
+    {
+     "op": "setSpreadHidden",
+     "spreads": [
+      1
+     ],
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "name": "rot-insert",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    },
+    {
+     "op": "insertPages",
+     "count": 1,
+     "before": 2,
+     "master": 0
+    }
+   ]
+  },
+  {
+   "name": "rot-180-then-cw",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-180"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-cw"
+    }
+   ]
+  },
+  {
+   "name": "rot-clear-180",
+   "window": true,
+   "steps": [
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "by-180"
+    },
+    {
+     "op": "rotateSpreadView",
+     "spread": 1,
+     "how": "clear"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "새 색조 견본",
+  "target": "none",
+  "defaults": "tintBase",
+  "description": "values.base is the swatch id the new tint is made from; tint is a percent from 0 to 100.",
+  "fields": [
+    {
+      "name": "base",
+      "type": "text",
+      "default": "",
+      "required": true,
+      "hidden": true
+    },
+    {
+      "name": "tint",
+      "label": "색조",
+      "type": "number",
+      "unit": "percent",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "group": ""
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "newTint",
+        "base": "$base",
+        "tint": "$tint"
+      }
+    ]
+  }
+}

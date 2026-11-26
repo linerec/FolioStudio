@@ -1,0 +1,72 @@
+{
+  "title": "MathML 삽입",
+  "style": "wide",
+  "target": "explicit",
+  "maxIds": 1,
+  "description": "Object > Insert MathML: ids is the page the equation is placed on (36 pt from its top left corner); the MathML, the font size and the color; the live preview (`dialogPreview`) is the engine's own layout, and OK waits until it is laid out.",
+  "fields": [
+    {
+      "name": "mathml",
+      "label": "MathML 원문",
+      "type": "text",
+      "default": "",
+      "required": true,
+      "multiline": true,
+      "mono": true,
+      "rows": 7,
+      "maxLength": 100000,
+      "placeholder": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mfrac><mn>1</mn><mn>2</mn></mfrac>\n</math>"
+    },
+    {
+      "name": "size",
+      "label": "글 크기 (pt)",
+      "type": "number",
+      "default": 10,
+      "min": 1,
+      "max": 1000
+    },
+    {
+      "name": "color",
+      "label": "색",
+      "type": "color",
+      "default": "#000000"
+    }
+  ],
+  "preview": {
+    "query": "mathmlLayout",
+    "needs": [
+      "mathml"
+    ],
+    "args": {
+      "mathml": "$mathml",
+      "size": "$size"
+    },
+    "title": "미리 보기",
+    "empty": "MathML 을 입력하면 여기에 수식이 나옵니다.",
+    "pending": "미리 보기를 만드는 중…",
+    "failed": "미리 보기를 만들지 못했습니다.",
+    "alt": "수식 미리 보기",
+    "notices": {
+      "noMathFont": "설치된 수식 글꼴(OpenType MATH)을 찾지 못해 일반 글꼴 {0} 으로 근사해 조판했습니다.",
+      "noFont": "수식을 조판할 글꼴을 찾지 못했습니다."
+    }
+  },
+  "actions": {
+    "ok": [
+      {
+        "op": "insertMathml",
+        "page": "$ids0",
+        "mathml": "$mathml",
+        "at": [
+          36,
+          36
+        ],
+        "size": "$size",
+        "color": {
+          "$": "color",
+          "rgb": true
+        }
+      }
+    ]
+  }
+}

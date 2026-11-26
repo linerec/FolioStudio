@@ -1,0 +1,217 @@
+{
+  "title": "상호 참조 형식 편집",
+  "target": "none",
+  "defaults": "crossReferenceFormat",
+  "style": "wide",
+  "description": "Cross-Reference panel > Define Cross-Reference Formats: the format picked (none = a new one; picking another starts every box from that format) with its name, character style and building blocks. OK saves it; the Duplicate button saves a copy named `duplicateName` (the format's name and `copySuffix`); Delete is off for a format a link uses. `namePrefix` and `copySuffix` are the words the names of a new and a copied format are made with.",
+  "fields": [
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "New Cross-Reference Format",
+      "hidden": true,
+      "keep": true
+    },
+    {
+      "name": "copySuffix",
+      "type": "text",
+      "default": "copy",
+      "hidden": true,
+      "keep": true
+    },
+    {
+      "name": "used",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "name": "duplicateName",
+      "type": "text",
+      "default": "",
+      "hidden": true
+    },
+    {
+      "name": "format",
+      "label": "상호 참조 형식",
+      "type": "choice",
+      "source": "crossReferenceFormats",
+      "none": "새 상호 참조 형식",
+      "default": "",
+      "reload": "crossReferenceFormat"
+    },
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "characterStyle",
+      "label": "문자 스타일",
+      "type": "choice",
+      "source": "characterStylesPlain",
+      "none": "없음",
+      "noneValue": "n",
+      "default": "n"
+    },
+    {
+      "name": "blocks",
+      "label": "구성 요소",
+      "type": "array",
+      "minRows": 0,
+      "maxRows": 50,
+      "addLabel": "구성 요소 추가",
+      "removeLabel": "구성 요소 삭제",
+      "default": [
+        {
+          "kind": "ParagraphTextBuildingBlock",
+          "text": "",
+          "characterStyle": "n",
+          "delimiter": "",
+          "includeDelimiter": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "kind",
+          "label": "종류",
+          "type": "enum",
+          "default": "ParagraphTextBuildingBlock",
+          "options": [
+            {
+              "value": "CustomStringBuildingBlock",
+              "label": "사용자 정의 텍스트"
+            },
+            {
+              "value": "ParagraphTextBuildingBlock",
+              "label": "단락 텍스트"
+            },
+            {
+              "value": "ParagraphNumberBuildingBlock",
+              "label": "단락 번호"
+            },
+            {
+              "value": "FullParagraphBuildingBlock",
+              "label": "전체 단락"
+            },
+            {
+              "value": "BookmarkNameBuildingBlock",
+              "label": "텍스트 앵커 이름"
+            },
+            {
+              "value": "PageNumberBuildingBlock",
+              "label": "쪽 번호"
+            },
+            {
+              "value": "ChapterNumberBuildingBlock",
+              "label": "장 번호"
+            },
+            {
+              "value": "FileNameBuildingBlock",
+              "label": "파일 이름"
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "label": "텍스트",
+          "type": "text",
+          "default": "",
+          "hidePrefix": "$ID/",
+          "when": {
+            "kind": "CustomStringBuildingBlock"
+          }
+        },
+        {
+          "name": "characterStyle",
+          "label": "구성 요소 문자 스타일",
+          "type": "choice",
+          "source": "characterStylesPlain",
+          "none": "없음",
+          "noneValue": "n",
+          "default": "n"
+        },
+        {
+          "name": "delimiter",
+          "label": "구분 문자",
+          "type": "text",
+          "default": "",
+          "maxLength": 1,
+          "hidePrefix": "$ID/",
+          "when": {
+            "kind": "ParagraphTextBuildingBlock"
+          }
+        },
+        {
+          "name": "includeDelimiter",
+          "label": "구분 문자 포함",
+          "type": "boolean",
+          "default": false,
+          "when": {
+            "kind": "ParagraphTextBuildingBlock"
+          }
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "label": "새로 만들기",
+      "field": "new",
+      "set": {
+        "field": "format",
+        "value": ""
+      }
+    },
+    {
+      "label": "복제",
+      "field": "duplicate",
+      "action": "duplicate",
+      "disabledWhen": {
+        "format": ""
+      }
+    },
+    {
+      "label": "삭제",
+      "field": "delete",
+      "action": "delete",
+      "disabledWhen": [
+        {
+          "format": ""
+        },
+        {
+          "used": true
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "saveCrossReferenceFormat",
+        "format": {
+          "id": "$format",
+          "name": "$name",
+          "characterStyle": "$characterStyle",
+          "blocks": "$blocks"
+        },
+        "locations": []
+      }
+    ],
+    "duplicate": [
+      {
+        "op": "duplicateCrossReferenceFormat",
+        "id": "$format",
+        "name": "$duplicateName"
+      }
+    ],
+    "delete": [
+      {
+        "op": "deleteCrossReferenceFormat",
+        "id": "$format"
+      }
+    ]
+  }
+}

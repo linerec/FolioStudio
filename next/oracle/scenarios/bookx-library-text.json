@@ -1,0 +1,138 @@
+{
+ "fixture": "bookx-library-text",
+ "extension": "bookx-library",
+ "about": "Library item placed in text (Asset.placeAsset(Text)): an inline anchored object over an insertion point or a range of characters, its ItemTransform putting the bottom left of its visible bounds on the origin (bookx-c4). The turned item is not here: its position in the line is not worked out (rules/bookx-c4.ko.md).",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "bookx-lib-text-rect-point",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "rect",
+     "story": "text",
+     "start": 3,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-oval-end",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "oval",
+     "story": "text",
+     "start": 11,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-rect-range",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "rect",
+     "story": "second",
+     "start": 1,
+     "end": 3,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-over-return",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "oval",
+     "story": "second",
+     "start": 5,
+     "end": 8,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-group",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "group",
+     "story": "text",
+     "start": 3,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-textframe",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "tframe",
+     "story": "text",
+     "start": 3,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-picture",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "pic",
+     "story": "text",
+     "start": 3,
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-text-twice",
+   "steps": [
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "rect",
+     "story": "text",
+     "start": 3,
+     "label": "placed"
+    },
+    {
+     "op": "bookxLibraryPlaceText",
+     "target": "oval",
+     "story": "text",
+     "start": 0,
+     "label": "placed2"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-page-picture",
+   "steps": [
+    {
+     "op": "bookxLibraryPlace",
+     "fixture": "bookx-library-text",
+     "target": "pic",
+     "label": "placed"
+    }
+   ]
+  },
+  {
+   "name": "bookx-lib-page-group",
+   "steps": [
+    {
+     "op": "bookxLibraryPlace",
+     "fixture": "bookx-library-text",
+     "target": "group",
+     "label": "placed"
+    }
+   ]
+  }
+ ]
+}

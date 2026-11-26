@@ -1,0 +1,435 @@
+{
+  "fixture": "basic",
+  "about": "Mixed ink group rules measured in InDesign 2025 (artifacts/swatchx-c2-20261023): duplicates kept with increment 0, steps stop at 100, empty name becomes Group N, a group may share a colour's name, a taken swatch name gets ' copy'.",
+  "scenarios": [
+    {
+      "name": "swatchx-mixed-same",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "Same",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            2,
+            0
+          ],
+          "increment": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-stop100",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "Stop",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            95,
+            5
+          ],
+          "repeat": [
+            3,
+            1
+          ],
+          "increment": [
+            10,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-default-name",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            0
+          ],
+          "increment": [
+            5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-name-shared",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "Oracle Spot",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            0
+          ],
+          "increment": [
+            5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-copy",
+      "steps": [
+        {
+          "op": "mixedNew",
+          "name": "G Swatch 1",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "percentages": [
+            1,
+            2
+          ]
+        },
+        {
+          "op": "mixedGroupNew",
+          "name": "G",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            0
+          ],
+          "increment": [
+            5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-delete-group",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "A",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            1
+          ],
+          "increment": [
+            10,
+            10
+          ]
+        },
+        {
+          "op": "mixedGroupNew",
+          "name": "B",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            30,
+            40
+          ],
+          "repeat": [
+            1,
+            0
+          ],
+          "increment": [
+            5,
+            0
+          ]
+        },
+        {
+          "op": "mixedGroupDelete",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-delete-member",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "G",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            1
+          ],
+          "increment": [
+            10,
+            10
+          ]
+        },
+        {
+          "op": "mixedSwatchDelete",
+          "name": "G Swatch 2"
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-delete-last",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "A",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            0
+          ],
+          "increment": [
+            10,
+            0
+          ]
+        },
+        {
+          "op": "mixedGroupNew",
+          "name": "G",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            30,
+            40
+          ],
+          "repeat": [
+            0,
+            0
+          ],
+          "increment": [
+            0,
+            0
+          ]
+        },
+        {
+          "op": "mixedSwatchDelete",
+          "name": "G Swatch 1"
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-rename",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "G",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            2
+          ],
+          "increment": [
+            15,
+            25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "fillColor": "MixedInk/G Swatch 3",
+            "strokeColor": "MixedInk/G Swatch 5"
+          }
+        },
+        {
+          "op": "mixedGroupRename",
+          "name": "G",
+          "rename": "H"
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-rename-copy",
+      "steps": [
+        {
+          "op": "swatchNew",
+          "name": "H Swatch 1",
+          "model": "process",
+          "space": "cmyk",
+          "value": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "op": "mixedGroupNew",
+          "name": "G",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            2
+          ],
+          "increment": [
+            15,
+            25
+          ]
+        },
+        {
+          "op": "mixedGroupRename",
+          "name": "G",
+          "rename": "H"
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-rename-first",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "M",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            0,
+            0
+          ],
+          "increment": [
+            0,
+            0
+          ]
+        },
+        {
+          "op": "mixedGroupNew",
+          "name": "Swatch",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            30,
+            40
+          ],
+          "repeat": [
+            1,
+            0
+          ],
+          "increment": [
+            10,
+            0
+          ]
+        },
+        {
+          "op": "mixedGroupRename",
+          "name": "Swatch",
+          "rename": "A"
+        }
+      ]
+    },
+    {
+      "name": "swatchx-mixed-rename-ignored",
+      "steps": [
+        {
+          "op": "mixedGroupNew",
+          "name": "G",
+          "inks": [
+            "Oracle Spot",
+            "Process Cyan"
+          ],
+          "initial": [
+            10,
+            20
+          ],
+          "repeat": [
+            1,
+            2
+          ],
+          "increment": [
+            15,
+            25
+          ]
+        },
+        {
+          "op": "mixedGroupRename",
+          "name": "G",
+          "rename": ""
+        },
+        {
+          "op": "mixedGroupRename",
+          "name": "G",
+          "rename": "g"
+        }
+      ]
+    }
+  ]
+}

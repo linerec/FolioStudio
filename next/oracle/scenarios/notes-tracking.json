@@ -1,0 +1,90 @@
+{
+ "fixture": "editorial",
+ "extension": "editorial-combined",
+ "scenarios": [
+  {
+   "name": "notes-tracked-insert",
+   "text": true,
+   "steps": [
+    {
+     "op": "insertNote",
+     "target": "body-0",
+     "at": 3,
+     "text": "memo",
+     "user": "Reviewer B",
+     "date": "2026-10-22T22:00:00"
+    }
+   ]
+  },
+  {
+   "name": "notes-tracked-update",
+   "text": true,
+   "steps": [
+    {
+     "op": "insertNote",
+     "target": "body-0",
+     "at": 3,
+     "text": "memo",
+     "user": "Reviewer B",
+     "date": "2026-10-22T22:00:00"
+    },
+    {
+     "op": "updateNote",
+     "target": "body-0",
+     "index": 0,
+     "text": "updated",
+     "date": "2026-10-22T22:00:00"
+    },
+    {
+     "op": "collapseNote",
+     "target": "body-0",
+     "index": 0,
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "name": "notes-tracked-remove",
+   "text": true,
+   "steps": [
+    {
+     "op": "insertNote",
+     "target": "body-0",
+     "at": 3,
+     "text": "memo",
+     "user": "Reviewer B",
+     "date": "2026-10-22T22:00:00"
+    },
+    {
+     "op": "deleteNoteAs",
+     "target": "body-0",
+     "index": 0,
+     "user": "Reviewer B",
+     "date": "2026-10-22T22:00:00"
+    }
+   ]
+  },
+  {
+   "name": "notes-tracked-to-text",
+   "text": true,
+   "steps": [
+    {
+     "op": "insertNote",
+     "target": "body-0",
+     "at": 3,
+     "text": "memo",
+     "user": "Reviewer B",
+     "date": "2026-10-22T22:00:00"
+    },
+    {
+     "op": "noteToTextAs",
+     "target": "body-0",
+     "index": 0,
+     "user": "Reviewer B",
+     "date": "2026-10-22T22:00:00",
+     "waitMs": 2100
+    }
+   ]
+  }
+ ]
+}

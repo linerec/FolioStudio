@@ -1,0 +1,25 @@
+[package]
+build = "../../test-inputs.rs"
+name = "folio-text"
+description = "Fonts, shaping and frame text layout"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+folio-compose.workspace = true
+serde.workspace = true
+ttf-parser = "=0.25.1"
+rustybuzz = "=0.20.1"
+memmap2 = "=0.9.11"
+# Bidi levels of paragraphs with right-to-left text, and the script of a character (both
+# already in the workspace through rustybuzz's dependencies).
+icu_properties = "=2.4.0"
+unicode-bidi = "=0.3.18"
+unicode-script = "=0.5.8"
+unicode-normalization = "=0.1.24"
+
+[dev-dependencies]
+serde_json.workspace = true
+folio-idml.workspace = true

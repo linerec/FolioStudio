@@ -1,0 +1,80 @@
+{
+ "fixture": "text-format",
+ "about": "Glyphs panel: insert one glyph of a face by glyph id (Arial, system font). InDesign has no DOM call for the panel's insert; the equivalent measured here is a typed placeholder character turned into the glyph by Find/Change > Glyph > Change, which stores a glyph without a Unicode value as U+FFFD + CustomGlyph and a mapped glyph as its character with Ligatures and OTFContextualAlternate off (rules/glyphs.toml glyphs.insert-by-id). Glyph ids are per font.",
+ "scenarios": [
+  {
+   "name": "glyphinsert-unmapped",
+   "rules": [
+    "glyphs.insert-by-id",
+    "glyphs.custom-draw"
+   ],
+   "steps": [
+    {
+     "op": "glyphInsert",
+     "target": "format",
+     "at": 0,
+     "family": "Arial",
+     "style": "Regular",
+     "glyphId": 155,
+     "placeholder": {
+      "text": "A",
+      "glyphId": 36
+     }
+    }
+   ]
+  },
+  {
+   "name": "glyphinsert-mapped",
+   "rules": [
+    "glyphs.insert-by-id"
+   ],
+   "steps": [
+    {
+     "op": "glyphInsert",
+     "target": "format",
+     "at": 0,
+     "family": "Arial",
+     "style": "Regular",
+     "glyphId": 37,
+     "placeholder": {
+      "text": "A",
+      "glyphId": 36
+     }
+    }
+   ]
+  },
+  {
+   "name": "glyphinsert-two",
+   "rules": [
+    "glyphs.insert-by-id",
+    "glyphs.custom-draw"
+   ],
+   "steps": [
+    {
+     "op": "glyphInsert",
+     "target": "format",
+     "at": 0,
+     "family": "Arial",
+     "style": "Regular",
+     "glyphId": 155,
+     "placeholder": {
+      "text": "A",
+      "glyphId": 36
+     }
+    },
+    {
+     "op": "glyphInsert",
+     "target": "format",
+     "at": 3,
+     "family": "Arial",
+     "style": "Regular",
+     "glyphId": 156,
+     "placeholder": {
+      "text": "A",
+      "glyphId": 36
+     }
+    }
+   ]
+  }
+ ]
+}

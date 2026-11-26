@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="uf4" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Body" LeftIndent="5">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<PageReference Self="u174" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn2 two" Id="14" />
+				<PageReference Self="u173" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn10 ten" Id="13" />
+				<PageReference Self="u172" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn_under" Id="12" />
+				<PageReference Self="u171" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicnㄱ글" Id="11" />
+				<PageReference Self="u170" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn가" Id="10" />
+				<PageReference Self="u16f" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn가방" Id="9" />
+				<PageReference Self="u16e" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn나" Id="8" />
+				<PageReference Self="u16d" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicn다" Id="7" />
+				<PageReference Self="u16c" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicnapple" Id="6" />
+				<PageReference Self="u16b" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicnApple" Id="5" />
+				<PageReference Self="u16a" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicnbanana" Id="4" />
+				<PageReference Self="u169" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicnÉclair" Id="3" />
+				<PageReference Self="u168" PageReferenceType="CurrentPage" ReferencedTopic="u13eTopicnZebra" Id="2" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Alpha </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold">
+				<Content>b</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold" PointSize="14">
+				<Content>ol</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Format Bold">
+				<Content>d</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<PageReference Self="u15a" PageReferenceType="ToEndOfStory" ReferencedTopic="u13eTopicn출판Topicn글꼴" Id="1" />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Italic" PointSize="15" Tracking="20">
+				<Content>LARGE</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> tail.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Other" FirstLineIndent="3">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Second paragraph here.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Format Body">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Third line AV To office.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

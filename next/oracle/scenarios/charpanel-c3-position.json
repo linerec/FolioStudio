@@ -1,0 +1,210 @@
+{
+ "fixture": "charpanel-c3",
+ "about": "Character panel Superscript / Subscript on top of the existing text-format-char cases: sizes, fonts, mixed sizes, baseline shift, line height.",
+ "scenarios": [
+  {
+   "name": "cp-super-serif",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "serif",
+     "start": 0,
+     "end": 30,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-sub-serif",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "serif",
+     "start": 0,
+     "end": 30,
+     "props": {
+      "position": "SUBSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-word",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-auto",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 90,
+     "end": 100,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-sub-auto",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 90,
+     "end": 100,
+     "props": {
+      "position": "SUBSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-size",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "pointSize": 24
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-baseline",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "baselineShift": 3
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-hscale",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "horizontalScale": 150
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-vscale",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "verticalScale": 150
+     }
+    },
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 16,
+     "end": 21,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-sub-line",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "scale",
+     "start": 0,
+     "end": 74,
+     "props": {
+      "position": "SUBSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-super-korean",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "korean",
+     "start": 0,
+     "end": 8,
+     "props": {
+      "position": "SUPERSCRIPT"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cp-numerator-serif",
+   "steps": [
+    {
+     "op": "textFormat",
+     "target": "serif",
+     "start": 0,
+     "end": 10,
+     "props": {
+      "position": "OT_NUMERATOR"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,414 @@
+{
+ "name": "typed-off-X40",
+ "measured": "InDesign 2025 20.5.5.119, real mouse (Page tool) / real keyboard (control bar), 2026-11-12",
+ "fixture": "pagetool1-single.idml",
+ "objectsMoveWithPage": false,
+ "enableAdjustLayout": false,
+ "action": {
+  "kind": "type",
+  "page": 0,
+  "wanted": null,
+  "typed": {
+   "X": 40
+  }
+ },
+ "pageMovedAgainstRest": [
+  40,
+  0
+ ],
+ "pagesAbsoluteShift": {
+  "1": [
+   0,
+   0
+  ],
+  "2": [
+   0,
+   0
+  ]
+ },
+ "before": {
+  "items": {
+   "H": {
+    "tl": [
+     340,
+     330
+    ],
+    "br": [
+     460,
+     390
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "G": {
+    "tl": [
+     40,
+     330
+    ],
+    "br": [
+     160,
+     390
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "F": {
+    "tl": [
+     220,
+     20
+    ],
+    "br": [
+     260,
+     90
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "F2": {
+    "tl": [
+     220,
+     60
+    ],
+    "br": [
+     260,
+     90
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "F1": {
+    "tl": [
+     220,
+     20
+    ],
+    "br": [
+     260,
+     50
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "E": {
+    "tl": [
+     40,
+     320
+    ],
+    "br": [
+     240,
+     320
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "D": {
+    "tl": [
+     40,
+     260
+    ],
+    "br": [
+     120,
+     300
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "C3": {
+    "tl": [
+     100,
+     -80
+    ],
+    "br": [
+     200,
+     -30
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "C2": {
+    "tl": [
+     -100,
+     150
+    ],
+    "br": [
+     -30,
+     220
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "C": {
+    "tl": [
+     330,
+     150
+    ],
+    "br": [
+     400,
+     220
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "B2": {
+    "tl": [
+     280,
+     200
+    ],
+    "br": [
+     380,
+     260
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "B": {
+    "tl": [
+     250,
+     200
+    ],
+    "br": [
+     330,
+     260
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A": {
+    "tl": [
+     100,
+     60
+    ],
+    "br": [
+     200,
+     120
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A2": {
+    "tl": [
+     100,
+     640
+    ],
+    "br": [
+     200,
+     700
+    ],
+    "parentPage": "2",
+    "spread": 1
+   }
+  },
+  "guides": [
+   {
+    "label": "guideS",
+    "orientation": "H",
+    "fitToPage": false,
+    "location": 300,
+    "parentPage": "1",
+    "spread": 0
+   },
+   {
+    "label": "guideP",
+    "orientation": "V",
+    "fitToPage": true,
+    "location": 250,
+    "parentPage": "1",
+    "spread": 0
+   }
+  ]
+ },
+ "after": {
+  "items": {
+   "H": {
+    "tl": [
+     300,
+     330
+    ],
+    "br": [
+     420,
+     390
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "G": {
+    "tl": [
+     0,
+     330
+    ],
+    "br": [
+     120,
+     390
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "F": {
+    "tl": [
+     180,
+     20
+    ],
+    "br": [
+     220,
+     90
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "F2": {
+    "tl": [
+     180,
+     60
+    ],
+    "br": [
+     220,
+     90
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "F1": {
+    "tl": [
+     180,
+     20
+    ],
+    "br": [
+     220,
+     50
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "E": {
+    "tl": [
+     0,
+     320
+    ],
+    "br": [
+     200,
+     320
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "D": {
+    "tl": [
+     0,
+     260
+    ],
+    "br": [
+     80,
+     300
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "C3": {
+    "tl": [
+     60,
+     -80
+    ],
+    "br": [
+     160,
+     -30
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "C2": {
+    "tl": [
+     -140,
+     150
+    ],
+    "br": [
+     -70,
+     220
+    ],
+    "parentPage": null,
+    "spread": 0
+   },
+   "C": {
+    "tl": [
+     290,
+     150
+    ],
+    "br": [
+     360,
+     220
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "B2": {
+    "tl": [
+     240,
+     200
+    ],
+    "br": [
+     340,
+     260
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "B": {
+    "tl": [
+     210,
+     200
+    ],
+    "br": [
+     290,
+     260
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A": {
+    "tl": [
+     60,
+     60
+    ],
+    "br": [
+     160,
+     120
+    ],
+    "parentPage": "1",
+    "spread": 0
+   },
+   "A2": {
+    "tl": [
+     100,
+     640
+    ],
+    "br": [
+     200,
+     700
+    ],
+    "parentPage": "2",
+    "spread": 1
+   }
+  },
+  "guides": [
+   {
+    "label": "guideS",
+    "orientation": "H",
+    "fitToPage": false,
+    "location": 300,
+    "parentPage": "1",
+    "spread": 0
+   },
+   {
+    "label": "guideP",
+    "orientation": "V",
+    "fitToPage": true,
+    "location": 210,
+    "parentPage": "1",
+    "spread": 0
+   }
+  ]
+ },
+ "referencePage": "1",
+ "pageSize": [
+  300,
+  400
+ ]
+}

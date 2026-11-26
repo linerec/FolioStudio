@@ -1,0 +1,56 @@
+{
+  "fixture": "typepath-c3",
+  "extension": "textpath",
+  "scenarios": [
+    {
+      "name": "typepath-c4-spacing",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c4.spacing"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathSpacing": "12"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c4-spacing-flip",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c4.spacing"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathSpacing": "12",
+            "FlipPathEffect": "Flipped"
+          }
+        }
+      ]
+    },
+    {
+      "name": "typepath-c4-spacing-skew",
+      "maxLocalError": 2.0,
+      "rules": [
+        "typepath-c4.spacing"
+      ],
+      "steps": [
+        {
+          "op": "setTextPathOptions",
+          "target": "path",
+          "props": {
+            "PathSpacing": "12",
+            "PathEffect": "SkewPathEffect"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "fixture": "basic",
+  "about": "Guide options, ruler type, relative X/Y movement and individual unlocking.",
+  "scenarios": [
+    {"name":"guides2-load-parents", "steps":[{"op":"importParents","from":"pages"}]},
+    {"name":"guides2-load-parents-twice", "steps":[{"op":"importParents","from":"pages"},{"op":"importParents","from":"pages"}]},
+    {"name":"guides2-save-parent-one", "steps":[{"op":"saveAsParent","spread":0}]},
+    {"name":"guides2-save-parent-two", "steps":[{"op":"saveAsParent","spread":1}]},
+    {"name":"guides2-options", "steps":[
+      {"op":"guideNew","page":0,"orientation":"horizontal","location":200},
+      {"op":"guideOptions","page":0,"props":{"viewThreshold":25,"guideColor":"Red","guideType":"Ruler"}}
+    ]},
+    {"name":"guides2-move-h", "steps":[
+      {"op":"guideNew","page":0,"orientation":"horizontal","location":200},
+      {"op":"guideMoveBy","page":0,"delta":[20,-30]}
+    ]},
+    {"name":"guides2-move-v", "steps":[
+      {"op":"guideNew","page":0,"orientation":"vertical","location":150},
+      {"op":"guideMoveBy","page":0,"delta":[-25,40]}
+    ]},
+    {"name":"guides2-unlock", "steps":[
+      {"op":"guideNew","page":0,"orientation":"horizontal","location":200},
+      {"op":"guideOptions","page":0,"props":{"locked":true}},
+      {"op":"guideOptions","page":0,"props":{"locked":false}},
+      {"op":"guideMoveBy","page":0,"delta":[10,30]}
+    ]},
+    {"name":"guides2-defaults", "steps":[
+      {"op":"viewPref","name":"rulerGuidesThreshold","value":35},
+      {"op":"viewPref","name":"rulerGuidesColor","value":"Magenta"},
+      {"op":"guideNew","page":0,"orientation":"horizontal","location":200}
+    ]}
+  ]
+}

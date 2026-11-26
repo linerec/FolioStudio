@@ -1,0 +1,44 @@
+{
+  "fixture": "dropcap-fonts",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "dropcap-georgia",
+      "steps": [
+        {
+          "op": "textFormat",
+          "target": "georgia",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "dropCapLines": 3,
+            "dropCapCharacters": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "dropcap-times-new-roman",
+      "steps": [
+        {
+          "op": "setDropCapStyle",
+          "style": "ParagraphStyle/Drop Georgia",
+          "character_style": "CharacterStyle/Drop Serif"
+        },
+        {
+          "op": "textFormat",
+          "target": "georgia",
+          "start": 0,
+          "end": 0,
+          "props": {
+            "dropCapLines": 3,
+            "dropCapCharacters": 1
+          }
+        }
+      ]
+    }
+  ]
+}

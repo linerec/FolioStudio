@@ -1,0 +1,690 @@
+{
+ "fixture": "objectstyles",
+ "about": "styles-c1: ObjectStyle applyNextParagraphStyle (Object Style Options > Paragraph Styles > Apply Next Style) measured 2026-10-31; threaded stories take no paragraph style.",
+ "scenarios": [
+  {
+   "name": "os-next-chain",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-chain-clear",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "os-next-chain-trailing",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5\r"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-off",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": false
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-off-trailing",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": false
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5\r"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-cycle",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "Next B",
+     "props": {
+      "nextStyle": "Next A"
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-prestyled",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "paragraphStyle",
+     "target": "tf",
+     "start": 7,
+     "end": 8,
+     "style": "Next C",
+     "clear": true
+    },
+    {
+     "op": "paragraphStyle",
+     "target": "tf",
+     "start": 14,
+     "end": 15,
+     "style": "Next B",
+     "clear": true
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-single",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-disabled",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": false,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-threaded",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf-1",
+     "style": "Oracle Text",
+     "clear": false
+    }
+   ]
+  },
+  {
+   "name": "os-next-threaded-off",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": false
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf-1",
+     "style": "Oracle Text",
+     "clear": true
+    }
+   ]
+  },
+  {
+   "name": "os-next-based-child",
+   "window": true,
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next C",
+     "props": {
+      "pointSize": 14,
+      "appliedFont": "Malgun Gothic"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next B",
+     "props": {
+      "pointSize": 16,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next C"
+     }
+    },
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Next A",
+     "props": {
+      "pointSize": 18,
+      "appliedFont": "Malgun Gothic",
+      "nextStyle": "Next B"
+     }
+    },
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Text",
+     "props": {
+      "appliedParagraphStyle": "ParagraphStyle/Next A",
+      "enableParagraphStyle": true,
+      "applyNextParagraphStyle": true
+     }
+    },
+    {
+     "op": "insertText",
+     "target": "tf",
+     "at": 0,
+     "text": "Para 1\rPara 2\rPara 3\rPara 4\rPara 5"
+    },
+    {
+     "op": "createObjectStyle",
+     "name": "Next Child",
+     "basedOn": "ObjectStyle/Oracle Text",
+     "props": {}
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "tf",
+     "style": "Next Child",
+     "clear": false
+    }
+   ]
+  }
+ ]
+}

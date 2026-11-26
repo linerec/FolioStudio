@@ -1,0 +1,155 @@
+{
+  "fixture": "footnote-threads",
+  "extension": "footnotes",
+  "about": "단·연결 틀에서 각주 분할 허용·금지, 너비 변화, 구분선, 넘침, 본문과 이야기 끝 각주의 위치를 비교한다.",
+  "scenarios": [
+    {"name":"noop","steps":[]},
+    {
+      "name": "fn-thread-story-end-columns", "rules": ["footnotes.threads","footnotes.continuing-eos"],
+      "steps": [
+        {"op":"set","target":"body-0","props":{"textFramePreferences":{"textColumnCount":2,"textColumnGutter":18}}},
+        {"op":"setFootnoteOptions","props":{"eosPlacement":true,"noSplitting":false,"spacer":4,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-story-end-last", "rules": ["footnotes.threads","footnotes.continuing-eos"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"eosPlacement":true,"noSplitting":false,"spacer":4,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24.\rNote 25.\rNote 26.\rNote 27.\rNote 28.\rNote 29.\rNote 30.\rNote 31.\rNote 32.\rNote 33.\rNote 34.\rNote 35.\rNote 36."}
+      ]
+    },
+    {
+      "name": "fn-thread-wide-spacer", "rules": ["footnotes.threads","footnotes.long-paragraph-ranges"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"spacer":60,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24.\rNote 25.\rNote 26.\rNote 27.\rNote 28.\rNote 29.\rNote 30.\rNote 31.\rNote 32.\rNote 33.\rNote 34.\rNote 35.\rNote 36.\rNote 37.\rNote 38.\rNote 39.\rNote 40.\rNote 41.\rNote 42.\rNote 43.\rNote 44.\rNote 45.\rNote 46.\rNote 47.\rNote 48.\rNote 49.\rNote 50.\rNote 51.\rNote 52.\rNote 53.\rNote 54.\rNote 55.\rNote 56.\rNote 57.\rNote 58.\rNote 59.\rNote 60.\rNote 61.\rNote 62.\rNote 63.\rNote 64.\rNote 65.\rNote 66.\rNote 67.\rNote 68.\rNote 69.\rNote 70.\rNote 71.\rNote 72.\rNote 73.\rNote 74.\rNote 75.\rNote 76."}
+      ]
+    },
+    {
+      "name": "fn-thread-same-line", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"noSplitting":false,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24.\rNote 25.\rNote 26.\rNote 27.\rNote 28.\rNote 29.\rNote 30.\rNote 31.\rNote 32.\rNote 33.\rNote 34.\rNote 35.\rNote 36."},
+        {"op":"insertFootnote","target":"body-0","at":94},
+        {"op":"insertFootnoteText","target":"body-0","index":1,"at":2,"text":"Second footnote."}
+      ]
+    },
+    {
+      "name": "fn-thread-span-keep", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"set","target":"body-0","props":{"textFramePreferences":{"textColumnCount":2,"textColumnGutter":18}}},
+        {"op":"setFootnoteOptions","props":{"noSplitting":true,"enableStraddling":true,"spacer":4}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-story-end", "rules": ["footnotes.threads","footnotes.continuing-eos"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"eosPlacement":true,"noSplitting":false,"spacer":4,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24.\rNote 25.\rNote 26.\rNote 27.\rNote 28.\rNote 29.\rNote 30.\rNote 31.\rNote 32.\rNote 33.\rNote 34.\rNote 35.\rNote 36."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-long-keep", "rules": ["footnotes.threads","footnotes.long-paragraph-ranges"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"noSplitting":true,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Long 1.\rLong 2.\rLong 3.\rLong 4.\rLong 5.\rLong 6.\rLong 7.\rLong 8.\rLong 9.\rLong 10.\rLong 11.\rLong 12.\rLong 13.\rLong 14.\rLong 15.\rLong 16.\rLong 17.\rLong 18.\rLong 19.\rLong 20.\rLong 21.\rLong 22.\rLong 23.\rLong 24.\rLong 25.\rLong 26.\rLong 27.\rLong 28.\rLong 29.\rLong 30.\rLong 31.\rLong 32.\rLong 33.\rLong 34.\rLong 35.\rLong 36."}
+      ]
+    },
+    {
+      "name": "fn-thread-mixed-width", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"set","target":"body-0","props":{"textFramePreferences":{"textColumnCount":2,"textColumnGutter":18}}},
+        {"op":"setFootnoteOptions","props":{"noSplitting":false,"enableStraddling":false,"continuingRuleWidth":45,"continuingRuleLeftIndent":3,"continuingRuleOffset":2}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"N001 N002 N003 N004 N005 N006 N007 N008 N009 N010 N011 N012 N013 N014 N015 N016 N017 N018 N019 N020 N021 N022 N023 N024 N025 N026 N027 N028 N029 N030 N031 N032 N033 N034 N035 N036 N037 N038 N039 N040 N041 N042 N043 N044 N045 N046 N047 N048 N049 N050 N051 N052 N053 N054 N055 N056 N057 N058 N059 N060 N061 N062 N063 N064 N065 N066 N067 N068 N069 N070 N071 N072 N073 N074 N075 N076 N077 N078 N079 N080 N081 N082 N083 N084 N085 N086 N087 N088 N089 N090 N091 N092 N093 N094 N095 N096 N097 N098 N099 N100 N101 N102 N103 N104 N105 N106 N107 N108 N109 N110 N111 N112 N113 N114 N115 N116 N117 N118 N119 N120 N121 N122 N123 N124 N125 N126 N127 N128 N129 N130 N131 N132 N133 N134 N135 N136 N137 N138 N139 N140 N141 N142 N143 N144 N145 N146 N147 N148 N149 N150 N151 N152 N153 N154 N155 N156 N157 N158 N159 N160 N161 N162 N163 N164 N165 N166 N167 N168 N169 N170 N171 N172 N173 N174 N175 N176 N177 N178 N179 N180 N181 N182 N183 N184 N185 N186 N187 N188 N189 N190 N191 N192 N193 N194 N195 N196 N197 N198 N199 N200 N201 N202 N203 N204 N205 N206 N207 N208 N209 N210 N211 N212 N213 N214 N215 N216 N217 N218 N219 N220 N221 N222 N223 N224 N225 N226 N227 N228 N229 N230"}
+      ]
+    },
+    {
+      "name": "fn-thread-span", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"set","target":"body-0","props":{"textFramePreferences":{"textColumnCount":2,"textColumnGutter":18}}},
+        {"op":"setFootnoteOptions","props":{"noSplitting":false,"enableStraddling":true,"spacer":4}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24.\rNote 25.\rNote 26.\rNote 27.\rNote 28.\rNote 29.\rNote 30.\rNote 31.\rNote 32.\rNote 33.\rNote 34.\rNote 35.\rNote 36."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-second-note", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"noSplitting":false,"enableStraddling":false,"spacer":4,"spaceBetween":5}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."},
+        {"op":"insertFootnote","target":"body-0","at":100},
+        {"op":"insertFootnoteText","target":"body-0","index":1,"at":2,"text":"Second footnote."}
+      ]
+    },
+    {
+      "name": "fn-thread-overset", "rules": ["footnotes.threads","footnotes.long-paragraph-ranges"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"continuingRuleOn":false,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Long 1.\rLong 2.\rLong 3.\rLong 4.\rLong 5.\rLong 6.\rLong 7.\rLong 8.\rLong 9.\rLong 10.\rLong 11.\rLong 12.\rLong 13.\rLong 14.\rLong 15.\rLong 16.\rLong 17.\rLong 18.\rLong 19.\rLong 20.\rLong 21.\rLong 22.\rLong 23.\rLong 24.\rLong 25.\rLong 26.\rLong 27.\rLong 28.\rLong 29.\rLong 30.\rLong 31.\rLong 32.\rLong 33.\rLong 34.\rLong 35.\rLong 36.\rLong 37.\rLong 38.\rLong 39.\rLong 40.\rLong 41.\rLong 42.\rLong 43.\rLong 44.\rLong 45.\rLong 46.\rLong 47.\rLong 48.\rLong 49.\rLong 50.\rLong 51.\rLong 52.\rLong 53.\rLong 54.\rLong 55.\rLong 56.\rLong 57.\rLong 58.\rLong 59.\rLong 60.\rLong 61.\rLong 62.\rLong 63.\rLong 64.\rLong 65.\rLong 66.\rLong 67.\rLong 68.\rLong 69.\rLong 70.\rLong 71.\rLong 72.\rLong 73.\rLong 74.\rLong 75.\rLong 76.\rLong 77.\rLong 78.\rLong 79.\rLong 80.\rLong 81.\rLong 82.\rLong 83.\rLong 84."}
+      ]
+    },
+    {
+      "name": "fn-thread-rule-off", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"continuingRuleOn":false,"enableStraddling":false}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Long 1.\rLong 2.\rLong 3.\rLong 4.\rLong 5.\rLong 6.\rLong 7.\rLong 8.\rLong 9.\rLong 10.\rLong 11.\rLong 12.\rLong 13.\rLong 14.\rLong 15.\rLong 16.\rLong 17.\rLong 18.\rLong 19.\rLong 20.\rLong 21.\rLong 22.\rLong 23.\rLong 24.\rLong 25.\rLong 26.\rLong 27.\rLong 28.\rLong 29.\rLong 30.\rLong 31.\rLong 32.\rLong 33.\rLong 34.\rLong 35.\rLong 36."}
+      ]
+    },
+    {
+      "name": "fn-thread-column-split", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"set","target":"body-0","props":{"textFramePreferences":{"textColumnCount":2,"textColumnGutter":18}}},
+        {"op":"setFootnoteOptions","props":{"noSplitting":false,"enableStraddling":false,"spacer":4}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-column-keep", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"set","target":"body-0","props":{"textFramePreferences":{"textColumnCount":2,"textColumnGutter":18}}},
+        {"op":"setFootnoteOptions","props":{"noSplitting":true,"enableStraddling":false,"spacer":4}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-frame-split", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"noSplitting":false,"enableStraddling":false,"spacer":4}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    },
+    {
+      "name": "fn-thread-frame-keep", "rules": ["footnotes.threads"],
+      "steps": [
+        {"op":"setFootnoteOptions","props":{"noSplitting":true,"enableStraddling":false,"spacer":4}},
+        {"op":"insertFootnote","target":"body-0","at":92},
+        {"op":"insertFootnoteText","target":"body-0","at":2,"text":"Note 01.\rNote 02.\rNote 03.\rNote 04.\rNote 05.\rNote 06.\rNote 07.\rNote 08.\rNote 09.\rNote 10.\rNote 11.\rNote 12.\rNote 13.\rNote 14.\rNote 15.\rNote 16.\rNote 17.\rNote 18.\rNote 19.\rNote 20.\rNote 21.\rNote 22.\rNote 23.\rNote 24."},
+        {"op":"insertText","target":"body-0","at":94,"text":"\rBody A.\rBody B.\rBody C."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "fixture": "pagesx",
+  "about": "Three parent generations on left and right document pages; inherited guide coordinates and layer visibility.",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "pagesx-inherited", "maxLocalError": 2.0, "steps": [{"op":"parentSet","master":2,"name":"Grandchild renamed"}]},
+    {"name": "pagesx-remove-base", "maxLocalError": 2.0, "steps": [{"op":"parentSet","master":1,"basedOn":-1}]},
+    {"name": "pagesx-remove-parent", "maxLocalError": 2.0, "steps": [{"op":"parentSet","master":2,"basedOn":-1}]}
+  ]
+}

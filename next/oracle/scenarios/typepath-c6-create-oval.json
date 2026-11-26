@@ -1,0 +1,14 @@
+{
+  "fixture": "typepath-c5-oval",
+  "about": "Create path text on a closed shape (oval): the new TextPath's EndBracket and default options as InDesign makes them.",
+  "extension": "textpath2",
+  "scenarios": [
+    {
+      "name": "typepath-c6-create-oval",
+      "steps": [
+        {"op": "removeTextFromPath", "target": "path"},
+        {"op": "createTextPath", "target": "path", "text": "AV Oag"}
+      ]
+    }
+  ]
+}

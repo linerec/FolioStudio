@@ -1,0 +1,17 @@
+{
+  "fixture": "basic",
+  "about": "The Swatches panel: new process/spot/RGB colour swatches, editing values and type, renaming, deleting with a replacement, tints, duplicating.",
+  "scenarios": [
+    {"name": "noop", "steps": []},
+    {"name": "swatch-new-cmyk", "steps": [{"op": "swatchNew", "name": "Brand", "model": "process", "space": "cmyk", "value": [0, 50, 100, 0]}]},
+    {"name": "swatch-new-value-name", "steps": [{"op": "swatchNew", "name": "C=10 M=20 Y=30 K=40", "model": "process", "space": "cmyk", "value": [10, 20, 30, 40]}]},
+    {"name": "swatch-new-spot", "steps": [{"op": "swatchNew", "name": "PMS 485", "model": "spot", "space": "cmyk", "value": [0, 95, 100, 0]}]},
+    {"name": "swatch-new-rgb", "steps": [{"op": "swatchNew", "name": "R=255 G=0 B=0", "model": "process", "space": "rgb", "value": [255, 0, 0]}]},
+    {"name": "swatch-edit-values", "steps": [{"op": "swatchSet", "name": "Oracle Blue", "props": {"value": [80, 40, 0, 10]}}]},
+    {"name": "swatch-to-spot", "steps": [{"op": "swatchSet", "name": "Oracle Blue", "props": {"model": "spot"}}]},
+    {"name": "swatch-rename", "steps": [{"op": "swatchSet", "name": "Oracle Orange", "props": {"rename": "Brand Orange"}}]},
+    {"name": "swatch-delete-replace", "steps": [{"op": "swatchDelete", "name": "Oracle Orange", "replace": "Black"}]},
+    {"name": "tint-new", "steps": [{"op": "tintNew", "base": "Oracle Blue", "tint": 50}]},
+    {"name": "swatch-duplicate", "steps": [{"op": "swatchDuplicate", "name": "Oracle Blue"}]}
+  ]
+}

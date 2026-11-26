@@ -1,0 +1,242 @@
+{
+  "fixture": "basic",
+  "about": "Effects panel / control bar: object, fill, stroke, content (graphic) opacity and blend mode.",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "opacity-object-50",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-object-0",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-back-100",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 100
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-fill-40",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "fillTransparencySettings": {
+              "blendingSettings": {
+                "opacity": 40
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-stroke-30",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-plain",
+          "props": {
+            "strokeTransparencySettings": {
+              "blendingSettings": {
+                "opacity": 30
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-content-60",
+      "steps": [
+        {
+          "op": "setGraphic",
+          "target": "img",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 60
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-text-frame",
+      "steps": [
+        {
+          "op": "set",
+          "target": "tf",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 70
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-group",
+      "steps": [
+        {
+          "op": "set",
+          "target": "grp",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 45
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "blend-multiply",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "blend-screen-opacity",
+      "steps": [
+        {
+          "op": "set",
+          "target": "oval",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "blendMode": "BlendMode.SCREEN",
+                "opacity": 80
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "opacity-rotated",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-rot",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "opacity": 55
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "blend-graphic-multiply",
+      "steps": [
+        {
+          "op": "setGraphic",
+          "target": "img",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "blendMode": "BlendMode.MULTIPLY"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "blend-back-normal",
+      "steps": [
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "blendMode": "BlendMode.MULTIPLY",
+                "opacity": 50
+              }
+            }
+          }
+        },
+        {
+          "op": "set",
+          "target": "r-fill",
+          "props": {
+            "transparencySettings": {
+              "blendingSettings": {
+                "blendMode": "BlendMode.NORMAL"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

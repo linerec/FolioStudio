@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="20.4">
+	<Story Self="u136" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Body">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>First paragraph for a footnote.</Content>
+				<Br />
+				<Content>Second paragraph for another note.</Content>
+				<Br />
+				<Content>Third paragraph ends here</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Position="Superscript">
+				<Footnote>
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content><?ACE 4?>	Long 1.</Content>
+							<Br />
+							<Content>Long 2.</Content>
+							<Br />
+							<Content>Long 3.</Content>
+							<Br />
+							<Content>Long 4.</Content>
+							<Br />
+							<Content>Long 5.</Content>
+							<Br />
+							<Content>Long 6.</Content>
+							<Br />
+							<Content>Long 7.</Content>
+							<Br />
+							<Content>Long 8.</Content>
+							<Br />
+							<Content>Long 9.</Content>
+							<Br />
+							<Content>Long 10.</Content>
+							<Br />
+							<Content>Long 11.</Content>
+							<Br />
+							<Content>Long 12.</Content>
+							<Br />
+							<Content>Long 13.</Content>
+							<Br />
+							<Content>Long 14.</Content>
+							<Br />
+							<Content>Long 15.</Content>
+							<Br />
+							<Content>Long 16.</Content>
+							<Br />
+							<Content>Long 17.</Content>
+							<Br />
+							<Content>Long 18.</Content>
+							<Br />
+							<Content>Long 19.</Content>
+							<Br />
+							<Content>Long 20.</Content>
+							<Br />
+							<Content>Long 21.</Content>
+							<Br />
+							<Content>Long 22.</Content>
+							<Br />
+							<Content>Long 23.</Content>
+							<Br />
+							<Content>Long 24.</Content>
+							<Br />
+							<Content>Long 25.</Content>
+							<Br />
+							<Content>Long 26.</Content>
+							<Br />
+							<Content>Long 27.</Content>
+							<Br />
+							<Content>Long 28.</Content>
+							<Br />
+							<Content>Long 29.</Content>
+							<Br />
+							<Content>Long 30.</Content>
+							<Br />
+							<Content>Long 31.</Content>
+							<Br />
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+							<Content>Long 32.</Content>
+							<Br />
+							<Content>Long 33.</Content>
+							<Br />
+							<Content>Long 34.</Content>
+							<Br />
+							<Content>Long 35.</Content>
+							<Br />
+							<Content>Long 36.</Content>
+						</CharacterStyleRange>
+					</ParagraphStyleRange>
+				</Footnote>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

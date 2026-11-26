@@ -1,0 +1,227 @@
+{
+ "fixture": "text-format",
+ "scenarios": [
+  {
+   "name": "bs-edit-size",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "pointSize": 14
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-font",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "appliedFont": "Times New Roman"
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-align",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "justification": "CENTER_ALIGN"
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-multi",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "pointSize": 14,
+      "leading": 20,
+      "spaceAfter": 5,
+      "leftIndent": 7
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-based",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "basedOn": "Format Body"
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-next",
+   "steps": [
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "nextStyle": "Format Heading"
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-child",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "Child",
+     "props": {
+      "basedOn": "[Basic Paragraph]",
+      "spaceAfter": 3
+     }
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "pointSize": 14
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-applied",
+   "steps": [
+    {
+     "op": "paragraphStyle",
+     "target": "destination",
+     "start": 0,
+     "end": 1,
+     "style": "[Basic Paragraph]",
+     "clear": false
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "pointSize": 24,
+      "leading": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-edit-applied-twice",
+   "steps": [
+    {
+     "op": "paragraphStyle",
+     "target": "destination",
+     "start": 0,
+     "end": 1,
+     "style": "[Basic Paragraph]",
+     "clear": false
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "pointSize": 24
+     }
+    },
+    {
+     "op": "styleEdit",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]",
+     "props": {
+      "pointSize": 12
+     }
+    }
+   ]
+  },
+  {
+   "name": "bs-duplicate",
+   "steps": [
+    {
+     "op": "textStyle",
+     "do": "duplicate",
+     "kind": "paragraph",
+     "style": "[Basic Paragraph]"
+    }
+   ]
+  },
+  {
+   "name": "bs-delete-replace",
+   "steps": [
+    {
+     "op": "styleCreate",
+     "kind": "paragraph",
+     "name": "C2",
+     "props": {
+      "pointSize": 33
+     }
+    },
+    {
+     "op": "paragraphStyle",
+     "target": "destination",
+     "start": 0,
+     "end": 1,
+     "style": "C2",
+     "clear": false
+    },
+    {
+     "op": "styleDelete",
+     "kind": "paragraph",
+     "style": "C2",
+     "replacement": "[Basic Paragraph]"
+    }
+   ]
+  },
+  {
+   "name": "bs-redefine",
+   "steps": [
+    {
+     "op": "paragraphStyle",
+     "target": "format",
+     "start": 11,
+     "end": 16,
+     "style": "[Basic Paragraph]",
+     "clear": true
+    },
+    {
+     "op": "textFormat",
+     "target": "format",
+     "start": 11,
+     "end": 16,
+     "props": {
+      "pointSize": 22
+     }
+    },
+    {
+     "op": "styleRedefine",
+     "kind": "paragraph",
+     "target": "format",
+     "start": 11,
+     "end": 16,
+     "style": "[Basic Paragraph]"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,194 @@
+{
+  "fixture": "pages-parent",
+  "about": "Parent items on document pages (Ctrl+Shift+click, Pages panel menu): an override copies the parent's item onto the page and adds the pair to the page's OverrideList; removing the override, detaching it and deleting the copy; Allow Parent Item Overrides. InDesign's scripting overrides only the first rectangle of a parent page, so these use that rectangle on right-hand pages (a left-hand parent item lands one page too far left in the DOM).",
+  "scenarios": [
+    {
+      "name": "parent-noop",
+      "steps": []
+    },
+    {
+      "name": "parent-override",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 0,
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "parent-override-spread",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 2,
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "parent-override-last",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 4,
+          "label": "copy"
+        }
+      ]
+    },
+    {
+      "name": "parent-override-two",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 0,
+          "label": "copy-a"
+        },
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 2,
+          "label": "copy-b"
+        }
+      ]
+    },
+    {
+      "name": "parent-override-move",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 0,
+          "label": "copy"
+        },
+        {
+          "op": "move",
+          "target": "copy",
+          "by": [
+            14,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parent-remove-override",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 2,
+          "label": "copy"
+        },
+        {
+          "op": "removeOverride",
+          "target": "copy",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "name": "parent-detach",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 2,
+          "label": "copy"
+        },
+        {
+          "op": "detachParent",
+          "target": "copy",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "name": "parent-delete-copy",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 4,
+          "label": "copy"
+        },
+        {
+          "op": "delete",
+          "target": "copy"
+        }
+      ]
+    },
+    {
+      "name": "parent-allow-off",
+      "steps": [
+        {
+          "op": "allowOverrides",
+          "target": "parent-rect-R",
+          "allow": false
+        }
+      ]
+    },
+    {
+      "name": "parent-apply-none-after-override",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 0,
+          "label": "copy"
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            0
+          ],
+          "master": null
+        }
+      ]
+    },
+    {
+      "name": "parent-apply-same-after-override",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 2,
+          "label": "copy"
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            2
+          ],
+          "master": 0
+        }
+      ]
+    },
+    {
+      "name": "parent-apply-same-after-delete",
+      "steps": [
+        {
+          "op": "overrideParent",
+          "target": "parent-rect-R",
+          "page": 4,
+          "label": "copy"
+        },
+        {
+          "op": "delete",
+          "target": "copy"
+        },
+        {
+          "op": "applyMaster",
+          "pages": [
+            4
+          ],
+          "master": 0
+        }
+      ]
+    }
+  ]
+}

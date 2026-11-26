@@ -1,0 +1,197 @@
+{
+  "fixture": "editorial",
+  "extension": "changes",
+  "scenarios": [
+    {"name":"noop","text":true,"steps":[]},
+    {
+      "name": "changes-off",
+      "text": true,
+      "steps": [
+        {
+          "op": "setTrackChanges",
+          "target": "body-0",
+          "document": false,
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "changes-all-off",
+      "text": true,
+      "steps": [
+        {
+          "op": "setTrackChanges",
+          "target": "body-0",
+          "document": true,
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "changes-all-on",
+      "text": true,
+      "steps": [
+        {
+          "op": "setTrackChanges",
+          "target": "body-0",
+          "document": true,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "changes-accept-insert",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": 0,
+          "user": "",
+          "accept": true
+        }
+      ]
+    },
+    {
+      "name": "changes-reject-insert",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": 0,
+          "user": "",
+          "accept": false
+        }
+      ]
+    },
+    {
+      "name": "changes-accept-delete",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": 1,
+          "user": "",
+          "accept": true
+        }
+      ]
+    },
+    {
+      "name": "changes-reject-delete",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": 1,
+          "user": "",
+          "accept": false
+        }
+      ]
+    },
+    {
+      "name": "changes-accept-story",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": -1,
+          "user": "",
+          "accept": true
+        }
+      ]
+    },
+    {
+      "name": "changes-reject-story",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": -1,
+          "user": "",
+          "accept": false
+        }
+      ]
+    },
+    {
+      "name": "changes-accept-document",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": true,
+          "index": -1,
+          "user": "",
+          "accept": true
+        }
+      ]
+    },
+    {
+      "name": "changes-reject-document",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": true,
+          "index": -1,
+          "user": "",
+          "accept": false
+        }
+      ]
+    },
+    {
+      "name": "changes-accept-user",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": true,
+          "index": -1,
+          "user": "Reviewer A",
+          "accept": true
+        }
+      ]
+    },
+    {
+      "name": "changes-reject-user",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": false,
+          "index": -1,
+          "user": "Reviewer A",
+          "accept": false
+        }
+      ]
+    },
+    {
+      "name": "changes-other-user",
+      "text": true,
+      "steps": [
+        {
+          "op": "resolveChanges",
+          "target": "body-0",
+          "document": true,
+          "index": -1,
+          "user": "Other",
+          "accept": false
+        }
+      ]
+    }
+  ]
+}

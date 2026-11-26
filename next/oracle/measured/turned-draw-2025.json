@@ -1,0 +1,7228 @@
+{
+ "about": "InDesign 2025 (20.5.5), real mouse drawing with the shape and frame tools on a 300 x 400 point page of a spread turned by View > Rotate Spread (cw = 90 CW, ccw = 90 CCW, 180), liveinput-c2. Points are page-as-shown points from its top-left corner; Shift/Alt are held while dragging and released after the button (realinput mod_release_delay). `idml` is what the exported IDML stores for the new item.",
+ "cases": [
+  {
+   "turn": "180",
+   "label": "alt-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.667,
+    80,
+    190,
+    160
+   ],
+   "down": [
+    110.061,
+    119.928
+   ],
+   "up": [
+    189.904,
+    159.986
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -39.66666666666666,
+      -40.0
+     ],
+     [
+      40.0,
+      -80.0
+     ],
+     [
+      -39.66666666666666,
+      -120.0
+     ],
+     [
+      -119.33333333333331,
+      -80.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "alt-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.667,
+    80,
+    190,
+    160
+   ],
+   "down": [
+    110.061,
+    119.928
+   ],
+   "up": [
+    189.904,
+    159.986
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      0.1666666666666572,
+      -120.0
+     ],
+     [
+      -79.5,
+      -120.0
+     ],
+     [
+      -119.33333333333331,
+      -80.0
+     ],
+     [
+      -79.50000000000001,
+      -40.00000000000001
+     ],
+     [
+      0.16666666666661456,
+      -39.99999999999998
+     ],
+     [
+      40.0,
+      -79.99999999999994
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "alt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.667,
+    80,
+    190,
+    160
+   ],
+   "down": [
+    110.061,
+    119.928
+   ],
+   "up": [
+    189.904,
+    159.986
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -119.33333333333331,
+      -120.0
+     ],
+     [
+      -119.33333333333331,
+      -40.0
+     ],
+     [
+      40.0,
+      -40.0
+     ],
+     [
+      40.0,
+      -120.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "alt-reverse",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    110.333,
+    120,
+    269.667,
+    200
+   ],
+   "down": [
+    189.904,
+    159.986
+   ],
+   "up": [
+    110.061,
+    119.928
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      79.83333333333331,
+      -80.0
+     ],
+     [
+      0.1666666666666572,
+      -80.0
+     ],
+     [
+      -39.66666666666666,
+      -40.0
+     ],
+     [
+      0.16666666666664298,
+      0.0
+     ],
+     [
+      79.83333333333327,
+      2.842170943040401e-14
+     ],
+     [
+      119.66666666666666,
+      -39.99999999999994
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "altclick-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    89.789,
+    169.895,
+    189.789,
+    229.895
+   ],
+   "at": [
+    139.976,
+    200.044
+   ],
+   "dims": [
+    100,
+    60
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -60.21053916529604,
+      -30.10526958264802
+     ],
+     [
+      -60.21053916529604,
+      29.89473041735198
+     ],
+     [
+      39.78946083470396,
+      29.89473041735198
+     ],
+     [
+      39.78946083470396,
+      -30.10526958264802
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "click-ovalframe",
+   "tool": "ovalframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80.333,
+    210,
+    170.333
+   ],
+   "at": [
+    59.923,
+    80.08
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -15.0,
+      -29.666666666666657
+     ],
+     [
+      60.0,
+      -74.66666666666666
+     ],
+     [
+      -15.0,
+      -119.66666666666666
+     ],
+     [
+      -90.0,
+      -74.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "click-polyframe",
+   "tool": "polyframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80.333,
+    210,
+    170.333
+   ],
+   "at": [
+    59.923,
+    80.08
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      22.499999999999986,
+      -119.66666666666667
+     ],
+     [
+      -52.500000000000014,
+      -119.66666666666666
+     ],
+     [
+      -90.0,
+      -74.66666666666666
+     ],
+     [
+      -52.50000000000003,
+      -29.666666666666657
+     ],
+     [
+      22.49999999999995,
+      -29.66666666666663
+     ],
+     [
+      60.0,
+      -74.6666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "click-rect",
+   "tool": "rect",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80.333,
+    210,
+    170.333
+   ],
+   "at": [
+    59.923,
+    80.08
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -90.0,
+      -119.66666666666666
+     ],
+     [
+      -90.0,
+      -29.666666666666657
+     ],
+     [
+      60.0,
+      -29.666666666666657
+     ],
+     [
+      60.0,
+      -119.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "click-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80.333,
+    210,
+    170.333
+   ],
+   "at": [
+    59.923,
+    80.08
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -90.0,
+      -119.66666666666666
+     ],
+     [
+      -90.0,
+      -29.666666666666657
+     ],
+     [
+      60.0,
+      -29.666666666666657
+     ],
+     [
+      60.0,
+      -119.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "d1-oval",
+   "tool": "oval",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    150.077
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -35.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -94.83333333333333
+     ],
+     [
+      -35.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -94.83333333333333
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "d1-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    150.077
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -35.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -94.83333333333333
+     ],
+     [
+      -35.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -94.83333333333333
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "d1-poly",
+   "tool": "poly",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    150.077
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      2.499999999999986,
+      -139.66666666666663
+     ],
+     [
+      -72.50000000000001,
+      -139.66666666666663
+     ],
+     [
+      -110.0,
+      -94.83333333333331
+     ],
+     [
+      -72.50000000000003,
+      -50.0
+     ],
+     [
+      2.4999999999999503,
+      -49.999999999999964
+     ],
+     [
+      40.0,
+      -94.83333333333326
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "d1-rect",
+   "tool": "rect",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    150.077
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -110.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -139.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "d1-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    150.077
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -110.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -139.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "rev-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    39.909,
+    150.077
+   ],
+   "up": [
+    189.904,
+    60.051
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -35.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -94.83333333333333
+     ],
+     [
+      -35.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -94.83333333333333
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "rev-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40,
+    60.333,
+    190,
+    150
+   ],
+   "down": [
+    189.904,
+    150.077
+   ],
+   "up": [
+    39.909,
+    60.051
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -110.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -139.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shift-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40,
+    60.333,
+    99.667,
+    120
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    119.928
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -80.16666666666667,
+      -80.0
+     ],
+     [
+      -50.33333333333334,
+      -109.83333333333333
+     ],
+     [
+      -80.16666666666667,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -109.83333333333333
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shift-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40,
+    60.333,
+    108.897,
+    120
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    119.928
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -58.32715090752852,
+      -139.66666666666666
+     ],
+     [
+      -92.77571696917619,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -109.83333333333333
+     ],
+     [
+      -92.77571696917619,
+      -80.0
+     ],
+     [
+      -58.327150907528534,
+      -79.99999999999999
+     ],
+     [
+      -41.102867876704686,
+      -109.83333333333329
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shift-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40,
+    60.333,
+    99.667,
+    120
+   ],
+   "down": [
+    39.909,
+    60.051
+   ],
+   "up": [
+    189.904,
+    119.928
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -110.0,
+      -139.66666666666666
+     ],
+     [
+      -110.0,
+      -80.0
+     ],
+     [
+      -50.33333333333334,
+      -80.0
+     ],
+     [
+      -50.33333333333334,
+      -139.66666666666666
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shift-tall",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    100,
+    40.333,
+    130.333,
+    70.667
+   ],
+   "down": [
+    99.949,
+    40.022
+   ],
+   "up": [
+    130.075,
+    189.924
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -34.83333333333333,
+      -129.33333333333331
+     ],
+     [
+      -19.666666666666664,
+      -144.5
+     ],
+     [
+      -34.83333333333333,
+      -159.66666666666666
+     ],
+     [
+      -50.0,
+      -144.5
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shift-up-left",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    140,
+    100,
+    190,
+    150
+   ],
+   "down": [
+    189.904,
+    150.077
+   ],
+   "up": [
+    39.909,
+    99.898
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -10.0,
+      -100.0
+     ],
+     [
+      -10.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -50.0
+     ],
+     [
+      40.0,
+      -100.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shiftalt-oval",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.333,
+    80,
+    150.333,
+    160
+   ],
+   "down": [
+    110.061,
+    119.928
+   ],
+   "up": [
+    189.904,
+    159.986
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -39.66666666666666,
+      -40.0
+     ],
+     [
+      0.3333333333333428,
+      -80.0
+     ],
+     [
+      -39.66666666666666,
+      -120.0
+     ],
+     [
+      -79.66666666666666,
+      -80.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "180",
+   "label": "shiftalt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.333,
+    80,
+    150.333,
+    160
+   ],
+   "down": [
+    110.061,
+    119.928
+   ],
+   "up": [
+    189.904,
+    159.986
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     -1.0,
+     0.0,
+     -0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     -1.0,
+     -0.0,
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -79.66666666666666,
+      -120.0
+     ],
+     [
+      -79.66666666666666,
+      -40.0
+     ],
+     [
+      0.3333333333333428,
+      -40.0
+     ],
+     [
+      0.3333333333333428,
+      -120.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "alt-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.2,
+    80.2,
+    190.2,
+    159.8
+   ],
+   "down": [
+    109.987,
+    119.941
+   ],
+   "up": [
+    189.979,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -89.80000000000001,
+      9.8
+     ],
+     [
+      -9.8,
+      -30.0
+     ],
+     [
+      -89.80000000000001,
+      -69.8
+     ],
+     [
+      -169.8,
+      -30.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "alt-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.2,
+    80.2,
+    190.2,
+    159.8
+   ],
+   "down": [
+    109.987,
+    119.941
+   ],
+   "up": [
+    189.979,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -49.80000000000002,
+      -69.8
+     ],
+     [
+      -129.80000000000004,
+      -69.79999999999998
+     ],
+     [
+      -169.8,
+      -30.0
+     ],
+     [
+      -129.80000000000004,
+      9.799999999999997
+     ],
+     [
+      -49.80000000000006,
+      9.800000000000018
+     ],
+     [
+      -9.800000000000011,
+      -29.99999999999994
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "alt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.2,
+    80.2,
+    190.2,
+    159.8
+   ],
+   "down": [
+    109.987,
+    119.941
+   ],
+   "up": [
+    189.979,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -169.8,
+      -69.8
+     ],
+     [
+      -169.8,
+      9.8
+     ],
+     [
+      -9.8,
+      9.8
+     ],
+     [
+      -9.8,
+      -69.8
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "alt-reverse",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    110.2,
+    120,
+    270.2,
+    199.6
+   ],
+   "down": [
+    189.979,
+    159.978
+   ],
+   "up": [
+    109.987,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      30.199999999999996,
+      -30.0
+     ],
+     [
+      -49.80000000000002,
+      -29.999999999999993
+     ],
+     [
+      -89.80000000000001,
+      9.799999999999999
+     ],
+     [
+      -49.80000000000004,
+      49.599999999999994
+     ],
+     [
+      30.19999999999996,
+      49.600000000000016
+     ],
+     [
+      70.20000000000002,
+      9.800000000000056
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "altclick-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    90.242,
+    169.96,
+    190.242,
+    229.96
+   ],
+   "at": [
+    139.925,
+    200.015
+   ],
+   "dims": [
+    100,
+    60
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -109.75811724153904,
+      19.96045983355978
+     ],
+     [
+      -109.75811724153904,
+      79.96045983355978
+     ],
+     [
+      -9.75811724153904,
+      79.96045983355978
+     ],
+     [
+      -9.75811724153904,
+      19.96045983355978
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "click-ovalframe",
+   "tool": "ovalframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.2,
+    80,
+    210.2,
+    170
+   ],
+   "at": [
+    59.933,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -64.80000000000001,
+      20.0
+     ],
+     [
+      10.199999999999989,
+      -25.0
+     ],
+     [
+      -64.80000000000001,
+      -70.0
+     ],
+     [
+      -139.8,
+      -25.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "click-polyframe",
+   "tool": "polyframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.2,
+    80,
+    210.2,
+    170
+   ],
+   "at": [
+    59.933,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -27.300000000000026,
+      -70.0
+     ],
+     [
+      -102.30000000000003,
+      -70.0
+     ],
+     [
+      -139.8,
+      -25.0
+     ],
+     [
+      -102.30000000000004,
+      20.000000000000007
+     ],
+     [
+      -27.30000000000006,
+      20.000000000000036
+     ],
+     [
+      10.199999999999989,
+      -24.999999999999932
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "click-rect",
+   "tool": "rect",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.2,
+    80,
+    210.2,
+    170
+   ],
+   "at": [
+    59.933,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -139.8,
+      -70.0
+     ],
+     [
+      -139.8,
+      20.0
+     ],
+     [
+      10.199999999999989,
+      20.0
+     ],
+     [
+      10.199999999999989,
+      -70.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "click-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.2,
+    80,
+    210.2,
+    170
+   ],
+   "at": [
+    59.933,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -139.8,
+      -70.0
+     ],
+     [
+      -139.8,
+      20.0
+     ],
+     [
+      10.199999999999989,
+      20.0
+     ],
+     [
+      10.199999999999989,
+      -70.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "d1-oval",
+   "tool": "oval",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.65,
+      0.0
+     ],
+     [
+      -9.8,
+      -45.0
+     ],
+     [
+      -84.65,
+      -90.0
+     ],
+     [
+      -159.5,
+      -45.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "d1-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.65,
+      0.0
+     ],
+     [
+      -9.8,
+      -45.0
+     ],
+     [
+      -84.65,
+      -90.0
+     ],
+     [
+      -159.5,
+      -45.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "d1-poly",
+   "tool": "poly",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -47.225000000000016,
+      -90.0
+     ],
+     [
+      -122.07500000000002,
+      -90.0
+     ],
+     [
+      -159.5,
+      -45.0
+     ],
+     [
+      -122.07500000000003,
+      7.105427357601002e-15
+     ],
+     [
+      -47.22500000000006,
+      3.552713678800501e-14
+     ],
+     [
+      -9.800000000000011,
+      -44.999999999999936
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "d1-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -47.225000000000016,
+      -90.0
+     ],
+     [
+      -122.07500000000002,
+      -90.0
+     ],
+     [
+      -159.5,
+      -45.0
+     ],
+     [
+      -122.07500000000003,
+      7.105427357601002e-15
+     ],
+     [
+      -47.22500000000006,
+      3.552713678800501e-14
+     ],
+     [
+      -9.800000000000011,
+      -44.999999999999936
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "d1-rect",
+   "tool": "rect",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.5,
+      -90.0
+     ],
+     [
+      -159.5,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "d1-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.5,
+      -90.0
+     ],
+     [
+      -159.5,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "rev-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.974,
+    150.008
+   ],
+   "up": [
+    189.979,
+    59.964
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.65,
+      0.0
+     ],
+     [
+      -9.8,
+      -45.0
+     ],
+     [
+      -84.65,
+      -90.0
+     ],
+     [
+      -159.5,
+      -45.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "rev-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.5,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    189.979,
+    150.008
+   ],
+   "up": [
+    39.974,
+    59.964
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.5,
+      -90.0
+     ],
+     [
+      -159.5,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shift-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40.5,
+    60,
+    100.5,
+    120
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -129.5,
+      -30.0
+     ],
+     [
+      -99.5,
+      -60.0
+     ],
+     [
+      -129.5,
+      -90.0
+     ],
+     [
+      -159.5,
+      -60.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shift-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40.5,
+    60,
+    109.782,
+    120
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -107.5384757729337,
+      -90.0
+     ],
+     [
+      -142.17949192431124,
+      -90.0
+     ],
+     [
+      -159.5,
+      -60.0
+     ],
+     [
+      -142.17949192431124,
+      -30.0
+     ],
+     [
+      -107.53847577293371,
+      -29.99999999999998
+     ],
+     [
+      -90.21796769724492,
+      -59.99999999999995
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shift-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40.5,
+    60,
+    100.5,
+    120
+   ],
+   "down": [
+    39.974,
+    59.964
+   ],
+   "up": [
+    189.979,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.5,
+      -90.0
+     ],
+     [
+      -159.5,
+      -30.0
+     ],
+     [
+      -99.5,
+      -30.0
+     ],
+     [
+      -99.5,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shift-tall",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    100.2,
+    40.2,
+    130,
+    70
+   ],
+   "down": [
+    100.008,
+    40.024
+   ],
+   "up": [
+    129.946,
+    190.046
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.9,
+      -80.0
+     ],
+     [
+      -70.0,
+      -94.9
+     ],
+     [
+      -84.9,
+      -109.80000000000001
+     ],
+     [
+      -99.80000000000001,
+      -94.9
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shift-up-left",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    140.2,
+    100,
+    190.2,
+    150
+   ],
+   "down": [
+    189.979,
+    150.008
+   ],
+   "up": [
+    39.974,
+    100.001
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -59.8,
+      -50.0
+     ],
+     [
+      -59.8,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -50.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shiftalt-oval",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.4,
+    80.2,
+    150,
+    159.8
+   ],
+   "down": [
+    109.987,
+    119.941
+   ],
+   "up": [
+    189.979,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -89.80000000000001,
+      9.8
+     ],
+     [
+      -50.000000000000014,
+      -30.0
+     ],
+     [
+      -89.80000000000001,
+      -69.8
+     ],
+     [
+      -129.60000000000002,
+      -30.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "ccw",
+   "label": "shiftalt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.4,
+    80.2,
+    150,
+    159.8
+   ],
+   "down": [
+    109.987,
+    119.941
+   ],
+   "up": [
+    189.979,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -129.60000000000002,
+      -69.8
+     ],
+     [
+      -129.60000000000002,
+      9.8
+     ],
+     [
+      -50.000000000000014,
+      9.8
+     ],
+     [
+      -50.000000000000014,
+      -69.8
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "alt-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.2,
+    80.2,
+    190.2,
+    159.8
+   ],
+   "down": [
+    109.924,
+    119.941
+   ],
+   "up": [
+    190.017,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -89.80000000000001,
+      9.8
+     ],
+     [
+      -9.8,
+      -30.0
+     ],
+     [
+      -89.80000000000001,
+      -69.8
+     ],
+     [
+      -169.8,
+      -30.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "alt-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.2,
+    80.2,
+    190.2,
+    159.8
+   ],
+   "down": [
+    109.924,
+    119.941
+   ],
+   "up": [
+    190.017,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -49.80000000000002,
+      -69.8
+     ],
+     [
+      -129.80000000000004,
+      -69.79999999999998
+     ],
+     [
+      -169.8,
+      -30.0
+     ],
+     [
+      -129.80000000000004,
+      9.799999999999997
+     ],
+     [
+      -49.80000000000006,
+      9.800000000000018
+     ],
+     [
+      -9.800000000000011,
+      -29.99999999999994
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "alt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.2,
+    80.2,
+    190.2,
+    159.8
+   ],
+   "down": [
+    109.924,
+    119.941
+   ],
+   "up": [
+    190.017,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -169.8,
+      -69.8
+     ],
+     [
+      -169.8,
+      9.8
+     ],
+     [
+      -9.8,
+      9.8
+     ],
+     [
+      -9.8,
+      -69.8
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "alt-reverse",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    110.2,
+    120,
+    270.2,
+    199.6
+   ],
+   "down": [
+    190.017,
+    159.978
+   ],
+   "up": [
+    109.924,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      30.199999999999996,
+      -30.0
+     ],
+     [
+      -49.80000000000002,
+      -29.999999999999993
+     ],
+     [
+      -89.80000000000001,
+      9.799999999999999
+     ],
+     [
+      -49.80000000000004,
+      49.599999999999994
+     ],
+     [
+      30.19999999999996,
+      49.600000000000016
+     ],
+     [
+      70.20000000000002,
+      9.800000000000056
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "altclick-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    90.684,
+    169.96,
+    190.684,
+    229.96
+   ],
+   "at": [
+    140.058,
+    200.015
+   ],
+   "dims": [
+    100,
+    60
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -109.3162055335969,
+      19.96045983355978
+     ],
+     [
+      -109.3162055335969,
+      79.96045983355978
+     ],
+     [
+      -9.3162055335969,
+      79.96045983355978
+     ],
+     [
+      -9.3162055335969,
+      19.96045983355978
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "click-ovalframe",
+   "tool": "ovalframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.4,
+    80,
+    210.4,
+    170
+   ],
+   "at": [
+    59.965,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -64.6,
+      20.0
+     ],
+     [
+      10.400000000000006,
+      -25.0
+     ],
+     [
+      -64.6,
+      -70.0
+     ],
+     [
+      -139.6,
+      -25.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "click-polyframe",
+   "tool": "polyframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.4,
+    80,
+    210.4,
+    170
+   ],
+   "at": [
+    59.965,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -27.10000000000001,
+      -70.0
+     ],
+     [
+      -102.10000000000001,
+      -70.0
+     ],
+     [
+      -139.6,
+      -25.0
+     ],
+     [
+      -102.10000000000002,
+      20.000000000000007
+     ],
+     [
+      -27.100000000000044,
+      20.000000000000036
+     ],
+     [
+      10.400000000000006,
+      -24.999999999999932
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "click-rect",
+   "tool": "rect",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.4,
+    80,
+    210.4,
+    170
+   ],
+   "at": [
+    59.965,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -139.6,
+      -70.0
+     ],
+     [
+      -139.6,
+      20.0
+     ],
+     [
+      10.400000000000006,
+      20.0
+     ],
+     [
+      10.400000000000006,
+      -70.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "click-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60.4,
+    80,
+    210.4,
+    170
+   ],
+   "at": [
+    59.965,
+    80.062
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -139.6,
+      -70.0
+     ],
+     [
+      -139.6,
+      20.0
+     ],
+     [
+      10.400000000000006,
+      20.0
+     ],
+     [
+      10.400000000000006,
+      -70.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "d1-oval",
+   "tool": "oval",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.60000000000001,
+      0.0
+     ],
+     [
+      -9.8,
+      -45.0
+     ],
+     [
+      -84.60000000000001,
+      -90.0
+     ],
+     [
+      -159.4,
+      -45.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "d1-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.60000000000001,
+      0.0
+     ],
+     [
+      -9.8,
+      -45.0
+     ],
+     [
+      -84.60000000000001,
+      -90.0
+     ],
+     [
+      -159.4,
+      -45.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "d1-poly",
+   "tool": "poly",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -47.20000000000002,
+      -90.0
+     ],
+     [
+      -122.00000000000003,
+      -90.0
+     ],
+     [
+      -159.4,
+      -45.0
+     ],
+     [
+      -122.00000000000004,
+      7.105427357601002e-15
+     ],
+     [
+      -47.20000000000006,
+      3.552713678800501e-14
+     ],
+     [
+      -9.800000000000011,
+      -44.999999999999936
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "d1-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -47.20000000000002,
+      -90.0
+     ],
+     [
+      -122.00000000000003,
+      -90.0
+     ],
+     [
+      -159.4,
+      -45.0
+     ],
+     [
+      -122.00000000000004,
+      7.105427357601002e-15
+     ],
+     [
+      -47.20000000000006,
+      3.552713678800501e-14
+     ],
+     [
+      -9.800000000000011,
+      -44.999999999999936
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "d1-rect",
+   "tool": "rect",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.4,
+      -90.0
+     ],
+     [
+      -159.4,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "d1-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    150.008
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.4,
+      -90.0
+     ],
+     [
+      -159.4,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "rev-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    39.981,
+    150.008
+   ],
+   "up": [
+    190.017,
+    59.964
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.60000000000001,
+      0.0
+     ],
+     [
+      -9.8,
+      -45.0
+     ],
+     [
+      -84.60000000000001,
+      -90.0
+     ],
+     [
+      -159.4,
+      -45.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "rev-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    40.6,
+    60,
+    190.2,
+    150
+   ],
+   "down": [
+    190.017,
+    150.008
+   ],
+   "up": [
+    39.981,
+    59.964
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.4,
+      -90.0
+     ],
+     [
+      -159.4,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shift-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40.6,
+    60,
+    100.6,
+    120
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -129.4,
+      -30.0
+     ],
+     [
+      -99.4,
+      -60.0
+     ],
+     [
+      -129.4,
+      -90.0
+     ],
+     [
+      -159.4,
+      -60.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shift-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40.6,
+    60,
+    109.882,
+    120
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -107.4384757729337,
+      -90.0
+     ],
+     [
+      -142.07949192431124,
+      -90.0
+     ],
+     [
+      -159.4,
+      -60.0
+     ],
+     [
+      -142.07949192431124,
+      -30.0
+     ],
+     [
+      -107.43847577293371,
+      -29.99999999999998
+     ],
+     [
+      -90.11796769724492,
+      -59.99999999999995
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shift-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    40.6,
+    60,
+    100.6,
+    120
+   ],
+   "down": [
+    39.981,
+    59.964
+   ],
+   "up": [
+    190.017,
+    119.941
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.4,
+      -90.0
+     ],
+     [
+      -159.4,
+      -30.0
+     ],
+     [
+      -99.4,
+      -30.0
+     ],
+     [
+      -99.4,
+      -90.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shift-tall",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    100.2,
+    40.2,
+    130.2,
+    70.2
+   ],
+   "down": [
+    99.932,
+    40.025
+   ],
+   "up": [
+    130.066,
+    190.046
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -84.80000000000001,
+      -79.8
+     ],
+     [
+      -69.8,
+      -94.80000000000001
+     ],
+     [
+      -84.80000000000001,
+      -109.80000000000001
+     ],
+     [
+      -99.80000000000001,
+      -94.80000000000001
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shift-up-left",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    140.2,
+    100,
+    190.2,
+    150
+   ],
+   "down": [
+    190.017,
+    150.008
+   ],
+   "up": [
+    39.981,
+    100.001
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -59.8,
+      -50.0
+     ],
+     [
+      -59.8,
+      0.0
+     ],
+     [
+      -9.8,
+      0.0
+     ],
+     [
+      -9.8,
+      -50.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shiftalt-oval",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.4,
+    80.2,
+    150,
+    159.8
+   ],
+   "down": [
+    109.924,
+    119.941
+   ],
+   "up": [
+    190.017,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -89.80000000000001,
+      9.8
+     ],
+     [
+      -50.000000000000014,
+      -30.0
+     ],
+     [
+      -89.80000000000001,
+      -69.8
+     ],
+     [
+      -129.60000000000002,
+      -30.0
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "cw",
+   "label": "shiftalt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.4,
+    80.2,
+    150,
+    159.8
+   ],
+   "down": [
+    109.924,
+    119.941
+   ],
+   "up": [
+    190.017,
+    159.978
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.0,
+     1.0,
+     -1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.0,
+     -1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -129.60000000000002,
+      -69.8
+     ],
+     [
+      -129.60000000000002,
+      9.8
+     ],
+     [
+      -50.000000000000014,
+      9.8
+     ],
+     [
+      -50.000000000000014,
+      -69.8
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "alt-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.096,
+    80,
+    189.904,
+    160
+   ],
+   "down": [
+    109.88,
+    119.948
+   ],
+   "up": [
+    190.109,
+    159.934
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -119.90381056766581,
+      -88.20508075688772
+     ],
+     [
+      -40.0,
+      -128.20508075688775
+     ],
+     [
+      -119.90381056766581,
+      -168.20508075688775
+     ],
+     [
+      -199.80762113533163,
+      -128.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "alt-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.096,
+    80.0,
+    189.904,
+    160.0
+   ],
+   "down": [
+    109.88,
+    119.948
+   ],
+   "up": [
+    190.109,
+    159.934
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -79.95190528383293,
+      -168.20508075688778
+     ],
+     [
+      -159.85571585149873,
+      -168.20508075688775
+     ],
+     [
+      -199.80762113533163,
+      -128.20508075688775
+     ],
+     [
+      -159.85571585149876,
+      -88.20508075688775
+     ],
+     [
+      -79.95190528383296,
+      -88.20508075688772
+     ],
+     [
+      -40.0,
+      -128.2050807568877
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "alt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    30.096,
+    80,
+    189.904,
+    160
+   ],
+   "down": [
+    109.88,
+    119.948
+   ],
+   "up": [
+    190.109,
+    159.934
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -199.80762113533163,
+      -168.20508075688775
+     ],
+     [
+      -199.80762113533163,
+      -88.20508075688772
+     ],
+     [
+      -40.0,
+      -88.20508075688772
+     ],
+     [
+      -40.0,
+      -168.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "alt-reverse",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    110,
+    120,
+    269.808,
+    200
+   ],
+   "down": [
+    190.109,
+    159.934
+   ],
+   "up": [
+    109.88,
+    119.948
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -0.048094716167099705,
+      -128.20508075688772
+     ],
+     [
+      -79.9519052838329,
+      -128.20508075688772
+     ],
+     [
+      -119.90381056766579,
+      -88.20508075688772
+     ],
+     [
+      -79.95190528383293,
+      -48.20508075688773
+     ],
+     [
+      -0.04809471616713523,
+      -48.2050807568877
+     ],
+     [
+      39.903810567665815,
+      -88.20508075688767
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "altclick-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [
+    "alt"
+   ],
+   "shown": [
+    89.708,
+    169.965,
+    189.708,
+    229.965
+   ],
+   "at": [
+    139.933,
+    199.92
+   ],
+   "dims": [
+    100,
+    60
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -140.19610236672793,
+      -78.24023884093026
+     ],
+     [
+      -140.19610236672793,
+      -18.24023884093026
+     ],
+     [
+      -40.19610236672793,
+      -18.24023884093026
+     ],
+     [
+      -40.19610236672793,
+      -78.24023884093026
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "click-ovalframe",
+   "tool": "ovalframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80,
+    210,
+    170
+   ],
+   "at": [
+    59.965,
+    79.962
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -94.9038105676658,
+      -78.20508075688775
+     ],
+     [
+      -19.9038105676658,
+      -123.20508075688775
+     ],
+     [
+      -94.9038105676658,
+      -168.20508075688775
+     ],
+     [
+      -169.9038105676658,
+      -123.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "click-polyframe",
+   "tool": "polyframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80,
+    210,
+    170
+   ],
+   "at": [
+    59.965,
+    79.962
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -57.403810567665815,
+      -168.20508075688775
+     ],
+     [
+      -132.4038105676658,
+      -168.20508075688775
+     ],
+     [
+      -169.9038105676658,
+      -123.20508075688775
+     ],
+     [
+      -132.40381056766583,
+      -78.20508075688775
+     ],
+     [
+      -57.40381056766585,
+      -78.20508075688772
+     ],
+     [
+      -19.9038105676658,
+      -123.2050807568877
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "click-rect",
+   "tool": "rect",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80,
+    210,
+    170
+   ],
+   "at": [
+    59.965,
+    79.962
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -169.9038105676658,
+      -168.20508075688775
+     ],
+     [
+      -169.9038105676658,
+      -78.20508075688775
+     ],
+     [
+      -19.9038105676658,
+      -78.20508075688775
+     ],
+     [
+      -19.9038105676658,
+      -168.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "click-rectframe",
+   "tool": "rectframe",
+   "kind": "click",
+   "mods": [],
+   "shown": [
+    60,
+    80,
+    210,
+    170
+   ],
+   "at": [
+    59.965,
+    79.962
+   ],
+   "dims": [
+    150,
+    90
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -169.9038105676658,
+      -168.20508075688775
+     ],
+     [
+      -169.9038105676658,
+      -78.20508075688775
+     ],
+     [
+      -19.9038105676658,
+      -78.20508075688775
+     ],
+     [
+      -19.9038105676658,
+      -168.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "d1-oval",
+   "tool": "oval",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    150.003
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -115.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -143.20508075688772
+     ],
+     [
+      -115.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -143.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "d1-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    150.003
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -115.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -143.20508075688772
+     ],
+     [
+      -115.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -143.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "d1-poly",
+   "tool": "poly",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    150.003
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -77.50000000000001,
+      -188.20508075688775
+     ],
+     [
+      -152.5,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -143.20508075688772
+     ],
+     [
+      -152.50000000000003,
+      -98.20508075688772
+     ],
+     [
+      -77.50000000000006,
+      -98.2050807568877
+     ],
+     [
+      -40.0,
+      -143.20508075688767
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "d1-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    150.003
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -77.50000000000001,
+      -188.20508075688775
+     ],
+     [
+      -152.5,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -143.20508075688772
+     ],
+     [
+      -152.50000000000003,
+      -98.20508075688772
+     ],
+     [
+      -77.50000000000006,
+      -98.2050807568877
+     ],
+     [
+      -40.0,
+      -143.20508075688767
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "d1-rect",
+   "tool": "rect",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    150.003
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -190.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -188.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[Normal Graphics Frame]",
+    "contentType": "Unassigned"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "d1-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    150.003
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -190.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -188.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "rev-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    40.104,
+    150.003
+   ],
+   "up": [
+    190.109,
+    60.1
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -115.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -143.20508075688772
+     ],
+     [
+      -115.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -143.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "rev-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [],
+   "shown": [
+    39.904,
+    60,
+    189.904,
+    150
+   ],
+   "down": [
+    190.109,
+    150.003
+   ],
+   "up": [
+    40.104,
+    60.1
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -190.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -188.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shift-ovalframe",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    39.904,
+    60,
+    99.904,
+    120
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    119.948
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -160.0,
+      -128.20508075688772
+     ],
+     [
+      -130.0,
+      -158.20508075688772
+     ],
+     [
+      -160.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -158.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shift-polyframe",
+   "tool": "polyframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    39.904,
+    60,
+    109.186,
+    120
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    119.948
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Polygon",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -138.0384757729337,
+      -188.20508075688772
+     ],
+     [
+      -172.67949192431126,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -158.20508075688772
+     ],
+     [
+      -172.67949192431126,
+      -128.20508075688772
+     ],
+     [
+      -138.03847577293374,
+      -128.2050807568877
+     ],
+     [
+      -120.71796769724493,
+      -158.2050807568877
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shift-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    39.904,
+    60,
+    99.904,
+    120
+   ],
+   "down": [
+    40.104,
+    60.1
+   ],
+   "up": [
+    190.109,
+    119.948
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -190.0,
+      -188.20508075688772
+     ],
+     [
+      -190.0,
+      -128.20508075688772
+     ],
+     [
+      -130.0,
+      -128.20508075688772
+     ],
+     [
+      -130.0,
+      -188.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shift-tall",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    100,
+    39.872,
+    130,
+    69.872
+   ],
+   "down": [
+    99.949,
+    39.976
+   ],
+   "up": [
+    130.002,
+    189.989
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -114.9038105676658,
+      -178.33333333333337
+     ],
+     [
+      -99.90381056766581,
+      -193.33333333333337
+     ],
+     [
+      -114.9038105676658,
+      -208.33333333333334
+     ],
+     [
+      -129.9038105676658,
+      -193.33333333333337
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shift-up-left",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift"
+   ],
+   "shown": [
+    139.904,
+    100,
+    189.904,
+    150
+   ],
+   "down": [
+    190.109,
+    150.003
+   ],
+   "up": [
+    40.104,
+    100.086
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -90.0,
+      -148.20508075688772
+     ],
+     [
+      -90.0,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -98.20508075688772
+     ],
+     [
+      -39.99999999999999,
+      -148.20508075688772
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shiftalt-oval",
+   "tool": "ovalframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.0,
+    80,
+    150,
+    160
+   ],
+   "down": [
+    109.88,
+    119.948
+   ],
+   "up": [
+    190.109,
+    159.934
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Oval",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -119.90381056766583,
+      -88.20508075688772
+     ],
+     [
+      -79.90381056766579,
+      -128.20508075688775
+     ],
+     [
+      -119.90381056766583,
+      -168.20508075688775
+     ],
+     [
+      -159.90381056766586,
+      -128.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  },
+  {
+   "turn": "t30",
+   "label": "shiftalt-rectframe",
+   "tool": "rectframe",
+   "kind": "drag",
+   "mods": [
+    "shift",
+    "alt"
+   ],
+   "shown": [
+    70.0,
+    80,
+    150,
+    160
+   ],
+   "down": [
+    109.88,
+    119.948
+   ],
+   "up": [
+    190.109,
+    159.934
+   ],
+   "page": {
+    "topLeftOnSpread": [
+     -150.0,
+     -200.0
+    ],
+    "width": 300.0,
+    "height": 400.0
+   },
+   "spread": {
+    "itemTransform": [
+     0.8660254037844386,
+     -0.5,
+     0.5,
+     0.8660254037844386,
+     0.0,
+     0.0
+    ]
+   },
+   "idml": {
+    "tag": "Rectangle",
+    "itemTransform": [
+     0.8660254037844387,
+     0.5000000000000001,
+     -0.5000000000000001,
+     0.8660254037844387,
+     0.0,
+     0.0
+    ],
+    "anchors": [
+     [
+      -159.90381056766586,
+      -168.20508075688775
+     ],
+     [
+      -159.90381056766586,
+      -88.20508075688772
+     ],
+     [
+      -79.90381056766579,
+      -88.20508075688772
+     ],
+     [
+      -79.90381056766579,
+      -168.20508075688775
+     ]
+    ],
+    "gradientFillStart": "0 0",
+    "gradientFillLength": "0",
+    "gradientFillAngle": "0",
+    "style": "ObjectStyle/$ID/[None]",
+    "contentType": "GraphicType"
+   }
+  }
+ ]
+}

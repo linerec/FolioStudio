@@ -1,0 +1,285 @@
+{
+ "fixture": "objectstyles2",
+ "about": "objstyle-anchor-c1: Redefine Style through the Object Styles panel menu (window:true), six cases, and the same six through the DOM path (dom2) on the same fixture; measured 2026-11-08.",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "os-redefine-menu-fill",
+   "window": true,
+   "steps": [
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "from": "r-fill",
+     "menu": true
+    }
+   ]
+  },
+  {
+   "name": "os-redefine-menu-inherit",
+   "window": true,
+   "steps": [
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Oracle Box",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "fillColor": "Oracle Spot"
+     }
+    },
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "from": "r-plain",
+     "menu": true
+    }
+   ]
+  },
+  {
+   "name": "os-redefine-menu-deep",
+   "window": true,
+   "steps": [
+    {
+     "op": "createObjectStyle",
+     "name": "Oracle Box Deep",
+     "basedOn": "ObjectStyle/Oracle Box Blue",
+     "props": {}
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Oracle Box",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "fillColor": "Oracle Spot"
+     }
+    },
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "from": "r-plain",
+     "menu": true
+    }
+   ]
+  },
+  {
+   "name": "os-redefine-menu-self",
+   "window": true,
+   "steps": [
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Oracle Box Blue",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "fillColor": "Oracle Spot"
+     }
+    },
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box Blue",
+     "from": "r-plain",
+     "menu": true
+    }
+   ]
+  },
+  {
+   "name": "os-redefine-menu-applied",
+   "window": true,
+   "steps": [
+    {
+     "op": "applyObjectStyle",
+     "target": "r-top",
+     "style": "Oracle Box Blue",
+     "clear": false
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Oracle Box",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "fillColor": "Oracle Spot"
+     }
+    },
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "from": "r-plain",
+     "menu": true
+    }
+   ]
+  },
+  {
+   "name": "os-redefine-menu-tint",
+   "window": true,
+   "steps": [
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Oracle Box",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "fillColor": "Oracle Spot"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeTint": 50
+     }
+    },
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "from": "r-plain",
+     "menu": true
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "os-redefine-menu-catson",
+   "window": true,
+   "steps": [
+    {
+     "op": "editObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "props": {
+      "enableAnchoredObjectOptions": true,
+      "enableTextFrameGeneralOptions": true
+     }
+    },
+    {
+     "op": "applyObjectStyle",
+     "target": "r-plain",
+     "style": "Oracle Box",
+     "clear": true
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeColor": "Oracle Blue"
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "strokeWeight": 6
+     }
+    },
+    {
+     "op": "set",
+     "target": "r-plain",
+     "props": {
+      "fillColor": "Oracle Spot"
+     }
+    },
+    {
+     "op": "redefineObjectStyle",
+     "style": "ObjectStyle/Oracle Box",
+     "from": "r-plain",
+     "menu": true
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

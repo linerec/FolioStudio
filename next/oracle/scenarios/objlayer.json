@@ -1,0 +1,50 @@
+{
+  "fixture": "objlayer",
+  "extension": "objlayer",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "ol-none",
+      "steps": [
+        {
+          "op": "setClipping",
+          "target": "none",
+          "kind": "None"
+        }
+      ]
+    },
+    {
+      "name": "ol-clear-edges",
+      "steps": [
+        {
+          "op": "setClipping",
+          "target": "edges",
+          "kind": "None"
+        }
+      ]
+    },
+    {
+      "name": "ol-clear-alpha",
+      "steps": [
+        {
+          "op": "setClipping",
+          "target": "alpha",
+          "kind": "None"
+        }
+      ]
+    },
+    {
+      "name": "ol-clear-photoshop",
+      "steps": [
+        {
+          "op": "setClipping",
+          "target": "photoshop",
+          "kind": "None"
+        }
+      ]
+    }
+  ]
+}

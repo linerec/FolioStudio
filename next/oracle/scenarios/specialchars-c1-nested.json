@@ -1,0 +1,127 @@
+{
+ "fixture": "specialchars-c1",
+ "extension": "nested-styles",
+ "scenarios": [
+  {
+   "name": "noop",
+   "rules": [
+    "styles.specialchars.markers"
+   ],
+   "steps": []
+  },
+  {
+   "name": "sc-nested-page",
+   "rules": [
+    "styles.specialchars.markers"
+   ],
+   "steps": [
+    {
+     "op": "setNestedStyles",
+     "style": "ParagraphStyle/SC 0",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "AutoPageNumber",
+       "repetition": 1,
+       "inclusive": true
+      },
+      {
+       "style": "CharacterStyle/Blue",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    },
+    {
+     "op": "setNestedStyles",
+     "style": "ParagraphStyle/SC 1",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "AutoPageNumber",
+       "repetition": 1,
+       "inclusive": false
+      },
+      {
+       "style": "CharacterStyle/Blue",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    },
+    {
+     "op": "setNestedStyles",
+     "style": "ParagraphStyle/SC 2",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "InlineGraphic",
+       "repetition": 1,
+       "inclusive": true
+      },
+      {
+       "style": "CharacterStyle/Blue",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    }
+   ],
+   "maxLocalError": 0.15
+  },
+  {
+   "name": "sc-nested-end",
+   "rules": [
+    "styles.specialchars.markers"
+   ],
+   "steps": [
+    {
+     "op": "setNestedStyles",
+     "style": "ParagraphStyle/SC 3",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      },
+      {
+       "style": "CharacterStyle/Blue",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      },
+      {
+       "style": "CharacterStyle/Bold",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    },
+    {
+     "op": "setNestedStyles",
+     "style": "ParagraphStyle/SC 4",
+     "items": [
+      {
+       "style": "CharacterStyle/Red",
+       "delimiter": "AnyCharacter",
+       "repetition": 5,
+       "inclusive": true
+      },
+      {
+       "style": "CharacterStyle/Blue",
+       "delimiter": "AnyWord",
+       "repetition": 1,
+       "inclusive": true
+      }
+     ]
+    }
+   ],
+   "maxLocalError": 0.15
+  }
+ ]
+}

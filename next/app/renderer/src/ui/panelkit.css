@@ -1,0 +1,265 @@
+/* Panel contents (uix-b2, 2026-11-20): one language for every docking panel (contract next/app/DESIGN.md § 11).
+   Loaded after workspace.css (App.tsx), so a rule here wins over the older panel-content rules there at the same
+   specificity; every rule is scoped to a docked, flown-out or floating panel (.dpanel), so dialogs and bars keep theirs.
+   Tokens only (ui/tokens.css). Nothing here moves a panel's place, its ids, data-* or roles (the UI checks read those).
+
+   The language:
+   - a list row is --h-row (24px), --fs-sm, inset 4px inside its list with --r-sm corners; no seam between rows;
+     hover --hover, selected --list-sel, "picked" (a multi-pick that is not the selection) a full --accent outline;
+   - a field is --h-control (24px) on --field with --field-line; a greyed field has no fill, a --line edge and --disabled text;
+   - a section head is --fs-xs 600 --muted with more space above than below; groups are kept apart by space, not lines;
+   - an empty panel says what to do in a calm block (centred, --muted, --lh-text) where the list would be;
+   - a panel's own buttons are compact (--h-control), pressed / on states are --list-sel with an --accent edge. */
+
+/* --- the panel head: folder tabs on the tab strip ----------------------------------------
+   The strip keeps its height (25px) and colour. A tab is a label, not a cell: no seams between tabs; the front tab is
+   the panel's own face rising 4px below the strip's top with rounded top corners, so it reads as the lid of the body
+   under it (DESIGN.md § 4: the front tab is --panel + 600). The others are --muted words with a rounded hover. */
+.dpanel-tabs { padding: 0 var(--sp-1); gap: var(--sp-0_5); align-items: flex-end; }
+.dpanel-tab { height: 21px; margin-top: 4px; padding: 0 var(--sp-3); border: none; border-radius: var(--r-sm) var(--r-sm) 0 0; }
+.dpanel-tab:hover:not(.on) { background: var(--hover); }
+.dpanel-tab.on { position: relative; z-index: 1; height: 22px; margin-bottom: -1px; background: var(--panel); box-shadow: 0 0 0 1px var(--line-dark); clip-path: inset(-1px -1px 0 -1px); }
+.dpanel-tabs .dpanel-fold, .dpanel-tabs .dpanel-x, .dpanel-tabs .dpanel-menu, .dpanel-tabs .dpanel-max { align-self: stretch; }
+/* the empty part of the title strip is where a whole group is taken hold of (uix-d1): it fills the strip's height (with the tabs at the
+   bottom it had none, and a real press there landed in the panel's contents) */
+.dpanel-tabs .dpanel-fill { align-self: stretch; }
+.dpanel.folded .dpanel-tabs { align-items: stretch; }
+/* the tab's name: one line with "…" (the full name is the tab's tooltip) */
+.dpanel-tab-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dpanel-tab em { flex: none; }   /* the count badge stays whole; the name gives way first */
+
+/* --- base --------------------------------------------------------------------------- */
+.dpanel-body { font-size: var(--fs-sm); line-height: var(--lh-ui); }
+.dpanel-body :where(input[type=text], input:not([type]), input[type=number], input[type=search], select) {
+  height: var(--h-control); box-sizing: border-box; padding: 0 var(--sp-1_5); font: inherit; font-variant-numeric: tabular-nums;
+  color: var(--text); background: var(--field); border: 1px solid var(--field-line); border-radius: var(--r-sm);
+}
+.dpanel-body :where(select) { padding-right: var(--sp-0_5); }
+/* a list box (size > 1) or a multiple choice keeps its rows */
+.dpanel-body :where(select[size]:not([size='1']), select[multiple]) { height: auto; padding: var(--sp-0_5); }
+.dpanel-body :where(textarea) { font: inherit; color: var(--text); background: var(--field); border: 1px solid var(--field-line); border-radius: var(--r-sm); padding: var(--sp-1) var(--sp-1_5); }
+.dpanel-body :where(input, select, textarea):disabled { background: transparent; border-color: var(--line); color: var(--disabled); }
+.dpanel-body :where(input, select, textarea):focus { border-color: var(--accent); }
+.dpanel-body :where(input::placeholder, textarea::placeholder) { color: var(--muted); }
+.dpanel-body :where(button:not([class])) { min-height: 22px; padding: 0 var(--sp-2); font-size: var(--fs-sm); }
+.dpanel-body :where(button:not([class])):disabled { color: var(--disabled); }
+.dpanel-body :where(button[aria-pressed=true], button.on) { background: var(--list-sel); border-color: var(--accent); color: var(--text); }
+.dpanel-body :where(label) { color: inherit; }
+/* a check box or radio with its words: one line, the box first, a gap */
+.dpanel-body :where(label:has(> input[type=checkbox]), label:has(> input[type=radio])) { display: flex; align-items: center; gap: var(--sp-2); min-height: 22px; }
+.dpanel-body :where(input[type=checkbox], input[type=radio]) { width: 14px; height: 14px; margin: 0; flex: none; }
+.dpanel-body :where(fieldset) { margin: 0; padding: var(--sp-2) var(--sp-3) var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-md); min-width: 0; }
+.dpanel-body :where(legend) { padding: 0 var(--sp-1); color: var(--muted); font-size: var(--fs-xs); font-weight: var(--fw-semibold); }
+.dpanel-body :where(code) { font-family: var(--font-mono); font-size: var(--fs-xs); }
+.dpanel-body :where(h3, h4) { margin: var(--sp-3) 0 var(--sp-1); color: var(--muted); font-size: var(--fs-xs); font-weight: var(--fw-semibold); line-height: var(--lh-tight); letter-spacing: 0.02em; }
+
+/* --- property sheets (.p-form: stroke, effects, align, text wrap, attributes, script label, …) ------------------- */
+.dpanel .p-form { padding: var(--sp-3); gap: var(--sp-2); }
+.dpanel .p-row { min-height: var(--h-control); gap: var(--sp-2); }
+.dpanel .p-label { width: 76px; font-size: var(--fs-sm); color: var(--muted); }
+.dpanel .p-grid2 .p-label { width: 58px; }
+.dpanel .p-ctl { gap: var(--sp-1); }
+.dpanel .p-input, .dpanel .p-box { height: var(--h-control); border-radius: var(--r-sm); font-size: var(--fs-sm); }
+.dpanel .p-box i { font-size: var(--fs-2xs); }
+.dpanel .p-sep { margin: var(--sp-1) calc(-1 * var(--sp-3)); background: var(--line); }
+.dpanel .p-check { gap: var(--sp-2); min-height: 22px; color: var(--text); }
+.dpanel .p-note { margin: var(--sp-1) 0 0; color: var(--muted); font-size: var(--fs-xs); line-height: var(--lh-text); word-break: keep-all; overflow-wrap: anywhere; }
+.dpanel .p-note + .p-note { margin-top: 0; }
+.dpanel .p-unit { font-size: var(--fs-xs); }
+.dpanel .seg { border-radius: var(--r-sm); }
+.dpanel .seg button { width: 28px; height: 22px; min-height: 0; padding: 0; background: var(--field); border-radius: 0; }
+.dpanel .seg button:hover:not(:disabled) { background: var(--hover); }
+.dpanel .seg button.on { background: var(--list-sel); color: var(--text); }
+/* section heads that panels write as their own words: "개체 정렬:", the link info strip, a preflight group */
+.dpanel .al-title { margin-top: var(--sp-2); color: var(--muted); font-size: var(--fs-xs); font-weight: var(--fw-semibold); letter-spacing: 0.02em; }
+.dpanel .al-title:first-child { margin-top: 0; }
+.dpanel .al-panel-link { font-size: var(--fs-xs); }
+.dpanel .al-reference, .dpanel .al-distance { height: var(--h-control); border-radius: var(--r-sm); font-size: var(--fs-sm); }
+
+/* --- the number fields inside panels: the panel's height (the control bar keeps its own 20px) --------------------- */
+.dpanel .nf-box { min-height: var(--h-control); }
+.dpanel .nf-input { height: var(--h-control); }
+
+/* --- empty states ----------------------------------------------------------------------- */
+.dpanel .p-empty, .dpanel .pdfcomments-empty {
+  margin: var(--sp-6) auto; padding: 0 var(--sp-4); max-width: 232px; text-align: center; color: var(--muted);
+  font-size: var(--fs-md); line-height: var(--lh-text); word-break: keep-all; overflow-wrap: anywhere;
+}
+.dpanel .p-empty p, .dpanel .pdfcomments-empty p { margin: 0 0 var(--sp-2); opacity: 1; }
+.dpanel .p-empty button { margin: var(--sp-1) var(--sp-0_5) 0; }
+.dpanel .math-panel .p-empty { margin: var(--sp-4) auto; }
+.dpanel .muted { color: var(--muted); }
+
+/* --- lists: one row ---------------------------------------------------------------------- */
+.dpanel .lp-list, .dpanel .lk-list, .dpanel .sw-list:not([data-view$='Thumbnail']), .dpanel .st-list, .dpanel .hp-list,
+.dpanel .ex-tree, .dpanel .tree, .dpanel .inks, .dpanel .hyperlinks-list, .dpanel .ef-list, .dpanel .pp-masters { padding: var(--sp-1); }
+.dpanel .lp-row, .dpanel .lk-row, .dpanel .sw-row, .dpanel .sw-group, .dpanel .st-row, .dpanel .st-group, .dpanel .hp-row,
+.dpanel .ex-row, .dpanel .group-title, .dpanel .rule-title, .dpanel .ink-row, .dpanel .ef-row, .dpanel .pp-master,
+.dpanel .hyperlinks-list > button, .dpanel .finding {
+  min-height: var(--h-row); height: var(--h-row); box-sizing: border-box; border: none; border-radius: var(--r-sm);
+  font-size: var(--fs-sm); line-height: var(--h-row); color: var(--text);
+}
+.dpanel .lp-row:hover, .dpanel .lk-row:hover, .dpanel .sw-row.click:hover:not(.on), .dpanel .st-row:hover:not(:disabled), .dpanel .st-group:hover:not(.on),
+.dpanel .hp-row:hover, .dpanel .ex-row:hover, .dpanel .group-title:hover, .dpanel .rule-title:hover, .dpanel .ink-row:hover, .dpanel .ef-row:hover,
+.dpanel .pp-master:hover, .dpanel .hyperlinks-list > button:hover, .dpanel .finding:hover { background: var(--hover); }
+.dpanel .lp-row.on, .dpanel .lk-row.on, .dpanel .sw-row.on, .dpanel .sw-group.on, .dpanel button.st-row[aria-pressed=true], .dpanel .st-row[aria-pressed=true],
+.dpanel .hp-row.on, .dpanel .ex-row.on, .dpanel button.ef-row.on, .dpanel .ef-row.on, .dpanel .finding.on, .dpanel .link.on,
+.dpanel .hyperlinks-list [aria-selected=true] { background: var(--list-sel); color: var(--text); }
+/* picked for an action (Merge Layers, several swatches) and not the selection: a full outline, never a side stripe */
+.dpanel .lp-row.picked, .dpanel .sw-row.picked { background: var(--hover); outline: 1px solid var(--accent); outline-offset: -1px; }
+.dpanel .lp-row.on.picked, .dpanel .sw-row.on.picked { background: var(--list-sel); }
+
+/* Layers: the eye and lock cells sit in the row (no column lines), the layer colour a rounded bar */
+.dpanel .lp-row { grid-template-columns: 22px 20px 6px 14px minmax(0, 1fr) 18px 16px; }
+.dpanel .lp-eye, .dpanel .lp-lock { border-right: none; border-radius: var(--r-sm); color: var(--muted); }
+.dpanel .lp-row.on .lp-eye, .dpanel .lp-row.on .lp-lock, .dpanel .lp-eye.click:hover, .dpanel .lp-lock.click:hover { color: var(--text); }
+.dpanel .lp-eye.off { color: transparent; }
+.dpanel .lp-color { width: 4px; height: 14px; border-radius: 2px; }
+.dpanel .lp-item { height: var(--h-row); }
+.dpanel .lp-none { padding-left: 64px; font-size: var(--fs-xs); line-height: var(--h-row); }
+.dpanel .layers-panel.small-rows .lp-row { min-height: 18px; height: 18px; line-height: 18px; font-size: var(--fs-xs); }
+
+/* Links: the column heads as quiet captions, the info strip as a section head */
+.dpanel .lk-head { height: var(--h-row); padding: 0 var(--sp-1); border-bottom: 1px solid var(--line); }
+.dpanel .lk-head button { min-height: 0; border: none; padding: 0 var(--sp-1); background: none; font-size: var(--fs-xs); font-weight: var(--fw-semibold); color: var(--muted); }
+.dpanel .lk-head button.on { color: var(--text); background: none; }
+.dpanel .lk-row { padding-left: var(--sp-2); }
+.dpanel .lk-row:nth-child(even):not(.on):not(:hover) { background: none; }
+.dpanel .lk-section { height: auto; min-height: var(--h-row); padding: 0 var(--sp-3); background: var(--panel); border-top: 1px solid var(--line); border-radius: 0;
+  font-size: var(--fs-xs); font-weight: var(--fw-semibold); color: var(--muted); letter-spacing: 0.02em; }
+.dpanel .lk-section:hover { color: var(--text); background: var(--hover); }
+.dpanel .lk-info { padding: var(--sp-1) var(--sp-3) var(--sp-2); }
+.dpanel .lk-info dl { gap: var(--sp-0_5) var(--sp-2); font-size: var(--fs-xs); line-height: var(--lh-text); }
+.dpanel .lk-roots { padding: var(--sp-1) var(--sp-3) var(--sp-2); }
+.dpanel .lk-root { font-size: var(--fs-xs); min-height: 22px; }
+
+/* Swatches: the "show" filter as a quiet row under the top */
+.dpanel .sw-filter { display: flex; align-items: center; gap: var(--sp-2); padding: var(--sp-1_5) var(--sp-3); color: var(--muted); border-bottom: 1px solid var(--line); flex: none; }
+.dpanel .sw-filter select { flex: 1; min-width: 0; }
+/* Swatches and Colour: the chips are small rounded tiles with an inner edge that shows on any panel colour */
+.dpanel .sw-top { padding: var(--sp-2) var(--sp-3) var(--sp-1); gap: var(--sp-2); border-bottom: none; }
+.dpanel .sw-t { width: 24px; height: 24px; min-height: 0; padding: 0; border-radius: var(--r-sm); }
+.dpanel .sw-tint { font-size: var(--fs-xs); }
+.dpanel .sw-row { grid-template-columns: 18px minmax(0, 1fr) 14px 14px 34px; gap: var(--sp-1_5); padding: 0 var(--sp-2); }
+.dpanel .sw-group { gap: var(--sp-1_5); padding: 0 var(--sp-2); font-weight: var(--fw-semibold); }
+.dpanel .sw-chip { width: 16px; height: 16px; box-sizing: border-box; border-radius: var(--r-xs); border: 1px solid var(--line-dark); }
+.dpanel .sw-space { font-size: var(--fs-xs); }
+.dpanel .sw-list[data-view='largeList'] .sw-row { height: 32px; line-height: 32px; font-size: var(--fs-lg); }
+.dpanel .sw-list[data-view='largeList'] .sw-chip { width: 22px; height: 22px; }
+.dpanel .sw-list[data-view$='Thumbnail'] { gap: var(--sp-1); padding: var(--sp-2); }
+.dpanel .sw-list[data-view$='Thumbnail'] .sw-row { width: 26px; height: 26px; min-height: 0; padding: 2px; line-height: normal; }
+.dpanel .sw-list[data-view='largeThumbnail'] .sw-row { width: 44px; height: 44px; }
+.dpanel .sw-list[data-view$='Thumbnail'] .sw-chip { width: 100%; height: 100%; }
+.dpanel .color-panel .cl-top, .dpanel .cl-top { gap: var(--sp-2); }
+.dpanel .cl-slider { gap: var(--sp-2); min-height: 22px; }
+.dpanel .cl-track { height: 6px; border-radius: 3px; }
+.dpanel .cl-ramp, .dpanel .gr-ramp { border-radius: var(--r-sm); }
+.dpanel .cl-slider .nf-input { height: 22px; border-radius: var(--r-sm); }
+
+/* Styles (paragraph, character, object, table, cell): the rows and the group twisties */
+.dpanel .st-row { padding: 0 var(--sp-2); }
+.dpanel .st-row.nested { padding-left: 28px; }
+.dpanel .st-group { gap: var(--sp-1_5); padding: 0 var(--sp-2); font-weight: var(--fw-semibold); }
+.dpanel .st-group span { width: 10px; }
+.dpanel .style-actions { padding: var(--sp-1) var(--sp-2); gap: var(--sp-1); }
+.dpanel .style-actions button { font-size: var(--fs-xs); padding: 0 var(--sp-1_5); }
+
+/* History */
+.dpanel .hp-row { padding: 0 var(--sp-2); border-bottom: none; }
+.dpanel .hp-row.undone { color: var(--disabled); opacity: 1; }
+
+/* Pages: parents as rows, the page numbers as small pills, the selected page an ink frame */
+.dpanel .pp-masters { max-height: 34%; }
+.dpanel .pp-master { gap: var(--sp-2); padding: 0 var(--sp-2); }
+.dpanel .pp-micon i, .dpanel .pp-micon.none { font-family: var(--font-ui); border-color: var(--line-dark); }
+.dpanel .pp-prefix { font-family: var(--font-ui); }
+.dpanel .pp-split { height: 4px; background: var(--line); border: none; }
+.dpanel .pp-spreads { padding: var(--sp-3) var(--sp-2); gap: var(--sp-3); }
+.dpanel .pp-spread { gap: var(--sp-1); }
+.dpanel .pp-page { border-radius: var(--r-xs); }
+.dpanel .pp-num { min-width: 18px; padding: 1px var(--sp-1_5); border-radius: var(--r-sm); font-size: var(--fs-xs); line-height: 14px; text-align: center; font-variant-numeric: tabular-nums; }
+.dpanel .pp-num.on { background: var(--accent); color: var(--accent-text); }
+
+/* Effects */
+.dpanel .ef-list { border: 1px solid var(--line); border-radius: var(--r-sm); }
+.dpanel .ef-row { padding: 0 var(--sp-2); }
+.dpanel .ef-buttons { gap: var(--sp-1); }
+
+/* Properties: its section heads line up with the forms under them */
+.dpanel .properties-panel > h3 { padding: 0 var(--sp-3); margin-bottom: 0; }
+.dpanel .properties-panel > .p-empty { margin-top: var(--sp-6); }
+
+/* Info */
+.dpanel .info-panel { padding: var(--sp-3); gap: var(--sp-2); }
+.dpanel .ip-grid { gap: var(--sp-1) var(--sp-2); }
+.dpanel .ip-more { padding-top: var(--sp-2); font-size: var(--fs-xs); line-height: var(--lh-text); }
+
+/* Character and Paragraph panels (the text-format fields, panel form): fields on the right edge, names on the left */
+.dpanel .text-format-panel { gap: var(--sp-3); }
+.dpanel .text-format-panel .tf-group { gap: var(--sp-1_5); padding: 0; border: 0; }
+.dpanel .text-format-panel .tf-field { margin: 0; min-height: var(--h-control); gap: var(--sp-2); font-size: var(--fs-sm); color: var(--muted); white-space: normal; word-break: keep-all; line-height: var(--lh-tight); }
+.dpanel .text-format-panel .tf-field input, .dpanel .text-format-panel .tf-field select {
+  height: var(--h-control); padding: 0 var(--sp-1_5); background: var(--field); color: var(--text); border: 1px solid var(--field-line); border-radius: var(--r-sm); flex: none;
+}
+.dpanel .text-format-panel .tf-field select { width: 136px; }
+.dpanel .text-format-panel .tf-field input:disabled, .dpanel .text-format-panel .tf-field select:disabled { background: transparent; border-color: var(--line); color: var(--disabled); }
+.dpanel .text-format-panel .tf-field input:focus, .dpanel .text-format-panel .tf-field select:focus { border-color: var(--accent); }
+.dpanel .text-format-panel .tf-field [aria-invalid="true"] { border-color: var(--bad); }
+.dpanel .text-format-panel .tf-field:has(> input[type=checkbox]) { justify-content: flex-start; color: var(--text); }
+.dpanel .text-format-panel .tf-field > input[type=checkbox] { width: 14px; height: 14px; padding: 0; }
+.dpanel .text-format-panel .tf-buttons { display: flex; flex-direction: row; gap: 0; border: 1px solid var(--field-line); border-radius: var(--r-sm); overflow: hidden; align-self: flex-start; }
+.dpanel .text-format-panel .tf-align { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-1); }
+.dpanel .text-format-panel .tf-buttons button { width: 32px; height: 24px; min-height: 0; padding: 0; border: none; border-right: 1px solid var(--field-line); border-radius: 0; background: var(--field); color: var(--text); font-size: var(--fs-sm); }
+.dpanel .text-format-panel .tf-buttons button:last-child { border-right: none; }
+.dpanel .text-format-panel .tf-align button { height: 24px; min-height: 0; padding: 0 var(--sp-1_5); border: 1px solid var(--field-line); border-radius: var(--r-sm); background: var(--bar); color: var(--text); font-size: var(--fs-xs);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dpanel .text-format-panel .tf-buttons button:hover:not(:disabled), .dpanel .text-format-panel .tf-align button:hover:not(:disabled) { background: var(--hover); }
+.dpanel .text-format-panel .tf-group button[aria-pressed="true"] { background: var(--list-sel); border-color: var(--accent); color: var(--text); }
+.dpanel .text-format-panel .tf-group button:disabled { color: var(--disabled); background: transparent; }
+.dpanel .text-format-panel .tf-help { font-size: var(--fs-xs); color: var(--muted); }
+
+/* Preflight and Separations (the reused panel views) */
+.dpanel .panel-head { gap: var(--sp-2); padding: var(--sp-2) var(--sp-3); border-bottom: 1px solid var(--line); }
+.dpanel .panel-head select, .dpanel .sep-mode select, .dpanel .sep-limit input { border-radius: var(--r-sm); border-color: var(--field-line); padding-top: 0; padding-bottom: 0; }
+.dpanel .sev { gap: var(--sp-1_5); }
+.dpanel .group-title, .dpanel .rule-title { gap: var(--sp-1_5); padding: 0 var(--sp-2); }
+.dpanel .group-title { font-weight: var(--fw-semibold); }
+.dpanel .rule-title { padding-left: 22px; }
+.dpanel .finding { gap: var(--sp-2); padding: 0 var(--sp-2) 0 40px; font-size: var(--fs-sm); }
+.dpanel .rule .more { padding: var(--sp-1) 40px; font-size: var(--fs-xs); }
+.dpanel .ink-row { gap: var(--sp-2); padding: 0 var(--sp-2); }
+.dpanel .ink-row .chip { border-radius: var(--r-xs); border-color: var(--line-dark); }
+.dpanel .ink-row .ink-name { min-height: 0; padding: 0; line-height: var(--h-row); }
+.dpanel .ink-total { margin: var(--sp-1) var(--sp-3) 0; font-size: var(--fs-xs); }
+.dpanel .sep-mode, .dpanel .sep-limit, .dpanel .sep-op { font-size: var(--fs-xs); }
+
+/* Project (the explorer in the dock) */
+.dpanel .ex-head { min-height: 32px; padding: var(--sp-1) var(--sp-1) var(--sp-1) var(--sp-3); border-bottom: 1px solid var(--line); }
+.dpanel .ex-head b { font-weight: var(--fw-semibold); }
+.dpanel .ex-icon { min-height: 0; width: 24px; height: 24px; padding: 0; display: grid; place-items: center; border-radius: var(--r-sm); }
+.dpanel .ex-icon:hover { background: var(--hover); }
+.dpanel .ex-row { gap: var(--sp-1_5); padding: 0 var(--sp-2); }
+.dpanel .ex-row.document .twisty { color: var(--accent-fg); }
+.dpanel .ex-badge { padding: 0 var(--sp-1); border-radius: var(--r-sm); font-size: var(--fs-xs); line-height: 16px; font-variant-numeric: tabular-nums; }
+.dpanel .ex-foot { padding: 0 var(--sp-3); min-height: 26px; display: flex; align-items: center; border-top: 1px solid var(--line); color: var(--muted); font-size: var(--fs-xs); }
+
+/* Hyperlinks / Cross-References */
+.dpanel .hyperlinks-panel { padding: var(--sp-1) 0 0; gap: 0; }
+.dpanel .hyperlinks-list > button { width: 100%; padding: 0 var(--sp-2); background: none; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dpanel .hyperlinks-actions { gap: var(--sp-1); padding: var(--sp-2) var(--sp-3); border-top: 1px solid var(--line); }
+
+/* Tabs panel (Type ▸ Tabs, docked) */
+.dpanel .tabs-panel .tf-field { gap: var(--sp-2); font-size: var(--fs-sm); color: var(--muted); }
+.dpanel .tabs-panel .tf-field input, .dpanel .tabs-panel .tf-field select { height: var(--h-control); background: var(--field); color: var(--text); border: 1px solid var(--field-line); border-radius: var(--r-sm); }
+
+/* --- a drop place inside a panel (a style dragged onto a group, a layer, a page) ---------------- */
+.dpanel .st-group[data-drop], .dpanel .st-list[data-drop-top] { outline: 1px solid var(--accent); outline-offset: -1px; background: var(--hover); }
+
+/* many tabs in one group (break-ui, uix-d1: thirty panels): the tabs give way down to a sliver, the strip scrolls sideways with the
+   wheel (no bar), the tab that shows is scrolled into view, and the menu button stays at the right end; the panel menu's Docking > Tabs
+   lists them all (the keyboard way) */
+.dpanel-tabs { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
+.dpanel-tabs::-webkit-scrollbar { display: none; }
+.dpanel-tab:not(.on) { flex: 0 1 auto; min-width: 32px; }
+.dpanel-tabs .dpanel-menu { position: sticky; right: 0; z-index: 2; background: var(--tab); }
+.dpanel-tabs .dpanel-x, .dpanel-tabs .dpanel-max { position: sticky; right: 26px; z-index: 2; background: var(--tab); }

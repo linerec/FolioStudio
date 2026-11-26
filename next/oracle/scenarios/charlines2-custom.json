@@ -1,0 +1,528 @@
+{
+  "fixture": "text-format",
+  "about": "Underline and strikethrough with the document's own dashed / dotted / striped stroke styles (character.lines.custom). Steps map to existing strokeStyleSave and textFormat in oracle.rs run_step and print-check.py command.",
+  "scenarios": [
+    {
+      "name": "charlines2-custom-dash-2",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 2,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DashedStrokeStyle/Char dash",
+            "strikeThroughWeight": 2,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DashedStrokeStyle/Char dash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dash-4",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DashedStrokeStyle/Char dash",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DashedStrokeStyle/Char dash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dot-2",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dot",
+            "kind": "DottedStrokeStyle",
+            "values": [
+              6,
+              12
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 2,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DottedStrokeStyle/Char dot",
+            "strikeThroughWeight": 2,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DottedStrokeStyle/Char dot"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dot-4",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dot",
+            "kind": "DottedStrokeStyle",
+            "values": [
+              6,
+              12
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DottedStrokeStyle/Char dot",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DottedStrokeStyle/Char dot"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-stripe-2",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char stripe",
+            "kind": "StripedStrokeStyle",
+            "values": [
+              0,
+              20,
+              50,
+              100
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 2,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StripedStrokeStyle/Char stripe",
+            "strikeThroughWeight": 2,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StripedStrokeStyle/Char stripe"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-stripe-4",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char stripe",
+            "kind": "StripedStrokeStyle",
+            "values": [
+              0,
+              20,
+              50,
+              100
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "StripedStrokeStyle/Char stripe",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "StripedStrokeStyle/Char stripe"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dash-negative",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": -2,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DashedStrokeStyle/Char dash",
+            "strikeThroughWeight": -2,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DashedStrokeStyle/Char dash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dash-gaps",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "Gaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DashedStrokeStyle/Char dash",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DashedStrokeStyle/Char dash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dash-round",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "RoundEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DashedStrokeStyle/Char dash",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DashedStrokeStyle/Char dash"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-dot-gaps",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dot",
+            "kind": "DottedStrokeStyle",
+            "values": [
+              6,
+              12
+            ],
+            "adjustment": "Gaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "strikeThru": true,
+            "underlineWeight": 4,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DottedStrokeStyle/Char dot",
+            "strikeThroughWeight": 4,
+            "strikeThroughOffset": 6,
+            "strikeThroughColor": "Color/Black",
+            "strikeThroughType": "DottedStrokeStyle/Char dot"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-custom-mixed",
+      "steps": [
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dash",
+            "kind": "DashedStrokeStyle",
+            "values": [
+              8,
+              4
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "strokeStyleSave",
+          "style": {
+            "id": "",
+            "name": "Char dot",
+            "kind": "DottedStrokeStyle",
+            "values": [
+              6,
+              12
+            ],
+            "adjustment": "DashesAndGaps",
+            "cap": "ButtEndCap"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 9,
+          "props": {
+            "underline": true,
+            "underlineWeight": 3,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DashedStrokeStyle/Char dash"
+          }
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 9,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "underlineWeight": 3,
+            "underlineOffset": 6,
+            "underlineColor": "Color/Black",
+            "underlineType": "DottedStrokeStyle/Char dot"
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.custom"
+      ]
+    },
+    {
+      "name": "charlines2-trailing-para",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "Trail   \rSecond  \r"
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 18,
+          "props": {
+            "underline": true,
+            "underlineWeight": 1,
+            "underlineOffset": 2,
+            "strikeThru": true,
+            "strikeThroughWeight": 1,
+            "strikeThroughOffset": 3
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.trailing-spaces"
+      ]
+    },
+    {
+      "name": "charlines2-trailing-wrap",
+      "steps": [
+        {
+          "op": "insertText",
+          "target": "format",
+          "at": 0,
+          "text": "alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega alpha beta gamma delta epsilon zeta eta theta iota kappa "
+        },
+        {
+          "op": "textFormat",
+          "target": "format",
+          "start": 0,
+          "end": 181,
+          "props": {
+            "underline": true,
+            "underlineWeight": 1,
+            "underlineOffset": 2,
+            "strikeThru": true,
+            "strikeThroughWeight": 1,
+            "strikeThroughOffset": 3
+          }
+        }
+      ],
+      "rules": [
+        "character.lines.trailing-spaces"
+      ]
+    }
+  ]
+}

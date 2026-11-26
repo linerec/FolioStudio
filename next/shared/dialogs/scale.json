@@ -1,0 +1,136 @@
+{
+  "title": "비율 조정",
+  "style": "transform",
+  "target": "selection",
+  "maxIds": 1,
+  "link": "uniformScale",
+  "fields": [
+    {
+      "name": "sx",
+      "label": "비율",
+      "labelWhen": {
+        "uniform": false,
+        "label": "가로 비율"
+      },
+      "type": "number",
+      "unit": "percent",
+      "default": 100,
+      "min": 0.0001,
+      "max": 1000000,
+      "group": "비율",
+      "rangeMessage": "비율은 0보다 커야 합니다."
+    },
+    {
+      "name": "sy",
+      "label": "세로 비율",
+      "type": "number",
+      "unit": "percent",
+      "default": 100,
+      "min": 0.0001,
+      "max": 1000000,
+      "group": "비율",
+      "when": {
+        "uniform": false
+      }
+    },
+    {
+      "name": "uniform",
+      "label": "비례 유지",
+      "type": "boolean",
+      "default": true,
+      "group": "비율"
+    },
+    {
+      "name": "anchor",
+      "type": "enum",
+      "default": "topLeft",
+      "hidden": true,
+      "options": [
+        "topLeft",
+        "top",
+        "topRight",
+        "left",
+        "center",
+        "right",
+        "bottomLeft",
+        "bottom",
+        "bottomRight"
+      ]
+    },
+    {
+      "name": "adjustStroke",
+      "type": "boolean",
+      "default": true,
+      "hidden": true,
+      "from": {
+        "preference": "folio.transformPanel",
+        "key": "adjustStroke"
+      }
+    },
+    {
+      "name": "adjustEffects",
+      "type": "boolean",
+      "default": true,
+      "hidden": true,
+      "from": {
+        "preference": "folio.transformPanel",
+        "key": "adjustEffects"
+      }
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "scale",
+        "id": "$ids0",
+        "sx": {
+          "$": "sx",
+          "div": 100
+        },
+        "sy": {
+          "$": "sy",
+          "div": 100
+        },
+        "anchor": "$anchor",
+        "adjust": {
+          "stroke": "$adjustStroke",
+          "effects": "$adjustEffects"
+        }
+      }
+    ],
+    "copy": [
+      {
+        "op": "duplicate",
+        "ids": "$ids",
+        "by": [
+          0,
+          0
+        ]
+      },
+      {
+        "op": "scale",
+        "id": "@copies",
+        "sx": {
+          "$": "sx",
+          "div": 100
+        },
+        "sy": {
+          "$": "sy",
+          "div": 100
+        },
+        "anchor": "$anchor",
+        "adjust": {
+          "stroke": "$adjustStroke",
+          "effects": "$adjustEffects"
+        }
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "action": "copy",
+      "label": "복사",
+      "field": "copy"
+    }
+  ]
+}

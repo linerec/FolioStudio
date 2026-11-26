@@ -1,0 +1,297 @@
+{
+  "title": "캡션 설정",
+  "target": "none",
+  "defaults": "captionSetup",
+  "style": "wide",
+  "description": "Object > Captions > Caption Setup: the rows of text before, metadata and text after, where the caption goes and its style and layer; values start from the document's setup.",
+  "fields": [
+    {
+      "name": "rows",
+      "label": "메타데이터 캡션",
+      "type": "array",
+      "minRows": 1,
+      "maxRows": 50,
+      "addLabel": "행 추가",
+      "removeLabel": "행 삭제",
+      "default": [
+        {
+          "before": "",
+          "metadata": "Name",
+          "after": ""
+        }
+      ],
+      "newRow": {
+        "metadata": "Page"
+      },
+      "fields": [
+        {
+          "name": "before",
+          "label": "앞 텍스트",
+          "type": "text",
+          "default": "",
+          "maxLength": 1000
+        },
+        {
+          "name": "metadata",
+          "label": "메타데이터",
+          "type": "enum",
+          "default": "Name",
+          "options": [
+            {
+              "value": "Name",
+              "label": "이름"
+            },
+            {
+              "value": "Status",
+              "label": "상태"
+            },
+            {
+              "value": "Page",
+              "label": "페이지"
+            },
+            {
+              "value": "Size",
+              "label": "크기"
+            },
+            {
+              "value": "Color Space",
+              "label": "색상 공간"
+            },
+            {
+              "value": "ICC Profile",
+              "label": "ICC 프로파일"
+            },
+            {
+              "value": "Layer Overrides",
+              "label": "레이어 재정의"
+            },
+            {
+              "value": "Actual PPI",
+              "label": "실제 PPI"
+            },
+            {
+              "value": "Effective PPI",
+              "label": "유효 PPI"
+            },
+            {
+              "value": "Transparency",
+              "label": "투명도"
+            },
+            {
+              "value": "Dimensions",
+              "label": "치수"
+            },
+            {
+              "value": "Scale",
+              "label": "비율"
+            },
+            {
+              "value": "Skew",
+              "label": "기울이기"
+            },
+            {
+              "value": "Rotation",
+              "label": "회전"
+            },
+            {
+              "value": "Layer",
+              "label": "레이어"
+            },
+            {
+              "value": "Path",
+              "label": "경로"
+            },
+            {
+              "value": "Instance",
+              "label": "인스턴스"
+            },
+            {
+              "value": "Aperture",
+              "label": "조리개"
+            },
+            {
+              "value": "Shutter",
+              "label": "셔터"
+            },
+            {
+              "value": "ISO Speed",
+              "label": "ISO 감도"
+            },
+            {
+              "value": "Camera",
+              "label": "카메라"
+            },
+            {
+              "value": "Lens",
+              "label": "렌즈"
+            },
+            {
+              "value": "Focal Length",
+              "label": "초점 거리"
+            },
+            {
+              "value": "Keywords",
+              "label": "키워드"
+            },
+            {
+              "value": "Capture Date",
+              "label": "촬영 날짜"
+            },
+            {
+              "value": "Rating",
+              "label": "등급"
+            },
+            {
+              "value": "Swatches Used",
+              "label": "사용한 색상 견본"
+            },
+            {
+              "value": "Credit",
+              "label": "크레딧"
+            },
+            {
+              "value": "Description",
+              "label": "설명"
+            },
+            {
+              "value": "Headline",
+              "label": "헤드라인"
+            },
+            {
+              "value": "Location",
+              "label": "위치"
+            },
+            {
+              "value": "City",
+              "label": "도시"
+            },
+            {
+              "value": "State/Province",
+              "label": "주/도"
+            },
+            {
+              "value": "Country",
+              "label": "국가"
+            },
+            {
+              "value": "Format",
+              "label": "형식"
+            },
+            {
+              "value": "Link Type",
+              "label": "링크 유형"
+            },
+            {
+              "value": "Author",
+              "label": "작성자"
+            },
+            {
+              "value": "Title",
+              "label": "제목"
+            },
+            {
+              "value": "Creator",
+              "label": "제작자"
+            },
+            {
+              "value": "Place Date",
+              "label": "배치 날짜"
+            },
+            {
+              "value": "Copyright",
+              "label": "저작권"
+            },
+            {
+              "value": "Modified",
+              "label": "수정 날짜"
+            }
+          ]
+        },
+        {
+          "name": "after",
+          "label": "뒤 텍스트",
+          "type": "text",
+          "default": "",
+          "maxLength": 1000
+        }
+      ]
+    },
+    {
+      "name": "position",
+      "label": "캡션 위치",
+      "type": "enum",
+      "default": "below",
+      "group": "위치 및 스타일",
+      "options": [
+        {
+          "value": "below",
+          "label": "이미지 아래"
+        },
+        {
+          "value": "above",
+          "label": "이미지 위"
+        },
+        {
+          "value": "left",
+          "label": "이미지 왼쪽"
+        },
+        {
+          "value": "right",
+          "label": "이미지 오른쪽"
+        }
+      ]
+    },
+    {
+      "name": "offset",
+      "label": "간격 (pt)",
+      "type": "number",
+      "default": 1,
+      "min": 0,
+      "max": 10000,
+      "group": "위치 및 스타일"
+    },
+    {
+      "name": "paragraphStyle",
+      "label": "단락 스타일",
+      "type": "choice",
+      "source": "paragraphStyles",
+      "none": "기본값",
+      "default": "",
+      "group": "위치 및 스타일"
+    },
+    {
+      "name": "layer",
+      "label": "레이어",
+      "type": "choice",
+      "source": "layers",
+      "none": "이미지와 같은 레이어",
+      "default": "",
+      "group": "위치 및 스타일",
+      "disabledWhen": {
+        "group": true
+      }
+    },
+    {
+      "name": "group",
+      "label": "캡션과 이미지 그룹화",
+      "type": "boolean",
+      "default": false,
+      "group": "위치 및 스타일"
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "setCaptionSetup",
+        "props": {
+          "rows": "$rows",
+          "position": "$position",
+          "offset": "$offset",
+          "paragraphStyle": "$paragraphStyle",
+          "layer": "$layer",
+          "group": "$group"
+        }
+      }
+    ]
+  }
+}

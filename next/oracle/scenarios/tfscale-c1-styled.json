@@ -1,0 +1,62 @@
+{
+ "fixture": "text-format",
+ "about": "Control bar (object) scale of text frames (tfscale-c1): the frame's path, stroke, insets and column gutter, and the text the frame shows (character and paragraph attributes by sx, sy, sx/sy or sqrt(sx*sy); text overset or in another frame of the thread stays). Several objects are one selection: a plural specifier's transform(), as the other scaleByMany cases. Styled text: paragraph and character styles whose values come out as overrides.",
+ "scenarios": [
+  {
+   "name": "tf-scale-styled",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "format"
+     ],
+     "sx": 1.5,
+     "sy": 0.8,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-styled-half",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "format"
+     ],
+     "sx": 0.5,
+     "sy": 0.5,
+     "anchor": "center"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-styled-tall",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "format"
+     ],
+     "sx": 1,
+     "sy": 2,
+     "anchor": "topLeft"
+    }
+   ]
+  },
+  {
+   "name": "tf-scale-korean",
+   "steps": [
+    {
+     "op": "scaleByMany",
+     "targets": [
+      "korean-format"
+     ],
+     "sx": 0.8,
+     "sy": 1.25,
+     "anchor": "bottomRight"
+    }
+   ]
+  }
+ ]
+}

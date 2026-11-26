@@ -1,0 +1,266 @@
+{
+ "fixture": "outlines-c3",
+ "about": "Type > Create Outlines on a text range, second part (outlines-c3): characters with a stroke become polygons put by the outer edge of the stroke (mitre joins, limit 4); InDesign sets the object character as a word space for pair kerning (the letter before it by (letter, space), the letter after it by (space, letter)). The host fills `shapes`, so the steps carry it empty. Rules: next/oracle/rules/outlines-c3.ko.md.",
+ "extension": "outlines",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "outlines-c3-stroke",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "stroke",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-stroke-all",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "stroke",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-strokemix",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "strokemix",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-stroke8",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "stroke8",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-strokeblack",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "strokeblack",
+     "start": 0,
+     "end": 6,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-strokelead",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "strokelead",
+     "start": 0,
+     "end": 3,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-kern-times",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kerntimes",
+     "start": 1,
+     "end": 2,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-kern-times2",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kerntimes",
+     "start": 2,
+     "end": 3,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-kern-after",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kernafter",
+     "start": 1,
+     "end": 2,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-kern-before",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kernbefore",
+     "start": 1,
+     "end": 2,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-kern-verdana",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kernverdana",
+     "start": 1,
+     "end": 2,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-kern-two",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "kerntwo",
+     "start": 1,
+     "end": 3,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-leadlive",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "leadlive",
+     "start": 0,
+     "end": 3,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-strokelive",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "strokelive",
+     "start": 0,
+     "end": 3,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-under",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "under",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-strike",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "strike",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  },
+  {
+   "name": "outlines-c3-rule",
+   "rules": [
+    "outlines.range.inline-polygon"
+   ],
+   "steps": [
+    {
+     "op": "createOutlinesRange",
+     "target": "rule",
+     "start": 1,
+     "end": 5,
+     "shapes": ""
+    }
+   ]
+  }
+ ]
+}

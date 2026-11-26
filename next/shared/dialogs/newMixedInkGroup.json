@@ -1,0 +1,74 @@
+{
+  "title": "새 혼합 잉크 그룹",
+  "target": "none",
+  "defaults": "newMixedInkGroup",
+  "description": "Swatches panel menu > New Mixed Ink Group: a group name no swatch has (it continues namePrefix with a number) and, for each ink of the document (one fixed row each), whether it goes in and its initial percentage (0 to 100), repeat (0 to 999) and increment (0 to 100). At least two inks, one of them a spot ink. The preview (dialogPreview) lists the swatches the group would make; OK waits for it. OK sends the ticked inks and their columns in the document's ink order.",
+  "rowsCheck": [
+    { "field": "inks", "where": { "on": true }, "min": 2, "some": { "kind": "spot" }, "message": "잉크를 두 개 이상 고르세요. 별색 잉크가 하나는 있어야 합니다." }
+  ],
+  "preview": {
+    "kind": "list",
+    "query": "mixedInkGroupPreview",
+    "needsRows": true,
+    "args": {
+      "name": "$name",
+      "inks": { "$rows": "inks", "where": { "on": true }, "pick": "ink" },
+      "initial": { "$rows": "inks", "where": { "on": true }, "pick": "initial" },
+      "repeat": { "$rows": "inks", "where": { "on": true }, "pick": "repeat" },
+      "increment": { "$rows": "inks", "where": { "on": true }, "pick": "increment" }
+    },
+    "count": "미리보기: 견본 {0}개",
+    "failed": "초기값·반복·증분을 확인하세요. 한 그룹은 견본 1,000개까지 만들 수 있습니다."
+  },
+  "fields": [
+    {
+      "name": "namePrefix",
+      "type": "text",
+      "default": "Mixed Ink Group",
+      "hidden": true
+    },
+    {
+      "name": "name",
+      "label": "그룹 이름",
+      "type": "text",
+      "required": true,
+      "trim": true,
+      "unique": "swatches",
+      "maxLength": 256,
+      "default": "Mixed Ink Group"
+    },
+    {
+      "name": "inks",
+      "label": "잉크",
+      "type": "array",
+      "fixedRows": true,
+      "minRows": 0,
+      "maxRows": 1000,
+      "default": [
+        { "ink": "Ink/Spot", "kind": "spot", "name": "Spot", "on": true, "initial": 10, "repeat": 1, "increment": 10 },
+        { "ink": "Ink/$ID/Process Cyan", "kind": "process", "name": "Cyan", "on": true, "initial": 20, "repeat": 0, "increment": 0 }
+      ],
+      "fields": [
+        { "name": "ink", "type": "text", "default": "", "hidden": true, "maxLength": 1000 },
+        { "name": "kind", "type": "enum", "default": "spot", "hidden": true, "options": ["spot", "process"] },
+        { "name": "name", "type": "text", "default": "", "hidden": true, "maxLength": 1000 },
+        { "name": "on", "type": "boolean", "default": false, "labelFrom": "name" },
+        { "name": "initial", "label": "{0} 초기값", "labelArg": "name", "type": "number", "unit": "percent", "default": 0, "min": 0, "max": 100, "disabledWhen": { "on": false } },
+        { "name": "repeat", "label": "{0} 반복", "labelArg": "name", "type": "number", "integer": true, "default": 0, "min": 0, "max": 999, "disabledWhen": { "on": false } },
+        { "name": "increment", "label": "{0} 증분", "labelArg": "name", "type": "number", "unit": "percent", "default": 0, "min": 0, "max": 100, "disabledWhen": { "on": false } }
+      ]
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "op": "newMixedInkGroup",
+        "name": "$name",
+        "inks": { "$rows": "inks", "where": { "on": true }, "pick": "ink" },
+        "initial": { "$rows": "inks", "where": { "on": true }, "pick": "initial" },
+        "repeat": { "$rows": "inks", "where": { "on": true }, "pick": "repeat" },
+        "increment": { "$rows": "inks", "where": { "on": true }, "pick": "increment" }
+      }
+    ]
+  }
+}

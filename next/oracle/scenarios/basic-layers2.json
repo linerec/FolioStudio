@@ -1,0 +1,107 @@
+{
+ "fixture": "basic",
+ "about": "Layers panel menu: Duplicate Layer and Merge Layers (scripting duplicate/merge, as the menu does), Delete Unused Layers, Show All Layers, Unlock All Layers (menu actions 18441, 18437, 18438 in a window).",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "layer-duplicate-top",
+   "steps": [
+    {
+     "op": "layerDuplicate",
+     "name": "Top"
+    }
+   ]
+  },
+  {
+   "name": "layer-duplicate-base",
+   "steps": [
+    {
+     "op": "layerDuplicate",
+     "name": "Base"
+    }
+   ]
+  },
+  {
+   "name": "layer-merge-top",
+   "steps": [
+    {
+     "op": "layerMerge",
+     "name": "Base",
+     "with": [
+      "Top"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "layer-merge-two",
+   "steps": [
+    {
+     "op": "layerMerge",
+     "name": "Top",
+     "with": [
+      "Base",
+      "Locked layer"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "layer-delete-unused",
+   "steps": [
+    {
+     "op": "layerNew",
+     "name": "Empty"
+    },
+    {
+     "op": "menu",
+     "id": 18441,
+     "action": "Delete Unused Layers",
+     "panel": "$ID/Layers"
+    }
+   ],
+   "window": true
+  },
+  {
+   "name": "layers-show-all",
+   "steps": [
+    {
+     "op": "layer",
+     "name": "Top",
+     "props": {
+      "visible": false
+     }
+    },
+    {
+     "op": "layer",
+     "name": "Base",
+     "props": {
+      "visible": false
+     }
+    },
+    {
+     "op": "menu",
+     "id": 18437,
+     "action": "Show All Layers",
+     "panel": "$ID/Layers"
+    }
+   ],
+   "window": true
+  },
+  {
+   "name": "layers-unlock-all",
+   "steps": [
+    {
+     "op": "menu",
+     "id": 18438,
+     "action": "Unlock All Layers",
+     "panel": "$ID/Layers"
+    }
+   ],
+   "window": true
+  }
+ ]
+}

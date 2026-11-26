@@ -1,0 +1,15 @@
+[package]
+name = "folio-color"
+description = "Display colour: CMYK and blend-space conversion through the document's installed ICC profiles"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+folio-model.workspace = true
+# ICC parsing only (tags, LUT and curve data); already in the tree through `image`.
+# BSD-3-Clause OR Apache-2.0.
+moxcms = "=0.8.1"
+
+[dev-dependencies]
+serde_json.workspace = true

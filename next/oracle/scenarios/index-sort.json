@@ -1,0 +1,76 @@
+{
+ "fixture": "index-sort",
+ "extension": "index-sort",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "isort-set",
+   "pdf": false,
+   "rules": [
+    "index.sort.options"
+   ],
+   "steps": [
+    {
+     "op": "setIndexSortOptions",
+     "options": [
+      {
+       "name": "kIndexGroup_Symbol",
+       "include": true,
+       "priority": 1
+      },
+      {
+       "name": "kIndexGroup_Alphabet",
+       "include": true,
+       "priority": 2
+      },
+      {
+       "name": "kIndexGroup_Numeric",
+       "include": false,
+       "priority": 3
+      },
+      {
+       "name": "kWRIndexGroup_GreekAlphabet",
+       "include": false,
+       "priority": 4
+      },
+      {
+       "name": "kWRIndexGroup_CyrillicAlphabet",
+       "include": false,
+       "priority": 5
+      },
+      {
+       "name": "kIndexGroup_Kana",
+       "include": true,
+       "priority": 6,
+       "header_type": "KatakanaConsonantsOnly"
+      },
+      {
+       "name": "kIndexGroup_Chinese",
+       "include": false,
+       "priority": 7
+      },
+      {
+       "name": "kIndexGroup_Korean",
+       "include": true,
+       "priority": 0,
+       "header_type": "KoreanConsonantPlusVowel"
+      },
+      {
+       "name": "kWRIndexGroup_ArabicAlphabet",
+       "include": false,
+       "priority": 8
+      },
+      {
+       "name": "kWRIndexGroup_HebrewAlphabet",
+       "include": false,
+       "priority": 9
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

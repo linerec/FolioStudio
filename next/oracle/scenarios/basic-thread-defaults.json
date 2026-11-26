@@ -1,0 +1,15 @@
+{
+  "fixture":"basic-create-type",
+  "about":"Detached stories use document text defaults; appended empty frames retain the existing text.",
+  "scenarios":[
+    {"name":"thread-unlink-defaults","steps":[{"op":"threadText","target":"tf-1","next":null}]},
+    {"name":"thread-append-defaults","steps":[
+      {"op":"createItem","kind":"textFrame","page":2,"rect":[320,240,550,500],"label":"created"},
+      {"op":"threadText","target":"tf-2","next":"created"}
+    ]},
+    {"name":"thread-prepend-defaults","steps":[
+      {"op":"createItem","kind":"textFrame","page":1,"rect":[320,60,550,200],"label":"created"},
+      {"op":"threadText","target":"created","next":"tf"}
+    ]}
+  ]
+}

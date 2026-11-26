@@ -1,0 +1,132 @@
+{
+ "fixture": "docxtext2",
+ "about": "Place a Word file whose last paragraph ends with an endnote reference (docxtext-c3).",
+ "scenarios": [
+  {
+   "name": "docxtext-c3-en3",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext2-en3.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-en4",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-n01.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-en5",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-n02.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-en6",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-n03.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-en7",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-n04.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-en8",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-n05.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  },
+  {
+   "name": "docxtext-c3-en9",
+   "steps": [
+    {
+     "op": "placeText",
+     "file": "docxtext3-n06.docx",
+     "page": 0,
+     "rect": [
+      72,
+      72,
+      540,
+      720
+     ],
+     "label": "placed"
+    }
+   ],
+   "pdf": false
+  }
+ ]
+}

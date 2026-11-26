@@ -1,0 +1,19 @@
+{
+  "fixture": "objopts-clip",
+  "extension": "objopts",
+  "scenarios": [
+    {
+      "name": "noop",
+      "steps": []
+    },
+    {
+      "name": "oo-clip-convert",
+      "steps": [
+        {
+          "op": "convertClippingToFrame",
+          "target": "clip"
+        }
+      ]
+    }
+  ]
+}

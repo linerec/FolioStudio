@@ -1,0 +1,514 @@
+{
+ "fixture": "psdlayers-c1",
+ "extension": "objlayer-c3",
+ "scenarios": [
+  {
+   "name": "noop",
+   "steps": []
+  },
+  {
+   "name": "psd-modes-a",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 1,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 2,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 3,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 4,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 5,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 8,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 9,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 11,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 16,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 18,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 19,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 22,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 23,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "psd-modes-b",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 6,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 7,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 10,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 12,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 13,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 14,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 15,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 24,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 25,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 20,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 21,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "psd-fill-opacity",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 26,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 27,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 28,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 29,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 30,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 31,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 32,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 33,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 34,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 35,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 36,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 37,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 38,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 39,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 40,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 41,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 42,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "psd-masks",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 45,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 46,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 47,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 48,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 49,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 50,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 51,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 52,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 53,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "psd-clips",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 54,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 55,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 56,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 57,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 59,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 60,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 61,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 62,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 63,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "psd-groups-a",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 66,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 69,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 72,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 75,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "name": "psd-groups-b",
+   "steps": [
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 78,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 81,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 85,
+     "visible": true
+    },
+    {
+     "op": "setGraphicLayerVisibility",
+     "target": "psd",
+     "file": "psdlayers-c1.psd",
+     "layer": 91,
+     "visible": true
+    }
+   ]
+  }
+ ]
+}

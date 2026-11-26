@@ -1,0 +1,25 @@
+{
+  "title": "문서 사전 설정",
+  "scope": "app",
+  "target": "none",
+  "style": "wide",
+  "columns": 2,
+  "extends": "newDocument",
+  "omit": ["project", "untitled", "layer", "loaded", "docpreset", "presetName", "family", "style"],
+  "defaults": "documentPreset",
+  "link": "newDocument",
+  "unitFields": "unit",
+  "description": "An app dialog (File ▸ Document Presets ▸ Define… ▸ New or Edit): a document preset's settings under presetName, with the New Document dialog's fields (lengths in points, shown in unit). replacing names the preset being edited (its settings are where the values start; empty: a new one from [Default]). Applying saves it (documentPresets save, in the place of replacing).",
+  "fields": [
+    { "name": "replacing", "label": "사전 설정 이름", "type": "text", "hidden": true, "default": "", "maxLength": 200, "group": "" },
+    { "name": "presetName", "label": "이름", "type": "text", "required": true, "trim": true, "default": "", "maxLength": 200, "group": "" }
+  ],
+  "actions": {
+    "ok": [
+      { "cmd": "documentPresets", "action": "save", "replacing": "$replacing", "preset": {
+        "name": { "$trim": "presetName" }, "unit": "$unit", "width": "$width", "height": "$height", "pages": "$pages", "start": "$start", "facing": "$facing",
+        "top": "$top", "bottom": "$bottom", "inside": "$inside", "outside": "$outside", "columns": "$columns", "gutter": "$gutter",
+        "bleed": ["$bleedTop", "$bleedBottom", "$bleedInside", "$bleedOutside"], "slug": ["$slugTop", "$slugBottom", "$slugInside", "$slugOutside"] } }
+    ]
+  }
+}

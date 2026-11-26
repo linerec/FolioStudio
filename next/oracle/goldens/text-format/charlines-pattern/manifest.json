@@ -1,0 +1,14 @@
+{
+  "measured": "2026-10-26T05:55:23.506274+00:00",
+  "indesign": "20.5.5.119",
+  "fixtureSha256": "734a31b444eef4fef24a6da7f78e1bf595db8a883a0de4831a1fea8a42dbefa6",
+  "runnerSha256": "9cf004920b1f570bf358c814ae575e2a7ba4c24e44334facbe2a35ff1e655b70",
+  "captures": 2,
+  "files": {
+    "indesign.json": "9b1ad4460dd0f7fbf8c34ef91d871a8f2e1e43dc80c68c72141fe90bcf483c81",
+    "page-1.png": "6be58ef5c4a71a3da4b2b56dbe3849ec7ebdb5317f6ab81741165534ee1bc90f",
+    "before/Stories/Story_uf4.xml": "94e5107267474189952c1bb595c64353b53adff469fa605260217edc02d69a20",
+    "after/Stories/Story_uf4.xml": "8a2bbce5a715cdcf405e1927a1af878ed39e8dea766a5b43f2419ebadc732d31"
+  },
+  "reason": "새 문자 선 사례. 두 번 실행; 스타일 사례의 기존 volatile StyleUniqueId를 제외한 동일성은 세 번째 실행으로 확인."
+}

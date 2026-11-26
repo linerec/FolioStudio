@@ -1,0 +1,419 @@
+{
+  "fixture": "nested-styles",
+  "extension": "nested-styles",
+  "scenarios": [
+    {
+      "name": "noop",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": []
+    },
+    {
+      "name": "nested-words",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 0",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "delimiter": "AnyCharacter",
+              "repetition": 2,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 1",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": false
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 9",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 2,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 10",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 3,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "AnyCharacter",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-sentences",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 2",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "Sentence",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "Sentence",
+              "repetition": 2,
+              "inclusive": false
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-delimiters",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 3",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "Letters",
+              "repetition": 2,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "Digits",
+              "repetition": 2,
+              "inclusive": false
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 4",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "Tabs",
+              "repetition": 1,
+              "inclusive": false
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "Tabs",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Bold",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 5",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "ForcedLineBreak",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 6",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": ":",
+              "repetition": 1,
+              "inclusive": true,
+              "custom": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "; ",
+              "repetition": 1,
+              "inclusive": false,
+              "custom": true
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-repeat",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 7",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/$ID/[No character style]",
+              "delimiter": "Repeat",
+              "repetition": 2,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 8",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-inherit",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS P",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-local-char",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 12",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 3,
+              "inclusive": true
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-grep-overlap",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 13",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 2,
+              "inclusive": true
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nested-reorder-clear",
+      "rules": [
+        "styles.nested.basic"
+      ],
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 0",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 0",
+          "items": [
+            {
+              "style": "CharacterStyle/Blue",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            },
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 1",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 1",
+          "items": []
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS P",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 11",
+          "items": []
+        }
+      ],
+      "maxLocalError": 0.15
+    },
+    {
+      "name": "nlines-with-nested",
+      "steps": [
+        {
+          "op": "setNestedStyles",
+          "style": "ParagraphStyle/NS 0",
+          "items": [
+            {
+              "style": "CharacterStyle/Red",
+              "delimiter": "AnyWord",
+              "repetition": 1,
+              "inclusive": true
+            }
+          ]
+        },
+        {
+          "op": "setLineStyles",
+          "style": "ParagraphStyle/NS 0",
+          "items": [
+            {
+              "style": "CharacterStyle/Blue",
+              "lines": 1
+            }
+          ]
+        }
+      ],
+      "maxLocalError": 0.15
+    }
+  ]
+}

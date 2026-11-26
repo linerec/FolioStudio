@@ -1,0 +1,23 @@
+{
+  "fixture": "tablestyles",
+  "about": "Windowed Cell/Table Styles panel New Style commands capture selection formatting.",
+  "scenarios": [
+    {"name":"sp-cell-new-local","window":true,"steps":[
+      {"op":"table","target":"tbl","do":"cellProps","cells":[[1,1]],"props":{"fillColor":"Black","topInset":7,"rotationAngle":90}},
+      {"op":"tableStyleSelection","target":"tbl","kind":"cell","cell":[1,1],"name":"Selection cell"}
+    ]},
+    {"name":"sp-cell-new-based","window":true,"steps":[
+      {"op":"table","target":"tbl","do":"applyCellStyle","cells":[[1,1]],"style":"Oracle Cell Blue"},
+      {"op":"table","target":"tbl","do":"cellProps","cells":[[1,1]],"props":{"fillColor":"Black"}},
+      {"op":"tableStyleSelection","target":"tbl","kind":"cell","cell":[1,1],"name":"Selection cell"}
+    ]},
+    {"name":"sp-table-new-local","window":true,"steps":[
+      {"op":"table","target":"tbl","do":"tableProps","props":{"spaceBefore":9,"topBorderStrokeWeight":3}},
+      {"op":"tableStyleSelection","target":"tbl","kind":"table","cell":[1,1],"name":"Selection table"}
+    ]},
+    {"name":"sp-table-new-based","window":true,"steps":[
+      {"op":"table","target":"tbl","do":"applyTableStyle","style":"Oracle Zebra"},
+      {"op":"tableStyleSelection","target":"tbl","kind":"table","cell":[1,1],"name":"Selection table"}
+    ]}
+  ]
+}
