@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/platform-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-30363d?style=flat-square" alt="플랫폼: Windows, macOS, Linux">
   <img src="https://img.shields.io/badge/engine-Rust-b7410e?style=flat-square&logo=rust&logoColor=white" alt="엔진: Rust">
   <img src="https://img.shields.io/badge/UI-Electron%20%2B%20React-47848f?style=flat-square&logo=electron&logoColor=white" alt="화면: Electron + React">
-  <img src="https://img.shields.io/badge/MCP-ready-8a63d2?style=flat-square" alt="MCP 지원">
+  <img src="https://img.shields.io/badge/MCP-preview-8a63d2?style=flat-square" alt="MCP 미리보기">
   <img src="https://img.shields.io/badge/status-alpha-e2557a?style=flat-square" alt="상태: 알파">
 </p>
 
@@ -71,9 +71,9 @@
       색인, 책, 상호 참조, 데이터 병합.
     </td>
     <td width="33%" valign="top">
-      <h3>🤖 MCP 로 AI 와 함께</h3>
-      화면에서 하는 모든 일이 엔진 명령으로도 됩니다. 내장 <code>folio-mcp</code> 서버로 Claude 나 다른 MCP 클라이언트가
-      실행 중인 Folio 를 조작합니다. 켜 준 권한 안에서만.
+      <h3>🤖 MCP 로 AI 와 함께 (미리보기)</h3>
+      <code>folio-mcp</code> 서버가 실행 중인 Folio 에 붙어, Claude 나 다른 MCP 클라이언트가 문서를 열고, 고르고, 대화상자를 채우고,
+      편집합니다. 환경 설정에서 켜 준 스위치 안에서만. 지금은 도구 약 70개이고, 아직은 소스로 빌드해서 씁니다.
     </td>
     <td width="33%" valign="top">
       <h3>🦀 진짜 엔진</h3>

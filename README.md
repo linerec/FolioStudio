@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/platform-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-30363d?style=flat-square" alt="Platforms: Windows, macOS, Linux">
   <img src="https://img.shields.io/badge/engine-Rust-b7410e?style=flat-square&logo=rust&logoColor=white" alt="Engine: Rust">
   <img src="https://img.shields.io/badge/UI-Electron%20%2B%20React-47848f?style=flat-square&logo=electron&logoColor=white" alt="UI: Electron + React">
-  <img src="https://img.shields.io/badge/MCP-ready-8a63d2?style=flat-square" alt="MCP ready">
+  <img src="https://img.shields.io/badge/MCP-preview-8a63d2?style=flat-square" alt="MCP preview">
   <img src="https://img.shields.io/badge/status-alpha-e2557a?style=flat-square" alt="Status: alpha">
 </p>
 
@@ -72,9 +72,9 @@ you already have comes with you.
       text on a path, MathML equations, indexes, books, cross-references and data merge.
     </td>
     <td width="33%" valign="top">
-      <h3>🤖 AI-ready with MCP</h3>
-      Everything you do on screen is also an engine command. The built-in <code>folio-mcp</code> server lets Claude or any MCP client work
-      in a running Folio — only with the permissions you switch on.
+      <h3>🤖 AI over MCP (preview)</h3>
+      The <code>folio-mcp</code> server attaches to a running Folio so Claude or another MCP client can open documents, select, fill dialogs
+      and make edits — only with the switches you turn on in Preferences. About 70 tools so far; built from source for now.
     </td>
     <td width="33%" valign="top">
       <h3>🦀 A real engine</h3>
