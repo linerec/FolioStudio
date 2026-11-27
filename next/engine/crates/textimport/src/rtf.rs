@@ -12,7 +12,7 @@
 //!
 //! A file with a style sheet (`\s1`, `\cs1`): its styles come in as styles (`style.rs`); paragraphs and runs carry only what differs from them.
 use crate::messages::{Message, msg};
-use crate::{Inline, Options, PageBreaks, Paragraph, Run, SwatchDef, TextSource, txt};
+use crate::{Inline, Options, PageBreaks, Paragraph, Run, SwatchDef, TextSource, quotes};
 
 mod grid;
 mod list;
@@ -369,8 +369,7 @@ impl Reader<'_> {
             if !self.swatches.iter().any(|s| s.name == name) {
                 self.swatches.push(SwatchDef { name: name.clone(), rgb, grouped: true });
             }
-            // a swatch's Self writes `%` as `%25` (Gray-50%)
-            attrs.push(("FillColor".into(), format!("Color/{}", name.replace('%', "%25"))));
+            attrs.push(("FillColor".into(), resources::swatch_reference(&name)));
         }
         if state.underline {
             attrs.push(("Underline".into(), "true".into()));
@@ -674,13 +673,7 @@ pub(crate) fn read(bytes: &[u8], options: &Options) -> Result<TextSource, String
         paragraphs.push(Paragraph::default());
     }
     if options.use_typographers_quotes {
-        quotes(&mut paragraphs);
-        // a cell's text is read as a text of its own
-        for run in paragraphs.iter_mut().flat_map(|p| p.runs.iter_mut()) {
-            if let Some(Inline::Table(t)) = &mut run.inline {
-                t.cells.iter_mut().for_each(|c| quotes(&mut c.paragraphs));
-            }
-        }
+        quotes::story(&mut paragraphs);
     }
     // no kinsoku tables are left in the document by an RTF file (measured: placetext-rtf-*), unlike a Word file
     let formatted = false;
@@ -726,27 +719,4 @@ fn plain_paragraph(p: &Paragraph) -> Paragraph {
         })
         .collect();
     Paragraph { runs, ..Paragraph::default() }
-}
-
-/// Straight quotes become curly across the story (the same rule as the text and Word readers).
-fn quotes(paragraphs: &mut [Paragraph]) {
-    let mut whole = String::new();
-    for (i, p) in paragraphs.iter().enumerate() {
-        if i > 0 {
-            whole.push('\r');
-        }
-        whole.push_str(&p.text());
-    }
-    let curly: Vec<char> = txt::typographers_quotes(&whole).chars().collect();
-    let mut at = 0usize;
-    for (i, p) in paragraphs.iter_mut().enumerate() {
-        if i > 0 {
-            at += 1;
-        }
-        for run in &mut p.runs {
-            let n = run.text.chars().count();
-            run.text = curly[at..at + n].iter().collect();
-            at += n;
-        }
-    }
 }

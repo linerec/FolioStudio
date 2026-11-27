@@ -464,10 +464,11 @@ export function ActivityBar({ dock, hide }: { dock: Dock; hide?: HiddenPanels })
   const s = dock.state;
   const groups = zoneGroups(s, 'left') as PanelId[][];
   const ids = groups.flatMap((g) => shownIn(g, hide));
+  if (!ids.includes('ai')) ids.push('ai');
   const open = sidebarOpen(dock, hide);
   const press = (id: PanelId) => {
     if (dock.dragged()) return;
-    if (dock.showing(id)) dock.hideView(id); else { dock.setHidden(false); dock.apply({ op: 'openPanel', panel: id, view: view() }); }
+    if (dock.showing(id)) dock.hideView(id); else if (id === 'ai') dock.showView(id); else { dock.setHidden(false); dock.apply({ op: 'openPanel', panel: id, view: view() }); }
   };
   return (
     <nav className="activity" aria-label={tr('활동 막대')} {...drop(dock, { zone: 'left', before: groups.length })}>

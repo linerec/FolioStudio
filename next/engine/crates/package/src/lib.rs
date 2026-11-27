@@ -22,15 +22,17 @@
 pub mod fonts;
 pub mod fsops;
 pub mod names;
+mod planning;
 pub mod protect;
 mod report;
 pub mod time;
 
-use folio_links::{LinkReport, LinkStatus};
+pub use planning::{FileCopy, FontFile, FontRow, LinkFile, LinkRow, PlacedFont, Plan, plan};
+
+use folio_links::LinkReport;
 use folio_model::Document;
 use folio_model::layout::DocumentLayout;
-use folio_text::{FontSource, FontStore};
-use names::NameTable;
+use folio_text::FontStore;
 use serde::Serialize;
 use serde_json::Value;
 use std::collections::HashMap;
@@ -97,6 +99,14 @@ pub struct Inputs<'a> {
     pub profiles: ProfileFacts,
 }
 
+impl Inputs<'_> {
+    fn source_bytes(&self) -> Result<u64, Error> {
+        std::fs::metadata(self.source)
+            .map(|meta| meta.len())
+            .map_err(|e| Error::new("source", format!("원본 문서를 읽을 수 없습니다: {}: {e}", self.source.display())))
+    }
+}
+
 /// How files are copied.
 #[derive(Clone, Copy, Debug, Default, PartialEq, Eq, Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -159,143 +169,6 @@ impl Default for Options {
     }
 }
 
-/// One file to copy.
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct FileCopy {
-    pub source: PathBuf,
-    /// Path inside the package, '/'-separated.
-    pub dest: String,
-    pub bytes: u64,
-}
-
-/// A linked file copied into Links (one per source file, however often it is placed).
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct LinkFile {
-    pub copy: FileCopy,
-    /// The file's name on disk, as spelled there.
-    pub original_name: String,
-    /// Packaged under another name because a different file already has this one.
-    pub renamed: bool,
-    /// Other source files with the same name and the same bytes, packaged as this one.
-    pub same_as: Vec<PathBuf>,
-    /// Graphic ids that use it.
-    pub owners: Vec<String>,
-}
-
-/// One placed link, as the report lists it.
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct LinkRow {
-    pub owner: String,
-    pub element: String,
-    /// File name the document recorded.
-    pub name: String,
-    /// found | modified | missing | ambiguous | embedded
-    pub status: &'static str,
-    pub how: Option<&'static str>,
-    pub source: Option<PathBuf>,
-    /// Path in the package ("Links/…"), when copied.
-    pub packaged: Option<String>,
-    #[serde(skip)]
-    pub file: Option<usize>,
-    pub page: Option<usize>,
-    pub page_name: Option<String>,
-    /// Effective resolution on the page (lower axis).
-    pub ppi: Option<f64>,
-    pub space: Option<String>,
-    pub format: Option<String>,
-    /// Recorded location (decoded URI).
-    pub recorded: String,
-    /// Ambiguous links: the equally good candidates.
-    pub candidates: Vec<PathBuf>,
-    /// The file on disk spells its Korean name decomposed (NFD, as macOS writes it).
-    pub nfd_name: bool,
-}
-
-/// A font file copied into Document fonts.
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct FontFile {
-    pub copy: FileCopy,
-    /// "Family Style" of the used faces in it.
-    pub faces: Vec<String>,
-    pub origin: &'static str,
-}
-
-/// One family + style the text uses.
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct FontRow {
-    pub family: String,
-    pub style: String,
-    /// copied | notCopied | notSelected | missing | substituted
-    pub status: &'static str,
-    pub code: Option<&'static str>,
-    pub reason: Option<String>,
-    /// The face that was matched ("Family Style").
-    pub face: Option<String>,
-    pub postscript: Option<String>,
-    /// Path in the package when copied, else the source file's name.
-    pub file: Option<String>,
-    pub source: Option<PathBuf>,
-    pub origin: Option<&'static str>,
-    /// Missing / substituted: the face drawn instead.
-    pub substitute: Option<String>,
-}
-
-/// A font a placed PDF / EPS uses without embedding it.
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct PlacedFont {
-    pub link: String,
-    pub font: String,
-    pub kind: String,
-}
-
-/// Everything the package will contain and why.
-#[derive(Clone, Debug, Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct Plan {
-    pub document: FileCopy,
-    pub pdf_name: String,
-    pub links: Vec<LinkFile>,
-    pub link_rows: Vec<LinkRow>,
-    pub fonts: Vec<FontFile>,
-    pub font_rows: Vec<FontRow>,
-    pub placed_fonts: Vec<PlacedFont>,
-    /// Placed InDesign / Illustrator files: links inside them are not collected.
-    pub nested: Vec<String>,
-    /// Bytes to copy.
-    pub bytes: u64,
-    pub ms: f64,
-}
-
-impl Plan {
-    /// Counts for the window (dialog and result).
-    pub fn counts(&self) -> Value {
-        let rows = |s: &str| self.link_rows.iter().filter(|r| r.status == s).count();
-        let fonts = |s: &str| self.font_rows.iter().filter(|r| r.status == s).count();
-        serde_json::json!({
-            "document": {"name": self.document.dest, "bytes": self.document.bytes},
-            "links": {"placed": self.link_rows.len(), "files": self.links.len(), "bytes": self.links.iter().map(|l| l.copy.bytes).sum::<u64>(),
-                      "found": rows("found"), "modified": rows("modified"), "missing": rows("missing"), "ambiguous": rows("ambiguous"),
-                      "embedded": rows("embedded"), "renamed": self.links.iter().filter(|l| l.renamed).count(),
-                      "sameContent": self.links.iter().map(|l| l.same_as.len()).sum::<usize>(),
-                      "rgb": self.link_rows.iter().filter(|r| r.space.as_deref() == Some("Rgb")).count(),
-                      "lowRes": self.link_rows.iter().filter(|r| r.ppi.is_some_and(|p| p < LOW_PPI)).count(),
-                      "nested": self.nested.len()},
-            "fonts": {"used": self.font_rows.len(), "files": self.fonts.len(), "bytes": self.fonts.iter().map(|f| f.copy.bytes).sum::<u64>(),
-                      "copied": fonts("copied"), "notCopied": fonts("notCopied"), "notSelected": fonts("notSelected"),
-                      "missing": fonts("missing"), "substituted": fonts("substituted"), "placedNotEmbedded": self.placed_fonts.len()},
-            "pdfName": self.pdf_name,
-            "bytes": self.bytes,
-            "ms": (self.ms * 10.0).round() / 10.0,
-        })
-    }
-}
-
 /// Effective resolution below which images are listed (preflight's warning threshold).
 pub const LOW_PPI: f64 = 300.0;
 
@@ -338,237 +211,6 @@ fn file_name(p: &Path) -> String {
 /// Document page index → page name.
 pub fn page_names(doc: &Document) -> HashMap<usize, String> {
     doc.spreads.iter().flat_map(|s| s.pages.iter()).map(|p| (p.index, p.name.clone())).collect()
-}
-
-fn has_conjoining_jamo(s: &str) -> bool {
-    s.chars().any(|c| ('\u{1100}'..='\u{11FF}').contains(&c))
-}
-
-/// Decides what goes into the package. `compare_contents`: when two different files have
-/// the same name and size, read both and package identical ones once (else the second is
-/// renamed); the window's preview skips the reading.
-pub fn plan(inp: &Inputs, opts: &Options, compare_contents: bool) -> Result<Plan, Error> {
-    let started = Instant::now();
-    let meta = std::fs::metadata(inp.source).map_err(|e| Error::new("source", format!("원본 문서를 읽을 수 없습니다: {}: {e}", inp.source.display())))?;
-    let doc_name = file_name(inp.source);
-    let mut root = NameTable::new();
-    for n in [LINKS_DIR, FONTS_DIR, INSTRUCTIONS, REPORT_JSON] {
-        root.reserve(n);
-    }
-    let doc_dest = root.unique(&doc_name);
-    let pdf_name = root.unique(&format!("{}.pdf", names::split_ext(&doc_name).0));
-    let document = FileCopy { source: inp.source.to_path_buf(), dest: doc_dest, bytes: meta.len() };
-    let (links, link_rows, nested, placed_fonts) = plan_links(inp, opts, compare_contents);
-    let (fonts, font_rows) = plan_fonts(inp, opts);
-    let bytes = document.bytes + links.iter().map(|l| l.copy.bytes).sum::<u64>() + fonts.iter().map(|f| f.copy.bytes).sum::<u64>();
-    Ok(Plan { document, pdf_name, links, link_rows, fonts, font_rows, placed_fonts, nested, bytes, ms: started.elapsed().as_secs_f64() * 1000.0 })
-}
-
-type LinkPlan = (Vec<LinkFile>, Vec<LinkRow>, Vec<String>, Vec<PlacedFont>);
-
-fn plan_links(inp: &Inputs, opts: &Options, compare_contents: bool) -> LinkPlan {
-    let pages = page_names(inp.doc);
-    let frames = folio_links::owner_frames(inp.doc);
-    let mut files: Vec<LinkFile> = Vec::new();
-    let mut by_path: HashMap<PathBuf, usize> = HashMap::new();
-    let mut by_name: HashMap<String, Vec<usize>> = HashMap::new();
-    let mut table = NameTable::new();
-    let mut rows = Vec::new();
-    let mut nested: Vec<String> = Vec::new();
-    let mut placed_fonts: Vec<PlacedFont> = Vec::new();
-    for e in &inp.links.links {
-        let name = folio_links::parse_uri(&e.recorded.uri).and_then(|l| l.file_name().map(str::to_owned)).unwrap_or_else(|| e.owner.clone());
-        let fact = inp.preflight.images.get(&e.owner);
-        let frame = fact.map(|f| f.frame.clone()).or_else(|| frames.get(&e.owner).cloned());
-        let loc = frame.as_ref().and_then(|f| inp.locations.get(f));
-        let info = e.info.as_ref().and_then(|r| r.as_ref().ok());
-        let found = match &e.status {
-            Some(LinkStatus::Found { path, .. }) => Some(path.as_path()),
-            _ => None,
-        };
-        let mut row = LinkRow {
-            owner: e.owner.clone(),
-            element: e.element.clone(),
-            name: name.clone(),
-            status: e.state_word(),
-            how: e.how_word(),
-            source: found.map(Path::to_path_buf),
-            packaged: None,
-            file: None,
-            page: loc.map(|l| l.page),
-            page_name: loc.and_then(|l| pages.get(&l.page).cloned()),
-            ppi: fact.map(|f| f.ppi[0].min(f.ppi[1])),
-            space: info.map(|i| format!("{:?}", i.color_space)),
-            format: info.map(|i| format!("{:?}", i.format)),
-            recorded: folio_links::uri::percent_decode(&e.recorded.uri),
-            candidates: match &e.status {
-                Some(LinkStatus::Ambiguous(c)) => c.clone(),
-                _ => Vec::new(),
-            },
-            nfd_name: found.is_some_and(|p| has_conjoining_jamo(&file_name(p))),
-        };
-        if let Some(i) = info {
-            for f in i.fonts.iter().filter(|f| !f.embedded) {
-                if !placed_fonts.iter().any(|p| p.link == name && p.font == f.name) {
-                    placed_fonts.push(PlacedFont { link: name.clone(), font: f.name.clone(), kind: f.kind.clone() });
-                }
-            }
-        }
-        if let Some(path) = found {
-            let ext = path.extension().map(|x| x.to_string_lossy().to_ascii_lowercase()).unwrap_or_default();
-            if matches!(ext.as_str(), "indd" | "indt" | "idml" | "ai") && !nested.contains(&name) {
-                nested.push(name.clone());
-            }
-        }
-        if let (true, Some(path)) = (opts.links, found) {
-            let key = protect::normalize(path);
-            let idx = match by_path.get(&key) {
-                Some(&i) => i,
-                None => {
-                    let disk_name = file_name(path);
-                    let bytes = std::fs::metadata(path).map_or(0, |m| m.len());
-                    let nk = folio_links::uri::name_key(&disk_name);
-                    let same = if compare_contents {
-                        by_name.get(&nk).and_then(|c| {
-                            c.iter().copied().find(|&j| files[j].copy.bytes == bytes && fsops::same_content(&files[j].copy.source, path).unwrap_or(false))
-                        })
-                    } else {
-                        None
-                    };
-                    let i = match same {
-                        Some(j) => {
-                            files[j].same_as.push(path.to_path_buf());
-                            j
-                        }
-                        None => {
-                            let packaged = table.unique(&disk_name);
-                            files.push(LinkFile {
-                                copy: FileCopy { source: path.to_path_buf(), dest: format!("{LINKS_DIR}/{packaged}"), bytes },
-                                renamed: packaged != disk_name,
-                                original_name: disk_name,
-                                same_as: Vec::new(),
-                                owners: Vec::new(),
-                            });
-                            by_name.entry(nk).or_default().push(files.len() - 1);
-                            files.len() - 1
-                        }
-                    };
-                    by_path.insert(key, i);
-                    i
-                }
-            };
-            files[idx].owners.push(e.owner.clone());
-            row.file = Some(idx);
-            row.packaged = Some(files[idx].copy.dest.clone());
-        }
-        rows.push(row);
-    }
-    (files, rows, nested, placed_fonts)
-}
-
-fn norm_family(s: &str) -> String {
-    s.chars().filter(|c| c.is_alphanumeric()).flat_map(char::to_lowercase).collect()
-}
-
-fn plan_fonts(inp: &Inputs, opts: &Options) -> (Vec<FontFile>, Vec<FontRow>) {
-    let store = inp.fonts;
-    // the preflight's own reading of missing vs substituted (one owner of that rule)
-    let facts = folio_preflight::font_facts(store, inp.doc, inp.layout);
-    struct Group {
-        path: PathBuf,
-        source: FontSource,
-        faces: Vec<(u32, bool)>,
-        names: Vec<String>,
-        rows: Vec<usize>,
-    }
-    let mut groups: Vec<Group> = Vec::new();
-    let mut by_file: HashMap<PathBuf, usize> = HashMap::new();
-    let mut rows: Vec<FontRow> = Vec::new();
-    for (family, style) in &inp.doc.fonts_used {
-        let mut row = FontRow {
-            family: family.clone(),
-            style: style.clone(),
-            status: "copied",
-            code: None,
-            reason: None,
-            face: None,
-            postscript: None,
-            file: None,
-            source: None,
-            origin: None,
-            substitute: None,
-        };
-        let Some((face, cjk_glyphs)) = fonts::exact_face(store, family, style, &inp.doc.font_table) else {
-            let listed = |l: &[(String, String, String)]| l.iter().find(|(f, s, _)| f == family && s == style).map(|t| t.2.clone());
-            let (status, sub) = if let Some(s) = listed(&facts.substituted) {
-                ("substituted", s)
-            } else if let Some(s) = listed(&facts.missing) {
-                ("missing", s)
-            } else {
-                // not set by the layout (e.g. only in empty runs): classify the same way
-                let r = store.resolve(family, style, &inp.doc.font_table);
-                let sub = store.face_info(r.font).map(|i| format!("{} {}", i.family, i.style)).unwrap_or_else(|| "(대체 글꼴 없음)".into());
-                let installed = store.faces().iter().any(|i| norm_family(&i.family) == norm_family(family));
-                (if installed { "substituted" } else { "missing" }, sub)
-            };
-            row.status = status;
-            row.substitute = Some(sub);
-            rows.push(row);
-            continue;
-        };
-        row.face = Some(format!("{} {}", face.family, face.style));
-        row.postscript = Some(face.postscript.clone());
-        row.source = Some((*face.path).clone());
-        row.origin = Some(fonts::origin_word(face.source));
-        row.file = Some(file_name(&face.path));
-        if !opts.fonts {
-            row.status = "notSelected";
-            rows.push(row);
-            continue;
-        }
-        let cjk_script = cjk_glyphs
-            || inp.doc.font_table.iter().any(|f| &f.family == family && &f.style == style && f.writing_script.is_some_and(fonts::is_cjk_script));
-        let path = (*face.path).clone();
-        let g = *by_file.entry(path.clone()).or_insert_with(|| {
-            groups.push(Group { path, source: face.source, faces: Vec::new(), names: Vec::new(), rows: Vec::new() });
-            groups.len() - 1
-        });
-        let group = &mut groups[g];
-        if let Some(f) = group.faces.iter_mut().find(|f| f.0 == face.index) {
-            f.1 |= cjk_script;
-        } else {
-            group.faces.push((face.index, cjk_script));
-        }
-        let label = format!("{} {}", face.family, face.style);
-        if !group.names.contains(&label) {
-            group.names.push(label);
-        }
-        group.rows.push(rows.len());
-        rows.push(row);
-    }
-    let mut table = NameTable::new();
-    let mut files = Vec::new();
-    for g in groups {
-        match fonts::decide(&g.path, g.source, &g.faces, opts.cjk_fonts) {
-            Ok(_) => {
-                let name = table.unique(&file_name(&g.path));
-                let dest = format!("{FONTS_DIR}/{name}");
-                let bytes = std::fs::metadata(&g.path).map_or(0, |m| m.len());
-                for &r in &g.rows {
-                    rows[r].file = Some(dest.clone());
-                }
-                files.push(FontFile { copy: FileCopy { source: g.path, dest, bytes }, faces: g.names, origin: fonts::origin_word(g.source) });
-            }
-            Err(skip) => {
-                for &r in &g.rows {
-                    rows[r].status = "notCopied";
-                    rows[r].code = Some(skip.code);
-                    rows[r].reason = Some(skip.reason.clone());
-                }
-            }
-        }
-    }
-    (files, rows)
 }
 
 /// A PDF made into the package by the caller.

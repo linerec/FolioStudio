@@ -357,3 +357,13 @@ python -X utf8 -B -I tools/run-claude.py <folio-mcp 실행 파일> <저장소 �
 ```
 
 (새 프로젝트 폴더는 `python -X utf8 -I tools/make-project.py <새 폴더>`로 만든다. `run-claude.py`는 사용량을 쓴다: 작은 모델 한 번, 약 0.01달러.)
+
+### AI 패널과 MCP 붙기
+
+AI 패널은 열린 문서를 편집할 때 MCP 붙기와 같은 도구 목록, 인수 검사, 경로 제한을 사용한다. 모델은 `folio_find_tools`로 도구를 찾고 `folio_call`로 호출할 수 있다. 원본은 읽기 전용이며 파일 쓰기와 외부 전송에는 허락이 필요하다.
+
+연결 키, 세션, 허락 카드를 다루는 `ai*` 명령은 모두 `withheld`다. 화면은 이 명령을 엔진에 직접 보내며, 외부 MCP 클라이언트나 모델은 어떤 권한 모드에서도 호출할 수 없다. [엔진 명령 목록](COMMANDS.ko.md#ai-패널)
+
+### 미리보기 성능 설정
+
+`performanceProfile`은 문서를 열기 전에도 쓸 수 있다. `hardware`는 감지한 코어와 RAM, `adapters`는 운영체제가 알려 준 화면 장치, `active`는 현재 작업 수와 이유다. `inputs`는 값의 출처, `saved`는 다음 시작에 쓸 사용자 설정이다. 예를 들어 `{"cmd":"performanceProfile","values":{"folio.performanceProfile":"low","folio.memBudgetMb":64}}`로 저장한다. 프로필은 auto·low·standard·high, 작업 수(`folio.threads`)와 예산은 양의 정수 또는 auto다. `folio.accel`은 auto 또는 off다. 환경 변수는 저장값보다 우선한다.

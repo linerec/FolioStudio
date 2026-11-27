@@ -37,7 +37,7 @@ export function withViews(s: DockState, seed: SidebarSeed = {}): DockState {
   if (!zoneGroups(s, 'left').length) {
     return normalizeDock({
       ...s,
-      left: [['explorer'], ['toolbox']],
+      left: [['explorer', 'ai'], ['toolbox']],
       layout: { ...s.layout, left: { dir: 'col', parts: [0, 1], sizes: [split, 1 - split] } },
       size: { ...s.size, ...(typeof seed.width === 'number' ? { left: seed.width } : {}) },
       collapsed: { ...s.collapsed, ...(seed.open === false ? { left: true } : {}) },
@@ -251,11 +251,11 @@ export function useDock() {
 
   /** Shows one of the Folio views (Window ▸ Project, Window ▸ Tools, the activity bar): where it is; closed, back at its home in the
    *  left area (the explorer at the top, the tools at the bottom). */
-  const showView = useCallback((id: ViewId) => {
+  const showView = useCallback((id: ViewId | 'ai') => {
     setHidden(false);
     if (!whereIs(stateRef.current, id)) {
       const mate = whereIs(stateRef.current, id === 'explorer' ? 'toolbox' : 'explorer');
-      const to: DropTarget = mate?.zone === 'left' ? { zone: 'left', group: mate.group, edge: id === 'explorer' ? 'top' : 'bottom' } : { zone: 'left', edge: id === 'explorer' ? 'top' : 'bottom' };
+      const to: DropTarget = id === 'ai' && mate?.zone === 'left' ? { zone: 'left', group: mate.group } : mate?.zone === 'left' ? { zone: 'left', group: mate.group, edge: id === 'explorer' ? 'top' : 'bottom' } : { zone: 'left', edge: id === 'explorer' ? 'top' : 'bottom' };
       apply({ op: 'movePanel', panel: id, to });
     }
     return apply({ op: 'openPanel', panel: id, view: view() });

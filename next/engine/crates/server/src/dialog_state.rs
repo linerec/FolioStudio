@@ -70,9 +70,9 @@ static APP: Mutex<Value> = Mutex::new(Value::Null);
 /// The requests an app dialog may send when applied: the ones the screen sends for the same dialog. `documentNew` needs the font
 /// store and runs on its own thread, `book` and `library` the colour profiles: they are handed to main.rs (`_appRequest`, [`MAIN_COMMANDS`])
 /// and finished by [`app_finished`].
-pub const APP_COMMANDS: &[&str] = &["userSettings", "projectCreate", "documentNew", "documentPresets", "book", "library", "pdfPresets", "printPresets"];
+pub const APP_COMMANDS: &[&str] = &["userSettings", "projectCreate", "documentNew", "documentPresets", "book", "library", "pdfPresets", "printPresets", "aiSaveConnection", "aiSetSettings"];
 /// The app requests main.rs runs for an app dialog (one per apply).
-pub const MAIN_COMMANDS: &[&str] = &["documentNew", "book", "library"];
+pub const MAIN_COMMANDS: &[&str] = &["documentNew", "book", "library", "aiSaveConnection", "aiSetSettings"];
 /// The requests of the open document a document dialog of `"requests": true` sends instead of edits (Print Booklet: the PDF file, the
 /// printer and taking a job back); the ones the screen sent for the same values.
 pub const DOCUMENT_REQUESTS: &[&str] = &["bookletFile", "printToDevice", "cancelPrintJob", "export", "userSettings", "printingFile", "package", "packageCancel"];
@@ -364,6 +364,7 @@ fn opened(def: &Value, name: &str, req: &Value, session: Option<&crate::Session>
     let mut values = json!({});
     for f in def["fields"].as_array().ok_or("invalid dialog schema")? {
         let key = name_of(f);
+        if f["type"] == "writeOnly" { continue; }
         let seeded = f.get("from").map(|from| remembered(from["preference"].as_str().unwrap_or(""))[from["key"].as_str().unwrap_or("")].clone());
         let remembered = (f["remember"] != false).then(|| remembered_all[key].clone());
         values[key] = [remembered, seeded, found.get(key).cloned()].into_iter().flatten()
@@ -376,7 +377,11 @@ fn opened(def: &Value, name: &str, req: &Value, session: Option<&crate::Session>
     }
     // what a "changed only" dialog measures its changes from: the values before the ones asked for
     let initial = values.clone();
-    for (key, value) in requested.as_object().into_iter().flatten() { values[key] = checked(&field(def, key)?, value, &choices)?; }
+    for (key, value) in requested.as_object().into_iter().flatten() {
+        let f = field(def, key)?;
+        let v = checked(&f, value, &choices)?;
+        if f["type"] != "writeOnly" { values[key] = v; }
+    }
     // the fields a dialog ties together follow what was asked for
     fn pick<'k>(requested: &Value, keys: &[&'k str]) -> Option<&'k str> { keys.iter().copied().find(|k| requested.get(*k).is_some()) }
     match def["link"].as_str() {
@@ -436,13 +441,13 @@ pub struct AttachedDialog {
 
 pub fn attached_dialog(req: &Value, session: Option<&crate::Session>) -> Result<Option<AttachedDialog>, String> {
     let cmd = req["cmd"].as_str().unwrap_or("");
-    if !matches!(cmd, "openDialog" | "setDialogField" | "applyDialog") { return Ok(None); }
+    if !matches!(cmd, "openDialog" | "setDialogField" | "applyDialog" | "cancelDialog" | "dialogState") { return Ok(None); }
     let app = app_scoped(req, session).map_err(|r| r.message)?;
     let state = if app { APP.lock().map_err(|e| e.to_string())?.clone() } else {
         match session { Some(s) => s.dialog.lock().map_err(|e| e.to_string())?.clone(), None => Value::Null }
     };
     let dialog = if cmd == "openDialog" { req["dialog"].as_str().unwrap_or("").to_owned() } else { state["dialog"].as_str().unwrap_or("").to_owned() };
-    if dialog.is_empty() { return Ok(None); }
+    if dialog.is_empty() || (matches!(cmd, "cancelDialog" | "dialogState") && dialog != "aiSettings") { return Ok(None); }
     let def = definition(&dialog).map_err(|r| r.message)?;
     let mut requests = Vec::new();
     if cmd == "applyDialog" && !state.is_null() {

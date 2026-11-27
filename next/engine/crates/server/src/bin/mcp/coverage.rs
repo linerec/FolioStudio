@@ -22,6 +22,8 @@ struct Hold {
     value_tool: Option<&'static str>,
 }
 const HOLDS: &[Hold] = &[
+    Hold { reason: "secret", detail: "AI panel session controls and credentials belong to the person using Folio.",
+        names: folio_ai::COMMANDS, value_tool: None },
     Hold { reason: "secret", detail: "These operations take credentials or access the personal credential store.",
         names: &["dbSaveConnection", "dbUnlockConnection", "dbTestConnection", "dbLockConnection", "dbCredentialStoreSelfTest"], value_tool: None },
     Hold { reason: "secret", detail: "Unfiltered user preferences contain private settings and control MCP permissions.",
@@ -93,6 +95,7 @@ pub fn report(args: &Value) -> Result<Value, String> {
             Status::Unreviewed => json!({"ok":true,"type":"coverage","name":name,"status":"unreviewed"}),
         };
         reply["attached"] = json!(attached_status(name));
+        if reply["attached"]=="withheld" {reply["risk"]=json!("withheld");}
         if let Some(h) = hold(name) {
             reply["attachedReason"] = json!(h.reason);
             reply["attachedWhy"] = json!(h.detail);

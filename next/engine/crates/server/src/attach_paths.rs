@@ -33,7 +33,7 @@ fn chosen_by_person(path: &Path) -> bool {
 }
 
 /// The root an attached request's paths are relative to.
-fn project_root(s: Option<&crate::Session>) -> Result<PathBuf, String> {
+pub(crate) fn project_root(s: Option<&crate::Session>) -> Result<PathBuf, String> {
     if let Some(f) = s.and_then(|s| s.folio.as_ref()) { return Ok(f.opened.project.root.clone()); }
     SCREEN_PROJECT.lock().expect("attach paths").clone()
         .ok_or_else(|| "No project is open in Folio: open a project (or one of its documents) in the app first.".to_owned())
@@ -239,10 +239,11 @@ fn same_folder(a: &Path, b: &Path) -> bool {
 /// unsaved changes (the screen opens what they made), and nothing is replaced. Every dialog: what applying it sends to the app
 /// (`dialog_state::attached_dialog`) is checked again here, so a dialog the person opened and filled is held to the same rules,
 /// and no app setting of `folio.mcp.*` changes. Returns the folder its reply is shown relative to.
-fn dialog(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved>, Refused> {
+fn dialog(req: &mut Value, s: Option<&crate::Session>, ai_files: Option<bool>) -> Result<Option<Resolved>, Refused> {
     let Some(view) = crate::dialog_state::attached_dialog(req, s)? else { return Ok(None) };
     let cmd = req["cmd"].as_str().unwrap_or("").to_owned();
     let name = view.dialog.as_str();
+    if ai_files.is_some() && name == "newProject" { return Err("AI file operations stay inside the open project".into()); }
     if view.app && view.declared == "app" && !attached::APP_DIALOGS.contains(&name) {
         return Err(format!("the {name} dialog is not available to an attached MCP connection (only {})", attached::APP_DIALOGS.join(", ")).into());
     }
@@ -264,7 +265,7 @@ fn dialog(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved
         }
         "applyDialog" => {
             if makes {
-                if !crate::attach::files_allowed() { return Err(attached::FILES_REFUSED.into()); }
+                if !ai_files.unwrap_or_else(crate::attach::files_allowed) { return Err(attached::FILES_REFUSED.into()); }
                 if req["action"].as_str().unwrap_or("ok") != "ok" {
                     return Err(format!("the {name} dialog's {} button is the person's (nothing is replaced over MCP)", req["action"].as_str().unwrap_or("")).into());
                 }
@@ -272,7 +273,7 @@ fn dialog(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved
                     return Err("The document open in Folio has unsaved changes: save it (save) or ask the person first (the screen opens what the dialog makes).".into());
                 }
             }
-            for request in &view.requests { app_request(request, s)?; }
+            for request in &view.requests { app_request(request, s, ai_files)?; }
         }
         _ => {}
     }
@@ -283,7 +284,7 @@ fn dialog(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved
 
 /// An app request an applied dialog would send for an attached client: the reviewed ones, in the open project or the folder for
 /// new projects, replacing nothing, changing no `folio.mcp.*` setting.
-fn app_request(request: &Value, s: Option<&crate::Session>) -> Result<(), Refused> {
+fn app_request(request: &Value, s: Option<&crate::Session>, ai_files: Option<bool>) -> Result<(), Refused> {
     match request["cmd"].as_str().unwrap_or("") {
         "projectCreate" => {
             let dir = PathBuf::from(request["dir"].as_str().unwrap_or(""));
@@ -313,7 +314,7 @@ fn app_request(request: &Value, s: Option<&crate::Session>) -> Result<(), Refuse
             let now = crate::attach::preferences();
             let asked = [&request["values"], &request["patch"]["preferences"], &request["patch"]];
             for (key, value) in asked.iter().filter_map(|v| v.as_object()).flatten() {
-                if !key.starts_with(attached::MCP_SETTINGS) { continue; }
+                if !attached::personal_setting(key) { continue; }
                 let same = match value { Value::Bool(_) | Value::Null => attached::on(Some(value)) == attached::on(now.get(key)),
                     _ => value.as_str().unwrap_or("") == now[key].as_str().unwrap_or("") };
                 if !same { return Err(format!("{key} is set by a person in Folio (Preferences ▸ General), not over MCP: the dialog was not applied").into()); }
@@ -322,7 +323,7 @@ fn app_request(request: &Value, s: Option<&crate::Session>) -> Result<(), Refuse
         "documentPresets" => {}
         // File ▸ Package (mcp-c5): a new folder of the open project, whose parent is in the project and that does not exist yet
         "package" => {
-            if !crate::attach::files_allowed() { return Err(attached::FILES_REFUSED.into()); }
+            if !ai_files.unwrap_or_else(crate::attach::files_allowed) { return Err(attached::FILES_REFUSED.into()); }
             let root = project_root(s)?;
             let dir = PathBuf::from(request["dir"].as_str().unwrap_or(""));
             let inside = dir.parent().and_then(|p| p.canonicalize().ok()).zip(root.canonicalize().ok()).is_some_and(|(p, r)| p.starts_with(&r));
@@ -341,9 +342,13 @@ fn app_request(request: &Value, s: Option<&crate::Session>) -> Result<(), Refuse
 /// project root the paths were relative to (replies show paths relative to it) with the paths to check again when the reply
 /// comes, or None when the request takes no path.
 pub fn resolve(req: &mut Value, s: Option<&crate::Session>) -> Result<Option<Resolved>, Refused> {
+    resolve_for(req,s,None)
+}
+
+pub fn resolve_for(req: &mut Value, s: Option<&crate::Session>, ai_files: Option<bool>) -> Result<Option<Resolved>, Refused> {
     let cmd = req["cmd"].as_str().unwrap_or("").to_owned();
     if cmd == "edit" { attached::text_tools::prepare(req); }
-    if matches!(cmd.as_str(), "openDialog" | "setDialogField" | "applyDialog") { return dialog(req, s); }
+    if matches!(cmd.as_str(), "openDialog" | "setDialogField" | "applyDialog") { return dialog(req, s, ai_files); }
     if attached::reads::get(&cmd).is_some() {
         let input = attached::reads::input_file(&cmd);
         let root = match project_root(s) {

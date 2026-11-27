@@ -16,13 +16,14 @@ mod messages;
 pub use messages::Message;
 mod numbering;
 mod picture;
+mod quotes;
 mod rtf;
 mod txt;
 mod xmltree;
 
 pub use charset::{CharacterSet, detect as detect_character_set};
 pub use picture::{Picture, decode_base64};
-pub use txt::smart_quote;
+pub use quotes::smart_quote;
 
 /// The import preferences that change what a text file becomes (`app.textImportPreferences`).
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Icon } from './icons';
 import { tr } from '../i18n';
+import {runningLabel,viewTool} from '../ai/runtime';
 import { useHelpCard } from './toolhelpview';
 import type { HelpId } from './toolhelp';
 
@@ -14,7 +15,7 @@ export type ToolId =
   | 'type' | 'typePath' | 'typeVertical' | 'line' | 'pen' | 'penAdd' | 'penDelete' | 'convert' | 'pencil' | 'smooth' | 'erase'
   | 'rectFrame' | 'ellipseFrame' | 'polygonFrame' | 'rect' | 'ellipse' | 'polygon'
   | 'scissors' | 'freeTransform' | 'rotate' | 'scale' | 'shear' | 'gradient' | 'gradientFeather'
-  | 'note' | 'eyedropper' | 'measure' | 'hand' | 'zoom';
+  | 'note' | 'eyedropper' | 'measure' | 'hand' | 'zoom' | 'aiRegion';
 
 export type ToolDef = { id: ToolId; label: string; key?: string; icon: string };
 
@@ -79,6 +80,7 @@ export const TOOL_SECTIONS: ToolDef[][][] = [
       { id: 'measure', get label() { return tr("측정 도구"); }, key: 'K', icon: 'measure' },
     ],
     [{ id: 'hand', get label() { return tr("손 도구"); }, key: 'H', icon: 'hand' }],
+    [{ id: 'aiRegion', get label() { return tr("AI 영역 도구"); }, key: 'Shift+Q', icon: 'aiRegion' }],
     [{ id: 'zoom', get label() { return tr("확대/축소 도구"); }, key: 'Z', icon: 'zoom' }],
   ],
 ];
@@ -108,6 +110,7 @@ export type ScreenMode = 'normal' | 'preview' | 'bleed' | 'slug' | 'presentation
 export type Swatchy = { rgb: [number, number, number] | null; none: boolean; name: string | null; /** Characters of different colours: the glyph shows `?` (T mode). */ mixed?: boolean };
 
 type Props = {
+  aiRunning?:boolean;
   tool: ToolId;
   onTool: (t: ToolId) => void;
   onToolDoubleClick?: (t: ToolId) => void;
@@ -170,7 +173,7 @@ export function ToolsPanel(p: Props) {
           {section.map((group) => {
             groupIndex++;
             const gi = groupIndex;
-            const current = group.find((t) => t.id === (shown[gi] ?? group[0].id)) ?? group[0];
+            const current = (p.aiRunning ? group.find(t=>viewTool(t.id)) : undefined) ?? group.find((t) => t.id === (shown[gi] ?? group[0].id)) ?? group[0];
             const active = group.some((t) => t.id === p.tool);
             const openFly = (el: HTMLElement) => {
               const r = el.getBoundingClientRect();
@@ -180,7 +183,7 @@ export function ToolsPanel(p: Props) {
               <button
                 key={gi}
                 className={`tool${active ? ' on' : ''}`}
-                title={toolTip(current)}
+                disabled={p.aiRunning && !viewTool(current.id)} title={p.aiRunning && !viewTool(current.id) ? runningLabel() : toolTip(current)}
                 {...help.trigger(current.id)}
                 onMouseDown={(e) => {
                   if (e.button !== 0) return;
@@ -191,7 +194,7 @@ export function ToolsPanel(p: Props) {
                 onMouseLeave={() => window.clearTimeout(hold.current)}
                 onClick={(e) => {
                   if (flyout) return;
-                  if (e.altKey && group.length > 1) {
+                  if (!p.aiRunning && e.altKey && group.length > 1) {
                     const i = group.findIndex((t) => t.id === current.id);
                     p.onTool(group[(i + 1) % group.length].id);
                   } else p.onTool(current.id);
@@ -206,7 +209,7 @@ export function ToolsPanel(p: Props) {
           })}
         </div>
       ))}
-      <div className="tool-section colors">
+      <div className="tool-section colors" aria-disabled={p.aiRunning} title={p.aiRunning?runningLabel():undefined}><div inert={p.aiRunning} style={{display:'contents'}}>
         <FillStroke {...p} help={help.trigger} />
         <div className="apply-row">
           <button className={p.textMode ? 'mini' : 'mini on'} title={tr("컨테이너에 서식 적용 (J)")} onClick={() => p.onTextMode(false)} {...help.trigger('formatContainer')}><Icon name="container" size={14} /></button>
@@ -218,7 +221,7 @@ export function ToolsPanel(p: Props) {
           <button className="mini" title={tr('없음 적용 (/)')} disabled={!p.onApplyNone} onClick={p.onApplyNone} {...help.trigger('applyNone')}><Icon name="applyNone" size={14} /></button>
         </div>
       </div>
-      <div className="tool-section">
+      </div><div className="tool-section">
         <ScreenModeButton mode={p.screenMode} onMode={p.onScreenMode} horizontal={p.layout === 'SINGLE_ROW'} help={help.trigger} />
       </div>
       {flyout && (
@@ -227,7 +230,7 @@ export function ToolsPanel(p: Props) {
             <button
               key={t.id}
               className={`${t.id === p.tool ? 'on' : ''}`}
-              title={TOOL_NOTES[t.id] ? toolTip(t) : undefined}
+              disabled={p.aiRunning && !viewTool(t.id)} title={p.aiRunning && !viewTool(t.id) ? runningLabel() : TOOL_NOTES[t.id] ? toolTip(t) : undefined}
               {...help.trigger(t.id, '.tool-flyout')}
               onClick={() => { setShown((s) => ({ ...s, [flyout.key]: t.id })); p.onTool(t.id); setFlyout(null); }}
             >

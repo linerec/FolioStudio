@@ -1,3 +1,4 @@
+import { SampleCards } from './SampleCards';
 // The Folio workspace's two views (user decision 2026-11-20, CLAUDE.md "화면도 프로젝트 중심이다"): the explorer of the project folder
 // (its documents, books, libraries, pictures, fonts and other files, with the open documents first) and the tools with the fill and
 // stroke (the same ToolsPanel as InDesign Classic's left edge). Since uix-d2 they are dock panels like the others (ui/dock.tsx: they
@@ -234,6 +235,7 @@ function Explorer(p: Props) {
             <button className="primary" onClick={actions.newProject}><Icon name="plus" size={16} />{tr('새 프로젝트…')}</button>
             <button onClick={actions.openProject}><Icon name="folderOpen" size={16} />{tr('프로젝트 열기…')}</button>
           </div>
+          <SampleCards compact />
           {p.recentProjects.length > 0 && (
             <>
               <h4 className="ex-group-title">{tr('최근 프로젝트')}</h4>

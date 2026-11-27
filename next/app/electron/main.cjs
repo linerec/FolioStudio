@@ -4,6 +4,7 @@ const { app, BrowserWindow, dialog, ipcMain, screen, shell } = require('electron
 const { translator } = require('./i18n.cjs');
 const sample = require('./sample.cjs');
 const { checkExternalUrl } = require('./externalurl.cjs');
+const { frameReceiver, receiverEnabled } = require('./frame-receiver.cjs');
 const { spawn } = require('node:child_process');
 const path = require('node:path');
 const fs = require('node:fs');
@@ -63,26 +64,22 @@ function startEngine(ctx) {
   const engine = ctx.engine = spawn(exe, [], { stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true,
     env: { ...process.env, FOLIO_USER_DATA: app.getPath('userData') } });
   log(`engine started ${exe}`);
-  let buffer = Buffer.alloc(0);
-  let header = null;
   let receivedReply = false;
-  engine.stdout.on('data', (chunk) => {
-    buffer = Buffer.concat([buffer, chunk]);
-    for (;;) {
-      if (!header) {
-        if (buffer.length < 4) return;
-        const len = buffer.readUInt32LE(0);
-        if (buffer.length < 4 + len) return;
-        header = JSON.parse(buffer.subarray(4, 4 + len).toString('utf8'));
-        buffer = buffer.subarray(4 + len);
-      }
-      const need = header.bodyBytes || 0;
-      if (buffer.length < need) return;
-      const body = Buffer.from(buffer.subarray(0, need));
-      buffer = buffer.subarray(need);
-      if (!header.event) receivedReply = true;
-      dispatch(ctx, header, body);
-      header = null;
+  let accelerated = receiverEnabled(process.env.FOLIO_ACCEL, readSettings().preferences);
+  const receive = frameReceiver((header, body) => {
+    if (header.event === 'user-settings') {
+      accelerated = receiverEnabled(process.env.FOLIO_ACCEL, header.detail?.settings?.preferences);
+    }
+    if (!header.event) receivedReply = true;
+    dispatch(ctx, header, body);
+  }, () => accelerated);
+  engine.stdout.on('data', function onData(chunk) {
+    try { receive(chunk); } catch (error) {
+      log(`engine response failed: ${error.message}`);
+      engine.stdout.off('data', onData);
+      for (const [, p] of ctx.pending) p.reject(error);
+      ctx.pending.clear();
+      engine.stdin.end();
     }
   });
   engine.stderr.on('data', (d) => { process.stderr.write(`[engine] ${d}`); if (mac) log(`engine stderr ${d}`); });
@@ -125,8 +122,8 @@ function dispatch(ctx, header, body) {
     if (ctx.win && !ctx.win.isDestroyed()) ctx.win.webContents.send('folio:event', header);
     return;
   }
-  log(`reply id=${header.id} ok=${header.ok} type=${header.type ?? header.event} ${header.error ?? ''} bytes=${body.length}`);
   const p = ctx.pending.get(header.id);
+  log(p?.ai ? aiCredentials.activity('reply', header.id) : `reply id=${header.id} ok=${header.ok} type=${header.type ?? header.event} ${header.error ?? ''} bytes=${body.length}`);
   if (!p) return;
   ctx.pending.delete(header.id);
   p.resolve({ header, body: new Uint8Array(body.buffer, body.byteOffset, body.byteLength) });
@@ -137,9 +134,9 @@ function request(message, ctx = mainCtx) {
   if (!ctx.engine) return Promise.reject(new Error('engine not available'));
   const id = ctx.nextId++;
   const reply = new Promise((resolve, reject) => {
-    ctx.pending.set(id, { resolve, reject });
+    ctx.pending.set(id, { resolve, reject, ai: String(message.cmd).startsWith('ai') });
     ctx.engine.stdin.write(JSON.stringify({ ...message, id }) + '\n');
-    log(`request id=${id} ${message.cmd} ${message.page ?? message.path ?? ''}`);
+    log(String(message.cmd).startsWith('ai') ? aiCredentials.activity('request', id) : `request id=${id} ${message.cmd} ${message.page ?? message.path ?? ''}`);
   });
   if (message.cmd === 'open') {
     reply.then(({ header }) => {
@@ -330,7 +327,11 @@ ipcMain.handle('folio:new-window', (_e, p) => {
 let senderWin = null;
 const handle = ipcMain.handle.bind(ipcMain);
 ipcMain.handle = (channel, fn) => handle(channel, (e, ...a) => { senderWin = BrowserWindow.fromWebContents(e.sender); return fn(e, ...a); });
-ipcMain.handle('folio:request', (e, message) => request(message, ctxOf(e.sender)));
+const aiCredentials = require('./ai-credentials.cjs');
+const aiRequest = aiCredentials.bridge(aiCredentials.credentials({
+  root: () => app.getPath('userData'), safeStorage: require('electron').safeStorage,
+}), request, startEngine, contexts);
+ipcMain.handle('folio:request', (e, message) => aiRequest(message, ctxOf(e.sender)));
 ipcMain.handle('folio:clipboard-command', (event, how) => {
   if (!['copy', 'cut', 'paste'].includes(how)) throw new Error('invalid clipboard command');
   event.sender[how]();

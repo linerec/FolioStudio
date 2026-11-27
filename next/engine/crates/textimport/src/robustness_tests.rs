@@ -1,5 +1,5 @@
 use super::*;
-use std::io::{Cursor, Write};
+use super::tests_docx::word_file;
 
 #[test]
 fn bugfind_oversized_word_grid_span_returns_error() {
@@ -10,15 +10,6 @@ fn bugfind_oversized_word_grid_span_returns_error() {
         assert!(error.contains("gridSpan"), "{error}");
         assert!(error.contains("word/document.xml"), "{error}");
     }
-}
-
-fn word_file(parts: &[(&str, &str)]) -> Vec<u8> {
-    let mut zip = zip::ZipWriter::new(Cursor::new(Vec::new()));
-    for (name, xml) in parts {
-        zip.start_file(*name, zip::write::SimpleFileOptions::default()).unwrap();
-        zip.write_all(xml.as_bytes()).unwrap();
-    }
-    zip.finish().unwrap().into_inner()
 }
 
 #[test]

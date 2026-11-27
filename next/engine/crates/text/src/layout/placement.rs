@@ -1,6 +1,23 @@
 //! Fit a composed paragraph's lines into the available columns and wrap slots.
 
+mod output;
+mod slot;
+
 use super::*;
+use slot::LineSlot;
+
+/// A composer's candidate line. Its text and metrics stay fixed while it tries columns.
+struct ComposedLine<'l, 'p> {
+    paragraph: &'l ParaCtx<'p>,
+    prepared: &'l Prepared,
+    items: std::ops::Range<usize>,
+    number: usize,
+    part: Part,
+    metrics: LineMetrics,
+    right_part: Option<RightPart>,
+    drop_indent: f64,
+    forced: bool,
+}
 
 impl<'c, 'a> Ctx<'c, 'a> {
     /// One attempt of `layout_paragraph`. `plan` holds the room (column or wrap slot width,
@@ -106,19 +123,6 @@ impl<'c, 'a> Ctx<'c, 'a> {
                 }
                 let m = self.line_metrics(para, shaped, &prepared, s, e, last_line, ret_attrs, ret_font, drop_chars);
                 let unit = folio_compose::compose::first_unit(&prepared.items, s, &ops, &settings);
-                // Footnote references on the line: their notes need room at the column bottom.
-                let line_notes: Vec<usize> = if p.notes.is_empty() || flow.notes.is_none() {
-                    Vec::new()
-                } else {
-                    let mut v: Vec<usize> = (s..e)
-                        .filter_map(|i| prepared.origin[i])
-                        .map(|ci| shaped.clusters[ci].run)
-                        .filter(|&r| p.notes.get(r).is_some_and(Option::is_some))
-                        .collect();
-                    v.dedup();
-                    v
-                };
-                let mut chosen_notes: Option<Vec<NoteBlock>> = None;
                 // InDesign's baseline and area for a saved line (`saved`).
                 let saved_place = forced_line
                     .filter(|_| saved::use_baselines())
@@ -140,71 +144,22 @@ impl<'c, 'a> Ctx<'c, 'a> {
                         None
                     }
                 };
-                let mut split_next = None;
-                // A measured band records the column and baseline for recomposition.
-                let mut line_area = None;
-                // The line is the first of its area: the area top and its band's height.
-                let mut first_band = None;
-                // Whole points the band went down in the frame's own shape (`Slot::Step`).
-                let mut nudge = 0.0f64;
-                // Vertical position; move on while the line does not fit.
-                let (baseline, sl, sr) = loop {
-                    if let Some(rp) = right_part.filter(|_| (flow.fi, flow.ci) == col_before) {
-                        if line_notes.is_empty() { break (rp.baseline, rp.left, rp.right); }
-                        chosen_notes = self.note_blocks(p, &line_notes, flow, rp.baseline, st);
-                        if chosen_notes.is_some() { break (rp.baseline, rp.left, rp.right); }
-                    }
-                    let Some(c) = flow.column() else { return Ok(false) };
-                    let ff = flow.frame().expect("column implies frame");
-                    // A saved line sits on InDesign's baseline in InDesign's area of the
-                    // frame's text area (`saved`).
-                    if let Some((y, (l, r))) = saved_place
-                        && (line_notes.is_empty() || {
-                            chosen_notes = self.note_blocks(p, &line_notes, flow, c.top + y, st);
-                            chosen_notes.is_some()
-                        })
+                let candidate = ComposedLine {
+                    paragraph: p, prepared: &prepared, items: s..e, number: line_no, part, metrics: m,
+                    right_part, drop_indent: drop_extra(line_no), forced: forced_line.is_some(),
+                };
+                let line_notes = candidate.note_runs(flow);
+                let first_indent = if line_no == 0 { a.first_line_indent } else { 0.0 };
+                let need = unit + a.left_indent + a.right_indent + first_indent + indent_here + candidate.drop_indent;
+                let slot = loop {
+                    let Some(column) = flow.column() else { return Ok(false) };
+                    if let Some(slot) = candidate.fit_column(
+                        self, flow, &column, col_before, saved_place, &line_notes, need, st,
+                    )
                     {
-                        let left = ff.cols.first().map_or(c.left, |c0| c0.left);
-                        flow.saved_columns.insert((flow.fi, flow.ci));
-                        // An area far narrower than the line's text is not InDesign's (its
-                        // lines fit their area within justification): the column instead.
-                        let natural: f64 = prepared.items[s..e].iter().map(|it| it.advance).sum();
-                        let room = (r - l) - a.left_indent - a.right_indent;
-                        if natural > room * 1.5 + 1.0 && natural <= c.width() + 1.0 {
-                            break (c.top + y, c.left, c.right);
-                        }
-                        break (c.top + y, left + l, left + r);
+                        break slot;
                     }
-                    let b = flow.line_baseline(ff, &c, &m, a, p.same_style, line_no, nudge);
-                    // Vertical text: InDesign 2025 keeps the whole em box in the column (vtext-c1, vt-cols: 11 lines, not 12).
-                    let mut bottom = flow.text_bottom(&c) - if flow.vertical { m.embox_below } else { 0.0 };
-                    let mut notes_here = None;
-                    if !line_notes.is_empty() {
-                        notes_here = self.note_blocks(p, &line_notes, flow, b, st);
-                        if notes_here.is_none() { bottom = f64::NEG_INFINITY; }
-                    }
-                    if b <= bottom + EPS {
-                        let first = if line_no == 0 { a.first_line_indent } else { 0.0 };
-                        let need = unit + a.left_indent + a.right_indent + first + indent_here + drop_extra(line_no);
-                        match flow.fit_band(&c, &m, b, need, forced_line.is_some(), &mut nudge) {
-                            band::Band::Fits { left, right, next, area, first_band: first } => {
-                                split_next = next;
-                                line_area = Some(area);
-                                first_band = first;
-                                chosen_notes = notes_here.take();
-                                break (b, left, right);
-                            }
-                            band::Band::Retry => continue,
-                            band::Band::NextColumn => {}
-                        }
-                    }
-                    // A saved line stays in its column, past the bottom or beside the wrap.
-                    if forced_line.is_some() && (line_notes.is_empty() || notes_here.is_some()) {
-                        chosen_notes = notes_here.take();
-                        break (b, c.left, c.right);
-                    }
-                    let last_column = flow.column().map_or(default_room, |c| c.width());
-                    nudge = 0.0;
+                    let last_column = column.width();
                     if !flow.advance() {
                         // Overset text is composed at the width of the last column, without
                         // its wraps: the paragraph's lines before it follow from that (#347
@@ -239,17 +194,16 @@ impl<'c, 'a> Ctx<'c, 'a> {
                     && folio_compose::breaks::hyphen_break(&prepared.items, s, &settings).is_some();
                 // A row whose rooms differ from the composition's: plan again (a right part was
                 // planned with its row).
-                let room = (sr - sl) - indent_here;
-                let next_room = split_next.map(|(l, r)| r - l);
+                let room = slot.room(flow, indent_here, m.leading, new_column);
                 let (planned, planned_next) = widths.room(line_no, None, drop_extra(line_no));
-                let same_next = match (next_room, planned_next) {
+                let same_next = match (room.next, planned_next) {
                     (Some(x), Some(y)) => (x - y).abs() <= EPS,
                     (None, None) => true,
                     _ => false,
                 };
-                if forced_line.is_none() && part != Part::Right && ((room - planned).abs() > EPS || !same_next || across_replan) {
+                if forced_line.is_none() && part != Part::Right && ((room.width - planned).abs() > EPS || !same_next || across_replan) {
                     let mut learned = placed_rooms.clone();
-                    learned.push(Room { width: room, at: line_area.map(|_| (flow.fi, flow.ci, baseline, m.leading)), first: first_band, next: next_room, column_start: new_column });
+                    learned.push(room);
                     if !incremental {
                         return Err(learned);
                     }
@@ -261,78 +215,10 @@ impl<'c, 'a> Ctx<'c, 'a> {
                         continue 'compose;
                     }
                 }
-                // A right-to-left paragraph's first-line indent is on the right (InDesign 2025,
-                // content-drops specimen drops-rtl); its other indents stay left and right.
-                let first = if line_no == 0 && part != Part::Right { a.first_line_indent } else { 0.0 };
-                let (first_left, first_right) = if a.right_to_left { (0.0, first) } else { (first, 0.0) };
-                let line_left = sl + a.left_indent + first_left + indent_here + if part == Part::Right { 0.0 } else { drop_extra(line_no) };
-                let line_right = sr - a.right_indent - first_right - if last_line { a.last_line_indent } else { 0.0 };
-                let available = (line_right - line_left).max(0.0);
-                // Right of a both-sides wrap, centred text is set flush left, toward the wrap.
-                let centred = matches!(settings.alignment, Alignment::Center | Alignment::CenterJustified);
-                let part_settings = (right_part.is_some() && centred).then(|| Settings {
-                    alignment: if settings.alignment == Alignment::Center { Alignment::Left } else { Alignment::LeftJustified },
-                    ..settings
-                });
-                // Optical margin alignment: the first and last glyph of the line hang past the margins, so the line
-                // is set in a measure widened by both (next/oracle/rules/optmargin.ko.md).
-                let (hang_left, hang_right) = self.optical_hang(st, a, &prepared, shaped, s, e);
-                let line_left = line_left - hang_left;
-                let available = available + hang_left + hang_right;
-                let placed = if s < e {
-                    let line_settings = part_settings.as_ref().unwrap_or(&settings);
-                    // A last line set against the Last Line Indent is chosen for the narrower measure but a ragged one is not squeezed
-                    // into it: InDesign sets 'brown fox ... dog.' (1.4 pt over the indent) at its natural spacing (oracle cp-last-just-30).
-                    let squeeze = if last_line && a.last_line_indent > 0.0 && matches!(line_settings.alignment, Alignment::Left | Alignment::LeftJustified) {
-                        available + a.last_line_indent
-                    } else {
-                        available
-                    };
-                    Some(folio_compose::place_line(&prepared.items[s..e], 0, e - s, squeeze, line_settings, last_line))
-                } else {
-                    None
-                };
-                let (line, text) = line_content::LineContent {
-                    paragraph: p, prepared: &prepared, placed: placed.as_ref(), flow, metrics: &m,
-                    baseline, left: line_left, right: line_right, slot_left: sl,
-                    alignment: settings.alignment, verso, kenten_drawn,
-                }.build(self, s..e, last_line, &mut indent_here);
-                let ci = flow.ci;
-                if flow.keep.active && part != Part::Right {
-                    // A paragraph that spans the columns stands in an empty area only when nothing else is in its frame.
-                    let area = flow.keep_area(flow.fi, ci);
-                    let empty = if flow.keep.spans.contains(&(flow.fi, ci)) { !flow.frames[flow.fi].lines.iter().any(|l| l.col != ci) }
-                        else { !flow.frames[flow.fi].lines.iter().any(|l| flow.keep_area(flow.fi, l.col) == area) };
-                    let sub = flow.keep_sub(flow.fi, ci);
-                    flow.keep.subs.insert((p.pi, flow.keep.offset + line_no), sub);
-                    flow.keep.placed.push(((p.pi, flow.keep.offset + line_no), area, empty));
-                }
-                let grid = flow.frames[flow.fi].grid.and_then(|grid| grid.for_line(a, line_no));
-                flow.frames[flow.fi].lines.push(FlowLine { col: ci, line, para: Some(p.pi), m, grid, text });
-                for b in chosen_notes.take().unwrap_or_default() {
-                    flow.frames[b.frame].notes.push(b);
-                }
-                flow.table_after = 0.0;
-                flow.last = Some(baseline);
-                flow.jumped_from = None;
-                flow.pending_after = 0.0;
-                if let Some(rp) = right_part
-                    && rp.shift != 0.0
-                    && let Some(left) = flow.frames.get_mut(rp.line.0).and_then(|f| f.lines.get_mut(rp.line.1))
-                {
-                    shift_line(&mut left.line, rp.shift);
-                }
-                let shift = if centred { placed.as_ref().and_then(|p| p.x.first()).copied().unwrap_or(0.0) } else { 0.0 };
-                flow.pending_part = split_next.map(|(left, right)| RightPart {
-                    baseline,
-                    left,
-                    right,
-                    line: (flow.fi, flow.frames[flow.fi].lines.len() - 1),
-                    shift,
-                });
+                candidate.append(self, flow, slot, &settings, verso, kenten_drawn, &mut indent_here, st);
                 // A row's rooms are kept with its first part; the row ends with its last.
                 if forced_line.is_some() || part != Part::Right {
-                    placed_rooms.push(Room { width: room, at: line_area.map(|_| (flow.fi, flow.ci, baseline, m.leading)), first: first_band, next: next_room, column_start: new_column });
+                    placed_rooms.push(room);
                 }
                 if forced_line.is_some() || part != Part::Left {
                     line_no += 1;

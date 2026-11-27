@@ -5,7 +5,7 @@
 //! differs from the state of its parent: a style from its base style (a root style from the defaults), a paragraph from its style,
 //! a run from its paragraph style overlaid with the properties its character style writes.
 use super::{CharState, ParaState, char_word, num, para_word};
-use super::resources::Resources;
+use super::resources::{Resources, swatch_reference};
 use super::tokens::Tok;
 use crate::{StyleDef, SwatchDef};
 
@@ -214,7 +214,7 @@ impl Colors<'_> {
             Some(s) => s.grouped |= grouped,
             None => self.swatches.push(SwatchDef { name: name.clone(), rgb, grouped }),
         }
-        format!("Color/{}", name.replace('%', "%25"))
+        swatch_reference(&name)
     }
 }
 

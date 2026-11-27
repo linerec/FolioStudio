@@ -1,6 +1,7 @@
 // Native menu/dialog strings. UI locale is an app preference, never a document property.
 const ko = {
   userSettings: 'Folio 사용자 설정', importSettings: '사용자 설정 가져오기', exportSettings: '사용자 설정 내보내기', invalidSettings: '올바른 Folio 사용자 설정 파일이 아닙니다',
+  settings: '설정', aiSettings: 'AI…', aiPanel: 'AI',
   about: 'Folio Studio 정보', services: '서비스', hide: 'Folio Studio 가리기',
   hideOthers: '기타 가리기', unhide: '모두 표시', quit: 'Folio Studio 종료',
   window: '창', minimize: '최소화', zoom: '확대/축소', front: '모두 앞으로 가져오기',
@@ -18,6 +19,7 @@ const ko = {
 };
 const en = {
   userSettings: 'Folio User Settings', importSettings: 'Import User Settings', exportSettings: 'Export User Settings', invalidSettings: 'Not a valid Folio user settings file',
+  settings: 'Settings', aiSettings: 'AI…', aiPanel: 'AI',
   about: 'About Folio Studio', services: 'Services', hide: 'Hide Folio Studio',
   hideOthers: 'Hide Others', unhide: 'Show All', quit: 'Quit Folio Studio',
   window: 'Window', minimize: 'Minimize', zoom: 'Zoom', front: 'Bring All to Front',

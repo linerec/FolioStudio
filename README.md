@@ -85,6 +85,14 @@ you already have comes with you.
   </tr>
 </table>
 
+### AI chat
+
+Select an object or a passage of text and press **Ctrl+L** (**⌘L** on Mac) to ask about it in the left AI panel. Use **Shift+Q** to mark a page region. The changes from one request appear on a card and undo together in each document. Set up your own connection before sending a question. Windows tests used a scripted provider and a simulated ACP agent. [Release notes](docs/releases/v0.2.1-alpha.md)
+
+![One object and two page regions attached to a question in the AI panel](docs/assets/ai-chat-selection.png)
+
+*The “scripted” connection shown here is a test provider.*
+
 ## 📸 Screenshots
 
 <table>

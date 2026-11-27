@@ -135,6 +135,28 @@ fn columns_and_threaded_frames() {
 }
 
 #[test]
+fn saved_segments_keep_the_baseline_when_one_area_is_too_narrow() {
+    use folio_model::{SavedComposition, SavedLine, SavedSegment};
+
+    let mut s = story("s", vec![para("abcd efgh", 10.0)]);
+    s.saved = SavedComposition::Lines(vec![SavedLine {
+        start: 0, frame: Some("f".into()), column: 0, baseline: Some(17.0),
+        segments: vec![
+            SavedSegment { x: 12.0, width: 35.0, start: Some(0) },
+            SavedSegment { x: 64.0, width: 2.0, start: Some(5) },
+        ],
+    }]);
+    let doc = document(vec![text_frame("f", "s", 100.0, 40.0, |_| {})], vec![s]);
+    let layout = layout_document(&doc, &FontStore::empty());
+    let lines = lines(&layout, "f");
+    assert_eq!(lines.len(), 2);
+    assert_eq!((lines[0].start, lines[0].end, lines[1].start, lines[1].end), (0, 5, 5, 9));
+    assert_eq!((lines[0].baseline, lines[1].baseline), (17.0, 17.0));
+    assert_eq!((lines[0].left, lines[0].right), (12.0, 47.0));
+    assert_eq!((lines[1].left, lines[1].right), (0.0, 100.0));
+}
+
+#[test]
 fn overset_and_empty_last_paragraph() {
     // One line of room: the second line is overset.
     let doc = document(vec![text_frame("f", "s", 100.0, 15.0, |_| {})], vec![story("s", vec![para(&words(6), 10.0)])]);

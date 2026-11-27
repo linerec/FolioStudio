@@ -9,6 +9,9 @@
 //! - Then each line is an engine request, checked by `attached::admit` here (the engine never trusts the client), and put
 //!   on the same request line as the screen's (`Incoming`): it acts on the same session. Its reply goes back to that
 //!   connection only (by id, `deliver`); events (view-state, dialog-state, external-edit…) still go to the screen.
+mod scoped;
+#[cfg(not(any(target_os="android",target_os="ios")))]
+pub(crate) use scoped::TurnEndpoint;
 use crate::attached;
 use serde_json::{Value, json};
 use std::collections::BTreeMap;
@@ -21,7 +24,22 @@ use std::time::Duration;
 /// One request for the engine's request loop: a line from the screen (stdin) or from an attached connection.
 pub enum Incoming {
     Line { text: String, mcp: bool },
+    AiPump,
+    AiModelList { request: Value, result: Result<Value,String> },
+    AiTool { request: Value, files: bool },
+    AiResult { call: String, reply: Value },
     Quit,
+}
+
+pub fn ai_route(mut req: Value, call: String, files: bool, tx: &mpsc::Sender<Incoming>) {
+    let key = format!("mcp:ai:{}", folio_project::util::uuid_v4());
+    let read = crate::attach_read_reply::ReadReply::take(&mut req);
+    let target = ReplyTarget::Ai { tx: tx.clone(), call };
+    ROUTES.lock().expect("attach routes").insert(key.clone(), (Value::Null, target, read));
+    req["id"] = json!(key);
+    if tx.send(Incoming::AiTool { request: req, files }).is_err() {
+        ROUTES.lock().expect("attach routes").remove(&key);
+    }
 }
 
 struct Running {
@@ -35,7 +53,11 @@ static GENERATION: AtomicU64 = AtomicU64::new(0);
 static CONNECTIONS: AtomicU64 = AtomicU64::new(0);
 type Reply = (Value, Vec<u8>);
 /// Routed request id → the client's own id and where its reply goes.
-static ROUTES: Mutex<BTreeMap<String, (Value, mpsc::Sender<Reply>, Option<crate::attach_read_reply::ReadReply>)>> = Mutex::new(BTreeMap::new());
+static ROUTES: Mutex<BTreeMap<String, (Value, ReplyTarget, Option<crate::attach_read_reply::ReadReply>)>> = Mutex::new(BTreeMap::new());
+enum ReplyTarget {
+    Mcp(mpsc::Sender<Reply>),
+    Ai { tx: mpsc::Sender<Incoming>, call: String },
+}
 /// Routed request id → the project root its paths were relative to (the reply shows paths relative to it) and the paths to
 /// check again when the reply comes (attach_paths.rs).
 static ROOTS: Mutex<BTreeMap<String, crate::attach_paths::Resolved>> = Mutex::new(BTreeMap::new());
@@ -57,7 +79,7 @@ pub(crate) fn preferences() -> Value {
 fn allowed() -> bool { attached::on(preferences().get(attached::ALLOW_CONNECTION)) }
 fn database_allowed() -> bool { attached::on(preferences().get(attached::ALLOW_DATABASE_REFRESH)) }
 pub(crate) fn files_allowed() -> bool { attached::on(preferences().get(attached::ALLOW_FILE_WRITES)) }
-fn current(generation: u64) -> bool { GENERATION.load(Ordering::SeqCst) == generation }
+fn current(generation: u64) -> bool { if scoped::private(generation) {scoped::current(generation)} else {GENERATION.load(Ordering::SeqCst) == generation} }
 
 /// Opens or closes the endpoint to match the setting (at start and after every settings change).
 pub fn sync(tx: &mpsc::Sender<Incoming>) {
@@ -120,7 +142,10 @@ pub fn deliver(header: &Value, body: &[u8]) -> bool {
             crate::attach_read_reply::scrub(&mut header);
         }
         header["id"] = own;
-        let _ = reply.send((header, body));
+        match reply {
+            ReplyTarget::Mcp(tx) => { let _ = tx.send((header, body)); }
+            ReplyTarget::Ai { tx, call } => { let _ = tx.send(Incoming::AiResult { call, reply: header }); }
+        }
     }
     true
 }
@@ -175,7 +200,7 @@ fn serve<S: Read + Write>(stream: S, reader: impl Read, generation: u64, token: 
     }
     let connection = CONNECTIONS.fetch_add(1, Ordering::SeqCst) + 1;
     let _ = out.write_all(&frame(&json!({"event": "attached", "ok": true, "protocol": attached::PROTOCOL,
-        "version": env!("CARGO_PKG_VERSION")}), &[]));
+        "turnScoped": scoped::private(generation), "version": env!("CARGO_PKG_VERSION")}), &[]));
     let _ = out.flush();
     let mut count = 0u64;
     while let Some(line) = read_line(&mut reader) {
@@ -189,6 +214,12 @@ fn serve<S: Read + Write>(stream: S, reader: impl Read, generation: u64, token: 
             continue;
         };
         let own = request["id"].clone();
+        if scoped::private(generation) {
+            let mut reply = scoped::call(generation, &request);
+            reply["id"] = own;
+            if out.write_all(&frame(&reply,&[])).and_then(|_|out.flush()).is_err(){return;}
+            continue;
+        }
         if let Err(error) = attached::admit(&request, database_allowed(), files_allowed()) {
             refuse(&mut out, &own, "refused", &error);
             continue;
@@ -197,7 +228,7 @@ fn serve<S: Read + Write>(stream: S, reader: impl Read, generation: u64, token: 
         let routed = format!("{PREFIX}{connection}:{count}");
         let (reply_tx, reply_rx) = mpsc::channel();
         let read = crate::attach_read_reply::ReadReply::take(&mut request);
-        ROUTES.lock().expect("attach routes").insert(routed.clone(), (own.clone(), reply_tx, read));
+        ROUTES.lock().expect("attach routes").insert(routed.clone(), (own.clone(), ReplyTarget::Mcp(reply_tx), read));
         request["id"] = json!(routed);
         if tx.send(Incoming::Line { text: request.to_string(), mcp: true }).is_err() {
             refuse(&mut out, &own, "closed", "the Folio engine is ending");
@@ -290,7 +321,7 @@ mod platform {
     pub const SUPPORTED: bool = true;
 
     pub fn listen(root: &Path, generation: u64, token: String, tx: mpsc::Sender<super::Incoming>) -> std::io::Result<String> {
-        let name = format!("folio-mcp-{}.sock", std::process::id());
+        let name = format!("folio-mcp-{}-{generation}.sock", std::process::id());
         let mut path: PathBuf = root.join(&name);
         if path.as_os_str().len() > 100 { path = std::env::temp_dir().join(&name); }
         let _ = std::fs::remove_file(&path);

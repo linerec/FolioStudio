@@ -1,3 +1,4 @@
+import {useTurn,viewTool} from '../ai/runtime';
 import { useViewPreference } from '../features/view/preferences';
 import { useDataMerge } from '../features/datamerge/state';
 import { usePdfComments } from '../features/pdfcomments/state';
@@ -177,7 +178,8 @@ export function useAppState() {
 
   const readOnly = !!doc && (!doc.folio || doc.folio.readOnly);
   const directOpen = !!doc && !doc.folio;
-  const editable = !!doc?.editable && !readOnly;
+  const aiTurn = useTurn();
+  const editable = !!doc?.editable && !readOnly && !aiTurn;
   // Display Performance (ui/displayperf.ts): the window's view setting, the application default until one is chosen
   const [viewDisplayChoice, setViewDisplayChoice] = useState<ViewDisplay | null>(null);
   // a window starts with the application default of that moment (changing the preference later leaves open windows as they are)
@@ -213,7 +215,7 @@ export function useAppState() {
     setCurrent(first);
     window.setTimeout(() => vpRef.current.scrollToPage(first, false), 60);
   }, [masterView]);
-  const effectiveTool = tempTool ?? tool;
+  const effectiveTool = aiTurn && !viewTool(tempTool ?? tool) ? 'selection' : tempTool ?? tool;
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;

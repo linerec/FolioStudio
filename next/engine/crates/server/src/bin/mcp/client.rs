@@ -11,6 +11,7 @@ impl<T: Read + Write + Send> Stream for T {}
 pub struct Client {
     stream: Box<dyn Stream>,
     next: u64,
+    pub turn_scoped: bool,
 }
 
 /// Why the app could not be reached, for the client to show (`appConnection`).
@@ -63,7 +64,7 @@ pub fn connect(file: &Path) -> Result<Client, Failure> {
         return Err(Failure { code: "badFile", message: "the connection file has no endpoint or token".into() });
     };
     let stream = open(endpoint).map_err(|e| not_running(format!("the Folio app does not answer ({e}); it may have ended")))?;
-    let mut client = Client { stream, next: 0 };
+    let mut client = Client { stream, next: 0, turn_scoped: false };
     let hello = format!("{}\n", json!({"attach": attached::PROTOCOL, "token": token}));
     client.stream.write_all(hello.as_bytes()).and_then(|_| client.stream.flush())
         .map_err(|e| not_running(format!("the Folio app closed the connection ({e})")))?;
@@ -71,6 +72,7 @@ pub fn connect(file: &Path) -> Result<Client, Failure> {
     if reply["event"] != "attached" {
         return Err(Failure { code: "refused", message: reply["error"].as_str().unwrap_or("refused").into() });
     }
+    client.turn_scoped = reply["turnScoped"] == true;
     Ok(client)
 }
 

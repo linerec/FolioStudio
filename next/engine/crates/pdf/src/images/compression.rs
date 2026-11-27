@@ -33,7 +33,8 @@ impl Ctx<'_> {
 }
 
 /// Area-average resampling of interleaved 8-bit samples.
-fn box_resample(src: &[u8], w: u32, h: u32, stride: usize, nw: u32, nh: u32) -> Vec<u8> {
+fn box_resample(src: &[u8], w: u32, h: u32, stride: usize, size: (u32, u32), reuse_rows: bool) -> Vec<u8> {
+    let (nw, nh) = size;
     let taps = |n: u32, m: u32| -> Vec<Vec<(usize, f32)>> {
         let scale = n as f64 / m as f64;
         (0..m)
@@ -55,8 +56,16 @@ fn box_resample(src: &[u8], w: u32, h: u32, stride: usize, nw: u32, nh: u32) -> 
     let (cx, cy) = (taps(w, nw), taps(h, nh));
     let row_out = nw as usize * stride;
     let mut tmp = vec![0f32; row_out * h as usize];
+    let row_bytes = w as usize * stride;
     for y in 0..h as usize {
-        let row = &src[y * w as usize * stride..(y + 1) * w as usize * stride];
+        let row = &src[y * row_bytes..(y + 1) * row_bytes];
+        if reuse_rows && w > nw && y > 0 {
+            let previous = &src[(y - 1) * row_bytes..y * row_bytes];
+            if previous.last() == row.last() && previous == row {
+                tmp.copy_within((y - 1) * row_out..y * row_out, y * row_out);
+                continue;
+            }
+        }
         let out = &mut tmp[y * row_out..(y + 1) * row_out];
         for (x, t) in cx.iter().enumerate() {
             for &(j, wt) in t {
@@ -149,7 +158,8 @@ pub(super) fn raster(w: u32, h: u32, samples: &[u8], n: usize, alpha: bool, mut 
     let (nw, nh) = ctx.size(w, h);
     let resampled;
     let (w, h, samples) = if (nw, nh) != (w, h) && samples.len() >= w as usize * h as usize * stride {
-        resampled = box_resample(samples, w, h, stride, nw, nh);
+        let reuse = ctx.target.is_some_and(|(_, d)| d.reuse_rows);
+        resampled = box_resample(samples, w, h, stride, (nw, nh), reuse);
         (nw, nh, resampled.as_slice())
     } else {
         (w, h, samples)
@@ -186,7 +196,12 @@ fn raster_cmyk(w: u32, h: u32, samples: &[u8], alpha: bool, icc: &Option<Arc<Vec
     let cmyk = conv.rgb_pixels_intent(icc, &samples[..px.min(samples.len() / stride) * stride], stride, ctx.color.intent);
     let out_stride = stride + 1;
     let (nw, nh) = ctx.size(w, h);
-    let (w, h, cmyk) = if (nw, nh) != (w, h) && cmyk.len() >= px * out_stride { (nw, nh, box_resample(&cmyk, w, h, out_stride, nw, nh)) } else { (w, h, cmyk) };
+    let (w, h, cmyk) = if (nw, nh) != (w, h) && cmyk.len() >= px * out_stride {
+        let reuse = ctx.target.is_some_and(|(_, d)| d.reuse_rows);
+        (nw, nh, box_resample(&cmyk, w, h, out_stride, (nw, nh), reuse))
+    } else {
+        (w, h, cmyk)
+    };
     let px = w as usize * h as usize;
     let (color, smask, mask) = if alpha {
         let mut c = Vec::with_capacity(px * 4);
@@ -252,4 +267,27 @@ pub(super) fn encode_jpeg(color: &[u8], w: u32, h: u32, space: &ImgSpace, qualit
     encoder.set_optimized_huffman_tables(true);
     encoder.encode(color, w as u16, h as u16, kind).ok()?;
     Some((data, None))
+}
+
+#[cfg(test)]
+mod row_tests {
+    use super::box_resample;
+
+    #[test]
+    fn repeated_scanlines_match_the_scalar_filter() {
+        for stride in 1..=5 {
+            let width = 17;
+            let mut row: Vec<u8> = (0..width * stride).map(|i| (i * 23) as u8).collect();
+            let mut src = Vec::new();
+            for index in [0, row.len() / 2, row.len() - 1, 0] {
+                src.extend_from_slice(&row);
+                src.extend_from_slice(&row);
+                row[index] ^= 255;
+            }
+            for size in [(1, 1), (8, 4), (12, 7), (17, 3), (9, 8)] {
+                let scalar = box_resample(&src, width as u32, 8, stride, size, false);
+                assert_eq!(box_resample(&src, width as u32, 8, stride, size, true), scalar);
+            }
+        }
+    }
 }

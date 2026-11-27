@@ -7,7 +7,6 @@ pub(super) enum Band {
         left: f64,
         right: f64,
         next: Option<(f64, f64)>,
-        area: (f64, f64),
         first_band: Option<(f64, f64)>,
     },
     Retry,
@@ -40,9 +39,9 @@ impl Flow<'_> {
             // paragraph sits in a 4.8 pt slot) and does not set a word wider
             // than the column (it is overset; InDesign 2025 experiments, also
             // 0.1 pt too wide). See `first_unit`.
-            Slot::Fits(l, r, next, area) if forced || r - l >= need - TOL => {
+            Slot::Fits(l, r, next) if forced || r - l >= need - TOL => {
                 let first_band = (first_in_area && ff.shape.is_some()).then_some((area_top, b - top));
-                Band::Fits { left: l, right: r, next, area, first_band }
+                Band::Fits { left: l, right: r, next, first_band }
             }
             Slot::Fits(..) => Band::NextColumn,
             Slot::Step => {

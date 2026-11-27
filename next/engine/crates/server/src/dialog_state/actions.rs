@@ -195,6 +195,7 @@ pub(super) fn apply_in(def: &Value, state: &Value, action: &str, session: Option
     // an action the form's own required boxes and formats do not hold up (Delete, Load…: they work on another item or a file)
     let needs_form = !def["unchecked"].as_array().into_iter().flatten().any(|a| a == action);
     for f in def["fields"].as_array().ok_or("invalid fields")? {
+        if f["type"] == "writeOnly" { continue; }
         let key = name_of(f);
         if let Some(text) = state["drafts"][key].as_str() {
             let unit = f["unit"].as_str().unwrap_or("");

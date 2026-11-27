@@ -15,7 +15,8 @@ import { ALL_TOOLS } from '../ui/tools';
 /** Right-click menus on the page, InDesign's for the same situation (CONTEXT_MENUS), or a short fallback. */
 export function contextItems(kind: string): MenuEntry[] {
   const fromInDesign = (CONTEXT_MENUS as Record<string, MenuEntry[] | undefined>)[kind];
-  if (fromInDesign?.length) return fromInDesign;
+  const ask:MenuEntry[]=[{sep:true},{cmd:'ai.askSelection'}];
+  if (fromInDesign?.length) return ['layoutObject','layoutGraphic','text'].includes(kind) ? [...fromInDesign,...ask] : fromInDesign;
   const zoom: MenuEntry[] = [{ cmd: 'view.zoomIn' }, { cmd: 'view.zoomOut' }, { cmd: 'view.fitPage' }, { cmd: 'view.fitSpread' }];
   if (kind === 'layoutNone') return [{ cmd: 'edit.paste' }, { cmd: 'edit.pasteInPlace' }, { sep: true }, ...zoom, { sep: true }, { cmd: 'view.rulers' }, { cmd: 'view.guides' }, { cmd: 'view.frameEdges' }];
   return [
@@ -23,7 +24,7 @@ export function contextItems(kind: string): MenuEntry[] {
     ...zoom, { sep: true },
     { cmd: 'object.selectContainer' }, { cmd: 'object.selectContent' }, { cmd: 'view.fitSelection' }, { sep: true },
     { cmd: 'object.lock' }, { cmd: 'object.hide' }, { cmd: 'object.group' }, { cmd: 'object.ungroup' }, { sep: true },
-    { cmd: 'object.effects' }, { cmd: 'object.textFrameOptions' },
+    { cmd: 'object.effects' }, { cmd: 'object.textFrameOptions' }, ...ask,
   ];
 }
 
@@ -92,6 +93,13 @@ export function Shortcuts({ commands, onClose }: { commands: Commands; onClose: 
     <div className="overlay" onClick={onClose}>
       <div className="card dialog shortcuts" onClick={(e) => e.stopPropagation()}>
         <h2>{tr('단축키 ')}<span>{tr('InDesign 기본 세트와 같은 키')}</span></h2>
+        <details><summary>{tr('AI 패널')}</summary>
+          <p>{tr('왼쪽 사이드바의 AI를 열고 톱니바퀴에서 연결 추가를 누르세요. 연결 종류와 모델을 고른 뒤 저장하고 새 대화를 여세요.')}</p>
+          <p>{tr('클라우드는 연결을 저장한 뒤 API 키의 바꾸기와 키 저장을 누르세요. 로컬 모델은 실행 중인 서버 주소와 모델 이름을 입력하세요. 외부 에이전트는 ACP 연결에서 실행 파일과 인수를 지정하세요.')}</p>
+          <p>{tr('개체를 선택하고 Ctrl+L을 눌러 질문에 첨부하세요. Shift+Q로 영역을 끌어 고르고 Shift를 누른 채 끌면 더할 수 있습니다. Esc로 마친 뒤 질문을 보내세요.')}</p>
+          <p>{tr('변경 카드에서 편집 내용을 확인하세요. 여기로 되돌리기를 누르면 열린 문서를 해당 시점으로 돌릴 수 있습니다. 이후 편집도 영향을 받으면 확인할 목록이 나옵니다. 세션 목록에서 이전 대화와 첨부를 다시 열 수 있습니다.')}</p>
+          <p>{tr('대화는 내 사용자 데이터에 저장됩니다. 외부 전송과 파일 쓰기는 허락 카드에서 목적을 확인하세요. 그림 보내기를 끄거나 공통 설정에서 로컬 연결만 선택할 수 있습니다.')}</p>
+        </details>
         <div className="sc-grid">
           {ALL_TOOLS.filter((t) => t.key).map((t) => (
             <div key={t.id} className="sc-row"><span>{tr(`tool.${t.id}`)}</span><kbd>{keyLabel(t.key)}</kbd></div>

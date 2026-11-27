@@ -1,0 +1,164 @@
+{
+  "title": "AI 설정",
+  "scope": "app",
+  "target": "none",
+  "fields": [
+    {
+      "name": "connectionId",
+      "label": "연결 ID",
+      "type": "text",
+      "default": "",
+      "group": "",
+      "maxLength": 2048
+    },
+    {
+      "name": "name",
+      "label": "이름",
+      "type": "text",
+      "default": "",
+      "group": "",
+      "maxLength": 2048
+    },
+    {
+      "name": "kind",
+      "label": "연결 종류",
+      "type": "text",
+      "default": "",
+      "group": "",
+      "maxLength": 2048
+    },
+    {
+      "name": "baseUrl",
+      "label": "주소",
+      "type": "text",
+      "default": "",
+      "group": "",
+      "maxLength": 2048
+    },
+    {
+      "name": "model",
+      "label": "모델",
+      "type": "text",
+      "default": "",
+      "group": "",
+      "maxLength": 2048
+    },
+    {
+      "name": "effort",
+      "label": "생각 깊이",
+      "type": "enum",
+      "default": "medium",
+      "group": "",
+      "options": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    },
+    {
+      "name": "sendImages",
+      "label": "그림 보내기",
+      "type": "boolean",
+      "default": true,
+      "group": ""
+    },
+    {
+      "name": "budgetWarning",
+      "label": "예산 경고",
+      "type": "number",
+      "default": 0,
+      "group": "",
+      "min": 0,
+      "max": 1000000000
+    },
+    {
+      "name": "key",
+      "label": "API 키",
+      "type": "writeOnly",
+      "default": null,
+      "group": ""
+    },
+    {
+      "name": "mode",
+      "label": "권한 기본값",
+      "type": "enum",
+      "default": "ask",
+      "group": "",
+      "options": [
+        "readOnly",
+        "ask",
+        "direct"
+      ]
+    },
+    {
+      "name": "highlightChanges",
+      "label": "변경 강조",
+      "type": "boolean",
+      "default": true,
+      "group": ""
+    },
+    {
+      "name": "localOnly",
+      "label": "로컬 연결만",
+      "type": "boolean",
+      "default": false,
+      "group": ""
+    },
+    {
+      "name": "command",
+      "label": "실행 명령",
+      "type": "text",
+      "default": "",
+      "group": "",
+      "maxLength": 8192
+    },
+    {
+      "name": "args",
+      "label": "인수 (JSON 배열)",
+      "type": "text",
+      "default": "[]",
+      "group": "",
+      "maxLength": 8192
+    },
+    {
+      "name": "env",
+      "label": "환경 변수 (JSON 객체)",
+      "type": "text",
+      "default": "{}",
+      "group": "",
+      "maxLength": 8192
+    }
+  ],
+  "actions": {
+    "ok": [
+      {
+        "cmd": "aiSaveConnection",
+        "connection": {
+          "id": "$connectionId",
+          "name": "$name",
+          "kind": "$kind",
+          "baseUrl": "$baseUrl",
+          "model": "$model",
+          "effort": "$effort",
+          "sendImages": "$sendImages",
+          "budgetWarning": "$budgetWarning",
+          "command": "$command",
+          "args": "$args",
+          "env": "$env"
+        }
+      }
+    ],
+    "common": [
+      {
+        "cmd": "aiSetSettings",
+        "values": {
+          "folio.ai.mode": "$mode",
+          "folio.ai.highlightChanges": "$highlightChanges",
+          "folio.ai.localOnly": "$localOnly"
+        }
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 //! cancel and failure cleanup, protected folders, both copy methods, the PDF slot.
 
 use super::*;
-use folio_links::{How, LinkEntry, LinkSearch};
+use folio_links::{How, LinkEntry, LinkSearch, LinkStatus};
 use folio_model::{LinkInfo, Page, Rect, Spread};
 use std::sync::atomic::AtomicBool;
 
@@ -163,6 +163,22 @@ fn missing_source_is_rejected_during_planning() {
     let error = plan(&f.inputs(), &opts(), true).unwrap_err();
     assert_eq!(error.code, "source");
     assert!(f.leftovers().is_empty());
+}
+
+#[test]
+fn preview_and_copy_plans_assign_colliding_links_in_placement_order() {
+    let f = fixture("plan-collisions");
+    let inp = f.inputs();
+    let options = opts();
+    let preview = plan(&inp, &options, false).unwrap();
+    let copy = plan(&inp, &options, true).unwrap();
+    let indexes = |p: &Plan| p.link_rows.iter().map(|row| row.file).collect::<Vec<_>>();
+
+    assert_eq!(indexes(&preview), [Some(0), Some(1), Some(2), Some(3), Some(0), None, None, None]);
+    assert_eq!(indexes(&copy), [Some(0), Some(1), Some(1), Some(2), Some(0), None, None, None]);
+    assert_eq!(preview.links[2].copy.dest, "Links/PHOTO (3).jpg");
+    assert_eq!(copy.links[1].owners, ["g2", "g3"]);
+    assert_eq!(preview.bytes, copy.bytes + 5000);
 }
 
 #[test]

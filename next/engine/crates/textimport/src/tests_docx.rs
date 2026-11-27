@@ -1,6 +1,35 @@
 //! Word files: the expected values are what InDesign 2025 made of the same files (artifacts/placetext-c2-20261023/measurement,
 //! next/oracle/goldens/text/placetext-docx-*).
 use super::*;
+use std::io::{Cursor, Write};
+
+pub(super) fn word_file(parts: &[(&str, &str)]) -> Vec<u8> {
+    let mut zip = zip::ZipWriter::new(Cursor::new(Vec::new()));
+    for (name, xml) in parts {
+        zip.start_file(*name, zip::write::SimpleFileOptions::default()).unwrap();
+        zip.write_all(xml.as_bytes()).unwrap();
+    }
+    zip.finish().unwrap().into_inner()
+}
+
+#[test]
+fn word_quotes_keep_run_boundaries_in_body_and_formatted_footnotes() {
+    let body = r#"<document><body>
+        <p><r><t>한🙂</t></r><r><rPr><b/></rPr><t>"'</t></r></p>
+        <p><r><t>"B"</t></r><r><footnoteReference id="1"/></r></p>
+        </body></document>"#;
+    let notes = r#"<footnotes><footnote id="1"><p>
+        <r><t>"A</t></r><r><rPr><b/></rPr><t>"</t></r>
+        </p></footnote></footnotes>"#;
+    let bytes = word_file(&[("word/document.xml", body), ("word/footnotes.xml", notes)]);
+    let source = read_bytes(&bytes, &Options::default()).unwrap();
+    assert_eq!(source.paragraphs[0].runs[0].text, "한🙂");
+    assert_eq!(source.paragraphs[0].runs[1].text, "”’");
+    assert_eq!(source.paragraphs[1].runs[0].text, "“B”");
+    let marker = &source.paragraphs[1].runs[1];
+    assert!(matches!(&marker.inline, Some(Inline::Footnote(text)) if text == "“A”"));
+    assert_eq!(marker.note.iter().map(|r| r.text.as_str()).collect::<Vec<_>>(), ["“A", "“"]);
+}
 
 fn fixture(name: &str) -> Vec<u8> {
     std::fs::read(std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../../oracle/fixtures/Links").join(name)).unwrap()

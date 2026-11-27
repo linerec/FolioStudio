@@ -313,6 +313,14 @@ export const LIMITS: LimitsData = {
       "top": null,
       "ko": "찾기/바꾸기의 GREP 검색과 바꾸기는 지원하지 않습니다. 일반 글·글리프 찾기/바꾸기와 단락의 GREP 스타일은 사용할 수 있습니다.",
       "en": "GREP Find/Change is unsupported. Literal text and glyph Find/Change and paragraph GREP styles are available."
+    },
+    {
+      "id": "ai-panel-withheld",
+      "kind": "unsupported",
+      "area": "screen",
+      "top": null,
+      "ko": "AI 패널은 물리 프린터로 인쇄하거나 MCP에서 차단한 명령을 실행할 수 없습니다. 연결 키와 대화 세션은 사용자가 패널에서 관리합니다.",
+      "en": "The AI panel cannot print to a physical printer or run withheld MCP commands. Manage connection keys and chat sessions in the panel."
     }
   ]
 };

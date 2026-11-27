@@ -7,6 +7,9 @@ mod mcp;
 #[path = "../../../test_support.rs"]
 mod test_support;
 
+#[path = "ai/scripted.rs"]
+mod ai;
+
 use mcp::attached;
 use serde_json::{Value, json};
 use std::io::{BufRead, BufReader, Read, Write};
@@ -56,7 +59,12 @@ struct App {
 
 impl App {
     fn start(data: &Path) -> Self {
+        Self::with_settings(data, &[])
+    }
+
+    fn with_settings(data:&Path, envs:&[(&str,&str)]) -> Self {
         let mut command = Command::new(env!("CARGO_BIN_EXE_folio-engine"));
+        for (k,v) in envs { command.env(k,v); }
         isolate(&mut command, data);
         let mut child = command.stdin(Stdio::piped()).stdout(Stdio::piped()).stderr(Stdio::null()).spawn().unwrap();
         let input = child.stdin.take().unwrap();

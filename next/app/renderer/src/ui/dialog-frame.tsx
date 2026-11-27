@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { AiSettings } from '../ai/Settings';
 import { tr } from '../i18n';
 import type { EditResult } from '../engine';
 import { parseLength, unitOf } from '../inspect';
@@ -11,7 +12,7 @@ import { keyLabel, shortcutSpec } from './keys';
 type Row = Record<string, number | boolean | string>;
 type Value = number | boolean | string | Row[];
 type Field = {
-  name: string; label?: string; type: 'number' | 'boolean' | 'enum' | 'text' | 'choice' | 'array' | 'color' | 'json' | 'key'; group?: string; min: number; max: number; integer?: boolean;
+  name: string; label?: string; type: 'number' | 'boolean' | 'enum' | 'text' | 'choice' | 'array' | 'color' | 'json' | 'key' | 'writeOnly'; group?: string; min: number; max: number; integer?: boolean;
   unit?: 'length-h' | 'length-v' | 'length-pt' | 'angle' | 'percent'; suffix?: string; hidden?: boolean; radio?: [string, string]; rangeMessage?: string; required?: boolean; maxLength?: number; multiline?: boolean;
   /** text: a hint box shows (code, not translated), the box is monospaced and `rows` high */
   placeholder?: string; mono?: boolean; rows?: number; format?: string;
@@ -156,12 +157,14 @@ export function DialogFrame({ path = '', units, applied, scope = 'document', don
   const callback = useRef(applied); callback.current = applied;
   const finished = useRef(done); finished.current = done;
   const pending = useRef(Promise.resolve());
+  const aiFieldErrors = useRef(new Map<string,string>());
   const inflight = useRef(0);
   const known = useRef(definitions); known.current = definitions;
   const current = useRef<State>(null); current.current = state;
   const box = useRef<HTMLDivElement>(null);
   // the first box is ready to type in, as the dialogs of the screen always were; a dialog opens on its first tab
   useEffect(() => {
+    aiFieldErrors.current.clear();
     setTab(current.current?.context.tab ?? '');
     const first = box.current?.querySelector<HTMLInputElement>('input:not([type=checkbox]):not([type=radio])');
     first?.focus(); first?.select();
@@ -205,17 +208,23 @@ export function DialogFrame({ path = '', units, applied, scope = 'document', don
     return String(header.error);
   };
   const send = (cmd: string, args: Record<string, unknown> = {}) => {
+    const field = current.current?.dialog==='aiSettings' && cmd==='setDialogField' ? String(args.field) : null;
     inflight.current++;
     const task = pending.current.then(async () => {
       try {
         const { header } = await window.folio.request({ cmd, scope, ...args });
         if (!header.ok) throw new Error(explain(header));
+        if(field) aiFieldErrors.current.delete(field);
         return header;
       } finally { inflight.current--; }
     // (an applied dialog with a result is closed by its event, once the result is taken in; one a button keeps open (Save Preset) shows
     // the values its answer has)
     }).then(header => { if (!inflight.current && header.dialogState !== undefined && (header.result === undefined || header.dialogState !== null)) { setState(header.dialogState as State); setError(''); } });
-    pending.current = task.catch(e => setError(String(e.message ?? e)));
+    pending.current = task.catch(e => {
+      const message=String(e.message ?? e);
+      if(field) aiFieldErrors.current.set(field,message);
+      setError(message);
+    });
     return pending.current;
   };
   // a preview follows the values a moment after the last change; an answer that is no longer the newest question is dropped
@@ -276,6 +285,11 @@ export function DialogFrame({ path = '', units, applied, scope = 'document', don
     }
     setBusy(false);
   };
+  if (state.dialog === 'aiSettings') return <AiSettings values={state.values} change={change} flush={async()=>{
+    await pending.current;
+    const message=aiFieldErrors.current.values().next().value;
+    if(message)throw Error(message);
+  }} close={close} error={error}/>;
   const transform = def.style === 'transform', prefs = def.style === 'preferences';
   // without a document (an app scope) a document's tab is greyed, its fields greyed or not shown
   const alone = state.scope === 'app';

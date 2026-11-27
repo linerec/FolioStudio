@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["crates/model", "crates/color", "crates/idml", "crates/text", "crates/render", "crates/server", "crates/links", "crates/preflight", "crates/pdf", "crates/package", "crates/project", "crates/edit", "crates/spell", "crates/textimport", "crates/math", "crates/dbsource"]
+members = ["crates/ai", "crates/model", "crates/color", "crates/idml", "crates/text", "crates/render", "crates/server", "crates/links", "crates/preflight", "crates/pdf", "crates/package", "crates/project", "crates/edit", "crates/spell", "crates/textimport", "crates/math", "crates/dbsource"]
 
 [workspace.package]
 version = "0.1.0"
@@ -8,6 +8,7 @@ edition = "2024"
 publish = false
 
 [workspace.dependencies]
+folio-ai = { path = "crates/ai" }
 folio-model = { path = "crates/model" }
 folio-color = { path = "crates/color" }
 folio-idml = { path = "crates/idml" }

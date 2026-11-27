@@ -204,7 +204,8 @@ pub fn write_atomically(path: &Path, bytes: &[u8]) -> Result<(), String> {
 
 /// Export settings sent by the window, applied over the PDF/X-4 defaults. `preset`: "x4"
 /// (default), "x1a" or "x3".
-pub fn export_options(req: &Value, base: folio_pdf::ExportOptions) -> Result<folio_pdf::ExportOptions, String> {
+pub fn export_options(req: &Value, mut base: folio_pdf::ExportOptions) -> Result<folio_pdf::ExportOptions, String> {
+    base.reuse_image_rows = crate::preview_profile::reuse_pdf_image_rows();
     if let Some(value) = req.get("settings") {
         let p: folio_pdf::PdfPreset = serde_json::from_value(value.clone()).map_err(|e| e.to_string())?;
         let mut opts = p.apply(base)?;

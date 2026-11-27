@@ -195,6 +195,8 @@ export default {
   "command.panel.objectStyles": "개체 스타일",
   "command.panel.preflight": "사전 검사",
   "command.panel.separations": "분판 미리 보기",
+  "command.panel.ai": "AI",
+  "command.ai.settings": "AI…",
   "command.panel.project": "프로젝트",
   "command.window.tools": "도구",
   "command.window.control": "컨트롤",

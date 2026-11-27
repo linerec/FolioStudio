@@ -25,7 +25,8 @@ const ALLOWED: &[(&str, &[&str])] = &[
     ("edit", &["color", "idml", "links", "math", "model", "preflight", "spell", "textimport"]),
     // Data Merge from a database (dbmerge-a): the only crate with database drivers and their external dependencies
     ("dbsource", &["idml"]),
-    ("engine", &["color", "dbsource", "edit", "idml", "links", "math", "model", "package", "pdf", "preflight", "project", "render", "spell", "text", "textimport"]),
+    ("ai", &["edit", "project"]),
+    ("engine", &["ai", "color", "dbsource", "edit", "idml", "links", "math", "model", "package", "pdf", "preflight", "project", "render", "spell", "text", "textimport"]),
 ];
 
 // Read fixtures / compare layout in tests only. These do not grant runtime edges.

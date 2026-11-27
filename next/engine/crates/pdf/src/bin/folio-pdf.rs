@@ -86,7 +86,10 @@ fn main() {
     let started = Instant::now();
     let args: Vec<String> = std::env::args().skip(1).collect();
     let mut positional = Vec::new();
-    let mut opts = ExportOptions::default();
+    let mut opts = ExportOptions {
+        reuse_image_rows: std::env::var("FOLIO_ACCEL").as_deref() != Ok("off"),
+        ..ExportOptions::default()
+    };
     let mut report_path: Option<PathBuf> = None;
     let mut index_cache: Option<PathBuf> = None;
     let mut font_dirs_extra: Vec<PathBuf> = Vec::new();

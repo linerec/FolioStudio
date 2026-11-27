@@ -23,7 +23,7 @@ pub fn dispatch(req: &Value, out: &Out) -> bool {
 
 /// `{"cmd":"fileMetadata","file":…}`: the XMP packet a file carries and the properties captions use (title, description, author,
 /// copyright, keywords, IPTC headline, credit …), with the file's size and modified time (ms). Nothing is written.
-fn file_metadata(req: &Value) -> Result<Value, String> {
+pub(super) fn file_metadata(req: &Value) -> Result<Value, String> {
     #[derive(Deserialize)]
     struct Request { file: String }
     let req: Request = serde_json::from_value(req.clone()).map_err(|e| e.to_string())?;

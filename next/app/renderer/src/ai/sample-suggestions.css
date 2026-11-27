@@ -1,0 +1,5 @@
+.ai-sample-suggestions { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: 0 var(--sp-2) var(--sp-1); }
+.ai-sample-suggestions + .ai-transcript:empty { display: none; }
+.ai-sample-suggestions h3 { margin: 0; font-size: var(--fs-lg); font-weight: var(--fw-semibold); }
+.ai-sample-questions { display: grid; gap: var(--sp-1); margin-top: var(--sp-2); }
+.ai-sample-questions button { text-align: start; font-size: var(--fs-md); }

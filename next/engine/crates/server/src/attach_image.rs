@@ -20,6 +20,10 @@ fn stroke(r: &mut Raster, horizontal: bool, at: i64, start: i64, end: i64, color
 }
 
 pub fn render(req: &Value, s: &Session, profiles: &Profiles) -> Result<Value, String> {
+    render_selected(req,s,profiles,None)
+}
+
+pub fn render_selected(req: &Value,s:&Session, profiles:&Profiles,ids:Option<&[String]>) -> Result<Value,String> {
     let page = req
         .get("page")
         .map_or(Some(0), Value::as_u64)
@@ -99,14 +103,13 @@ pub fn render(req: &Value, s: &Session, profiles: &Profiles) -> Result<Value, St
         }
     }
     if selection {
-        let selected = s
-            .view
-            .lock()
-            .map_err(|_| "view unavailable")?
-            .selection
-            .clone();
-        for item in selected {
-            if let Some(loc) = s.locations().get(&item.id).filter(|loc| loc.page == page) {
+        let from_view;
+        let selected=if let Some(ids)=ids {ids} else {
+            from_view=s.view.lock().map_err(|_|"view unavailable")?.selection.iter().map(|s|s.id.clone()).collect::<Vec<_>>();
+            &from_view
+        };
+        for id in selected {
+            if let Some(loc) = s.locations().get(id).filter(|loc| loc.page == page) {
                 let [l, t, r, b] = loc.bounds;
                 for at in [y(t), y(b)] {
                     stroke(&mut raster, true, at, x(l), x(r), [48, 107, 255, 255]);

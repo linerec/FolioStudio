@@ -1,4 +1,12 @@
 import { useEffect, useState } from 'react';
+import {changeTargets} from '../ai/changeTargets';
+import {useDocumentId,useDocumentMarks} from '../ai/useDocumentMarks';
+import {markDocument,type Ask} from '../ai/attachments';
+import { SampleContext } from '../ui/SampleCards';
+import { SampleDraftScope } from '../ai/SampleSuggestions';
+import { AiPanel } from '../ai/Panel';
+import { ai,runningLabel,useTurn,useTurnEvents } from '../ai/runtime';
+import { documentReferences } from '../ai/references';
 import { PolygonDialog } from '../ui/drawing-dialogs';
 import { PreviewEditContext,PreviewScopeContext } from '../ui/controls/usePreviewEdit';
 import { transformDialogFor } from '../ui/transformtools';
@@ -36,6 +44,7 @@ import { QuickApply } from '../ui/quickapply';
 import { VariablesDialog } from '../ui/variables';
 import { Icon } from '../ui/icons';
 import { MenuBar,PopupMenu } from '../ui/menu';
+import { itemLabel } from '../ui/panels';
 import { findItem } from '../ui/overlay';
 import { InkManagerDialog } from '../ui/inkmanager';
 import { LimitsDialog } from '../ui/limits';
@@ -113,7 +122,7 @@ export function AppLayout(context: AppLayoutContext) {
     note, directOpen, setImportSource,
     engineBroken, firstPaint, lastRender,
     project, recentProjects, recent,
-    open, openSample, status,
+    open, openSample, openingSample, status,
     error, host, contextMenu,
     wsMenu, stage, pageEditing,
     guideEditing, layerEditing,
@@ -152,8 +161,24 @@ export function AppLayout(context: AppLayoutContext) {
   } = context;
   const folioLayout = workbench.layout === 'folio';
   const [helpRoom, setHelpRoom] = useState(true);
+  const [asks,setAsks]=useState<(Ask & {path?:string})[]>([]);
+  const aiDocumentId=useDocumentId(doc);
+  const aiMarks=useDocumentMarks(doc,aiDocumentId,vp.scrollToTarget,tool==='aiRegion');
+  useEffect(()=>setAsks([]),[doc?.path]);
+  useEffect(()=>{
+    const receive=(e:Event)=>{
+      const ask=(e as CustomEvent<Ask>).detail;
+      setAsks(prev=>[...prev,{...ask,path:doc?.path,specs:ask.specs.map(s=>({...s,document:aiDocumentId}))}]);
+      commands['ai.showComposer']?.run?.();
+    };
+    window.addEventListener('folio-ai-ask',receive);
+    return ()=>window.removeEventListener('folio-ai-ask',receive);
+  },[doc?.path,aiDocumentId,commands]);
   const controlBarPlace = useControlBar();
-  const hide = folioLayout ? FOLIO_HIDES : CLASSIC_HIDES;
+  const aiTurn = useTurn();
+  useTurnEvents(flash);
+  const classicDefault = dock.state.left?.some(g => g.includes('explorer') && g.includes('ai') && (dock.state.active[g[0]] ?? g[0]) !== 'ai');
+  const hide = folioLayout ? FOLIO_HIDES : classicDefault ? new Set<PanelId>([...CLASSIC_HIDES,'ai']) : CLASSIC_HIDES;
   dock.leftOut.current = hide;
   // the tools view floating: the rows or columns a person chose (Tools panel menu), else the grid it has docked
   const arrangement = arrangementOf(settings.preferences?.[TOOLBOX_ARRANGEMENT]);
@@ -172,7 +197,7 @@ export function AppLayout(context: AppLayoutContext) {
   };
   const toolsPanel = (placement: 'edge' | 'sidebar', own?: { layout: ToolsLayout; onLayout: (v: ToolsLayout) => void }) => (
           <ToolsPanel
-            placement={placement}
+            aiRunning={!!aiTurn} placement={placement}
             tool={tool}
             onTool={pickTool} onToolDoubleClick={tool => {
               if (tool === 'polygon' || tool === 'polygonFrame') { setPolygonDialog(true); return; } if (tool === 'eyedropper') { setEyedropperDialog(true); return; } if (tool === 'pencil') { setPencilDialog(true); return; }
@@ -265,6 +290,25 @@ export function AppLayout(context: AppLayoutContext) {
     commands: { ...host.commands, ...viewCommands },
     menu: (id) => viewMenus[id] ?? host.menu(id),
     render: (id) => {
+      if (id === 'ai') return <SampleDraftScope opening={openingSample !== null}><AiPanel key={doc?.path ?? projectRoot} documentId={aiDocumentId} path={doc?.path}
+        revision={pageRev} pages={doc?.pages.length??0}
+        ask={asks[0]?.path===doc?.path?asks[0]:undefined} consumed={a=>setAsks(prev=>prev.filter(x=>x!==a))}
+        settings={()=>commands['ai.settings']?.run?.()} references={()=>documentReferences(info,store,project?.tree?.entries??[])}
+        label={id=>{
+          for (const page of info?.pages ?? []) {
+            if (page.id === id) return tr('페이지 {0}',{0:page.index+1});
+            const item = findItem(store.peek(page.index),id)?.item;
+            if (item) return itemLabel(item);
+          }
+          return id;
+        }}
+        reveal={async (_document,id)=>{
+          const targets=await changeTargets(info?.pages??[],[id],page=>store.load(page));
+          if(!doc||!targets.length)throw Error(tr('이 문서에서 개체를 찾을 수 없습니다.'));
+          const first=targets[0];
+          if(first.itemId)setSelection([{page:first.page,id:first.itemId,content:false}]);
+          markDocument(doc.path,targets,true);
+        }}/></SampleDraftScope>;
       if (id === 'explorer') return (
         <ExplorerView
           project={project}
@@ -293,6 +337,7 @@ export function AppLayout(context: AppLayoutContext) {
   // where the control bar sits (build-c2): its menu's Dock at Top / Dock at Bottom / Float (engine user settings)
   const controlDock = controlBarPlace.dock;
   return (
+    <SampleContext.Provider value={{ openSample, openingSample }}>
     <PreviewEditContext.Provider value={previewSession}>
     <PreviewScopeContext.Provider value={previewScope}>
     <ToolHelpContext.Provider value={toolHelp}>
@@ -320,7 +365,7 @@ export function AppLayout(context: AppLayoutContext) {
         {/* Tab (Window ▸ Hide Panels) hides every panel: the sidebar with its tools, the docks and the floating panels; a second Tab shows
             them as they were (the dock layout is not touched). Shift+Tab hides the panels but the tools: the sidebar stays (dock.hidden) */}
         {!allHidden && <DockArea dock={dock} host={panels} hide={hide} area="left" sidebar={folioLayout} />}
-        <div className="doc-col">
+        <div className="doc-col">{aiTurn && <button className="ai-turn-banner" onClick={()=>void ai('aiStop',aiTurn).catch(e=>flash(String(e)))}>{runningLabel()}</button>}
         <AppTabs aw={appWins} />
         <div className="doc-host"
           // a picture or PDF dragged from the explorer: the place cursor is loaded with it (then a click or a drag puts it down)
@@ -398,7 +443,7 @@ export function AppLayout(context: AppLayoutContext) {
               onGuideSelection={setSelectedGuide}
               editable={editable}
               dirty={editState.dirty}
-              pageRev={pageRev}
+              aiMarks={aiMarks} pageRev={pageRev}
               onEdit={runEdit}
               placement={placement}
               threading={threading}
@@ -437,14 +482,12 @@ export function AppLayout(context: AppLayoutContext) {
                     onOpenProject={async () => { const d = await window.folio.chooseFolder(tr('프로젝트 폴더 열기 (folio.project가 있는 폴더)')); if (d) open(d); }}
                     onImport={async (p) => { const f = p ?? (await window.folio.openDialog()); if (f) setImportSource(f); }}
                     onOpenRecentProject={(p) => open(p.root)}
-                    onOpenSample={openSample}
                   />
                 ) : (
                   <ProjectHome
                     project={project.info}
                     onNewDocument={commands['file.new']?.run ? () => commands['file.new'].run?.() : undefined}
                     onImport={async () => { const f = await window.folio.openDialog(); if (f) setImportSource(f); }}
-                    onOpenSample={openSample}
                   />
                 )}
               </div>
@@ -594,5 +637,6 @@ export function AppLayout(context: AppLayoutContext) {
     </ToolHelpContext.Provider>
     </PreviewScopeContext.Provider>
     </PreviewEditContext.Provider>
+    </SampleContext.Provider>
   );
 }

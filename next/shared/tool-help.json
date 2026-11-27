@@ -6,6 +6,24 @@
  ],
  "items": [
   {
+   "id": "aiRegion",
+   "kind": "tool",
+   "keys": [
+    "Shift+Q"
+   ],
+   "commands": [],
+   "ko": {
+    "name": "AI 영역 도구",
+    "summary": "페이지의 일부를 AI 대화에 첨부합니다.",
+    "detail": "페이지에서 사각형을 끌어 고릅니다. Shift를 누르고 끌면 영역을 더하고 Esc를 누르면 끝냅니다."
+   },
+   "en": {
+    "name": "AI Region Tool",
+    "summary": "Attach part of a page to the AI conversation.",
+    "detail": "Drag a rectangle on the page. Shift-drag to add another region. Press Esc to finish."
+   }
+  },
+  {
    "id": "selection",
    "kind": "tool",
    "keys": [

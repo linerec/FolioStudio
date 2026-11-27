@@ -7,6 +7,21 @@ fn rtf(name: &str) -> TextSource {
 }
 
 #[test]
+fn rtf_quotes_follow_the_previous_character_across_runs_and_start_again_in_cells() {
+    let bytes = br#"{\rtf1\ansi A{\b "'}\par\pard "B"\par\trowd\cellx1000\cellx2000\pard\intbl C\cell "D"\cell\row}"#;
+    let source = read_bytes(bytes, &Options::default()).unwrap();
+    assert_eq!(source.paragraphs[0].runs[0].text, "A");
+    assert_eq!(source.paragraphs[0].runs[1].text, "”’");
+    assert_eq!(source.paragraphs[1].text(), "“B”");
+    let table = source.paragraphs.iter().flat_map(|p| &p.runs).find_map(|run| match &run.inline {
+        Some(Inline::Table(table)) => Some(table),
+        _ => None,
+    }).unwrap();
+    assert_eq!(table.cells[0].paragraphs[0].text(), "C");
+    assert_eq!(table.cells[1].paragraphs[0].text(), "“D”");
+}
+
+#[test]
 fn rtf_uses_the_first_matching_font_even_when_the_tables_follow_the_text() {
     let bytes = br"{\rtf1\ansi\deff2\cf1 A\'e9\{B\}{\fonttbl{\f2 Arial;}{\f2 Courier New;}}{\colortbl;\red255\green0\blue0;}\par}";
     let source = read_bytes(bytes, &Options::default()).unwrap();
@@ -80,6 +95,17 @@ fn rtf_colours_are_named_the_way_indesign_names_them() {
     let names: Vec<_> = s.colors.iter().map(|c| c.name.as_str()).collect();
     // black is no colour; Yellow's own name is not what InDesign gives it
     assert_eq!(names, ["Bright Green", "Gray-50%", "RTF r18 g52 b86", "R=255 G=255 B=0", "Pink", "Turquoise", "Red"]);
+}
+
+#[test]
+fn grey_swatch_references_escape_percent_in_runs_and_styles() {
+    let bytes = br"{\rtf1\ansi{\colortbl;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\s1\cf2 Gray Style;}}\pard\cf1 Body\par\pard\plain\s1\cf2 Styled\par}";
+    let source = read_bytes(bytes, &Options::default()).unwrap();
+    let fill = |value: &str| ("FillColor".to_owned(), value.to_owned());
+    assert!(source.paragraphs[0].runs[0].attrs.contains(&fill("Color/Gray-50%25")));
+    assert!(source.paragraph_styles[0].attrs.contains(&fill("Color/Gray-25%25")));
+    let swatches: Vec<_> = source.colors.iter().map(|s| (s.name.as_str(), s.grouped)).collect();
+    assert_eq!(swatches, [("Gray-50%", true), ("Gray-25%", false)]);
 }
 
 /// `FOLIO_DUMP_RTF=<file> cargo test -p folio-textimport dump_rtf -- --ignored --nocapture`: what the reader makes of a file (a debugging aid for the oracle).

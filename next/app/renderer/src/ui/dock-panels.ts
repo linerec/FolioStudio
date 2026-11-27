@@ -59,6 +59,7 @@ export const PANEL_META: Record<PanelId, { title: string; icon: string; width: n
   ...DATA_MERGE_PANELS,
   ...MATH_PANELS,
   // the Folio workspace's two views (uix-d2): docked like any panel, the explorer above the tools in the left area to begin with
+  ai: { get title() { return tr('AI'); }, icon: 'chat', width: 340, height: 520 },
   explorer: { get title() { return tr('탐색기'); }, icon: 'folder', width: 280, height: 520 },
   toolbox: { get title() { return tr('도구'); }, icon: 'selection', width: 240, height: 330 },
 };

@@ -1,6 +1,7 @@
 //! Composes the document window, canvas, overlays, rulers and status controls.
 
 import { t as tr } from '../i18n';
+import {RegionOverlay} from '../ai/RegionOverlay';
 import { useState } from 'react';
 import { type Bitmap, type DocumentSummary, type EditCommand, type EditResult, type InkView, type PageInfo, type PreflightReport } from '../engine';
 import { type DocumentInfo, type ItemStore, trim } from '../inspect';
@@ -140,6 +141,7 @@ export type DocWindowProps = {
   /** Changed since the last save: the tab shows `*`, as InDesign's does. */
   dirty: boolean;
   /** Per page: bumped when an edit changed it, so it is drawn again. */
+  aiMarks?: Target[];
   pageRev: Map<number, number>;
   onEdit: (label: string, commands: EditCommand[], extra?: Record<string, unknown>) => Promise<EditResult | null>;
   /** View ▸ Extras ▸ Show Conveyor: the bar of the Content Collector / Placer tools. */
@@ -276,7 +278,7 @@ export function DocWindow(p: DocWindowProps) {
                   pivot={pivot?.page === pg.index ? pivot : null}
                   guide={guides.selection.length ? guides.selection.map((g) => g.id).join(',') : null}
                   rev={p.pageRev.get(pg.index) ?? 0}
-                  textOverlay={<>{overrideMarks(pg.index,pg.width,pg.height)}{spellMarks(pg.index,pg.width,pg.height,scale)}{text.overlay(pg.index, pg.width, pg.height)}</>}
+                  textOverlay={<>{overrideMarks(pg.index,pg.width,pg.height)}{spellMarks(pg.index,pg.width,pg.height,scale)}{text.overlay(pg.index, pg.width, pg.height)}<RegionOverlay key={p.tool==='aiRegion'?'drawing':'view'} page={pg.index} width={pg.width} height={pg.height} active={p.tool==='aiRegion'} targets={p.aiMarks??[]}/></>}
                   drawingOverlay={drawing?.page === pg.index ? <DrawingPreview drawing={drawing} width={pg.width} height={pg.height} turn={turn} /> : null}
                   pathOverlay={paths.overlay(pg.index, pg.width, pg.height)}
                 />

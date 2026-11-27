@@ -283,7 +283,7 @@ export function LayersPanel({ ctx }: { ctx: PanelCtx }) {
 const KIND_LABEL: Record<string, string> = { get textFrame() { return tr("텍스트 프레임"); }, get rectangle() { return tr("사각형"); }, get oval() { return tr("타원"); }, get polygon() { return tr("다각형"); }, get line() { return tr("선"); }, get group() { return tr("그룹"); }, get other() { return tr("개체"); } };
 
 /** How InDesign names an object in the Layers panel: its name, a placed file, or its kind. */
-function itemLabel(it: ItemInfo) {
+export function itemLabel(it: ItemInfo) {
   if (it.name) return it.name;
   if (it.content?.link) return `<${it.content.link}>`;
   return `<${KIND_LABEL[it.kind] ?? it.kind}>`;

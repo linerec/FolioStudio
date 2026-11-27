@@ -16,6 +16,7 @@ pub mod geom;
 pub mod commands;
 mod preview;
 mod history;
+pub use history::{Checkpoint, GroupSummary};
 mod part_cache;
 mod ops;
 mod toc;
@@ -78,6 +79,8 @@ enum Splice {
 
 #[derive(Clone, Debug)]
 struct Txn {
+    stamp: u64,
+    commands: Vec<String>,
     label: String,
     splices: Vec<Splice>,
     /// Stories whose saved InDesign lines no longer hold (frame size changed).
@@ -124,6 +127,8 @@ pub struct Editor {
     part_tick: u64,
     indexes: std::cell::RefCell<HashMap<String, part_cache::Cached>>,
     undo: Vec<Txn>,
+    group: Option<history::Group>,
+    history_epoch: u64,
     redo: Vec<Txn>,
     rev: u64,
     /// The document's identity for "unsaved changes": counts apply, undo and redo like `rev`, not preview steps (preview.rs).
@@ -240,7 +245,7 @@ impl Editor {
     /// `Spreads/Spread_u1.xml`, …), text as stored.
     pub fn new(parts: BTreeMap<String, String>) -> Editor {
         Editor { file_name: String::new(), indexes: Default::default(), parts, part_revs: BTreeMap::new(), part_tick: 0, undo: Vec::new(), redo: Vec::new(), rev: 0, version: 0, preview: None, touched: BTreeSet::new(), recompose: BTreeSet::new(), where_is: HashMap::new(), next_uid: None, text_state: Default::default(), frame_starts: BTreeMap::new(), frame_spans: BTreeMap::new(), anchor_placements:BTreeMap::new(), anchor_targets: Default::default(), merged_cells: BTreeMap::new(), clipboard: None, foreign_source: None, foreign_docs: BTreeMap::new(),
-            doc: NEXT_DOC.fetch_add(1, std::sync::atomic::Ordering::Relaxed), again: Vec::new(), again_stale: false, link_uris: BTreeMap::new(), font_records: Vec::new(), glyph_fonts: Vec::new(), shortcut_order: BTreeMap::new() }
+            group: None, history_epoch: 0, doc: NEXT_DOC.fetch_add(1, std::sync::atomic::Ordering::Relaxed), again: Vec::new(), again_stale: false, link_uris: BTreeMap::new(), font_records: Vec::new(), glyph_fonts: Vec::new(), shortcut_order: BTreeMap::new() }
     }
 
     /// The selection changed: the next move, rotation, scale or flip starts a new Transform Sequence
@@ -534,7 +539,10 @@ impl Editor {
                 self.again.push(step);
             }
         }
-        let txn = Txn { label: label.into(), splices, recompose, text_before, text_after: self.text_state.clone() };
+        let names = if self.group.is_some() {
+            commands.iter().filter_map(|cmd| serde_json::to_value(cmd).ok()?.get("op")?.as_str().map(str::to_owned)).collect()
+        } else { Vec::new() };
+        let txn = Txn { label: label.into(), stamp: self.part_tick, commands: names, splices, recompose, text_before, text_after: self.text_state.clone() };
         self.redo.clear();
         let mut out = self.finish(&txn);
         out.created = created;
@@ -549,17 +557,16 @@ impl Editor {
         let label = self.undo.last().map(|t| t.label.clone()).unwrap_or_default();
         let before = self.undo.len();
         let out = self.apply(&label, commands)?;
-        if before > 0 && self.undo.len() == before + 1 {
+        if before > self.group.as_ref().map_or(0, |g| g.start) && self.undo.len() == before + 1 {
             let txn = self.undo.pop().expect("the step just applied");
             let last = self.undo.last_mut().expect("the step amended");
-            last.splices.extend(txn.splices);
-            last.recompose.extend(txn.recompose);
-            last.text_after = txn.text_after;
+            last.append(txn);
         }
         Ok(out)
     }
 
     pub fn undo(&mut self) -> Option<Outcome> {
+        if self.group.as_ref().is_some_and(|g| self.undo.len() <= g.start) { return None; }
         let settled = self.preview_settle();
         let txn = self.undo.pop()?;
         for s in txn.splices.iter().rev() {
@@ -574,6 +581,7 @@ impl Editor {
     }
 
     pub fn redo(&mut self) -> Option<Outcome> {
+        if let Some(group)=&self.group && self.redo.last()?.stamp<=group.start_stamp { return None; }
         let settled = self.preview_settle();
         let txn = self.redo.pop()?;
         for s in &txn.splices {

@@ -47520,6 +47520,77 @@
       }
     },
     {
+      "name": "performanceProfile",
+      "description": "Read preview worker limits and their source. Supply values to save preferences for the next engine start.\n미리보기 작업 수와 결정 이유를 읽는다. values를 주면 다음 엔진 시작에 쓸 설정을 저장한다.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "values": {
+            "type": "object"
+          }
+        },
+        "required": [],
+        "additionalProperties": true
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "id": {},
+          "bodyBytes": {
+            "type": "integer"
+          },
+          "error": {
+            "type": "string"
+          },
+          "hardware": {
+            "type": "object"
+          },
+          "adapters": {},
+          "backend": {
+            "type": "string"
+          },
+          "active": {
+            "type": "object"
+          },
+          "inputs": {
+            "type": "object"
+          },
+          "saved": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      },
+      "_meta": {
+        "description": {
+          "ko": "미리보기 작업 수와 결정 이유를 읽는다. values를 주면 다음 엔진 시작에 쓸 설정을 저장한다.",
+          "en": "Read preview worker limits and their source. Supply values to save preferences for the next engine start."
+        },
+        "arguments": [
+          {
+            "name": "values",
+            "schema": {
+              "type": "object"
+            },
+            "required": false,
+            "unit": "none",
+            "default": {
+              "kind": "omitted"
+            }
+          }
+        ],
+        "group": "server/registered_queries",
+        "wire": {
+          "cmd": "performanceProfile"
+        },
+        "source": "crates/server/src/registered_queries.rs",
+        "result": "JSON-header"
+      }
+    },
+    {
       "name": "placeInfo",
       "description": "Inspect a file before placing it.\n배치할 파일의 종류와 크기를 조사한다.",
       "inputSchema": {

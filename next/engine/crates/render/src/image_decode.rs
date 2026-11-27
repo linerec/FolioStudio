@@ -42,9 +42,8 @@ pub(super) enum Samples {
     Cmyk,
 }
 
-pub(super) fn decode(path: &str, mode: ImageMode, colors: &Colors) -> Option<Pixmap> {
-    let bytes = std::fs::read(path).ok()?;
-    let (w, h, mut data, samples) = decode_rgba(&bytes, colors, !mode.proxy)?;
+pub(super) fn decode(bytes: &[u8], mode: ImageMode, colors: &Colors) -> Option<Pixmap> {
+    let (w, h, mut data, samples) = decode_rgba(bytes, colors, !mode.proxy)?;
     if mode.proxy {
         binary_alpha(&mut data, 4, 3);
     }
@@ -474,10 +473,11 @@ mod proxy_tests {
         image::RgbaImage::from_raw(3, 1, vec![0, 0, 0, 255, 0, 0, 0, 108, 255, 255, 255, 0]).unwrap().save(&path).unwrap();
         let path = path.to_string_lossy().into_owned();
         let colors = Colors::unmanaged();
-        let proxy = decode(&path, ImageMode { blend: BlendSpace::Rgb, proxy: true }, &colors).unwrap();
+        let bytes = std::fs::read(&path).unwrap();
+        let proxy = decode(&bytes, ImageMode { blend: BlendSpace::Rgb, proxy: true }, &colors).unwrap();
         assert_eq!(&proxy.data()[4..], &[0, 0, 0, 255, 0, 0, 0, 0]);
         // an image preview keeps its soft alpha
-        let image = decode(&path, ImageMode { blend: BlendSpace::Rgb, proxy: false }, &colors).unwrap();
+        let image = decode(&bytes, ImageMode { blend: BlendSpace::Rgb, proxy: false }, &colors).unwrap();
         assert_eq!(image.data()[7], 108);
         assert!(is_proxy("PDF") && is_proxy("EPS") && !is_proxy("Image"));
     }

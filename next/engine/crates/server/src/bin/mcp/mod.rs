@@ -1,6 +1,6 @@
-pub mod attached;
+pub use folio_engine::mcp::attached;
 pub mod boundary;
-pub mod catalog;
+pub use folio_engine::mcp::catalog;
 pub mod client;
 pub mod coverage;
 pub mod document;
@@ -81,7 +81,9 @@ impl Server {
             _ => match &mut self.backend {
                 Backend::Project(engine) => engine.call(name, arguments).map_err(refusal),
                 Backend::App(app) => {
-                    let reply = app.request(catalog::request_for(name, arguments).map_err(refusal)?).map_err(refusal)?;
+                    let request = if app.turn_scoped {json!({"tool":name,"arguments":arguments})}
+                        else {catalog::request_for(name, arguments).map_err(refusal)?};
+                    let reply = app.request(request).map_err(refusal)?;
                     if reply["ok"] != false { return Ok(reply); }
                     let mut failed = reply;
                     if let Some(object) = failed.as_object_mut() { object.remove("id"); object.remove("bodyBytes"); }

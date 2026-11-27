@@ -990,6 +990,7 @@ export const MAIN_MENUS: MenuDef[] = [
     m('menu.main.edit.preferences', [
       c('edit.preferences'),
       c('pref.language'),
+      c('ai.settings'),
       c('id.edit.preferences.interface'),
       m('menu.interfaceColorTheme', [
         c('theme.dark'),
@@ -1648,6 +1649,7 @@ export const MAIN_MENUS: MenuDef[] = [
     ]),
     c('panel.pages'),
     c('panel.project'),
+    c('panel.ai'),
     c('id.window.properties'),
     c('panel.stroke'),
     m('menu.main.window.styles', [

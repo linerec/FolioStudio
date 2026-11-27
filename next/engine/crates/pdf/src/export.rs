@@ -146,7 +146,7 @@ pub fn export(
         level,
         image_compression: opts.image_compression.clone(),
         jpeg_quality: opts.jpeg_quality,
-        downsample: opts.downsample.map(|(above, to)| images::Downsample { above, to }),
+        downsample: opts.downsample.map(|(above, to)| images::Downsample { above, to, reuse_rows: opts.reuse_image_rows }),
         convert: conv.clone().filter(|_| cmyk_only || preset == Preset::X3),
         no_smask: flattening,
     };

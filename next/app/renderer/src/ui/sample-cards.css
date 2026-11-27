@@ -1,0 +1,16 @@
+.sample-cards { display: grid; min-width: 0; gap: var(--sp-2); }
+.sample-cards.wide { margin-top: var(--sp-4); grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); }
+.sample-cards.compact { margin-top: var(--sp-2); }
+.sample-cards .sample-card {
+  display: flex; align-items: flex-start; gap: var(--sp-3); width: 100%; min-width: 0;
+  padding: var(--sp-3); text-align: start; font: inherit; color: var(--text);
+  border: 1px solid var(--field-line); border-radius: var(--r-md); background: var(--bar);
+}
+.sample-cards.compact .sample-card { padding: var(--sp-2); gap: var(--sp-2); background: var(--panel); }
+.sample-cards .sample-card:hover:enabled { border-color: var(--accent-fg); background: var(--hover); }
+.sample-cards .sample-card:focus-visible { outline: 2px solid var(--accent-fg); outline-offset: 1px; }
+.sample-card > .icon { flex: none; color: var(--accent-fg); margin-top: 1px; }
+.sample-copy { display: grid; gap: 2px; min-width: 0; color: var(--muted); font-size: var(--fs-md); line-height: var(--lh-text); overflow-wrap: anywhere; }
+.sample-copy strong { color: var(--text); font-size: var(--fs-lg); font-weight: var(--fw-semibold); }
+.compact .sample-copy, .compact .sample-copy strong { font-size: var(--fs-md); }
+.sample-copy [role=status] { color: var(--accent-fg); }

@@ -145,6 +145,8 @@ pub struct ExportOptions {
     /// Downsample colour and gray images above the first ppi to the second (InDesign's
     /// PDF/X-4 preset: above 450 to 300). `None` keeps every pixel.
     pub downsample: Option<(f64, f64)>,
+    /// Reuse the horizontal box-filter result for byte-identical consecutive rows.
+    pub reuse_image_rows: bool,
     /// Memory allowed for images being decoded at once (bytes).
     pub image_memory: u64,
     /// Transparency flattening (PDF/X-1a and PDF/X-3).
@@ -184,6 +186,7 @@ impl Default for ExportOptions {
             jpeg_quality: 95,
             cmyk_override: None,
             downsample: Some((450.0, 300.0)),
+            reuse_image_rows: true,
             image_memory: 1 << 30,
             flatten: FlattenSettings::default(),
             colors: None,

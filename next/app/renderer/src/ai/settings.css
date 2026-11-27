@@ -1,0 +1,7 @@
+.ai-settings-shade{position:fixed;inset:0;z-index:1000;background:#0005;display:grid;place-items:center}
+.ai-settings{display:grid;gap:12px;box-sizing:border-box;width:min(540px,96vw);max-height:94vh;overflow:auto;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:16px;box-shadow:0 12px 40px #0004}
+.ai-settings header,.ai-settings footer,.ai-settings-row{display:flex;align-items:center;gap:8px}.ai-settings h2{font-size:1.2em;margin:0;flex:1}.ai-settings footer{justify-content:flex-end}
+.ai-settings-body{display:grid;grid-template-columns:minmax(100px,1fr) minmax(0,2fr);gap:12px}.ai-settings nav,.ai-settings fieldset{display:flex;flex-direction:column;align-items:stretch;min-width:0;gap:6px}.ai-settings fieldset{border:1px solid var(--line);padding:8px}
+.ai-settings label{display:flex;gap:8px;justify-content:space-between;align-items:center}.ai-settings .ai-check{justify-content:flex-start}.ai-settings input:not([type=checkbox]),.ai-settings select{width:58%;min-width:0}
+.ai-settings button,.ai-settings input,.ai-settings select{background:var(--field);border:1px solid var(--field-line);border-radius:3px;color:var(--text);padding:4px}.ai-settings button[aria-pressed=true]{border-color:var(--accent)}
+.ai-settings p{overflow-wrap:anywhere;margin:0}.ai-settings button:disabled{opacity:.5}

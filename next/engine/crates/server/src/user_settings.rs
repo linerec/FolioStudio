@@ -86,6 +86,17 @@ fn access_with(root: &Path, request: &Value, change: impl FnOnce(&mut Map<String
             }
         }
     }
+    if patch.is_some() || values.is_some() || migrate.is_some() {
+        let old=before.get("preferences").and_then(Value::as_object);
+        let new=settings.get("preferences").and_then(Value::as_object);
+        for key in old.into_iter().chain(new).flat_map(|o|o.keys()).filter(|k|k.starts_with("folio.ai.")){
+            let value=new.and_then(|o|o.get(key));
+            if old.and_then(|o|o.get(key))!=value &&
+                !value.is_some_and(|v|crate::ai_runtime::settings::valid_preference(key,v)){
+                return Err("invalid AI preference; use AI connection commands for connections".into())
+            }
+        }
+    }
     change(&mut settings, root)?;
     if settings != before {
         if parsed.as_ref().is_none_or(|v| !v.is_object()) {

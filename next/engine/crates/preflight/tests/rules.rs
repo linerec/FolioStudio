@@ -410,6 +410,26 @@ fn color_space_images_vectors_text() {
 }
 
 #[test]
+fn color_findings_group_text_runs_and_frame_fills_separately() {
+    let attrs = CharacterAttrs { fill: paint("Color/RGB"), ..black_text(12.0) };
+    let (mut d, layout) = text_doc(attrs, "a", [20.0, 20.0, 180.0, 80.0], &[(0, 2, 40.0, 25.0, 12.0)]);
+    let runs = &mut d.stories.get_mut("st").unwrap().paragraphs[0].runs;
+    runs.push(TextRun { text: "b".into(), ..runs[0].clone() });
+    for id in ["z", "a"] {
+        d.spreads[0].items.push(frame(id, 40.0, 100.0, 80.0, 140.0, "Color/RGB"));
+    }
+
+    let report = run(&d, &layout, &LinkReport::default());
+    let groups: Vec<_> = report.findings.iter().filter(|f| f.rule == COLOR_SPACE)
+        .map(|f| (f.item.as_deref(), f.data["part"].as_str(), f.data["count"].as_u64(), &f.data["items"]))
+        .collect();
+    assert_eq!(groups, [
+        (Some("tf"), Some("text"), Some(2), &serde_json::json!(["tf"])),
+        (Some("z"), Some("fill"), Some(2), &serde_json::json!(["z", "a"])),
+    ]);
+}
+
+#[test]
 fn image_ink_coverage_from_cmyk_tiff() {
     // 8 × 8 uncompressed CMYK TIFF, every pixel at 90 / 90 / 90 / 90 %
     let dir = std::env::temp_dir().join(format!("folio-preflight-tac-{}", std::process::id()));

@@ -1,4 +1,5 @@
 # name|한국어 설명|English description|arguments: name:type! required, ? omitted, =JSON default; @unit|success fields (top level)
+performanceProfile|미리보기 작업 수와 결정 이유를 읽는다. values를 주면 다음 엔진 시작에 쓸 설정을 저장한다.|Read preview worker limits and their source. Supply values to save preferences for the next engine start.|values:o?|hardware:o;adapters:v;backend:s;active:o;inputs:o;saved:o
 storyTables|스토리의 표와 셀 표시 순서를 조회한다.|Read tables and cell display order in a story.|story:s!|tables:a
 arrangeByRows|표의 스토리 편집기 표시를 행 순서로 바꾼다.|Arrange a table by rows in Story Editor.|table:s!|table:s;order:s;was:s;changed:b
 arrangeByColumns|표의 스토리 편집기 표시를 열 순서로 바꾼다.|Arrange a table by columns in Story Editor.|table:s!|table:s;order:s;was:s;changed:b

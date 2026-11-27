@@ -1,6 +1,5 @@
 //! What a connection attached to the running Folio app may ask its engine. One list, two users: the engine checks every
 //! attached request with `admit` (it never trusts the client), and `folio-mcp --attach` lists the same names as tools.
-//! The engine includes this file by path (`src/main.rs`), so it must not refer to the other MCP modules.
 #![allow(dead_code)]
 use serde_json::Value;
 
@@ -17,8 +16,15 @@ pub mod text_tools;
 
 pub fn registry() -> &'static Value {
     static REGISTRY: std::sync::OnceLock<Value> = std::sync::OnceLock::new();
-    REGISTRY.get_or_init(|| serde_json::from_str(include_str!("../../../../../commands.generated.json"))
-        .expect("generated command registry must be valid JSON"))
+    REGISTRY.get_or_init(|| {
+        let mut registry: Value = serde_json::from_str(include_str!("../../../../commands.generated.json"))
+            .expect("generated command registry must be valid JSON");
+        let tools = registry["tools"].as_array_mut().expect("tool registry");
+        tools.extend(folio_ai::COMMANDS.iter().map(|name| serde_json::json!({
+            "name": name, "_meta": {"wire": {"cmd": name}, "risk": "withheld"}
+        })));
+        registry
+    })
 }
 
 pub fn object_tool(name: &str) -> Option<&'static Value> {
@@ -52,6 +58,7 @@ pub const ATTACHED: &[&str] = &[
     // panels and the recent list
     "panelState", "setPanelState", "workspaceLayout", "setWorkspaceLayout", "recentFiles", "setRecentFiles", "rememberRecent",
     "rendererPreferences",
+    "performanceProfile",
     // the dock's layout commands (uix-d2): move, join, split, float, pop out, close, open; workspaces saved, loaded, reset
     "dockAction",
     // data merge: project files and the document's own source (a database check needs ALLOW_DATABASE_REFRESH)
@@ -179,6 +186,7 @@ pub fn file_actions(cmd: &str) -> (&'static [&'static str], &'static [&'static s
 pub const NEW_PROJECT_FOLDER: &str = "folio.mcp.newProjectFolder";
 /// The settings that say what an attached client may do: never changed over MCP (`admit` and attach_paths.rs check the dialogs).
 pub const MCP_SETTINGS: &str = "folio.mcp.";
+pub fn personal_setting(key: &str) -> bool { key.starts_with(MCP_SETTINGS) || key.starts_with("folio.ai.") }
 
 /// App dialogs (`"scope": "app"`) an attached client may open and apply: New Document, New Book and New Library in the open
 /// project, New Project in the folder a person chose, the user name and the language, and saving a document preset. The engine
@@ -191,8 +199,8 @@ pub const APP_DIALOG_PATHS: &[&str] = &["project", "parent"];
 
 /// The `folio.mcp.*` key named in a dialog request (`openDialog` values, `setDialogField` field), if any.
 fn mcp_setting(request: &Value) -> Option<String> {
-    let field = request["field"].as_str().filter(|f| f.starts_with(MCP_SETTINGS)).map(str::to_owned);
-    field.or_else(|| request["values"].as_object().and_then(|v| v.keys().find(|k| k.starts_with(MCP_SETTINGS)).cloned()))
+    let field = request["field"].as_str().filter(|f| personal_setting(f)).map(str::to_owned);
+    field.or_else(|| request["values"].as_object().and_then(|v| v.keys().find(|k| personal_setting(k)).cloned()))
 }
 
 pub fn path_tool(name: &str) -> Option<&'static PathTool> { PATHS.iter().find(|t| t.name == name) }

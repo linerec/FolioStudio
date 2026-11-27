@@ -19,7 +19,7 @@ use archive::{part, read_pictures};
 use crate::messages::Message;
 use crate::numbering::Lists;
 use crate::xmltree::{El, parse};
-use crate::{Inline, Options, Paragraph, Run, TextSource, txt};
+use crate::{Inline, Options, Paragraph, Run, TextSource, quotes};
 use std::collections::BTreeSet;
 use styles::{Colors, needed, read_styles, style_def};
 use walk::Walk;
@@ -77,20 +77,7 @@ pub(crate) fn read(bytes: &[u8], options: &Options) -> Result<TextSource, String
         notes.add(note.clone());
     }
     if options.use_typographers_quotes {
-        quotes(&mut paragraphs);
-        // a cell's text and a note's text are read as texts of their own
-        for run in paragraphs.iter_mut().flat_map(|p| p.runs.iter_mut()) {
-            match &mut run.inline {
-                Some(Inline::Table(table)) => table.cells.iter_mut().for_each(|c| quotes(&mut c.paragraphs)),
-                Some(Inline::Footnote(note) | Inline::Endnote(note)) => {
-                    *note = txt::typographers_quotes(note);
-                    for r in &mut run.note {
-                        r.text = txt::typographers_quotes(&r.text);
-                    }
-                }
-                Some(Inline::Picture(_)) | None => {}
-            }
-        }
+        quotes::story(&mut paragraphs);
     }
     let (mut paragraph_styles, mut character_styles) = (Vec::new(), Vec::new());
     if !options.remove_formatting {
@@ -120,28 +107,5 @@ fn clone_el(e: &El) -> El {
             crate::xmltree::Node::El(c) => crate::xmltree::Node::El(clone_el(c)),
             crate::xmltree::Node::Text(t) => crate::xmltree::Node::Text(t.clone()),
         }).collect(),
-    }
-}
-
-/// Straight quotes become curly the way the text reader makes them (measured: the same rule for Word), across the whole story.
-fn quotes(paragraphs: &mut [Paragraph]) {
-    let mut whole = String::new();
-    for (i, p) in paragraphs.iter().enumerate() {
-        if i > 0 {
-            whole.push('\r');
-        }
-        whole.push_str(&p.text());
-    }
-    let curly: Vec<char> = txt::typographers_quotes(&whole).chars().collect();
-    let mut at = 0usize;
-    for (i, p) in paragraphs.iter_mut().enumerate() {
-        if i > 0 {
-            at += 1;
-        }
-        for run in &mut p.runs {
-            let n = run.text.chars().count();
-            run.text = curly[at..at + n].iter().collect();
-            at += n;
-        }
     }
 }

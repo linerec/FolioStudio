@@ -189,7 +189,10 @@ pub fn attached_tools() -> Vec<Value> {
     tools.extend(super::attached::reads::READS.iter().map(read_tool));
     tools.extend(super::attached::PATHS.iter().map(path_tool));
     tools.extend(["coverage", "appConnection"].iter().map(|name| native_tool(name)));
-    for tool in &tools {
+    for tool in &mut tools {
+        let name=tool["name"].as_str().expect("attached tool name");
+        let risk=if matches!(name,"coverage"|"appConnection"){folio_ai::tools::Risk::Read}else{super::gate::reviewed_risk(name,&Value::Null)};
+        tool["_meta"]["risk"]=json!(risk);
         assert!(find_secret(&tool["inputSchema"]["properties"]).is_none(), "an exposed MCP tool must not accept secrets");
     }
     tools

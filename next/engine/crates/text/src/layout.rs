@@ -357,10 +357,8 @@ struct RightPart {
 
 /// Where a line at some height may go, given the text wraps.
 enum Slot {
-    /// Left and right of the line, the part right of a both-sides wrap that the next line of
-    /// the row may fill, and the room the frame's own shape gives (the column without one):
-    /// a line narrower than that is a fragment beside a wrap.
-    Fits(f64, f64, Option<(f64, f64)>, (f64, f64)),
+    /// Left and right of the line, and the next interval of a both-sides wrap.
+    Fits(f64, f64, Option<(f64, f64)>),
     /// Nothing fits beside a wrap: continue below this y.
     Below(f64),
     /// Jump-object keeps advancing on the paragraph's leading (wrap-jump).

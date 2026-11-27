@@ -15,7 +15,7 @@ pub(crate) fn read(bytes: &[u8], options: &Options) -> Result<TextSource, String
     let text = normalize_returns(&text);
     let text = strip_returns(&text, options.strip_returns_between_lines, options.strip_returns_between_paragraphs);
     let text = if options.convert_spaces_into_tabs { spaces_into_tabs(&text, options.spaces_into_tabs_count.max(1) as usize) } else { text };
-    let text = if options.use_typographers_quotes { typographers_quotes(&text) } else { text };
+    let text = if options.use_typographers_quotes { crate::quotes::text(&text) } else { text };
     let ends_with_return = text.ends_with('\r');
     let body = if ends_with_return { &text[..text.len() - 1] } else { &text[..] };
     Ok(TextSource {
@@ -143,32 +143,4 @@ fn spaces_into_tabs(text: &str, count: usize) -> String {
     }
     flush(&mut out, &mut spaces);
     out
-}
-
-/// Straight quotes become English (USA) curly quotes. The quote's side follows the character before it in the file: opening at the
-/// start of the text and after a space, a tab, a return, a no-break space, `(`, `[`, `{`, `«` and a curly opening quote; closing after
-/// anything else (a letter, a digit, `<`, `-`, `/`, `.`, a dash, an ellipsis, a straight quote ...). Measured with every ASCII context
-/// and eleven others (placetext-c1 quotes2); `""` is a pair, and so is `'"'`.
-pub(crate) fn typographers_quotes(text: &str) -> String {
-    let mut out = String::with_capacity(text.len());
-    let mut prev: Option<char> = None;
-    for c in text.chars() {
-        out.push(smart_quote(prev, c));
-        prev = Some(c);
-    }
-    out
-}
-
-/// What a straight quote after `prev` (`None`: at the start of the text) becomes; any other character stays as it is. Typing a quote with
-/// "Use Typographer's Quotes" on follows the same rule (InDesign 2025, real key presses: `"a"`, `""` gives `““`, `"-"` gives `“-”`, `'tis`
-/// gives `‘tis`, `5'10"` gives `5’10”`), whether autocorrect is on or off.
-pub fn smart_quote(prev: Option<char>, c: char) -> char {
-    let opening = prev.is_none_or(|p| p.is_whitespace() || matches!(p, '(' | '[' | '{' | '\u{AB}' | '\u{2018}' | '\u{201C}'));
-    match c {
-        '"' if opening => '\u{201C}',
-        '"' => '\u{201D}',
-        '\'' if opening => '\u{2018}',
-        '\'' => '\u{2019}',
-        other => other,
-    }
 }

@@ -362,7 +362,7 @@ pub(super) fn wrap_slot(
     if let Some(y) = below {
         return Slot::Below(y);
     }
-    Slot::Fits(available.0, available.1, next, room)
+    Slot::Fits(available.0, available.1, next)
 }
 
 fn find_band(

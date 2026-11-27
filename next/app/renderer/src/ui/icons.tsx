@@ -41,6 +41,7 @@ const OWN: Record<string, (id: string) => React.ReactNode> = {
   collector: () => <path d="M3 12.5v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3M10 3v8.5M6.8 8.3l3.2 3.2 3.2-3.2" {...S} />,
   typePath: () => <path d="M6.5 3.5h7M10 3.5v7.5M2.5 16c2.8-3 5.5-3 7.2-1.3s4.6 2.2 7.8-1.2" {...S} />,
   line: () => <path d="M4 16 16 4" {...S} />,
+  aiRegion: () => <path d="M3 8V3h5m4 0h5v5m0 4v5h-5m-4 0H3v-5m3-5h8v5h-4l-2 2v-2H6z" {...S} />,
   rectFrame: () => <path d="M3 4.5h14v11H3zM3 4.5l14 11M17 4.5l-14 11" {...S} />,
   ellipseFrame: () => (
     <>

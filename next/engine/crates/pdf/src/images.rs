@@ -178,6 +178,7 @@ pub(crate) fn explicit_mask(a: &[u8], w: u32, h: u32, f: u32, level: u32) -> (u3
 pub struct Downsample {
     pub above: f64,
     pub to: f64,
+    pub reuse_rows: bool,
 }
 
 /// Encoding settings shared by all images.
@@ -296,7 +297,7 @@ mod tests {
         let pixels: Vec<u8> = (0..600 * 300 * 3).map(|i| ((i * 37 + i / 31) % 256) as u8).collect();
         let (source, _) = encode_jpeg(&pixels, 600, 300, &ImgSpace::Rgb(None), 95).unwrap();
         let mut ctx = Ctx { color: Default::default(), image_compression: "zip", jpeg_quality: 95, level: 6,
-            target: Some(((72., 36.), Downsample { above: 450., to: 300. })),
+            target: Some(((72., 36.), Downsample { above: 450., to: 300., reuse_rows: true })),
             convert: None, no_smask: false, proxy: false, capture: None };
         let zip = jpeg_converted(&source, &ctx).unwrap();
         assert_eq!((zip.width, zip.height), (300, 150));
@@ -359,7 +360,7 @@ mod tests {
     #[test]
     fn downsampling_treats_each_axis_by_itself() {
         let ctx = |placed: (f64, f64)| Ctx { color: Default::default(), image_compression: "zip", jpeg_quality: 95, level: 6,
-            target: Some((placed, Downsample { above: 450., to: 300. })), convert: None, no_smask: false, proxy: false, capture: None };
+            target: Some((placed, Downsample { above: 450., to: 300., reuse_rows: true })), convert: None, no_smask: false, proxy: false, capture: None };
         // a 600 x 600 px picture; placed (width, height) in points = 144 pt x scale; InDesign's resulting ppi per axis in the comment
         let cases: [((f64, f64), (u32, u32)); 10] = [
             ((72.0, 47.95), (300, 200)),    // 600 x 901 ppi -> 300 x 300

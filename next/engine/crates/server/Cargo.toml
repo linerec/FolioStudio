@@ -6,6 +6,7 @@ edition.workspace = true
 publish.workspace = true
 
 [dependencies]
+folio-ai.workspace = true
 folio-model.workspace = true
 folio-idml.workspace = true
 folio-text.workspace = true

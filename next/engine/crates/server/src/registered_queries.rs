@@ -261,6 +261,7 @@ const QUERIES: &[(&str, Query)] = &[
     // a dock layout command for a tool (MCP): the screen applies it and answers (uix-d2, dock_action.rs)
     ("dockAction", |r,_,_| crate::dock_action::run(r)),
     ("dockActionDone", |r,_,_| crate::dock_action::run(r)),
+    ("performanceProfile", |r,_,_| crate::preview_profile::query(r)),
 ];
 
 fn describe_commands() -> Result<Value, String> {

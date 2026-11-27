@@ -195,6 +195,8 @@ export default {
   "command.panel.objectStyles": "Object Styles",
   "command.panel.preflight": "Preflight",
   "command.panel.separations": "Separations Preview",
+  "command.panel.ai": "AI",
+  "command.ai.settings": "AI…",
   "command.panel.project": "Project",
   "command.window.tools": "Tools",
   "command.window.control": "Control",

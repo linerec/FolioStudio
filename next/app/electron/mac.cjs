@@ -17,14 +17,19 @@ function setup() {
 }
 
 function menu(dir, t) {
+  const route = command => (_item, win) => {
+    if (win && !win.isDestroyed()) win.webContents.send('folio:event', { event: 'ai-menu', command });
+  };
   Menu.setApplicationMenu(Menu.buildFromTemplate([
     { label: 'Folio Studio', submenu: [
-      { role: 'about', label: t('about') }, { type: 'separator' }, { role: 'services', label: t('services') }, { type: 'separator' },
+      { role: 'about', label: t('about') }, { type: 'separator' }, { label: t('settings'), submenu: [{ label: t('aiSettings'), click: route('ai.settings') }] },
+      { type: 'separator' }, { role: 'services', label: t('services') }, { type: 'separator' },
       // The renderer uses Command+H for frame edges. A native hide role would consume it.
       { label: t('hide'), click: () => app.hide() },
       { role: 'hideOthers', label: t('hideOthers') }, { role: 'unhide', label: t('unhide') }, { type: 'separator' }, { role: 'quit', label: t('quit') },
     ] },
     { label: t('window'), submenu: [
+      { label: t('aiPanel'), click: route('panel.ai') }, { type: 'separator' },
       { role: 'minimize', label: t('minimize') }, { role: 'zoom', label: t('zoom') },
       { type: 'separator' }, { role: 'front', label: t('front') },
     ] },

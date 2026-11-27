@@ -1,4 +1,5 @@
 import { useAppState } from './useAppState';
+import type { SampleKind } from '../ui/SampleCards';
 import { saveUserSettings } from '../user-settings';
 import { THEME_CHROME,NO_EDITS,type Theme } from './stateDefaults';
 import { t as tr } from '../i18n';
@@ -124,7 +125,7 @@ export function useDocumentCommands(state: ReturnType<typeof useAppState>) {
 
   /** Opens a .folio, or an INDD/IDML read-only (no project), in the engine. */
   /** `discard`: no question about unsaved changes (Save As and Revert have dealt with them). */
-  const openDoc = useCallback(async (file: string, discard = false) => {
+  const openDoc = useCallback(async (file: string, discard = false, errorHint = '') => {
     if (!discard && !(await confirmDiscardRef.current())) return;
     resetDocument();
     setError('');
@@ -136,7 +137,7 @@ export function useDocumentCommands(state: ReturnType<typeof useAppState>) {
     try {
       shown(await openDocument(file));
     } catch (e) {
-      setError(String((e as Error).message ?? e));
+      setError([String((e as Error).message ?? e), errorHint].filter(Boolean).join(' '));
       setStatus('error');
     }
     window.folio.recent().then(setRecent, () => {});
@@ -183,31 +184,44 @@ export function useDocumentCommands(state: ReturnType<typeof useAppState>) {
     openDoc(file);
   }, [loadProject, resetDocument, openDoc]);
 
-  /** Help ▸ Open Feature Sample: the Atlas IDML shipped with the app, in its own project under
-   *  Documents, imported again when the app or the sample is new (electron/sample.cjs). */
-  const openSample = useCallback(async (kind: 'atlas' | 'magazine' = 'atlas') => {
-    if (doc) {
-      if (!(await confirmDiscardRef.current())) return;
-      try { await window.folio.request({ cmd: 'close' }); } catch { /* engine gone */ }
-      resetDocument();
-    }
-    setError('');
-    setStage('');
-    setStatus('opening');
+  const openingSampleRef = useRef(false);
+  const [openingSample, setOpeningSample] = useState<SampleKind | null>(null);
+  const openSample = useCallback(async (kind: SampleKind = 'atlas') => {
+    if (openingSampleRef.current) return;
+    openingSampleRef.current = true;
+    setOpeningSample(kind);
+    let errorHint = tr('문서 폴더에 파일을 만들 수 있는지와 남은 공간을 확인한 뒤 다시 여세요.');
     try {
+      if (doc) {
+        if (!(await confirmDiscardRef.current())) return;
+        try { await window.folio.request({ cmd: 'close' }); } catch { /* engine gone */ }
+        resetDocument();
+      }
+      setError('');
+      setStage('');
+      setStatus('opening');
       const s = await window.folio.sample(kind);
-      if ('error' in s) throw new Error(s.error === 'missing' ? tr('이 앱에 선택한 샘플이 들어 있지 않습니다.') : s.error);
+      if ('error' in s) {
+        if (s.error === 'missing') {
+          errorHint = tr('샘플이 포함된 Folio Studio를 다시 설치한 뒤 여세요.');
+          throw new Error(tr('이 앱에 선택한 샘플이 들어 있지 않습니다.'));
+        }
+        throw new Error(s.error);
+      }
       if (!s.project) await createProject(s.root, 'Feature Atlas');
       if (s.import) {
         setStage('reader');
         await importRun({ source: s.source, project: s.root, document: baseName(s.document), roots: [] });
         await window.folio.sampleImported(s.document);
       }
-      await openDoc(s.document);
+      await openDoc(s.document, true, errorHint);
       if (s.kept) flash(tr('고친 표본은 그대로 두고 새로 가져왔습니다: {0}', { 0: baseName(s.kept) }));
     } catch (e) {
-      setError(String((e as Error).message ?? e));
+      setError(String((e as Error).message ?? e) + ' ' + errorHint);
       setStatus('error');
+    } finally {
+      openingSampleRef.current = false;
+      setOpeningSample(null);
     }
   }, [doc, resetDocument, openDoc, flash]);
 
@@ -355,7 +369,7 @@ export function useDocumentCommands(state: ReturnType<typeof useAppState>) {
     updateSettings, open, closeDocument,
     resetDocument, save, saveCopy,
     revert, chooseTheme, addRoot,
-    rerunPreflight, openSample, openDoc,
+    rerunPreflight, openSample, openingSample, openDoc,
     loadProject, removeRoot, engineBroken,
     overrideLock,
   };

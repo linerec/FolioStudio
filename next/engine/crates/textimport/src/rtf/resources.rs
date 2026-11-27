@@ -21,6 +21,11 @@ impl Resources {
     }
 }
 
+/// A swatch keeps its display name, while its reference escapes percent signs.
+pub(super) fn swatch_reference(name: &str) -> String {
+    format!("Color/{}", name.replace('%', "%25"))
+}
+
 /// The font table and the colour table (read before the text, so a table after the first text works too).
 pub(super) fn read(toks: &[Tok<'_>]) -> Resources {
     let mut resources = Resources { fonts: Vec::new(), colors: Vec::new() };

@@ -1,3 +1,4 @@
+import {askDocument,findingKey} from './ai/attachments';
 import { t as tr, useLanguage } from './i18n';
 import { engineMessage } from './i18n/engine-message';
 import './pdf/pdf.css';
@@ -151,6 +152,7 @@ export function PreflightView({ report, busy, onRerun, onGo, limit = null }: { r
         <div className="detail-box">
           <b>{TITLES[selected.rule] ?? selected.rule}</b>
           <p>{engineMessage(selected)}</p>
+          <button onClick={()=>askDocument([{kind:'preflight',finding:findingKey(selected)}])}>{tr('AI에게 묻기')}</button>
           <span>{selected.pageName ? tr('{0}쪽', {0:selected.pageName}) : tr("문서 전체")}{selected.item ? ` · ${tr('개체 {0}', {0:selected.item})}` : ''}</span>
         </div>
       )}

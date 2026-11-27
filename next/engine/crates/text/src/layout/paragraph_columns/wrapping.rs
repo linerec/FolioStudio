@@ -35,7 +35,7 @@ pub(super) fn baseline(
             frame.verso,
             column.width(),
         ) {
-            Slot::Fits(left, right, None, _)
+            Slot::Fits(left, right, None)
                 if (left - column.left).abs() <= EPS && (right - column.right).abs() <= EPS =>
             {
                 return Some(baseline);

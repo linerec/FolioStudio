@@ -175,3 +175,34 @@ fn pdf_boxes_spots_and_repair() {
         assert!(c.spaces.contains(&ColorSpace::Rgb) && c.content_scanned, "{c:?}");
     }
 }
+
+#[test]
+fn pdf_object_streams_keep_fonts_and_output_intent() {
+    use lopdf::{Document, Object, dictionary};
+
+    let mut document = Document::load_mem(&pdf(false)).unwrap();
+    let font = document.add_object(dictionary! {
+        "Type" => "Font", "Subtype" => "Type1", "BaseFont" => "Helvetica",
+    });
+    let page = document.get_object_mut((3, 0)).unwrap().as_dict_mut().unwrap();
+    page.get_mut(b"Resources").unwrap().as_dict_mut().unwrap()
+        .set("Font", dictionary! { "F1" => font });
+    let intent = document.add_object(dictionary! {
+        "Type" => "OutputIntent", "S" => "GTS_PDFX",
+        "OutputConditionIdentifier" => Object::string_literal("Proof"),
+    });
+    document.catalog_mut().unwrap().set("OutputIntents", vec![Object::Reference(intent)]);
+    let mut bytes = Vec::new();
+    document.save_modern(&mut bytes).unwrap();
+    assert!(bytes.windows(7).any(|w| w == b"/ObjStm"));
+
+    let info = probe(&tmp("object-stream.pdf", &bytes)).unwrap();
+    assert_eq!(info.pages, Some(2));
+    assert_eq!(info.fonts.len(), 1);
+    let font = &info.fonts[0];
+    assert_eq!((font.name.as_str(), font.kind.as_str(), font.embedded), ("Helvetica", "Type1", false));
+    let colors = info.vector_colors.unwrap();
+    assert_eq!(colors.output_intent.as_deref(), Some("Proof"));
+    assert_eq!(colors.spots, ["PANTONE 280 C"]);
+    assert!(colors.content_scanned && colors.spaces.contains(&ColorSpace::Rgb));
+}

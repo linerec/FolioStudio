@@ -52,6 +52,11 @@ export function useAppEvents(context: AppContext, commandsRef: RefObject<Command
   runEditRef.current = runEdit;
   const docRef = useRef(doc);
   docRef.current = doc;
+  useEffect(() => window.folio.onEvent(event => {
+    if (event.event !== 'ai-menu') return;
+    const {command} = event as {command?: string};
+    if (command === 'ai.settings' || command === 'panel.ai') commandsRef.current[command]?.run?.();
+  }), [commandsRef]);
   useEffect(() => {
     const onDown = (e: KeyboardEvent) => {
       if (document.querySelector('.dropdown')) return;

@@ -44,6 +44,8 @@ pub(super) fn checked_row(f: &Value, row: &Value, choices: &Value, at: &str) -> 
 pub(super) fn checked(f: &Value, value: &Value, choices: &Value) -> Result<Value, Refusal> {
     let name = name_of(f);
     match f["type"].as_str().unwrap_or("number") {
+        "writeOnly" if value.is_null() => Ok(Value::Null),
+        "writeOnly" => Err(refuse(name, "writeOnly", "use secure credential storage".into())),
         "array" => {
             let rows = value.as_array().ok_or_else(|| refuse(name, "notArray", format!("{name} must be a list of rows")))?;
             let (min, max) = (f["minRows"].as_u64().unwrap_or(0) as usize, f["maxRows"].as_u64().unwrap_or(1000) as usize);
@@ -159,6 +161,7 @@ pub(super) fn set_path(def: &Value, values: &mut Value, choices: &Value, req: &V
     let path = req["field"].as_str().ok_or("field must be a name")?;
     let (f, row, sub) = parsed_path(def, path, values)?;
     let key = name_of(&f).to_owned();
+    if f["type"] == "writeOnly" { return Err(refuse(path, "writeOnly", "use secure credential storage".into())); }
     if f["disabled"] == true { return Err(refuse(path, "notEditable", format!("{key} is shown but not editable"))); }
     let op = req["row"].as_str();
     // the rows of a fixed list (the document's languages, its inks) are what they are: none added, removed or moved (and a whole list

@@ -24,12 +24,13 @@
 //! they are, without image encoding. Logs go to stderr.
 
 mod attach;
+mod ai_runtime;
+mod ai_context;
 mod attach_created;
 mod attach_paths;
 mod attach_read_reply;
 mod attach_image;
-#[path = "bin/mcp/attached.rs"]
-mod attached;
+use folio_engine::mcp::attached;
 // the project MCP server's path checks (mcp-c1), reused for an attached connection's paths
 #[path = "bin/mcp/boundary.rs"]
 #[allow(dead_code)]
@@ -66,6 +67,7 @@ mod dock_action;
 mod document_presets;
 mod user_settings;
 mod renderer_preferences;
+mod preview_profile;
 mod urlcheck;
 mod recent_files;
 mod panel_state;
@@ -837,7 +839,7 @@ fn main() {
     // render workers
     let (tx, rx) = mpsc::channel::<requests::RenderJob>();
     let rx = Arc::new(Mutex::new(rx));
-    let workers = std::thread::available_parallelism().map(|n| n.get().clamp(1, 8)).unwrap_or(4);
+    let workers = preview_profile::workers();
     for _ in 0..workers {
         let rx = rx.clone();
         let out = out.clone();
@@ -889,23 +891,40 @@ fn main() {
     }
     attach::sync(&requests);
     let context = requests::Context { out: &out, session: &session, font_pool: &font_pool, profiles: &profiles, tx: &tx };
+    let mut ai = ai_runtime::Runtime::default();
     for request in incoming.iter() {
-        let attach::Incoming::Line { text: line, mcp } = request else { break };
-        if line.trim().is_empty() {
-            continue;
-        }
-        let mut req: Value = match serde_json::from_str(&line) {
-            Ok(v) => v,
-            Err(e) => {
-                send(&out, json!({"ok": false, "error": format!("bad request: {e}")}), &[]);
-                continue;
+        let (mut req,mcp,ai_files): (Value,bool,Option<bool>) = match request {
+            attach::Incoming::Quit => break,
+            attach::Incoming::AiModelList{request,result}=>{
+                let answer=ai.model_list_result(&request,result);
+                send(&out,answer,&[]);continue;
             }
+            attach::Incoming::AiPump => {ai.tick(&context,&requests);continue;}
+            attach::Incoming::AiResult {call,reply} => {ai.result(&call,reply,&requests);continue;}
+            attach::Incoming::AiTool {request,files} => (request,true,Some(files)),
+            attach::Incoming::Line {text,mcp} => {
+                if text.trim().is_empty(){continue;}
+                match serde_json::from_str(&text) {
+                    Ok(v)=>(v,mcp,None),
+                    Err(e)=>{send(&out,json!({"ok":false,"error":format!("bad request: {e}")}),&[]);continue;}
+                }
+            },
         };
         let id = req["id"].clone();
+        let cmd=req["cmd"].as_str().unwrap_or("");
+        if !mcp && folio_ai::COMMANDS.contains(&cmd){
+            let answer=ai.handle(&req,&context,&requests);
+            if let Some(answer)=answer{send(&out,answer,&[]);}
+            continue;
+        }
+        if ai_files.is_none() && ai.blocks(cmd,&req){
+            send(&out,json!({"id":id,"ok":false,"code":"aiTurnRunning","error":"aiTurnRunning"}),&[]);
+            continue;
+        }
         // an attached client's paths: relative to the project open in the app, checked, then this machine's (attach_paths.rs)
         if mcp {
             let current = session.lock().expect("shared state must remain unpoisoned after each operation").clone();
-            match attach_paths::resolve(&mut req, current.as_deref()) {
+            match attach_paths::resolve_for(&mut req, current.as_deref(),ai_files) {
                 Ok(Some(resolved)) => attach::reply_relative_to(&id, resolved),
                 Ok(None) => {}
                 Err(refused) => {
@@ -927,8 +946,11 @@ fn main() {
             // New Library the colour profiles; then the dialog is finished
             if let Some(request) = response.as_object_mut().and_then(|o| o.remove("_appRequest")) {
                 if request["cmd"] != "documentNew" {
-                    let reply = registered_queries::dispatch(&request, session.lock().expect("shared state must remain unpoisoned after each operation").as_deref(), &profiles)
-                        .unwrap_or_else(|| json!({"ok": false, "error": format!("unknown cmd {}", request["cmd"])}));
+                    let reply = if !mcp && matches!(request["cmd"].as_str(), Some("aiSaveConnection" | "aiSetSettings")) {
+                        ai.handle(&request, &context, &requests).into()
+                    } else {
+                        registered_queries::dispatch(&request, session.lock().expect("shared state must remain unpoisoned after each operation").as_deref(), &profiles)
+                    }.unwrap_or_else(|| json!({"ok": false, "error": format!("unknown cmd {}", request["cmd"])}));
                     let (mut header, event) = dialog_state::app_finished(&request, &reply);
                     if let Some(event) = event { send(&out, event, &[]); }
                     header["id"] = id;
@@ -1044,5 +1066,6 @@ fn main() {
             RequestRoute::Quit => break,
         }
     }
+    ai.shutdown(&context);
     attach::shutdown();
 }

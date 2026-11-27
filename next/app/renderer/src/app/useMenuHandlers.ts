@@ -44,6 +44,8 @@ import { findItem } from '../ui/overlay';
 import { displayPerformanceMenu,IGNORE_LOCAL_KEY } from '../ui/displayperf';
 import type { RefObject } from 'react';
 import { useHandlerRegistry } from '../ui/handlers';
+import {ai, runningLabel, useTurn} from '../ai/runtime';
+import {askDocument,type Spec} from '../ai/attachments';
 import type { AppContext } from './context';
 import { presentationKeyCommands } from '../ui/presentationkeys';
 import { pathKeyCommands } from '../ui/pathkeys';
@@ -51,6 +53,7 @@ import { spotKeyCommands } from '../ui/spotkeys';
 import { focusControlPanel, focusLastPanelField, rememberPanelFields } from '../features/window/panelfocus';
 
 export function useMenuHandlers(context: AppContext): RefObject<Commands> {
+  const turn=useTurn();
   const {
     textSelection, selection, store,
     doc, screenMode, setScreenMode,
@@ -709,6 +712,24 @@ export function useMenuHandlers(context: AppContext): RefObject<Commands> {
     for (const id of Object.keys(PANEL_META) as PanelId[]) {
       h[`panel.${id}`] = { run: () => dock.show(id), checked: dock.isOpen(id) };
     }
+    const askSelection = (fromCanvas = false) => {
+      let specs:Spec[];
+      if (!fromCanvas && document.activeElement?.closest('.pp-page')) {
+        specs=(doc?.pages??[]).filter(p=>pageEditing.ids.includes(pageEditing.idOf(p))).map(p=>({kind:'page',page:p.index}));
+      } else if (textSelection && textSelection.start!==textSelection.end) {
+        const {story,start,end}=textSelection;
+        specs=[{kind:'text',story,page:selection.find(s=>findItem(store.peek(s.page),s.id)?.item.text?.story===story)?.page??current,
+          start:Math.min(start,end),end:Math.max(start,end)}];
+      } else specs=selection.map(s=>({kind:'objects',page:s.page,ids:[s.id]}));
+      askDocument(specs);
+    };
+    h['ai.askSelection']={label:tr('AI에게 묻기'),run:()=>askSelection(true)};
+    h['panel.ai'] = { run: askSelection, checked: !allHidden && dock.showing('ai') };
+    h['ai.showComposer']={run:()=>{
+      setAllHidden(false);
+      dock.showView('ai');
+    }};
+    h['ai.settings'] = { run: () => void ai('openDialog',{dialog:'aiSettings',scope:'app'}).catch(e=>flash(String(e))) };
     // in the Folio workspace the project is the sidebar's explorer, not a dock panel: Window ▸ Project shows it and puts the keys in it
     if (workbench.layout === 'folio') {
       // (the explorer view wherever it is docked or floats: it opens, and the keys go to its tree)
@@ -725,6 +746,13 @@ export function useMenuHandlers(context: AppContext): RefObject<Commands> {
         : { label: spec.label, keys: spec.keys, why: NOT_YET() };
     }
     for (const [id, x] of Object.entries(h)) if (!all[id]) all[id] = { label: x.label ?? id, ...x } as Command;
+    if (turn) {
+      for (const [id,cmd] of Object.entries(all)) {
+        const editing = /^(?:id\.)?(?:object|type|table)\./.test(id) || /^(?:id\.)?edit\.(?:undo|redo|cut|paste|clear|delete|duplicate|stepAndRepeat)/i.test(id);
+        const selecting = /(?:select|selection)/i.test(id);
+        if ((editing && !selecting) || (!cmd.run && /^(?:id\.)?(?:edit|object|type|table|layout)\./.test(id))) all[id] = {...cmd,run:undefined,why:runningLabel()};
+      }
+    }
     return applyShortcuts(all, settings.shortcuts);
   });
 }

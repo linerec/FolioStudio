@@ -360,6 +360,9 @@ pub fn snapshot(
 /// InDesign previews have already been converted to document colour. Newly placed RGB
 /// originals have not. Keep their embedded profile local to that source's image cache.
 pub fn configure_previews(s: &Session) {
+    if let Some(bytes) = crate::preview_profile::preview_image_allowance() {
+        s.images.set_preview_image_allowance(bytes);
+    }
     fn walk(items: &[folio_model::PageItem], files: &mut std::collections::HashSet<String>) {
         for item in items {
             if let folio_model::ItemKind::Group { children } = &item.kind { walk(children, files) }
